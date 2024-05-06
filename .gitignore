@@ -1,0 +1,7 @@
+# Ignore List
+# Ignore List
+/.vscode
+/.idea
+/.vscode-insiders
+/CG_Env/Scripts/python.exe
+/CG_University/db.sqlite3

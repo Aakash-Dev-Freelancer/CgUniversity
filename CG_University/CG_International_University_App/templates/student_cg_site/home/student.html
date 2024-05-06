@@ -1,0 +1,158 @@
+{% load static %} {% load livereload_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'student_css/student.css' %}" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Student</title>
+</head>
+
+<body>
+  <div>
+    {% include 'main_cg_site/global/nav_bar.html' %}
+
+    <div class="container-student">
+
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2 sidebar-section">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarNav"
+              aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="sidebarNav">
+              <ul class="navbar-nav flex-column">
+                <a class="nav-link" onclick="changeContent(1)">
+                  <li class="student-nav-item active">Student Profile</li>
+                </a>
+                <a class="nav-link" onclick="changeContent(2)">
+                  <li class="student-nav-item">Marksheet</li>
+                </a>
+                <a class="nav-link" onclick="changeContent(3)">
+                  <li class="student-nav-item">Admit Card</li>
+                </a>
+                <a class="nav-link" onclick="changeContent(4)">
+                  <li class="student-nav-item">Migration</li>
+                </a>
+                <a class="nav-link" onclick="changeContent(5)">
+                  <li class="student-nav-item">Provision</li>
+                </a>
+                <a class="nav-link" onclick="changeContent(6)">
+                  <li class="student-nav-item">Payment</li>
+                </a>
+                <a class="nav-link" onclick="changeContent(7)">
+                  <li class="student-nav-item">Affidavit</li>
+                </a>
+                <a class="nav-link" onclick="changeContent(8)">
+                  <li class="student-nav-item">Logout</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-10 main-content">
+          <!-- Content Divs -->
+          <!-- Student Profile -->
+          <div id="content1" class="content active">
+            <h2>Student Profile</h2>
+            {% include 'student_cg_site/template/student_profile.html' %}
+            <!-- Profile Form -->
+          </div>
+
+          <!-- Marksheet -->
+          <div id="content2" class="content">
+            <h1>Marksheet</h1>
+            {% include 'student_cg_site/template/marksheet.html' %}
+          </div>
+
+          <!-- Admit Card -->
+          <div id="content3" class="content">
+            <h1>Admit Card</h1>
+            <!-- Admit Card Content -->
+          </div>
+
+          <!-- Migration -->
+          <div id="content4" class="content">
+            <h1>Migration</h1>
+            <!-- Migration Content -->
+          </div>
+
+          <!-- Provision -->
+          <div id="content5" class="content">
+            <h1>Provision</h1>
+            <!-- Provision Content -->
+          </div>
+
+          <!-- Payment -->
+          <div id="content6" class="content">
+            <h1>Payment with QR code</h1>
+            <!-- Payment Content -->
+          </div>
+
+          <!-- Affidavit -->
+          <div id="content7" class="content">
+            <h1>Affidavit</h1>
+            <!-- Affidavit Content -->
+          </div>
+
+          <!-- Logout -->
+          <form class="content" action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary">Logout</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    {% include 'main_cg_site/global/footer.html' %}
+  </div>
+
+  <!-- Livereload and Scripts -->
+  {% livereload_script %}
+  <script src="{% static 'scripts/student_js/student.js' %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- <script>
+    var pageLoaded = false;
+
+    window.onload = function () {
+      console.log("Page loaded."); // Log that the page has loaded
+      pageLoaded = true;
+
+      console.log("Script executed."); // Check if script is executed
+      window.history.pushState('forward', null, './#forward');
+      window.onpopstate = function () {
+        showAlert("Are you sure you want to leave this page?");
+      };
+    };
+
+    window.onbeforeunload = function () {
+      if (pageLoaded) {
+        return "Are you sure you want to leave this page?";
+      }
+    };
+
+    function showAlert(message) {
+      var confirmation = confirm(message);
+      if (confirmation) {
+        window.location.href = "{% url 'home' %}";
+      } else {
+      }
+    }
+  </script>
+ -->
+
+
+
+</body>
+
+</html>

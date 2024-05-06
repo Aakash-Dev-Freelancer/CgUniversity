@@ -1,0 +1,55 @@
+{% load static %} {% load livereload_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  {% livereload_script %}
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'main_css/style.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'main_css/director_message.css' %}"
+    />
+    <title>Director Message</title>
+  </head>
+
+  <body>
+    {% include 'main_cg_site/global/nav_bar.html' %}
+    <div class="background-image">
+      <div class="blurOverlay" style="padding: 80px">
+
+        <h1>Welcome to Our Institute</h1>
+        <p>
+          I welcome you to this renowned institute, which has excelled in the
+          field of education for more than three decades. Our commitment to
+          providing quality education has resulted in exceptional results,
+          offering programs in various fields with vast potential for
+          employment.
+        </p>
+        <p>
+          Education helps individuals carve their identity in the world. In
+          India, distance education has become an efficient means of making
+          education and technology accessible to all, thereby addressing
+          inequalities in access to education, healthcare, income, gender,
+          justice, wealth, and social inclusiveness.
+        </p>
+        <p>
+          We take pride in supporting numerous students from across the nation
+          in achieving successful careers of their choice. Our dedicated faculty
+          and dynamic students are integral members of our local community,
+          showcasing their commitment to academic excellence and campus life
+          involvement.
+        </p>
+        <p><strong>Director</strong></p>
+      
+      </div>
+    </div>
+    {% include 'main_cg_site/global/footer.html' %}
+  </body>
+</html>

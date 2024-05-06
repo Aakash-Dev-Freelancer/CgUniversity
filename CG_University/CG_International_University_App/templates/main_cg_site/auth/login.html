@@ -1,0 +1,113 @@
+{% load static %} {% load livereload_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="{% static 'main_css/login.css' %}" />
+</head>
+
+<body>
+  <div class="login-card">
+    <input type="radio" id="admin-tab" name="login-tab" checked />
+    <label for="admin-tab">Admin</label>
+    <input type="radio" id="student-tab" name="login-tab" />
+    <label for="student-tab">Student</label>
+    <input type="radio" id="center-tab" name="login-tab" />
+    <label for="center-tab">Center</label>
+    <div id="login-content-id" class="login-content" style="display: none;">
+      <div id="admin-login" class="login-tab-content">
+        <h2>Admin Login</h2>
+        <form id="loginForm" method="post" action="{% url 'student' %}">
+          {% csrf_token %}
+          <input type="hidden" id="login-type" name="login-type" value="">
+          <div class="input-field">
+            <input type="text" id="username" name="username" placeholder="Username" />
+          </div>
+          <div class="input-field">
+            <input type="password" id="password" name="password" placeholder="Password" required />
+          </div>
+          <button type="button" onclick="submitForm()">Login</button>
+          <div class="back-to-home">
+            <a href="{% url 'home'%}">Back to Home</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
+      radio.addEventListener('click', function () {
+        var selectedTab = document.querySelector('input[name="login-tab"]:checked');
+        var form = document.getElementById("loginForm");
+
+        if (selectedTab) {
+          var tabId = selectedTab.id;
+          var actionUrl = '';
+
+          if (tabId === 'admin-tab') {
+            actionUrl = '{% url "admin" %}';
+          } else if (tabId === 'student-tab') {
+            actionUrl = '{% url "student" %}';
+          } else if (tabId === 'center-tab') {
+            actionUrl = '{% url "center" %}';
+          }
+
+          form.setAttribute('action', actionUrl);
+        }
+      });
+    });
+
+    document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
+      radio.addEventListener('click', function () {
+        var selectedTab = document.querySelector('input[name="login-tab"]:checked');
+        var h2 = document.querySelector('.login-tab-content h2');
+        var usernameInput = document.getElementById("username");
+        var form = document.getElementById("loginForm");
+        var loginFormId = document.getElementById("login-content-id");
+
+        if (selectedTab) {
+          var tabId = selectedTab.id;
+          var placeholder = "";
+          if (tabId === 'admin-tab') {
+            h2.textContent = 'Admin Login';
+            placeholder = "Admin Username";
+            document.getElementById("login-type").value = 'admin';
+          } else if (tabId === 'student-tab') {
+            h2.textContent = 'Student Login';
+            placeholder = "Enrollment No";
+            document.getElementById("login-type").value = 'student';
+          } else if (tabId === 'center-tab') {
+            h2.textContent = 'Center Login';
+            placeholder = "Center Username";
+            document.getElementById("login-type").value = 'center';
+          }
+          usernameInput.placeholder = placeholder;
+          loginFormId.style.display = "block";
+        } else {
+          loginFormId.style.display = "none";
+        }
+      });
+    });
+
+    function submitForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      var userType = document.getElementById("login-type").value;
+      if (username.trim() === "" || password.trim() === "") {
+        alert("Please enter both username and password.");
+        return;
+      }
+
+      document.getElementById("login-type").value = userType;
+
+      var form = document.getElementById("loginForm");
+      form.submit();
+    }
+  </script>
+
+</body>
+
+</html>

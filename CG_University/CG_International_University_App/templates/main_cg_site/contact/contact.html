@@ -1,0 +1,34 @@
+{% load static %}
+{% load livereload_tags %}
+<!DOCTYPE html>
+<html lang="en">
+{% livereload_script %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main_css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main_css/contact.css' %}">
+    <title>Contact</title>
+</head>
+
+<body>
+    {% include 'main_cg_site/global/nav_bar.html' %}
+    <div class="contact-header-container">
+        <div class="overlayer">
+
+            <div class="container">
+                <h1>Contact Information</h1>
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:cgINTuniversity@gmail.com" class="email">cgINTuniversity@gmail.com</a></p>
+
+                    <p>Address: CG INTERNATIONAL UNIVERSITY, Raipur, India</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% include 'main_cg_site/global/footer.html' %}
+</body>
+
+</html>

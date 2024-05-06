@@ -1,0 +1,77 @@
+<div id="ContentPlaceHolder1_updpnlstudentInfo">
+  <table style="width: 100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+        <td style="width: 100%"></td>
+      </tr>
+      <tr>
+        <td style="width: 100%">
+          <div id="ContentPlaceHolder1_pnlGradingSystem" style="width: 100%">
+            <div>
+              <table class="table table-striped table-bordered table-hover" cellspacing="0" rules="all" border="1"
+                id="ContentPlaceHolder1_gvStudentHistory_GS" style="
+                  font-weight: normal;
+                  width: 100%;
+                  border-collapse: collapse;
+                ">
+                <tbody>
+                  <tr style="color: Snow; background-color: #646464">
+                    <th scope="col" style="font-size: 10pt">Session</th>
+                    <th scope="col" style="font-size: 10pt">Semester</th>
+                    <th scope="col" style="font-size: 10pt">SGPA</th>
+                    <th scope="col" style="font-size: 10pt">Status</th>
+                    <th scope="col" style="font-size: 10pt">Result</th>
+                    <th scope="col" style="font-size: 10pt">View MarkSheet</th>
+                  </tr>
+                  {% for marksheets in student_marksheets %}
+                  <tr>
+                    <td style="font-weight: normal">{{ marksheets.session }}</td>
+                    <td style="font-weight: normal">{{ marksheets.semester }}</td>
+                    <td style="font-weight: normal">{{ marksheets.sgpa }}</td>
+                    <td style="font-weight: normal">{{ marksheets.status }}</td>
+                    <td style="font-weight: normal">{{ marksheets.result }}</td>
+
+                    <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#marksheet{{ forloop.counter }}">
+                        See
+                      </button>
+                      <div class="modal fade" id="marksheet{{ forloop.counter }}" tabindex="-1" role="dialog"
+                        aria-labelledby="marksheetLabel{{ forloop.counter }}" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="marksheetLabel{{ forloop.counter }}">
+                                MarkSheet
+                              </h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <h2>{{ marksheets.file }}</h2>
+                            <h1>{{ student_info.name }}</h1>
+                            <div class="modal-body">
+                              <img src="http://54.242.171.194:9090{{ marksheets.file }}"
+                                class="rounded mx-auto d-block w-100" style="width: 100%" alt="NO Image" />
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  {% endfor %}
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

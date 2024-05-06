@@ -1,0 +1,32 @@
+{% load static %} {% load livereload_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  {% livereload_script %}
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'main_css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'main_css/courses.css' %}" />
+    <title>Courses</title>
+  </head>
+
+  <body>
+    {% include 'main_cg_site/global/nav_bar.html' %}
+    <section class="main-branch">
+      <h1>Courses</h1>
+      {% for branch in branches %}
+      <h2 class="title">{{ branch.title }}</h2>
+      <h4 class="description">{{ branch.description }}</h4>
+      <div class="courses">
+        <ul>
+          {% for course in branch.courses %}
+          <li>{{ course }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </section>
+    {% include 'main_cg_site/global/footer.html' %}
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{% load static %} {% load livereload_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  {% livereload_script %}
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'main_css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'main_css/rti.css' %}" />
+    <title>RTI</title>
+  </head>
+
+  <body>
+    {% include 'main_cg_site/global/nav_bar.html' %}
+    <div class="background-image">
+      <div class="blurOverlay" style="padding: 80px">
+        <h1>Right to Information (RTI)</h1>
+        <p>
+          The Right to Information (RTI) empowers citizens to seek information
+          from public authorities. It promotes transparency and accountability
+          in governance.
+        </p>
+        <p>
+          To learn more or to file an RTI application, please visit the official
+          RTI website:
+        </p>
+        <p class="rti-link">
+          <a href="https://www.rtionline.gov.in" target="_blank"
+            >www.rtionline.gov.in</a
+          >
+        </p>
+      </div>
+    </div>
+
+    {% include 'main_cg_site/global/footer.html' %}
+  </body>
+</html>

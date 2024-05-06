@@ -1,0 +1,61 @@
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /> -->
+<style>
+
+</style>
+
+<form action="#" method="post">
+  <div class="rounded bg-white shadow p-4 ">
+
+    <div class="form-group">
+      <h1>Hello, {{ student_info.full_name }}</h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="Er. No" class="text-muted font-weight-light">Enrollment No.:</label>
+            <span class="font-weight-bold">{{ student_info.enrollment_no }}</span>
+          </div>
+          <div class="form-group">
+            <label class="text-muted font-weight-light" for="name">Father Name:</label>
+            <span class="font-weight-bold">{{ student_info.father_name }}</span>
+          </div>
+          <div class="form-group">
+            <label class="text-muted font-weight-light" for="name">Mother Name:</label>
+            <span class="font-weight-bold">{{ student_info.mother_name }}</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="text-muted font-weight-light" for="gender">Gender:</label>
+            <span class="font-weight-bold">{{ student_info.gender }}</span>
+          </div>
+          <div class="form-group">
+            <label class="text-muted font-weight-light" for="category">Category:</label>
+            <span class="font-weight-bold">{{ student_info.category }}</span>
+          </div>
+          <div class="form-group">
+            <label class="text-muted font-weight-light" for="dob">Date of Birth:</label>
+            <span class="font-weight-bold">{{ student_info.date_of_birth }}</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="text-muted font-weight-light" for="email">Email:</label>
+            <span class="font-weight-bold">{{ student_info.email }}</span>
+          </div>
+          <div class="form-group">
+            <label class="text-muted font-weight-light" for="mobile">Mobile Number:</label>
+            <span class="font-weight-bold">{{ student_info.mobile_number }}</span>
+          </div>
+          <div class="form-group">
+            <label class="text-muted font-weight-light" for="address">Address:</label>
+            <span class="font-weight-bold">{{ student_info.address }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</form>

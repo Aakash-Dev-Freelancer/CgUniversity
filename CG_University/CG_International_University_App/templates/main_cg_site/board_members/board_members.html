@@ -1,0 +1,90 @@
+{% load static %} {% load livereload_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  {% livereload_script %}
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'main_css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'main_css/board_members.css' %}" />
+    <title>Board_Member's</title>
+  </head>
+
+  <body>
+    {% include 'main_cg_site/global/nav_bar.html' %}
+    <h1 class="board-member-text">Board Member's</h1>
+    <div class="board-member-container">
+      <div class="row">
+        <div class="board-member-card">
+          <h2>Chairman</h2>
+          <p class="board-member-profile">Name: Mr. Golu Baraman</p>
+          <p class="profession">
+            Profession: Leading the way with charm and vision.
+          </p>
+        </div>
+
+        <div class="board-member-card">
+          <h2>Director</h2>
+          <p class="board-member-profile">Name: Dr. Nita Chouhan</p>
+          <p class="profession">
+            Profession: Guiding with expertise and passion.
+          </p>
+        </div>
+
+        <div class="board-member-card">
+          <h2>Co. Director</h2>
+          <p class="board-member-profile">Name: Adv. Lokendra Verma</p>
+          <p class="profession">
+            Profession: Advocating excellence in all endeavors.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="board-member-card">
+          <h2>Administration Incharge</h2>
+          <p class="board-member-profile">Name: Ad. Sanyog Sahu</p>
+          <p class="profession">
+            Profession: Orchestrating efficiency with finesse.
+          </p>
+        </div>
+
+        <div class="board-member-card">
+          <h2>Legal Advisor</h2>
+          <p class="board-member-profile">Name: Adv. Ramlal Ahirwar</p>
+          <p class="profession">
+            Profession: Crafting legal solutions with precision.
+          </p>
+        </div>
+
+        <div class="board-member-card">
+          <h2>Director of Paramedical</h2>
+          <p class="board-member-profile">Name: Dr. Sachin Nema</p>
+          <p class="profession">
+            Profession: Healing hearts and minds with care.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="board-member-card">
+          <h2>Admission Counsellor</h2>
+          <p class="board-member-profile">Name: Mr. Sahil Rajak</p>
+          <p class="profession">
+            Profession: Guiding aspirations towards success.
+          </p>
+        </div>
+
+        <div class="board-member-card">
+          <h2>I.T. and Technical</h2>
+          <p class="board-member-profile">Name: Mr. Jay Verma</p>
+          <p class="profession">
+            Profession: Innovating solutions with tech-savvy flair.
+          </p>
+        </div>
+      </div>
+    </div>
+    {% include 'main_cg_site/global/footer.html' %}
+  </body>
+</html>
