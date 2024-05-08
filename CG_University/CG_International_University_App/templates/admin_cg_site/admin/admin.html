@@ -1,5 +1,4 @@
 {% load static %}
-
 {% load livereload_tags %}
 
 <!DOCTYPE html>
@@ -9,50 +8,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="{% static 'main_css/style.css' %}"> -->
-    <!-- <link rel="stylesheet" href="{% static 'admin_css/admin_dashboard.css' %}">
-    <link rel="stylesheet" href="{% static 'admin_css/admin_student.css' %}">
-    <link rel="stylesheet" href="{% static 'admin_css/admin_settings.css' %}">
-    <link rel="stylesheet" href="{% static 'admin_css/admin_center.css' %}"> -->
-    <!-- <link rel="stylesheet" href="{% static 'main_css/style.css' %}"> -->
-
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <title>Admin Dashboard</title>
 </head>
 
 <body>
     {% include 'main_cg_site/global/nav_bar.html' %}
-    <section class="mt-auto">
-        <section class="side-nav-bar col-md-3">
-            <script src="{% static 'scripts/admin_js/admin.js' %}" defer></script>
-            <ul class="list-unstyled">
-                <h3>CG University</h3>
-                <li class="tab-side-nav-bar p-60" onclick="changeContent(1)">Dashboard</li>
-                <li class="tab-side-nav-bar" onclick="changeContent(2)">Student</li>
-                <li class="tab-side-nav-bar" onclick="changeContent(3)">Center</li>
-                <li class="tab-side-nav-bar" onclick="changeContent(4)">All</li>
-            </ul>
-            <ul class="list-unstyled mt-auto">
-                <li class="tab-side-nav-bar" onclick="changeContent(5)">Setting</li>
-                <li>Logout</li>
-            </ul>
-        </section>
+    <section class="pt-5 bg-light border">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
+                    type="button" role="tab" aria-controls="messages" aria-selected="false">Students</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button"
+                    role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+            </li>
+        </ul>
 
-        <section class="main-content-section col-md-9">
-            <div id="Dashboard" class="main-sub-section">
+        <div class="tab-content">
+            <div class="tab-pane " id="home" role="tabpanel" aria-labelledby="home-tab">
                 {% include 'admin_cg_site/admin_sections/admin_dashboard.html' %}
             </div>
-            <div id="Student" class="main-sub-section active">
-                {% include 'admin_cg_site/admin_sections/admin_student.html' %}
-            </div>
-            <div id="Center" class="main-sub-section">
+            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 {% include 'admin_cg_site/admin_sections/admin_center.html' %}
             </div>
-            <div id="All" class="main-sub-section">All</div>
-            <div id="Settings" class="main-sub-section">
+            <div class="tab-pane active" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                {% include 'admin_cg_site/admin_sections/admin_student.html' %}
+            </div>
+            <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
                 {% include 'admin_cg_site/admin_sections/admin_settings.html' %}
             </div>
-        </section>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
     </section>
 </body>
 

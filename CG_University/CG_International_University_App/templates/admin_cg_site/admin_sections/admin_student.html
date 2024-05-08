@@ -1,17 +1,299 @@
 {% load static %}
+{% load livereload_tags %}
+<!-- admin.html -->
 
+<!DOCTYPE html>
+<html lang="en">
 
-<div>
-    <script src="https://kit.fontawesome.com/e8b3146adc.js" crossorigin="anonymous"></script>
-    <div class="admin-student-container">
-        <div class="main-student-container-row">
-            <h1>Student</h1>
-            <div class="custom-cg-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="custom-cg-button">
-                <i class="fa-solid fa-filter"></i>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .btn-custom {
+            background-color: rgb(255, 150, 13);
+            border-color: rgb(255, 150, 13);
+            color: white;
+        }
+
+        .btn-custom-lighter {
+            background-color: rgba(255, 150, 13, 0.5);
+            border-color: rgba(255, 150, 13, 0.5);
+        }
+
+        /* Add pointer cursor to table rows */
+        tbody tr:hover {
+            cursor: pointer;
+        }
+
+        /* Highlight selected row */
+        .selected {
+            background-color: rgba(255, 150, 13, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="p-5">
+        <h1>Welcome, {{ admin_info.name }}</h1>
+
+        {% if is_logged_in %}
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped ">
+                <thead class="thead-dark">
+                    <tr>
+                        <th style="width: 200px;">
+                            Enrollment No.
+                            <select class="form-control" onchange="filterTable(0, this.value)">
+                                <option value="">Filter</option>
+                                {% for data in admin_info.students|dictsort:"enrollment_no" %}
+                                <option>{{ data.enrollment_no }}</option>
+                                {% endfor %}
+                            </select>
+                        </th>
+                        <th>Name
+                            <select class=" form-control" onchange="filterTable(1, this.value)">
+                                <option value="">No filter</option>
+                                {% for data in admin_info.students %}
+                                <option>{{ data.full_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </th>
+                        <th>Father Name
+                            <select class="form-control" onchange="filterTable(2, this.value)">
+                                <option value="">Filter</option>
+                                {% for data in admin_info.students %}
+                                <option>{{ data.father_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </th>
+                        <th>Mother Name
+                            <select class="form-control" onchange="filterTable(3, this.value)">
+                                <option value="">Filter</option>
+                                {% for data in admin_info.students %}
+                                <option>{{ data.mother_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </th>
+                        <th>Gender
+                            <select class="form-control" onchange="filterTable(4, this.value)">
+                                <option value="">Filter</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </th>
+                        <th>DOB
+                            <select class="form-control" onchange="filterTable(5, this.value)">
+                                <option value="">Filter</option>
+                                {% for data in admin_info.students %}
+                                <option>{{ data.date_of_birth }}</option>
+                                {% endfor %}
+                            </select>
+                        </th>
+                        <th>Category
+                            <select class="form-control" onchange="filterTable(6, this.value)">
+                                <option value="">Filter</option>
+                                {% for data in admin_info.students %}
+                                <option>{{ data.category }}</option>
+                                {% endfor %}
+                            </select>
+                        </th>
+                        <th>Email
+                            <select class="form-control" onchange="filterTable(7, this.value)">
+                                <option value="">Filter</option>
+                                {% for data in admin_info.students %}
+                                <option>{{ data.email }}</option>
+                                {% endfor %}
+                            </select>
+                        </th>
+                        <th>Mobile No.
+                            <select class="form-control" onchange="filterTable(8, this.value)">
+                                <option value="">Filter</option>
+                                {% for data in admin_info.students %}
+                                <option>{{ data.mobile_number }}</option>
+                                {% endfor %}
+                            </select>
+                        </th>
+                        <th>Address
+                            <select class="form-control" onchange="filterTable(9, this.value)">
+                                <option value="">Filter</option>
+                                {% for data in admin_info.students %}
+                                <option>{{ data.address }}</option>
+                                {% endfor %}
+                            </select>
+                        </th>
+                        <th>View/Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for data in admin_info.students %}
+                    <tr>
+                        <td>{{ data.enrollment_no }}</td>
+                        <td>{{ data.full_name }}</td>
+                        <td>{{ data.father_name }}</td>
+                        <td>{{ data.mother_name }}</td>
+                        <td>{{ data.gender }}</td>
+                        <td>{{ data.date_of_birth }}</td>
+                        <td>{{ data.category }}</td>
+                        <td>{{ data.email }}</td>
+                        <td>{{ data.mobile_number }}</td>
+                        <td>{{ data.address }}</td>
+                        <td>
+                            <a class="btn btn-primary"
+                                href="{% url 'edit-student'  %}?id={{ data.enrollment_no }}">Edit</a>
+                        </td>
+                    </tr>
+
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <div class=" text-center">
+                <button class="btn btn-custom" onclick="prevPage()">Previous</button>
+                <span id="page-numbers"></span>
+                <button class="btn btn-custom" onclick="nextPage()">Next</button>
             </div>
         </div>
+
+
+        {% else %}
+        <p>Please log in to view the content.</p>
+        {% endif %}
     </div>
-</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+
+        function filterTable(columnIndex, filterValue) {
+            var table = document.querySelector('.table');
+            var rows = table.getElementsByTagName('tr');
+            for (var i = 1; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName('td');
+                var cell = cells[columnIndex];
+                if (cell.textContent.trim() === filterValue || filterValue === "") {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        }
+
+
+
+        // console.log(students);
+
+        var currentPage = 0;
+        var rowsPerPage = 10;
+
+        // Function to show rows for the current page
+        function showRows() {
+            var table = document.querySelector('.table');
+            var tr = table.getElementsByTagName('tr');
+            var startIndex = currentPage * rowsPerPage + 1;
+            var endIndex = (currentPage + 1) * rowsPerPage + 1;
+            for (var i = 1; i < tr.length; i++) {
+                if (i >= startIndex && i < endIndex) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+
+        // Function to go to the previous page
+        function prevPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                showRows();
+                updatePageNumbers();
+            }
+        }
+
+        // Function to go to the next page
+        function nextPage() {
+            var table = document.querySelector('.table');
+            var tr = table.getElementsByTagName('tr');
+            var totalPages = Math.ceil((tr.length - 1) / rowsPerPage);
+            if (currentPage < totalPages - 1) {
+                currentPage++;
+                showRows();
+                updatePageNumbers();
+            }
+        }
+
+        // Function to update the displayed page numbers
+        function updatePageNumbers() {
+            var table = document.querySelector('.table');
+            var tr = table.getElementsByTagName('tr');
+            var totalPages = Math.ceil((tr.length - 1) / rowsPerPage);
+            var pageNumbers = document.getElementById("page-numbers");
+            pageNumbers.innerHTML = "";
+
+            var startPage = 0;
+            var endPage = totalPages - 1;
+            if (totalPages > 5) {
+                startPage = Math.max(currentPage - 2, 0);
+                endPage = Math.min(currentPage + 2, totalPages - 1);
+                if (endPage - startPage < 4) {
+                    if (startPage === 0) {
+                        endPage = Math.min(startPage + 4, totalPages - 1);
+                    } else {
+                        startPage = Math.max(endPage - 4, 0);
+                    }
+                }
+                if (startPage > 0) {
+                    pageNumbers.appendChild(createPageNumberButton(0));
+                    if (startPage > 1) {
+                        pageNumbers.appendChild(createEllipsis());
+                    }
+                }
+            }
+
+            for (var i = startPage; i <= endPage; i++) {
+                pageNumbers.appendChild(createPageNumberButton(i));
+            }
+
+            if (endPage < totalPages - 1) {
+                if (endPage < totalPages - 2) {
+                    pageNumbers.appendChild(createEllipsis());
+                }
+                pageNumbers.appendChild(createPageNumberButton(totalPages - 1));
+            }
+        }
+
+        // Function to create a page number button
+        function createPageNumberButton(page) {
+            var button = document.createElement("button");
+            button.className = "m-1 btn btn-secondary";
+            button.textContent = page + 1;
+            if (page === currentPage) {
+                button.classList.add("active");
+            }
+            button.onclick = function () {
+                currentPage = page;
+                showRows();
+                updatePageNumbers();
+            };
+            return button;
+        }
+
+        // Function to create an ellipsis element
+        function createEllipsis() {
+            var ellipsis = document.createElement("span");
+            ellipsis.textContent = "...";
+            return ellipsis;
+        }
+
+        // Initial call to show rows for the first page and update page numbers
+        showRows();
+        updatePageNumbers();
+    </script>
+</body>
+
+</html>

@@ -4,48 +4,48 @@ import json
 # from .models import Courses
 from CG_International_University_App.models.student import StudentInformation
 from CG_International_University_App.models.courses import Courses
+from CG_International_University_App.models.admin_info import AdminInfo
+# from django.core.serializers import serialize
+
+# from cgapp.models import Student, StudentData, MarkSheets
+# from cgapp.serializers import StudentSerializer,MarkSheetSerializer,StudentDataSerializer
+
+
 
 from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.contrib.auth import logout
 
 import requests
-
-# Create your views here.
-
 # Home Page --------------------->
-
 
 def admin(request):
     if request.method == 'POST':
-        enrollment_no = request.POST.get('username')
+        username = request.POST.get('username')
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
 
-        print("==============================")
-        print(user_type)
-        
         print("Api Hit")
         api_url = "http://127.0.0.1:8000/cg_api/login/"
-        payload = {"user_type": user_type, "username": enrollment_no, "password": password}
+        payload = {"user_type": user_type, "username": username, "password": password}
+
         
         response = requests.post(api_url, data=payload)
-        # json_encoded = json.dumps(response.json())
-        # print(json_encoded)
+        print(response.json())
+        # print(response.json())
+        json_encoded = json.dumps(response.json())
 
+            
         try:
             if response.status_code == 200:
-                    student_info_dict = response.json()
-                    student_info = StudentInformation.from_dict(student_info_dict)
-                    student_personal_info = student_info.student_info.student_personal_info
-                    student_marksheets = student_info.student_info.student_marksheets
-                    student_data = student_info.student_info.student_data
-                    print(student_info_dict)
-
-                    return render(request, 'student_cg_site/home/student.html', {'is_logged_in': True,'student_info': student_personal_info, 'student_data': student_data,'student_marksheets':student_marksheets})
+                    admin_dict = response.json()
+                    admin_info = AdminInfo.from_dict(admin_dict)
+                    
+                    return render(request, 'admin_cg_site/admin/admin.html', {
+                        'is_logged_in': True,
+                        'admin_info': admin_info,
+                    })
                 
-                
-                # Admin
             elif response.status_code == 401:
                 error_message = "Incorrect Password. Please try again."
                 return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
@@ -75,10 +75,42 @@ def admin(request):
     else:
         # Handle GET requests to the page
         return render(request, 'main_cg_site/auth/login.html')
+    
+
+def editStudent(request):
+    try:
+        # Get the ID from the request
+        id = request.GET.get('id')
+        student_url = f"http://127.0.0.1:8000/cg_api/students/{id}/"
+        marksheet_url = f"http://127.0.0.1:8000/cg_api/marksheets/{id}/"
+        student_data_url = f"http://127.0.0.1:8000/cg_api/student-data/{id}/"
+
+
+        student = requests.get(student_url)
+        marksheet_data = requests.get(marksheet_url)
+        student_data = requests.get(student_data_url)
+        print(student.json())
+        print(marksheet_data.json())
+        print(student_data.json)
+
+        student.raise_for_status()
+        marksheet_data.raise_for_status()
+        student_data.raise_for_status()
+
+        return render(request, 'admin_cg_site/admin/edit_student.html', {
+            'student': student.json(),
+            'student_data': student_data.json(),
+            'marksheet_data': marksheet_data.json(),
+        })
+    except requests.exceptions.RequestException as e:
+        print(f"Error: {e}")
+
+
 
 
 def home(request):
     return render(request, 'main_cg_site/home/index.html',)
+
 
 
 
@@ -88,9 +120,6 @@ def student(request):
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
 
-        print("==============================")
-        print(user_type)
-        
         print("Api Hit")
         api_url = "http://127.0.0.1:8000/cg_api/login/"
         payload = {"user_type": user_type, "username": enrollment_no, "password": password}
@@ -106,7 +135,6 @@ def student(request):
                     student_personal_info = student_info.student_info.student_personal_info
                     student_marksheets = student_info.student_info.student_marksheets
                     student_data = student_info.student_info.student_data
-                    print(student_info_dict)
 
                     return render(request, 'student_cg_site/home/student.html', {'is_logged_in': True,'student_info': student_personal_info, 'student_data': student_data,'student_marksheets':student_marksheets})
                 
