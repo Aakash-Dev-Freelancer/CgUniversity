@@ -15,18 +15,25 @@ from CG_International_University_App.models.admin_info import AdminInfo
 from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.contrib.auth import logout
+from django.conf import settings
+
 
 import requests
 # Home Page --------------------->
 
+
+
 def admin(request):
+    server = settings.SERVER_URL
+    local = settings.LOCAL_HOST
     if request.method == 'POST':
+
         username = request.POST.get('username')
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
 
         print("Api Hit")
-        api_url = "http://127.0.0.1:8000/cg_api/login/"
+        api_url = f"{local}cg_api/login/"
         payload = {"user_type": user_type, "username": username, "password": password}
 
         
@@ -78,12 +85,16 @@ def admin(request):
     
 
 def editStudent(request):
+    server = settings.SERVER_URL
+    local = settings.LOCAL_HOST
+
+
     try:
         # Get the ID from the request
         id = request.GET.get('id')
-        student_url = f"http://127.0.0.1:8000/cg_api/students/{id}/"
-        marksheet_url = f"http://127.0.0.1:8000/cg_api/marksheets/{id}/"
-        student_data_url = f"http://127.0.0.1:8000/cg_api/student-data/{id}/"
+        student_url = f"{local}cg_api/students/{id}/"
+        marksheet_url = f"{local}cg_api/marksheets/{id}/"
+        student_data_url = f"{local}cg_api/student-data/{id}/"
 
 
         student = requests.get(student_url)
@@ -115,13 +126,17 @@ def home(request):
 
 
 def student(request):
+    server = settings.SERVER_URL
+    local = settings.LOCAL_HOST
+
+
     if request.method == 'POST':
         enrollment_no = request.POST.get('username')
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
 
         print("Api Hit")
-        api_url = "http://127.0.0.1:8000/cg_api/login/"
+        api_url = f"{local}cg_api/login/"
         payload = {"user_type": user_type, "username": enrollment_no, "password": password}
         
         response = requests.post(api_url, data=payload)

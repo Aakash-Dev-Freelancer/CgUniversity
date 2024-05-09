@@ -1,16 +1,23 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Student</title>
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .container {
             margin-top: 60px;
             margin-bottom: 60px;
+        }
+
+        table {
+            font-size: smaller;
         }
     </style>
 </head>
@@ -180,7 +187,7 @@
                         </div>
                         <hr class="my-4">
 
-                        <button class="btn btn-primary" onclick="submitFunction()">Update</button>
+                        <button class="btn btn-primary" onclick="sendFormDataToAPI()">Update</button>
                         <button type="button" class="btn btn-secondary"
                             onclick="cancelUpdate('{{ student.enrollment_no }}')">Cancel</button>
                     </form>
@@ -222,6 +229,7 @@
             // Collect personal details
             var personalDetails = {
                 enrollment_no: document.querySelector('input[name="enrollment_no"]').value,
+                password: document.querySelector('input[name="date_of_birth"]').value,
                 full_name: document.querySelector('input[name="full_name"]').value,
                 father_name: document.querySelector('input[name="father_name"]').value,
                 mother_name: document.querySelector('input[name="mother_name"]').value,
@@ -234,9 +242,68 @@
 
             console.log(personalDetails);
 
-            // Collect marksheets data
-            // var marksheetData = [];
-            // var marksheetRows = document.querySelectorAll('.marksheet-row');
+        }
+
+        function sendFormDataToAPI() {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            var personalDetails = {
+                enrollment_no: document.querySelector('input[name="enrollment_no"]').value,
+                full_name: document.querySelector('input[name="full_name"]').value,
+                father_name: document.querySelector('input[name="father_name"]').value,
+                mother_name: document.querySelector('input[name="mother_name"]').value,
+                date_of_birth: document.querySelector('input[name="date_of_birth"]').value,
+                category: document.querySelector('input[name="category"]').value,
+                email: document.querySelector('input[name="email"]').value,
+                mobile_number: document.querySelector('input[name="mobile_number"]').value,
+                address: document.querySelector('textarea[name="address"]').value
+            };
+
+            fetch('http://54.242.171.194:8001/cg_api/students/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(personalDetails),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Handle API response
+                    console.log('Success:', data);
+                    // Optionally, redirect the user or show a success message
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    // Handle error
+                });
+        }
+
+        // Call the function to send data to the API
+        sendFormDataToAPI();
+
+
+        function createPayload() {
+            event.preventDefault();
+            sendFormDataToAPI();
+
+
+            // Collect marksheet details
+
+            var marksheet_data = [];
+            var document_uploads = {
+                migration: document.querySelector('input[name="migration"]').value,
+                provision: document.querySelector('input[name="provision"]').value,
+                affidevit: document.querySelector('input[name="affidevit"]').value,
+                admin_card: document.querySelector('input[name="admin_card"]').value
+            };
+            console.log(payload);
+
+            // var marksheetRows = document.querySelectorAll('.row');
             // marksheetRows.forEach(row => {
             //     var marksheet = {
             //         session: row.querySelector('input[name="session"]').value,
@@ -244,50 +311,18 @@
             //         sgpa: row.querySelector('input[name="sgpa"]').value,
             //         status: row.querySelector('input[name="status"]').value,
             //         result: row.querySelector('input[name="result"]').value,
-            //         // Include other marksheet details similarly...
+            //         file: row.querySelector('input[name="marksheet"]').value
             //     };
-            //     marksheetData.push(marksheet);
+            //     payload.marksheet_data.push(marksheet);
             // });
 
-            // // Collect document uploads
-            // var documentUploads = {
-            //     migration: document.querySelector('input[name="migration"]').value,
-            //     provision: document.querySelector('input[name="provision"]').value,
-            //     affidevit: document.querySelector('input[name="affidevit"]').value,
-            //     admin_card: document.querySelector('input[name="admin_card"]').value
-            // };
-
-            // // Construct the full JSON object
-            // var formData = {
-            //     personal_details: personalDetails,
-            //     marksheet_data: marksheetData,
-            //     document_uploads: documentUploads
-            // };
-
-            // // Send the form data to your API endpoint using fetch
-            // fetch('http://your-api-endpoint.com/edit_student', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //     },
-            //     body: JSON.stringify(formData),
-            // })
-            //     .then(response => {
-            //         if (!response.ok) {
-            //             throw new Error('Network response was not ok');
-            //         }
-            //         return response.json();
-            //     })
-            //     .then(data => {
-            //         // Handle API response
-            //         console.log('Success:', data);
-            //         // Optionally, redirect the user or show a success message
-            //     })
-            //     .catch(error => {
-            //         console.error('Error:', error);
-            //         // Handle error
-            //     });
+            return payload;
         }
+
+        // Example usage:
+        var payload = createPayload();
+        console.log(JSON.stringify(payload, null, 2));
+
 
     </script>
 

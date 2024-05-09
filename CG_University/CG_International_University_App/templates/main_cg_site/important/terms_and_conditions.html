@@ -1,73 +1,73 @@
 {% load static %} {% load livereload_tags %}
 <!DOCTYPE html>
 <html lang="en">
-  {% livereload_script %}
+{% livereload_script %}
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'main_css/style.css' %}" />
-    <link
-      rel="stylesheet"
-      href="{% static 'main_css/term_and_condition.css' %}"
-    />
-    <title>Terms And Conditions</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-      }
+<head>
+  <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
 
-      .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'main_css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'main_css/term_and_condition.css' %}" />
+  <title>Terms And Conditions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-      h1,
-      h2 {
-        text-align: center;
-      }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-      p {
-        line-height: 1.6;
-      }
+    h1,
+    h2 {
+      text-align: center;
+    }
 
-      .highlight {
-        font-weight: bold;
-        color: #4caf50;
-      }
-    </style>
-  </head>
+    p {
+      line-height: 1.6;
+    }
 
-  <body>
-    {% include 'main_cg_site/global/nav_bar.html' %}
-    <div class="background-image">
-      <div class="blurOverlay" style="padding: 80px">
-        <h1>CG INTERNATIONAL UNIVERSITY</h1>
-        <p>
-          CG INTERNATIONAL UNIVERSITY offers globally-accepted standards of
-          multiple educations in the field of Engineering, Computer Science,
-          Arts, Advertising, Dance, Digital Marketing, Fashion Design, Acting,
-          and Animation. As an industry pioneer, CG INTERNATIONAL UNIVERSITY
-          gives direction to its students to grow as professionals, handle
-          things with responsibility, and produce artwork that has a major
-          impact on our communities, our society, and the world.
-        </p>
-        <p>
-          CG INTERNATIONAL UNIVERSITY is a not-for-profit institute that is
-          underpinned by ethical professional and transparent e-governance,
-          involving the students and staff in the creation of a healthy,
-          vibrant, and sustainable society.
-        </p>
-      </div>
+    .highlight {
+      font-weight: bold;
+      color: #4caf50;
+    }
+  </style>
+</head>
+
+<body>
+  {% include 'main_cg_site/global/nav_bar.html' %}
+  <div class="background-image">
+    <div class="blurOverlay" style="padding: 80px">
+      <h1>CG INTERNATIONAL UNIVERSITY</h1>
+      <p>
+        CG INTERNATIONAL UNIVERSITY offers globally-accepted standards of
+        multiple educations in the field of Engineering, Computer Science,
+        Arts, Advertising, Dance, Digital Marketing, Fashion Design, Acting,
+        and Animation. As an industry pioneer, CG INTERNATIONAL UNIVERSITY
+        gives direction to its students to grow as professionals, handle
+        things with responsibility, and produce artwork that has a major
+        impact on our communities, our society, and the world.
+      </p>
+      <p>
+        CG INTERNATIONAL UNIVERSITY is a not-for-profit institute that is
+        underpinned by ethical professional and transparent e-governance,
+        involving the students and staff in the creation of a healthy,
+        vibrant, and sustainable society.
+      </p>
     </div>
-    {% include 'main_cg_site/global/footer.html' %}
-  </body>
+  </div>
+  {% include 'main_cg_site/global/footer.html' %}
+</body>
+
 </html>

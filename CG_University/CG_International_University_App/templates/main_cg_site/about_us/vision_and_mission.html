@@ -1,80 +1,80 @@
 {% load static %} {% load livereload_tags %}
 <!DOCTYPE html>
 <html lang="en">
-  {% livereload_script %}
+{% livereload_script %}
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'main_css/style.css' %}" />
-    <link
-      rel="stylesheet"
-      href="{% static 'main_css/vision_and_mission.css' %}"
-    />
-    <title>Vision And Mission</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-      }
+<head>
+  <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
 
-      .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'main_css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'main_css/vision_and_mission.css' %}" />
+  <title>Vision And Mission</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-      h1,
-      h2 {
-        text-align: center;
-      }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-      p {
-        line-height: 1.6;
-      }
-    </style>
-  </head>
+    h1,
+    h2 {
+      text-align: center;
+    }
 
-  <body>
-    {% include 'main_cg_site/global/nav_bar.html' %}
-    <div class="background-image">
-      <div class="blurOverlay" style="padding: 80px">
-        <h1>Vision And Mission</h1>
-        <p>
-          As enshrined in the University Act, the University aims to provide and
-          upgrade education, training, and research in fields of regular
-          education and technical education, and to create entrepreneurship and
-          a conducive environment for the pursuit of regular and technical
-          education in close cooperation with industries.
-        </p>
-        <p>
-          Further, as a very distinguishing feature of its vision, the
-          University aims to make provisions for the advancement of technical
-          education amongst classes and communities which are educationally
-          backward. To fulfill the above broad vision, the University develops
-          flexible and innovative academic programmes and procedures that cater
-          to a very broad range of students with different backgrounds and
-          prepares them to compete at the national and international levels.
-        </p>
-        <p>
-          In addition to the transmission of knowledge through a very
-          well-thought teaching pedagogy, the University lays a strong emphasis
-          on knowledge creation through a well-planned research programme in
-          emerging areas and application of knowledge by undertaking issues and
-          problems from the industry. Apart from academics, the University lays
-          a very strong emphasis on the overall development of a well-rounded
-          personality of its students with both professional and emotional
-          maturity to take up the challenges in their chosen profession and to
-          contribute to the development of society.
-        </p>
-      </div>
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  {% include 'main_cg_site/global/nav_bar.html' %}
+  <div class="background-image">
+    <div class="blurOverlay" style="padding: 80px">
+      <h1>Vision And Mission</h1>
+      <p>
+        As enshrined in the University Act, the University aims to provide and
+        upgrade education, training, and research in fields of regular
+        education and technical education, and to create entrepreneurship and
+        a conducive environment for the pursuit of regular and technical
+        education in close cooperation with industries.
+      </p>
+      <p>
+        Further, as a very distinguishing feature of its vision, the
+        University aims to make provisions for the advancement of technical
+        education amongst classes and communities which are educationally
+        backward. To fulfill the above broad vision, the University develops
+        flexible and innovative academic programmes and procedures that cater
+        to a very broad range of students with different backgrounds and
+        prepares them to compete at the national and international levels.
+      </p>
+      <p>
+        In addition to the transmission of knowledge through a very
+        well-thought teaching pedagogy, the University lays a strong emphasis
+        on knowledge creation through a well-planned research programme in
+        emerging areas and application of knowledge by undertaking issues and
+        problems from the industry. Apart from academics, the University lays
+        a very strong emphasis on the overall development of a well-rounded
+        personality of its students with both professional and emotional
+        maturity to take up the challenges in their chosen profession and to
+        contribute to the development of society.
+      </p>
     </div>
-    {% include 'main_cg_site/global/footer.html' %}
-  </body>
+  </div>
+  {% include 'main_cg_site/global/footer.html' %}
+</body>
+
 </html>

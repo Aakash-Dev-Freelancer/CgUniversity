@@ -6,6 +6,8 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
@@ -31,6 +33,12 @@
         .selected {
             background-color: rgba(255, 150, 13, 0.1);
         }
+
+        table,
+        select,
+        th {
+            font-size: smaller;
+        }
     </style>
 </head>
 
@@ -46,7 +54,8 @@
                     <tr>
                         <th style="width: 200px;">
                             Enrollment No.
-                            <select class="form-control" onchange="filterTable(0, this.value)">
+                            <select style="font-size: small;" class="form-control"
+                                onchange="filterTable(0, this.value)">
                                 <option value="">Filter</option>
                                 {% for data in admin_info.students|dictsort:"enrollment_no" %}
                                 <option>{{ data.enrollment_no }}</option>
@@ -54,7 +63,8 @@
                             </select>
                         </th>
                         <th>Name
-                            <select class=" form-control" onchange="filterTable(1, this.value)">
+                            <select style="font-size: small;" class=" form-control"
+                                onchange="filterTable(1, this.value)">
                                 <option value="">No filter</option>
                                 {% for data in admin_info.students %}
                                 <option>{{ data.full_name }}</option>
@@ -62,7 +72,8 @@
                             </select>
                         </th>
                         <th>Father Name
-                            <select class="form-control" onchange="filterTable(2, this.value)">
+                            <select style="font-size: small;" class="form-control"
+                                onchange="filterTable(2, this.value)">
                                 <option value="">Filter</option>
                                 {% for data in admin_info.students %}
                                 <option>{{ data.father_name }}</option>
@@ -70,7 +81,8 @@
                             </select>
                         </th>
                         <th>Mother Name
-                            <select class="form-control" onchange="filterTable(3, this.value)">
+                            <select style="font-size: small;" class="form-control"
+                                onchange="filterTable(3, this.value)">
                                 <option value="">Filter</option>
                                 {% for data in admin_info.students %}
                                 <option>{{ data.mother_name }}</option>
@@ -78,14 +90,16 @@
                             </select>
                         </th>
                         <th>Gender
-                            <select class="form-control" onchange="filterTable(4, this.value)">
+                            <select style="font-size: small;" class="form-control"
+                                onchange="filterTable(4, this.value)">
                                 <option value="">Filter</option>
                                 <option>Male</option>
                                 <option>Female</option>
                             </select>
                         </th>
                         <th>DOB
-                            <select class="form-control" onchange="filterTable(5, this.value)">
+                            <select style="font-size: small;" class="form-control"
+                                onchange="filterTable(5, this.value)">
                                 <option value="">Filter</option>
                                 {% for data in admin_info.students %}
                                 <option>{{ data.date_of_birth }}</option>
@@ -93,7 +107,8 @@
                             </select>
                         </th>
                         <th>Category
-                            <select class="form-control" onchange="filterTable(6, this.value)">
+                            <select style="font-size: small;" class="form-control"
+                                onchange="filterTable(6, this.value)">
                                 <option value="">Filter</option>
                                 {% for data in admin_info.students %}
                                 <option>{{ data.category }}</option>
@@ -101,7 +116,8 @@
                             </select>
                         </th>
                         <th>Email
-                            <select class="form-control" onchange="filterTable(7, this.value)">
+                            <select style="font-size: small;" class="form-control"
+                                onchange="filterTable(7, this.value)">
                                 <option value="">Filter</option>
                                 {% for data in admin_info.students %}
                                 <option>{{ data.email }}</option>
@@ -109,7 +125,8 @@
                             </select>
                         </th>
                         <th>Mobile No.
-                            <select class="form-control" onchange="filterTable(8, this.value)">
+                            <select style="font-size: small;" class="form-control"
+                                onchange="filterTable(8, this.value)">
                                 <option value="">Filter</option>
                                 {% for data in admin_info.students %}
                                 <option>{{ data.mobile_number }}</option>
@@ -117,7 +134,8 @@
                             </select>
                         </th>
                         <th>Address
-                            <select class="form-control" onchange="filterTable(9, this.value)">
+                            <select style="font-size: small;" class="form-control"
+                                onchange="filterTable(9, this.value)">
                                 <option value="">Filter</option>
                                 {% for data in admin_info.students %}
                                 <option>{{ data.address }}</option>

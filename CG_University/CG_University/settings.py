@@ -13,10 +13,15 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 LIVERELOAD_PORT = 9000
 # LIVERELOAD_HOST = '127.0.0.1'
+
+
+LOCAL_HOST = 'http://127.0.0.1:8000/'
+SERVER_URL = 'http://54.242.171.194:8001/'
 
 
 # Quick-start development settings - unsuitable for production
@@ -33,7 +38,8 @@ ALLOWED_HOSTS = ["*"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8001",
-    # Add any other origins you want to allow here
+    "http://127.0.0.1:8000",
+    
 ]
 
 MEDIA_URL = '/media/'
@@ -87,6 +93,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.static',
             ],
         },
     },

@@ -4,7 +4,7 @@ from django.db import models
 class Student(models.Model):
     password = models.CharField(max_length=100, null=False)
     enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)
-    profile_pic = models.CharField(max_length=100)
+    # profile_pic = models.CharField(max_length=100)
     full_name = models.CharField(max_length=100, null=False)
     father_name = models.CharField(max_length=100)
     mother_name = models.CharField(max_length=100)
