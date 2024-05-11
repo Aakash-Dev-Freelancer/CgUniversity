@@ -50,7 +50,8 @@ def admin(request):
                     return render(request, 'admin_cg_site/admin/admin.html', {
                         'is_logged_in': True,
                         'admin_info': admin_info,
-                        'base_url': BASE_URL
+                        'base_url': BASE_URL,
+                        'api_url': API_URL,
                     })
                 
             elif response.status_code == 401:
@@ -116,7 +117,6 @@ def editStudent(request):
             'is_logged_in': True,
             'base_url': BASE_URL,
             'api_url':API_URL
-            
         })
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")

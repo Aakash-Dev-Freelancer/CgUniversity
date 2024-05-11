@@ -4,7 +4,9 @@ from .models import Student, StudentData, MarkSheets
 from rest_framework.decorators import api_view
 from .serializers import MarkSheetSerializer
 from rest_framework.exceptions import ValidationError, NotFound
-# from rest_framework.exceptions import 
+from rest_framework.permissions import IsAuthenticated
+
+
 from .serializers import StudentSerializer, StudentLoginSerializer, StudentDataSerializer, AdminLoginSerializer
 from .models import AdminLogin
 
@@ -12,6 +14,7 @@ from .models import AdminLogin
 class StudentListCreate(generics.ListCreateAPIView):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
+    # permission_classes = [IsAuthenticated]
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
@@ -38,6 +41,7 @@ class StudentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
 class StudentLoginAPIView(generics.CreateAPIView):
     serializer_class = StudentLoginSerializer
     admin_serializer_class = AdminLoginSerializer
+    # permission_classes = [IsAuthenticated]
 
     def create(self, request, *args, **kwargs):
         username = request.data.get('username')
@@ -96,10 +100,11 @@ class StudentLoginAPIView(generics.CreateAPIView):
             print("Server Error:", e)
             return Response({'error': 'Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
- 
+
 class StudentDataListCreateAPIView(generics.ListCreateAPIView):
     queryset = StudentData.objects.all()
     serializer_class = StudentDataSerializer
+    # permission_classes = [IsAuthenticated]
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
@@ -112,6 +117,7 @@ class StudentDataRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIV
     queryset = StudentData.objects.all()
     serializer_class = StudentDataSerializer
     lookup_field = 'student_enrollment_no'
+    # permission_classes = [IsAuthenticated]
 
     def retrieve(self, request, *args, **kwargs):
         enrollment_no = kwargs.get('student_enrollment_no')
