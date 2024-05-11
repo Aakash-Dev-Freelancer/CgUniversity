@@ -5,3 +5,4 @@
 /.vscode-insiders
 /CG_Env/Scripts/python.exe
 /CG_University/db.sqlite3
+.env

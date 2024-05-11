@@ -34,6 +34,18 @@
             background-color: rgba(255, 150, 13, 0.1);
         }
 
+        .add-button-container {
+            position: relative;
+        }
+
+        .add-button {
+            position: absolute;
+            top: 10px;
+            /* Adjust as needed */
+            right: 10px;
+            /* Adjust as needed */
+        }
+
         table,
         select,
         th {
@@ -45,140 +57,272 @@
 <body>
 
     <div class="p-5">
-        <h1>Welcome, {{ admin_info.name }}</h1>
+        <div style="display: flex;
+                flex-direction: row;
+                justify-content: space-between;">
+            <h1>Welcome, {{ admin_info.name }}</h1>
+            <button type="button" class="btn btn-primary" style="margin: 10px;" data-toggle="modal"
+                data-target="#editModal">
+                Edit Student
+            </button>
 
-        {% if is_logged_in %}
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped ">
-                <thead class="thead-dark">
-                    <tr>
-                        <th style="width: 200px;">
-                            Enrollment No.
-                            <select style="font-size: small;" class="form-control"
-                                onchange="filterTable(0, this.value)">
-                                <option value="">Filter</option>
-                                {% for data in admin_info.students|dictsort:"enrollment_no" %}
-                                <option>{{ data.enrollment_no }}</option>
-                                {% endfor %}
-                            </select>
-                        </th>
-                        <th>Name
-                            <select style="font-size: small;" class=" form-control"
-                                onchange="filterTable(1, this.value)">
-                                <option value="">No filter</option>
-                                {% for data in admin_info.students %}
-                                <option>{{ data.full_name }}</option>
-                                {% endfor %}
-                            </select>
-                        </th>
-                        <th>Father Name
-                            <select style="font-size: small;" class="form-control"
-                                onchange="filterTable(2, this.value)">
-                                <option value="">Filter</option>
-                                {% for data in admin_info.students %}
-                                <option>{{ data.father_name }}</option>
-                                {% endfor %}
-                            </select>
-                        </th>
-                        <th>Mother Name
-                            <select style="font-size: small;" class="form-control"
-                                onchange="filterTable(3, this.value)">
-                                <option value="">Filter</option>
-                                {% for data in admin_info.students %}
-                                <option>{{ data.mother_name }}</option>
-                                {% endfor %}
-                            </select>
-                        </th>
-                        <th>Gender
-                            <select style="font-size: small;" class="form-control"
-                                onchange="filterTable(4, this.value)">
-                                <option value="">Filter</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                            </select>
-                        </th>
-                        <th>DOB
-                            <select style="font-size: small;" class="form-control"
-                                onchange="filterTable(5, this.value)">
-                                <option value="">Filter</option>
-                                {% for data in admin_info.students %}
-                                <option>{{ data.date_of_birth }}</option>
-                                {% endfor %}
-                            </select>
-                        </th>
-                        <th>Category
-                            <select style="font-size: small;" class="form-control"
-                                onchange="filterTable(6, this.value)">
-                                <option value="">Filter</option>
-                                {% for data in admin_info.students %}
-                                <option>{{ data.category }}</option>
-                                {% endfor %}
-                            </select>
-                        </th>
-                        <th>Email
-                            <select style="font-size: small;" class="form-control"
-                                onchange="filterTable(7, this.value)">
-                                <option value="">Filter</option>
-                                {% for data in admin_info.students %}
-                                <option>{{ data.email }}</option>
-                                {% endfor %}
-                            </select>
-                        </th>
-                        <th>Mobile No.
-                            <select style="font-size: small;" class="form-control"
-                                onchange="filterTable(8, this.value)">
-                                <option value="">Filter</option>
-                                {% for data in admin_info.students %}
-                                <option>{{ data.mobile_number }}</option>
-                                {% endfor %}
-                            </select>
-                        </th>
-                        <th>Address
-                            <select style="font-size: small;" class="form-control"
-                                onchange="filterTable(9, this.value)">
-                                <option value="">Filter</option>
-                                {% for data in admin_info.students %}
-                                <option>{{ data.address }}</option>
-                                {% endfor %}
-                            </select>
-                        </th>
-                        <th>View/Edit</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for data in admin_info.students %}
-                    <tr>
-                        <td>{{ data.enrollment_no }}</td>
-                        <td>{{ data.full_name }}</td>
-                        <td>{{ data.father_name }}</td>
-                        <td>{{ data.mother_name }}</td>
-                        <td>{{ data.gender }}</td>
-                        <td>{{ data.date_of_birth }}</td>
-                        <td>{{ data.category }}</td>
-                        <td>{{ data.email }}</td>
-                        <td>{{ data.mobile_number }}</td>
-                        <td>{{ data.address }}</td>
-                        <td>
-                            <a class="btn btn-primary"
-                                href="{% url 'edit-student'  %}?id={{ data.enrollment_no }}">Edit</a>
-                        </td>
-                    </tr>
 
-                    {% endfor %}
-                </tbody>
-            </table>
-
-            <div class=" text-center">
-                <button class="btn btn-custom" onclick="prevPage()">Previous</button>
-                <span id="page-numbers"></span>
-                <button class="btn btn-custom" onclick="nextPage()">Next</button>
-            </div>
         </div>
 
+        {% if is_logged_in %}
 
-        {% else %}
-        <p>Please log in to view the content.</p>
-        {% endif %}
+        <table class="table table-bordered table-striped ">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 200px;">
+                        Enrollment No.
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(0, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students|dictsort:"enrollment_no" %}
+                            <option>{{ data.enrollment_no }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Name
+                        <select style="font-size: small;" class=" form-control" onchange="filterTable(1, this.value)">
+                            <option value="">No filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.full_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Father Name
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(2, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.father_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Mother Name
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(3, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.mother_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Gender
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(4, this.value)">
+                            <option value="">Filter</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </th>
+                    <th>DOB
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(5, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.date_of_birth }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Category
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(6, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.category }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Email
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(7, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.email }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Mobile No.
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(8, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.mobile_number }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Address
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(9, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.address }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>View/Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in admin_info.students %}
+                <tr>
+                    <td>{{ data.enrollment_no }}</td>
+                    <td>{{ data.full_name }}</td>
+                    <td>{{ data.father_name }}</td>
+                    <td>{{ data.mother_name }}</td>
+                    <td>{{ data.gender }}</td>
+                    <td>{{ data.date_of_birth }}</td>
+                    <td>{{ data.category }}</td>
+                    <td>{{ data.email }}</td>
+                    <td>{{ data.mobile_number }}</td>
+                    <td>{{ data.address }}</td>
+                    <td>
+                        <a class="btn btn-primary" href="{% url 'edit-student'  %}?id={{ data.enrollment_no }}">Edit</a>
+                    </td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class=" text-center">
+            <button class="btn btn-custom" onclick="prevPage()">Previous</button>
+            <span id="page-numbers"></span>
+            <button class="btn btn-custom" onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+
+    {% else %}
+    <p>Please log in to view the content.</p>
+    {% endif %}
+    </div>
+
+
+    <!-- Pop Up -->
+
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+        aria-hidden="true">
+        <div class="container" style="margin-top: 60px;margin-bottom: 60px">
+            <div id="edit_card_{{ student.enrollment_no }}" style="display: block;">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        Add Student
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="enrollment_no" value="{{ student.enrollment_no }}">
+                            <h2>Personal Details</h2>
+                            <hr class="my-4">
+
+                            <div class="divider w-100%"></div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="full_name">Full Name</label>
+                                        <input type="text" class="form-control" id="full_name" name="full_name"
+                                            value="{{ student.full_name }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="father_name">Father's Name</label>
+                                        <input type="text" class="form-control" id="father_name" name="father_name"
+                                            value="{{ student.father_name }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mother_name">Mother's Name</label>
+                                        <input type="text" class="form-control" id="mother_name" name="mother_name"
+                                            value="{{ student.mother_name }}">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="date_of_birth">Date of Birth</label>
+                                        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth"
+                                            value="{{ student.date_of_birth }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="category">Category</label>
+                                        <input type="text" class="form-control" id="category" name="category"
+                                            value="{{ student.category }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            value="{{ student.email }}">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="mobile_number">Mobile Number</label>
+                                        <input type="tel" class="form-control" id="mobile_number" name="mobile_number"
+                                            value="{{ student.mobile_number }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <textarea class="form-control" id="address" name="address"
+                                            rows="3">{{ student.address }}</textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="gender">Gender</label>
+                                        <input type="text" class="form-control" id="gender" name="gender"
+                                            value="{{ student.gender }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <h2>Documents</h2>
+
+                            <hr class="my-4">
+
+                            <h3>Marksheets</h3>
+                            <div id="marksheetList">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <img src="{{ student_data.student_migration.url }}" class="w-20% rounded p-1"
+                                            style="width: 25%; " alt="">
+                                        <label for="migration">Migration Upload</label>
+                                        <input type="file" class="form-control-file" id="migration" name="migration">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <img src="{{ student_data.student_provision.url }}" class="w-20% rounded p-1"
+                                            style="width: 25%; " alt="">
+                                        <label for="provision">Provision Upload</label>
+                                        <input type="file" class="form-control-file" id="provision" name="provision">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <img src="{{ student_data.student_affidevit }}" class="w-20% rounded p-1"
+                                            style="width: 25%; " alt="">
+                                        <label for="affidevit">Affidevit Upload</label>
+                                        <input type="file" class="form-control-file" id="affidevit" name="affidevit">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+
+                                        <img src="{{ student_data.student_admit_card }}" class="w-20% rounded p-1"
+                                            style="width: 25%; " alt="">
+                                        <label for="admin_card">Admit Card Upload</label>
+                                        <input type="file" class="form-control-file" id="admin_card" name="admin_card">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+
+                            <button class="btn btn-primary" onclick="sendFormDataToAPI()">Update</button>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="cancelUpdate('{{ student.enrollment_no }}')">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -186,6 +330,64 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            addMarkSheet();
+        });
+
+        function addMarkSheet() {
+            var marksheetList = document.getElementById("marksheetList");
+            if (!marksheetList) {
+                console.error("Element with id 'marksheetList' not found.");
+                return;
+            }
+
+            var newMarkSheetDiv = document.createElement("div");
+            newMarkSheetDiv.className = "row mb-3";
+
+            newMarkSheetDiv.innerHTML = `
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="session">Session</label>
+                <input type="text" class="form-control" name="session" placeholder="Enter Session">
+            </div>
+            <div class="form-group">
+                <label for="semester">Semester</label>
+                <input type="text" class="form-control" name="semester" placeholder="Enter Semester">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="sgpa">SGPA</label>
+                <input type="text" class="form-control" name="sgpa" placeholder="Enter SGPA">
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" name="status" placeholder="Enter Status">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="result">Result</label>
+                <input type="text" class="form-control" name="result" placeholder="Enter Result">
+            </div>
+            <div class="form-group d-block">
+                <label for="marksheet">Marksheet Upload</label>
+                <input type="file" class="form-control-file" name="marksheet">
+            </div>
+            <button class="btn btn-danger" onclick="removeMarkSheet(this)">Remove</button>
+            <button class="btn btn-primary" onclick="addMarkSheet(this)">Add Marksheet</button>
+        </div>
+    `;
+
+            // Append the new marksheet div to the marksheetList
+            marksheetList.appendChild(newMarkSheetDiv);
+        }
+
+
+        function removeMarkSheet(button) {
+            var marksheetDiv = button.parentElement.parentElement;
+            marksheetDiv.remove();
+        }
 
 
         function filterTable(columnIndex, filterValue) {

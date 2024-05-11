@@ -12,40 +12,47 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+BASE_URL = os.getenv('BASE_URL')
+API_URL = os.getenv('API_URL')
+
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 LIVERELOAD_PORT = 9000
-# LIVERELOAD_HOST = '127.0.0.1'
 
 
-LOCAL_HOST = 'http://127.0.0.1:8000/'
-SERVER_URL = 'http://54.242.171.194:8001/'
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-)k_$7n&&_3tbf9mdt64!mnk#xewq$4#xc3^k7&9*@)#vrww9f2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in']
+
+
+
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8001",
-    "http://127.0.0.1:8000",
-    
+    "https://cginternationaluniversity.in",
 ]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Application definition
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -78,6 +85,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'livereload.middleware.LiveReloadScript',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'CG_University.urls'
@@ -93,7 +101,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.static',
             ],
         },
     },
@@ -146,8 +153,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATIC_URL = 'static/'
+STATIC_URL = os.getenv('STATIC_URL')
 
 
 # Default primary key field type

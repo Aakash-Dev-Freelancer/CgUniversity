@@ -1,15 +1,10 @@
 from django.shortcuts import render
 import json
 
-# from .models import Courses
 from CG_International_University_App.models.student import StudentInformation
 from CG_International_University_App.models.courses import Courses
 from CG_International_University_App.models.admin_info import AdminInfo
-# from django.core.serializers import serialize
-
-# from cgapp.models import Student, StudentData, MarkSheets
-# from cgapp.serializers import StudentSerializer,MarkSheetSerializer,StudentDataSerializer
-
+from django.views.decorators.csrf import csrf_protect 
 
 
 from django.http import HttpResponse
@@ -17,29 +12,33 @@ from django.shortcuts import redirect
 from django.contrib.auth import logout
 from django.conf import settings
 
-
 import requests
-# Home Page --------------------->
 
-
-
+@csrf_protect
 def admin(request):
-    server = settings.SERVER_URL
-    local = settings.LOCAL_HOST
+    print('---------------- Admin Function View ---------------- ')
+
+    API_URL = settings.API_URL
+    BASE_URL = settings.BASE_URL
     if request.method == 'POST':
 
         username = request.POST.get('username')
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
+        csrf_token = request.POST.get('csrfmiddlewaretoken')
+        print(csrf_token)
 
-        print("Api Hit")
-        api_url = f"{local}cg_api/login/"
-        payload = {"user_type": user_type, "username": username, "password": password}
-
+        # print("Api Hit")
+        api_url = f"{API_URL}login/"
+        payload = {
+            "user_type": user_type,
+            "username": username,
+            "password": password,
+            'base_url': BASE_URL,
+            'X-CSRFToken': csrf_token
+        }
         
-        response = requests.post(api_url, data=payload)
-        print(response.json())
-        # print(response.json())
+        response = requests.post(api_url, data=payload,)
         json_encoded = json.dumps(response.json())
 
             
@@ -51,6 +50,7 @@ def admin(request):
                     return render(request, 'admin_cg_site/admin/admin.html', {
                         'is_logged_in': True,
                         'admin_info': admin_info,
+                        'base_url': BASE_URL
                     })
                 
             elif response.status_code == 401:
@@ -81,20 +81,21 @@ def admin(request):
 
     else:
         # Handle GET requests to the page
-        return render(request, 'main_cg_site/auth/login.html')
+        return render(request, 'main_cg_site/auth/login.html',)
     
-
+@csrf_protect
 def editStudent(request):
-    server = settings.SERVER_URL
-    local = settings.LOCAL_HOST
+    print('---------------- Edit Student Function View ---------------- ')
 
+    API_URL = settings.API_URL
+    BASE_URL = settings.BASE_URL
 
     try:
         # Get the ID from the request
         id = request.GET.get('id')
-        student_url = f"{local}cg_api/students/{id}/"
-        marksheet_url = f"{local}cg_api/marksheets/{id}/"
-        student_data_url = f"{local}cg_api/student-data/{id}/"
+        student_url = f"{API_URL}students/{id}/"
+        marksheet_url = f"{API_URL}marksheets/{id}/"
+        student_data_url = f"{API_URL}student-data/{id}/"
 
 
         student = requests.get(student_url)
@@ -112,6 +113,10 @@ def editStudent(request):
             'student': student.json(),
             'student_data': student_data.json(),
             'marksheet_data': marksheet_data.json(),
+            'is_logged_in': True,
+            'base_url': BASE_URL,
+            'api_url':API_URL
+            
         })
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
@@ -120,23 +125,23 @@ def editStudent(request):
 
 
 def home(request):
-    return render(request, 'main_cg_site/home/index.html',)
+    BASE_URL = settings.BASE_URL
+    return render(request, 'main_cg_site/home/index.html', {'base_url': BASE_URL})
 
-
-
-
+@csrf_protect
 def student(request):
-    server = settings.SERVER_URL
-    local = settings.LOCAL_HOST
-
+    print('---------------- Student Function View ---------------- ')
+    API_URL = settings.API_URL
+    BASE_URL = settings.BASE_URL
 
     if request.method == 'POST':
         enrollment_no = request.POST.get('username')
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
+        
 
         print("Api Hit")
-        api_url = f"{local}cg_api/login/"
+        api_url = f"{API_URL}login/"
         payload = {"user_type": user_type, "username": enrollment_no, "password": password}
         
         response = requests.post(api_url, data=payload)
@@ -151,7 +156,14 @@ def student(request):
                     student_marksheets = student_info.student_info.student_marksheets
                     student_data = student_info.student_info.student_data
 
-                    return render(request, 'student_cg_site/home/student.html', {'is_logged_in': True,'student_info': student_personal_info, 'student_data': student_data,'student_marksheets':student_marksheets})
+                    return render(request, 'student_cg_site/home/student.html', {
+                        'is_logged_in': True,
+                        'student_info': student_personal_info, 
+                        'student_data': student_data,
+                        'student_marksheets':student_marksheets, 
+                        'base_url': BASE_URL
+                        }
+                    )
                 
                 
                 # Admin
@@ -250,7 +262,7 @@ def approval(request):
 def contact(request):
     return render(request, 'main_cg_site/contact/contact.html')
 
-
+@csrf_protect
 def logout_view(request):
     print("------------------------------------")
     logout(request)

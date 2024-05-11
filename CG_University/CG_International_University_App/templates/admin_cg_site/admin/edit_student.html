@@ -26,6 +26,7 @@
 
     {% include 'main_cg_site/global/nav_bar.html' %}
 
+
     <div class="container">
         <h1>Edit Student {{data.enrollment_no}}</h1>
         <div id="edit_card_{{ student.enrollment_no }}" style="display: block;">
@@ -34,7 +35,7 @@
                     Update Student Details
                 </div>
                 <div class="card-body">
-                    <form method="POST">
+                    <form method="post">
                         {% csrf_token %}
                         <input type="hidden" name="enrollment_no" value="{{ student.enrollment_no }}">
                         <h2>Personal Details</h2>
@@ -86,6 +87,11 @@
                                     <label for="address">Address</label>
                                     <textarea class="form-control" id="address" name="address"
                                         rows="3">{{ student.address }}</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <input type="text" class="form-control" id="gender" name="gender"
+                                        value="{{ student.gender }}">
                                 </div>
                             </div>
                         </div>
@@ -207,7 +213,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img src="{{ student_data.student_provision }}" class="img-fluid" alt="Preview Image">
+                    <img src="{{ student_data.student_provision.url }}" class="img-fluid" alt="Preview Image">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -224,9 +230,7 @@
         }
 
         function submitFunction() {
-            event.preventDefault(); // Prevent the default form submission behavior
-
-            // Collect personal details
+            event.preventDefault();
             var personalDetails = {
                 enrollment_no: document.querySelector('input[name="enrollment_no"]').value,
                 password: document.querySelector('input[name="date_of_birth"]').value,
@@ -239,30 +243,62 @@
                 category: document.querySelector('input[name="category"]').value,
                 address: document.querySelector('input[name="address"]').value,
             };
-
             console.log(personalDetails);
+        }
 
+        function getCookie(name) {
+            let cookieValue = null;
+
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
         }
 
         function sendFormDataToAPI() {
-            event.preventDefault(); // Prevent the default form submission behavior
+            event.preventDefault();
+            var apiUrl = "{{ api_url }}";
 
-            var personalDetails = {
-                enrollment_no: document.querySelector('input[name="enrollment_no"]').value,
+            console.log(apiUrl);
+
+            const enrollment_no = document.querySelector('input[name="enrollment_no"]').value;
+            let password = document.querySelector('input[name="date_of_birth"]').value;
+            let cleanPassword = date.replace(/-/g, "");
+            const url = `${apiUrl}students/${enrollment_no}/`;
+
+            const personalDetails = {
+                username: document.querySelector('input[name="enrollment_no"]').value,
+                password: cleanPassword,
+                enrollment_no: enrollment_no,
                 full_name: document.querySelector('input[name="full_name"]').value,
                 father_name: document.querySelector('input[name="father_name"]').value,
                 mother_name: document.querySelector('input[name="mother_name"]').value,
+                gender: document.querySelector('input[name="gender"]').value,
                 date_of_birth: document.querySelector('input[name="date_of_birth"]').value,
                 category: document.querySelector('input[name="category"]').value,
                 email: document.querySelector('input[name="email"]').value,
                 mobile_number: document.querySelector('input[name="mobile_number"]').value,
                 address: document.querySelector('textarea[name="address"]').value
             };
+            const csrftoken = getCookie('csrftoken');
 
-            fetch('http://54.242.171.194:8001/cg_api/students/', {
-                method: 'POST',
+            fetch(url, {
+                method: 'PUT',
+                credentials: 'include',
+
+                mode: 'same-origin',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'X-CSRFToken': csrftoken
+
                 },
                 body: JSON.stringify(personalDetails),
             })
@@ -273,26 +309,16 @@
                     return response.json();
                 })
                 .then(data => {
-                    // Handle API response
                     console.log('Success:', data);
-                    // Optionally, redirect the user or show a success message
                 })
                 .catch(error => {
                     console.error('Error:', error);
-                    // Handle error
                 });
         }
-
-        // Call the function to send data to the API
-        sendFormDataToAPI();
 
 
         function createPayload() {
             event.preventDefault();
-            sendFormDataToAPI();
-
-
-            // Collect marksheet details
 
             var marksheet_data = [];
             var document_uploads = {

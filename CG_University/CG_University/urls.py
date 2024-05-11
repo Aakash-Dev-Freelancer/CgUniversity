@@ -21,6 +21,6 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cg_site/', include('CG_International_University_App.urls')),
+    path('', include('CG_International_University_App.urls')),
     path('cg_api/', include('cgapp.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

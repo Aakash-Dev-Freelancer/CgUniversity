@@ -103,7 +103,6 @@ class StudentMarksheet:
 class StudentPersonalInfo:
     enrollment_no: str
     password: int
-    profile_pic: int
     full_name: str
     father_name: str
     mother_name: str
@@ -119,7 +118,6 @@ class StudentPersonalInfo:
         assert isinstance(obj, dict)
         enrollment_no = from_str(obj.get("enrollment_no"))
         password = int(from_str(obj.get("password")))
-        profile_pic = int(from_str(obj.get("profile_pic")))
         full_name = from_str(obj.get("full_name"))
         father_name = from_str(obj.get("father_name"))
         mother_name = from_str(obj.get("mother_name"))
@@ -129,13 +127,12 @@ class StudentPersonalInfo:
         email = from_str(obj.get("email"))
         mobile_number = from_str(obj.get("mobile_number"))
         address = from_str(obj.get("address"))
-        return StudentPersonalInfo(enrollment_no, password, profile_pic, full_name, father_name, mother_name, gender, date_of_birth, category, email, mobile_number, address)
+        return StudentPersonalInfo(enrollment_no, password, full_name, father_name, mother_name, gender, date_of_birth, category, email, mobile_number, address)
 
     def to_dict(self) -> dict:
         result: dict = {}
         result["enrollment_no"] = from_str(self.enrollment_no)
         result["password"] = from_str(str(self.password))
-        result["profile_pic"] = from_str(str(self.profile_pic))
         result["full_name"] = from_str(self.full_name)
         result["father_name"] = from_str(self.father_name)
         result["mother_name"] = from_str(self.mother_name)
