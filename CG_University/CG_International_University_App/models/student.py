@@ -37,7 +37,6 @@ class StudentData:
     student_provision: str
     student_admit_card: str
     student_affidevit: str
-    student_photo: str
     student_migrations: str
 
     @staticmethod
@@ -47,9 +46,9 @@ class StudentData:
         student_provision = from_str(obj.get("student_provision"))
         student_admit_card = from_str(obj.get("student_admit_card"))
         student_affidevit = from_str(obj.get("student_affidevit"))
-        student_photo = from_str(obj.get("student_photo"))
+        # student_photo = from_str(obj.get("student_photo"))
         student_migrations = from_str(obj.get("student_migrations"))
-        return StudentData(student_enrollment_no, student_provision, student_admit_card, student_affidevit, student_photo, student_migrations)
+        return StudentData(student_enrollment_no, student_provision, student_admit_card, student_affidevit, student_migrations)
 
     def to_dict(self) -> dict:
         result: dict = {}
@@ -57,7 +56,7 @@ class StudentData:
         result["student_provision"] = from_str(self.student_provision)
         result["student_admit_card"] = from_str(self.student_admit_card)
         result["student_affidevit"] = from_str(self.student_affidevit)
-        result["student_photo"] = from_str(self.student_photo)
+        # result["student_photo"] = from_str(self.student_photo)
         result["student_migrations"] = from_str(self.student_migrations)
         return result
 

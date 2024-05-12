@@ -61,7 +61,7 @@
                 flex-direction: row;
                 justify-content: space-between;">
             <h1>Welcome, {{ admin_info.name }}</h1>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal">
+            <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#editModal">
                 Add Student
             </button>
         </div>
@@ -307,7 +307,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="extractAndDisplayData()">Update</button>
+                    <button type="button" class="btn btn-primary" onclick="extractAndDisplayData()"
+                        data-dismiss="modal">Update</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
@@ -410,9 +411,6 @@
             };
 
 
-            console.log("Student Data:", studentData);
-            console.log("Student Details:", studentDetails);
-            console.log("Marksheet Data:", marksheetData);
 
 
             // console.log(apiUrl);
@@ -421,44 +419,40 @@
             var studentDataUrl = "{{ api_url }}student-data/"
 
 
-            fetch(studentUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(studentData),
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Response from server:', data);
-                })
-                .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                });
+            // fetch(studentUrl, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify(studentData),
+            // })
+            //     .then(response => {
+            //         if (!response.ok) {
+            //             throw new Error('Network response was not ok');
+            //         }
+            //         return response.json();
+            //     })
+            //     .then(data => {
+            //         console.log('Response from server:', data);
+            //     })
+            //     .catch(error => {
+            //         console.error('There was a problem with the fetch operation:', error);
+            //     });
 
             var marksheetData = [];
             var marksheetRows = document.querySelectorAll('.marksheets-class');
-            for (let i = 1; i < marksheetRows.length; i++) {
-                console.log('session-' + i);
-                marksheetRows.forEach(function (row) {
-                    marksheetData.push({
-                        "student_enrollment_no": document.querySelector('#enrollment_no').value,
-                        "session": document.querySelector('#session-' + i).value,
-                        "semester": document.querySelector('#semester-' + i).value,
-                        "sgpa": document.querySelector('#sgpa-' + i).value,
-                        "status": document.querySelector('#status-' + i).value,
-                        "result": document.querySelector('#result-' + i).value,
-                        "file": document.querySelector('#file-' + i).files[0],
-                    });
-                    console.log("MarkSheet Data:", marksheetData);
+            console.log(marksheetRows.length);
+            for (let i = 0; i < marksheetRows.length; i++) {
+                marksheetData.push({
+                    "student_enrollment_no": document.querySelector('#enrollment_no').value,
+                    "session": document.querySelector('#session-' + (i + 1)).value,
+                    "semester": document.querySelector('#semester-' + (i + 1)).value,
+                    "sgpa": document.querySelector('#sgpa-' + (i + 1)).value,
+                    "status": document.querySelector('#status-' + (i + 1)).value,
+                    "result": document.querySelector('#result-' + (i + 1)).value,
+                    "file": document.querySelector('#file-' + (i + 1)).files[0],
                 });
             }
-
 
             const marksheetFormData = new FormData();
 
@@ -471,6 +465,11 @@
                 marksheetFormData.append('result', data.result);
                 marksheetFormData.append('file', data.file);
             });
+
+            console.log(marksheetFormData);
+            console.log("Student Data:", studentData);
+            console.log("Student Details:", studentDetails);
+            console.log("Marksheet Data:", marksheetData);
 
             fetch(markSheetUrl, {
                 method: 'POST',
@@ -504,22 +503,23 @@
             formDetails.append('student_affidevit', student_affidevit);
             formDetails.append('student_migrations', student_migrations);
 
-            fetch(studentDataUrl, {
-                method: 'POST',
-                body: formDetails,
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Response from server:', data);
-                })
-                .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                });
+            // fetch(studentDataUrl, {
+            //     method: 'POST',
+            //     body: formDetails,
+            // })
+            //     .then(response => {
+            //         if (!response.ok) {
+            //             throw new Error('Network response was not ok');
+            //         }
+            //         return response.json();
+            //     })
+            //     .then(data => {
+            //         console.log('Response from server:', data);
+            //     })
+            //     .catch(error => {
+            //         console.error('There was a problem with the fetch operation:', error);
+            //     });
+
 
         }
 

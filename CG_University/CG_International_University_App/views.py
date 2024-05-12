@@ -4,7 +4,8 @@ import json
 from CG_International_University_App.models.student import StudentInformation
 from CG_International_University_App.models.courses import Courses
 from CG_International_University_App.models.admin_info import AdminInfo
-from django.views.decorators.csrf import csrf_protect 
+from cgapp.models import MarkSheets
+from django.views.decorators.csrf import csrf_protect
 
 
 from django.http import HttpResponse
@@ -20,6 +21,8 @@ def admin(request):
 
     API_URL = settings.API_URL
     BASE_URL = settings.BASE_URL
+
+    
     if request.method == 'POST':
 
         username = request.POST.get('username')
@@ -28,7 +31,6 @@ def admin(request):
         csrf_token = request.POST.get('csrfmiddlewaretoken')
         print(csrf_token)
 
-        # print("Api Hit")
         api_url = f"{API_URL}login/"
         payload = {
             "user_type": user_type,
@@ -37,11 +39,9 @@ def admin(request):
             'base_url': BASE_URL,
             'X-CSRFToken': csrf_token
         }
-        
-        response = requests.post(api_url, data=payload,)
+        response = requests.post(api_url, data=payload)
         json_encoded = json.dumps(response.json())
 
-            
         try:
             if response.status_code == 200:
                     admin_dict = response.json()
@@ -117,6 +117,7 @@ def editStudent(request):
             'is_logged_in': True,
             'base_url': BASE_URL,
             'api_url':API_URL
+            
         })
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")

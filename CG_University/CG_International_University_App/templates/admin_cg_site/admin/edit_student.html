@@ -154,7 +154,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <img src="{{ student_data.student_migration.url }}" class="w-20% rounded p-1"
+                                    <img src="{{ student_data.student_migrations }}" class="w-20% rounded p-1"
                                         style="width: 25%; " alt="">
                                     <label for="migration">Migration Upload</label>
                                     <input type="file" class="form-control-file" id="migration" name="migration">
@@ -162,7 +162,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <img src="{{ student_data.student_provision.url }}" class="w-20% rounded p-1"
+                                    <img src="{{ student_data.student_provision }}" class="w-20% rounded p-1"
                                         style="width: 25%; " alt="">
                                     <label for="provision">Provision Upload</label>
                                     <input type="file" class="form-control-file" id="provision" name="provision">
@@ -292,7 +292,6 @@
             fetch(url, {
                 method: 'PUT',
                 credentials: 'include',
-
                 mode: 'same-origin',
                 headers: {
                     'Content-Type': 'application/json',

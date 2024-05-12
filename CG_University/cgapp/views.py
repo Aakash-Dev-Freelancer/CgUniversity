@@ -5,6 +5,8 @@ from rest_framework.decorators import api_view
 from .serializers import MarkSheetSerializer
 from rest_framework.exceptions import ValidationError, NotFound
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.parsers import MultiPartParser
+
 
 
 from .serializers import StudentSerializer, StudentLoginSerializer, StudentDataSerializer, AdminLoginSerializer
@@ -38,7 +40,7 @@ class StudentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
         return Response({"message": "Student deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
 
 
-class StudentLoginAPIView(generics.CreateAPIView):
+class StudentLoginAPIView(generics.ListCreateAPIView):
     serializer_class = StudentLoginSerializer
     admin_serializer_class = AdminLoginSerializer
     # permission_classes = [IsAuthenticated]
@@ -73,12 +75,13 @@ class StudentLoginAPIView(generics.CreateAPIView):
                 students =  Student.objects.order_by("enrollment_no")
                 studentsData = StudentData.objects.all()
                 studentsMarksheets = MarkSheets.objects.all()
+                
                 studentMarksheetsSerializer = MarkSheetSerializer(studentsMarksheets, many=True)
-                studentSerializer = StudentSerializer(students,many=True)
-                studentDataSerializer = StudentDataSerializer(studentsData ,many=True)
+                studentSerializer = StudentSerializer(students, many=True)
+                studentDataSerializer = StudentDataSerializer(studentsData , many=True)
                 admin = AdminLogin.objects.get(username=username)
                 adminLoginSerializer = AdminLoginSerializer(admin)
-
+                
                 if password == admin.password:
                     return Response({
                         'success': 'Logged in successfully',
@@ -89,7 +92,7 @@ class StudentLoginAPIView(generics.CreateAPIView):
                     }, status=status.HTTP_200_OK)
                 else:
                     return Response({'success': False, 'message': 'Not Authorized'}, status=status.HTTP_401_UNAUTHORIZED)
-        
+                
         except Student.DoesNotExist:
             return Response({'success': False, 'message':  'Student not registered'}, status=status.HTTP_404_NOT_FOUND)
         
@@ -142,12 +145,14 @@ class StudentDataRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIV
 class MarkSheetListCreateView(generics.ListCreateAPIView):
     queryset = MarkSheets.objects.all()
     serializer_class = MarkSheetSerializer
+    parser_classes = [MultiPartParser]
 
     def post(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
+        print(request.data)
+        serializer = self.get_serializer(data=request.data, many=True)
         if serializer.is_valid():
             serializer.save()
-            return Response({"message": "Mark sheet created successfully"}, status=status.HTTP_201_CREATED)
+            return Response({'success':True, "message": "Mark sheet created successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class MarkSheetRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
@@ -186,15 +191,10 @@ class MarkSheetByEnrollmentView(generics.ListAPIView):
         serializer = self.serializer_class(queryset, many=True)
         return Response(serializer.data)
 
-
-
 class AdminLoginListCreateView(generics.ListCreateAPIView):
     queryset = AdminLogin.objects.all()
     serializer_class = AdminLoginSerializer
 
-class AdminLoginCreateView(generics.CreateAPIView):
-    queryset = AdminLogin.objects.all()
-    serializer_class = AdminLoginSerializer
 
 class AdminLoginUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     queryset = AdminLogin.objects.all()
