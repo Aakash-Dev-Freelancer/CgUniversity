@@ -6,4 +6,5 @@ from .models import StudentData, Student, MarkSheets
 admin.site.register(Student)
 admin.site.register(StudentData)
 admin.site.register(MarkSheets)
+# admin.site.register(StudentLogin)
 

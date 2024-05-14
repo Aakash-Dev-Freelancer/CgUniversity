@@ -6,3 +6,6 @@
 /CG_Env/Scripts/python.exe
 /CG_University/db.sqlite3
 .env
+/CG_University/media
+
+/CG_University/cg_app/migrations

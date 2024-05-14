@@ -37,7 +37,6 @@ class StudentData:
     student_provision: str
     student_admit_card: str
     student_affidevit: str
-    student_photo: str
     student_migrations: str
 
     @staticmethod
@@ -47,9 +46,9 @@ class StudentData:
         student_provision = from_str(obj.get("student_provision"))
         student_admit_card = from_str(obj.get("student_admit_card"))
         student_affidevit = from_str(obj.get("student_affidevit"))
-        student_photo = from_str(obj.get("student_photo"))
+        # student_photo = from_str(obj.get("student_photo"))
         student_migrations = from_str(obj.get("student_migrations"))
-        return StudentData(student_enrollment_no, student_provision, student_admit_card, student_affidevit, student_photo, student_migrations)
+        return StudentData(student_enrollment_no, student_provision, student_admit_card, student_affidevit, student_migrations)
 
     def to_dict(self) -> dict:
         result: dict = {}
@@ -57,7 +56,7 @@ class StudentData:
         result["student_provision"] = from_str(self.student_provision)
         result["student_admit_card"] = from_str(self.student_admit_card)
         result["student_affidevit"] = from_str(self.student_affidevit)
-        result["student_photo"] = from_str(self.student_photo)
+        # result["student_photo"] = from_str(self.student_photo)
         result["student_migrations"] = from_str(self.student_migrations)
         return result
 
@@ -102,7 +101,7 @@ class StudentMarksheet:
 @dataclass
 class StudentPersonalInfo:
     enrollment_no: str
-    password: int
+    password: str
     full_name: str
     father_name: str
     mother_name: str
@@ -117,7 +116,7 @@ class StudentPersonalInfo:
     def from_dict(obj: Any) -> 'StudentPersonalInfo':
         assert isinstance(obj, dict)
         enrollment_no = from_str(obj.get("enrollment_no"))
-        password = int(from_str(obj.get("password")))
+        password = from_str(obj.get("password"))
         full_name = from_str(obj.get("full_name"))
         father_name = from_str(obj.get("father_name"))
         mother_name = from_str(obj.get("mother_name"))
@@ -132,7 +131,7 @@ class StudentPersonalInfo:
     def to_dict(self) -> dict:
         result: dict = {}
         result["enrollment_no"] = from_str(self.enrollment_no)
-        result["password"] = from_str(str(self.password))
+        result["password"] = from_str(self.password)
         result["full_name"] = from_str(self.full_name)
         result["father_name"] = from_str(self.father_name)
         result["mother_name"] = from_str(self.mother_name)

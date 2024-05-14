@@ -4,7 +4,7 @@ from django.db import models
 class Student(models.Model):
     password = models.CharField(max_length=100, null=False)
     enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)
-    # profile_pic = models.CharField(max_length=100)
+    profile_pic =models.FileField(upload_to='images/students/profile-pic/', null=True)
     full_name = models.CharField(max_length=100, null=False)
     father_name = models.CharField(max_length=100)
     mother_name = models.CharField(max_length=100)
@@ -14,6 +14,11 @@ class Student(models.Model):
     email = models.EmailField()
     mobile_number = models.CharField(max_length=15)
     address = models.CharField(max_length=255)
+    
+class StudentLogin(models.Model):
+    password = models.CharField(max_length=100, null=False)
+    enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)
+    
 
 class StudentData(models.Model):
     student_enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)

@@ -17,7 +17,6 @@
     {% include 'main_cg_site/global/nav_bar.html' %}
 
     <div class="container-student">
-
       <div class="row">
         <!-- Sidebar -->
         <div class="col-md-2 sidebar-section">
@@ -50,7 +49,7 @@
                 <a class="nav-link" onclick="changeContent(7)">
                   <li class="student-nav-item">Affidavit</li>
                 </a>
-                <a class="nav-link" onclick="changeContent(8)">
+                <a class="nav-link" href="{% url 'logout' %}">
                   <li class="student-nav-item">Logout</li>
                 </a>
               </ul>
@@ -122,39 +121,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <!-- <script>
-    var pageLoaded = false;
-
-    window.onload = function () {
-      console.log("Page loaded."); // Log that the page has loaded
-      pageLoaded = true;
-
-      console.log("Script executed."); // Check if script is executed
-      window.history.pushState('forward', null, './#forward');
-      window.onpopstate = function () {
-        showAlert("Are you sure you want to leave this page?");
-      };
-    };
-
-    window.onbeforeunload = function () {
-      if (pageLoaded) {
-        return "Are you sure you want to leave this page?";
-      }
-    };
-
-    function showAlert(message) {
-      var confirmation = confirm(message);
-      if (confirmation) {
-        window.location.href = "{% url 'home' %}";
-      } else {
-      }
-    }
+  <script>
+    localStorage.setItem('token', '{{ token }}');
   </script>
- -->
-
-
-
 </body>
 
 </html>

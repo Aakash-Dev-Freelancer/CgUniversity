@@ -52,21 +52,15 @@ def to_class(c: Type[T], x: Any) -> dict:
     return cast(Any, x).to_dict()
 
 
-class Email(Enum):
-    EXAMPLE_GMAIL_COM = "example@gmail.com"
-    PANWARA925_GMAIL_COM = "panwara925@gmail.com"
-    W324_E_GMAIL_COM = "w324e@gmail.com"
-    WE_GMAIL_COM = "we@gmail.com"
-
 
 @dataclass
 class AdminInfoClass:
     id: int
     full_name: str
     contact_no: str
-    email: Email
+    email: str
     username: str
-    password: int
+    password: str
 
     @staticmethod
     def from_dict(obj: Any) -> 'AdminInfoClass':
@@ -74,9 +68,9 @@ class AdminInfoClass:
         id = from_int(obj.get("id"))
         full_name = from_str(obj.get("full_name"))
         contact_no = from_str(obj.get("contact_no"))
-        email = Email(obj.get("email"))
+        email = from_str(obj.get("email"))
         username = from_str(obj.get("username"))
-        password = int(from_str(obj.get("password")))
+        password = from_str(obj.get("password"))
         return AdminInfoClass(id, full_name, contact_no, email, username, password)
 
     def to_dict(self) -> dict:
@@ -84,61 +78,31 @@ class AdminInfoClass:
         result["id"] = from_int(self.id)
         result["full_name"] = from_str(self.full_name)
         result["contact_no"] = from_str(self.contact_no)
-        result["email"] = to_enum(Email, self.email)
+        result["email"] = from_str(self.email)
         result["username"] = from_str(self.username)
-        result["password"] = from_str(str(self.password))
+        result["password"] = from_str(self.password)
         return result
-
-
-class Address(Enum):
-    THE_35_NAGAR = "35, nagar"
-    THE_42_NAGAR = "42, nagar"
-    THE_46_MOHAN_NAGAR = "46, Mohan Nagar"
-
-
-class Category(Enum):
-    ADFKJ = "adfkj"
-    SC = "SC"
-    WE = "WE"
-
-
-class Gender(Enum):
-    FEMALE = "Female"
-    MALE = "Male"
-
-
-class MobileNumber(Enum):
-    ADF = "adf"
-    ADFED = "adfed"
-    THE_0700064 = "0700064"
-    THE_07000649593 = "07000649593"
-
-
-class MotherName(Enum):
-    HEMLATA_PANWAR = "Hemlata Panwar"
-    MOTHER = "Mother"
 
 
 @dataclass
 class Student:
     enrollment_no: str
-    password: int
+    password: str
     full_name: str
     father_name: str
-    mother_name: MotherName
-    gender: Gender
+    mother_name: str
+    gender: str
     date_of_birth: datetime
-    category: Category
-    email: Email
-    mobile_number: MobileNumber
-    address: Address
+    category: str
+    email: str
+    mobile_number: str
+    address: str
 
     @staticmethod
     def from_dict(obj: Any) -> 'Student':
         assert isinstance(obj, dict)
         enrollment_no = from_str(obj.get("enrollment_no"))
-        password = int(from_str(obj.get("password")))
-        # profile_pic = int(from_str(obj.get("profile_pic")))
+        password = from_str(obj.get("password"))
         full_name = from_str(obj.get("full_name"))
         father_name = from_str(obj.get("father_name"))
         mother_name = from_str(obj.get("mother_name"))
@@ -153,17 +117,16 @@ class Student:
     def to_dict(self) -> dict:
         result: dict = {}
         result["enrollment_no"] = from_str(self.enrollment_no)
-        result["password"] = from_str(str(self.password))
-        # result["profile_pic"] = from_str(str(self.profile_pic))
+        result["password"] = from_str(self.password)
         result["full_name"] = from_str(self.full_name)
         result["father_name"] = from_str(self.father_name)
-        result["mother_name"] = to_enum(MotherName, self.mother_name)
-        result["gender"] = to_enum(Gender, self.gender)
+        result["mother_name"] = from_str(self.mother_name)
+        result["gender"] = from_str(self.gender)
         result["date_of_birth"] = self.date_of_birth.isoformat()
-        result["category"] = to_enum(Category, self.category)
-        result["email"] = to_enum(Email, self.email)
-        result["mobile_number"] = to_enum(MobileNumber, self.mobile_number)
-        result["address"] = to_enum(Address, self.address)
+        result["category"] = from_str(self.category)
+        result["email"] = from_str(self.email)
+        result["mobile_number"] = from_str(self.mobile_number)
+        result["address"] = from_str(self.address)
         return result
 
 
@@ -201,13 +164,13 @@ class StudentsDatum:
 @dataclass
 class StudentsMarksheet:
     id: int
-    student_enrollment_no: str
-    session: str
-    semester: int
-    sgpa: str
-    status: str
-    result: str
-    file: str
+    student_enrollment_no: Optional[str] = None
+    session: Optional[str] = None
+    semester: Optional[int] = None
+    sgpa: Optional[str] = None
+    status: Optional[str] = None
+    result: Optional[str] = None
+    file: Optional[str] = None
 
     @staticmethod
     def from_dict(obj: Any) -> 'StudentsMarksheet':
@@ -235,13 +198,14 @@ class StudentsMarksheet:
         return result
 
 
+
 @dataclass
 class AdminInfo:
     success: str
     admin_info: AdminInfoClass
     students: List[Student]
-    students_data: List[StudentsDatum]
-    students_marksheets: List[StudentsMarksheet]
+    students_data: Optional[List[StudentsDatum]]
+    students_marksheets: Optional[List[StudentsMarksheet]]
 
     @staticmethod
     def from_dict(obj: Any) -> 'AdminInfo':
@@ -249,8 +213,8 @@ class AdminInfo:
         success = from_str(obj.get("success"))
         admin_info = AdminInfoClass.from_dict(obj.get("admin_info"))
         students = from_list(Student.from_dict, obj.get("students"))
-        students_data = from_list(StudentsDatum.from_dict, obj.get("students_data"))
-        students_marksheets = from_list(StudentsMarksheet.from_dict, obj.get("students_marksheets"))
+        students_data = from_list(StudentsDatum.from_dict, obj.get("students_data")) if "students_data" in obj else None
+        students_marksheets = from_list(StudentsMarksheet.from_dict, obj.get("students_marksheets")) if "students_marksheets" in obj else None
         return AdminInfo(success, admin_info, students, students_data, students_marksheets)
 
     def to_dict(self) -> dict:
@@ -258,8 +222,10 @@ class AdminInfo:
         result["success"] = from_str(self.success)
         result["admin_info"] = to_class(AdminInfoClass, self.admin_info)
         result["students"] = from_list(lambda x: to_class(Student, x), self.students)
-        result["students_data"] = from_list(lambda x: to_class(StudentsDatum, x), self.students_data)
-        result["students_marksheets"] = from_list(lambda x: to_class(StudentsMarksheet, x), self.students_marksheets)
+        if self.students_data is not None:
+            result["students_data"] = from_list(lambda x: to_class(StudentsDatum, x), self.students_data)
+        if self.students_marksheets is not None:
+            result["students_marksheets"] = from_list(lambda x: to_class(StudentsMarksheet, x), self.students_marksheets)
         return result
 
 

@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+from datetime import timedelta
 
 
 load_dotenv()
@@ -65,14 +66,29 @@ INSTALLED_APPS = [
     'livereload',
     'rest_framework',
     'corsheaders',
+    'rest_framework_simplejwt',
     'cgapp',
 
 ]
 
 REST_FRAMEWORK = {
-	'DEFAULT_AUTHENTICATION_CLASSES': [
-    	'rest_framework.authentication.TokenAuthentication',
-	],
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
+
+# AUTH_USER_MODEL = "cgapp.StudentLogin"
+
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(hours=2),
+    'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
+    'SLIDING_TOKEN_LIFETIME': timedelta(days=30),
+    'SLIDING_TOKEN_REFRESH_LIFETIME_LATE_USER': timedelta(days=1),
+    'SLIDING_TOKEN_LIFETIME_LATE_USER': timedelta(days=30),
 }
 
 

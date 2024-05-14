@@ -40,6 +40,8 @@
   </div>
 
   <script>
+    localStorage.clear();
+
     document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
       radio.addEventListener('click', function () {
         var selectedTab = document.querySelector('input[name="login-tab"]:checked');
@@ -61,6 +63,7 @@
         }
       });
     });
+
 
     document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
       radio.addEventListener('click', function () {
@@ -107,6 +110,8 @@
 
       var form = document.getElementById("loginForm");
       form.submit();
+      usernameInput.value = "";
+      passwordInput.value = "";
     }
   </script>
 

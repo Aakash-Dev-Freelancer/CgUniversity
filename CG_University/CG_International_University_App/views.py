@@ -4,7 +4,8 @@ import json
 from CG_International_University_App.models.student import StudentInformation
 from CG_International_University_App.models.courses import Courses
 from CG_International_University_App.models.admin_info import AdminInfo
-from django.views.decorators.csrf import csrf_protect 
+from cgapp.models import MarkSheets
+from django.views.decorators.csrf import csrf_protect
 
 
 from django.http import HttpResponse
@@ -14,112 +15,107 @@ from django.conf import settings
 
 import requests
 
+
 @csrf_protect
 def admin(request):
     print('---------------- Admin Function View ---------------- ')
-
     API_URL = settings.API_URL
     BASE_URL = settings.BASE_URL
-    if request.method == 'POST':
 
+    if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
-        csrf_token = request.POST.get('csrfmiddlewaretoken')
-        print(csrf_token)
-
-        # print("Api Hit")
-        api_url = f"{API_URL}login/"
-        payload = {
-            "user_type": user_type,
-            "username": username,
-            "password": password,
-            'base_url': BASE_URL,
-            'X-CSRFToken': csrf_token
-        }
         
-        response = requests.post(api_url, data=payload,)
-        json_encoded = json.dumps(response.json())
+        api_url = f"{API_URL}login/"
+        token_url = f"{API_URL}api/token/"
 
-            
+        token_payload = {"username": username, "password": password}
+        token_response = requests.post(token_url, data=token_payload).json()
+        access_token =token_response.get('access')
+
+        payload = {"user_type": user_type, "username": username, "password": password,}
+        headers = {"Authorization": f"Bearer {access_token}"}
+
+        response = requests.post(api_url, headers=headers, data=payload)
+        
+        # print(access_token)
+
         try:
             if response.status_code == 200:
-                    admin_dict = response.json()
-                    admin_info = AdminInfo.from_dict(admin_dict)
-                    
-                    return render(request, 'admin_cg_site/admin/admin.html', {
-                        'is_logged_in': True,
-                        'admin_info': admin_info,
-                        'base_url': BASE_URL,
-                        'api_url': API_URL,
-                    })
-                
+                admin_dict = response.json()
+                admin_info = AdminInfo.from_dict(admin_dict)
+                return render(request, 'admin_cg_site/admin/admin.html', {
+                    'is_logged_in': True,
+                    'admin_info': admin_info,
+                    'token': access_token,
+                    'base_url': BASE_URL,
+                    'api_url': API_URL,
+                })
+
             elif response.status_code == 401:
                 error_message = "Incorrect Password. Please try again."
-                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
-            
+
             elif response.status_code == 400:
                 error_message = "User not Found. Please try again."
 
-                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
-            
             elif response.status_code == 404:
-                error_message = "Your not Registered. Please Contact to admin."
-                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
-            
+                error_message = "You're not Registered. Please contact the admin."
+
             elif response.status_code == 500:
                 error_message = "Server Error. Please try again later."
-                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
-                
-            
+
             else:
                 error_message = "An error occurred. Please try again later."
-                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
-        
+
+            return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
+
         except requests.exceptions.RequestException as e:
             print("Error:", e)
             return HttpResponse("Error: Internal Server Error.", status=500)
 
     else:
-        # Handle GET requests to the page
-        return render(request, 'main_cg_site/auth/login.html',)
+        return render(request, 'main_cg_site/auth/login.html')
     
-@csrf_protect
+
+# @csrf_protect
 def editStudent(request):
     print('---------------- Edit Student Function View ---------------- ')
+    
 
     API_URL = settings.API_URL
     BASE_URL = settings.BASE_URL
 
     try:
-        # Get the ID from the request
-        id = request.GET.get('id')
-        student_url = f"{API_URL}students/{id}/"
-        marksheet_url = f"{API_URL}marksheets/{id}/"
-        student_data_url = f"{API_URL}student-data/{id}/"
+        student_id = request.GET.get('id')
+        token = request.GET.get('token')
 
+        student_url = f"{API_URL}students/{student_id}/"
+        marksheet_url = f"{API_URL}marksheets/{student_id}/"
+        student_data_url = f"{API_URL}student-data/{student_id}/"
 
-        student = requests.get(student_url)
-        marksheet_data = requests.get(marksheet_url)
-        student_data = requests.get(student_data_url)
-        print(student.json())
-        print(marksheet_data.json())
-        print(student_data.json)
+        headers = {"Authorization": f"Bearer {token}"}
 
-        student.raise_for_status()
-        marksheet_data.raise_for_status()
-        student_data.raise_for_status()
+        student_response = requests.get(student_url, headers=headers)
+        marksheet_response = requests.get(marksheet_url, headers=headers)
+        student_data_response = requests.get(student_data_url, headers=headers)
+        
+        student_response.raise_for_status()
+        marksheet_response.raise_for_status()
+        student_data_response.raise_for_status()
 
         return render(request, 'admin_cg_site/admin/edit_student.html', {
-            'student': student.json(),
-            'student_data': student_data.json(),
-            'marksheet_data': marksheet_data.json(),
+            'student': student_response.json(),
+            'student_data': student_data_response.json(),
+            'marksheet_data': marksheet_response.json(),
             'is_logged_in': True,
             'base_url': BASE_URL,
-            'api_url':API_URL
+            'api_url': API_URL
         })
+
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
+        return HttpResponse("Error: Internal Server Error.", status=500)
 
 
 
@@ -127,6 +123,7 @@ def editStudent(request):
 def home(request):
     BASE_URL = settings.BASE_URL
     return render(request, 'main_cg_site/home/index.html', {'base_url': BASE_URL})
+
 
 @csrf_protect
 def student(request):
@@ -138,64 +135,60 @@ def student(request):
         enrollment_no = request.POST.get('username')
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
-        
 
-        print("Api Hit")
         api_url = f"{API_URL}login/"
-        payload = {"user_type": user_type, "username": enrollment_no, "password": password}
+        token_url = f"{API_URL}token/"
+
+        token_response = requests.get(token_url).json()
+        access_token = token_response.get('access')
         
-        response = requests.post(api_url, data=payload)
-        # json_encoded = json.dumps(response.json())
-        # print(json_encoded)
+        payload = {"user_type": user_type, "username": enrollment_no, "password": password}
+        headers = {"Authorization": f"Bearer {access_token}"}
 
         try:
-            if response.status_code == 200:
-                    student_info_dict = response.json()
-                    student_info = StudentInformation.from_dict(student_info_dict)
-                    student_personal_info = student_info.student_info.student_personal_info
-                    student_marksheets = student_info.student_info.student_marksheets
-                    student_data = student_info.student_info.student_data
+            response = requests.post(api_url, headers=headers, data=payload)
+            response.raise_for_status()
 
-                    return render(request, 'student_cg_site/home/student.html', {
-                        'is_logged_in': True,
-                        'student_info': student_personal_info, 
-                        'student_data': student_data,
-                        'student_marksheets':student_marksheets, 
-                        'base_url': BASE_URL
-                        }
-                    )
-                
-                
-                # Admin
+            if response.status_code == 200:
+                student_info_dict = response.json()
+                student_info = StudentInformation.from_dict(student_info_dict)
+                student_personal_info = student_info.student_info.student_personal_info
+                student_marksheets = student_info.student_info.student_marksheets
+                student_data = student_info.student_info.student_data
+
+                return render(request, 'student_cg_site/home/student.html', {
+                    'is_logged_in': True,
+                    'token': access_token,
+                    'student_info': student_personal_info,
+                    'student_data': student_data,
+                    'student_marksheets': student_marksheets,
+                    'base_url': BASE_URL
+                })
+
             elif response.status_code == 401:
                 error_message = "Incorrect Password. Please try again."
-                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
-            
+
             elif response.status_code == 400:
                 error_message = "User not Found. Please try again."
 
-                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
-            
             elif response.status_code == 404:
-                error_message = "Your not Registered. Please Contact to admin."
-                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
-            
+                error_message = "You're not Registered. Please contact the admin."
+
             elif response.status_code == 500:
                 error_message = "Server Error. Please try again later."
-                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
-                
-            
+
             else:
                 error_message = "An error occurred. Please try again later."
-                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
-        
+
+            return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
+
         except requests.exceptions.RequestException as e:
             print("Error:", e)
             return HttpResponse("Error: Internal Server Error.", status=500)
 
     else:
-        # Handle GET requests to the page
         return render(request, 'main_cg_site/auth/login.html')
+
 
 
 # Login Page --------------------->
@@ -264,6 +257,5 @@ def contact(request):
 
 @csrf_protect
 def logout_view(request):
-    print("------------------------------------")
     logout(request)
     return redirect('login')
