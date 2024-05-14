@@ -60,7 +60,7 @@
         <div style="display: flex;
                 flex-direction: row;
                 justify-content: space-between;">
-            <h1>Welcome, {{ admin_info.name }}</h1>
+            <h1>Welcome, {{ admin_info.full_name }}</h1>
             <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#editModal">
                 Add Student
             </button>
@@ -168,7 +168,8 @@
                     <td>{{ data.mobile_number }}</td>
                     <td>{{ data.address }}</td>
                     <td>
-                        <a class="btn btn-primary" href="{% url 'edit-student'  %}?id={{ data.enrollment_no }}">Edit</a>
+                        <a class="btn btn-primary"
+                            href="{% url 'edit-student'  %}?id={{ data.enrollment_no }}&token={{ token }}">Edit</a>
                     </td>
                 </tr>
 
@@ -212,6 +213,10 @@
                     <h4>Personal Details</h4>
                     <hr class="my-4">
                     <div class="row">
+                        <div class="form-group">
+                            <label for="profile_pic">Profile Pic Upload</label>
+                            <input type="file" class="form-control-file" id="profile_pic" name="profile_pic">
+                        </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="full_name">Full Name</label>
@@ -315,6 +320,9 @@
         </div>
     </div>
 
+    {%include 'main_cg_site/global/footer.html' %}
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -342,43 +350,43 @@
             newMarkSheetDiv.className = "row mb-3 marksheets-class";
 
             newMarkSheetDiv.innerHTML = `
-        <div class="col-md-4">
-            <div class="form-group">
-                <label for="session-${marksheetCounter}">Session</label>
-                <input type="text" class="form-control" id="session-${marksheetCounter}" name="session" placeholder="Enter Session">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="session">Session</label>
+                    <input type="text" class="form-control" id="session" name="session" placeholder="Enter Session">
+                </div>
+                <div class="form-group">
+                    <label for="semester">Semester</label>
+                    <input type="text" class="form-control" id="semester" name="semester" placeholder="Enter Semester">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="semester-${marksheetCounter}">Semester</label>
-                <input type="text" class="form-control" id="semester-${marksheetCounter}" name="semester" placeholder="Enter Semester">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="sgpa">SGPA</label>
+                    <input type="text" class="form-control" id="sgpa" name="sgpa" placeholder="Enter SGPA">
+                </div>
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <input type="text" class="form-control" id="status" name="status" placeholder="Enter Status">
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label for="sgpa-${marksheetCounter}">SGPA</label>
-                <input type="text" class="form-control" id="sgpa-${marksheetCounter}" name="sgpa" placeholder="Enter SGPA">
-            </div>
-            <div class="form-group">
-                <label for="status-${marksheetCounter}">Status</label>
-                <input type="text" class="form-control" id="status-${marksheetCounter}" name="status" placeholder="Enter Status">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label for="result-${marksheetCounter}">Result</label>
-                <input type="text" class="form-control" id="result-${marksheetCounter}" name="result" placeholder="Enter Result">
-            </div>
-            <div class="form-group d-block">
-                <label for="file-${marksheetCounter}">Marksheet Upload</label>
-                <input type="file" class="form-control-file" id="file-${marksheetCounter}" name="marksheet">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="result">Result</label>
+                    <input type="text" class="form-control" id="result" name="result" placeholder="Enter Result">
+                </div>
+                <div class="form-group d-block">
+                    <label for="file">Marksheet Upload</label>
+                    <input type="file" class="form-control-file" id="file" name="marksheet">
+                </div>
+
             </div>
             
-        </div>
-        <div class="row" style="width: 100%; justify-content: center;">
-            <button class="btn btn-danger" onclick="removeMarkSheet(this)" style="width: 45%; max-width: 150px; margin-right: 2%; margin-bottom: 1%;">Remove</button>
-            <button class="btn btn-primary" onclick="addMarkSheet(this)" style="width: 45%; max-width: 150px; margin-bottom: 1%;">Add Marksheet</button>
-        </div>
-    `;
-
+        `;
+            // <div class="row" style="width: 100%; justify-content: center;">
+            //     <button class="btn btn-danger" onclick="removeMarkSheet(this)" style="width: 45%; max-width: 150px; margin-right: 2%; margin-bottom: 1%;">Remove</button>
+            //     <button class="btn btn-primary" onclick="addMarkSheet(this)" style="width: 45%; max-width: 150px; margin-bottom: 1%;">Add Marksheet</button>
+            // </div>
             // Append the new marksheet div to the marksheetList
             marksheetList.appendChild(newMarkSheetDiv);
 
@@ -387,9 +395,9 @@
 
 
         function extractAndDisplayData() {
-
             var studentData = {
                 "enrollment_no": document.querySelector('#enrollment_no').value,
+                "profile_pic": document.querySelector('#profile_pic').files[0],
                 "full_name": document.querySelector('#full_name').value,
                 "password": document.querySelector('#password').value,
                 "father_name": document.querySelector('#father_name').value,
@@ -402,77 +410,62 @@
                 "address": document.querySelector('#address').value
             };
 
-            var studentDetails = {
-                "student_enrollment_no": document.querySelector('#enrollment_no').value,
-                "student_provision": document.querySelector('#provision').value,
-                "student_admit_card": document.querySelector('#admit_card').value,
-                "student_affidevit": document.querySelector('#affidevit').value,
-                "student_migrations": document.querySelector('#migration').value
-            };
+            var studentFormData = new FormData();
 
+            for (var key in studentData) {
+                studentFormData.append(key, studentData[key]);
+            }
 
-
-
-            // console.log(apiUrl);
             var studentUrl = "{{ api_url }}students/"
             var markSheetUrl = "{{ api_url }}marksheets/"
             var studentDataUrl = "{{ api_url }}student-data/"
+            var token = localStorage.getItem('token');
 
 
-            // fetch(studentUrl, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //     },
-            //     body: JSON.stringify(studentData),
-            // })
-            //     .then(response => {
-            //         if (!response.ok) {
-            //             throw new Error('Network response was not ok');
-            //         }
-            //         return response.json();
-            //     })
-            //     .then(data => {
-            //         console.log('Response from server:', data);
-            //     })
-            //     .catch(error => {
-            //         console.error('There was a problem with the fetch operation:', error);
-            //     });
-
-            var marksheetData = [];
-            var marksheetRows = document.querySelectorAll('.marksheets-class');
-            console.log(marksheetRows.length);
-            for (let i = 0; i < marksheetRows.length; i++) {
-                marksheetData.push({
-                    "student_enrollment_no": document.querySelector('#enrollment_no').value,
-                    "session": document.querySelector('#session-' + (i + 1)).value,
-                    "semester": document.querySelector('#semester-' + (i + 1)).value,
-                    "sgpa": document.querySelector('#sgpa-' + (i + 1)).value,
-                    "status": document.querySelector('#status-' + (i + 1)).value,
-                    "result": document.querySelector('#result-' + (i + 1)).value,
-                    "file": document.querySelector('#file-' + (i + 1)).files[0],
+            fetch(studentUrl, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                },
+                body: studentFormData,
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Response from server:', data);
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
                 });
-            }
+
+            // var marksheetData = [];
+            var marksheetRows = document.querySelectorAll('.marksheets-class');
+
+            var marksheetData = {
+                "student_enrollment_no": document.querySelector('#enrollment_no').value,
+                "session": document.querySelector('#session').value,
+                "semester": document.querySelector('#semester').value,
+                "sgpa": document.querySelector('#sgpa').value,
+                "status": document.querySelector('#status').value,
+                "result": document.querySelector('#result').value,
+                "file": document.querySelector('#file').files[0],
+            };
 
             const marksheetFormData = new FormData();
 
-            marksheetData.forEach((data, index) => {
-                marksheetFormData.append('student_enrollment_no', data.student_enrollment_no);
-                marksheetFormData.append('session', data.session);
-                marksheetFormData.append('semester', data.semester);
-                marksheetFormData.append('sgpa', data.sgpa);
-                marksheetFormData.append('status', data.status);
-                marksheetFormData.append('result', data.result);
-                marksheetFormData.append('file', data.file);
-            });
-
-            console.log(marksheetFormData);
-            console.log("Student Data:", studentData);
-            console.log("Student Details:", studentDetails);
-            console.log("Marksheet Data:", marksheetData);
+            for (const key in marksheetData) {
+                marksheetFormData.append(key, marksheetData[key]);
+            }
 
             fetch(markSheetUrl, {
                 method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                },
                 body: marksheetFormData,
             })
                 .then(response => {
@@ -503,24 +496,25 @@
             formDetails.append('student_affidevit', student_affidevit);
             formDetails.append('student_migrations', student_migrations);
 
-            // fetch(studentDataUrl, {
-            //     method: 'POST',
-            //     body: formDetails,
-            // })
-            //     .then(response => {
-            //         if (!response.ok) {
-            //             throw new Error('Network response was not ok');
-            //         }
-            //         return response.json();
-            //     })
-            //     .then(data => {
-            //         console.log('Response from server:', data);
-            //     })
-            //     .catch(error => {
-            //         console.error('There was a problem with the fetch operation:', error);
-            //     });
-
-
+            fetch(studentDataUrl, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                },
+                body: formDetails,
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Response from server:', data);
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
         }
 
 

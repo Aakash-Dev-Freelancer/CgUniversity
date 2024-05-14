@@ -1,23 +1,37 @@
 from rest_framework import generics, status
 from rest_framework.response import Response
-from .models import Student, StudentData, MarkSheets
-from rest_framework.decorators import api_view
+from rest_framework_simplejwt.tokens import RefreshToken
+from .models import Student, StudentData, MarkSheets, StudentLogin
+from rest_framework.decorators import api_view, permission_classes
 from .serializers import MarkSheetSerializer
 from rest_framework.exceptions import ValidationError, NotFound
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.parsers import MultiPartParser
 
-
+from django.conf import settings
 
 from .serializers import StudentSerializer, StudentLoginSerializer, StudentDataSerializer, AdminLoginSerializer
 from .models import AdminLogin
 
 
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def get_tokens_for_user(request):
+    user = StudentLogin.objects.first()
+    refresh = RefreshToken.for_user(user)
+    return Response({ 
+       'refresh': str(refresh),
+       'access': str(refresh.access_token),
+    })
+
 class StudentListCreate(generics.ListCreateAPIView):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
-    # permission_classes = [IsAuthenticated]
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
 
+    
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
@@ -28,6 +42,9 @@ class StudentListCreate(generics.ListCreateAPIView):
 class StudentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+
 
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -43,9 +60,9 @@ class StudentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
 class StudentLoginAPIView(generics.ListCreateAPIView):
     serializer_class = StudentLoginSerializer
     admin_serializer_class = AdminLoginSerializer
-    # permission_classes = [IsAuthenticated]
 
     def create(self, request, *args, **kwargs):
+        
         username = request.data.get('username')
         password = request.data.get('password')
         user_type = request.data.get('user_type')
@@ -75,7 +92,6 @@ class StudentLoginAPIView(generics.ListCreateAPIView):
                 students =  Student.objects.order_by("enrollment_no")
                 studentsData = StudentData.objects.all()
                 studentsMarksheets = MarkSheets.objects.all()
-                
                 studentMarksheetsSerializer = MarkSheetSerializer(studentsMarksheets, many=True)
                 studentSerializer = StudentSerializer(students, many=True)
                 studentDataSerializer = StudentDataSerializer(studentsData , many=True)
@@ -107,7 +123,6 @@ class StudentLoginAPIView(generics.ListCreateAPIView):
 class StudentDataListCreateAPIView(generics.ListCreateAPIView):
     queryset = StudentData.objects.all()
     serializer_class = StudentDataSerializer
-    # permission_classes = [IsAuthenticated]
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
@@ -149,7 +164,7 @@ class MarkSheetListCreateView(generics.ListCreateAPIView):
 
     def post(self, request, *args, **kwargs):
         print(request.data)
-        serializer = self.get_serializer(data=request.data, many=True)
+        serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response({'success':True, "message": "Mark sheet created successfully"}, status=status.HTTP_201_CREATED)
@@ -205,3 +220,5 @@ class AdminLoginUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
         if AdminLogin.objects.exclude(pk=self.kwargs['pk']).filter(username=username).exists():
             raise ValidationError("Username already exists. Please choose a different one.")
         serializer.save()
+
+

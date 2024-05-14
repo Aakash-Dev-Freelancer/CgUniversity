@@ -19,6 +19,19 @@
         table {
             font-size: smaller;
         }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -38,6 +51,16 @@
                     <form method="post">
                         {% csrf_token %}
                         <input type="hidden" name="enrollment_no" value="{{ student.enrollment_no }}">
+                        <div class="container mt-5">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="avatar mx-auto d-flex justify-content-center">
+                                        <img src="{{ student.profile_pic }}" alt="Profile Picture"
+                                            onerror="this.onerror=null;this.src='https://t3.ftcdn.net/jpg/01/87/10/40/360_F_187104027_8i2JbFDBB5jB7R65Ce464yRs4gfNbR3Z.jpg';">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <h2>Personal Details</h2>
                         <hr class="my-4">
 
@@ -272,6 +295,7 @@
             let password = document.querySelector('input[name="date_of_birth"]').value;
             let cleanPassword = date.replace(/-/g, "");
             const url = `${apiUrl}students/${enrollment_no}/`;
+            var token = localStorage.getItem('token');
 
             const personalDetails = {
                 username: document.querySelector('input[name="enrollment_no"]').value,
@@ -287,7 +311,6 @@
                 mobile_number: document.querySelector('input[name="mobile_number"]').value,
                 address: document.querySelector('textarea[name="address"]').value
             };
-            const csrftoken = getCookie('csrftoken');
 
             fetch(url, {
                 method: 'PUT',
@@ -296,7 +319,7 @@
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                    'X-CSRFToken': csrftoken
+                    'Authorization': `Bearer ${token}`
 
                 },
                 body: JSON.stringify(personalDetails),

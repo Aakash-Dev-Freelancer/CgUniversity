@@ -1,6 +1,8 @@
 
 from django.urls import path
 from . import views
+from rest_framework_simplejwt import views as jwt_views
+
 
 from cgapp.views import (StudentListCreate, 
                          StudentRetrieveUpdateDestroy, 
@@ -12,7 +14,9 @@ from cgapp.views import (MarkSheetListCreateView,
                          MarkSheetRetrieveUpdateDestroyView, 
                          AdminLoginListCreateView, 
                          AdminLoginUpdateDeleteView,
-                         MarkSheetByEnrollmentView)
+                         MarkSheetByEnrollmentView,
+                         get_tokens_for_user,
+                         )
 
 
 urlpatterns = [
@@ -29,5 +33,11 @@ urlpatterns = [
 
     path('admin/login/', AdminLoginListCreateView.as_view(), name='admin-login-list'),
     path('admin/login/<int:pk>/', AdminLoginUpdateDeleteView.as_view(), name='admin-login-detail'),
+    
+    path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
+    path('token/', get_tokens_for_user, name="token")
+
+
 
 ]
