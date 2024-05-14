@@ -149,7 +149,7 @@ class MarkSheetListCreateView(generics.ListCreateAPIView):
 
     def post(self, request, *args, **kwargs):
         print(request.data)
-        serializer = self.get_serializer(data=request.data, many=True)
+        serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response({'success':True, "message": "Mark sheet created successfully"}, status=status.HTTP_201_CREATED)

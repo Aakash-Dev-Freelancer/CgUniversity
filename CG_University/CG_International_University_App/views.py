@@ -44,10 +44,10 @@ def admin(request):
 
         try:
             if response.status_code == 200:
-                    admin_dict = response.json()
-                    admin_info = AdminInfo.from_dict(admin_dict)
+                admin_dict = response.json()
+                admin_info = AdminInfo.from_dict(admin_dict)
                     
-                    return render(request, 'admin_cg_site/admin/admin.html', {
+                return render(request, 'admin_cg_site/admin/admin.html', {
                         'is_logged_in': True,
                         'admin_info': admin_info,
                         'base_url': BASE_URL,

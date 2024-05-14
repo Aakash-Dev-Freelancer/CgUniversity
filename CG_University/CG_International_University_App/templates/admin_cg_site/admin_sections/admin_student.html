@@ -66,6 +66,8 @@
             </button>
         </div>
 
+        <!-- <h1>{{ token }}Token</h1> -->
+
         {% if is_logged_in %}
 
         <table class="table table-bordered table-striped ">
@@ -315,6 +317,9 @@
         </div>
     </div>
 
+    {%include 'main_cg_site/global/footer.html' %}
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -342,42 +347,42 @@
             newMarkSheetDiv.className = "row mb-3 marksheets-class";
 
             newMarkSheetDiv.innerHTML = `
-        <div class="col-md-4">
-            <div class="form-group">
-                <label for="session-${marksheetCounter}">Session</label>
-                <input type="text" class="form-control" id="session-${marksheetCounter}" name="session" placeholder="Enter Session">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="session-${marksheetCounter}">Session</label>
+                    <input type="text" class="form-control" id="session-${marksheetCounter}" name="session" placeholder="Enter Session">
+                </div>
+                <div class="form-group">
+                    <label for="semester-${marksheetCounter}">Semester</label>
+                    <input type="text" class="form-control" id="semester-${marksheetCounter}" name="semester" placeholder="Enter Semester">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="semester-${marksheetCounter}">Semester</label>
-                <input type="text" class="form-control" id="semester-${marksheetCounter}" name="semester" placeholder="Enter Semester">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="sgpa-${marksheetCounter}">SGPA</label>
+                    <input type="text" class="form-control" id="sgpa-${marksheetCounter}" name="sgpa" placeholder="Enter SGPA">
+                </div>
+                <div class="form-group">
+                    <label for="status-${marksheetCounter}">Status</label>
+                    <input type="text" class="form-control" id="status-${marksheetCounter}" name="status" placeholder="Enter Status">
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label for="sgpa-${marksheetCounter}">SGPA</label>
-                <input type="text" class="form-control" id="sgpa-${marksheetCounter}" name="sgpa" placeholder="Enter SGPA">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="result-${marksheetCounter}">Result</label>
+                    <input type="text" class="form-control" id="result-${marksheetCounter}" name="result" placeholder="Enter Result">
+                </div>
+                <div class="form-group d-block">
+                    <label for="file-${marksheetCounter}">Marksheet Upload</label>
+                    <input type="file" class="form-control-file" id="file-${marksheetCounter}" name="marksheet">
+                </div>
+
             </div>
-            <div class="form-group">
-                <label for="status-${marksheetCounter}">Status</label>
-                <input type="text" class="form-control" id="status-${marksheetCounter}" name="status" placeholder="Enter Status">
+            <div class="row" style="width: 100%; justify-content: center;">
+                <button class="btn btn-danger" onclick="removeMarkSheet(this)" style="width: 45%; max-width: 150px; margin-right: 2%; margin-bottom: 1%;">Remove</button>
+                <button class="btn btn-primary" onclick="addMarkSheet(this)" style="width: 45%; max-width: 150px; margin-bottom: 1%;">Add Marksheet</button>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <label for="result-${marksheetCounter}">Result</label>
-                <input type="text" class="form-control" id="result-${marksheetCounter}" name="result" placeholder="Enter Result">
-            </div>
-            <div class="form-group d-block">
-                <label for="file-${marksheetCounter}">Marksheet Upload</label>
-                <input type="file" class="form-control-file" id="file-${marksheetCounter}" name="marksheet">
-            </div>
-            
-        </div>
-        <div class="row" style="width: 100%; justify-content: center;">
-            <button class="btn btn-danger" onclick="removeMarkSheet(this)" style="width: 45%; max-width: 150px; margin-right: 2%; margin-bottom: 1%;">Remove</button>
-            <button class="btn btn-primary" onclick="addMarkSheet(this)" style="width: 45%; max-width: 150px; margin-bottom: 1%;">Add Marksheet</button>
-        </div>
-    `;
+        `;
 
             // Append the new marksheet div to the marksheetList
             marksheetList.appendChild(newMarkSheetDiv);
@@ -410,34 +415,31 @@
                 "student_migrations": document.querySelector('#migration').value
             };
 
-
-
-
             // console.log(apiUrl);
             var studentUrl = "{{ api_url }}students/"
             var markSheetUrl = "{{ api_url }}marksheets/"
             var studentDataUrl = "{{ api_url }}student-data/"
 
 
-            // fetch(studentUrl, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //     },
-            //     body: JSON.stringify(studentData),
-            // })
-            //     .then(response => {
-            //         if (!response.ok) {
-            //             throw new Error('Network response was not ok');
-            //         }
-            //         return response.json();
-            //     })
-            //     .then(data => {
-            //         console.log('Response from server:', data);
-            //     })
-            //     .catch(error => {
-            //         console.error('There was a problem with the fetch operation:', error);
-            //     });
+            fetch(studentUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(studentData),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Response from server:', data);
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
 
             var marksheetData = [];
             var marksheetRows = document.querySelectorAll('.marksheets-class');
@@ -503,22 +505,22 @@
             formDetails.append('student_affidevit', student_affidevit);
             formDetails.append('student_migrations', student_migrations);
 
-            // fetch(studentDataUrl, {
-            //     method: 'POST',
-            //     body: formDetails,
-            // })
-            //     .then(response => {
-            //         if (!response.ok) {
-            //             throw new Error('Network response was not ok');
-            //         }
-            //         return response.json();
-            //     })
-            //     .then(data => {
-            //         console.log('Response from server:', data);
-            //     })
-            //     .catch(error => {
-            //         console.error('There was a problem with the fetch operation:', error);
-            //     });
+            fetch(studentDataUrl, {
+                method: 'POST',
+                body: formDetails,
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Response from server:', data);
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
 
 
         }

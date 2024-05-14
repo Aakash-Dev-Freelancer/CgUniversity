@@ -1,0 +1,3016 @@
+Watching for file changes with StatReloader
+[12/May/2024 11:00:30] "GET / HTTP/1.0" 200 14620
+[12/May/2024 11:00:31] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 11:00:31] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 11:00:31] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 11:00:31] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 11:00:31] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 11:00:31] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 11:00:31] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 11:00:41] "GET /approval/ HTTP/1.0" 200 10950
+[12/May/2024 11:00:42] "GET /CG_International_University_App/static/main_css/approval.css HTTP/1.0" 200 1382
+[12/May/2024 11:00:42] "GET /CG_International_University_App/static/images/approval/ugc_logo.png HTTP/1.0" 200 96377
+[12/May/2024 11:00:42] "GET /CG_International_University_App/static/images/approval/aicte.png HTTP/1.0" 200 167402
+[12/May/2024 11:00:42] "GET /CG_International_University_App/static/images/approval/pci.png HTTP/1.0" 200 110367
+[12/May/2024 11:00:42] "GET /CG_International_University_App/static/images/approval/bci.png HTTP/1.0" 200 116163
+[12/May/2024 11:00:42] "GET /CG_International_University_App/static/images/approval/mci.png HTTP/1.0" 200 62695
+[12/May/2024 11:00:42] "GET /CG_International_University_App/static/images/approval/icar1.png HTTP/1.0" 200 45416
+[12/May/2024 11:00:46] "GET / HTTP/1.0" 200 14620
+[12/May/2024 11:00:51] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 11:00:51] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.0" 200 2123
+Not Found: /cg_api/login/
+[12/May/2024 11:00:58] "POST /cg_api/login/ HTTP/1.0" 404 52
+[12/May/2024 11:00:58] "POST /student/ HTTP/1.0" 200 4288
+Not Found: /cg_api/login/
+[12/May/2024 11:01:02] "POST /cg_api/login/ HTTP/1.0" 404 50
+[12/May/2024 11:01:03] "POST /admin_cg/ HTTP/1.0" 200 4288
+[12/May/2024 11:01:10] "GET / HTTP/1.0" 200 14620
+[12/May/2024 11:01:15] "GET /admin/login HTTP/1.0" 302 0
+[12/May/2024 11:01:16] "GET /admin/login/?next=/admin/login HTTP/1.0" 200 4451
+[12/May/2024 11:01:16] "GET /CG_International_University_App/static/admin/css/base.css HTTP/1.0" 200 21544
+[12/May/2024 11:01:17] "GET /CG_International_University_App/static/admin/css/nav_sidebar.css HTTP/1.0" 200 2810
+[12/May/2024 11:01:17] "GET /CG_International_University_App/static/admin/css/responsive.css HTTP/1.0" 200 17905
+[12/May/2024 11:01:17] "GET /CG_International_University_App/static/admin/css/login.css HTTP/1.0" 200 958
+[12/May/2024 11:01:17] "GET /CG_International_University_App/static/admin/css/dark_mode.css HTTP/1.0" 200 2682
+[12/May/2024 11:01:18] "GET /CG_International_University_App/static/admin/js/theme.js HTTP/1.0" 200 1943
+[12/May/2024 11:01:18] "GET /CG_International_University_App/static/admin/js/nav_sidebar.js HTTP/1.0" 200 3063
+[12/May/2024 11:01:39] "GET /cg_api/students/ HTTP/1.0" 200 17310
+[12/May/2024 11:01:54] "GET / HTTP/1.0" 200 14620
+[12/May/2024 11:01:54] "POST /cg_api/login/ HTTP/1.0" 200 1278
+[12/May/2024 11:01:54] "POST /student/ HTTP/1.0" 200 17236
+[12/May/2024 11:01:54] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 11:01:55] "GET /CG_International_University_App/static/student_css/student.css HTTP/1.0" 200 1308
+[12/May/2024 11:01:55] "GET /media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_GyfNhyI.jpg HTTP/1.0" 200 50314
+[12/May/2024 11:01:55] "GET /CG_International_University_App/static/scripts/student_js/student.js HTTP/1.0" 200 607
+Not Found: /ads.txt
+[12/May/2024 11:01:55] "GET /ads.txt HTTP/1.0" 404 5382
+Not Found: /app-ads.txt
+[12/May/2024 11:01:56] "GET /app-ads.txt HTTP/1.0" 404 5394
+Not Found: /sellers.json
+[12/May/2024 11:01:56] "GET /sellers.json HTTP/1.0" 404 5397
+Not Found: /cg_api/adminlogin
+[12/May/2024 11:02:13] "GET /cg_api/adminlogin HTTP/1.0" 404 7346
+[12/May/2024 11:02:20] "GET /cg_api/admin/login HTTP/1.0" 301 0
+[12/May/2024 11:02:20] "GET /cg_api/admin/login/ HTTP/1.0" 200 15342
+[12/May/2024 11:02:27] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 11:02:27] "POST /admin_cg/ HTTP/1.0" 200 34896
+[12/May/2024 11:02:54] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 11:02:54] "POST /admin_cg/ HTTP/1.0" 200 34896
+[12/May/2024 11:04:33] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 11:04:33] "POST /admin_cg/ HTTP/1.0" 200 34896
+[12/May/2024 11:04:35] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 11:04:35] "POST /admin_cg/ HTTP/1.0" 200 34896
+[12/May/2024 11:04:58] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 11:04:58] "POST /admin_cg/ HTTP/1.0" 200 23399
+[12/May/2024 11:05:02] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 11:05:02] "POST /admin_cg/ HTTP/1.0" 200 23399
+[12/May/2024 11:05:05] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 11:05:05] "POST /admin_cg/ HTTP/1.0" 200 23399
+[12/May/2024 11:05:19] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 11:05:19] "POST /admin_cg/ HTTP/1.0" 200 37595
+[12/May/2024 11:05:24] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 11:05:24] "POST /admin_cg/ HTTP/1.0" 200 37595
+[12/May/2024 11:05:33] "GET /cg_api/students/test/ HTTP/1.0" 200 253
+[12/May/2024 11:05:33] "GET /cg_api/marksheets/test/ HTTP/1.0" 200 245
+[12/May/2024 11:05:33] "GET /cg_api/student-data/test/ HTTP/1.0" 200 839
+[12/May/2024 11:05:33] "GET /edit_student/?id=test HTTP/1.0" 200 21206
+[12/May/2024 11:05:34] "GET /media/images/students/provision/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_3XKuIut.jpg HTTP/1.0" 200 50314
+[12/May/2024 11:05:34] "GET /media/images/students/migrations/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_rmMYF8H.jpg HTTP/1.0" 200 50314
+[12/May/2024 11:05:35] "GET /media/images/students/affidevit/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_iFM1sPq.jpg HTTP/1.0" 200 50314
+[12/May/2024 11:05:35] "GET /media/images/students/admit_card/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_nwVv65o.jpg HTTP/1.0" 200 50314
+[12/May/2024 11:05:48] "GET /cg_api/students/test/ HTTP/1.0" 200 253
+[12/May/2024 11:05:48] "GET /cg_api/marksheets/test/ HTTP/1.0" 200 245
+[12/May/2024 11:05:48] "GET /cg_api/student-data/test/ HTTP/1.0" 200 839
+[12/May/2024 11:05:48] "GET /edit_student/?id=test HTTP/1.0" 200 21206
+[12/May/2024 11:09:54] "GET / HTTP/1.0" 200 14620
+[12/May/2024 11:09:59] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 11:09:59] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 11:09:59] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 11:09:59] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 11:09:59] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 11:09:59] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 11:09:59] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 11:10:26] "GET /approval/ HTTP/1.0" 200 10950
+[12/May/2024 11:10:27] "GET /CG_International_University_App/static/main_css/approval.css HTTP/1.0" 200 1382
+[12/May/2024 11:10:27] "GET /CG_International_University_App/static/images/approval/aicte.png HTTP/1.0" 200 167402
+[12/May/2024 11:10:27] "GET /CG_International_University_App/static/images/approval/pci.png HTTP/1.0" 200 110367
+[12/May/2024 11:10:27] "GET /CG_International_University_App/static/images/approval/ugc_logo.png HTTP/1.0" 200 96377
+[12/May/2024 11:10:27] "GET /CG_International_University_App/static/images/approval/mci.png HTTP/1.0" 200 62695
+[12/May/2024 11:10:27] "GET /CG_International_University_App/static/images/approval/icar1.png HTTP/1.0" 200 45416
+[12/May/2024 11:10:27] "GET /CG_International_University_App/static/images/approval/bci.png HTTP/1.0" 200 116163
+[12/May/2024 11:11:13] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 11:11:14] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.0" 200 2123
+[12/May/2024 11:19:44] "GET / HTTP/1.1" 200 14620
+[12/May/2024 11:19:45] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.1" 200 1555
+[12/May/2024 11:19:45] "GET /CG_International_University_App/static/images/logo.png HTTP/1.1" 200 46843
+[12/May/2024 11:19:45] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.1" 200 55879
+[12/May/2024 11:19:46] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.1" 200 139834
+[12/May/2024 11:19:46] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.1" 200 245914
+[12/May/2024 11:19:47] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.1" 200 349888
+[12/May/2024 11:19:47] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.1" 200 2080830
+[12/May/2024 11:20:50] "GET /about/ HTTP/1.0" 200 8207
+[12/May/2024 11:20:52] "GET / HTTP/1.0" 200 14620
+[12/May/2024 11:20:54] "GET /about/ HTTP/1.0" 200 8207
+[12/May/2024 11:20:55] "GET /director_message/ HTTP/1.0" 200 8408
+[12/May/2024 11:20:57] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 11:20:58] "GET /vision_and_mission/ HTTP/1.0" 200 9334
+[12/May/2024 11:20:59] "GET /approval/ HTTP/1.0" 200 10950
+[12/May/2024 11:21:01] "GET /courses/ HTTP/1.0" 200 22732
+[12/May/2024 11:21:02] "GET /rti/ HTTP/1.0" 200 7714
+Not Found: /.env
+[12/May/2024 11:21:03] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[12/May/2024 11:21:03] "POST / HTTP/1.0" 403 2928
+[12/May/2024 11:21:03] "GET /board_members/ HTTP/1.0" 200 9401
+[12/May/2024 11:21:05] "GET /terms_and_conditions/ HTTP/1.0" 200 8634
+[12/May/2024 11:21:06] "GET / HTTP/1.0" 200 14620
+[12/May/2024 11:21:07] "GET /about/ HTTP/1.0" 200 8207
+[12/May/2024 11:21:08] "GET / HTTP/1.0" 200 14620
+[12/May/2024 11:21:10] "GET /director_message/ HTTP/1.0" 200 8408
+[12/May/2024 11:21:11] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 11:21:12] "GET /vision_and_mission/ HTTP/1.0" 200 9334
+[12/May/2024 11:21:14] "GET /approval/ HTTP/1.0" 200 10950
+[12/May/2024 11:21:15] "GET /courses/ HTTP/1.0" 200 22732
+[12/May/2024 11:21:17] "GET /rti/ HTTP/1.0" 200 7714
+[12/May/2024 11:21:18] "GET /board_members/ HTTP/1.0" 200 9401
+[12/May/2024 11:21:19] "GET /terms_and_conditions/ HTTP/1.0" 200 8634
+Not Found: /.git/config
+[12/May/2024 11:27:51] "GET /.git/config HTTP/1.0" 404 5376
+Not Found: /.env
+[12/May/2024 11:28:31] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[12/May/2024 11:28:31] "POST / HTTP/1.0" 403 2928
+Not Found: /.git/config
+[12/May/2024 11:33:33] "GET /.git/config HTTP/1.0" 404 5376
+[12/May/2024 11:47:22] "GET / HTTP/1.1" 200 14620
+[12/May/2024 11:47:22,630] - Broken pipe from ('184.105.247.196', 27904)
+Not Found: /favicon.ico
+[12/May/2024 11:47:33] "GET /favicon.ico HTTP/1.1" 404 5381
+Not Found: /http:/api.ipify.org/
+[12/May/2024 11:47:38] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[12/May/2024 11:47:41] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+Not Found: /owa/auth.owa
+[12/May/2024 12:06:17] "POST /owa/auth.owa HTTP/1.0" 404 5380
+[12/May/2024 12:09:53] "GET / HTTP/1.0" 200 14620
+[12/May/2024 12:32:49] "GET / HTTP/1.0" 200 14620
+[12/May/2024 12:35:22] "GET / HTTP/1.0" 200 14620
+Not Found: /http:/uplo.ad/
+[12/May/2024 12:37:39] "GET http://uplo.ad/?v=1&ip=54.242.171.194&port=8001 HTTP/1.1" 404 1881
+[12/May/2024 12:48:18] "GET / HTTP/1.0" 200 14620
+[12/May/2024 12:48:36] "GET / HTTP/1.0" 200 14620
+[12/May/2024 12:48:37] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 12:48:37] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 12:48:37] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 12:48:37] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 12:48:37] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 12:48:37] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 12:48:37] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+Not Found: /.env
+[12/May/2024 12:52:13] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[12/May/2024 12:52:13] "POST / HTTP/1.0" 403 2928
+[12/May/2024 12:53:53] "GET /about/ HTTP/1.0" 200 8207
+[12/May/2024 12:53:56] "GET / HTTP/1.0" 200 14620
+[12/May/2024 12:53:58] "GET /about/ HTTP/1.0" 200 8207
+[12/May/2024 12:54:04] "GET /director_message/ HTTP/1.0" 200 8408
+[12/May/2024 12:54:07] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 12:54:09] "GET /vision_and_mission/ HTTP/1.0" 200 9334
+[12/May/2024 12:54:11] "GET /approval/ HTTP/1.0" 200 10950
+[12/May/2024 12:54:20] "GET /courses/ HTTP/1.0" 200 22732
+[12/May/2024 12:54:21] "GET /rti/ HTTP/1.0" 200 7714
+[12/May/2024 12:54:28] "GET /board_members/ HTTP/1.0" 200 9401
+[12/May/2024 12:54:36] "GET /terms_and_conditions/ HTTP/1.0" 200 8634
+[12/May/2024 12:54:42] "GET / HTTP/1.0" 200 14620
+[12/May/2024 12:54:47] "GET /about/ HTTP/1.0" 200 8207
+[12/May/2024 12:54:56] "GET / HTTP/1.0" 200 14620
+[12/May/2024 12:55:04] "GET /director_message/ HTTP/1.0" 200 8408
+[12/May/2024 12:55:19] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 12:55:32] "GET /vision_and_mission/ HTTP/1.0" 200 9334
+[12/May/2024 12:55:33] "GET /approval/ HTTP/1.0" 200 10950
+[12/May/2024 12:55:39] "GET /courses/ HTTP/1.0" 200 22732
+[12/May/2024 12:55:44] "GET /rti/ HTTP/1.0" 200 7714
+[12/May/2024 12:55:51] "GET /board_members/ HTTP/1.0" 200 9401
+[12/May/2024 12:55:53] "GET /terms_and_conditions/ HTTP/1.0" 200 8634
+[12/May/2024 12:57:38] "GET / HTTP/1.0" 200 14620
+[12/May/2024 12:58:33] "GET / HTTP/1.0" 200 14620
+[12/May/2024 14:01:30] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:30] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[12/May/2024 14:01:31] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[12/May/2024 14:01:31] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:31] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:31] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:32] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:32] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:32] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:32] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:33] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:33] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:33] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:33] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:34] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:34] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:34] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:34] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[12/May/2024 14:01:35] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[12/May/2024 14:11:46] "GET / HTTP/1.0" 200 14620
+[12/May/2024 14:23:21] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 14:23:21] "POST /admin_cg/ HTTP/1.1" 200 37595
+[12/May/2024 14:23:24] "GET / HTTP/1.0" 200 14620
+[12/May/2024 14:23:26] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 14:23:27] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.0" 200 2123
+[12/May/2024 14:23:34] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 14:23:34] "POST /admin_cg/ HTTP/1.0" 200 37595
+[12/May/2024 14:25:33] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 14:25:33] "POST /admin_cg/ HTTP/1.0" 200 37595
+[12/May/2024 14:30:02] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 14:30:02] "POST /admin_cg/ HTTP/1.0" 200 37595
+[12/May/2024 14:35:07] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 14:35:19] "POST /cg_api/login/ HTTP/1.0" 200 1387
+[12/May/2024 14:35:19] "POST /admin_cg/ HTTP/1.0" 200 37595
+[12/May/2024 14:41:50] "GET / HTTP/1.0" 200 14620
+[12/May/2024 14:41:50] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 14:41:50] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 14:41:51] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 14:41:51] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 14:41:52] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 14:41:53] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 14:41:53] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 14:58:22] "GET /admin/login HTTP/1.0" 302 0
+[12/May/2024 14:58:22] "GET /admin/login/?next=/admin/login HTTP/1.0" 200 4451
+[12/May/2024 14:58:32] "GET /cg_api/admin/login/ HTTP/1.0" 200 15342
+[12/May/2024 14:59:25] "POST /cg_api/admin/login/ HTTP/1.0" 201 15386
+[12/May/2024 14:59:27] "GET /cg_api/admin/login/ HTTP/1.0" 200 15704
+[12/May/2024 14:59:28] "GET /admin/login/?next=/admin/login HTTP/1.0" 200 4451
+[12/May/2024 14:59:31] "GET / HTTP/1.0" 200 14620
+[12/May/2024 14:59:33] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 14:59:47] "POST /cg_api/login/ HTTP/1.0" 200 1400
+Internal Server Error: /admin_cg/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 48, in admin
+    admin_info = AdminInfo.from_dict(admin_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 250, in from_dict
+    admin_info = AdminInfoClass.from_dict(obj.get("admin_info"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 77, in from_dict
+    email = Email(obj.get("email"))
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 757, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 1171, in __new__
+    raise ve_exc
+ValueError: 'satyamrajak555555@gmail.com' is not a valid Email
+[12/May/2024 14:59:47] "POST /admin_cg/ HTTP/1.0" 500 105113
+[12/May/2024 15:00:56] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[12/May/2024 15:00:57] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[12/May/2024 15:00:57] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[12/May/2024 15:00:57] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[12/May/2024 15:00:57] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[12/May/2024 15:00:58] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[12/May/2024 15:00:58] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[12/May/2024 15:00:58] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[12/May/2024 15:00:58] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[12/May/2024 15:00:59] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[12/May/2024 15:00:59] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[12/May/2024 15:00:59] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[12/May/2024 15:00:59] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[12/May/2024 15:01:00] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[12/May/2024 15:01:00] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[12/May/2024 15:01:00] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[12/May/2024 15:01:00] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[12/May/2024 15:01:01] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[12/May/2024 15:01:01] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[12/May/2024 15:02:11] "GET / HTTP/1.0" 200 14620
+[12/May/2024 15:04:41] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:42] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[12/May/2024 15:04:42] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[12/May/2024 15:04:42] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:42] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:43] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:43] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:43] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:43] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:44] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:44] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:44] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:44] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:44] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:45] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:45] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:45] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:45] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[12/May/2024 15:04:46] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Watching for file changes with StatReloader
+Error: That port is already in use.
+[12/May/2024 15:06:44] "GET / HTTP/1.0" 200 14620
+[12/May/2024 15:06:45] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 15:06:45] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 15:06:45] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 15:06:45] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 15:06:45] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 15:06:45] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 15:06:45] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 15:06:46] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 15:06:47] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.0" 200 2123
+[12/May/2024 15:06:59] "POST /cg_api/login/ HTTP/1.0" 200 1400
+Internal Server Error: /admin_cg/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 48, in admin
+    admin_info = AdminInfo.from_dict(admin_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 250, in from_dict
+    admin_info = AdminInfoClass.from_dict(obj.get("admin_info"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 77, in from_dict
+    email = Email(obj.get("email"))
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 757, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 1171, in __new__
+    raise ve_exc
+ValueError: 'satyamrajak555555@gmail.com' is not a valid Email
+[12/May/2024 15:06:59] "POST /admin_cg/ HTTP/1.0" 500 105644
+[12/May/2024 15:08:20] "POST /cg_api/login/ HTTP/1.0" 200 1400
+Internal Server Error: /admin_cg/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 48, in admin
+    admin_info = AdminInfo.from_dict(admin_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 250, in from_dict
+    admin_info = AdminInfoClass.from_dict(obj.get("admin_info"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 77, in from_dict
+    email = Email(obj.get("email"))
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 757, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 1171, in __new__
+    raise ve_exc
+ValueError: 'satyamrajak555555@gmail.com' is not a valid Email
+[12/May/2024 15:08:21] "POST /admin_cg/ HTTP/1.0" 500 105495
+[12/May/2024 15:08:41] "GET / HTTP/1.1" 200 14620
+[12/May/2024 15:08:42] "GET /login/ HTTP/1.1" 200 4288
+[12/May/2024 15:08:43] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.1" 200 2123
+[12/May/2024 15:08:49] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.1" 200 2080830
+[12/May/2024 15:09:15] "POST /cg_api/login/ HTTP/1.0" 200 1400
+Internal Server Error: /admin_cg/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 48, in admin
+    admin_info = AdminInfo.from_dict(admin_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 250, in from_dict
+    admin_info = AdminInfoClass.from_dict(obj.get("admin_info"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 77, in from_dict
+    email = Email(obj.get("email"))
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 757, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 1171, in __new__
+    raise ve_exc
+ValueError: 'satyamrajak555555@gmail.com' is not a valid Email
+[12/May/2024 15:09:15] "POST /admin_cg/ HTTP/1.1" 500 103575
+[12/May/2024 15:09:31] "GET /cg_api/admin/login/2/ HTTP/1.1" 200 16754
+[12/May/2024 15:09:36] "GET /cg_api/admin/login/ HTTP/1.1" 200 15704
+[12/May/2024 15:09:49] "GET /cg_api/admin/login/3 HTTP/1.1" 301 0
+[12/May/2024 15:09:49] "GET /cg_api/admin/login/3/ HTTP/1.1" 200 16800
+[12/May/2024 15:09:52] "DELETE /cg_api/admin/login/3/ HTTP/1.1" 200 16352
+Not Found: /cg_api/admin/login/3/
+[12/May/2024 15:09:59] "PUT /cg_api/admin/login/3/ HTTP/1.1" 404 16426
+Not Found: /cg_api/admin/login/3/
+[12/May/2024 15:10:09] "PUT /cg_api/admin/login/3/ HTTP/1.1" 404 16426
+Not Found: /cg_api/admin/login/3/
+[12/May/2024 15:10:17] "PATCH /cg_api/admin/login/3/ HTTP/1.1" 404 16428
+[12/May/2024 15:10:20] "GET /cg_api/admin/login/ HTTP/1.1" 200 15342
+[12/May/2024 15:10:40] "POST /cg_api/admin/login/ HTTP/1.1" 201 15386
+[12/May/2024 15:10:44] "GET /cg_api/admin/login/ HTTP/1.1" 200 15704
+[12/May/2024 15:10:46] "GET /cg_api/admin/login/ HTTP/1.1" 200 15704
+[12/May/2024 15:10:51] "POST /cg_api/login/ HTTP/1.0" 200 1400
+Internal Server Error: /admin_cg/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 48, in admin
+    admin_info = AdminInfo.from_dict(admin_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 250, in from_dict
+    admin_info = AdminInfoClass.from_dict(obj.get("admin_info"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 77, in from_dict
+    email = Email(obj.get("email"))
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 757, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 1171, in __new__
+    raise ve_exc
+ValueError: 'satyamrajak555555@gmail.com' is not a valid Email
+[12/May/2024 15:10:51] "POST /admin_cg/ HTTP/1.0" 500 105113
+[12/May/2024 15:10:55] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 15:11:04] "GET / HTTP/1.1" 200 14620
+[12/May/2024 15:11:06] "GET /login/ HTTP/1.1" 200 4288
+[12/May/2024 15:11:16] "POST /cg_api/login/ HTTP/1.0" 200 1400
+Internal Server Error: /admin_cg/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 48, in admin
+    admin_info = AdminInfo.from_dict(admin_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 250, in from_dict
+    admin_info = AdminInfoClass.from_dict(obj.get("admin_info"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 77, in from_dict
+    email = Email(obj.get("email"))
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 757, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 1171, in __new__
+    raise ve_exc
+ValueError: 'satyamrajak555555@gmail.com' is not a valid Email
+[12/May/2024 15:11:17] "POST /admin_cg/ HTTP/1.1" 500 103702
+Not Found: /cg_api/login/
+[12/May/2024 15:12:44] "POST /cg_api/login/ HTTP/1.0" 404 50
+[12/May/2024 15:12:44] "POST /admin_cg/ HTTP/1.1" 200 4288
+[12/May/2024 15:12:54] "GET /cg_api/students/ HTTP/1.1" 200 16674
+[12/May/2024 15:12:55] "GET /CG_International_University_App/static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+[12/May/2024 15:12:55] "GET /CG_International_University_App/static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[12/May/2024 15:12:55] "GET /CG_International_University_App/static/rest_framework/css/default.css HTTP/1.1" 200 1152
+[12/May/2024 15:12:55] "GET /CG_International_University_App/static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+[12/May/2024 15:12:55] "GET /CG_International_University_App/static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[12/May/2024 15:12:55] "GET /CG_International_University_App/static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+[12/May/2024 15:12:56] "GET /CG_International_University_App/static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[12/May/2024 15:12:56] "GET /CG_International_University_App/static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[12/May/2024 15:12:56] "GET /CG_International_University_App/static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+[12/May/2024 15:12:56] "GET /CG_International_University_App/static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[12/May/2024 15:12:56] "GET /CG_International_University_App/static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+[12/May/2024 15:12:56] "GET /CG_International_University_App/static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[12/May/2024 15:13:04] "GET /cg_api/admin/login HTTP/1.1" 301 0
+[12/May/2024 15:13:05] "GET /cg_api/admin/login/ HTTP/1.1" 200 15000
+[12/May/2024 15:13:23] "POST /cg_api/admin/login/ HTTP/1.1" 201 15386
+[12/May/2024 15:13:30] "GET / HTTP/1.1" 200 14620
+[12/May/2024 15:13:32] "GET /login/ HTTP/1.1" 200 4288
+[12/May/2024 15:13:40] "POST /cg_api/login/ HTTP/1.0" 200 240
+Internal Server Error: /admin_cg/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 48, in admin
+    admin_info = AdminInfo.from_dict(admin_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 250, in from_dict
+    admin_info = AdminInfoClass.from_dict(obj.get("admin_info"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 77, in from_dict
+    email = Email(obj.get("email"))
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 757, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/enum.py", line 1171, in __new__
+    raise ve_exc
+ValueError: 'satyamrajak555555@gmail.com' is not a valid Email
+[12/May/2024 15:13:40] "POST /admin_cg/ HTTP/1.1" 500 97368
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 12, 2024 - 11:00:29
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Student Function View ---------------- 
+Api Hit
+---------------- Admin Function View ---------------- 
+JNdqNuDlU9FWqs4Euv4Cc7eHcTrSwvd0WRxBThD7ZeltscRpRqUHlpVXGOCO4DRj
+---------------- Student Function View ---------------- 
+Api Hit
+---------------- Admin Function View ---------------- 
+p2KnsCtGifvxGQLLkE3pd1gU0wq375BrC64yyptsnkb4IAywHzTumjXaurBZFdfK
+---------------- Admin Function View ---------------- 
+p2KnsCtGifvxGQLLkE3pd1gU0wq375BrC64yyptsnkb4IAywHzTumjXaurBZFdfK
+---------------- Admin Function View ---------------- 
+p2KnsCtGifvxGQLLkE3pd1gU0wq375BrC64yyptsnkb4IAywHzTumjXaurBZFdfK
+---------------- Admin Function View ---------------- 
+p2KnsCtGifvxGQLLkE3pd1gU0wq375BrC64yyptsnkb4IAywHzTumjXaurBZFdfK
+---------------- Admin Function View ---------------- 
+p2KnsCtGifvxGQLLkE3pd1gU0wq375BrC64yyptsnkb4IAywHzTumjXaurBZFdfK
+---------------- Admin Function View ---------------- 
+p2KnsCtGifvxGQLLkE3pd1gU0wq375BrC64yyptsnkb4IAywHzTumjXaurBZFdfK
+---------------- Admin Function View ---------------- 
+p2KnsCtGifvxGQLLkE3pd1gU0wq375BrC64yyptsnkb4IAywHzTumjXaurBZFdfK
+---------------- Admin Function View ---------------- 
+p2KnsCtGifvxGQLLkE3pd1gU0wq375BrC64yyptsnkb4IAywHzTumjXaurBZFdfK
+---------------- Admin Function View ---------------- 
+p2KnsCtGifvxGQLLkE3pd1gU0wq375BrC64yyptsnkb4IAywHzTumjXaurBZFdfK
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'test', 'password': '1234', 'full_name': 'test', 'father_name': 'test', 'mother_name': 'test', 'gender': 'test', 'date_of_birth': '2223-08-12', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '07000649593', 'address': '46, Mohan Nagar'}
+[{'id': 1, 'student_enrollment_no': 'test', 'session': 'Dec-2019', 'semester': '2', 'sgpa': '8.92', 'status': 'Not Enrolled', 'result': 'Pass', 'file': '/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_GyfNhyI.jpg'}]
+<bound method Response.json of <Response [200]>>
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'test', 'password': '1234', 'full_name': 'test', 'father_name': 'test', 'mother_name': 'test', 'gender': 'test', 'date_of_birth': '2223-08-12', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '07000649593', 'address': '46, Mohan Nagar'}
+[{'id': 1, 'student_enrollment_no': 'test', 'session': 'Dec-2019', 'semester': '2', 'sgpa': '8.92', 'status': 'Not Enrolled', 'result': 'Pass', 'file': '/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_GyfNhyI.jpg'}]
+<bound method Response.json of <Response [200]>>
+---------------- Admin Function View ---------------- 
+pyOgOoQrD8TX0WIz5rzd5KOqwcd6LtDeT1MBf8YR8BgjT0G0ZskYQUk9FUFU0E2H
+---------------- Admin Function View ---------------- 
+cKeYYVAxwyp3efVqzLIsjGB6dqRlERFrw2wlTNAw3Usu0YKgSc0x1oKlHF3kTKe1
+---------------- Admin Function View ---------------- 
+cKeYYVAxwyp3efVqzLIsjGB6dqRlERFrw2wlTNAw3Usu0YKgSc0x1oKlHF3kTKe1
+---------------- Admin Function View ---------------- 
+cKeYYVAxwyp3efVqzLIsjGB6dqRlERFrw2wlTNAw3Usu0YKgSc0x1oKlHF3kTKe1
+---------------- Admin Function View ---------------- 
+Vg9dMJ8hiGVqp5licPSqikHzcNSgJAOOfyrAHB8gP2YRbOa8vgav02QOG24fYtno
+---------------- Admin Function View ---------------- 
+HxnQCanyCClOGCjdbTTUSIXUTglEgntu1PFdx2nx9Yofsl83ukbZAq69nvxDvg24
+---------------- Admin Function View ---------------- 
+IbHPt8hxfn89fAQDlqkB8y8l5k5DN9idyLImEHC0hmrwAlOaAscO0H3gmgmS2giW
+---------------- Admin Function View ---------------- 
+IbHPt8hxfn89fAQDlqkB8y8l5k5DN9idyLImEHC0hmrwAlOaAscO0H3gmgmS2giW
+---------------- Admin Function View ---------------- 
+4g1kBB1RHZGqz0WOt3wKSKxZyPJXVzPNrvDkInYJg37g0lSlBC6HWwrecD9zg6jC
+---------------- Admin Function View ---------------- 
+HxnQCanyCClOGCjdbTTUSIXUTglEgntu1PFdx2nx9Yofsl83ukbZAq69nvxDvg24
+---------------- Admin Function View ---------------- 
+OSYd9hItc4Oh66F2JGXT3yK3ryosIVcTilWyA1QTHxbDZaDtDHIEOIgMAgQgX6Bm
+---------------- Admin Function View ---------------- 
+4g1kBB1RHZGqz0WOt3wKSKxZyPJXVzPNrvDkInYJg37g0lSlBC6HWwrecD9zg6jC
+---------------- Admin Function View ---------------- 
+rWtnaYTdMaock91ggWjrdsauEHDy7mkvOb5nhKQ5leP2LuXNovTohe4Jiv3asTOk
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/student.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 12, 2024 - 15:14:47
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/courses.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 12, 2024 - 15:14:48
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[12/May/2024 15:14:56] "POST /cg_api/login/ HTTP/1.0" 200 240
+[12/May/2024 15:14:56] "POST /admin_cg/ HTTP/1.1" 200 36240
+[12/May/2024 15:15:04] "POST /cg_api/login/ HTTP/1.0" 200 240
+[12/May/2024 15:15:04] "POST /admin_cg/ HTTP/1.0" 200 36240
+[12/May/2024 15:17:30] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:30] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[12/May/2024 15:17:31] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[12/May/2024 15:17:31] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[12/May/2024 15:17:31] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[12/May/2024 15:27:32] "HEAD / HTTP/1.0" 200 0
+[12/May/2024 15:27:33] "HEAD / HTTP/1.0" 200 0
+Not Found: /owa/auth/logon.aspx
+[12/May/2024 15:55:15] "GET /owa/auth/logon.aspx HTTP/1.0" 404 5400
+Not Found: /Temporary_Listen_Addresses
+[12/May/2024 15:55:32] "GET /Temporary_Listen_Addresses HTTP/1.0" 404 5421
+Not Found: /ews/exchanges/
+[12/May/2024 15:55:32] "GET /ews/exchanges/ HTTP/1.0" 404 5385
+Not Found: /ews/exchange /
+[12/May/2024 15:55:32] "GET /ews/exchange%20/ HTTP/1.0" 404 5387
+Not Found: /ews/exchange/
+[12/May/2024 15:55:32] "GET /ews/exchange/ HTTP/1.0" 404 5382
+Not Found: /ews/ /
+[12/May/2024 15:55:32] "GET /ews/%20/ HTTP/1.0" 404 5363
+Not Found: /ews/ews/
+[12/May/2024 15:55:32] "GET /ews/ews/ HTTP/1.0" 404 5367
+Not Found: /ews/autodiscovers/
+[12/May/2024 15:55:32] "GET /ews/autodiscovers/ HTTP/1.0" 404 5397
+Not Found: /autodiscover/autodiscovers/
+[12/May/2024 15:55:32] "GET /autodiscover/autodiscovers/ HTTP/1.0" 404 5424
+Not Found: /autodiscover/autodiscover /
+[12/May/2024 15:55:32] "GET /autodiscover/autodiscover%20/ HTTP/1.0" 404 5426
+Not Found: /autodiscover/autodiscoverrs/
+[12/May/2024 15:55:32] "GET /autodiscover/autodiscoverrs/ HTTP/1.0" 404 5427
+Not Found: /autodiscove/
+[12/May/2024 15:55:33] "GET /autodiscove/ HTTP/1.0" 404 5379
+[12/May/2024 16:26:53] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:54] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[12/May/2024 16:26:54] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[12/May/2024 16:26:54] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:55] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:55] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:55] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:56] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:56] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:56] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2018/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:57] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:57] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:57] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:58] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:58] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /media/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:58] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5451
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:59] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:59] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[12/May/2024 16:26:59] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[12/May/2024 16:27:00] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[12/May/2024 16:47:37] "GET / HTTP/1.0" 200 14620
+[12/May/2024 16:47:37] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 16:47:37] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 16:47:37] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 16:47:37] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 16:47:37] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 16:47:37] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 16:47:37] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 16:48:04] "GET / HTTP/1.0" 200 14620
+[12/May/2024 16:48:04] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 16:48:04] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 16:48:04] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 16:48:04] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 16:48:04] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 16:48:04] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 16:48:04] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+Not Found: /.env
+[12/May/2024 17:06:05] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[12/May/2024 17:06:06] "POST / HTTP/1.0" 403 2928
+[12/May/2024 17:34:12] "GET / HTTP/1.1" 200 14620
+Not Found: /wp-login.php
+[12/May/2024 17:49:34] "GET /wp-login.php HTTP/1.0" 404 5393
+[12/May/2024 18:01:19] "GET / HTTP/1.0" 200 14620
+[12/May/2024 18:02:19] "GET / HTTP/1.0" 200 14620
+[12/May/2024 18:02:31] "GET / HTTP/1.0" 200 14620
+[12/May/2024 18:03:33] "GET / HTTP/1.0" 200 14620
+[12/May/2024 18:03:34] "GET / HTTP/1.0" 200 14620
+[12/May/2024 18:03:34] "GET / HTTP/1.0" 200 14620
+[12/May/2024 18:03:44] "GET / HTTP/1.0" 200 14620
+[12/May/2024 18:03:45] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 18:03:46] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 18:03:47] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 18:03:47] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 18:03:47] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 18:03:47] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 18:03:47] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 18:16:47] "GET /login/ HTTP/1.0" 200 4288
+[12/May/2024 18:16:47] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 304 0
+[12/May/2024 18:16:48] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 304 0
+Not Found: /owa/auth/logon.aspx
+[12/May/2024 18:33:05] "GET /owa/auth/logon.aspx HTTP/1.0" 404 5400
+[12/May/2024 18:52:08] "GET / HTTP/1.0" 200 14620
+Not Found: /.env
+[12/May/2024 19:16:35] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[12/May/2024 19:16:35] "POST / HTTP/1.0" 403 2928
+[12/May/2024 19:26:40] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:26:53] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:27:55] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:27:55] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:27:55] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:27:57] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:27:57] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 19:27:59] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 19:28:00] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 19:28:00] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 19:28:00] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 19:28:00] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 19:28:00] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 19:31:51] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:32:04] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:33:06] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:33:06] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:33:07] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:33:10] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:33:10] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 19:33:12] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 19:33:13] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 19:33:13] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 19:33:13] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 19:33:13] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 19:33:13] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 19:44:06] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:44:18] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:45:19] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:45:20] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:45:20] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:45:23] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:45:24] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 19:45:24] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 19:45:25] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 19:45:26] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 19:45:26] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 19:45:27] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 19:45:27] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 19:50:18] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:50:30] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:51:32] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:51:32] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:51:32] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:51:37] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:51:37] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 19:51:38] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 19:51:39] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 19:51:40] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 19:51:40] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 19:51:40] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 19:51:41] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 19:56:48] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:57:00] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:58:02] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:58:02] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:58:02] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:58:17] "GET / HTTP/1.0" 200 14620
+[12/May/2024 19:58:17] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[12/May/2024 19:58:18] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[12/May/2024 19:58:18] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[12/May/2024 19:58:20] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[12/May/2024 19:58:20] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[12/May/2024 19:58:20] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[12/May/2024 19:58:20] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[12/May/2024 20:02:03] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:03] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[12/May/2024 20:02:03] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[12/May/2024 20:02:03] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:04] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:04] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:04] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:04] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:04] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:04] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2018/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:04] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:05] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:05] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:05] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:05] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /media/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:05] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5451
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:05] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:05] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:05] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[12/May/2024 20:02:06] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[12/May/2024 20:15:28] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:28] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[12/May/2024 20:15:28] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[12/May/2024 20:15:28] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:28] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:28] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:28] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:28] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:28] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:28] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2018/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:28] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:29] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:29] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:29] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:29] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /media/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:29] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5451
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:29] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:29] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:29] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[12/May/2024 20:15:29] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[12/May/2024 20:16:58] "GET / HTTP/1.0" 200 14620
+Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[12/May/2024 20:31:17] "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.0" 404 5568
+Not Found: /.env
+[12/May/2024 20:36:48] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[12/May/2024 20:36:49] "POST / HTTP/1.0" 403 2928
+[12/May/2024 20:52:11] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:11] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[12/May/2024 20:52:11] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[12/May/2024 20:52:12] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:12] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:12] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:12] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:13] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:13] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:13] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2018/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:13] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:14] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:14] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:14] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:14] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /media/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:15] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5451
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:15] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:15] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:15] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[12/May/2024 20:52:16] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[12/May/2024 22:55:39] code 400, message Bad request version ('À\x13À')
+[12/May/2024 22:55:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/May/2024 22:55:39] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x030£Zå\x11´\x0f\x9c\x9cièh+Â\x82Í\x8b\x7fìÝm4ð,Ï´aÎ;eù¦\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+[12/May/2024 22:55:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.env
+[12/May/2024 23:43:19] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[12/May/2024 23:43:20] "POST / HTTP/1.0" 403 2928
+[13/May/2024 00:19:12] "GET / HTTP/1.0" 200 14620
+[13/May/2024 00:19:24] "GET / HTTP/1.0" 200 14620
+[13/May/2024 00:19:32] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 00:26:52] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:52] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[13/May/2024 00:26:53] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[13/May/2024 00:26:53] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:53] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:53] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:54] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:54] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:54] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:54] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2018/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:54] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:55] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:55] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:55] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:55] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /media/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:56] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5451
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:56] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:56] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:56] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[13/May/2024 00:26:56] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[13/May/2024 00:28:11] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:12] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[13/May/2024 00:28:12] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[13/May/2024 00:28:12] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:13] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:13] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:13] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:13] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:14] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:14] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:14] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:14] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:14] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:15] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:15] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:15] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:15] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:16] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[13/May/2024 00:28:16] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /version
+[13/May/2024 00:42:13] "GET /version HTTP/1.0" 404 5364
+[13/May/2024 00:44:49] "GET / HTTP/1.0" 200 14620
+[13/May/2024 01:13:34] "GET / HTTP/1.0" 200 14620
+Not Found: /.env
+[13/May/2024 01:54:08] "GET /.env HTTP/1.0" 404 5369
+[13/May/2024 01:56:19] "GET / HTTP/1.0" 200 14620
+[13/May/2024 01:56:21] "GET / HTTP/1.0" 200 14620
+[13/May/2024 01:56:24] "GET / HTTP/1.0" 200 14620
+[13/May/2024 01:56:25] "GET / HTTP/1.0" 200 14620
+[13/May/2024 01:58:54] "GET / HTTP/1.0" 200 14620
+[13/May/2024 01:58:54] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[13/May/2024 01:58:54] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 01:58:54] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[13/May/2024 01:58:54] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[13/May/2024 01:58:54] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[13/May/2024 01:58:54] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[13/May/2024 01:58:54] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[13/May/2024 01:58:54] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 01:58:55] "GET / HTTP/1.0" 200 14620
+[13/May/2024 01:58:55] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[13/May/2024 01:58:55] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 01:58:55] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[13/May/2024 01:58:55] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[13/May/2024 01:58:55] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[13/May/2024 01:58:55] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[13/May/2024 01:58:55] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[13/May/2024 01:58:56] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+Not Found: /sitemap.txt
+[13/May/2024 02:01:53] "GET /sitemap.txt HTTP/1.0" 404 5394
+Not Found: /atom.xml
+[13/May/2024 02:07:03] "GET /atom.xml HTTP/1.0" 404 5385
+Not Found: /sitemap_index.xml
+[13/May/2024 02:24:05] "GET /sitemap_index.xml HTTP/1.0" 404 5408
+Not Found: /sitemap.txt
+[13/May/2024 02:24:35] "GET /sitemap.txt HTTP/1.0" 404 5390
+Not Found: /sitemap.xml.gz
+[13/May/2024 02:24:53] "GET /sitemap.xml.gz HTTP/1.0" 404 5399
+Not Found: /sitemaps.xml
+[13/May/2024 02:26:43] "GET /sitemaps.xml HTTP/1.0" 404 5397
+Not Found: /.env
+[13/May/2024 02:44:26] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[13/May/2024 02:44:27] "POST / HTTP/1.0" 403 2928
+[13/May/2024 02:53:00] "GET / HTTP/1.0" 200 14620
+[13/May/2024 02:53:17] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 03:11:39] "GET / HTTP/1.0" 200 14620
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[13/May/2024 03:11:51] "GET /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5514
+Not Found: /dist/js/bootstrap.bundle.min.js
+[13/May/2024 03:11:52] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5436
+Not Found: /livereload.js
+[13/May/2024 03:11:53] "GET /livereload.js HTTP/1.0" 404 5382
+Not Found: /cdn.js
+[13/May/2024 03:11:54] "GET /cdn.js HTTP/1.0" 404 5361
+[13/May/2024 03:22:43] "GET / HTTP/1.0" 200 14620
+[13/May/2024 03:22:47] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[13/May/2024 03:22:47] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 03:22:47] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[13/May/2024 03:22:47] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[13/May/2024 03:22:48] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[13/May/2024 03:22:48] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[13/May/2024 03:22:48] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[13/May/2024 03:24:06] "GET /login/ HTTP/1.0" 200 4288
+[13/May/2024 03:25:48] "GET / HTTP/1.0" 200 14620
+Not Found: /owa/auth/logon.aspx
+[13/May/2024 03:38:23] "GET /owa/auth/logon.aspx HTTP/1.0" 404 5400
+[13/May/2024 03:45:23] "GET / HTTP/1.0" 200 14620
+Not Found: /atom.xml
+[13/May/2024 03:47:53] "GET /atom.xml HTTP/1.0" 404 5381
+Not Found: /sitemap.xml
+[13/May/2024 03:48:53] "GET /sitemap.xml HTTP/1.0" 404 5390
+Not Found: /sitemap.xml.gz
+[13/May/2024 04:49:56] "GET /sitemap.xml.gz HTTP/1.0" 404 5403
+Not Found: /sitemap.xml
+[13/May/2024 05:09:10] "GET /sitemap.xml HTTP/1.0" 404 5394
+[13/May/2024 05:16:52] "GET / HTTP/1.0" 200 14620
+Not Found: /robots.txt
+[13/May/2024 05:22:14] "GET /robots.txt HTTP/1.0" 404 5387
+[13/May/2024 05:30:58] "GET / HTTP/1.1" 200 14620
+[13/May/2024 05:30:58,989] - Broken pipe from ('64.62.197.113', 37767)
+Not Found: /favicon.ico
+[13/May/2024 05:31:15] "GET /favicon.ico HTTP/1.1" 404 5381
+Not Found: /http:/api.ipify.org/
+[13/May/2024 05:31:18] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[13/May/2024 05:31:21] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+Not Found: /.git/config
+[13/May/2024 05:32:02] "GET /.git/config HTTP/1.0" 404 5376
+[13/May/2024 05:38:20] "GET / HTTP/1.0" 200 14620
+[13/May/2024 05:38:36] "GET / HTTP/1.0" 200 14620
+Not Found: /sdk
+[13/May/2024 05:38:44] "POST /sdk HTTP/1.0" 404 5353
+Not Found: /nmaplowercheck1715578723
+[13/May/2024 05:38:44] "GET /nmaplowercheck1715578723 HTTP/1.0" 404 5415
+Not Found: /evox/about
+[13/May/2024 05:38:45] "GET /evox/about HTTP/1.0" 404 5373
+Not Found: /HNAP1
+[13/May/2024 05:38:45] "GET /HNAP1 HTTP/1.0" 404 5358
+[13/May/2024 05:38:46] "GET / HTTP/1.0" 200 14620
+[13/May/2024 05:38:47] "GET / HTTP/1.0" 200 14620
+Not Found: /sitemaps.xml
+[13/May/2024 05:51:22] "GET /sitemaps.xml HTTP/1.0" 404 5393
+Not Found: /http:/uplo.ad/
+[13/May/2024 06:02:15] "GET http://uplo.ad/?v=1&ip=54.242.171.194&port=8001 HTTP/1.1" 404 1881
+Not Found: /.git/config
+[13/May/2024 06:04:36] "GET /.git/config HTTP/1.0" 404 5404
+[13/May/2024 06:16:37] "GET / HTTP/1.0" 200 14620
+Not Found: /.env
+[13/May/2024 06:17:57] "GET /.env HTTP/1.0" 404 5369
+[13/May/2024 06:17:58] "GET / HTTP/1.0" 200 14620
+[13/May/2024 06:35:47] "GET / HTTP/1.0" 200 14620
+Not Found: /.env
+[13/May/2024 06:38:56] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[13/May/2024 06:38:57] "POST / HTTP/1.0" 403 2928
+Not Found: /sitemap_index.xml
+[13/May/2024 06:44:40] "GET /sitemap_index.xml HTTP/1.0" 404 5412
+Not Found: /.env
+[13/May/2024 07:04:28] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[13/May/2024 07:04:28] "POST / HTTP/1.0" 403 2928
+[13/May/2024 07:17:05] code 400, message Bad request version ('=9ÝÞâ#¡¯\x83RMhI\x9f\x94/¹¿')
+[13/May/2024 07:17:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.env
+[13/May/2024 07:26:39] "GET /.env HTTP/1.0" 404 5369
+Not Found: /wp-config.php.bak
+[13/May/2024 07:27:00] "GET /wp-config.php.bak HTTP/1.0" 404 5408
+Not Found: /phpinfo.php
+[13/May/2024 07:27:20] "GET /phpinfo.php HTTP/1.0" 404 5390
+Not Found: /info.php
+[13/May/2024 07:27:26] "GET /info.php HTTP/1.0" 404 5381
+Not Found: /.vscode/sftp.json
+[13/May/2024 07:27:31] "GET /.vscode/sftp.json HTTP/1.0" 404 5408
+Not Found: /sftp-config.json
+[13/May/2024 07:27:31] "GET /sftp-config.json HTTP/1.0" 404 5405
+Not Found: /.env
+[13/May/2024 07:54:06] "GET /.env HTTP/1.0" 404 5369
+Not Found: /.env
+[13/May/2024 07:54:19] "GET /.env HTTP/1.0" 404 5373
+[13/May/2024 08:22:03] "OPTIONS / HTTP/1.0" 200 14620
+[13/May/2024 08:22:52] "GET / HTTP/1.0" 200 14620
+Not Found: /.env
+[13/May/2024 08:27:10] "GET /.env HTTP/1.0" 404 5355
+[13/May/2024 08:47:40] "GET / HTTP/1.0" 200 14620
+[13/May/2024 09:06:20] "GET / HTTP/1.0" 200 14620
+[13/May/2024 09:06:20] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[13/May/2024 09:06:20] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 09:06:20] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[13/May/2024 09:06:21] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[13/May/2024 09:06:22] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[13/May/2024 09:06:22] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[13/May/2024 09:06:23] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[13/May/2024 09:08:10] "GET / HTTP/1.0" 200 14620
+[13/May/2024 09:08:18] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+Not Found: /.env
+[13/May/2024 09:32:37] "GET /.env HTTP/1.0" 404 5369
+Not Found: /wp-content/
+[13/May/2024 09:32:39] "GET /wp-content/ HTTP/1.0" 404 5390
+[13/May/2024 09:35:22] "GET / HTTP/1.0" 200 14620
+Not Found: /.env
+[13/May/2024 09:47:38] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[13/May/2024 09:47:38] "POST / HTTP/1.0" 403 2928
+[13/May/2024 09:51:59] "GET / HTTP/1.0" 200 14620
+[13/May/2024 09:52:00] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[13/May/2024 09:52:00] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 09:52:00] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[13/May/2024 09:52:00] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[13/May/2024 09:52:01] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[13/May/2024 09:52:01] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[13/May/2024 09:52:01] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[13/May/2024 09:52:31] "GET /login/ HTTP/1.0" 200 4288
+[13/May/2024 09:52:31] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.0" 200 2123
+Not Found: /cg_api/login/
+[13/May/2024 09:52:44] "POST /cg_api/login/ HTTP/1.0" 404 50
+[13/May/2024 09:52:44] "POST /admin_cg/ HTTP/1.0" 200 4288
+[13/May/2024 09:53:05] "GET / HTTP/1.1" 200 14620
+[13/May/2024 09:53:06] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.1" 200 1555
+[13/May/2024 09:53:06] "GET /CG_International_University_App/static/images/logo.png HTTP/1.1" 200 46843
+[13/May/2024 09:53:06] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.1" 200 55879
+[13/May/2024 09:53:07] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.1" 200 139834
+[13/May/2024 09:53:07] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.1" 200 245914
+[13/May/2024 09:53:08] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.1" 200 349888
+[13/May/2024 09:53:08] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.1" 200 2080830
+[13/May/2024 09:53:12] "GET /login/ HTTP/1.1" 200 4288
+[13/May/2024 09:53:12] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.1" 200 2123
+Not Found: /cg_api/login/
+[13/May/2024 09:53:25] "POST /cg_api/login/ HTTP/1.0" 404 50
+[13/May/2024 09:53:25] "POST /admin_cg/ HTTP/1.1" 200 4288
+[13/May/2024 10:23:25] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:25] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[13/May/2024 10:23:25] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[13/May/2024 10:23:26] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:26] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:26] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:26] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:26] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:27] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:27] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2018/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:27] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:27] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:27] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:28] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:28] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /media/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:28] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5451
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:28] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:29] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:29] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[13/May/2024 10:23:29] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[13/May/2024 10:39:07] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-content/plugins/ioptimization/IOptimize.php
+[13/May/2024 11:02:48] "GET /wp-content/plugins/ioptimization/IOptimize.php?rchk HTTP/1.0" 404 5500
+[13/May/2024 11:04:46] "GET / HTTP/1.0" 200 14620
+[13/May/2024 11:04:56] "GET / HTTP/1.0" 200 14620
+[13/May/2024 11:05:00] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 11:39:21] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:21] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[13/May/2024 11:39:22] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[13/May/2024 11:39:22] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:22] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:22] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:23] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:23] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:23] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:23] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:23] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:24] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:24] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:24] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:24] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:25] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:25] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:25] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[13/May/2024 11:39:25] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[13/May/2024 11:42:10] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:11] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[13/May/2024 11:42:11] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[13/May/2024 11:42:11] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:11] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:11] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:12] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:12] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:12] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:12] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2018/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:13] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:13] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:13] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:13] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:14] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /media/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:14] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5451
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:14] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:14] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:15] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[13/May/2024 11:42:15] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /http:/uplo.ad/
+[13/May/2024 11:46:34] "GET http://uplo.ad/?v=1&ip=54.242.171.194&port=8001 HTTP/1.1" 404 1881
+[13/May/2024 11:55:08] "GET / HTTP/1.0" 200 14620
+[13/May/2024 12:20:05] "GET / HTTP/1.0" 200 14620
+Not Found: /.env
+[13/May/2024 12:53:45] "GET /.env HTTP/1.0" 404 5355
+[13/May/2024 13:09:39] "GET / HTTP/1.0" 200 14620
+[13/May/2024 13:12:27] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:28] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[13/May/2024 13:12:28] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[13/May/2024 13:12:28] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:28] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:29] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:29] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:29] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:29] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:30] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2018/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:30] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:30] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:30] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:31] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:31] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /media/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:31] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5451
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:31] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:32] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:32] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[13/May/2024 13:12:32] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[13/May/2024 13:46:00] "GET / HTTP/1.0" 200 14620
+[13/May/2024 13:46:01] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+Not Found: /favicon-32x32.png
+[13/May/2024 13:59:43] "GET /favicon-32x32.png HTTP/1.0" 404 5394
+[13/May/2024 14:31:54] "GET / HTTP/1.0" 200 14620
+[13/May/2024 14:31:54] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[13/May/2024 14:31:56] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[13/May/2024 14:31:56] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[13/May/2024 14:31:56] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 14:31:56] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[13/May/2024 14:31:56] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[13/May/2024 14:31:56] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+Not Found: /.env
+[13/May/2024 15:15:06] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[13/May/2024 15:15:06] "POST / HTTP/1.0" 403 2928
+[13/May/2024 15:30:37] "GET / HTTP/1.0" 200 14620
+[13/May/2024 15:30:38] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 304 0
+[13/May/2024 15:30:38] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[13/May/2024 15:30:39] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 304 0
+[13/May/2024 15:30:39] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 304 0
+[13/May/2024 15:30:39] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 304 0
+[13/May/2024 15:30:39] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 304 0
+[13/May/2024 15:30:39] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 304 0
+[13/May/2024 15:31:02] "GET /director_message/ HTTP/1.0" 200 8408
+[13/May/2024 15:31:03] "GET /CG_International_University_App/static/main_css/director_message.css HTTP/1.0" 200 741
+[13/May/2024 15:31:16] "GET /board_members/ HTTP/1.0" 200 9401
+[13/May/2024 15:31:17] "GET /CG_International_University_App/static/main_css/board_members.css HTTP/1.0" 200 990
+[13/May/2024 16:06:55] "GET /admin_cg/ HTTP/1.1" 200 4288
+[13/May/2024 16:06:56] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.1" 304 0
+[13/May/2024 16:06:56] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.1" 304 0
+[13/May/2024 16:06:57] "GET /CG_International_University_App/static/images/logo.png HTTP/1.1" 304 0
+Not Found: /owa/auth/logon.aspx
+[13/May/2024 16:12:16] "GET /owa/auth/logon.aspx HTTP/1.0" 404 5400
+[13/May/2024 16:12:55] "GET / HTTP/1.0" 200 14620
+Not Found: /.well-known/about.php
+[13/May/2024 16:14:29] "GET /.well-known/about.php HTTP/1.0" 404 5420
+Not Found: /wp-content/plugins/dummyyummy/wp-signup.php
+[13/May/2024 16:14:30] "GET /wp-content/plugins/dummyyummy/wp-signup.php HTTP/1.0" 404 5486
+Not Found: /wp-content/plugins/pwnd/pwnd.php
+[13/May/2024 16:14:31] "GET /wp-content/plugins/pwnd/pwnd.php HTTP/1.0" 404 5453
+Not Found: /.well-known/acme-challenge/class_api.php
+[13/May/2024 16:14:31] "GET /.well-known/acme-challenge/class_api.php HTTP/1.0" 404 5477
+Not Found: /wp-content/themes/jaida/lang.php
+[13/May/2024 16:14:32] "GET /wp-content/themes/jaida/lang.php HTTP/1.0" 404 5453
+Not Found: /wp-content/themes/aahana/json.php
+[13/May/2024 16:14:33] "GET /wp-content/themes/aahana/json.php HTTP/1.0" 404 5456
+Not Found: /wp-content/plugins/wp-help/mini.php
+[13/May/2024 16:14:33] "GET /wp-content/plugins/wp-help/mini.php HTTP/1.0" 404 5462
+Not Found: /.well-known/pki-validation/about.php
+[13/May/2024 16:14:34] "GET /.well-known/pki-validation/about.php HTTP/1.0" 404 5465
+Not Found: /.well-known/pki-validation/themes.php
+[13/May/2024 16:14:35] "GET /.well-known/pki-validation/themes.php HTTP/1.0" 404 5468
+Not Found: /jp.php
+[13/May/2024 16:14:35] "GET /jp.php HTTP/1.0" 404 5375
+Not Found: /wp-includes/SimplePie/plugins.php
+[13/May/2024 16:14:36] "GET /wp-includes/SimplePie/plugins.php HTTP/1.0" 404 5456
+Not Found: /cjfuns.php
+[13/May/2024 16:14:37] "GET /cjfuns.php HTTP/1.0" 404 5387
+Not Found: /menu.php
+[13/May/2024 16:14:38] "GET /menu.php HTTP/1.0" 404 5381
+Not Found: /wp-content/upgrade/edit.php
+[13/May/2024 16:14:39] "GET /wp-content/upgrade/edit.php HTTP/1.0" 404 5438
+Not Found: /wp-admin/network/amaxx.php
+[13/May/2024 16:14:40] "GET /wp-admin/network/amaxx.php HTTP/1.0" 404 5435
+Not Found: /m.php
+[13/May/2024 16:14:41] "GET /m.php HTTP/1.0" 404 5372
+Not Found: /wp-content/plugins/press/wp-class.php
+[13/May/2024 16:14:41] "GET /wp-content/plugins/press/wp-class.php HTTP/1.0" 404 5468
+Not Found: /test.php
+[13/May/2024 16:14:42] "GET /test.php HTTP/1.0" 404 5381
+Not Found: /s.php
+[13/May/2024 16:14:43] "GET /s.php HTTP/1.0" 404 5372
+Not Found: /wp-head.php
+[13/May/2024 16:14:43] "GET /wp-head.php HTTP/1.0" 404 5390
+Not Found: /rc.php
+[13/May/2024 16:14:44] "GET /rc.php HTTP/1.0" 404 5375
+Not Found: /wp-content/plugins/core-plugin/nxd.php
+[13/May/2024 16:14:45] "GET /wp-content/plugins/core-plugin/nxd.php HTTP/1.0" 404 5471
+Not Found: /a.php
+[13/May/2024 16:14:45] "GET /a.php HTTP/1.0" 404 5372
+Not Found: /wp-includes/customize/amaxx.php
+[13/May/2024 16:14:47] "GET /wp-includes/customize/amaxx.php HTTP/1.0" 404 5450
+Not Found: /wp-admin/1.php
+[13/May/2024 16:14:47] "GET /wp-admin/1.php HTTP/1.0" 404 5399
+Not Found: /wp-content/themes/finley/min.php
+[13/May/2024 16:14:49] "GET /wp-content/themes/finley/min.php HTTP/1.0" 404 5453
+Not Found: /_well-known/amaxx.php
+[13/May/2024 16:14:49] "GET /_well-known/amaxx.php HTTP/1.0" 404 5420
+Not Found: /wp-includes/random_compat/1.php
+[13/May/2024 16:14:50] "GET /wp-includes/random_compat/1.php HTTP/1.0" 404 5450
+Not Found: /wp-admin/user/about.php
+[13/May/2024 16:14:51] "GET /wp-admin/user/about.php?p= HTTP/1.0" 404 5429
+Not Found: /wp-content/plugins/fix/up.php
+[13/May/2024 16:14:51] "GET /wp-content/plugins/fix/up.php HTTP/1.0" 404 5444
+Not Found: /wp-content/plugins/db-toolkit/dbtoolkit_import.php
+[13/May/2024 16:14:52] "GET /wp-content/plugins/db-toolkit/dbtoolkit_import.php HTTP/1.0" 404 5507
+Not Found: /f.php
+[13/May/2024 16:14:53] "GET /f.php HTTP/1.0" 404 5372
+Not Found: /fm.php
+[13/May/2024 16:14:54] "GET /fm.php?p= HTTP/1.0" 404 5378
+Not Found: /tinyfilemanager.php
+[13/May/2024 16:14:55] "GET /tinyfilemanager.php?p= HTTP/1.0" 404 5417
+Not Found: /wp-content/plugins/index.php
+[13/May/2024 16:14:55] "GET /wp-content/plugins/index.php HTTP/1.0" 404 5441
+Not Found: /wp-content/plugins/yyobang/mar.php
+[13/May/2024 16:14:56] "GET /wp-content/plugins/yyobang/mar.php HTTP/1.0" 404 5459
+Not Found: /css/font-awesome/scss/wp-login.php
+[13/May/2024 16:14:57] "GET /css/font-awesome/scss/wp-login.php HTTP/1.0" 404 5459
+Not Found: /wp-includes/js/tinymce/skins/lightgray/img/index.php
+[13/May/2024 16:14:59] "GET /wp-includes/js/tinymce/skins/lightgray/img/index.php HTTP/1.0" 404 5513
+Not Found: /wp-content/plugins/wordpresss3cll/includes.php
+[13/May/2024 16:14:59] "GET /wp-content/plugins/wordpresss3cll/includes.php HTTP/1.0" 404 5495
+Not Found: /wp-content/plugins/wordpresss3cll/wp-login.php
+[13/May/2024 16:15:01] "GET /wp-content/plugins/wordpresss3cll/wp-login.php HTTP/1.0" 404 5495
+Not Found: /wp-includes/themes.php
+[13/May/2024 16:15:01] "GET /wp-includes/themes.php HTTP/1.0" 404 5423
+Not Found: /wp-admin/css/colors/blue/atomlib.php
+[13/May/2024 16:15:02] "GET /wp-admin/css/colors/blue/atomlib.php HTTP/1.0" 404 5465
+Not Found: /wp-content/plugins/envato-market/inc/class-envato-market-api.php
+[13/May/2024 16:15:03] "GET /wp-content/plugins/envato-market/inc/class-envato-market-api.php HTTP/1.0" 404 5549
+Not Found: /general.php
+[13/May/2024 16:15:03] "GET /general.php HTTP/1.0" 404 5390
+Not Found: /mah.php
+[13/May/2024 16:15:04] "GET /mah.php HTTP/1.0" 404 5378
+Not Found: /wp-content/plugins/wp-apxupx.php
+[13/May/2024 16:15:05] "GET /wp-content/plugins/wp-apxupx.php?apx=upx HTTP/1.0" 404 5461
+Not Found: /wp-apxupx.php
+[13/May/2024 16:15:05] "GET /wp-apxupx.php?apx=upx HTTP/1.0" 404 5404
+Not Found: /wp-includes/IXR/wp.php
+[13/May/2024 16:15:06] "GET /wp-includes/IXR/wp.php HTTP/1.0" 404 5423
+Not Found: /wsa.php
+[13/May/2024 16:15:07] "GET /wsa.php HTTP/1.0" 404 5378
+Not Found: /web/wp-content/plugins/backup-backup/includes/wp.php
+[13/May/2024 16:15:07] "GET /web/wp-content/plugins/backup-backup/includes/wp.php HTTP/1.0" 404 5513
+Not Found: /archival/2021/wp-includes/2021/wp-includes/IXR/wp.php
+[13/May/2024 16:15:08] "GET /archival/2021/wp-includes/2021/wp-includes/IXR/wp.php HTTP/1.0" 404 5516
+Not Found: /wp-includes/IXR/img.php
+[13/May/2024 16:15:09] "GET /wp-includes/IXR/img.php HTTP/1.0" 404 5426
+Not Found: /wp-admin/admin-ajax.php
+[13/May/2024 16:15:09] "GET /wp-admin/admin-ajax.php HTTP/1.0" 404 5426
+Not Found: /wp-content/item.php
+[13/May/2024 16:15:10] "GET /wp-content/item.php HTTP/1.0" 404 5414
+Not Found: /wp-content/mah.php
+[13/May/2024 16:15:11] "GET /wp-content/mah.php HTTP/1.0" 404 5411
+Not Found: /wp-content/themes/tflow/b.php
+[13/May/2024 16:15:12] "GET /wp-content/themes/tflow/b.php HTTP/1.0" 404 5444
+Not Found: /wp-content/plugins/zer0day_581794/87.php
+[13/May/2024 16:15:13] "GET /wp-content/plugins/zer0day_581794/87.php HTTP/1.0" 404 5477
+Not Found: /plugins/jquery.filer/uploads/jack2024.p.php
+[13/May/2024 16:15:13] "GET /plugins/jquery.filer/uploads/jack2024.p.php HTTP/1.0" 404 5486
+Not Found: /moon.php
+[13/May/2024 16:15:15] "GET /moon.php HTTP/1.0" 404 5381
+Not Found: /include/nilmdg/min.php
+[13/May/2024 16:15:16] "GET /include/nilmdg/min.php HTTP/1.0" 404 5423
+Not Found: /530c7/bc56c.php
+[13/May/2024 16:15:16] "GET /530c7/bc56c.php HTTP/1.0" 404 5402
+Not Found: /jetpack.php
+[13/May/2024 16:15:17] "GET /jetpack.php HTTP/1.0" 404 5390
+Not Found: /edit.php
+[13/May/2024 16:15:18] "GET /edit.php HTTP/1.0" 404 5381
+Not Found: /unappp2/wp-content/plugins/phoenix_658/87.php
+[13/May/2024 16:15:18] "GET /unappp2/wp-content/plugins/phoenix_658/87.php HTTP/1.0" 404 5492
+Not Found: /onixnews/plugins/jquery.filer/uploads/mfs.p.php
+[13/May/2024 16:15:19] "GET /onixnews/plugins/jquery.filer/uploads/mfs.p.php HTTP/1.0" 404 5498
+Not Found: /wp-includes/install.php
+[13/May/2024 16:15:20] "GET /wp-includes/install.php HTTP/1.0" 404 5426
+[13/May/2024 16:15:20] "GET /admin/controller/extension/wpm.php HTTP/1.0" 302 0
+[13/May/2024 16:15:21] "GET /admin/login/?next=/admin/controller/extension/wpm.php HTTP/1.0" 200 4497
+Not Found: /shell.php
+[13/May/2024 16:15:22] "GET /shell.php HTTP/1.0" 404 5384
+Not Found: /wp-content/plugins/file-manager-zeroday/87.php
+[13/May/2024 16:15:23] "GET /wp-content/plugins/file-manager-zeroday/87.php HTTP/1.0" 404 5495
+Not Found: /plugins/jquery.filer/uploads/jacky2025.php
+[13/May/2024 16:15:23] "GET /plugins/jquery.filer/uploads/jacky2025.php HTTP/1.0" 404 5483
+Not Found: /uploader.php
+[13/May/2024 16:15:24] "GET /uploader.php HTTP/1.0" 404 5393
+Not Found: /wp-content/plugins/rsfv1/phpadmin.php
+[13/May/2024 16:15:25] "GET /wp-content/plugins/rsfv1/phpadmin.php HTTP/1.0" 404 5468
+Not Found: /inc.php
+[13/May/2024 16:15:26] "GET /inc.php HTTP/1.0" 404 5378
+Not Found: /hetegmwh.php
+[13/May/2024 16:15:27] "GET /hetegmwh.php HTTP/1.0" 404 5393
+Not Found: /fbmtxqhm.php
+[13/May/2024 16:15:27] "GET /fbmtxqhm.php HTTP/1.0" 404 5393
+Not Found: /wp-content/plugins/hellopress/wp_filemanager.php
+[13/May/2024 16:15:28] "GET /wp-content/plugins/hellopress/wp_filemanager.php HTTP/1.0" 404 5501
+Not Found: /upload/surat_masuk/about.php
+[13/May/2024 16:15:29] "GET /upload/surat_masuk/about.php HTTP/1.0" 404 5441
+Not Found: /plugins/jquery.filer/uploads/emm.p.php
+[13/May/2024 16:15:29] "GET /plugins/jquery.filer/uploads/emm.p.php HTTP/1.0" 404 5471
+Not Found: /web.php
+[13/May/2024 16:15:30] "GET /web.php HTTP/1.0" 404 5378
+Not Found: /assets/js/xmrlpc.php
+[13/May/2024 16:15:31] "GET /assets/js/xmrlpc.php HTTP/1.0" 404 5417
+Not Found: /images/informasi/about.php
+[13/May/2024 16:15:32] "GET /images/informasi/about.php HTTP/1.0" 404 5435
+Not Found: /assets/js/wp-config.php
+[13/May/2024 16:15:33] "GET /assets/js/wp-config.php HTTP/1.0" 404 5426
+Not Found: /x.php
+[13/May/2024 16:15:34] "GET /x.php HTTP/1.0" 404 5372
+Not Found: /wp-content/themes/seotheme/db.php
+[13/May/2024 16:15:34] "GET /wp-content/themes/seotheme/db.php?u HTTP/1.0" 404 5458
+Not Found: /wp-content/plugins/dot/phpadmin.php
+[13/May/2024 16:15:35] "GET /wp-content/plugins/dot/phpadmin.php HTTP/1.0" 404 5462
+Not Found: /function.php
+[13/May/2024 16:15:36] "GET /function.php HTTP/1.0" 404 5393
+Not Found: /wp-content/themes/calmly/issue.php
+[13/May/2024 16:15:37] "GET /wp-content/themes/calmly/issue.php HTTP/1.0" 404 5459
+Not Found: /amaxx.php
+[13/May/2024 16:15:37] "GET /amaxx.php HTTP/1.0" 404 5384
+Not Found: /wp-includes/mah.php
+[13/May/2024 16:15:38] "GET /wp-includes/mah.php HTTP/1.0" 404 5414
+Not Found: /plugins/morris/tiny.php
+[13/May/2024 16:15:39] "GET /plugins/morris/tiny.php HTTP/1.0" 404 5426
+Not Found: /wp-admin/css/colors/light/about.php
+[13/May/2024 16:15:40] "GET /wp-admin/css/colors/light/about.php HTTP/1.0" 404 5462
+Not Found: /wp-content/themes/gaukingo/db.php
+[13/May/2024 16:15:41] "GET /wp-content/themes/gaukingo/db.php?u HTTP/1.0" 404 5458
+[13/May/2024 16:15:42] "GET /admin/images/radio.php HTTP/1.0" 302 0
+[13/May/2024 16:15:43] "GET /admin/login/?next=/admin/images/radio.php HTTP/1.0" 200 4473
+Not Found: /wp-content/style-css.php
+[13/May/2024 16:15:43] "GET /wp-content/style-css.php HTTP/1.0" 404 5429
+Not Found: /data.php
+[13/May/2024 16:15:44] "GET /data.php HTTP/1.0" 404 5381
+Not Found: /wlgiwefr.php
+[13/May/2024 16:15:45] "GET /wlgiwefr.php HTTP/1.0" 404 5393
+Not Found: /wp-includes/wp-includes/admin-bar.php
+[13/May/2024 16:15:45] "GET /wp-includes/wp-includes/admin-bar.php HTTP/1.0" 404 5468
+Not Found: /plugins/metadata/openurl10/colors-fonts-editor.php
+[13/May/2024 16:15:46] "GET /plugins/metadata/openurl10/colors-fonts-editor.php HTTP/1.0" 404 5507
+Not Found: /wp-content/plugins/ph-file-manager/87.php
+[13/May/2024 16:15:47] "GET /wp-content/plugins/ph-file-manager/87.php HTTP/1.0" 404 5480
+Not Found: /wp-content/plugins/root-file-manager/87.php
+[13/May/2024 16:15:47] "GET /wp-content/plugins/root-file-manager/87.php HTTP/1.0" 404 5486
+Not Found: /wp-content/install.php
+[13/May/2024 16:15:48] "GET /wp-content/install.php HTTP/1.0" 404 5423
+Not Found: /about.php
+[13/May/2024 16:15:49] "GET /about.php HTTP/1.0" 404 5384
+Not Found: /wp-content/about.php
+[13/May/2024 16:15:50] "GET /wp-content/about.php HTTP/1.0" 404 5417
+Not Found: /wp-admin/maint/about.php
+[13/May/2024 16:15:51] "GET /wp-admin/maint/about.php HTTP/1.0" 404 5429
+Not Found: /wp-content/plugins/include.php
+[13/May/2024 16:15:51] "GET /wp-content/plugins/include.php HTTP/1.0" 404 5447
+Not Found: /fm1.php
+[13/May/2024 16:15:52] "GET /fm1.php HTTP/1.0" 404 5378
+Not Found: /style2.php
+[13/May/2024 16:15:53] "GET /style2.php HTTP/1.0" 404 5387
+Not Found: /wp-admin/css/colors/blue/bypass403.php
+[13/May/2024 16:15:53] "GET /wp-admin/css/colors/blue/bypass403.php HTTP/1.0" 404 5471
+Not Found: /wp-content/bak.php
+[13/May/2024 16:15:54] "GET /wp-content/bak.php HTTP/1.0" 404 5411
+Not Found: /wp-includes/content.php
+[13/May/2024 16:15:55] "GET /wp-includes/content.php HTTP/1.0" 404 5426
+Not Found: /bads.php
+[13/May/2024 16:15:55] "GET /bads.php HTTP/1.0" 404 5381
+Not Found: /wp-content/uploads/1.php
+[13/May/2024 16:15:56] "GET /wp-content/uploads/1.php HTTP/1.0" 404 5429
+Not Found: /wp-content/ave.php
+[13/May/2024 16:15:57] "GET /wp-content/ave.php HTTP/1.0" 404 5411
+Not Found: /wp-content/plugins/ROOBOTS.php
+[13/May/2024 16:15:57] "GET /wp-content/plugins/ROOBOTS.php HTTP/1.0" 404 5447
+Not Found: /wp-includes/wp-login.php
+[13/May/2024 16:15:58] "GET /wp-includes/wp-login.php HTTP/1.0" 404 5429
+Not Found: /wp-includes/random_compat/about.php
+[13/May/2024 16:15:59] "GET /wp-includes/random_compat/about.php HTTP/1.0" 404 5462
+Not Found: /wp-admin/user/about.php
+[13/May/2024 16:15:59] "GET /wp-admin/user/about.php HTTP/1.0" 404 5426
+Not Found: /c.php
+[13/May/2024 16:16:00] "GET /c.php HTTP/1.0" 404 5372
+Not Found: /chosen.php
+[13/May/2024 16:16:01] "GET /chosen.php HTTP/1.0" 404 5387
+Not Found: /wp-includes/images/include.php
+[13/May/2024 16:16:01] "GET /wp-includes/images/include.php HTTP/1.0" 404 5447
+Not Found: /.well-known/acme-challenge/install.php
+[13/May/2024 16:16:02] "GET /.well-known/acme-challenge/install.php HTTP/1.0" 404 5471
+Not Found: /.well-known/pki-validation/cloud.php
+[13/May/2024 16:16:03] "GET /.well-known/pki-validation/cloud.php HTTP/1.0" 404 5465
+Not Found: /.well-known/acme-challenge/class.api.php
+[13/May/2024 16:16:03] "GET /.well-known/acme-challenge/class.api.php HTTP/1.0" 404 5477
+Not Found: /.well-known/acme-challenge/cloud.php
+[13/May/2024 16:16:04] "GET /.well-known/acme-challenge/cloud.php HTTP/1.0" 404 5465
+Not Found: /406.php
+[13/May/2024 16:16:05] "GET /406.php HTTP/1.0" 404 5378
+Not Found: /wp-admin/css/colors/blue/index.php
+[13/May/2024 16:16:05] "GET /wp-admin/css/colors/blue/index.php HTTP/1.0" 404 5459
+Not Found: /wp-content/index.php
+[13/May/2024 16:16:06] "GET /wp-content/index.php HTTP/1.0" 404 5417
+Not Found: /install.php
+[13/May/2024 16:16:07] "GET /install.php HTTP/1.0" 404 5390
+Not Found: /wp-admin/images/Mhbgf.php
+[13/May/2024 16:16:08] "GET /wp-admin/images/Mhbgf.php HTTP/1.0" 404 5432
+Not Found: /Njima.php
+[13/May/2024 16:16:09] "GET /Njima.php HTTP/1.0" 404 5384
+Not Found: /admin.php
+[13/May/2024 16:16:09] "GET /admin.php HTTP/1.0" 404 5384
+Not Found: /about.php
+[13/May/2024 16:16:10] "GET /about.php HTTP/1.0" 404 5384
+Not Found: /alfanew.php
+[13/May/2024 16:16:11] "GET /alfanew.php HTTP/1.0" 404 5390
+Not Found: /dropdown.php
+[13/May/2024 16:16:11] "GET /dropdown.php HTTP/1.0" 404 5393
+Not Found: /wp-content/themes/pridmag/db.php
+[13/May/2024 16:16:12] "GET /wp-content/themes/pridmag/db.php?u HTTP/1.0" 404 5455
+Not Found: /wp-content/shell.php
+[13/May/2024 16:16:13] "GET /wp-content/shell.php HTTP/1.0" 404 5417
+Not Found: /chosen.php
+[13/May/2024 16:16:13] "GET /chosen.php?p= HTTP/1.0" 404 5390
+Not Found: /wp-content/plugins/seoplugins/db.php
+[13/May/2024 16:16:14] "GET /wp-content/plugins/seoplugins/db.php?u HTTP/1.0" 404 5467
+Not Found: /wp-signup.php
+[13/May/2024 16:16:15] "GET /wp-signup.php?FoX=sQFLZ HTTP/1.0" 404 5406
+Not Found: /autoload_classmap.php
+[13/May/2024 16:16:15] "GET /autoload_classmap.php HTTP/1.0" 404 5420
+Not Found: /content.php
+[13/May/2024 16:16:16] "GET /content.php HTTP/1.0" 404 5390
+Not Found: /wso.php
+[13/May/2024 16:16:17] "GET /wso.php HTTP/1.0" 404 5378
+Not Found: /radio.php
+[13/May/2024 16:16:18] "GET /radio.php HTTP/1.0" 404 5384
+Not Found: /wp-content/upgrade/about.php
+[13/May/2024 16:16:19] "GET /wp-content/upgrade/about.php HTTP/1.0" 404 5441
+Not Found: /wp-includes/pomo/about.php
+[13/May/2024 16:16:19] "GET /wp-includes/pomo/about.php HTTP/1.0" 404 5435
+Not Found: /wp-admin/css/about.php
+[13/May/2024 16:16:20] "GET /wp-admin/css/about.php HTTP/1.0" 404 5423
+Not Found: /wp-includes/rest-api/about.php
+[13/May/2024 16:16:21] "GET /wp-includes/rest-api/about.php HTTP/1.0" 404 5447
+Not Found: /classwithtostring.php
+[13/May/2024 16:16:21] "GET /classwithtostring.php HTTP/1.0" 404 5420
+Not Found: /wp-includes/Requests/about.php
+[13/May/2024 16:16:22] "GET /wp-includes/Requests/about.php HTTP/1.0" 404 5447
+Not Found: /wp-content/themes/about.php
+[13/May/2024 16:16:23] "GET /wp-content/themes/about.php HTTP/1.0" 404 5438
+Not Found: /wp-content/plugins/alfa-rex.php
+[13/May/2024 16:16:23] "GET /wp-content/plugins/alfa-rex.php HTTP/1.0" 404 5450
+Not Found: /wp-includes/css/about.php
+[13/May/2024 16:16:24] "GET /wp-includes/css/about.php HTTP/1.0" 404 5432
+Not Found: /class.api.php
+[13/May/2024 16:16:25] "GET /class.api.php HTTP/1.0" 404 5396
+Not Found: /wp-content/plugins/linkpreview/db.php
+[13/May/2024 16:16:25] "GET /wp-content/plugins/linkpreview/db.php?u HTTP/1.0" 404 5470
+Not Found: /wp-includes/rest-api/alfa-reX.php7
+[13/May/2024 16:16:26] "GET /wp-includes/rest-api/alfa-reX.php7 HTTP/1.0" 404 5459
+Not Found: /wp-includes/Text/about.php
+[13/May/2024 16:16:28] "GET /wp-includes/Text/about.php HTTP/1.0" 404 5435
+Not Found: /wp-content/plugins/wordpresss3cll/up.php
+[13/May/2024 16:16:28] "GET /wp-content/plugins/wordpresss3cll/up.php HTTP/1.0" 404 5477
+Not Found: /wp-content/themes/sketch/404.php
+[13/May/2024 16:16:29] "GET /wp-content/themes/sketch/404.php HTTP/1.0" 404 5453
+Not Found: /wp-includes/customize/about.php
+[13/May/2024 16:16:30] "GET /wp-includes/customize/about.php HTTP/1.0" 404 5450
+Not Found: /alfa-rex.php7
+[13/May/2024 16:16:31] "GET /alfa-rex.php7 HTTP/1.0" 404 5396
+Not Found: /about.php7
+[13/May/2024 16:16:32] "GET /about.php7 HTTP/1.0" 404 5387
+Not Found: /wp-admin/css/index.php
+[13/May/2024 16:16:33] "GET /wp-admin/css/index.php HTTP/1.0" 404 5423
+Not Found: /wp-config-sample.php
+[13/May/2024 16:16:34] "GET /wp-config-sample.php HTTP/1.0" 404 5417
+Not Found: /style2.php
+[13/May/2024 16:16:36] "GET /style2.php HTTP/1.0" 404 5387
+Not Found: /wp-p.php7
+[13/May/2024 16:16:38] "GET /wp-p.php7 HTTP/1.0" 404 5384
+Not Found: /wp-content/plugins/Cache/Cache.php
+[13/May/2024 16:16:43] "GET /wp-content/plugins/Cache/Cache.php HTTP/1.0" 404 5459
+Not Found: /wp-admin/js/widgets/about.php7
+[13/May/2024 16:16:43] "GET /wp-admin/js/widgets/about.php7 HTTP/1.0" 404 5447
+Not Found: /shell20211028.php
+[13/May/2024 16:16:44] "GET /shell20211028.php HTTP/1.0" 404 5408
+Not Found: /admin-post.php
+[13/May/2024 16:16:45] "GET /admin-post.php HTTP/1.0" 404 5399
+Not Found: /yanz.php
+[13/May/2024 16:16:45] "GET /yanz.php HTTP/1.0" 404 5381
+Not Found: /wp-admin/js/about.php
+[13/May/2024 16:16:47] "GET /wp-admin/js/about.php HTTP/1.0" 404 5420
+Not Found: /ws.php
+[13/May/2024 16:16:47] "GET /ws.php HTTP/1.0" 404 5375
+Not Found: /wp-content/plugins/w0rdpr3ssnew/about.php
+[13/May/2024 16:16:48] "GET /wp-content/plugins/w0rdpr3ssnew/about.php HTTP/1.0" 404 5480
+Not Found: /wp-includes/wp-class.php
+[13/May/2024 16:16:49] "GET /wp-includes/wp-class.php HTTP/1.0" 404 5429
+Not Found: /wp-info.php
+[13/May/2024 16:16:49] "GET /wp-info.php HTTP/1.0" 404 5390
+Not Found: /wp-admin/wso.php
+[13/May/2024 16:16:50] "GET /wp-admin/wso.php HTTP/1.0" 404 5405
+Not Found: /fw.php
+[13/May/2024 16:16:51] "GET /fw.php HTTP/1.0" 404 5375
+Not Found: /upload.php
+[13/May/2024 16:16:51] "GET /upload.php HTTP/1.0" 404 5387
+Not Found: /wp-content/plugins/seoo/wsoyanz.php
+[13/May/2024 16:16:52] "GET /wp-content/plugins/seoo/wsoyanz.php HTTP/1.0" 404 5462
+Not Found: /alfanew2.php
+[13/May/2024 16:16:53] "GET /alfanew2.php HTTP/1.0" 404 5393
+Not Found: /repeater.php
+[13/May/2024 16:16:53] "GET /repeater.php HTTP/1.0" 404 5393
+Not Found: /wp-content/1.php
+[13/May/2024 16:16:54] "GET /wp-content/1.php HTTP/1.0" 404 5405
+Not Found: /Xl2023.php
+[13/May/2024 16:16:54] "GET /Xl2023.php HTTP/1.0" 404 5387
+Not Found: /1.php
+[13/May/2024 16:16:55] "GET /1.php HTTP/1.0" 404 5372
+Not Found: /wp-includes/sodium_compat/src/Core/Curve25519/Ge/wp_blog.php
+[13/May/2024 16:16:56] "GET /wp-includes/sodium_compat/src/Core/Curve25519/Ge/wp_blog.php HTTP/1.0" 404 5537
+Not Found: /wp-includes/IXR/class-IXR-data.php
+[13/May/2024 16:16:56] "GET /wp-includes/IXR/class-IXR-data.php HTTP/1.0" 404 5459
+Not Found: /wp-content/uploads/koheju.php
+[13/May/2024 16:16:57] "GET /wp-content/uploads/koheju.php HTTP/1.0" 404 5444
+Not Found: /wp-includes/IXR/class-IXR-http.php
+[13/May/2024 16:16:58] "GET /wp-includes/IXR/class-IXR-http.php HTTP/1.0" 404 5459
+Not Found: /wp-admin/images/admin.php
+[13/May/2024 16:16:58] "GET /wp-admin/images/admin.php HTTP/1.0" 404 5432
+Not Found: /priv8.php
+[13/May/2024 16:16:59] "GET /priv8.php HTTP/1.0" 404 5384
+Not Found: /wp-content/alfa.php
+[13/May/2024 16:17:00] "GET /wp-content/alfa.php HTTP/1.0" 404 5414
+Not Found: /alfa.php
+[13/May/2024 16:17:00] "GET /alfa.php HTTP/1.0" 404 5381
+Not Found: /css.php
+[13/May/2024 16:17:01] "GET /css.php HTTP/1.0" 404 5378
+Not Found: /wp-content/classwithtostring.php
+[13/May/2024 16:17:02] "GET /wp-content/classwithtostring.php HTTP/1.0" 404 5453
+Not Found: /404.php
+[13/May/2024 16:17:02] "GET /404.php HTTP/1.0" 404 5378
+Not Found: /wp-admin/css/colors/coffee/index.php
+[13/May/2024 16:17:03] "GET /wp-admin/css/colors/coffee/index.php HTTP/1.0" 404 5465
+Not Found: /mini.php
+[13/May/2024 16:17:04] "GET /mini.php HTTP/1.0" 404 5381
+Not Found: /wp-includes/ID3/about.php
+[13/May/2024 16:17:04] "GET /wp-includes/ID3/about.php HTTP/1.0" 404 5432
+Not Found: /wsoyanz.php
+[13/May/2024 16:17:05] "GET /wsoyanz.php HTTP/1.0" 404 5390
+Not Found: /wp-content/plugins/seoo/wsoyanz1.php
+[13/May/2024 16:17:06] "GET /wp-content/plugins/seoo/wsoyanz1.php HTTP/1.0" 404 5465
+Not Found: /wp-content/shell20211028.php
+[13/May/2024 16:17:06] "GET /wp-content/shell20211028.php HTTP/1.0" 404 5441
+Not Found: /woh.php
+[13/May/2024 16:17:07] "GET /woh.php HTTP/1.0" 404 5378
+Not Found: /wp-includes/repeater.php
+[13/May/2024 16:17:08] "GET /wp-includes/repeater.php HTTP/1.0" 404 5429
+Not Found: /wp-admin/dropdown.php
+[13/May/2024 16:17:09] "GET /wp-admin/dropdown.php HTTP/1.0" 404 5420
+Not Found: /wp-content/indeX.php
+[13/May/2024 16:17:09] "GET /wp-content/indeX.php HTTP/1.0" 404 5417
+Not Found: /wp-admin/ajax-actions.php
+[13/May/2024 16:17:10] "GET /wp-admin/ajax-actions.php HTTP/1.0" 404 5432
+Not Found: /xx.php
+[13/May/2024 16:17:11] "GET /xx.php HTTP/1.0" 404 5375
+Not Found: /alfanew.php7
+[13/May/2024 16:17:11] "GET /alfanew.php7 HTTP/1.0" 404 5393
+Not Found: /wp-includes/shell20211028.php
+[13/May/2024 16:17:13] "GET /wp-includes/shell20211028.php HTTP/1.0" 404 5444
+Not Found: /wp-includes/js/tinymce/plugins/compat3x/css/index.php
+[13/May/2024 16:17:13] "GET /wp-includes/js/tinymce/plugins/compat3x/css/index.php HTTP/1.0" 404 5516
+Not Found: /wp-includes/IXR/themes.php
+[13/May/2024 16:17:14] "GET /wp-includes/IXR/themes.php HTTP/1.0" 404 5435
+Not Found: /wp-content/uploads/wp-atom.php
+[13/May/2024 16:17:15] "GET /wp-content/uploads/wp-atom.php HTTP/1.0" 404 5447
+Not Found: /wp-content/plugins/core/include.php
+[13/May/2024 16:17:15] "GET /wp-content/plugins/core/include.php HTTP/1.0" 404 5462
+Not Found: /wp-content/plugins/TOPXOH/wDR.php
+[13/May/2024 16:17:16] "GET /wp-content/plugins/TOPXOH/wDR.php HTTP/1.0" 404 5456
+Not Found: /wp-content/upgrade/cloud.php
+[13/May/2024 16:17:16] "GET /wp-content/upgrade/cloud.php HTTP/1.0" 404 5441
+Not Found: /wp-content/cong.php
+[13/May/2024 16:17:17] "GET /wp-content/cong.php HTTP/1.0" 404 5414
+Not Found: /wp-includes/ID3/wp-login.php
+[13/May/2024 16:17:18] "GET /wp-includes/ID3/wp-login.php HTTP/1.0" 404 5441
+Not Found: /wp-includes/pomo/wp-login.php
+[13/May/2024 16:17:18] "GET /wp-includes/pomo/wp-login.php HTTP/1.0" 404 5444
+Not Found: /dropdown.php/wp-admin/images/Mhbgf.php
+[13/May/2024 16:17:19] "GET /dropdown.php/wp-admin/images/Mhbgf.php HTTP/1.0" 404 5471
+Not Found: /wp-content/themes/twenty/twenty.php
+[13/May/2024 16:17:20] "GET /wp-content/themes/twenty/twenty.php HTTP/1.0" 404 5462
+Not Found: /wp-content/themes/twentyfive/include.php
+[13/May/2024 16:17:21] "GET /wp-content/themes/twentyfive/include.php HTTP/1.0" 404 5477
+Not Found: /wp-content/mari.php
+[13/May/2024 16:17:22] "GET /wp-content/mari.php HTTP/1.0" 404 5414
+Not Found: /wp-content/plugins/revslider/includes/external/page/index.php
+[13/May/2024 16:17:22] "GET /wp-content/plugins/revslider/includes/external/page/index.php HTTP/1.0" 404 5540
+Not Found: /wp-admin/repeater.php
+[13/May/2024 16:17:23] "GET /wp-admin/repeater.php HTTP/1.0" 404 5420
+Not Found: /wp-includes/class-wp-session-json.php
+[13/May/2024 16:17:24] "GET /wp-includes/class-wp-session-json.php HTTP/1.0" 404 5468
+Not Found: /wp-content/uploads/google-in.php
+[13/May/2024 16:17:24] "GET /wp-content/uploads/google-in.php HTTP/1.0" 404 5453
+Not Found: /wp-content/index1.php
+[13/May/2024 16:17:25] "GET /wp-content/index1.php HTTP/1.0" 404 5420
+Not Found: /up.php
+[13/May/2024 16:17:26] "GET /up.php HTTP/1.0" 404 5375
+Not Found: /root.php
+[13/May/2024 16:17:27] "GET /root.php HTTP/1.0" 404 5381
+Not Found: /wp-admin/wso112233.php
+[13/May/2024 16:17:28] "GET /wp-admin/wso112233.php HTTP/1.0" 404 5423
+Not Found: /wp-includes/wso112233.php
+[13/May/2024 16:17:29] "GET /wp-includes/wso112233.php HTTP/1.0" 404 5432
+Not Found: /.tmb/cloud.php
+[13/May/2024 16:17:30] "GET /.tmb/cloud.php HTTP/1.0" 404 5399
+Not Found: /wp-content/plugins/about.php
+[13/May/2024 16:17:30] "GET /wp-content/plugins/about.php HTTP/1.0" 404 5441
+Not Found: /wp-admin/images/install.php
+[13/May/2024 16:17:31] "GET /wp-admin/images/install.php HTTP/1.0" 404 5438
+Not Found: /wp-header.php
+[13/May/2024 16:17:32] "GET /wp-header.php HTTP/1.0" 404 5396
+Not Found: /wp-admin/css/colors/blue/uploader.php
+[13/May/2024 16:17:32] "GET /wp-admin/css/colors/blue/uploader.php HTTP/1.0" 404 5468
+Not Found: /wp-content/plugins/hello.php
+[13/May/2024 16:17:33] "GET /wp-content/plugins/hello.php HTTP/1.0" 404 5441
+Not Found: /wp-content/repeater.php
+[13/May/2024 16:17:34] "GET /wp-content/repeater.php HTTP/1.0" 404 5426
+Not Found: /wp-content/mrjn.php
+[13/May/2024 16:17:34] "GET /wp-content/mrjn.php HTTP/1.0" 404 5414
+Not Found: /wp-content/wp-wso.php
+[13/May/2024 16:17:35] "GET /wp-content/wp-wso.php HTTP/1.0" 404 5420
+Not Found: /M1.php
+[13/May/2024 16:17:36] "GET /M1.php HTTP/1.0" 404 5375
+Not Found: /wp-includes/theme-compat/wp-login.php
+[13/May/2024 16:17:37] "GET /wp-includes/theme-compat/wp-login.php HTTP/1.0" 404 5468
+Not Found: /wp-admin/images/wp-signup.php
+[13/May/2024 16:17:39] "GET /wp-admin/images/wp-signup.php HTTP/1.0" 404 5444
+Not Found: /wp-includes/new.php
+[13/May/2024 16:17:40] "GET /wp-includes/new.php HTTP/1.0" 404 5414
+Not Found: /wp-includes/class-json-ajax-session.php
+[13/May/2024 16:17:41] "GET /wp-includes/class-json-ajax-session.php HTTP/1.0" 404 5474
+Not Found: /wp-includes/PHPMailer/PHPSmtp.php
+[13/May/2024 16:17:41] "GET /wp-includes/PHPMailer/PHPSmtp.php HTTP/1.0" 404 5456
+Not Found: /wp-content/uploads/help.php
+[13/May/2024 16:17:42] "GET /wp-content/uploads/help.php HTTP/1.0" 404 5438
+Not Found: /wp-content/uploads/zcache.php
+[13/May/2024 16:17:43] "GET /wp-content/uploads/zcache.php HTTP/1.0" 404 5444
+Not Found: /wp-consar.php
+[13/May/2024 16:17:43] "GET /wp-consar.php HTTP/1.0" 404 5396
+Not Found: /alfa-rex2.php7
+[13/May/2024 16:17:44] "GET /alfa-rex2.php7 HTTP/1.0" 404 5399
+Not Found: /ajax-actions.php
+[13/May/2024 16:17:45] "GET /ajax-actions.php HTTP/1.0" 404 5405
+Not Found: /wp-includes/plugins/instabuilder2/cache/plugins/moon.php
+[13/May/2024 16:17:45] "GET /wp-includes/plugins/instabuilder2/cache/plugins/moon.php HTTP/1.0" 404 5525
+Not Found: /ws.php7
+[13/May/2024 16:17:46] "GET /ws.php7 HTTP/1.0" 404 5378
+Not Found: /wp-admin/maint/maint/ajax-actions.php
+[13/May/2024 16:17:47] "GET /wp-admin/maint/maint/ajax-actions.php HTTP/1.0" 404 5468
+Not Found: /haXor.php
+[13/May/2024 16:17:47] "GET /haXor.php HTTP/1.0" 404 5384
+Not Found: /100.php
+[13/May/2024 16:17:48] "GET /100.php HTTP/1.0" 404 5378
+Not Found: /FoXWSOv1.phpXX.php
+[13/May/2024 16:17:49] "GET /FoXWSOv1.phpXX.php HTTP/1.0" 404 5411
+Not Found: /aleXus.php
+[13/May/2024 16:17:49] "GET /aleXus.php HTTP/1.0" 404 5387
+Not Found: /wso1337.php
+[13/May/2024 16:17:50] "GET /wso1337.php HTTP/1.0" 404 5390
+Not Found: /image/Xleet.php
+[13/May/2024 16:17:51] "GET /image/Xleet.php HTTP/1.0" 404 5402
+Not Found: /wp-includes/js/tinymce/skins/lightgray/img/index.php
+[13/May/2024 16:17:51] "GET /wp-includes/js/tinymce/skins/lightgray/img/index.php?p= HTTP/1.0" 404 5516
+Not Found: /wp-2019.php
+[13/May/2024 16:17:52] "GET /wp-2019.php HTTP/1.0" 404 5390
+Not Found: /sitemap.php
+[13/May/2024 16:17:53] "GET /sitemap.php HTTP/1.0" 404 5390
+Not Found: /wp-content/uploads/2017/class-wp-type-registroy.php
+[13/May/2024 16:17:53] "GET /wp-content/uploads/2017/class-wp-type-registroy.php HTTP/1.0" 404 5510
+Not Found: /wp-includes/Xl2023.php
+[13/May/2024 16:17:54] "GET /wp-includes/Xl2023.php HTTP/1.0" 404 5423
+Not Found: /pekok.php
+[13/May/2024 16:17:54] "GET /pekok.php HTTP/1.0" 404 5384
+Not Found: /wp.php
+[13/May/2024 16:17:55] "GET /wp.php HTTP/1.0" 404 5375
+Not Found: /users.php
+[13/May/2024 16:17:56] "GET /users.php HTTP/1.0" 404 5384
+Not Found: /wp-admin/Xl2023.php
+[13/May/2024 16:17:56] "GET /wp-admin/Xl2023.php HTTP/1.0" 404 5414
+Not Found: /wp-content/plugins/anttt/simple.php
+[13/May/2024 16:17:57] "GET /wp-content/plugins/anttt/simple.php HTTP/1.0" 404 5462
+Not Found: /wp-includes/class-matchesmapregex-error-comment.php
+[13/May/2024 16:17:58] "GET /wp-includes/class-matchesmapregex-error-comment.php HTTP/1.0" 404 5510
+Not Found: /wp-includes/pomo/pomo.php
+[13/May/2024 16:17:59] "GET /wp-includes/pomo/pomo.php HTTP/1.0" 404 5432
+Not Found: /wp-content/uploads/ac_assets/IndoSec.php
+[13/May/2024 16:18:00] "GET /wp-content/uploads/ac_assets/IndoSec.php HTTP/1.0" 404 5477
+Not Found: /wp-content/plugins/elementor/up.php
+[13/May/2024 16:18:00] "GET /wp-content/plugins/elementor/up.php HTTP/1.0" 404 5462
+Not Found: /404.php/wp-admin/images/Mhbgf.php
+[13/May/2024 16:18:01] "GET /404.php/wp-admin/images/Mhbgf.php HTTP/1.0" 404 5456
+Not Found: /wp-admin/css/colors/coffee/index.php/wp-admin/images/Mhbgf.php
+[13/May/2024 16:18:02] "GET /wp-admin/css/colors/coffee/index.php/wp-admin/images/Mhbgf.php HTTP/1.0" 404 5543
+Not Found: /wso112233.php
+[13/May/2024 16:18:02] "GET /wso112233.php HTTP/1.0" 404 5396
+Not Found: /css/st.php
+[13/May/2024 16:18:03] "GET /css/st.php HTTP/1.0" 404 5387
+Not Found: /wp-includes/plugins/instabuilder2/cache/up.php
+[13/May/2024 16:18:04] "GET /wp-includes/plugins/instabuilder2/cache/up.php HTTP/1.0" 404 5495
+Not Found: /wp-includes/class-snoopye_wso.php.bk
+[13/May/2024 16:18:05] "GET /wp-includes/class-snoopye_wso.php.bk HTTP/1.0" 404 5465
+Not Found: /wp-content/bypass.php
+[13/May/2024 16:18:05] "GET /wp-content/bypass.php HTTP/1.0" 404 5420
+Not Found: /wp-content/uploads/bak.php
+[13/May/2024 16:18:06] "GET /wp-content/uploads/bak.php HTTP/1.0" 404 5435
+Not Found: /wp-includes/Text/themes.php
+[13/May/2024 16:18:07] "GET /wp-includes/Text/themes.php HTTP/1.0" 404 5438
+Not Found: /wp-admin/ss.php
+[13/May/2024 16:18:07] "GET /wp-admin/ss.php HTTP/1.0" 404 5402
+Not Found: /wp-includes/class-wp-page-icon.php
+[13/May/2024 16:18:08] "GET /wp-includes/class-wp-page-icon.php HTTP/1.0" 404 5459
+Not Found: /wp-content/plugins/linkpreview/index.php
+[13/May/2024 16:18:09] "GET /wp-content/plugins/linkpreview/index.php HTTP/1.0" 404 5477
+Not Found: /simple.php
+[13/May/2024 16:18:09] "GET /simple.php HTTP/1.0" 404 5387
+Not Found: /sts.php
+[13/May/2024 16:18:11] "GET /sts.php HTTP/1.0" 404 5378
+Not Found: /wp-content/themes/travel/issue.php
+[13/May/2024 16:18:11] "GET /wp-content/themes/travel/issue.php?x=zourt HTTP/1.0" 404 5467
+Not Found: /wp-content/plugins/w0rdpr3ssnew/wp-login.php
+[13/May/2024 16:18:12] "GET /wp-content/plugins/w0rdpr3ssnew/wp-login.php HTTP/1.0" 404 5489
+Not Found: /wp-content/uploads/archieving.php
+[13/May/2024 16:18:13] "GET /wp-content/uploads/archieving.php HTTP/1.0" 404 5456
+Not Found: /wp-includes/class-wp-pages.php
+[13/May/2024 16:18:13] "GET /wp-includes/class-wp-pages.php HTTP/1.0" 404 5447
+Not Found: /wp-content/uploads/mod_ariimageslidersa.php
+[13/May/2024 16:18:14] "GET /wp-content/uploads/mod_ariimageslidersa.php HTTP/1.0" 404 5486
+Not Found: /style.php
+[13/May/2024 16:18:15] "GET /style.php HTTP/1.0" 404 5384
+Not Found: /wp-content/plugins/wp-sec/ab.php
+[13/May/2024 16:18:15] "GET /wp-content/plugins/wp-sec/ab.php HTTP/1.0" 404 5453
+Not Found: /wp-content/themes/newstoday/lang.php
+[13/May/2024 16:18:16] "GET /wp-content/themes/newstoday/lang.php HTTP/1.0" 404 5465
+Not Found: /.well-known/pki-validation/wp-login.php
+[13/May/2024 16:18:17] "GET /.well-known/pki-validation/wp-login.php HTTP/1.0" 404 5474
+Not Found: /.well-known/wp.php
+[13/May/2024 16:18:18] "GET /.well-known/wp.php HTTP/1.0" 404 5411
+Not Found: /wp-content/plugins/ph-file-manager/wp-file.php
+[13/May/2024 16:18:19] "GET /wp-content/plugins/ph-file-manager/wp-file.php HTTP/1.0" 404 5495
+Not Found: /.well-known/pki-validation/install.php
+[13/May/2024 16:18:19] "GET /.well-known/pki-validation/install.php HTTP/1.0" 404 5471
+Not Found: /.well-known/wso112233.php
+[13/May/2024 16:18:20] "GET /.well-known/wso112233.php HTTP/1.0" 404 5432
+Not Found: /wp-content/themes/travel/issue.php
+[13/May/2024 16:18:21] "GET /wp-content/themes/travel/issue.php HTTP/1.0" 404 5459
+Not Found: /.well-known/acme-challenge/license.php
+[13/May/2024 16:18:21] "GET /.well-known/acme-challenge/license.php HTTP/1.0" 404 5471
+Not Found: /.well-known/pki-validation/moon.php
+[13/May/2024 16:18:22] "GET /.well-known/pki-validation/moon.php HTTP/1.0" 404 5462
+Not Found: /wp-content/plugins/fix/up.php
+[13/May/2024 16:18:23] "GET /wp-content/plugins/fix/up.php HTTP/1.0" 404 5444
+Not Found: /wp-content/plugins/shell/about.php
+[13/May/2024 16:18:23] "GET /wp-content/plugins/shell/about.php HTTP/1.0" 404 5459
+Not Found: /wp-includes/widgets/include.ph
+[13/May/2024 16:18:24] "GET /wp-includes/widgets/include.ph HTTP/1.0" 404 5447
+Not Found: /wp-content/languages/themes/class.api.php
+[13/May/2024 16:18:25] "GET /wp-content/languages/themes/class.api.php HTTP/1.0" 404 5480
+Not Found: /wp-content/plugins/WordPressCore/include.php
+[13/May/2024 16:18:25] "GET /wp-content/plugins/WordPressCore/include.php HTTP/1.0" 404 5489
+Not Found: /xleet-shell.php
+[13/May/2024 16:18:26] "GET /xleet-shell.php HTTP/1.0" 404 5402
+Not Found: /wp-content/plugins/core-plugin/include.php
+[13/May/2024 16:18:27] "GET /wp-content/plugins/core-plugin/include.php HTTP/1.0" 404 5483
+Not Found: /xleet.php
+[13/May/2024 16:18:27] "GET /xleet.php HTTP/1.0" 404 5384
+Not Found: /wp-content/plugins/revslider/xx.php
+[13/May/2024 16:18:29] "GET /wp-content/plugins/revslider/xx.php HTTP/1.0" 404 5462
+Not Found: /xl2023.php
+[13/May/2024 16:18:30] "GET /xl2023.php HTTP/1.0" 404 5387
+Not Found: /wp-includes/theme-compat/wp-conflg.php
+[13/May/2024 16:18:31] "GET /wp-includes/theme-compat/wp-conflg.php HTTP/1.0" 404 5471
+Not Found: /wp-includes/Text/Diff/Renderer/content.php
+[13/May/2024 16:18:31] "GET /wp-includes/Text/Diff/Renderer/content.php HTTP/1.0" 404 5483
+Not Found: /wp-content/languages/wp-login.php
+[13/May/2024 16:18:32] "GET /wp-content/languages/wp-login.php HTTP/1.0" 404 5456
+Not Found: /wp-content/plugins/core-stab/index.php
+[13/May/2024 16:18:33] "GET /wp-content/plugins/core-stab/index.php HTTP/1.0" 404 5471
+Not Found: /wp-admin/network/wp-login.php
+[13/May/2024 16:18:33] "GET /wp-admin/network/wp-login.php HTTP/1.0" 404 5444
+Not Found: /epinyins.php
+[13/May/2024 16:18:34] "GET /epinyins.php HTTP/1.0" 404 5393
+Not Found: /wp-l0gin.php
+[13/May/2024 16:18:35] "GET /wp-l0gin.php HTTP/1.0" 404 5393
+Not Found: /defaul1.php
+[13/May/2024 16:18:36] "GET /defaul1.php HTTP/1.0" 404 5390
+Not Found: /lufix.php
+[13/May/2024 16:18:37] "GET /lufix.php HTTP/1.0" 404 5384
+Not Found: /wp-content/plugins/masterx/wpx.php
+[13/May/2024 16:18:37] "GET /wp-content/plugins/masterx/wpx.php HTTP/1.0" 404 5459
+Not Found: /plugins.php
+[13/May/2024 16:18:39] "GET /plugins.php HTTP/1.0" 404 5390
+Not Found: /wp-content/themes/twentytwenty/404.php
+[13/May/2024 16:18:39] "GET /wp-content/themes/twentytwenty/404.php HTTP/1.0" 404 5471
+Not Found: /dia.php
+[13/May/2024 16:18:41] "GET /dia.php HTTP/1.0" 404 5378
+Not Found: /WSOEnigma.php
+[13/May/2024 16:18:42] "GET /WSOEnigma.php HTTP/1.0" 404 5396
+Not Found: /Enigma.php
+[13/May/2024 16:18:43] "GET /Enigma.php?key=EnigmaCyberSecurity HTTP/1.0" 404 5411
+Not Found: /wp-amox.php
+[13/May/2024 16:18:44] "GET /wp-amox.php HTTP/1.0" 404 5390
+[13/May/2024 16:39:59] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[13/May/2024 16:39:59] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[13/May/2024 16:39:59] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[13/May/2024 16:39:59] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 16:39:59] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:00] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:00] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:00] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:00] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:00] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:00] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:00] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:00] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:00] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:01] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:01] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:01] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:01] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[13/May/2024 16:40:01] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[13/May/2024 17:10:06] "GET / HTTP/1.0" 200 14620
+Bad Request: /cg_api/students/
+[13/May/2024 17:28:02] "POST /cg_api/students/ HTTP/1.0" 400 446
+[13/May/2024 17:28:14] "POST /cg_api/students/ HTTP/1.0" 201 42
+Bad Request: /cg_api/students/
+[13/May/2024 17:29:46] "POST /cg_api/students/ HTTP/1.0" 400 69
+Bad Request: /cg_api/students/
+[13/May/2024 17:29:52] "POST /cg_api/students/ HTTP/1.0" 400 446
+[13/May/2024 17:30:06] "GET /cg_api/students/ HTTP/1.0" 200 290
+[13/May/2024 17:30:32] "GET /cg_api/students/ HTTP/1.0" 200 290
+[13/May/2024 17:30:37] "POST /cg_api/students/ HTTP/1.0" 201 42
+[13/May/2024 17:30:40] "GET /cg_api/students/ HTTP/1.0" 200 579
+[13/May/2024 17:33:31] "GET /cg_api/students/ HTTP/1.0" 200 579
+[13/May/2024 17:33:50] "GET /cg_api/students/ HTTP/1.0" 200 579
+Not Found: /owa/auth/logon.aspx
+[13/May/2024 17:37:05] "GET /owa/auth/logon.aspx HTTP/1.0" 404 5400
+[13/May/2024 17:47:59] "GET / HTTP/1.0" 200 14620
+[13/May/2024 17:47:59] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[13/May/2024 17:47:59] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 17:47:59] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[13/May/2024 17:47:59] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[13/May/2024 17:47:59] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[13/May/2024 17:47:59] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[13/May/2024 17:47:59] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[13/May/2024 17:48:06] "GET / HTTP/1.0" 200 14620
+[13/May/2024 17:48:06] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[13/May/2024 17:48:06] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 17:48:06] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[13/May/2024 17:48:06] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[13/May/2024 17:48:06] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[13/May/2024 17:48:06] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[13/May/2024 17:48:06] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[13/May/2024 17:52:54] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:54] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[13/May/2024 17:52:54] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[13/May/2024 17:52:55] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:55] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:55] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:55] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:56] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:56] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:56] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:56] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:57] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:57] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:57] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:57] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:57] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:58] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:58] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[13/May/2024 17:52:58] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[13/May/2024 17:57:28] "GET /about/ HTTP/1.0" 200 8207
+[13/May/2024 17:58:50] code 400, message Bad request version ('À\x13À')
+[13/May/2024 17:58:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+[13/May/2024 17:58:50] code 400, message Bad request syntax ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Ö1ö\x88\x9d\x1a')
+[13/May/2024 17:58:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+[13/May/2024 18:04:21] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:21] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[13/May/2024 18:04:22] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[13/May/2024 18:04:22] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:22] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:22] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:23] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:23] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:23] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:23] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2018/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:24] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:24] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:24] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:24] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:25] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /media/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:25] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5451
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:25] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:25] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:26] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[13/May/2024 18:04:26] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[13/May/2024 18:40:58] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[13/May/2024 18:40:59] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[13/May/2024 18:40:59] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[13/May/2024 18:40:59] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 18:40:59] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:00] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:00] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:00] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:00] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:01] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:01] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:01] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:01] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:02] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:02] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:02] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:02] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:03] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[13/May/2024 18:41:03] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /.git/config
+[13/May/2024 18:51:56] "GET /.git/config HTTP/1.0" 404 5376
+[13/May/2024 19:37:57] "GET / HTTP/1.0" 200 14620
+Not Found: /cdn.js
+[13/May/2024 19:38:18] "GET /cdn.js HTTP/1.0" 404 5361
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[13/May/2024 19:38:18] "GET /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5514
+Not Found: /dist/js/bootstrap.bundle.min.js
+[13/May/2024 19:38:18] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5436
+Not Found: /livereload.js
+[13/May/2024 19:38:18] "GET /livereload.js HTTP/1.0" 404 5382
+[13/May/2024 19:50:19] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+Not Found: /owa/auth/logon.aspx
+[13/May/2024 20:08:13] "GET /owa/auth/logon.aspx HTTP/1.0" 404 5400
+Not Found: /wp-includes/ID3/license.txt
+[13/May/2024 20:12:50] "GET /wp-includes/ID3/license.txt HTTP/1.0" 404 5438
+Not Found: /feed/
+[13/May/2024 20:12:51] "GET /feed/ HTTP/1.0" 404 5372
+Not Found: /xmlrpc.php
+[13/May/2024 20:12:51] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:51] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:51] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:52] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:52] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:52] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:52] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2021/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:53] "GET /2021/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:53] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:53] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:53] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /site/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:54] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[13/May/2024 20:12:54] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /ads.txt
+[13/May/2024 20:14:16] "GET /ads.txt HTTP/1.0" 404 5378
+Not Found: /app-ads.txt
+[13/May/2024 20:15:01] "GET /app-ads.txt HTTP/1.0" 404 5394
+Not Found: /.well-known/apple-app-site-association
+[13/May/2024 20:15:07] "GET /.well-known/apple-app-site-association HTTP/1.0" 404 5471
+Not Found: /.well-known/apple-app-site-association
+[13/May/2024 20:15:12] "GET /.well-known/apple-app-site-association HTTP/1.0" 404 5475
+Not Found: /.well-known/gpc.json
+[13/May/2024 20:15:14] "GET /.well-known/gpc.json HTTP/1.0" 404 5417
+Not Found: /robots.txt
+[13/May/2024 20:15:16] "GET /robots.txt HTTP/1.0" 404 5391
+Not Found: /.env
+[13/May/2024 20:53:57] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[13/May/2024 20:53:58] "POST / HTTP/1.0" 403 2928
+[13/May/2024 21:00:21] "GET / HTTP/1.0" 200 14620
+[13/May/2024 21:35:53] "GET / HTTP/1.0" 200 14620
+[13/May/2024 21:35:54] "GET / HTTP/1.0" 200 14620
+[13/May/2024 21:41:52] "GET / HTTP/1.0" 200 14620
+Not Found: /cdn.js
+[13/May/2024 21:42:15] "GET /cdn.js HTTP/1.0" 404 5361
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[13/May/2024 21:42:15] "GET /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5514
+Not Found: /dist/js/bootstrap.bundle.min.js
+[13/May/2024 21:42:15] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5436
+Not Found: /livereload.js
+[13/May/2024 21:42:15] "GET /livereload.js HTTP/1.0" 404 5382
+[13/May/2024 21:52:06] "GET / HTTP/1.0" 200 14620
+[13/May/2024 21:52:06] "GET / HTTP/1.0" 200 14620
+[13/May/2024 21:52:07] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 21:52:57] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[13/May/2024 21:52:59] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[13/May/2024 21:52:59] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[13/May/2024 21:52:59] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[13/May/2024 21:53:00] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[13/May/2024 21:53:00] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[13/May/2024 21:53:07] "GET / HTTP/1.0" 200 14620
+[13/May/2024 23:41:01] "GET / HTTP/1.0" 200 14620
+Not Found: /dist/js/bootstrap.bundle.min.js
+[13/May/2024 23:41:22] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5436
+Not Found: /livereload.js
+[13/May/2024 23:41:22] "GET /livereload.js HTTP/1.0" 404 5382
+Not Found: /cdn.js
+[13/May/2024 23:41:22] "GET /cdn.js HTTP/1.0" 404 5361
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[13/May/2024 23:41:22] "GET /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5514
+Not Found: /.env
+[13/May/2024 23:44:08] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[13/May/2024 23:44:08] "POST / HTTP/1.0" 403 2928
+[14/May/2024 00:34:27] "GET / HTTP/1.1" 200 14620
+Not Found: /.env
+[14/May/2024 02:04:33] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[14/May/2024 02:04:34] "POST / HTTP/1.0" 403 2928
+Not Found: /.env
+[14/May/2024 02:25:43] "GET /.env HTTP/1.0" 404 5369
+[14/May/2024 02:28:30] code 400, message Bad request version ('À\x14À')
+[14/May/2024 02:28:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[14/May/2024 03:26:24] "GET / HTTP/1.0" 200 14620
+[14/May/2024 04:19:42] "GET /login HTTP/1.0" 301 0
+[14/May/2024 04:35:52] "GET / HTTP/1.0" 200 14620
+[14/May/2024 04:35:52] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[14/May/2024 04:35:53] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[14/May/2024 04:35:54] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[14/May/2024 04:35:54] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[14/May/2024 04:35:54] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[14/May/2024 04:35:54] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[14/May/2024 04:35:54] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[14/May/2024 04:35:58] "GET /login/ HTTP/1.0" 200 4288
+[14/May/2024 04:35:58] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.0" 200 2123
+[14/May/2024 04:41:49] "GET / HTTP/1.0" 200 14620
+[14/May/2024 04:41:50] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[14/May/2024 04:41:52] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[14/May/2024 04:41:52] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[14/May/2024 04:41:52] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[14/May/2024 04:41:59] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[14/May/2024 04:41:59] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[14/May/2024 04:41:59] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[14/May/2024 04:42:25] "GET /login/ HTTP/1.0" 200 4288
+[14/May/2024 04:42:26] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.0" 200 2123
+Unauthorized: /cg_api/login/
+[14/May/2024 04:43:29] "POST /cg_api/login/ HTTP/1.0" 401 44
+[14/May/2024 04:43:29] "POST /admin_cg/ HTTP/1.0" 200 4288
+[14/May/2024 04:44:01] "POST /cg_api/login/ HTTP/1.0" 200 817
+[14/May/2024 04:44:01] "POST /admin_cg/ HTTP/1.0" 200 39090
+[14/May/2024 05:08:08] "GET / HTTP/1.0" 200 14620
+[14/May/2024 05:08:09] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[14/May/2024 05:28:34] "GET / HTTP/1.1" 200 14620
+[14/May/2024 05:28:34,825] - Broken pipe from ('118.193.57.62', 40862)
+[14/May/2024 05:28:35] code 400, message Bad request version ('À\x13À')
+[14/May/2024 05:28:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[14/May/2024 05:28:35] code 400, message Bad HTTP/0.9 request type ('t3')
+[14/May/2024 05:28:35] "t3 12.1.2" 400 -
+[14/May/2024 05:28:44] "GET / HTTP/1.0" 200 14620
+[14/May/2024 05:29:22] "GET / HTTP/1.1" 200 14620
+[14/May/2024 05:29:23] "GET /CG_International_University_App/static/images/logo.png HTTP/1.1" 200 46843
+[14/May/2024 05:29:24] "GET /CG_International_University_App/static/images/logo.png HTTP/1.1" 200 46843
+Not Found: /sitemap.xml
+[14/May/2024 05:29:25] "GET /sitemap.xml HTTP/1.1" 404 5381
+Not Found: /robots.txt
+[14/May/2024 05:29:25] "GET /robots.txt HTTP/1.1" 404 5378
+[14/May/2024 05:42:30] "GET /cg_api/students/CG01/ HTTP/1.0" 200 288
+Not Found: /cg_api/marksheets/CG01/
+[14/May/2024 05:42:30] "GET /cg_api/marksheets/CG01/ HTTP/1.0" 404 60
+Not Found: /cg_api/student-data/CG01/
+[14/May/2024 05:42:30] "GET /cg_api/student-data/CG01/ HTTP/1.0" 404 65
+Internal Server Error: /edit_student/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view CG_International_University_App.views.editStudent didn't return an HttpResponse object. It returned None instead.
+[14/May/2024 05:42:30] "GET /edit_student/?id=CG01 HTTP/1.0" 500 65786
+[14/May/2024 05:42:42] "GET /cg_api/students/CG02/ HTTP/1.0" 200 288
+Not Found: /cg_api/marksheets/CG02/
+[14/May/2024 05:42:42] "GET /cg_api/marksheets/CG02/ HTTP/1.0" 404 60
+Not Found: /cg_api/student-data/CG02/
+[14/May/2024 05:42:42] "GET /cg_api/student-data/CG02/ HTTP/1.0" 404 65
+Internal Server Error: /edit_student/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view CG_International_University_App.views.editStudent didn't return an HttpResponse object. It returned None instead.
+[14/May/2024 05:42:42] "GET /edit_student/?id=CG02 HTTP/1.0" 500 65786
+[14/May/2024 06:00:49] "GET / HTTP/1.0" 200 14620
+[14/May/2024 06:00:49] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[14/May/2024 06:00:49] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[14/May/2024 06:00:49] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[14/May/2024 06:00:50] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[14/May/2024 06:00:50] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[14/May/2024 06:00:51] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[14/May/2024 06:00:51] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+Not Found: /jyfg
+[14/May/2024 06:00:52] "GET /jyfg HTTP/1.0" 404 5369
+Not Found: /get_pending_safety_induction_form
+[14/May/2024 06:01:11] "GET /get_pending_safety_induction_form HTTP/1.0" 404 5456
+Not Found: /cg_api
+[14/May/2024 06:01:21] "GET /cg_api HTTP/1.0" 404 5375
+[14/May/2024 06:01:26] "GET /cg_api/students/ HTTP/1.0" 200 18016
+[14/May/2024 06:01:26] "GET /CG_International_University_App/static/rest_framework/css/bootstrap-tweaks.css HTTP/1.0" 200 3426
+[14/May/2024 06:01:26] "GET /CG_International_University_App/static/rest_framework/css/bootstrap.min.css HTTP/1.0" 200 121457
+[14/May/2024 06:01:26] "GET /CG_International_University_App/static/rest_framework/css/prettify.css HTTP/1.0" 200 817
+[14/May/2024 06:01:27] "GET /CG_International_University_App/static/rest_framework/css/default.css HTTP/1.0" 200 1152
+[14/May/2024 06:01:27] "GET /CG_International_University_App/static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.0" 200 87533
+[14/May/2024 06:01:27] "GET /CG_International_University_App/static/rest_framework/js/ajax-form.js HTTP/1.0" 200 3796
+[14/May/2024 06:01:27] "GET /CG_International_University_App/static/rest_framework/js/bootstrap.min.js HTTP/1.0" 200 39680
+[14/May/2024 06:01:27] "GET /CG_International_University_App/static/rest_framework/js/csrf.js HTTP/1.0" 200 1793
+[14/May/2024 06:01:27] "GET /CG_International_University_App/static/rest_framework/js/prettify-min.js HTTP/1.0" 200 13632
+[14/May/2024 06:01:27] "GET /CG_International_University_App/static/rest_framework/js/default.js HTTP/1.0" 200 1268
+[14/May/2024 06:01:27] "GET /CG_International_University_App/static/rest_framework/js/load-ajax-form.js HTTP/1.0" 200 59
+[14/May/2024 06:01:28] "GET /CG_International_University_App/static/rest_framework/img/grid.png HTTP/1.0" 200 1458
+Not Found: /cg_api/
+[14/May/2024 06:01:30] "GET /cg_api/ HTTP/1.0" 404 7316
+Not Found: /owa/auth/logon.aspx
+[14/May/2024 06:25:50] "GET /owa/auth/logon.aspx HTTP/1.0" 404 5400
+[14/May/2024 06:27:01] "GET /login HTTP/1.0" 301 0
+[14/May/2024 06:41:13] "GET / HTTP/1.0" 200 14620
+Not Found: /dist/js/bootstrap.bundle.min.js
+[14/May/2024 06:41:26] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5436
+Not Found: /livereload.js
+[14/May/2024 06:41:26] "GET /livereload.js HTTP/1.0" 404 5382
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[14/May/2024 06:41:27] "GET /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5514
+Not Found: /cdn.js
+[14/May/2024 06:41:27] "GET /cdn.js HTTP/1.0" 404 5361
+[14/May/2024 06:45:43] code 400, message Bad request version ('À\x14À')
+[14/May/2024 06:45:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.env
+[14/May/2024 06:46:40] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[14/May/2024 06:46:40] "POST / HTTP/1.0" 403 2928
+[14/May/2024 06:55:47] "GET / HTTP/1.0" 200 14620
+[14/May/2024 07:12:04] "GET / HTTP/1.0" 200 14620
+Not Found: /http:/uplo.ad/
+[14/May/2024 07:21:30] "GET http://uplo.ad/?v=1&ip=54.242.171.194&port=8001 HTTP/1.1" 404 1881
+[14/May/2024 07:28:40] "GET / HTTP/1.0" 200 14620
+[14/May/2024 07:50:02] "GET / HTTP/1.0" 200 14620
+[14/May/2024 08:16:28] "GET / HTTP/1.0" 200 14620
+Not Found: /.env
+[14/May/2024 08:18:17] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[14/May/2024 08:18:18] "POST / HTTP/1.0" 403 2928
+Not Found: /robots.txt
+[14/May/2024 08:48:59] "GET /robots.txt HTTP/1.0" 404 5391
+Not Found: /sitemap_index.xml
+[14/May/2024 08:49:09] "GET /sitemap_index.xml HTTP/1.0" 404 5412
+[14/May/2024 09:02:28] "GET / HTTP/1.0" 200 14620
+[14/May/2024 09:09:14] "GET / HTTP/1.0" 200 14620
+[14/May/2024 09:09:15] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 304 0
+[14/May/2024 09:09:15] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[14/May/2024 09:09:15] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 304 0
+[14/May/2024 09:09:16] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 304 0
+[14/May/2024 09:09:16] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 304 0
+[14/May/2024 09:09:16] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 304 0
+[14/May/2024 09:09:16] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 304 0
+[14/May/2024 09:09:28] "GET /login/ HTTP/1.0" 200 4288
+[14/May/2024 09:09:28] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.0" 200 2123
+[14/May/2024 09:09:41] "POST /cg_api/login/ HTTP/1.0" 200 817
+[14/May/2024 09:09:41] "POST /admin_cg/ HTTP/1.0" 200 39090
+[14/May/2024 09:16:47] "GET / HTTP/1.0" 200 14620
+[14/May/2024 09:16:50] "GET /login/ HTTP/1.0" 200 4288
+[14/May/2024 09:17:03] "POST /cg_api/login/ HTTP/1.0" 200 817
+[14/May/2024 09:17:03] "POST /admin_cg/ HTTP/1.0" 200 39090
+[14/May/2024 09:17:27] "GET /cg_api/students/CG02/ HTTP/1.0" 200 288
+Not Found: /cg_api/marksheets/CG02/
+[14/May/2024 09:17:27] "GET /cg_api/marksheets/CG02/ HTTP/1.0" 404 60
+Not Found: /cg_api/student-data/CG02/
+[14/May/2024 09:17:27] "GET /cg_api/student-data/CG02/ HTTP/1.0" 404 65
+Internal Server Error: /edit_student/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view CG_International_University_App.views.editStudent didn't return an HttpResponse object. It returned None instead.
+[14/May/2024 09:17:27] "GET /edit_student/?id=CG02 HTTP/1.0" 500 65789
+[14/May/2024 09:17:41] "GET /login/ HTTP/1.0" 200 4288
+[14/May/2024 09:22:52] "GET / HTTP/1.0" 200 14620
+Not Found: /xmlrpc.php
+[14/May/2024 09:37:11] "HEAD /xmlrpc.php HTTP/1.0" 404 0
+Not Found: /wp-login.php
+[14/May/2024 09:37:19] "GET /wp-login.php HTTP/1.0" 404 5393
+Not Found: /wp/xmlrpc.php
+[14/May/2024 09:37:26] "HEAD /wp/xmlrpc.php HTTP/1.0" 404 0
+Not Found: /wordpress/xmlrpc.php
+[14/May/2024 09:37:35] "HEAD /wordpress/xmlrpc.php HTTP/1.0" 404 0
+Not Found: /old/xmlrpc.php
+[14/May/2024 09:37:43] "HEAD /old/xmlrpc.php HTTP/1.0" 404 0
+Not Found: /new/xmlrpc.php
+[14/May/2024 09:37:52] "HEAD /new/xmlrpc.php HTTP/1.0" 404 0
+Not Found: /blog/xmlrpc.php
+[14/May/2024 09:38:01] "HEAD /blog/xmlrpc.php HTTP/1.0" 404 0
+Not Found: /robots.txt
+[14/May/2024 09:38:25] "GET /robots.txt HTTP/1.0" 404 5387
+Not Found: /sitemaps.xml
+[14/May/2024 09:38:30] "GET /sitemaps.xml HTTP/1.0" 404 5393
+Not Found: /sitemaps.xml
+[14/May/2024 09:41:30] "GET /sitemaps.xml HTTP/1.0" 404 5397
+Not Found: /atom.xml
+[14/May/2024 10:04:21] "GET /atom.xml HTTP/1.0" 404 5381
+[14/May/2024 10:10:38] "GET / HTTP/1.0" 200 14620
+[14/May/2024 10:10:39] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+Not Found: /robots.txt
+[14/May/2024 10:55:49] "GET /robots.txt HTTP/1.0" 404 5387
+[14/May/2024 10:55:52] "GET / HTTP/1.0" 200 14620
+[14/May/2024 10:59:11] "GET / HTTP/1.1" 200 14620
+[14/May/2024 10:59:11,830] - Broken pipe from ('64.62.197.22', 41205)
+Not Found: /favicon.ico
+[14/May/2024 10:59:19] "GET /favicon.ico HTTP/1.1" 404 5381
+Not Found: /http:/api.ipify.org/
+[14/May/2024 10:59:24] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[14/May/2024 10:59:26] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+[14/May/2024 11:02:44] "GET / HTTP/1.0" 200 14620
+[14/May/2024 11:02:45] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[14/May/2024 11:02:45] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[14/May/2024 11:02:45] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[14/May/2024 11:02:46] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[14/May/2024 11:02:47] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[14/May/2024 11:02:48] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[14/May/2024 11:02:48] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+Not Found: /atom.xml
+[14/May/2024 11:03:17] "GET /atom.xml HTTP/1.0" 404 5385
+[14/May/2024 11:20:29] "GET / HTTP/1.0" 200 14620
+[14/May/2024 11:37:19] "GET / HTTP/1.0" 200 14620
+[14/May/2024 11:40:43] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03(')
+[14/May/2024 11:40:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.env
+[14/May/2024 11:44:42] "GET /.env HTTP/1.0" 404 5355
+Not Found: /.env
+[14/May/2024 11:47:01] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[14/May/2024 11:47:01] "POST / HTTP/1.0" 403 2928
+[14/May/2024 12:14:19] "GET / HTTP/1.0" 200 14620
+[14/May/2024 12:14:30] "GET / HTTP/1.0" 200 14620
+[14/May/2024 12:14:34] "GET / HTTP/1.0" 200 14620
+Not Found: /sitemap.xml.gz
+[14/May/2024 12:18:14] "GET /sitemap.xml.gz HTTP/1.0" 404 5403
+Not Found: /sitemap_index.xml
+[14/May/2024 12:38:08] "GET /sitemap_index.xml HTTP/1.0" 404 5408
+Not Found: /sitemap.txt
+[14/May/2024 12:51:18] "GET /sitemap.txt HTTP/1.0" 404 5390
+[14/May/2024 13:18:05] "GET / HTTP/1.0" 200 14620
+[14/May/2024 13:25:25] "GET / HTTP/1.0" 200 14620
+[14/May/2024 13:25:26] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[14/May/2024 13:25:26] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[14/May/2024 13:25:26] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[14/May/2024 13:25:26] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[14/May/2024 13:25:27] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[14/May/2024 13:25:27] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[14/May/2024 13:25:27] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+Not Found: /sitemap.xml
+[14/May/2024 13:27:20] "GET /sitemap.xml HTTP/1.0" 404 5394
+Not Found: /sitemap.xml.gz
+[14/May/2024 13:34:57] "GET /sitemap.xml.gz HTTP/1.0" 404 5399
+[14/May/2024 13:46:32] "GET / HTTP/1.0" 200 14620
+Not Found: /sitemap.xml
+[14/May/2024 13:59:14] "GET /sitemap.xml HTTP/1.0" 404 5390
+[14/May/2024 14:19:00] "GET / HTTP/1.0" 200 14620
+[14/May/2024 15:11:11] "GET / HTTP/1.0" 200 14620
+[14/May/2024 15:28:51] "GET / HTTP/1.0" 200 14620
+Not Found: /.env
+[14/May/2024 15:42:23] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[14/May/2024 15:42:24] "POST / HTTP/1.0" 403 2928
+[14/May/2024 15:49:09] "GET / HTTP/1.0" 200 14620
+[14/May/2024 15:49:10] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 304 0
+[14/May/2024 15:49:10] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[14/May/2024 15:49:10] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 304 0
+[14/May/2024 15:49:10] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 304 0
+[14/May/2024 15:49:11] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 304 0
+[14/May/2024 15:49:11] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 304 0
+[14/May/2024 15:49:11] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[14/May/2024 15:49:18] "GET /login/ HTTP/1.0" 200 4288
+[14/May/2024 15:49:19] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.0" 304 0
+[14/May/2024 15:49:20] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+Not Found: /cg_api/login/
+[14/May/2024 15:49:30] "POST /cg_api/login/ HTTP/1.0" 404 50
+[14/May/2024 15:49:30] "POST /admin_cg/ HTTP/1.0" 200 4288
+Not Found: /cg_api/login/
+[14/May/2024 15:49:41] "POST /cg_api/login/ HTTP/1.0" 404 50
+[14/May/2024 15:49:41] "POST /admin_cg/ HTTP/1.0" 200 4288
+Not Found: /cg_api/login/
+[14/May/2024 15:49:58] "POST /cg_api/login/ HTTP/1.0" 404 50
+[14/May/2024 15:49:58] "POST /admin_cg/ HTTP/1.0" 200 4288
+Not Found: /cg_api/login/
+[14/May/2024 15:50:19] "POST /cg_api/login/ HTTP/1.0" 404 50
+[14/May/2024 15:50:19] "POST /admin_cg/ HTTP/1.0" 200 4288
+Not Found: /cg_api/login/
+[14/May/2024 15:52:05] "POST /cg_api/login/ HTTP/1.0" 404 50
+[14/May/2024 15:52:05] "POST /admin_cg/ HTTP/1.0" 200 4288
+Not Found: /cg_api/login/
+[14/May/2024 15:52:21] "POST /cg_api/login/ HTTP/1.0" 404 50
+[14/May/2024 15:52:21] "POST /admin_cg/ HTTP/1.0" 200 4288
+Unauthorized: /cg_api/login/
+[14/May/2024 15:52:44] "POST /cg_api/login/ HTTP/1.0" 401 44
+[14/May/2024 15:52:44] "POST /admin_cg/ HTTP/1.0" 200 4288
+Unauthorized: /cg_api/login/
+[14/May/2024 15:53:18] "POST /cg_api/login/ HTTP/1.0" 401 44
+[14/May/2024 15:53:18] "POST /admin_cg/ HTTP/1.0" 200 4288
+[14/May/2024 15:54:09] "GET / HTTP/1.1" 200 14620
+[14/May/2024 15:54:10] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.1" 304 0
+[14/May/2024 15:54:10] "GET /CG_International_University_App/static/images/logo.png HTTP/1.1" 304 0
+[14/May/2024 15:54:10] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.1" 304 0
+[14/May/2024 15:54:10] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.1" 304 0
+[14/May/2024 15:54:10] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.1" 304 0
+[14/May/2024 15:54:12] "GET /login/ HTTP/1.1" 200 4288
+[14/May/2024 15:54:12] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.1" 200 349888
+[14/May/2024 15:54:13] "GET /CG_International_University_App/static/main_css/login.css HTTP/1.1" 304 0
+[14/May/2024 15:54:23] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.1" 200 2080830
+Not Found: /cg_api/login/
+[14/May/2024 15:57:24] "POST /cg_api/login/ HTTP/1.0" 404 50
+Not Found: /cg_api/login/
+[14/May/2024 15:58:40] "POST /cg_api/login/ HTTP/1.0" 404 50
+Not Found: /cg_api/login/
+[14/May/2024 15:59:46] "POST /cg_api/login/ HTTP/1.0" 404 50
+Not Found: /cg_api/login/
+[14/May/2024 16:01:34] "POST /cg_api/login/ HTTP/1.0" 404 50
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 12, 2024 - 15:14:52
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+rWtnaYTdMaock91ggWjrdsauEHDy7mkvOb5nhKQ5leP2LuXNovTohe4Jiv3asTOk
+---------------- Admin Function View ---------------- 
+IbHPt8hxfn89fAQDlqkB8y8l5k5DN9idyLImEHC0hmrwAlOaAscO0H3gmgmS2giW
+---------------- Admin Function View ---------------- 
+lSeO8JRCwQ4VBjRekXMlWOYUMZKJe92XcEfPF32cmC4fbZrLPMtQyABdbR1zBSg9
+---------------- Admin Function View ---------------- 
+lBUldDLbfMjrcoC6VtdMxk1qqCCaMQsHBksUEoAdDylvaC6LnfPh55gJoQEWhfJ3
+---------------- Admin Function View ---------------- 
+---------------- Admin Function View ---------------- 
+Kk3xmJNlUOzHyDARcs0ocZCqTYjrWKsU6aBxSBKU8gVXFyiaKIEEooorlmzLW2N5
+---------------- Admin Function View ---------------- 
+qzNMzOj7igUQwAAK8sXpqTc6bRpKaOdpMplM5GgGwIg6Dvi3GIBFCiY7DfF4a6yA
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'CG01', 'password': '1234', 'full_name': 'Aakash Panwar', 'father_name': 'Meharban Singh Panwar', 'mother_name': 'Hemlata Panwar', 'gender': 'Male', 'date_of_birth': '2002-08-12', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '7000649593', 'address': '46, Mohan Nagar'}
+{'detail': 'No mark sheets found for this enrollment number'}
+<bound method Response.json of <Response [404]>>
+Error: 404 Client Error: Not Found for url: https://cginternationaluniversity.in/cg_api/marksheets/CG01/
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'CG02', 'password': '1234', 'full_name': 'Aakash Panwar', 'father_name': 'Meharban Singh Panwar', 'mother_name': 'Hemlata Panwar', 'gender': 'Male', 'date_of_birth': '2002-08-12', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '7000649593', 'address': '46, Mohan Nagar'}
+{'detail': 'No mark sheets found for this enrollment number'}
+<bound method Response.json of <Response [404]>>
+Error: 404 Client Error: Not Found for url: https://cginternationaluniversity.in/cg_api/marksheets/CG02/
+---------------- Admin Function View ---------------- 
+so08pDsgkaIrDyperNJZEYlHFfFWOmCxY3oPZZcrlxbXCU3PLtGtOB3FRoxbPADu
+---------------- Admin Function View ---------------- 
+TnTO87vnE3LeXhkygJoJ8oe8ZCj0Yj5Sp2hvItfyFqeKWDY9Apldi1W6bLbfZx6P
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'CG02', 'password': '1234', 'full_name': 'Aakash Panwar', 'father_name': 'Meharban Singh Panwar', 'mother_name': 'Hemlata Panwar', 'gender': 'Male', 'date_of_birth': '2002-08-12', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '7000649593', 'address': '46, Mohan Nagar'}
+{'detail': 'No mark sheets found for this enrollment number'}
+<bound method Response.json of <Response [404]>>
+Error: 404 Client Error: Not Found for url: https://cginternationaluniversity.in/cg_api/marksheets/CG02/
+---------------- Admin Function View ---------------- 
+R5R1kTI9qFLsg0pzsJQ7KvIlJpa9PA7BHFSyvs3CsE4PBLn6HLIkCEDg0lro4H7k
+---------------- Admin Function View ---------------- 
+UzrlWb4vO9IZi6BN3AKkCYhx0O4skMkBK9sS7KpYQ81mDRzkiCCxu7cshKlHzTkk
+---------------- Admin Function View ---------------- 
+Oo8QQo0cEBx7PtBPfksZnXvyWirqQaWfEY9n1XlFGAQuaezmumkcf6qtdeIF5hWY
+---------------- Admin Function View ---------------- 
+ttzuSKf5UDpVuybKi0S4sjqvzRJkNdNkj3A13jAyWCIiPj9hx2KhkslqQN0z2kN3
+---------------- Admin Function View ---------------- 
+0zc74RMB1CEMzJTeDEQ8bIRkxH7PiLshQ9dEfq743BX9UuRLSGIl3RMfODo4xSs0
+---------------- Admin Function View ---------------- 
+cVEMTii3uHw2Q4eT8mX9C2PuZfMBXqXE2vFj4RDwwGPpbPcqnoPmubKpgb3QcxXn
+---------------- Admin Function View ---------------- 
+JBLisl7f71xKrXgHI27O8R2ijeXkqoduzbMPDUsI90Q7MIeeX4Z100XdAaezFvdd
+---------------- Admin Function View ---------------- 
+f6uGieO1jdVsQd0AiTZzQ3zDpzj3qCtT5GvdtN9ulcePbYY7xVRMIcuyGvAiFJtC
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 519, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py", line 24, in <module>
+    path('', include('CG_International_University_App.urls')),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py", line 10, in <module>
+    path('', views.home, name='home'),
+             ^^^^^^^^^^
+AttributeError: module 'CG_International_University_App.views' has no attribute 'home'
+Watching for file changes with StatReloader
+[14/May/2024 16:31:25] "GET / HTTP/1.0" 200 14620
+Not Found: /.git/config
+[14/May/2024 17:23:08] "GET /.git/config HTTP/1.0" 404 5390
+Not Found: /wp-includes/ID3/license.txt
+[14/May/2024 17:25:18] "GET /wp-includes/ID3/license.txt HTTP/1.0" 404 5438
+Not Found: /feed/
+[14/May/2024 17:25:19] "GET /feed/ HTTP/1.0" 404 5372
+Not Found: /xmlrpc.php
+[14/May/2024 17:25:19] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:19] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:19] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:20] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:20] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:20] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:20] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2021/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:21] "GET /2021/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:21] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:21] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:21] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /site/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:22] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[14/May/2024 17:25:22] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+[14/May/2024 17:46:47] "GET / HTTP/1.0" 200 14620
+[14/May/2024 17:46:51] "GET / HTTP/1.0" 200 14620
+[14/May/2024 17:46:53] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[14/May/2024 17:51:59] "GET / HTTP/1.0" 200 14620
+Not Found: /http:/uplo.ad/
+[14/May/2024 18:07:06] "GET http://uplo.ad/?v=1&ip=54.242.171.194&port=8001 HTTP/1.1" 404 1881
+[14/May/2024 18:09:11] "GET / HTTP/1.0" 200 14620
+[14/May/2024 18:09:12] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[14/May/2024 18:09:12] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[14/May/2024 18:09:12] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[14/May/2024 18:09:12] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[14/May/2024 18:09:14] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[14/May/2024 18:09:14] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[14/May/2024 18:09:15] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[14/May/2024 18:57:57] "GET / HTTP/1.0" 200 14620
+[14/May/2024 18:57:57] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[14/May/2024 18:57:57] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[14/May/2024 18:57:57] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[14/May/2024 18:57:57] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[14/May/2024 18:57:57] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[14/May/2024 18:57:57] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[14/May/2024 18:57:57] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[14/May/2024 19:06:09] "GET / HTTP/1.0" 200 14620
+[14/May/2024 19:06:09] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 200 1555
+[14/May/2024 19:06:10] "GET /CG_International_University_App/static/images/logo.png HTTP/1.0" 200 46843
+[14/May/2024 19:06:10] "GET /CG_International_University_App/static/images/home_image/2.jpg HTTP/1.0" 200 55879
+[14/May/2024 19:06:10] "GET /CG_International_University_App/static/images/home_image/4.jpg HTTP/1.0" 200 139834
+[14/May/2024 19:06:10] "GET /CG_International_University_App/static/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[14/May/2024 19:06:10] "GET /CG_International_University_App/static/images/home_image/3.jpg HTTP/1.0" 200 245914
+[14/May/2024 19:06:10] "GET /CG_International_University_App/static/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[14/May/2024 19:06:36] "GET / HTTP/1.0" 200 14620
+[14/May/2024 19:18:49] "GET / HTTP/1.0" 200 14620
+Not Found: /robots.txt
+[14/May/2024 19:19:00] "GET /robots.txt HTTP/1.0" 404 5387
+[14/May/2024 19:19:02] "GET /about/ HTTP/1.0" 200 8207
+[14/May/2024 19:19:04] "GET /approval/ HTTP/1.0" 200 10950
+[14/May/2024 19:19:06] "GET /board_members/ HTTP/1.0" 200 9401
+[14/May/2024 19:19:08] "GET /courses/ HTTP/1.0" 200 22732
+[14/May/2024 19:19:10] "GET /director_message/ HTTP/1.0" 200 8408
+[14/May/2024 19:19:12] "GET /login/ HTTP/1.0" 200 4288
+[14/May/2024 19:19:14] "GET /rti/ HTTP/1.0" 200 7714
+[14/May/2024 19:19:15] "GET /terms_and_conditions/ HTTP/1.0" 200 8634
+[14/May/2024 19:19:17] "GET /vision_and_mission/ HTTP/1.0" 200 9334
+Not Found: /.env
+[14/May/2024 19:24:30] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[14/May/2024 19:24:30] "POST / HTTP/1.0" 403 2928
+Not Found: /.git/config
+[14/May/2024 19:25:33] "GET /.git/config HTTP/1.0" 404 5404
+[14/May/2024 19:28:35] "GET / HTTP/1.0" 200 14620
+[14/May/2024 20:02:25] "GET / HTTP/1.0" 200 14620
+Not Found: /.env
+[14/May/2024 20:45:03] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[14/May/2024 20:45:03] "POST / HTTP/1.0" 403 2928
+[14/May/2024 21:16:36] "GET / HTTP/1.0" 200 14620
+Not Found: /wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:37] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[14/May/2024 21:16:37] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[14/May/2024 21:16:37] "GET / HTTP/1.0" 200 14620
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:37] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:38] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:38] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:38] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:38] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:38] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:39] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:39] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:39] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:39] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:40] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:40] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:40] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:40] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[14/May/2024 21:16:41] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /.git/config
+[14/May/2024 21:16:52] "GET /.git/config HTTP/1.0" 404 5376
+[14/May/2024 21:18:20] "GET / HTTP/1.0" 200 14620
