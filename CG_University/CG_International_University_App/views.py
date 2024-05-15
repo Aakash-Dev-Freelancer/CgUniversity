@@ -44,6 +44,8 @@ def admin(request):
         
 
         print(response.status_code)
+        print(response.json())
+        
         try:
             if response.status_code == 200:
                 
