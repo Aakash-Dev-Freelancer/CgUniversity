@@ -15,9 +15,9 @@ class Student(models.Model):
     mobile_number = models.CharField(max_length=15)
     address = models.CharField(max_length=255)
     
-class StudentLogin(models.Model):
-    password = models.CharField(max_length=100, null=False)
-    enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)
+# class StudentLogin(models.Model):
+#     password = models.CharField(max_length=100, null=False)
+#     enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)
     
 
 class StudentData(models.Model):
@@ -25,7 +25,6 @@ class StudentData(models.Model):
     student_provision = models.FileField(upload_to='images/students/provision/', null=True)
     student_admit_card = models.FileField(upload_to='images/students/admit_card/', null=True)
     student_affidevit = models.FileField(upload_to='images/students/affidevit/', null=True)
-    student_photo = models.ImageField(upload_to='images/students/photos/', null=True)
     student_migrations = models.FileField(upload_to='images/students/migrations/' ,null=True)
 
 class MarkSheets(models.Model):

@@ -35,17 +35,18 @@ def admin(request):
         token_payload = {"username": username, "password": password}
         token_response = requests.post(token_url, data=token_payload).json()
         access_token = token_response.get('access')
-        print(f"Access Token :: ", access_token)
+        csrf_token = request.POST.get('csrfmiddlewaretoken')
+        # print(f"Access Token :: ", access_token)
 
-        payload = {"user_type": user_type, "username": username, "password": password}
-        print(f" Payload :: ", payload)
+        payload = {"user_type": user_type, "username": username, "password": password, 'X-CSRFToken': csrf_token}
+        # print(f" Payload :: ", payload)
         
         headers = {"Authorization": f"Bearer {access_token}"}
 
         response = requests.post(api_url, headers=headers, data=payload)
         
-        print(response.status_code)
-        print(response.json())
+        # print(response.status_code)
+        # print(response.json())
         
         try:
             if response.status_code == 200:
@@ -86,7 +87,7 @@ def admin(request):
 
     
 
-# @csrf_protect
+@csrf_protect
 def editStudent(request):
     print('---------------- Edit Student Function View ---------------- ')
     
@@ -147,19 +148,21 @@ def student(request):
         api_url = f"{API_URL}login/"
         token_url = f"{API_URL}token/"
 
-        token_response = requests.get(token_url).json()
-        access_token = token_response.get('access')
-        print(access_token)
+        token_response = requests.get(token_url)
+        # print(token_response.json())
+        token_json = token_response.json()
+        access_token = token_json.get('access')
+        # print(access_token)
         
         payload = {"user_type": user_type, "username": enrollment_no, "password": password}
-        print(payload)
+        # print(payload)
         headers = {"Authorization": f"Bearer {access_token}"}
 
         try:
             response = requests.post(api_url, headers=headers, data=payload)
             response.raise_for_status()
-            print(response.json())
-            print(response.status_code)
+            # print(response.json())
+            # print(response.status_code)
             if response.status_code == 200:
                 student_info_dict = response.json()
                 student_info = StudentInformation.from_dict(student_info_dict)

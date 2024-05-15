@@ -8,7 +8,8 @@ from cgapp.views import (StudentListCreate,
                          StudentRetrieveUpdateDestroy, 
                          StudentLoginAPIView, 
                          StudentDataListCreateAPIView, 
-                         StudentDataRetrieveUpdateDestroyAPIView)
+                         StudentDataRetrieveUpdateDestroyAPIView,
+                         AddStudent)
 
 from cgapp.views import (MarkSheetListCreateView, 
                          MarkSheetRetrieveUpdateDestroyView, 
@@ -23,6 +24,7 @@ urlpatterns = [
     path('students/', StudentListCreate.as_view(), name='student-list-create'),
     path('students/<str:pk>/', StudentRetrieveUpdateDestroy.as_view(), name='student-detail'),
     path('login/', StudentLoginAPIView.as_view(), name='student-login'),
+    path('add-student/', AddStudent.as_view(), name='add-student'),
     
     path('student-data/', StudentDataListCreateAPIView.as_view(), name='student-data-list-create'),
     path('student-data/<str:student_enrollment_no>/', StudentDataRetrieveUpdateDestroyAPIView.as_view(), name='student-data-retrieve-by-enrollment-no'),

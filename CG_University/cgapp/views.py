@@ -24,6 +24,17 @@ def get_tokens_for_user(request):
        'refresh': str(refresh),
        'access': str(refresh.access_token),
     })
+    
+class AddStudent(generics.ListCreateAPIView):
+    queryset = StudentLogin.objects.all()
+    serializer_class = StudentLoginSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({"message": "Student Login created successfully"}, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class StudentListCreate(generics.ListCreateAPIView):
     queryset = Student.objects.all()

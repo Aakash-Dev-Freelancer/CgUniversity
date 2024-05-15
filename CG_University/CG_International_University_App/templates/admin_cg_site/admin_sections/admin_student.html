@@ -419,6 +419,7 @@
             var studentUrl = "{{ api_url }}students/"
             var markSheetUrl = "{{ api_url }}marksheets/"
             var studentDataUrl = "{{ api_url }}student-data/"
+            var addStudent = "{{ api_url }}add-student/"
             var token = localStorage.getItem('token');
 
 
@@ -515,6 +516,37 @@
                 .catch(error => {
                     console.error('There was a problem with the fetch operation:', error);
                 });
+
+
+            addStudentPayload = {
+                "username": document.querySelector('#enrollment_no').value,
+                "password": document.querySelector('#password').value,
+            }
+
+
+            fetch(addStudent, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify(addStudentPayload),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Response from server:', data);
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+
+
+
         }
 
 

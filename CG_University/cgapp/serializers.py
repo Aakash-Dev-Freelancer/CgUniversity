@@ -7,13 +7,11 @@ class StudentSerializer(serializers.ModelSerializer):
         model = Student
         fields = '__all__'
 
-class StudentLoginSerializer(serializers.Serializer):
-    enrollment_no = serializers.CharField(max_length=100)
-    password = serializers.CharField(max_length=100)
-
+class StudentLoginSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentLogin
         fields = '__all__'
+    
 
 class StudentDataSerializer(serializers.ModelSerializer):
     class Meta:
