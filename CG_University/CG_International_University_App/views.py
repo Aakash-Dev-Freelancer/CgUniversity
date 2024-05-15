@@ -17,6 +17,7 @@ import requests
 
 
 from django.http import JsonResponse
+# New Changes
 
 @csrf_protect
 def admin(request):
