@@ -154,6 +154,7 @@ def student(request):
         try:
             response = requests.post(api_url, headers=headers, data=payload)
             response.raise_for_status()
+            print(response.json())
             print(response.status_code)
             if response.status_code == 200:
                 student_info_dict = response.json()
