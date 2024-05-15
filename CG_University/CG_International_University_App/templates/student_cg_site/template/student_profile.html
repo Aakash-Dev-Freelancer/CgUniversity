@@ -1,15 +1,41 @@
 <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /> -->
 <style>
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 </style>
 
 <form action="#" method="post">
   {% csrf_token %}
-  <div class="rounded bg-white shadow p-4 ">
+  <div class="bg-white shadow p-4" style="border-radius: 20px;">
 
-    <div class="form-group">
-      <h1>Hello, {{ student_info.full_name }}</h1>
+    <!-- <h1>{{ student_info. }} pp</h1> -->
+    <div class="row mb-5 d-flex align-items-center">
+      <div class="col-md-4 max-width-200px" style="max-width: 200px;">
+        <div class="avatar mx-auto">
+          <img src="{{ student_info.profile_pic }}" alt="Profile Picture"
+            onerror="this.onerror=null;this.src='https://t3.ftcdn.net/jpg/01/87/10/40/360_F_187104027_8i2JbFDBB5jB7R65Ce464yRs4gfNbR3Z.jpg';">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h1>Hello,</h1>
+        <h1>{{ student_info.full_name }}</h1>
+      </div>
     </div>
+    <!-- <div class="row">
+      <div class="container m-2">
+      </div>
+
+    </div> -->
 
     <div class="container">
       <div class="row">

@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from typing import Any, List, TypeVar, Callable, Type, cast
 from datetime import datetime
 import dateutil.parser
+from typing import Optional
+
 
 
 T = TypeVar("T")
@@ -30,71 +32,83 @@ def to_class(c: Type[T], x: Any) -> dict:
     assert isinstance(x, c)
     return cast(Any, x).to_dict()
 
-
 @dataclass
 class StudentData:
-    student_enrollment_no: str
-    student_provision: str
-    student_admit_card: str
-    student_affidevit: str
-    student_migrations: str
+    student_enrollment_no: Optional[str] = None
+    student_provision: Optional[str] = None
+    student_admit_card: Optional[str] = None
+    student_affidevit: Optional[str] = None
+    student_migrations: Optional[str] = None
 
     @staticmethod
     def from_dict(obj: Any) -> 'StudentData':
         assert isinstance(obj, dict)
-        student_enrollment_no = from_str(obj.get("student_enrollment_no"))
-        student_provision = from_str(obj.get("student_provision"))
-        student_admit_card = from_str(obj.get("student_admit_card"))
-        student_affidevit = from_str(obj.get("student_affidevit"))
-        # student_photo = from_str(obj.get("student_photo"))
-        student_migrations = from_str(obj.get("student_migrations"))
-        return StudentData(student_enrollment_no, student_provision, student_admit_card, student_affidevit, student_migrations)
+        return StudentData(
+            student_enrollment_no=obj.get("student_enrollment_no"),
+            student_provision=obj.get("student_provision"),
+            student_admit_card=obj.get("student_admit_card"),
+            student_affidevit=obj.get("student_affidevit"),
+            student_migrations=obj.get("student_migrations")
+        )
 
     def to_dict(self) -> dict:
-        result: dict = {}
-        result["student_enrollment_no"] = from_str(self.student_enrollment_no)
-        result["student_provision"] = from_str(self.student_provision)
-        result["student_admit_card"] = from_str(self.student_admit_card)
-        result["student_affidevit"] = from_str(self.student_affidevit)
-        # result["student_photo"] = from_str(self.student_photo)
-        result["student_migrations"] = from_str(self.student_migrations)
+        result = {}
+        if self.student_enrollment_no is not None:
+            result["student_enrollment_no"] = self.student_enrollment_no
+        if self.student_provision is not None:
+            result["student_provision"] = self.student_provision
+        if self.student_admit_card is not None:
+            result["student_admit_card"] = self.student_admit_card
+        if self.student_affidevit is not None:
+            result["student_affidevit"] = self.student_affidevit
+        if self.student_migrations is not None:
+            result["student_migrations"] = self.student_migrations
         return result
 
 
 @dataclass
 class StudentMarksheet:
-    id: int
-    student_enrollment_no: str
-    session: str
-    semester: int
-    sgpa: str
-    status: str
-    result: str
-    file: str
+    id: Optional[int] = None
+    student_enrollment_no: Optional[str] = None
+    session: Optional[str] = None
+    semester: Optional[int] = None
+    sgpa: Optional[str] = None
+    status: Optional[str] = None
+    result: Optional[str] = None
+    file: Optional[str] = None
 
     @staticmethod
     def from_dict(obj: Any) -> 'StudentMarksheet':
         assert isinstance(obj, dict)
-        id = from_int(obj.get("id"))
-        student_enrollment_no = from_str(obj.get("student_enrollment_no"))
-        session = from_str(obj.get("session"))
-        semester = int(from_str(obj.get("semester")))
-        sgpa = from_str(obj.get("sgpa"))
-        status = from_str(obj.get("status"))
-        result = from_str(obj.get("result"))
-        file = from_str(obj.get("file"))
-        return StudentMarksheet(id, student_enrollment_no, session, semester, sgpa, status, result, file)
+        return StudentMarksheet(
+            id=obj.get("id"),
+            student_enrollment_no=obj.get("student_enrollment_no"),
+            session=obj.get("session"),
+            semester=obj.get("semester"),
+            sgpa=obj.get("sgpa"),
+            status=obj.get("status"),
+            result=obj.get("result"),
+            file=obj.get("file")
+        )
 
     def to_dict(self) -> dict:
-        result: dict = {}
-        result["id"] = from_int(self.id)
-        result["student_enrollment_no"] = from_str(self.student_enrollment_no)
-        result["session"] = from_str(self.session)
-        result["semester"] = from_str(str(self.semester))
-        result["sgpa"] = from_str(self.sgpa)
-        result["status"] = from_str(self.status)
-        result["result"] = from_str(self.result)
-        result["file"] = from_str(self.file)
+        result = {}
+        if self.id is not None:
+            result["id"] = self.id
+        if self.student_enrollment_no is not None:
+            result["student_enrollment_no"] = self.student_enrollment_no
+        if self.session is not None:
+            result["session"] = self.session
+        if self.semester is not None:
+            result["semester"] = self.semester
+        if self.sgpa is not None:
+            result["sgpa"] = self.sgpa
+        if self.status is not None:
+            result["status"] = self.status
+        if self.result is not None:
+            result["result"] = self.result
+        if self.file is not None:
+            result["file"] = self.file
         return result
 
 
@@ -111,7 +125,9 @@ class StudentPersonalInfo:
     email: str
     mobile_number: str
     address: str
-
+    profile_pic: Optional[str] = None
+    
+    
     @staticmethod
     def from_dict(obj: Any) -> 'StudentPersonalInfo':
         assert isinstance(obj, dict)
@@ -126,7 +142,9 @@ class StudentPersonalInfo:
         email = from_str(obj.get("email"))
         mobile_number = from_str(obj.get("mobile_number"))
         address = from_str(obj.get("address"))
-        return StudentPersonalInfo(enrollment_no, password, full_name, father_name, mother_name, gender, date_of_birth, category, email, mobile_number, address)
+        profile_pic = from_str(obj.get("profile_pic"))
+        
+        return StudentPersonalInfo(enrollment_no, password, full_name, father_name, mother_name, gender, date_of_birth, category, email, mobile_number, address, profile_pic)
 
     def to_dict(self) -> dict:
         result: dict = {}
@@ -141,53 +159,55 @@ class StudentPersonalInfo:
         result["email"] = from_str(self.email)
         result["mobile_number"] = from_str(self.mobile_number)
         result["address"] = from_str(self.address)
+        result["profile_pic"] = from_str(self.profile_pic)
+        
         return result
+
 
 
 @dataclass
 class StudentInfo:
-    student_data: StudentData
-    student_personal_info: StudentPersonalInfo
-    student_marksheets: List[StudentMarksheet]
+    student_data: Optional[StudentData] = None
+    student_personal_info: StudentPersonalInfo = None
+    student_marksheets: Optional[List[StudentMarksheet]] = None
 
     @staticmethod
     def from_dict(obj: Any) -> 'StudentInfo':
         assert isinstance(obj, dict)
-        student_data = StudentData.from_dict(obj.get("student_data"))
-        student_personal_info = StudentPersonalInfo.from_dict(obj.get("student_personal_info"))
-        student_marksheets = from_list(StudentMarksheet.from_dict, obj.get("student_marksheets"))
-        return StudentInfo(student_data, student_personal_info, student_marksheets)
+        return StudentInfo(
+            student_data=StudentData.from_dict(obj.get("student_data")) if obj.get("student_data") else None,
+            student_personal_info = StudentPersonalInfo.from_dict(obj.get("student_personal_info")),
+            student_marksheets=[StudentMarksheet.from_dict(item) for item in obj.get("student_marksheets")] if obj.get("student_marksheets") else None
+        )
 
     def to_dict(self) -> dict:
-        result: dict = {}
-        result["student_data"] = to_class(StudentData, self.student_data)
-        result["student_personal_info"] = to_class(StudentPersonalInfo, self.student_personal_info)
-        result["student_marksheets"] = from_list(lambda x: to_class(StudentMarksheet, x), self.student_marksheets)
+        result = {}
+        if self.student_data is not None:
+            result["student_data"] = self.student_data.to_dict()
+        if self.student_personal_info is not None:
+            result["student_personal_info"] = self.student_personal_info.to_dict()
+        if self.student_marksheets is not None:
+            result["student_marksheets"] = [item.to_dict() for item in self.student_marksheets]
         return result
 
 
 @dataclass
 class StudentInformation:
-    success: str
-    student_info: StudentInfo
+    success: Optional[str] = None
+    student_info: Optional[StudentInfo] = None
 
     @staticmethod
     def from_dict(obj: Any) -> 'StudentInformation':
         assert isinstance(obj, dict)
-        success = from_str(obj.get("success"))
-        student_info = StudentInfo.from_dict(obj.get("student_info"))
-        return StudentInformation(success, student_info)
+        return StudentInformation(
+            success=obj.get("success"),
+            student_info=StudentInfo.from_dict(obj.get("student_info")) if obj.get("student_info") else None
+        )
 
     def to_dict(self) -> dict:
-        result: dict = {}
-        result["success"] = from_str(self.success)
-        result["student_info"] = to_class(StudentInfo, self.student_info)
+        result = {}
+        if self.success is not None:
+            result["success"] = self.success
+        if self.student_info is not None:
+            result["student_info"] = self.student_info.to_dict()
         return result
-
-
-def student_information_from_dict(s: Any) -> StudentInformation:
-    return StudentInformation.from_dict(s)
-
-
-def student_information_to_dict(x: StudentInformation) -> Any:
-    return to_class(StudentInformation, x)
