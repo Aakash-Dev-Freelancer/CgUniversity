@@ -16,11 +16,12 @@ from django.conf import settings
 import requests
 
 
+from django.http import JsonResponse
+
 @csrf_protect
 def admin(request):
     print('---------------- Admin Function View ---------------- ')
     API_URL = settings.API_URL
-    BASE_URL = settings.BASE_URL
 
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -32,30 +33,28 @@ def admin(request):
 
         token_payload = {"username": username, "password": password}
         token_response = requests.post(token_url, data=token_payload).json()
-        access_token =token_response.get('access')
-        print(access_token)
+        access_token = token_response.get('access')
+        print(f"Access Token :: ", access_token)
 
-        payload = {"user_type": user_type, "username": username, "password": password,}
-        print(payload)
+        payload = {"user_type": user_type, "username": username, "password": password}
+        print(f" Payload :: ", payload)
         
         headers = {"Authorization": f"Bearer {access_token}"}
 
         response = requests.post(api_url, headers=headers, data=payload)
         
-
         print(response.status_code)
         print(response.json())
         
         try:
             if response.status_code == 200:
-                
                 admin_dict = response.json()
                 admin_info = AdminInfo.from_dict(admin_dict)
                 return render(request, 'admin_cg_site/admin/admin.html', {
                     'is_logged_in': True,
                     'admin_info': admin_info,
                     'token': access_token,
-                    'base_url': BASE_URL,
+                    'base_url': settings.BASE_URL,
                     'api_url': API_URL,
                 })
 
@@ -74,14 +73,16 @@ def admin(request):
             else:
                 error_message = "An error occurred. Please try again later."
 
-            return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
+            return JsonResponse({'error_message': error_message})
 
         except requests.exceptions.RequestException as e:
             print("Error:", e)
             return HttpResponse("Error: Internal Server Error.", status=500)
 
     else:
-        return render(request, 'main_cg_site/auth/login.html')
+        error_message = "Invalid request. Please try again."
+        return JsonResponse({'error_message': error_message})
+
     
 
 # @csrf_protect

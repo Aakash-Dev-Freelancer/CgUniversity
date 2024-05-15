@@ -44,6 +44,7 @@ CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in']
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8001",
+    "http://127.0.0.1:8000",
     "https://cginternationaluniversity.in",
 ]
 
@@ -80,7 +81,6 @@ REST_FRAMEWORK = {
     ),
 }
 
-# AUTH_USER_MODEL = "cgapp.StudentLogin"
 
 
 SIMPLE_JWT = {
