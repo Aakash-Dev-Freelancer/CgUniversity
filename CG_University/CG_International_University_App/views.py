@@ -33,16 +33,20 @@ def admin(request):
         token_payload = {"username": username, "password": password}
         token_response = requests.post(token_url, data=token_payload).json()
         access_token =token_response.get('access')
+        print(access_token)
 
         payload = {"user_type": user_type, "username": username, "password": password,}
+        print(payload)
+        
         headers = {"Authorization": f"Bearer {access_token}"}
 
         response = requests.post(api_url, headers=headers, data=payload)
         
-        # print(access_token)
 
+        print(response.status_code)
         try:
             if response.status_code == 200:
+                
                 admin_dict = response.json()
                 admin_info = AdminInfo.from_dict(admin_dict)
                 return render(request, 'admin_cg_site/admin/admin.html', {
@@ -141,14 +145,16 @@ def student(request):
 
         token_response = requests.get(token_url).json()
         access_token = token_response.get('access')
+        print(access_token)
         
         payload = {"user_type": user_type, "username": enrollment_no, "password": password}
+        print(payload)
         headers = {"Authorization": f"Bearer {access_token}"}
 
         try:
             response = requests.post(api_url, headers=headers, data=payload)
             response.raise_for_status()
-
+            print(response.status_code)
             if response.status_code == 200:
                 student_info_dict = response.json()
                 student_info = StudentInformation.from_dict(student_info_dict)

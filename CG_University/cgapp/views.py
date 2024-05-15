@@ -66,6 +66,8 @@ class StudentLoginAPIView(generics.ListCreateAPIView):
         username = request.data.get('username')
         password = request.data.get('password')
         user_type = request.data.get('user_type')
+        
+        print(username, password, user_type)
 
         try:
             if user_type == "student":
