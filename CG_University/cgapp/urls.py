@@ -32,14 +32,10 @@ urlpatterns = [
     path('marksheets/<int:pk>/', MarkSheetRetrieveUpdateDestroyView.as_view(), name='marksheet-detail'),
     path('marksheets/<str:enrollment_no>/', MarkSheetByEnrollmentView.as_view(), name='marksheets-by-enrollment'),
 
-
     path('admin/login/', AdminLoginListCreateView.as_view(), name='admin-login-list'),
     path('admin/login/<int:pk>/', AdminLoginUpdateDeleteView.as_view(), name='admin-login-detail'),
     
     path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
     path('token/', get_tokens_for_user, name="token")
-
-
-
 ]

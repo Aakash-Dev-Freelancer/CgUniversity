@@ -38,8 +38,6 @@
 <body>
 
     {% include 'main_cg_site/global/nav_bar.html' %}
-
-
     <div class="container">
         <h1>Edit Student {{data.enrollment_no}}</h1>
         <div id="edit_card_{{ student.enrollment_no }}" style="display: block;">
@@ -57,13 +55,13 @@
                                     <div class="avatar mx-auto d-flex justify-content-center">
                                         <img src="{{ student.profile_pic }}" alt="Profile Picture"
                                             onerror="this.onerror=null;this.src='https://t3.ftcdn.net/jpg/01/87/10/40/360_F_187104027_8i2JbFDBB5jB7R65Ce464yRs4gfNbR3Z.jpg';">
+                                        <input type="file" class="form-control-file" id="migration" name="migration">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <h2>Personal Details</h2>
                         <hr class="my-4">
-
                         <div class="divider w-100%"></div>
                         <div class="row">
                             <div class="col-md-4">
@@ -90,32 +88,49 @@
                                         value="{{ student.date_of_birth }}">
                                 </div>
                                 <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <input type="text" class="form-control" id="gender" name="gender"
+                                        value="{{ student.gender }}">
+                                </div>
+                                <div class="form-group">
                                     <label for="category">Category</label>
                                     <input type="text" class="form-control" id="category" name="category"
                                         value="{{ student.category }}">
                                 </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email"
-                                        value="{{ student.email }}">
-                                </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            value="{{ student.email }}">
+                                    </div>
                                     <label for="mobile_number">Mobile Number</label>
                                     <input type="tel" class="form-control" id="mobile_number" name="mobile_number"
                                         value="{{ student.mobile_number }}">
                                 </div>
+
                                 <div class="form-group">
                                     <label for="address">Address</label>
                                     <textarea class="form-control" id="address" name="address"
                                         rows="3">{{ student.address }}</textarea>
                                 </div>
-                                <div class="form-group">
-                                    <label for="gender">Gender</label>
-                                    <input type="text" class="form-control" id="gender" name="gender"
-                                        value="{{ student.gender }}">
-                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <hr class="my-4">
+                            <h4>Login Credentials</h4>
+                            <hr class="my-4">
+                            <div class="form-group">
+                                <label for="enrollment_no">Enrollment No.</label>
+                                <input type="text" class="form-control" value="{{ student.enrollment_no }}"
+                                    id="enrollment_no" name="enrollment_no">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="text" class="form-control" value="{{ student.password }}" id="password"
+                                    name="password">
                             </div>
                         </div>
                         <hr class="my-4">
@@ -123,8 +138,8 @@
 
                         <hr class="my-4">
                         <h3>Marksheets</h3>
-                        {% if marksheet_data %}
-                        {% for data in marksheet_data %}
+                        <!-- {% if marksheet_data %} -->
+                        <!-- {% for data in marksheet_data %} -->
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
@@ -172,8 +187,8 @@
 
                         </div>
                         <hr class="my-4">
-                        {% endfor %}
-                        {% endif %}
+                        <!-- {% endfor %} -->
+                        <!-- {% endif %} -->
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
@@ -252,39 +267,6 @@
             window.history.back();
         }
 
-        function submitFunction() {
-            event.preventDefault();
-            var personalDetails = {
-                enrollment_no: document.querySelector('input[name="enrollment_no"]').value,
-                password: document.querySelector('input[name="date_of_birth"]').value,
-                full_name: document.querySelector('input[name="full_name"]').value,
-                father_name: document.querySelector('input[name="father_name"]').value,
-                mother_name: document.querySelector('input[name="mother_name"]').value,
-                gender: document.querySelector('input[name="gender"]').value,
-                dob: document.querySelector('input[name="dob"]').value,
-                email: document.querySelector('input[name="email"]').value,
-                category: document.querySelector('input[name="category"]').value,
-                address: document.querySelector('input[name="address"]').value,
-            };
-            console.log(personalDetails);
-        }
-
-        function getCookie(name) {
-            let cookieValue = null;
-
-            if (document.cookie && document.cookie !== '') {
-                const cookies = document.cookie.split(';');
-                for (let i = 0; i < cookies.length; i++) {
-                    const cookie = cookies[i].trim();
-                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                        break;
-                    }
-                }
-            }
-            return cookieValue;
-        }
-
         function sendFormDataToAPI() {
             event.preventDefault();
             var apiUrl = "{{ api_url }}";
@@ -292,15 +274,15 @@
             console.log(apiUrl);
 
             const enrollment_no = document.querySelector('input[name="enrollment_no"]').value;
-            let password = document.querySelector('input[name="date_of_birth"]').value;
-            let cleanPassword = date.replace(/-/g, "");
+            let password = document.querySelector('input[name="password"]').value;
             const url = `${apiUrl}students/${enrollment_no}/`;
             var token = localStorage.getItem('token');
 
             const personalDetails = {
                 username: document.querySelector('input[name="enrollment_no"]').value,
-                password: cleanPassword,
+                password: password,
                 enrollment_no: enrollment_no,
+                profile_pic: document.querySelector('input[name="profile_pic"]').files[0],
                 full_name: document.querySelector('input[name="full_name"]').value,
                 father_name: document.querySelector('input[name="father_name"]').value,
                 mother_name: document.querySelector('input[name="mother_name"]').value,
@@ -312,17 +294,23 @@
                 address: document.querySelector('textarea[name="address"]').value
             };
 
+            const formData = new FormData();
+
+            // Iterate over the personalDetails object and append each key-value pair to the FormData instance
+            for (const key in personalDetails) {
+                if (personalDetails.hasOwnProperty(key)) {
+                    formData.append(key, personalDetails[key]);
+                }
+            }
+
             fetch(url, {
                 method: 'PUT',
                 credentials: 'include',
                 mode: 'same-origin',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json',
                     'Authorization': `Bearer ${token}`
-
                 },
-                body: JSON.stringify(personalDetails),
+                body: formData,
             })
                 .then(response => {
                     if (!response.ok) {
@@ -336,13 +324,7 @@
                 .catch(error => {
                     console.error('Error:', error);
                 });
-        }
 
-
-        function createPayload() {
-            event.preventDefault();
-
-            var marksheet_data = [];
             var document_uploads = {
                 migration: document.querySelector('input[name="migration"]').value,
                 provision: document.querySelector('input[name="provision"]').value,
@@ -351,25 +333,16 @@
             };
             console.log(payload);
 
-            // var marksheetRows = document.querySelectorAll('.row');
-            // marksheetRows.forEach(row => {
-            //     var marksheet = {
-            //         session: row.querySelector('input[name="session"]').value,
-            //         semester: row.querySelector('input[name="semester"]').value,
-            //         sgpa: row.querySelector('input[name="sgpa"]').value,
-            //         status: row.querySelector('input[name="status"]').value,
-            //         result: row.querySelector('input[name="result"]').value,
-            //         file: row.querySelector('input[name="marksheet"]').value
-            //     };
-            //     payload.marksheet_data.push(marksheet);
-            // });
+            var marksheet = {
+                session: row.querySelector('input[name="session"]').value,
+                semester: row.querySelector('input[name="semester"]').value,
+                sgpa: row.querySelector('input[name="sgpa"]').value,
+                status: row.querySelector('input[name="status"]').value,
+                result: row.querySelector('input[name="result"]').value,
+                file: row.querySelector('input[name="marksheet"]').value
+            };
 
-            return payload;
         }
-
-        // Example usage:
-        var payload = createPayload();
-        console.log(JSON.stringify(payload, null, 2));
 
 
     </script>

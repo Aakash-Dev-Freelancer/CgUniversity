@@ -132,13 +132,27 @@ class StudentLoginAPIView(generics.ListCreateAPIView):
             print("Server Error:", e)
             return Response({'error': 'Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-
 class StudentDataListCreateAPIView(generics.ListCreateAPIView):
     queryset = StudentData.objects.all()
     serializer_class = StudentDataSerializer
 
     def post(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
+        enrollment_no = request.data.get('student_enrollment_no')
+        provision_file = request.FILES.get('student_provision')
+        admit_card_file = request.FILES.get('student_admit_card')
+        affidevit_file = request.FILES.get('student_affidevit')
+        migrations_file = request.FILES.get('student_migrations')
+        
+        data = {
+            'student_enrollment_no': enrollment_no,
+            'student_provision': provision_file,
+            'student_admit_card': admit_card_file,
+            'student_affidevit': affidevit_file,
+            'student_migrations': migrations_file
+        }
+        
+        serializer = self.get_serializer(data=data)
+        
         if serializer.is_valid():
             serializer.save()
             return Response({"message": "Student data created successfully"}, status=status.HTTP_201_CREATED)
@@ -148,7 +162,6 @@ class StudentDataRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIV
     queryset = StudentData.objects.all()
     serializer_class = StudentDataSerializer
     lookup_field = 'student_enrollment_no'
-    # permission_classes = [IsAuthenticated]
 
     def retrieve(self, request, *args, **kwargs):
         enrollment_no = kwargs.get('student_enrollment_no')

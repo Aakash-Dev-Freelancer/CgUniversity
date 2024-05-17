@@ -14,11 +14,6 @@ class Student(models.Model):
     email = models.EmailField()
     mobile_number = models.CharField(max_length=15)
     address = models.CharField(max_length=255)
-    
-# class StudentLogin(models.Model):
-#     password = models.CharField(max_length=100, null=False)
-#     enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)
-    
 
 class StudentData(models.Model):
     student_enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)
