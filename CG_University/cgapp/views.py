@@ -14,6 +14,16 @@ from django.conf import settings
 from .serializers import StudentSerializer, StudentLoginSerializer, StudentDataSerializer, AdminLoginSerializer
 from .models import AdminLogin
 
+from rest_framework.exceptions import NotFound
+
+# Define a custom exception handler for 404 errors
+def custom_exception_handler(exc, context):
+    # Check if the exception is a 404 error
+    if isinstance(exc, NotFound):
+        # Return a custom response for 404 errors
+        return Response({"error": "Page not found"}, status=status.HTTP_404_NOT_FOUND)
+    # For any other exceptions, use the default exception handler
+    return None
 
 @api_view(['GET'])
 @permission_classes([AllowAny])
@@ -55,12 +65,30 @@ class StudentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = StudentSerializer
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
-
+    
+    def patch(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
 
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
         serializer = self.get_serializer(instance)
         return Response(serializer.data)
+
+    def update(self, request, *args, **kwargs):
+        partial = kwargs.pop('partial', False)
+        instance = self.get_object()
+        data = request.data
+        for field in data.keys():
+            # If the field value is empty, remove it from the request data
+            if not data[field]:
+                data.pop(field)
+        serializer = self.get_serializer(instance, data=data, partial=partial)
+        serializer.is_valid(raise_exception=True)
+        self.perform_update(serializer)
+        return Response(serializer.data)
+
+    def perform_update(self, serializer):
+        serializer.save()
 
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
