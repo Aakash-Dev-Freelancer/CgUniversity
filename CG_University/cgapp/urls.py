@@ -4,7 +4,7 @@ from . import views
 from rest_framework_simplejwt import views as jwt_views
 
 
-from cgapp.views import (StudentListCreate, 
+from cgapp.views import (StudentDataListCreateAPIView, 
                          StudentRetrieveUpdateDestroy, 
                          StudentLoginAPIView, 
                          StudentDataListCreateAPIView, 
@@ -21,7 +21,7 @@ from cgapp.views import (MarkSheetListCreateView,
 
 
 urlpatterns = [
-    path('students/', StudentListCreate.as_view(), name='student-list-create'),
+    path('students/', StudentDataListCreateAPIView.as_view(), name='student-list-create'),
     path('students/<str:pk>/', StudentRetrieveUpdateDestroy.as_view(), name='student-detail'),
     path('login/', StudentLoginAPIView.as_view(), name='student-login'),
     path('add-student/', AddStudent.as_view(), name='add-student'),

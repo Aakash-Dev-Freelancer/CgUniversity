@@ -7837,3 +7837,930 @@ Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 618, in allow_thread_sharing
     with self._thread_sharing_lock:
 KeyboardInterrupt
+Watching for file changes with StatReloader
+Not Found: /students/
+[17/May/2024 19:49:40] "GET /students/ HTTP/1.0" 404 5384
+[17/May/2024 19:49:45] "GET /student/ HTTP/1.0" 200 4343
+[17/May/2024 19:49:46] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[17/May/2024 19:49:52] "GET /cg_api/token/ HTTP/1.0" 200 483
+Internal Server Error: /cg_api/login/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 51, in authenticate
+    return self.get_user(validated_token), validated_token
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='User not found', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+[17/May/2024 19:49:52] "POST /cg_api/login/ HTTP/1.0" 500 129330
+Internal Server Error: /student/
+[17/May/2024 19:49:52] "POST /student/ HTTP/1.0" 500 29
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 17, 2024 - 19:49:36
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Student Function View ---------------- 
+---------------- Student Function View ---------------- 
+Error: 500 Server Error: Internal Server Error for url: https://cginternationaluniversity.in/cg_api/login/
+Watching for file changes with StatReloader
+[17/May/2024 19:51:48] "GET / HTTP/1.0" 200 14468
+[17/May/2024 19:51:49] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[17/May/2024 19:51:49] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[17/May/2024 19:51:49] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[17/May/2024 19:51:49] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[17/May/2024 19:51:49] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[17/May/2024 19:51:50] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[17/May/2024 19:51:50] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[17/May/2024 19:51:50] "GET /login/ HTTP/1.0" 200 4343
+[17/May/2024 19:51:51] "GET /CG_University/media/main_css/login.css HTTP/1.0" 200 2123
+[17/May/2024 19:51:51] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[17/May/2024 19:51:53] "GET /admin/ HTTP/1.0" 302 0
+[17/May/2024 19:51:53] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4308
+[17/May/2024 19:51:54] "GET /CG_University/media/admin/css/dark_mode.css HTTP/1.0" 200 2682
+[17/May/2024 19:51:54] "GET /CG_University/media/admin/css/base.css HTTP/1.0" 200 21544
+[17/May/2024 19:51:54] "GET /CG_University/media/admin/css/nav_sidebar.css HTTP/1.0" 200 2810
+[17/May/2024 19:51:54] "GET /CG_University/media/admin/css/login.css HTTP/1.0" 200 958
+[17/May/2024 19:51:54] "GET /CG_University/media/admin/css/responsive.css HTTP/1.0" 200 17905
+[17/May/2024 19:51:55] "GET /CG_University/media/admin/js/theme.js HTTP/1.0" 200 1943
+[17/May/2024 19:51:55] "GET /CG_University/media/admin/js/nav_sidebar.js HTTP/1.0" 200 3063
+[17/May/2024 19:52:01] "POST /admin/login/?next=/admin/ HTTP/1.0" 302 0
+[17/May/2024 19:52:01] "GET /admin/ HTTP/1.0" 200 8924
+[17/May/2024 19:52:02] "GET /CG_University/media/admin/css/dashboard.css HTTP/1.0" 200 441
+[17/May/2024 19:52:03] "GET /CG_University/media/admin/img/icon-addlink.svg HTTP/1.0" 200 331
+[17/May/2024 19:52:03] "GET /CG_University/media/admin/img/icon-changelink.svg HTTP/1.0" 200 380
+[17/May/2024 19:52:05] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 9620
+[17/May/2024 19:52:05] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:52:05] "GET /CG_University/media/admin/js/jquery.init.js HTTP/1.0" 200 347
+[17/May/2024 19:52:05] "GET /CG_University/media/admin/css/changelists.css HTTP/1.0" 200 6811
+[17/May/2024 19:52:05] "GET /CG_University/media/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 285314
+[17/May/2024 19:52:05] "GET /CG_University/media/admin/js/core.js HTTP/1.0" 200 6208
+[17/May/2024 19:52:06] "GET /CG_University/media/admin/js/urlify.js HTTP/1.0" 200 7887
+[17/May/2024 19:52:06] "GET /CG_University/media/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 9042
+[17/May/2024 19:52:06] "GET /CG_University/media/admin/js/actions.js HTTP/1.0" 200 8067
+[17/May/2024 19:52:06] "GET /CG_University/media/admin/js/prepopulate.js HTTP/1.0" 200 1531
+[17/May/2024 19:52:06] "GET /CG_University/media/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 325171
+[17/May/2024 19:52:07] "GET /CG_University/media/admin/js/filters.js HTTP/1.0" 200 978
+[17/May/2024 19:52:10] "GET /CG_University/media/admin/img/tooltag-add.svg HTTP/1.0" 200 331
+[17/May/2024 19:52:16] "GET /admin/cgapp/marksheets/add/ HTTP/1.0" 200 14241
+[17/May/2024 19:52:17] "GET /CG_University/media/admin/css/forms.css HTTP/1.0" 200 9090
+[17/May/2024 19:52:17] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:52:17] "GET /CG_University/media/admin/js/prepopulate_init.js HTTP/1.0" 200 586
+[17/May/2024 19:52:17] "GET /CG_University/media/admin/css/widgets.css HTTP/1.0" 200 11800
+[17/May/2024 19:52:17] "GET /CG_University/media/admin/js/change_form.js HTTP/1.0" 200 606
+[17/May/2024 19:52:37] "POST /admin/cgapp/marksheets/add/ HTTP/1.0" 302 0
+[17/May/2024 19:52:37] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11144
+[17/May/2024 19:52:38] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:52:38] "GET /CG_University/media/admin/img/icon-yes.svg HTTP/1.0" 200 436
+[17/May/2024 19:52:39] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 9627
+[17/May/2024 19:52:40] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:52:41] "GET /admin/cgapp/studentdata/add/ HTTP/1.0" 200 13019
+[17/May/2024 19:52:42] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:52:45] "POST /admin/cgapp/studentdata/add/ HTTP/1.0" 302 0
+[17/May/2024 19:52:46] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11177
+[17/May/2024 19:52:46] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:52:47] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 9634
+[17/May/2024 19:52:48] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:52:49] "GET /admin/cgapp/studentlogin/add/ HTTP/1.0" 200 11072
+[17/May/2024 19:52:49] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:52:57] "POST /admin/cgapp/studentlogin/add/ HTTP/1.0" 302 0
+[17/May/2024 19:52:57] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11174
+[17/May/2024 19:52:58] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:52:59] "GET /admin/cgapp/student/ HTTP/1.0" 200 9594
+[17/May/2024 19:52:59] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:53:00] "GET /admin/cgapp/student/add/ HTTP/1.0" 200 17663
+[17/May/2024 19:53:01] "GET /CG_University/media/admin/js/calendar.js HTTP/1.0" 200 9141
+[17/May/2024 19:53:01] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:53:01] "GET /CG_University/media/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19319
+[17/May/2024 19:53:02] "GET /CG_University/media/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+[17/May/2024 19:53:15] "GET /CG_University/media/admin/img/calendar-icons.svg HTTP/1.0" 200 1094
+[17/May/2024 19:53:20] "POST /admin/cgapp/student/add/ HTTP/1.0" 302 0
+[17/May/2024 19:53:21] "GET /admin/cgapp/student/ HTTP/1.0" 200 11109
+[17/May/2024 19:53:21] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:53:26] "GET /admin/cgapp/student/ HTTP/1.0" 200 10892
+[17/May/2024 19:53:26] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:53:28] "GET / HTTP/1.0" 200 14468
+[17/May/2024 19:53:28] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[17/May/2024 19:53:28] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[17/May/2024 19:53:28] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[17/May/2024 19:53:29] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[17/May/2024 19:53:29] "GET /login/ HTTP/1.0" 200 4343
+[17/May/2024 19:53:30] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[17/May/2024 19:53:36] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 19:53:36] "POST /cg_api/login/ HTTP/1.0" 200 847
+[17/May/2024 19:53:36] "POST /student/ HTTP/1.0" 200 17463
+[17/May/2024 19:53:36] "GET /CG_University/media/student_css/student.css HTTP/1.0" 200 1308
+[17/May/2024 19:53:36] "GET /media/images/students/profile-pic/13063_UbS7Exm.png HTTP/1.0" 200 497564
+[17/May/2024 19:53:37] "GET /media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_goF6vyf.jpg HTTP/1.0" 200 50314
+[17/May/2024 19:53:37] "GET /CG_University/media/scripts/student_js/student.js HTTP/1.0" 200 607
+[17/May/2024 19:53:45] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 10947
+[17/May/2024 19:53:46] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:53:47] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10947
+[17/May/2024 19:53:47] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:53:49] "GET /admin/cgapp/studentdata/CG01/change/ HTTP/1.0" 200 13297
+[17/May/2024 19:53:50] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:53:56] "GET /admin/ HTTP/1.0" 302 0
+[17/May/2024 19:53:56] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4308
+[17/May/2024 19:54:22] "POST /admin/login/?next=/admin/ HTTP/1.0" 302 0
+[17/May/2024 19:54:22] "GET /admin/ HTTP/1.0" 200 10436
+[17/May/2024 19:54:23] "GET /CG_University/media/admin/css/dashboard.css HTTP/1.0" 200 441
+[17/May/2024 19:54:23] "GET /CG_University/media/admin/img/icon-addlink.svg HTTP/1.0" 200 331
+[17/May/2024 19:54:23] "GET /CG_University/media/admin/img/icon-changelink.svg HTTP/1.0" 200 380
+[17/May/2024 19:54:38] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 10923
+[17/May/2024 19:54:38] "GET /CG_University/media/admin/css/changelists.css HTTP/1.0" 200 6811
+[17/May/2024 19:54:38] "GET /CG_University/media/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 285314
+[17/May/2024 19:54:38] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:54:38] "GET /CG_University/media/admin/js/core.js HTTP/1.0" 200 6208
+[17/May/2024 19:54:38] "GET /CG_University/media/admin/js/jquery.init.js HTTP/1.0" 200 347
+[17/May/2024 19:54:39] "GET /CG_University/media/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 9042
+[17/May/2024 19:54:39] "GET /CG_University/media/admin/js/actions.js HTTP/1.0" 200 8067
+[17/May/2024 19:54:39] "GET /CG_University/media/admin/js/prepopulate.js HTTP/1.0" 200 1531
+[17/May/2024 19:54:39] "GET /CG_University/media/admin/js/urlify.js HTTP/1.0" 200 7887
+[17/May/2024 19:54:39] "GET /CG_University/media/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 325171
+[17/May/2024 19:54:40] "GET /CG_University/media/admin/js/filters.js HTTP/1.0" 200 978
+[17/May/2024 19:54:40] "GET /CG_University/media/admin/img/tooltag-add.svg HTTP/1.0" 200 331
+[17/May/2024 19:54:50] "GET /admin/cgapp/marksheets/add/ HTTP/1.0" 200 14241
+[17/May/2024 19:54:50] "GET /CG_University/media/admin/js/prepopulate_init.js HTTP/1.0" 200 586
+[17/May/2024 19:54:50] "GET /CG_University/media/admin/css/forms.css HTTP/1.0" 200 9090
+[17/May/2024 19:54:50] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:54:51] "GET /CG_University/media/admin/css/widgets.css HTTP/1.0" 200 11800
+[17/May/2024 19:54:51] "GET /CG_University/media/admin/js/change_form.js HTTP/1.0" 200 606
+Not Found: /autodiscover/autodiscover.json
+[17/May/2024 19:55:17] "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.0" 404 5449
+[17/May/2024 19:56:31] "GET /admin/CG_International_University_App/courses/ HTTP/1.0" 200 15707
+[17/May/2024 19:56:32] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:56:36] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 9620
+[17/May/2024 19:56:36] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:56:41] "GET /admin/cgapp/adminlogin/add/ HTTP/1.0" 200 12971
+[17/May/2024 19:56:41] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:56:43] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 9620
+[17/May/2024 19:56:58] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 19:56:58] "POST /cg_api/login/ HTTP/1.0" 200 847
+[17/May/2024 19:56:58] "POST /student/ HTTP/1.0" 200 17463
+[17/May/2024 19:56:58] "GET /media/images/students/profile-pic/13063_UbS7Exm.png HTTP/1.0" 304 0
+[17/May/2024 19:56:58] "GET /media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_goF6vyf.jpg HTTP/1.0" 304 0
+[17/May/2024 19:58:04] "GET /?vscodeBrowserReqId=1715975883306 HTTP/1.1" 200 14468
+[17/May/2024 19:58:38] "POST /admin/cgapp/marksheets/add/ HTTP/1.0" 302 0
+[17/May/2024 19:58:38] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11439
+[17/May/2024 19:58:40] "POST /admin/cgapp/marksheets/add/ HTTP/1.0" 302 0
+[17/May/2024 19:58:41] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11901
+[17/May/2024 19:58:43] "POST /admin/cgapp/marksheets/add/ HTTP/1.0" 302 0
+[17/May/2024 19:58:43] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12363
+[17/May/2024 19:58:44] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:58:46] "GET /CG_University/media/admin/img/icon-yes.svg HTTP/1.0" 200 436
+[17/May/2024 19:59:04] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10947
+[17/May/2024 19:59:05] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 19:59:11] "GET /admin/cgapp/studentdata/add/ HTTP/1.0" 200 13019
+[17/May/2024 19:59:11] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:00:09] "GET /admin/cgapp/studentdata/add/ HTTP/1.0" 200 13019
+[17/May/2024 20:00:17] "GET /admin/cgapp/studentlogin/add/ HTTP/1.0" 200 11072
+[17/May/2024 20:00:17] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:00:57] "POST /admin/cgapp/studentlogin/add/ HTTP/1.0" 302 0
+[17/May/2024 20:00:57] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11475
+[17/May/2024 20:00:58] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:01:04] "GET /admin/cgapp/student/add/ HTTP/1.0" 200 17663
+[17/May/2024 20:01:04] "GET /CG_University/media/admin/js/calendar.js HTTP/1.0" 200 9141
+[17/May/2024 20:01:04] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:01:05] "GET /CG_University/media/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19319
+[17/May/2024 20:01:06] "GET /CG_University/media/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+[17/May/2024 20:05:27] "POST /admin/cgapp/student/add/ HTTP/1.0" 302 0
+[17/May/2024 20:05:27] "GET /admin/cgapp/student/ HTTP/1.0" 200 11467
+[17/May/2024 20:05:28] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:05:54] "GET / HTTP/1.0" 200 14468
+[17/May/2024 20:05:55] "GET /CG_University/media/main_css/style.css HTTP/1.0" 304 0
+[17/May/2024 20:05:55] "GET /CG_University/media/images/logo.png HTTP/1.0" 304 0
+[17/May/2024 20:05:55] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 304 0
+[17/May/2024 20:05:56] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 304 0
+[17/May/2024 20:05:56] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 304 0
+[17/May/2024 20:05:56] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 304 0
+[17/May/2024 20:05:56] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 304 0
+[17/May/2024 20:06:02] "GET /login/ HTTP/1.0" 200 4343
+[17/May/2024 20:06:03] "GET /CG_University/media/main_css/login.css HTTP/1.0" 304 0
+[17/May/2024 20:06:57] "GET /cg_api/token/ HTTP/1.0" 200 483
+Internal Server Error: /cg_api/login/
+[17/May/2024 20:06:57] "POST /cg_api/login/ HTTP/1.0" 500 24
+Internal Server Error: /student/
+[17/May/2024 20:06:57] "POST /student/ HTTP/1.0" 500 29
+[17/May/2024 20:07:42] "GET /cg_api/token/ HTTP/1.0" 200 483
+Internal Server Error: /cg_api/login/
+[17/May/2024 20:07:43] "POST /cg_api/login/ HTTP/1.0" 500 24
+Internal Server Error: /student/
+[17/May/2024 20:07:43] "POST /student/ HTTP/1.0" 500 29
+[17/May/2024 20:07:48] "GET /cg_api/token/ HTTP/1.0" 200 483
+Internal Server Error: /cg_api/login/
+[17/May/2024 20:07:48] "POST /cg_api/login/ HTTP/1.0" 500 24
+Internal Server Error: /student/
+[17/May/2024 20:07:48] "POST /student/ HTTP/1.0" 500 29
+[17/May/2024 20:08:13] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11248
+[17/May/2024 20:08:13] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:08:22] "GET /admin/cgapp/studentlogin/2/change/ HTTP/1.0" 200 11363
+[17/May/2024 20:08:22] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:09:25] "GET /cg_api/token/ HTTP/1.0" 200 483
+Internal Server Error: /cg_api/login/
+[17/May/2024 20:09:25] "POST /cg_api/login/ HTTP/1.0" 500 24
+Internal Server Error: /student/
+[17/May/2024 20:09:25] "POST /student/ HTTP/1.0" 500 29
+[17/May/2024 20:09:50] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 9620
+[17/May/2024 20:09:51] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:09:53] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:09:53] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:09:56] "GET /admin/cgapp/marksheets/2/change/ HTTP/1.0" 200 14717
+[17/May/2024 20:09:56] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:09] "GET /admin/cgapp/student/ HTTP/1.0" 200 11230
+[17/May/2024 20:10:10] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:14] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11248
+[17/May/2024 20:10:14] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:26] "GET /admin/cgapp/studentlogin/2/change/ HTTP/1.0" 200 11363
+[17/May/2024 20:10:26] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:31] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10947
+[17/May/2024 20:10:32] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:33] "GET /admin/cgapp/studentdata/CG01/change/ HTTP/1.0" 200 13297
+[17/May/2024 20:10:34] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:37] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11248
+[17/May/2024 20:10:38] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:40] "GET /admin/cgapp/studentlogin/2/change/ HTTP/1.0" 200 11363
+[17/May/2024 20:10:40] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:43] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10947
+[17/May/2024 20:10:43] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:44] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10947
+[17/May/2024 20:10:45] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:47] "GET /admin/cgapp/studentdata/add/ HTTP/1.0" 200 13019
+[17/May/2024 20:10:47] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:10:51] "POST /admin/cgapp/studentdata/add/ HTTP/1.0" 302 0
+[17/May/2024 20:10:51] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11547
+[17/May/2024 20:10:52] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:11:05] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 20:11:05] "POST /cg_api/login/ HTTP/1.0" 200 1264
+[17/May/2024 20:11:05] "POST /student/ HTTP/1.0" 200 21711
+[17/May/2024 20:11:05] "GET /CG_University/media/student_css/student.css HTTP/1.0" 200 1308
+[17/May/2024 20:11:05] "GET /media/images/students/profile-pic/WhatsApp_Image_2024-05-18_at_1.06.53_AM.jpeg HTTP/1.0" 200 74682
+[17/May/2024 20:11:06] "GET /media/images/students/marksheet/BPED3.pdf HTTP/1.0" 200 433397
+[17/May/2024 20:11:06] "GET /media/images/students/marksheet/BPED3_THIKglX.pdf HTTP/1.0" 200 433397
+[17/May/2024 20:11:06] "GET /media/images/students/marksheet/BPED3_XyhKLsK.pdf HTTP/1.0" 200 433397
+[17/May/2024 20:11:08] "GET /CG_University/media/scripts/student_js/student.js HTTP/1.0" 200 607
+[17/May/2024 20:11:22] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:11:23] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:11:25] "GET /admin/cgapp/marksheets/2/change/ HTTP/1.0" 200 14717
+[17/May/2024 20:11:25] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:11:28] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:11:29] "GET /admin/cgapp/marksheets/3/change/ HTTP/1.0" 200 14733
+[17/May/2024 20:11:30] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:11:36] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:11:38] "GET /admin/cgapp/marksheets/4/change/ HTTP/1.0" 200 14733
+[17/May/2024 20:11:39] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:11:59] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11297
+[17/May/2024 20:12:00] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:12:03] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:12:03] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:12:05] "GET /admin/cgapp/marksheets/2/change/ HTTP/1.0" 200 14717
+[17/May/2024 20:12:05] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:12:52] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11297
+[17/May/2024 20:12:53] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:12:55] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11248
+[17/May/2024 20:12:55] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:12:56] "GET /admin/cgapp/studentlogin/1/change/ HTTP/1.0" 200 11351
+[17/May/2024 20:12:57] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:12:58] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11248
+[17/May/2024 20:13:00] "GET /admin/cgapp/studentlogin/2/change/ HTTP/1.0" 200 11363
+[17/May/2024 20:13:00] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:13:07] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 20:13:07] "POST /cg_api/login/ HTTP/1.0" 200 1264
+[17/May/2024 20:13:07] "POST /student/ HTTP/1.0" 200 21711
+[17/May/2024 20:13:08] "GET /media/images/students/profile-pic/WhatsApp_Image_2024-05-18_at_1.06.53_AM.jpeg HTTP/1.0" 200 74682
+[17/May/2024 20:13:08] "GET /media/images/students/marksheet/BPED3.pdf HTTP/1.0" 200 433397
+[17/May/2024 20:13:08] "GET /media/images/students/marksheet/BPED3_THIKglX.pdf HTTP/1.0" 200 433397
+[17/May/2024 20:13:08] "GET /media/images/students/marksheet/BPED3_XyhKLsK.pdf HTTP/1.0" 200 433397
+[17/May/2024 20:14:01] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:14:01] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:14:07] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:14:08] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:14:17] "GET /admin/cgapp/marksheets/add/ HTTP/1.0" 200 14241
+[17/May/2024 20:14:17] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:14:23] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:14:23] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:14:27] "GET /admin/cgapp/marksheets/add/ HTTP/1.0" 200 14241
+[17/May/2024 20:14:28] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:14:46] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:14:54] "GET /admin/cgapp/marksheets/4/change/ HTTP/1.0" 200 14733
+[17/May/2024 20:14:54] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:15:47] "POST /admin/cgapp/marksheets/4/change/ HTTP/1.0" 302 0
+[17/May/2024 20:15:48] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12029
+[17/May/2024 20:15:48] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:16:09] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 20:16:09] "POST /cg_api/login/ HTTP/1.0" 200 1273
+[17/May/2024 20:16:09] "POST /student/ HTTP/1.0" 200 21720
+[17/May/2024 20:16:09] "GET /media/images/students/profile-pic/WhatsApp_Image_2024-05-18_at_1.06.53_AM.jpeg HTTP/1.0" 304 0
+[17/May/2024 20:16:09] "GET /media/images/students/marksheet/BPED3.pdf HTTP/1.0" 200 433397
+[17/May/2024 20:16:10] "GET /media/images/students/marksheet/BPED3_THIKglX.pdf HTTP/1.0" 200 433397
+[17/May/2024 20:16:11] "GET /media/images/students/marksheet/BPED3_page-0001.jpg HTTP/1.0" 200 509247
+[17/May/2024 20:16:35] "GET /admin/cgapp/marksheets/3/change/ HTTP/1.0" 200 14733
+[17/May/2024 20:16:36] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:16:37] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11297
+[17/May/2024 20:16:38] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:16:40] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:16:41] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:16:59] "POST /admin/cgapp/marksheets/3/change/ HTTP/1.0" 302 0
+[17/May/2024 20:16:59] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12029
+[17/May/2024 20:17:00] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:17:10] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 20:17:10] "POST /cg_api/login/ HTTP/1.0" 200 1282
+[17/May/2024 20:17:10] "POST /student/ HTTP/1.0" 200 21729
+[17/May/2024 20:17:11] "GET /media/images/students/marksheet/BPED3.pdf HTTP/1.0" 200 433397
+[17/May/2024 20:17:11] "GET /media/images/students/marksheet/BPED2_page-0001.jpg HTTP/1.0" 200 465145
+[17/May/2024 20:17:12] "GET /media/images/students/marksheet/BPED3_page-0001.jpg HTTP/1.0" 304 0
+[17/May/2024 20:17:33] "GET /admin/cgapp/marksheets/2/change/ HTTP/1.0" 200 14717
+[17/May/2024 20:17:34] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:19:25] "POST /admin/cgapp/marksheets/2/change/ HTTP/1.0" 302 0
+[17/May/2024 20:19:26] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12029
+[17/May/2024 20:19:26] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:19:31] "GET /admin/cgapp/marksheets/3/change/ HTTP/1.0" 200 14744
+[17/May/2024 20:19:32] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:20:06] "POST /admin/cgapp/marksheets/3/change/ HTTP/1.0" 302 0
+[17/May/2024 20:20:06] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12029
+[17/May/2024 20:20:07] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:20:12] "GET /admin/cgapp/marksheets/4/change/ HTTP/1.0" 200 14744
+[17/May/2024 20:20:12] "GET /admin/cgapp/marksheets/4/change/ HTTP/1.0" 200 14744
+[17/May/2024 20:20:12] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:20:36] "POST /admin/cgapp/marksheets/4/change/ HTTP/1.0" 302 0
+[17/May/2024 20:20:36] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12029
+[17/May/2024 20:20:37] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:20:52] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 20:20:52] "POST /cg_api/login/ HTTP/1.0" 200 1315
+[17/May/2024 20:20:52] "POST /student/ HTTP/1.0" 200 21762
+[17/May/2024 20:20:53] "GET /media/images/students/profile-pic/WhatsApp_Image_2024-05-18_at_1.06.53_AM.jpeg HTTP/1.0" 304 0
+[17/May/2024 20:20:53] "GET /media/images/students/marksheet/BPED1_page-0001.jpg HTTP/1.0" 200 464424
+[17/May/2024 20:20:53] "GET /media/images/students/marksheet/BPED2_page-0001_vYXXGDh.jpg HTTP/1.0" 200 465145
+[17/May/2024 20:20:55] "GET /media/images/students/marksheet/BPED3_page-0001_xSIPqqy.jpg HTTP/1.0" 200 509247
+[17/May/2024 20:21:46] "GET /admin/cgapp/marksheets/2/change/ HTTP/1.0" 200 14744
+[17/May/2024 20:21:47] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:22:06] "POST /admin/cgapp/marksheets/2/change/ HTTP/1.0" 302 0
+[17/May/2024 20:22:06] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12029
+[17/May/2024 20:22:07] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:22:11] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11297
+[17/May/2024 20:22:12] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:23:22] "GET /admin/cgapp/studentdata/CG01/change/ HTTP/1.0" 200 13297
+[17/May/2024 20:23:23] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:23:29] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11297
+[17/May/2024 20:23:31] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[17/May/2024 20:23:37] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11297
+[17/May/2024 20:23:41] "GET /admin/cgapp/studentdata/2018BPED432215/change/ HTTP/1.0" 200 13357
+[17/May/2024 20:23:41] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:25:57] "GET /admin/cgapp/studentdata/2018BPED432215/change/ HTTP/1.0" 200 13357
+[17/May/2024 20:30:50] "POST /admin/cgapp/studentdata/2018BPED432215/change/ HTTP/1.0" 302 0
+[17/May/2024 20:30:50] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11549
+[17/May/2024 20:30:50] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:31:31] "GET /admin/cgapp/studentdata/2018BPED432215/change/ HTTP/1.0" 200 14102
+[17/May/2024 20:31:31] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:32:31] "POST /admin/cgapp/studentdata/2018BPED432215/change/ HTTP/1.0" 302 0
+[17/May/2024 20:32:31] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11549
+[17/May/2024 20:32:32] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:32:46] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 20:32:46] "POST /cg_api/login/ HTTP/1.0" 200 1441
+[17/May/2024 20:32:46] "POST /student/ HTTP/1.0" 200 21770
+[17/May/2024 20:32:46] "GET /media/images/students/profile-pic/WhatsApp_Image_2024-05-18_at_1.06.53_AM.jpeg HTTP/1.0" 304 0
+[17/May/2024 20:32:46] "GET /media/images/students/marksheet/BPED1_page-0001_JFkJJCl.jpg HTTP/1.0" 200 464424
+[17/May/2024 20:32:47] "GET /media/images/students/marksheet/BPED2_page-0001_vYXXGDh.jpg HTTP/1.0" 304 0
+[17/May/2024 20:32:47] "GET /media/images/students/marksheet/BPED3_page-0001_xSIPqqy.jpg HTTP/1.0" 304 0
+[17/May/2024 20:33:17] "GET /admin/cgapp/studentdata/2018BPED432215/change/ HTTP/1.0" 200 14090
+[17/May/2024 20:33:18] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:33:30] "POST /admin/cgapp/studentdata/2018BPED432215/change/ HTTP/1.0" 302 0
+[17/May/2024 20:33:31] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11549
+[17/May/2024 20:33:31] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:33:43] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 20:33:44] "POST /cg_api/login/ HTTP/1.0" 200 1323
+[17/May/2024 20:33:44] "POST /student/ HTTP/1.0" 200 21770
+[17/May/2024 20:34:25] "GET /admin/cgapp/studentdata/2018BPED432215/change/ HTTP/1.0" 200 13357
+[17/May/2024 20:34:25] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:35:04] "POST /admin/cgapp/studentdata/2018BPED432215/change/ HTTP/1.0" 302 0
+[17/May/2024 20:35:04] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11549
+[17/May/2024 20:35:05] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/May/2024 20:35:23] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 20:35:23] "POST /cg_api/login/ HTTP/1.0" 200 1462
+[17/May/2024 20:35:23] "POST /student/ HTTP/1.0" 200 21770
+[17/May/2024 20:35:24] "GET /media/images/students/marksheet/BPED1_page-0001_JFkJJCl.jpg HTTP/1.0" 304 0
+[17/May/2024 20:35:24] "GET /media/images/students/marksheet/BPED2_page-0001_vYXXGDh.jpg HTTP/1.0" 304 0
+[17/May/2024 20:35:24] "GET /media/images/students/marksheet/BPED3_page-0001_xSIPqqy.jpg HTTP/1.0" 304 0
+[17/May/2024 20:36:27] "GET / HTTP/1.0" 200 14468
+[17/May/2024 20:36:28] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[17/May/2024 20:36:42] "GET /login/ HTTP/1.0" 200 4343
+[17/May/2024 20:36:59] "GET /login/ HTTP/1.0" 200 4343
+[17/May/2024 20:37:00] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[17/May/2024 20:37:49] "GET /login/ HTTP/1.0" 200 4343
+[17/May/2024 20:37:49] "GET /CG_University/media/main_css/login.css HTTP/1.0" 200 2123
+[17/May/2024 20:37:50] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[17/May/2024 20:37:56] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[17/May/2024 20:38:09] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/May/2024 20:38:09] "POST /cg_api/login/ HTTP/1.0" 200 1462
+[17/May/2024 20:38:09] "POST /student/ HTTP/1.0" 200 21770
+[17/May/2024 20:38:10] "GET /CG_University/media/student_css/student.css HTTP/1.0" 200 1308
+[17/May/2024 20:38:10] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[17/May/2024 20:38:10] "GET /media/images/students/profile-pic/WhatsApp_Image_2024-05-18_at_1.06.53_AM.jpeg HTTP/1.0" 200 74682
+[17/May/2024 20:38:10] "GET /media/images/students/marksheet/BPED1_page-0001_JFkJJCl.jpg HTTP/1.0" 200 464424
+[17/May/2024 20:38:10] "GET /media/images/students/marksheet/BPED2_page-0001_vYXXGDh.jpg HTTP/1.0" 200 465145
+[17/May/2024 20:38:10] "GET /media/images/students/marksheet/BPED3_page-0001_xSIPqqy.jpg HTTP/1.0" 200 509247
+[17/May/2024 20:38:11] "GET /CG_University/media/scripts/student_js/student.js HTTP/1.0" 200 607
+Not Found: /.git/config
+[17/May/2024 21:04:09] "GET /.git/config HTTP/1.0" 404 5376
+Not Found: /.env
+[17/May/2024 21:24:31] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[17/May/2024 21:24:32] "POST / HTTP/1.0" 403 2928
+[17/May/2024 21:27:32] "GET / HTTP/1.0" 200 14468
+[17/May/2024 21:43:41] "GET / HTTP/1.0" 200 14468
+[17/May/2024 21:52:26] "GET / HTTP/1.0" 200 14468
+Not Found: /aaa9
+[17/May/2024 22:05:44] "GET /aaa9 HTTP/1.1" 404 5360
+Not Found: /aab8
+[17/May/2024 22:05:44] "GET /aab8 HTTP/1.1" 404 5360
+[17/May/2024 22:05:45] "GET / HTTP/1.1" 200 14468
+[17/May/2024 22:14:24] code 400, message Bad request version ('À\x13À')
+[17/May/2024 22:14:24] You're accessing the development server over HTTPS, but it only supports HTTP.
+[17/May/2024 22:14:24] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Ò~¢2\xad\x8e\x14Uª\x87\x917Ü\x94Ë´\x04¨ª\x11b\x81\x12QóGÑó>ü©Ç\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+[17/May/2024 22:14:24] You're accessing the development server over HTTPS, but it only supports HTTP.
+[17/May/2024 22:17:28] "GET / HTTP/1.0" 200 14468
+[17/May/2024 22:17:28] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[17/May/2024 22:17:28] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[17/May/2024 22:17:28] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[17/May/2024 22:17:28] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[17/May/2024 22:17:28] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[17/May/2024 22:17:28] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[17/May/2024 22:17:28] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[17/May/2024 22:39:41] "GET / HTTP/1.0" 200 14468
+[17/May/2024 22:45:35] "GET / HTTP/1.0" 200 14468
+[17/May/2024 22:45:35] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[17/May/2024 22:45:35] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[17/May/2024 22:45:36] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[17/May/2024 22:45:36] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[17/May/2024 22:45:36] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[17/May/2024 22:45:36] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[17/May/2024 22:45:36] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[17/May/2024 23:13:19] "GET / HTTP/1.0" 200 14468
+[18/May/2024 00:01:36] "GET / HTTP/1.0" 200 14468
+[18/May/2024 00:44:00] "GET / HTTP/1.1" 200 14468
+Not Found: /.env
+[18/May/2024 00:51:18] "GET /.env HTTP/1.0" 404 5369
+Not Found: /.env
+[18/May/2024 01:37:41] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[18/May/2024 01:37:41] "POST / HTTP/1.0" 403 2928
+[18/May/2024 01:45:17] "GET / HTTP/1.0" 200 14468
+[18/May/2024 02:13:09] "GET / HTTP/1.0" 200 14468
+Not Found: /wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:10] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[18/May/2024 02:13:10] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[18/May/2024 02:13:11] "GET / HTTP/1.0" 200 14468
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:11] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:11] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:12] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:12] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:13] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:13] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:13] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:14] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:14] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:14] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:15] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:15] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:15] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:16] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[18/May/2024 02:13:16] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[18/May/2024 03:16:10] "GET / HTTP/1.0" 200 14468
+[18/May/2024 03:16:38] "GET / HTTP/1.0" 200 14468
+Not Found: /webui/
+[18/May/2024 03:21:40] "GET /webui/ HTTP/1.0" 404 5361
+[18/May/2024 03:26:42] "GET / HTTP/1.0" 200 14468
+Not Found: /geoserver/web/
+[18/May/2024 03:30:23] "GET /geoserver/web/ HTTP/1.0" 404 5385
+Not Found: /.git/config
+[18/May/2024 03:31:44] "GET /.git/config HTTP/1.0" 404 5376
+[18/May/2024 03:47:25] "GET / HTTP/1.0" 200 14468
+[18/May/2024 03:54:18] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11806
+[18/May/2024 03:54:19] "GET /CG_University/media/admin/css/dark_mode.css HTTP/1.0" 200 2682
+[18/May/2024 03:54:19] "GET /CG_University/media/admin/css/base.css HTTP/1.0" 200 21544
+[18/May/2024 03:54:19] "GET /CG_University/media/admin/css/nav_sidebar.css HTTP/1.0" 200 2810
+[18/May/2024 03:54:19] "GET /CG_University/media/admin/css/changelists.css HTTP/1.0" 200 6811
+[18/May/2024 03:54:19] "GET /CG_University/media/admin/css/responsive.css HTTP/1.0" 200 17905
+[18/May/2024 03:54:19] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 03:54:19] "GET /CG_University/media/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 285314
+[18/May/2024 03:54:19] "GET /CG_University/media/admin/js/jquery.init.js HTTP/1.0" 200 347
+[18/May/2024 03:54:19] "GET /CG_University/media/admin/js/core.js HTTP/1.0" 200 6208
+[18/May/2024 03:54:20] "GET /CG_University/media/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 9042
+[18/May/2024 03:54:20] "GET /CG_University/media/admin/js/actions.js HTTP/1.0" 200 8067
+[18/May/2024 03:54:20] "GET /CG_University/media/admin/js/urlify.js HTTP/1.0" 200 7887
+[18/May/2024 03:54:20] "GET /CG_University/media/admin/js/prepopulate.js HTTP/1.0" 200 1531
+[18/May/2024 03:54:20] "GET /CG_University/media/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 325171
+[18/May/2024 03:54:21] "GET /CG_University/media/admin/js/theme.js HTTP/1.0" 200 1943
+[18/May/2024 03:54:22] "GET /CG_University/media/admin/js/filters.js HTTP/1.0" 200 978
+[18/May/2024 03:54:22] "GET /CG_University/media/admin/js/nav_sidebar.js HTTP/1.0" 200 3063
+[18/May/2024 03:54:22] "GET /CG_University/media/admin/img/icon-addlink.svg HTTP/1.0" 200 331
+[18/May/2024 03:54:22] "GET /CG_University/media/admin/img/tooltag-add.svg HTTP/1.0" 200 331
+[18/May/2024 03:54:23] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11297
+[18/May/2024 03:54:24] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 03:54:26] "GET /admin/cgapp/studentdata/2018BPED432215/change/ HTTP/1.0" 200 14132
+[18/May/2024 03:54:27] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 03:54:52] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11297
+[18/May/2024 04:21:08] "GET / HTTP/1.0" 200 14468
+[18/May/2024 04:21:08] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[18/May/2024 04:21:08] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[18/May/2024 04:21:09] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[18/May/2024 04:21:09] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[18/May/2024 04:21:09] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[18/May/2024 04:21:09] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[18/May/2024 04:21:09] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+Not Found: /.env
+[18/May/2024 04:23:44] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[18/May/2024 04:23:44] "POST / HTTP/1.0" 403 2928
+[18/May/2024 05:12:32] "GET / HTTP/1.0" 200 14468
+[18/May/2024 05:12:33] "GET /CG_University/media/images/logo.png HTTP/1.0" 304 0
+[18/May/2024 05:12:33] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[18/May/2024 05:12:33] "GET /CG_University/media/main_css/style.css HTTP/1.0" 304 0
+[18/May/2024 05:12:33] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 304 0
+[18/May/2024 05:12:33] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 304 0
+[18/May/2024 05:12:33] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 304 0
+[18/May/2024 05:12:34] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 304 0
+[18/May/2024 05:14:09] "GET /login/ HTTP/1.0" 200 4343
+[18/May/2024 05:14:10] "GET /CG_University/media/main_css/login.css HTTP/1.0" 200 2123
+[18/May/2024 05:14:12] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[18/May/2024 05:15:10] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[18/May/2024 05:27:17] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[18/May/2024 05:42:02] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[18/May/2024 05:42:02] "POST / HTTP/1.0" 403 2928
+[18/May/2024 05:44:15] "GET / HTTP/1.0" 200 14468
+Not Found: /wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:16] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 5438
+Not Found: /xmlrpc.php
+[18/May/2024 05:44:16] "GET /xmlrpc.php?rsd HTTP/1.0" 404 5391
+[18/May/2024 05:44:17] "GET / HTTP/1.0" 200 14468
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:17] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /web/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:17] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:18] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5468
+Not Found: /website/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:18] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5462
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:19] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5447
+Not Found: /news/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:19] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:20] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:20] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:21] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:21] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /test/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:22] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:22] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /site/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:22] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:23] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5450
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[18/May/2024 05:44:23] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5453
+[18/May/2024 05:51:48] code 400, message Bad request version ('À\x14À')
+[18/May/2024 05:51:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/May/2024 06:54:20] "GET / HTTP/1.0" 200 14468
+[18/May/2024 07:32:12] "GET / HTTP/1.0" 200 14468
+[18/May/2024 07:32:18] "GET /login/ HTTP/1.0" 200 4343
+[18/May/2024 07:32:18] "GET /CG_University/media/main_css/login.css HTTP/1.0" 304 0
+[18/May/2024 07:32:29] "GET /cg_api/token/ HTTP/1.0" 200 483
+Not Found: /cg_api/login/
+[18/May/2024 07:32:29] "POST /cg_api/login/ HTTP/1.0" 404 52
+Internal Server Error: /student/
+[18/May/2024 07:32:29] "POST /student/ HTTP/1.0" 500 29
+[18/May/2024 07:32:52] "GET / HTTP/1.0" 200 14468
+[18/May/2024 07:32:53] "GET /admin/ HTTP/1.0" 302 0
+[18/May/2024 07:32:54] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4308
+[18/May/2024 07:32:54] "GET /CG_University/media/admin/css/nav_sidebar.css HTTP/1.0" 304 0
+[18/May/2024 07:32:54] "GET /CG_University/media/admin/css/login.css HTTP/1.0" 304 0
+[18/May/2024 07:32:55] "GET /CG_University/media/admin/css/responsive.css HTTP/1.0" 304 0
+[18/May/2024 07:32:55] "GET /CG_University/media/admin/css/dark_mode.css HTTP/1.0" 304 0
+[18/May/2024 07:32:55] "GET /CG_University/media/admin/css/base.css HTTP/1.0" 304 0
+[18/May/2024 07:32:55] "GET /CG_University/media/admin/js/theme.js HTTP/1.0" 304 0
+[18/May/2024 07:32:55] "GET /CG_University/media/admin/js/nav_sidebar.js HTTP/1.0" 304 0
+[18/May/2024 07:33:03] "POST /admin/login/?next=/admin/ HTTP/1.0" 302 0
+[18/May/2024 07:33:03] "GET /admin/ HTTP/1.0" 200 12459
+[18/May/2024 07:33:04] "GET /CG_University/media/admin/css/dashboard.css HTTP/1.0" 304 0
+[18/May/2024 07:33:04] "GET /CG_University/media/admin/img/icon-deletelink.svg HTTP/1.0" 304 0
+[18/May/2024 07:33:04] "GET /CG_University/media/admin/img/icon-changelink.svg HTTP/1.0" 304 0
+[18/May/2024 07:33:04] "GET /CG_University/media/admin/img/icon-addlink.svg HTTP/1.0" 304 0
+[18/May/2024 07:33:08] "GET /admin/cgapp/student/ HTTP/1.0" 200 11231
+[18/May/2024 07:33:08] "GET /CG_University/media/admin/js/vendor/jquery/jquery.js HTTP/1.0" 304 0
+[18/May/2024 07:33:08] "GET /CG_University/media/admin/js/jquery.init.js HTTP/1.0" 304 0
+[18/May/2024 07:33:08] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:33:08] "GET /CG_University/media/admin/js/core.js HTTP/1.0" 304 0
+[18/May/2024 07:33:08] "GET /CG_University/media/admin/css/changelists.css HTTP/1.0" 304 0
+[18/May/2024 07:33:08] "GET /CG_University/media/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 304 0
+[18/May/2024 07:33:08] "GET /CG_University/media/admin/js/actions.js HTTP/1.0" 304 0
+[18/May/2024 07:33:08] "GET /CG_University/media/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 304 0
+[18/May/2024 07:33:08] "GET /CG_University/media/admin/js/prepopulate.js HTTP/1.0" 304 0
+[18/May/2024 07:33:08] "GET /CG_University/media/admin/js/urlify.js HTTP/1.0" 304 0
+[18/May/2024 07:33:09] "GET /CG_University/media/admin/js/filters.js HTTP/1.0" 304 0
+[18/May/2024 07:33:09] "GET /CG_University/media/admin/img/tooltag-add.svg HTTP/1.0" 304 0
+[18/May/2024 07:33:13] "GET /admin/cgapp/student/CG01/change/ HTTP/1.0" 200 18289
+[18/May/2024 07:33:14] "GET /CG_University/media/admin/js/admin/DateTimeShortcuts.js HTTP/1.0" 200 19319
+[18/May/2024 07:33:14] "GET /CG_University/media/admin/js/prepopulate_init.js HTTP/1.0" 304 0
+[18/May/2024 07:33:14] "GET /CG_University/media/admin/js/calendar.js HTTP/1.0" 200 9141
+[18/May/2024 07:33:14] "GET /CG_University/media/admin/css/forms.css HTTP/1.0" 304 0
+[18/May/2024 07:33:14] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:33:14] "GET /CG_University/media/admin/css/widgets.css HTTP/1.0" 304 0
+[18/May/2024 07:33:14] "GET /CG_University/media/admin/js/change_form.js HTTP/1.0" 304 0
+[18/May/2024 07:33:14] "GET /CG_University/media/admin/img/icon-calendar.svg HTTP/1.0" 200 1086
+[18/May/2024 07:33:19] "GET /admin/cgapp/student/CG01/delete/ HTTP/1.0" 200 9575
+[18/May/2024 07:33:20] "GET /CG_University/media/admin/js/cancel.js HTTP/1.0" 200 884
+[18/May/2024 07:33:21] "POST /admin/cgapp/student/CG01/delete/ HTTP/1.0" 302 0
+[18/May/2024 07:33:21] "GET /admin/cgapp/student/ HTTP/1.0" 200 11104
+[18/May/2024 07:33:22] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:33:22] "GET /CG_University/media/admin/img/icon-yes.svg HTTP/1.0" 304 0
+[18/May/2024 07:33:23] "GET /admin/cgapp/student/2018BPED432215/change/ HTTP/1.0" 200 18425
+[18/May/2024 07:33:24] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:33:32] "GET /admin/cgapp/student/ HTTP/1.0" 200 10933
+[18/May/2024 07:33:35] "GET /admin/cgapp/student/CG01/delete/ HTTP/1.0" 302 0
+[18/May/2024 07:33:35] "GET /admin/ HTTP/1.0" 200 12628
+[18/May/2024 07:33:36] "GET /CG_University/media/admin/img/icon-alert.svg HTTP/1.0" 200 504
+[18/May/2024 07:33:38] "GET /admin/cgapp/student/CG01/change/ HTTP/1.0" 302 0
+[18/May/2024 07:33:38] "GET /admin/ HTTP/1.0" 200 12628
+[18/May/2024 07:33:45] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11807
+[18/May/2024 07:33:46] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:33:48] "GET /admin/cgapp/marksheets/1/change/ HTTP/1.0" 200 14828
+[18/May/2024 07:33:49] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:33:51] "GET /admin/cgapp/marksheets/1/delete/ HTTP/1.0" 200 9597
+[18/May/2024 07:33:52] "POST /admin/cgapp/marksheets/1/delete/ HTTP/1.0" 302 0
+[18/May/2024 07:33:53] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11688
+[18/May/2024 07:33:53] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:33:54] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11298
+[18/May/2024 07:33:55] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:33:56] "GET /admin/cgapp/studentdata/CG01/change/ HTTP/1.0" 200 13298
+[18/May/2024 07:33:57] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:33:59] "GET /admin/cgapp/studentdata/CG01/delete/ HTTP/1.0" 200 9623
+[18/May/2024 07:34:00] "POST /admin/cgapp/studentdata/CG01/delete/ HTTP/1.0" 302 0
+[18/May/2024 07:34:00] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11168
+[18/May/2024 07:34:01] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:34:02] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10988
+[18/May/2024 07:34:02] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:34:03] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11249
+[18/May/2024 07:34:03] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:34:04] "GET /admin/cgapp/studentlogin/2/change/ HTTP/1.0" 200 11364
+[18/May/2024 07:34:05] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 07:34:07] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11249
+[18/May/2024 07:56:58] "GET / HTTP/1.0" 200 14468
+[18/May/2024 07:56:59] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[18/May/2024 07:56:59] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[18/May/2024 07:56:59] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[18/May/2024 07:56:59] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[18/May/2024 07:56:59] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[18/May/2024 07:56:59] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[18/May/2024 07:56:59] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[18/May/2024 08:26:39] "GET / HTTP/1.0" 200 14468
+[18/May/2024 08:26:39] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /.env
+[18/May/2024 08:31:07] "GET /.env HTTP/1.0" 404 5355
+Not Found: /.env
+[18/May/2024 08:31:08] "GET /.env HTTP/1.0" 404 5355
+[18/May/2024 08:34:50] "GET / HTTP/1.0" 200 14468
+[18/May/2024 08:35:11] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /robots.txt
+[18/May/2024 08:35:12] "GET /robots.txt HTTP/1.0" 404 5391
+Not Found: /sitemap.xml
+[18/May/2024 08:35:14] "GET /sitemap.xml HTTP/1.0" 404 5394
+[18/May/2024 08:36:24] "GET / HTTP/1.0" 200 14468
+[18/May/2024 08:36:28] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /robots.txt
+[18/May/2024 08:36:32] "GET /robots.txt HTTP/1.0" 404 5391
+Not Found: /sitemap.xml
+[18/May/2024 08:36:36] "GET /sitemap.xml HTTP/1.0" 404 5394
+[18/May/2024 08:41:41] "GET / HTTP/1.0" 200 14468
+[18/May/2024 08:42:01] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /robots.txt
+[18/May/2024 08:42:03] "GET /robots.txt HTTP/1.0" 404 5387
+Not Found: /sitemap.xml
+[18/May/2024 08:42:04] "GET /sitemap.xml HTTP/1.0" 404 5390
+[18/May/2024 08:45:39] "GET / HTTP/1.0" 200 14468
+[18/May/2024 08:45:43] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /robots.txt
+[18/May/2024 08:45:46] "GET /robots.txt HTTP/1.0" 404 5387
+Not Found: /sitemap.xml
+[18/May/2024 08:45:49] "GET /sitemap.xml HTTP/1.0" 404 5390
+Not Found: /.env
+[18/May/2024 09:21:50] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[18/May/2024 09:21:51] "POST / HTTP/1.0" 403 2928
+[18/May/2024 10:06:36] "GET / HTTP/1.0" 200 14468
+[18/May/2024 10:06:43] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[18/May/2024 10:06:44] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[18/May/2024 10:06:44] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[18/May/2024 10:06:47] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[18/May/2024 10:07:59] "GET / HTTP/1.0" 200 14468
+[18/May/2024 10:08:02] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[18/May/2024 10:08:03] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[18/May/2024 10:08:03] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[18/May/2024 10:08:24] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[18/May/2024 10:08:24] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[18/May/2024 10:08:25] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[18/May/2024 10:08:53] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[18/May/2024 10:16:03] "GET / HTTP/1.0" 200 14468
+[18/May/2024 10:16:04] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[18/May/2024 10:31:13] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11249
+[18/May/2024 10:31:14] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 10:35:49] "GET / HTTP/1.0" 200 14468
+[18/May/2024 11:02:07] "GET / HTTP/1.0" 200 14468
+[18/May/2024 11:03:42] "GET / HTTP/1.0" 200 14468
+[18/May/2024 11:31:58] "GET / HTTP/1.0" 200 14468
+Not Found: /apple-touch-icon-120x120-precomposed.png
+[18/May/2024 11:31:59] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.0" 404 5477
+Not Found: /apple-touch-icon-120x120.png
+[18/May/2024 11:31:59] "GET /apple-touch-icon-120x120.png HTTP/1.0" 404 5441
+Not Found: /apple-touch-icon-precomposed.png
+[18/May/2024 11:31:59] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 5453
+Not Found: /apple-touch-icon.png
+[18/May/2024 11:32:00] "GET /apple-touch-icon.png HTTP/1.0" 404 5417
+[18/May/2024 11:32:00] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /robots.txt
+[18/May/2024 12:17:41] "GET /robots.txt HTTP/1.0" 404 5391
+Not Found: /sitemap.xml
+[18/May/2024 12:17:44] "GET /sitemap.xml HTTP/1.0" 404 5394
+[18/May/2024 12:32:43] "HEAD / HTTP/1.0" 200 0
+Not Found: /qwe.php
+[18/May/2024 12:32:44] "GET /qwe.php HTTP/1.0" 404 5382
+[18/May/2024 12:32:44] "HEAD / HTTP/1.0" 200 0
+Not Found: /robots.txt
+[18/May/2024 12:32:44] "GET /robots.txt HTTP/1.0" 404 5391
+[18/May/2024 12:53:53] "GET / HTTP/1.1" 200 14468
+Not Found: /.env
+[18/May/2024 13:39:48] "GET /.env HTTP/1.0" 404 5369
+Not Found: /robots.txt
+[18/May/2024 14:08:42] "GET /robots.txt HTTP/1.0" 404 5387
+[18/May/2024 14:08:45] "GET / HTTP/1.0" 200 14468
+[18/May/2024 14:09:02] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+Not Found: /.env
+[18/May/2024 14:52:13] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[18/May/2024 14:52:13] "POST / HTTP/1.0" 403 2928
+Not Found: /.env
+[18/May/2024 15:08:18] "GET /.env HTTP/1.0" 404 5355
+Forbidden (CSRF cookie not set.): /
+[18/May/2024 15:08:18] "POST / HTTP/1.0" 403 2928
+[18/May/2024 15:10:15] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03èV\x87\x13"ú?f±')
+[18/May/2024 15:10:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/May/2024 15:10:15] code 400, message Bad request version ('À(À$À\x14À')
+[18/May/2024 15:10:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/May/2024 15:28:54] "GET / HTTP/1.0" 200 14468
+[18/May/2024 15:29:49] "GET /login/ HTTP/1.0" 200 4343
+[18/May/2024 15:29:50] "GET /CG_University/media/main_css/login.css HTTP/1.0" 200 2123
+[18/May/2024 16:34:31] "GET / HTTP/1.0" 200 14468
+[18/May/2024 16:34:31] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /ads.txt
+[18/May/2024 16:34:32] "GET /ads.txt HTTP/1.0" 404 5364
+Not Found: /app-ads.txt
+[18/May/2024 16:34:32] "GET /app-ads.txt HTTP/1.0" 404 5376
+Not Found: /sellers.json
+[18/May/2024 16:34:32] "GET /sellers.json HTTP/1.0" 404 5379
+[18/May/2024 16:48:12] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11249
+[18/May/2024 16:48:12] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/May/2024 17:23:09] code 400, message Bad request version ('çýpPO¤ý*\x9bÞ\x96\x83\x9d')
+[18/May/2024 17:23:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/May/2024 17:23:25] code 400, message Bad request version ('À(À$À\x14À')
+[18/May/2024 17:23:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.env
+[18/May/2024 19:17:40] "GET /.env HTTP/1.0" 404 5355
+[18/May/2024 19:44:07] "GET / HTTP/1.0" 200 14468
+[18/May/2024 20:13:02] "GET / HTTP/1.0" 200 14468
+Not Found: /livereload.js
+[18/May/2024 20:13:19] "GET /livereload.js HTTP/1.0" 404 5382
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[18/May/2024 20:13:19] "GET /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5514
+Not Found: /cdn.js
+[18/May/2024 20:13:19] "GET /cdn.js HTTP/1.0" 404 5361
+Not Found: /dist/js/bootstrap.bundle.min.js
+[18/May/2024 20:13:19] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5436
+[18/May/2024 20:15:55] "GET / HTTP/1.0" 200 14468
+[18/May/2024 20:15:55] "GET /CG_University/media/images/logo.png HTTP/1.0" 304 0
+[18/May/2024 20:15:55] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 304 0
+[18/May/2024 20:15:56] "GET /CG_University/media/main_css/style.css HTTP/1.0" 304 0
+[18/May/2024 20:15:56] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 304 0
+[18/May/2024 20:15:56] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 304 0
+[18/May/2024 20:15:56] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 304 0
+[18/May/2024 20:15:56] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 304 0
+[18/May/2024 20:53:33] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[18/May/2024 20:59:02] "GET /.env HTTP/1.0" 404 5355
+[18/May/2024 23:27:42] "GET / HTTP/1.0" 200 14468
+[18/May/2024 23:27:42] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[18/May/2024 23:27:42] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[18/May/2024 23:27:43] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[18/May/2024 23:27:43] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[18/May/2024 23:27:43] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[18/May/2024 23:27:43] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[18/May/2024 23:27:43] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[18/May/2024 23:46:38] "GET / HTTP/1.0" 200 14468
+[18/May/2024 23:46:38] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[18/May/2024 23:46:38] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[18/May/2024 23:46:38] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[18/May/2024 23:46:38] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[18/May/2024 23:46:38] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[18/May/2024 23:46:38] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[18/May/2024 23:46:38] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+Not Found: /.git/config
+[18/May/2024 23:58:15] "GET /.git/config HTTP/1.0" 404 5376
+[19/May/2024 00:18:02] code 400, message Bad request version ('À\x14À')
+[19/May/2024 00:18:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[19/May/2024 00:25:16] "GET / HTTP/1.0" 200 14468
+[19/May/2024 00:49:12] "GET / HTTP/1.0" 200 14468
+[19/May/2024 00:49:12] "GET / HTTP/1.0" 200 14468
+Not Found: /robots.txt
+[19/May/2024 01:17:36] "GET /robots.txt HTTP/1.0" 404 5387
+[19/May/2024 01:17:36] "HEAD / HTTP/1.0" 200 0
+Not Found: /robots.txt
+[19/May/2024 01:17:41] "GET /robots.txt HTTP/1.0" 404 5387
+[19/May/2024 01:17:42] "GET / HTTP/1.0" 200 14468
+[19/May/2024 01:17:42] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[19/May/2024 02:10:16] "GET / HTTP/1.0" 200 14468
+[19/May/2024 02:10:16] "GET / HTTP/1.0" 200 14468
+[19/May/2024 02:10:17] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 304 0
+[19/May/2024 02:10:17] "GET /CG_University/media/main_css/style.css HTTP/1.0" 304 0
+[19/May/2024 02:10:17] "GET /CG_University/media/images/logo.png HTTP/1.0" 304 0
+[19/May/2024 02:10:17] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 304 0
+[19/May/2024 02:10:17] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 304 0
+[19/May/2024 02:10:17] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 304 0
+[19/May/2024 02:10:17] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 304 0
+[19/May/2024 02:10:23] "GET /login/ HTTP/1.0" 200 4343
+[19/May/2024 02:10:23] "GET /CG_University/media/main_css/login.css HTTP/1.0" 304 0
+Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[19/May/2024 02:12:46] "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.0" 404 5568
+[19/May/2024 03:06:07] "GET / HTTP/1.1" 200 14468
+[19/May/2024 03:06:07,280] - Broken pipe from ('65.49.1.15', 3271)
+Not Found: /favicon.ico
+[19/May/2024 03:06:18] "GET /favicon.ico HTTP/1.1" 404 5381
+Not Found: /http:/api.ipify.org/
+[19/May/2024 03:06:21] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[19/May/2024 03:06:24] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+[19/May/2024 03:11:41] "GET / HTTP/1.0" 200 14468
