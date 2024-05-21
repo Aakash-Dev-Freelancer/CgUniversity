@@ -5,6 +5,23 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-toggler-icon {
+  background: var(--bs-navbar-toggler-icon-bg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-content {
+  background-color: #f8f9fa !important;
+  /* Light grey background */
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+  /* Remove border if desired */
+}
+
 .sidebar-student {
   background-color: #ffffff;
   padding: 20px;

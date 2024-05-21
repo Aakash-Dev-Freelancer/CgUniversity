@@ -137,6 +137,7 @@ class StudentsDatum:
     student_affidevit: Optional[str] = None
     student_photo: Optional[str] = None
     student_migrations: Optional[str] = None
+    student_degree: Optional[str] = None
 
     @staticmethod
     def from_dict(obj: Any) -> 'StudentsDatum':
@@ -147,7 +148,8 @@ class StudentsDatum:
         student_affidevit = from_union([from_none, from_str], obj.get("student_affidevit"))
         student_photo = from_union([from_none, from_str], obj.get("student_photo"))
         student_migrations = from_union([from_none, from_str], obj.get("student_migrations"))
-        return StudentsDatum(student_enrollment_no, student_provision, student_admit_card, student_affidevit, student_photo, student_migrations)
+        student_degree = from_union([from_none, from_str], obj.get("student_degree"))
+        return StudentsDatum(student_enrollment_no, student_provision, student_admit_card, student_affidevit, student_photo, student_migrations,student_degree)
 
     def to_dict(self) -> dict:
         result: dict = {}
@@ -157,6 +159,7 @@ class StudentsDatum:
         result["student_affidevit"] = from_union([from_none, from_str], self.student_affidevit)
         result["student_photo"] = from_union([from_none, from_str], self.student_photo)
         result["student_migrations"] = from_union([from_none, from_str], self.student_migrations)
+        result["student_degree"] = from_union([from_none, from_str], self.student_degree)
         return result
 
 

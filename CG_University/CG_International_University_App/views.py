@@ -14,7 +14,7 @@ from django.contrib.auth import logout
 from django.conf import settings
 
 import requests
-
+import logging
 
 from django.http import JsonResponse
 # New Changes
@@ -36,17 +36,13 @@ def admin(request):
         token_response = requests.post(token_url, data=token_payload).json()
         access_token = token_response.get('access')
         csrf_token = request.POST.get('csrfmiddlewaretoken')
-        # print(f"Access Token :: ", access_token)
 
         payload = {"user_type": user_type, "username": username, "password": password, 'X-CSRFToken': csrf_token}
-        # print(f" Payload :: ", payload)
         
         headers = {"Authorization": f"Bearer {access_token}"}
 
         response = requests.post(api_url, headers=headers, data=payload)
         
-        # print(response.status_code)
-        # print(response.json())
         
         try:
             if response.status_code == 200:
@@ -75,15 +71,16 @@ def admin(request):
             else:
                 error_message = "An error occurred. Please try again later."
 
-            return JsonResponse({'error_message': error_message})
+            return render(request, 'main_cg_site/auth/login.html',{'error_message': error_message})
 
         except requests.exceptions.RequestException as e:
             print("Error:", e)
-            return HttpResponse("Error: Internal Server Error.", status=500)
+            error_message = "An error occurred. Please try again later."
+            return render(request, 'main_cg_site/auth/login.html',{'error_message': error_message})
 
     else:
         error_message = "Invalid request. Please try again."
-        return JsonResponse({'error_message': error_message})
+        return render(request, 'main_cg_site/auth/login.html',{'error_message': error_message})
 
     
 
@@ -124,7 +121,8 @@ def editStudent(request):
 
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
-        return HttpResponse("Error: Internal Server Error.", status=500)
+        error_message = "An error occurred. Please try again later."
+        return render(request, 'admin_cg_site/admin/edit_student.html', {'error_message': error_message})
 
 
 
@@ -132,6 +130,7 @@ def editStudent(request):
 def home(request):
     BASE_URL = settings.BASE_URL
     return render(request, 'main_cg_site/home/index.html', {'base_url': BASE_URL})
+
 
 
 @csrf_protect
@@ -144,25 +143,32 @@ def student(request):
         enrollment_no = request.POST.get('username')
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
+        csrf_token = request.POST.get('csrfmiddlewaretoken')
 
         api_url = f"{API_URL}login/"
         token_url = f"{API_URL}token/"
-
-        token_response = requests.get(token_url)
-        # print(token_response.json())
-        token_json = token_response.json()
-        access_token = token_json.get('access')
-        # print(access_token)
         
-        payload = {"user_type": user_type, "username": enrollment_no, "password": password}
-        # print(payload)
-        headers = {"Authorization": f"Bearer {access_token}"}
+        print("Enrollment No :: ", enrollment_no)
+        print("Password :: ", password)
+        print("User Type :: ", user_type)
+        print("API URl :: ", api_url)
+        print("Token URL :: ", token_url)
 
         try:
+            token_response = requests.get(token_url)
+            token_response.raise_for_status()
+            token_json = token_response.json()
+            access_token = token_json.get('access')
+            print("Access Token :: ", access_token)
+            
+            payload = {"user_type": user_type, "username": enrollment_no, "password": password,}
+            print("Payload :: ", payload)
+            headers = {"Authorization": f"Bearer {access_token}", "X-CSRFToken": csrf_token}
+
             response = requests.post(api_url, headers=headers, data=payload)
-            response.raise_for_status()
-            # print(response.json())
-            # print(response.status_code)
+            print("Response :: ", response)
+            print("Status Code :: ", response.status_code)
+
             if response.status_code == 200:
                 student_info_dict = response.json()
                 student_info = StudentInformation.from_dict(student_info_dict)
@@ -178,33 +184,26 @@ def student(request):
                     'student_marksheets': student_marksheets,
                     'base_url': BASE_URL
                 })
-
-            elif response.status_code == 401:
-                error_message = "Incorrect Password. Please try again."
-
-            elif response.status_code == 400:
-                error_message = "User not Found. Please try again."
-
-            elif response.status_code == 404:
-                error_message = "You're not Registered. Please contact the admin."
-
-            elif response.status_code == 500:
-                error_message = "Server Error. Please try again later."
-
             else:
-                error_message = "An error occurred. Please try again later."
-
-            return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
+                error_message = {
+                    401: "Incorrect Password. Please try again.",
+                    400: "User not Found. Please try again.",
+                    404: "You're not Registered. Please contact the admin.",
+                    500: "Server Error. Please try again later."
+                }.get(response.status_code, "An error occurred. Please try again later.")
+                
+                print("Error Message :: ", error_message)
+                return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
 
         except requests.exceptions.RequestException as e:
             print("Error:", e)
-            return HttpResponse("Error: Internal Server Error.", status=500)
+            error_message = "An error occurred. Please try again later."
+            return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
 
     else:
-        return render(request, 'main_cg_site/auth/login.html')
-
-
-
+        error_message = "Invalid request. Please try again."
+        return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
+    
 # Login Page --------------------->
 def login(request):
     return render(request, 'main_cg_site/auth/login.html')

@@ -39,6 +39,7 @@ class StudentData:
     student_admit_card: Optional[str] = None
     student_affidevit: Optional[str] = None
     student_migrations: Optional[str] = None
+    student_degree: Optional[str] = None
 
     @staticmethod
     def from_dict(obj: Any) -> 'StudentData':
@@ -48,7 +49,8 @@ class StudentData:
             student_provision=obj.get("student_provision"),
             student_admit_card=obj.get("student_admit_card"),
             student_affidevit=obj.get("student_affidevit"),
-            student_migrations=obj.get("student_migrations")
+            student_migrations=obj.get("student_migrations"),
+            student_degree=obj.get("student_degree")
         )
 
     def to_dict(self) -> dict:
@@ -63,6 +65,8 @@ class StudentData:
             result["student_affidevit"] = self.student_affidevit
         if self.student_migrations is not None:
             result["student_migrations"] = self.student_migrations
+        if self.student_degree is not None:
+            result["student_degree"] = self.student_degree
         return result
 
 

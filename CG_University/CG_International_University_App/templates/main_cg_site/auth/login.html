@@ -8,6 +8,16 @@
   <meta charset="UTF-8" />
   <title>Login</title>
   <link rel="stylesheet" href="{% static 'main_css/login.css' %}" />
+
+  <style>
+    .login-error-card {
+      padding: 20px;
+      width: 250px !important;
+      text-decoration: none;
+      /* display: none; */
+    }
+  </style>
+
 </head>
 
 <body>
@@ -18,7 +28,7 @@
     <label for="student-tab">Student</label>
     <input type="radio" id="center-tab" name="login-tab" />
     <label for="center-tab">Center</label>
-    <div id="login-content-id" class="login-content" style="display: none;">
+    <div id="login-content-id" class="login-content">
       <div id="admin-login" class="login-tab-content">
         <h2>Admin Login</h2>
         <form id="loginForm" method="post" action="{% url 'student' %}">
@@ -31,6 +41,8 @@
             <input type="password" id="password" name="password" placeholder="Password" required />
           </div>
 
+          <div id="error-message" class="" >Note : </div>
+
           <button type="button" onclick="submitForm()">Login</button>
           <div class="back-to-home">
             <a href="{% url 'home'%}">Back to Home</a>
@@ -42,6 +54,11 @@
 
   <script>
     localStorage.clear();
+
+    var errorMessage = "{{ error_message }}";
+
+    // Display the error message on the page
+    document.getElementById("error-message").innerText = errorMessage;
 
     document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
       radio.addEventListener('click', function () {
@@ -65,6 +82,7 @@
       });
     });
 
+    document.getElementById("login-type").value = 'admin';
 
     document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
       radio.addEventListener('click', function () {

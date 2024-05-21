@@ -32,21 +32,24 @@
                   <li class="student-nav-item active">Student Profile</li>
                 </a>
                 <a class="nav-link" onclick="changeContent(2)">
-                  <li class="student-nav-item">Marksheet</li>
+                  <li class="student-nav-item">Degree</li>
                 </a>
                 <a class="nav-link" onclick="changeContent(3)">
-                  <li class="student-nav-item">Admit Card</li>
+                  <li class="student-nav-item">Marksheet</li>
                 </a>
                 <a class="nav-link" onclick="changeContent(4)">
-                  <li class="student-nav-item">Migration</li>
+                  <li class="student-nav-item">Admit Card</li>
                 </a>
                 <a class="nav-link" onclick="changeContent(5)">
-                  <li class="student-nav-item">Provision</li>
+                  <li class="student-nav-item">Migration</li>
                 </a>
                 <a class="nav-link" onclick="changeContent(6)">
-                  <li class="student-nav-item">Payment</li>
+                  <li class="student-nav-item">Provision</li>
                 </a>
                 <a class="nav-link" onclick="changeContent(7)">
+                  <li class="student-nav-item">Payment</li>
+                </a>
+                <a class="nav-link" onclick="changeContent(8)">
                   <li class="student-nav-item">Affidavit</li>
                 </a>
                 <a class="nav-link" href="{% url 'logout' %}">
@@ -69,37 +72,117 @@
 
           <!-- Marksheet -->
           <div id="content2" class="content">
+            <h1>Degree</h1>
+            {% include 'student_cg_site/template/degree.html' %}
+          </div>
+
+          <!-- Degree -->
+          <div id="content3" class="content">
             <h1>Marksheet</h1>
             {% include 'student_cg_site/template/marksheet.html' %}
           </div>
 
           <!-- Admit Card -->
-          <div id="content3" class="content">
+          <div id="content4" class="content">
             <h1>Admit Card</h1>
+            <div id="ContentPlaceHolder1_updpnlstudentInfo">
+              <table style="width: 100%" cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                  <tr>
+                    <td style="width: 100%"></td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100%">
+                      <div id="ContentPlaceHolder1_pnlGradingSystem" style="width: 100%">
+                        <div>
+                          <table class="table table-striped table-bordered table-hover" cellspacing="0" rules="all"
+                            border="1" id="ContentPlaceHolder1_gvStudentHistory_GS" style="
+                              font-weight: normal;
+                              width: 100%;
+                              border-collapse: collapse;
+                            ">
+                            <tbody>
+                              <tr style="color: Snow; background-color: #646464">
+                                <th scope="col" style="font-size: 10pt">Session</th>
+                                <th scope="col" style="font-size: 10pt">Semester</th>
+                                <th scope="col" style="font-size: 10pt">View Admit Card</th>
+                              </tr>
+                              {% for marksheets in student_marksheets %}
+                              <tr>
+                                <td style="font-weight: normal">{{ marksheets.session }}</td>
+                                <td style="font-weight: normal">{{ marksheets.semester }}</td>
+
+                                <td>
+                                  <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#admitCard{{ forloop.counter }}">
+                                    See
+                                  </button>
+                                  <div class="modal fade" id="admitCard{{ forloop.counter }}" tabindex="-1"
+                                    role="dialog" aria-labelledby="admitCardLabel{{ forloop.counter }}"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="admitCardLabel{{ forloop.counter }}">
+                                            MarkSheet
+                                          </h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <h6></h6>
+                                        <div class="modal-body">
+                                          <img src="{{ student_data.student_admit_card }}"
+                                            class="rounded mx-auto d-block w-100" style="width: 100%" alt="NO Image" />
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                            Close
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              {% endfor %}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <!-- Admit Card Content -->
           </div>
 
           <!-- Migration -->
-          <div id="content4" class="content">
+          <div id="content5" class="content">
             <h1>Migration</h1>
+            {% include 'student_cg_site/template/migration.html' %}
             <!-- Migration Content -->
           </div>
 
           <!-- Provision -->
-          <div id="content5" class="content">
+          <div id="content6" class="content">
             <h1>Provision</h1>
+            {% include 'student_cg_site/template/provision.html' %}
             <!-- Provision Content -->
           </div>
 
           <!-- Payment -->
-          <div id="content6" class="content">
+          <div id="content7" class="content">
             <h1>Payment with QR code</h1>
             <!-- Payment Content -->
           </div>
 
           <!-- Affidavit -->
-          <div id="content7" class="content">
+          <div id="content8" class="content">
             <h1>Affidavit</h1>
+            {% include 'student_cg_site/template/affidavit.html' %}
+
             <!-- Affidavit Content -->
           </div>
 
@@ -123,7 +206,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
     localStorage.setItem('token', '{{ token }}');
+    $('.modal').on('show.bs.modal', function (e) {
+      $('.modal').not($(this)).modal('hide');
+    });
   </script>
+
 </body>
 
 </html>
