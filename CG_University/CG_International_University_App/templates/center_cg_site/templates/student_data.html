@@ -1,0 +1,679 @@
+{% load static %}
+{% load livereload_tags %}
+<!-- admin.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .btn-custom {
+            background-color: rgb(255, 150, 13);
+            border-color: rgb(255, 150, 13);
+            color: white;
+        }
+
+        .btn-custom-lighter {
+            background-color: rgba(255, 150, 13, 0.5);
+            border-color: rgba(255, 150, 13, 0.5);
+        }
+
+        /* Add pointer cursor to table rows */
+        tbody tr:hover {
+            cursor: pointer;
+        }
+
+        /* Highlight selected row */
+        .selected {
+            background-color: rgba(255, 150, 13, 0.1);
+        }
+
+        .add-button-container {
+            position: relative;
+        }
+
+        .add-button {
+            position: absolute;
+            top: 10px;
+            /* Adjust as needed */
+            right: 10px;
+            /* Adjust as needed */
+        }
+
+        table,
+        select,
+        th {
+            font-size: smaller;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="p-5">
+        <div style="display: flex;
+                flex-direction: row;
+                justify-content: space-between;">
+            <h1>{{ center_name }},</h1>
+            <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#editModal">
+                Add Student
+            </button>
+        </div>
+
+        {% if is_logged_in %}
+
+        <table class="table table-bordered table-striped ">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 200px;">
+                        Enrollment No.
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(0, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students|dictsort:"enrollment_no" %}
+                            <option>{{ data.enrollment_no }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Name
+                        <select style="font-size: small;" class=" form-control" onchange="filterTable(1, this.value)">
+                            <option value="">No filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.full_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Father Name
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(2, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.father_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Mother Name
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(3, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.mother_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Gender
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(4, this.value)">
+                            <option value="">Filter</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </th>
+                    <th>DOB
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(5, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.date_of_birth }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Category
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(6, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.category }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Email
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(7, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.email }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Mobile No.
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(8, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.mobile_number }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>Address
+                        <select style="font-size: small;" class="form-control" onchange="filterTable(9, this.value)">
+                            <option value="">Filter</option>
+                            {% for data in admin_info.students %}
+                            <option>{{ data.address }}</option>
+                            {% endfor %}
+                        </select>
+                    </th>
+                    <th>View/Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in students %}
+                <tr>
+                    <td>{{ data.student_personal_info.enrollment_no }}</td>
+                    <td>{{ data.student_personal_info.full_name }}</td>
+                    <td>{{ data.student_personal_info.father_name }}</td>
+                    <td>{{ data.student_personal_info.mother_name }}</td>
+                    <td>{{ data.student_personal_info.gender }}</td>
+                    <td>{{ data.student_personal_info.date_of_birth }}</td>
+                    <td>{{ data.student_personal_info.category }}</td>
+                    <td>{{ data.student_personal_info.email }}</td>
+                    <td>{{ data.student_personal_info.mobile_number }}</td>
+                    <td>{{ data.student_personal_info.address }}</td>
+                    <td>
+                        <a class="btn btn-primary"
+                            href="{% url 'edit-student'  %}?id={{ data.enrollment_no }}&token={{ token }}">Edit</a>
+                    </td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class=" text-center">
+            <button class="btn btn-custom" onclick="prevPage()">Previous</button>
+            <span id="page-numbers"></span>
+            <button class="btn btn-custom" onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+
+    {% else %}
+    <p>Please log in to view the content.</p>
+    {% endif %}
+    </div>
+
+
+    <!-- Pop Up -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+        aria-hidden="true">
+        <div class=" modal-dialog modal-dialog-centered modal-full" style="min-width: 90%;" role="document">
+            <div class="modal-content" style="border-radius: 22px;">
+                <div class="modal-header bg-primary text-white" style="border-radius: 20px 20px 0px 0px; ">
+                    <h5 class="modal-title" id="editModalLabel">Add Student</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 20px 40px;">
+
+                    <!-- CSRF token -->
+                    {% csrf_token %}
+                    <input type="hidden" name="enrollment_no" value="{{ student.enrollment_no }}">
+                    <!-- Personal Details -->
+                    <h4>Personal Details</h4>
+                    <hr class="my-4">
+                    <div class="row">
+
+                        <div class="form-group">
+                            <label for="profile_pic">Profile Pic Upload</label>
+                            <input type="file" class="form-control-file" id="profile_pic" name="profile_pic">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="full_name">Full Name</label>
+                                <input type="text" class="form-control" id="full_name" name="full_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="father_name">Father's Name</label>
+                                <input type="text" class="form-control" id="father_name" name="father_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="mother_name">Mother's Name</label>
+                                <input type="text" class="form-control" id="mother_name" name="mother_name">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="date_of_birth">Date of Birth</label>
+                                <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+                            </div>
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <input type="text" class="form-control" id="category" name="category">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <input type="text" class="form-control" id="gender" name="gender">
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile_number">Mobile Number</label>
+                                <input type="tel" class="form-control" id="mobile_number" name="mobile_number">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr class="my-4">
+                        <h4>Login Credentials</h4>
+                        <hr class="my-4">
+                        <div class="form-group w-200">
+                            <label for="enrollment_no">Enrollment No.</label>
+                            <input type="text" class="form-control" id="enrollment_no" name="enrollment_no">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="text" class="form-control" id="password" name="password">
+                        </div>
+                    </div>
+                    <hr class="my-4">
+
+                    <!-- |----------------------- Marksheets -------------------------| -->
+                    <h3>Marksheets</h3>
+                    <div id="marksheetList" class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="session">Session</label>
+                                <input type="text" class="form-control" id="session" name="session"
+                                    placeholder="Enter Session">
+                            </div>
+                            <div class="form-group">
+                                <label for="semester">Semester</label>
+                                <input type="text" class="form-control" id="semester" name="semester"
+                                    placeholder="Enter Semester">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="sgpa">SGPA</label>
+                                <input type="text" class="form-control" id="sgpa" name="sgpa" placeholder="Enter SGPA">
+                            </div>
+                            <div class="form-group">
+                                <label for="status">Status</label>
+                                <input type="text" class="form-control" id="status" name="status"
+                                    placeholder="Enter Status">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="result">Result</label>
+                                <input type="text" class="form-control" id="result" name="result"
+                                    placeholder="Enter Result">
+                            </div>
+                            <div class="form-group d-block">
+                                <label for="file">Marksheet Upload</label>
+                                <input type="file" class="form-control-file" id="file" name="marksheet">
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr class="my-4">
+
+
+                    <!-- |----------------------- Documents -------------------------| -->
+                    <h4>Documents</h4>
+                    <hr class="my-4">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="migration">Migration Upload</label>
+                                <input type="file" class="form-control-file" id="migration" name="migration">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="provision">Provision Upload</label>
+                                <input type="file" class="form-control-file" id="provision" name="provision">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="affidevit">Affidevit Upload</label>
+                                <input type="file" class="form-control-file" id="affidevit" name="affidevit">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="admit_card">Admit Card Upload</label>
+                                <input type="file" class="form-control-file" id="admit_card" name="admit_card">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="degree">Degree Upload</label>
+                                <input type="file" class="form-control-file" id="degree" name="degree">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="extractAndDisplayData()"
+                        data-dismiss="modal">Update</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+
+        function cancelUpdate(enrollmentNo) {
+            $('.modal-backdrop').remove();
+        }
+
+        function extractAndDisplayData() {
+            var studentData = {
+                "center_id": "{{ center_id }}",
+                "enrollment_no": document.querySelector('#enrollment_no').value,
+                "profile_pic": document.querySelector('#profile_pic').files[0],
+                "full_name": document.querySelector('#full_name').value,
+                "password": document.querySelector('#password').value,
+                "father_name": document.querySelector('#father_name').value,
+                "mother_name": document.querySelector('#mother_name').value,
+                "gender": document.querySelector('#gender').value,
+                "date_of_birth": document.querySelector('#date_of_birth').value,
+                "category": document.querySelector('#category').value,
+                "email": document.querySelector('#email').value,
+                "mobile_number": document.querySelector('#mobile_number').value,
+                "address": document.querySelector('#address').value
+            };
+
+            console.log(studentData);
+
+
+            var studentFormData = new FormData();
+
+            for (var key in studentData) {
+                studentFormData.append(key, studentData[key]);
+            }
+
+
+            var studentUrl = "{{ api_url }}students/"
+            var token = localStorage.getItem('token');
+            var markSheetUrl = "{{ api_url }}marksheets/"
+            // var studentDataUrl = "{{ api_url }}student-data/"
+            // var addStudent = "{{ api_url }}add-student/"
+
+
+            fetch(studentUrl, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                },
+                body: studentFormData,
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Student added successfully!');
+                    } else {
+                        alert('There was an error.');
+                    }
+                });
+
+
+
+            // // var marksheetData = [];
+            // var marksheetRows = document.querySelectorAll('.marksheets-class');
+
+            var marksheetData = {
+                "student_enrollment_no": document.querySelector('#enrollment_no').value,
+                "session": document.querySelector('#session').value,
+                "semester": document.querySelector('#semester').value,
+                "sgpa": document.querySelector('#sgpa').value,
+                "status": document.querySelector('#status').value,
+                "result": document.querySelector('#result').value,
+                "file": document.querySelector('#file').files[0],
+            };
+
+            const marksheetFormData = new FormData();
+
+            for (const key in marksheetData) {
+                marksheetFormData.append(key, marksheetData[key]);
+            }
+
+            fetch(markSheetUrl, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                },
+                body: marksheetFormData,
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Response from server:', data);
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+
+      const studentData =   {    'student_enrollment_no':document.querySelector('#enrollment_no').value,
+             'student_provision':document.querySelector('#provision').files[0],
+             'student_degree':document.querySelector('#degree').files[0],
+             'student_admit_card':document.querySelector('#admit_card').files[0],
+             'student_affidevit':document.querySelector('#affidevit').files[0],
+             'student_migrations':document.querySelector('#migration').files[0],}
+
+
+            const studentDataForm = new FormData();
+
+             for (const key in marksheetData) {
+                studentDataForm.append(key, marksheetData[key]);
+            }
+
+            // formDetails.append('student_enrollment_no', student_enrollment_no);
+            // formDetails.append('student_provision', student_provision);
+            // formDetails.append('student_admit_card', student_admit_card);
+            // formDetails.append('student_affidevit', student_affidevit);
+            // formDetails.append('student_migrations', student_migrations);
+
+            // fetch(studentDataUrl, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Authorization': `Bearer ${token}`
+            //     },
+            //     body: formDetails,
+            // })
+            //     .then(response => {
+            //         if (!response.ok) {
+            //             throw new Error('Network response was not ok');
+            //         }
+            //         return response.json();
+            //     })
+            //     .then(data => {
+            //         console.log('Response from server:', data);
+            //     })
+            //     .catch(error => {
+            //         console.error('There was a problem with the fetch operation:', error);
+            //     });
+
+
+            // addStudentPayload = {
+            //     "username": document.querySelector('#enrollment_no').value,
+            //     "password": document.querySelector('#password').value,
+            // }
+
+
+            // fetch(addStudent, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //         'Authorization': `Bearer ${token}`
+            //     },
+            //     body: JSON.stringify(addStudentPayload),
+            // })
+            //     .then(response => {
+            //         if (!response.ok) {
+            //             throw new Error('Network response was not ok');
+            //         }
+            //         return response.json();
+            //     })
+            //     .then(data => {
+            //         console.log('Response from server:', data);
+            //     })
+            //     .catch(error => {
+            //         console.error('There was a problem with the fetch operation:', error);
+            //     });
+
+
+
+        }
+
+
+        // function removeMarkSheet(button) {
+        //     var marksheetDiv = button.parentElement.parentElement;
+        //     marksheetCounter--;
+        //     marksheetDiv.remove();
+        // }
+
+
+        function filterTable(columnIndex, filterValue) {
+            var table = document.querySelector('.table');
+            var rows = table.getElementsByTagName('tr');
+            for (var i = 1; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName('td');
+                var cell = cells[columnIndex];
+                if (cell.textContent.trim() === filterValue || filterValue === "") {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        }
+
+        var currentPage = 0;
+        var rowsPerPage = 10;
+
+        // Function to show rows for the current page
+        function showRows() {
+            var table = document.querySelector('.table');
+            var tr = table.getElementsByTagName('tr');
+            var startIndex = currentPage * rowsPerPage + 1;
+            var endIndex = (currentPage + 1) * rowsPerPage + 1;
+            for (var i = 1; i < tr.length; i++) {
+                if (i >= startIndex && i < endIndex) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+
+        // Function to go to the previous page
+        function prevPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                showRows();
+                updatePageNumbers();
+            }
+        }
+
+        // Function to go to the next page
+        function nextPage() {
+            var table = document.querySelector('.table');
+            var tr = table.getElementsByTagName('tr');
+            var totalPages = Math.ceil((tr.length - 1) / rowsPerPage);
+            if (currentPage < totalPages - 1) {
+                currentPage++;
+                showRows();
+                updatePageNumbers();
+            }
+        }
+
+        // Function to update the displayed page numbers
+        function updatePageNumbers() {
+            var table = document.querySelector('.table');
+            var tr = table.getElementsByTagName('tr');
+            var totalPages = Math.ceil((tr.length - 1) / rowsPerPage);
+            var pageNumbers = document.getElementById("page-numbers");
+            pageNumbers.innerHTML = "";
+
+            var startPage = 0;
+            var endPage = totalPages - 1;
+            if (totalPages > 5) {
+                startPage = Math.max(currentPage - 2, 0);
+                endPage = Math.min(currentPage + 2, totalPages - 1);
+                if (endPage - startPage < 4) {
+                    if (startPage === 0) {
+                        endPage = Math.min(startPage + 4, totalPages - 1);
+                    } else {
+                        startPage = Math.max(endPage - 4, 0);
+                    }
+                }
+                if (startPage > 0) {
+                    pageNumbers.appendChild(createPageNumberButton(0));
+                    if (startPage > 1) {
+                        pageNumbers.appendChild(createEllipsis());
+                    }
+                }
+            }
+
+            for (var i = startPage; i <= endPage; i++) {
+                pageNumbers.appendChild(createPageNumberButton(i));
+            }
+
+            if (endPage < totalPages - 1) {
+                if (endPage < totalPages - 2) {
+                    pageNumbers.appendChild(createEllipsis());
+                }
+                pageNumbers.appendChild(createPageNumberButton(totalPages - 1));
+            }
+        }
+
+        // Function to create a page number button
+        function createPageNumberButton(page) {
+            var button = document.createElement("button");
+            button.className = "m-1 btn btn-secondary";
+            button.textContent = page + 1;
+            if (page === currentPage) {
+                button.classList.add("active");
+            }
+            button.onclick = function () {
+                currentPage = page;
+                showRows();
+                updatePageNumbers();
+            };
+            return button;
+        }
+
+        // Function to create an ellipsis element
+        function createEllipsis() {
+            var ellipsis = document.createElement("span");
+            ellipsis.textContent = "...";
+            return ellipsis;
+        }
+
+
+        // Initial call to show rows for the first page and update page numbers
+        showRows();
+        updatePageNumbers();
+    </script>
+</body>
+
+</html>
