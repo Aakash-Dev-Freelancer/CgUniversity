@@ -1,7 +1,19 @@
 # in myapp/models.py
 from django.db import models
 
+
+    
+class Center(models.Model):
+    center_id = models.CharField(max_length=100, primary_key=True)
+    username = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
+    center_name = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return self.center_name
+    
 class Student(models.Model):
+    center_id = models.ForeignKey(Center, on_delete=models.CASCADE, related_name='students')
     password = models.CharField(max_length=100, null=False)
     enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)
     profile_pic =models.FileField(upload_to='images/students/profile-pic/', null=True)
@@ -14,6 +26,9 @@ class Student(models.Model):
     email = models.EmailField()
     mobile_number = models.CharField(max_length=15)
     address = models.CharField(max_length=255)
+    
+    def __str__(self):
+        return self.full_name
 
 class StudentData(models.Model):
     student_enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)
@@ -36,6 +51,7 @@ class MarkSheets(models.Model):
 class StudentLogin(models.Model):
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
+
 
 class AdminLogin(models.Model):
     full_name = models.CharField(max_length=100)

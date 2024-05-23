@@ -4,7 +4,8 @@ import json
 from CG_International_University_App.models.student import StudentInformation
 from CG_International_University_App.models.courses import Courses
 from CG_International_University_App.models.admin_info import AdminInfo
-from cgapp.models import MarkSheets
+from cgapp.models import MarkSheets, Center, Student, StudentData
+from cgapp.serializers import MarkSheetSerializer, StudentSerializer, StudentDataSerializer
 from django.views.decorators.csrf import csrf_protect
 
 
@@ -125,8 +126,6 @@ def editStudent(request):
         return render(request, 'admin_cg_site/admin/edit_student.html', {'error_message': error_message})
 
 
-
-
 def home(request):
     BASE_URL = settings.BASE_URL
     return render(request, 'main_cg_site/home/index.html', {'base_url': BASE_URL})
@@ -203,6 +202,62 @@ def student(request):
     else:
         error_message = "Invalid request. Please try again."
         return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
+    
+@csrf_protect
+def center(request):
+    print('---------------- Center Function View ---------------- ')
+    API_URL = settings.API_URL
+
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user_type = request.POST.get('login-type')
+        csrf_token = request.POST.get('csrfmiddlewaretoken')
+
+        print("Username :: ", username)
+        print("Password :: ", password)
+        print("User Type :: ", user_type)
+        token_url = f"{API_URL}token/"
+        center = Center.objects.get(username=username)
+        try:
+            token_payload = {"username": username, "password": password, "user_type": user_type,}
+            token_response = requests.get(token_url, data=token_payload).json()
+            token = token_response.get('access')
+            print("Token :: ", token)
+            
+            if(username == center.username and password == center.password):
+                print("Login Successful")
+                studentDataList = []
+                students = Student.objects.filter(center_id=center.center_id)
+                for student in students:
+                    stu_data = StudentData.objects.get(student_enrollment_no=student.enrollment_no)
+                    stu_marksheets = MarkSheets.objects.filter(student_enrollment_no=student.enrollment_no)
+                    
+                    studentMarksheetsSerializer = MarkSheetSerializer(stu_marksheets, many=True)
+                    studentDataSerializer = StudentSerializer(student)
+                    studentSerializer = StudentDataSerializer(stu_data)
+
+                    studentDataList.append({'student_personal_info':studentDataSerializer.data,
+                                            'student_data':studentSerializer.data,
+                                            'student_marksheets':studentMarksheetsSerializer.data
+                                            })
+                return render(request, 'center_cg_site/home/center.html', 
+                            {'is_logged_in': True,
+                            'center_name': center.center_name,
+                            'center_id': center.center_id,
+                            'students': studentDataList,
+                            'api_url': API_URL,
+                            'token': token,
+                            })
+        except requests.exceptions.RequestException as e:
+            print(f"Error: {e}")
+        # access_token = token_response.get('access')
+        # print("Token Response :: ", token_response)
+        
+        
+        
+       
+    
     
 # Login Page --------------------->
 def login(request):

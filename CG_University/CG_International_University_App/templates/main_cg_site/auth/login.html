@@ -41,7 +41,7 @@
             <input type="password" id="password" name="password" placeholder="Password" required />
           </div>
 
-          <div id="error-message" class="" >Note : </div>
+          <div id="error-message" class="">Note : </div>
 
           <button type="button" onclick="submitForm()">Login</button>
           <div class="back-to-home">
@@ -56,15 +56,12 @@
     localStorage.clear();
 
     var errorMessage = "{{ error_message }}";
-
-    // Display the error message on the page
     document.getElementById("error-message").innerText = errorMessage;
 
     document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
       radio.addEventListener('click', function () {
         var selectedTab = document.querySelector('input[name="login-tab"]:checked');
         var form = document.getElementById("loginForm");
-
         if (selectedTab) {
           var tabId = selectedTab.id;
           var actionUrl = '';
@@ -76,8 +73,10 @@
           } else if (tabId === 'center-tab') {
             actionUrl = '{% url "center" %}';
           }
+          console.log(tabId);
 
           form.setAttribute('action', actionUrl);
+          console.log(actionUrl);
         }
       });
     });

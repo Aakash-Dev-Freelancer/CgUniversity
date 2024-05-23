@@ -6,8 +6,8 @@ from rest_framework_simplejwt import views as jwt_views
 
 from cgapp.views import (StudentDataListCreateAPIView, 
                          StudentRetrieveUpdateDestroy, 
+                         StudentListCreate,
                          StudentLoginAPIView, 
-                         StudentDataListCreateAPIView, 
                          StudentDataRetrieveUpdateDestroyAPIView,
                          AddStudent)
 
@@ -21,7 +21,7 @@ from cgapp.views import (MarkSheetListCreateView,
 
 
 urlpatterns = [
-    path('students/', StudentDataListCreateAPIView.as_view(), name='student-list-create'),
+    path('students/', StudentListCreate.as_view(), name='student-list-create'),
     path('students/<str:pk>/', StudentRetrieveUpdateDestroy.as_view(), name='student-detail'),
     path('login/', StudentLoginAPIView.as_view(), name='student-login'),
     path('add-student/', AddStudent.as_view(), name='add-student'),
@@ -38,4 +38,7 @@ urlpatterns = [
     path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
     path('token/', get_tokens_for_user, name="token")
+    
+    # path('token/', get_tokens_for_user, name="token")
+    
 ]
