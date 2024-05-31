@@ -1,16 +1,11 @@
 # in myapp/models.py
 from django.db import models
 
-
-    
 class Center(models.Model):
-    center_id = models.CharField(max_length=100, primary_key=True)
+    center_id = models.CharField(max_length=100)
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
     center_name = models.CharField(max_length=100)
-    
-    def __str__(self):
-        return self.center_name
     
 class Student(models.Model):
     center_id = models.ForeignKey(Center, on_delete=models.CASCADE, related_name='students')
@@ -26,9 +21,7 @@ class Student(models.Model):
     email = models.EmailField()
     mobile_number = models.CharField(max_length=15)
     address = models.CharField(max_length=255)
-    
-    def __str__(self):
-        return self.full_name
+    list_of_integers = models.JSONField(default=list) 
 
 class StudentData(models.Model):
     student_enrollment_no = models.CharField(max_length=100, null=False, primary_key=True)
@@ -39,7 +32,7 @@ class StudentData(models.Model):
     student_degree = models.FileField(upload_to='images/students/degree/' ,null=True, blank=True)
 
 class MarkSheets(models.Model):
-    student_enrollment_no = models.CharField(max_length=100, null=False)
+    student_enrollment_no = models.CharField(max_length=100)
     session = models.CharField(max_length=100)
     semester = models.CharField(max_length=100)
     sgpa = models.CharField(max_length=100)

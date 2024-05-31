@@ -88,8 +88,6 @@ def admin(request):
 @csrf_protect
 def editStudent(request):
     print('---------------- Edit Student Function View ---------------- ')
-    
-
     API_URL = settings.API_URL
     BASE_URL = settings.BASE_URL
 
@@ -106,6 +104,7 @@ def editStudent(request):
         student_response = requests.get(student_url, headers=headers)
         marksheet_response = requests.get(marksheet_url, headers=headers)
         student_data_response = requests.get(student_data_url, headers=headers)
+        print(student_response.json())
         
         student_response.raise_for_status()
         marksheet_response.raise_for_status()
@@ -154,7 +153,7 @@ def student(request):
         print("Token URL :: ", token_url)
 
         try:
-            token_response = requests.get(token_url)
+            token_response = requests.get(token_url, data={"username": enrollment_no, "password": password, "user_type": user_type})
             token_response.raise_for_status()
             token_json = token_response.json()
             access_token = token_json.get('access')
@@ -181,7 +180,7 @@ def student(request):
                     'student_info': student_personal_info,
                     'student_data': student_data,
                     'student_marksheets': student_marksheets,
-                    'base_url': BASE_URL
+                    'base_url': BASE_URL,
                 })
             else:
                 error_message = {
@@ -203,6 +202,7 @@ def student(request):
         error_message = "Invalid request. Please try again."
         return render(request, 'main_cg_site/auth/login.html', {'error_message': error_message})
     
+
 @csrf_protect
 def center(request):
     print('---------------- Center Function View ---------------- ')
@@ -218,17 +218,20 @@ def center(request):
         print("Password :: ", password)
         print("User Type :: ", user_type)
         token_url = f"{API_URL}token/"
-        center = Center.objects.get(username=username)
+        
         try:
-            token_payload = {"username": username, "password": password, "user_type": user_type,}
-            token_response = requests.get(token_url, data=token_payload).json()
-            token = token_response.get('access')
-            print("Token :: ", token)
+            center = Center.objects.get(username=username)
+            print("Center :: ", center)
+            token_response = requests.get(token_url, data={"username": username, "password": password, "user_type": user_type})
+            token_response.raise_for_status()
+            token_json = token_response.json()
+            access_token = token_json.get('access')
+            print("Access Token :: ", access_token)
             
-            if(username == center.username and password == center.password):
+            if username == center.username and password == center.password and access_token is not None:
                 print("Login Successful")
                 studentDataList = []
-                students = Student.objects.filter(center_id=center.center_id)
+                students = Student.objects.filter(center_id=center.id)
                 for student in students:
                     stu_data = StudentData.objects.get(student_enrollment_no=student.enrollment_no)
                     stu_marksheets = MarkSheets.objects.filter(student_enrollment_no=student.enrollment_no)
@@ -237,53 +240,50 @@ def center(request):
                     studentDataSerializer = StudentSerializer(student)
                     studentSerializer = StudentDataSerializer(stu_data)
 
-                    studentDataList.append({'student_personal_info':studentDataSerializer.data,
-                                            'student_data':studentSerializer.data,
-                                            'student_marksheets':studentMarksheetsSerializer.data
-                                            })
-                return render(request, 'center_cg_site/home/center.html', 
-                            {'is_logged_in': True,
-                            'center_name': center.center_name,
-                            'center_id': center.center_id,
-                            'students': studentDataList,
-                            'api_url': API_URL,
-                            'token': token,
-                            })
+                    studentDataList.append({
+                        'student_personal_info': studentDataSerializer.data,
+                        'student_data': studentSerializer.data,
+                        'student_marksheets': studentMarksheetsSerializer.data,
+                    })
+                
+                return render(request, 'center_cg_site/home/center.html', {
+                    'is_logged_in': True,
+                    'center_name': center.center_name,
+                    'center_id': center.id,
+                    'students': studentDataList,
+                    'api_url': API_URL,
+                    'token': access_token,
+                })
+            else:
+                return render(request, 'main_cg_site/auth/login.html', {'error_message': 'Incorrect Password. Please try again.'})
+        
+        except Center.DoesNotExist:
+            print("Center does not exist")
+            return render(request, 'main_cg_site/auth/login.html', {'error_message': 'Center not found. Please try again.'})
+        
         except requests.exceptions.RequestException as e:
             print(f"Error: {e}")
-        # access_token = token_response.get('access')
-        # print("Token Response :: ", token_response)
+            return render(request, 'main_cg_site/auth/login.html', {'error_message': 'Something Went Wrong. Please try again.'})
         
-        
-        
-       
-    
-    
 # Login Page --------------------->
 def login(request):
     return render(request, 'main_cg_site/auth/login.html')
 
 # Register Page --------------------->
 
-
 # About Us -------------------------->
 def about(request):
     return render(request, 'main_cg_site/about_us/about.html',)
-
 
 # Director Message -------------------------->
 def directorMessage(request):
     return render(request, 'main_cg_site/about_us/director_message.html',)
 
 # Vision And Mission -------------------------->
-
-
 def visionAndMission(request):
     return render(request, 'main_cg_site/about_us/vision_and_mission.html',)
 
 # Courses--------------------->
-
-
 def courses(request):
     branch_objects = Courses.objects.all()
     branches_list = []  # List to hold each branch's information
@@ -298,31 +298,26 @@ def courses(request):
 
 
 # Board_Member's------------------>
-
-
 def boardMembers(request):
     return render(request, 'main_cg_site/board_members/board_members.html')
+
 # Important-------------------->
-
-
 def termsAndconditions(request):
     return render(request, 'main_cg_site/important/terms_and_conditions.html')
 
 
 def rti(request):
     return render(request, 'main_cg_site/important/rti.html')
+
 # Approval--------------->
-
-
 def approval(request):
     return render(request, 'main_cg_site/approval/approval.html')
 
 # Contact--------------->
-
-
 def contact(request):
     return render(request, 'main_cg_site/contact/contact.html')
 
+# Logout -------------->
 @csrf_protect
 def logout_view(request):
     logout(request)

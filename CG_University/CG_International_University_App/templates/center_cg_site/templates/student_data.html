@@ -24,6 +24,10 @@
             border-color: rgba(255, 150, 13, 0.5);
         }
 
+        /* .required-field {
+            color: red;
+        } */
+
         /* Add pointer cursor to table rows */
         tbody tr:hover {
             cursor: pointer;
@@ -32,6 +36,11 @@
         /* Highlight selected row */
         .selected {
             background-color: rgba(255, 150, 13, 0.1);
+        }
+
+        .required-field-name::after {
+            content: " *";
+            color: red;
         }
 
         .add-button-container {
@@ -169,7 +178,7 @@
                     <td>{{ data.student_personal_info.address }}</td>
                     <td>
                         <a class="btn btn-primary"
-                            href="{% url 'edit-student'  %}?id={{ data.enrollment_no }}&token={{ token }}">Edit</a>
+                            href="{% url 'edit-student'  %}?id={{ data.student_personal_info.enrollment_no }}&token={{ token }}&cId={{ center_id }}">Edit</a>
                     </td>
                 </tr>
 
@@ -196,7 +205,7 @@
     <!-- Modal -->
     <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
         aria-hidden="true">
-        <div class=" modal-dialog modal-dialog-centered modal-full" style="min-width: 90%;" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-full" style="min-width: 90%;" role="document">
             <div class="modal-content" style="border-radius: 22px;">
                 <div class="modal-header bg-primary text-white" style="border-radius: 20px 20px 0px 0px; ">
                     <h5 class="modal-title" id="editModalLabel">Add Student</h5>
@@ -213,69 +222,87 @@
                     <h4>Personal Details</h4>
                     <hr class="my-4">
                     <div class="row">
-
                         <div class="form-group">
-                            <label for="profile_pic">Profile Pic Upload</label>
-                            <input type="file" class="form-control-file" id="profile_pic" name="profile_pic">
+                            <label for="enrollment_no" class="required-field-name">Enrollment No.</label>
+                            <input type="text" style="max-width: 300px;" class="form-control required-field"
+                                value="{{ student.enrollment_no }}" id="enrollment_no" name="enrollment_no">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile_pic" class="required-field-name">Profile Pic Upload</label>
+                            <input type="file" class="form-control-file required-field" id="profile_pic"
+                                name="profile_pic" required>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="full_name">Full Name</label>
-                                <input type="text" class="form-control" id="full_name" name="full_name">
+                                <label for="full_name" class="required-field-name">Full Name</label>
+                                <input type="text" class="form-control required-field" id="full_name" name="full_name"
+                                    required>
+                                <div class="error-message" id="semester-error"></div>
+
                             </div>
                             <div class="form-group">
-                                <label for="father_name">Father's Name</label>
-                                <input type="text" class="form-control" id="father_name" name="father_name">
+                                <label for="father_name" class="required-field-name">Father's Name</label>
+                                <input type="text" class="form-control required-field" id="father_name"
+                                    name="father_name" required>
                             </div>
                             <div class="form-group">
-                                <label for="mother_name">Mother's Name</label>
-                                <input type="text" class="form-control" id="mother_name" name="mother_name">
+                                <label for="mother_name" class="required-field-name">Mother's Name</label>
+                                <input type="text" class="form-control required-field" id="mother_name"
+                                    name="mother_name" required>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="date_of_birth">Date of Birth</label>
-                                <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+                                <label for="date_of_birth" class="required-field-name">Date of Birth</label>
+                                <input type="date" class="form-control" id="date_of_birth" name="date_of_birth"
+                                    required>
                             </div>
                             <div class="form-group">
-                                <label for="category">Category</label>
-                                <input type="text" class="form-control" id="category" name="category">
+                                <label for="category" class="required-field-name">Category</label>
+                                <input type="text" class="form-control required-field" id="category" name="category"
+                                    required>
                             </div>
                             <div class="form-group">
-                                <label for="gender">Gender</label>
-                                <input type="text" class="form-control" id="gender" name="gender">
+                                <label for="gender" class="required-field-name">Gender</label>
+                                <input type="text" class="form-control required-field" id="gender" name="gender"
+                                    required>
                             </div>
 
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email">
+                                <label for="email" class="required-field-name">Email</label>
+                                <input type="email" class="form-control required-field" id="email" name="email"
+                                    required>
                             </div>
                             <div class="form-group">
-                                <label for="mobile_number">Mobile Number</label>
-                                <input type="tel" class="form-control" id="mobile_number" name="mobile_number">
+                                <label for="mobile_number" class="required-field-name">Mobile Number</label>
+                                <input type="tel" class="form-control required-field" id="mobile_number"
+                                    name="mobile_number" required>
                             </div>
                             <div class="form-group">
-                                <label for="address">Address</label>
-                                <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                                <label for="address" class="required-field-name">Address</label>
+                                <textarea class="form-control required-field" id="address" name="address" rows="3"
+                                    required></textarea>
                             </div>
 
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <hr class="my-4">
                         <h4>Login Credentials</h4>
                         <hr class="my-4">
                         <div class="form-group w-200">
-                            <label for="enrollment_no">Enrollment No.</label>
-                            <input type="text" class="form-control" id="enrollment_no" name="enrollment_no">
+                            <label for="enrollment_no" class="required-field-name">Enrollment No.</label>
+                            <input type="text" class="form-control required-field" id="enrollment_no"
+                                name="enrollment_no" required>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="text" class="form-control" id="password" name="password">
+                            <label for="password" class="required-field-name">Password</label>
+                            <input type="text" class="form-control required-field" id="password" name="password"
+                                required>
                         </div>
-                    </div>
+                    </div> -->
                     <hr class="my-4">
 
                     <!-- |----------------------- Marksheets -------------------------| -->
@@ -283,43 +310,44 @@
                     <div id="marksheetList" class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="session">Session</label>
-                                <input type="text" class="form-control" id="session" name="session"
-                                    placeholder="Enter Session">
+                                <label for="session" class="required-field-name">Session</label>
+                                <input type="text" class="form-control required-field" id="session" name="session"
+                                    placeholder="Enter Session" required>
                             </div>
                             <div class="form-group">
-                                <label for="semester">Semester</label>
-                                <input type="text" class="form-control" id="semester" name="semester"
-                                    placeholder="Enter Semester">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="sgpa">SGPA</label>
-                                <input type="text" class="form-control" id="sgpa" name="sgpa" placeholder="Enter SGPA">
-                            </div>
-                            <div class="form-group">
-                                <label for="status">Status</label>
-                                <input type="text" class="form-control" id="status" name="status"
-                                    placeholder="Enter Status">
+                                <label for="semester" class="required-field-name">Semester</label>
+                                <input type="text" class="form-control required-field" id="semester" name="semester"
+                                    placeholder="Enter Semester" required>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="result">Result</label>
-                                <input type="text" class="form-control" id="result" name="result"
-                                    placeholder="Enter Result">
+                                <label for="sgpa" class="required-field-name">SGPA</label>
+                                <input type="text" class="form-control required-field" id="sgpa" name="sgpa"
+                                    placeholder="Enter SGPA" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="status" class="required-field-name">Status</label>
+                                <input type="text" class="form-control required-field" id="status" name="status"
+                                    placeholder="Enter Status" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="result" class="required-field-name">Result</label>
+                                <input type="text" class="form-control required-field" id="result" name="result"
+                                    placeholder="Enter Result" required>
                             </div>
                             <div class="form-group d-block">
-                                <label for="file">Marksheet Upload</label>
-                                <input type="file" class="form-control-file" id="file" name="marksheet">
+                                <label for="file" class="required-field-name">Marksheet Upload</label>
+                                <input type="file" class="form-control-file required-field" id="file" name="marksheet"
+                                    required>
                             </div>
-
                         </div>
                     </div>
+                    <!-- <button type="button" class="btn btn-success add">Add New Div</button> -->
+
                     <hr class="my-4">
-
-
                     <!-- |----------------------- Documents -------------------------| -->
                     <h4>Documents</h4>
                     <hr class="my-4">
@@ -328,19 +356,19 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="migration">Migration Upload</label>
-                                <input type="file" class="form-control-file" id="migration" name="migration">
+                                <input type="file" class="form-control-file" id="migration" name="migration" required>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="provision">Provision Upload</label>
-                                <input type="file" class="form-control-file" id="provision" name="provision">
+                                <input type="file" class="form-control-file" id="provision" name="provision" required>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="affidevit">Affidevit Upload</label>
-                                <input type="file" class="form-control-file" id="affidevit" name="affidevit">
+                                <label for="affidavit">Affidavit Upload</label>
+                                <input type="file" class="form-control-file" id="affidavit" name="affidavit" required>
                             </div>
                         </div>
                     </div>
@@ -348,94 +376,61 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="admit_card">Admit Card Upload</label>
-                                <input type="file" class="form-control-file" id="admit_card" name="admit_card">
+                                <input type="file" class="form-control-file" id="admit_card" name="admit_card" required>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="degree">Degree Upload</label>
-                                <input type="file" class="form-control-file" id="degree" name="degree">
+                                <input type="file" class="form-control-file" id="degree" name="degree" required>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="extractAndDisplayData()"
-                        data-dismiss="modal">Update</button>
+                    <button id="add-student" type="button" class="btn btn-primary" onclick="extractAndDisplayData()">Add
+                        Student</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-
 
         function cancelUpdate(enrollmentNo) {
             $('.modal-backdrop').remove();
         }
 
         function extractAndDisplayData() {
-            var studentData = {
-                "center_id": "{{ center_id }}",
-                "enrollment_no": document.querySelector('#enrollment_no').value,
-                "profile_pic": document.querySelector('#profile_pic').files[0],
-                "full_name": document.querySelector('#full_name').value,
-                "password": document.querySelector('#password').value,
-                "father_name": document.querySelector('#father_name').value,
-                "mother_name": document.querySelector('#mother_name').value,
-                "gender": document.querySelector('#gender').value,
-                "date_of_birth": document.querySelector('#date_of_birth').value,
-                "category": document.querySelector('#category').value,
-                "email": document.querySelector('#email').value,
-                "mobile_number": document.querySelector('#mobile_number').value,
-                "address": document.querySelector('#address').value
-            };
-
-            console.log(studentData);
+            var requiredFields = document.querySelectorAll(".required-field");
+            var reversedFields = Array.from(requiredFields).reverse();
 
 
-            var studentFormData = new FormData();
+            var isEmpty = false;
+            var capitalized = "";
 
-            for (var key in studentData) {
-                studentFormData.append(key, studentData[key]);
+            reversedFields.forEach(function (field) {
+                if (field.value.trim() == "") {
+                    isEmpty = true;
+                    let emptyField = field.name;
+                    capitalized = emptyField.replace(/_/g, '  ').replace(/\b\w/g, char => char.toUpperCase()).replace(/\s+/g, ' ');
+                } else {
+                }
+            });
+
+            if (isEmpty) {
+                alert("Required Field is empty: " + capitalized);
+                return;
             }
-
 
             var studentUrl = "{{ api_url }}students/"
             var token = localStorage.getItem('token');
             var markSheetUrl = "{{ api_url }}marksheets/"
-            // var studentDataUrl = "{{ api_url }}student-data/"
-            // var addStudent = "{{ api_url }}add-student/"
-
-
-            fetch(studentUrl, {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                },
-                body: studentFormData,
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        alert('Student added successfully!');
-                    } else {
-                        alert('There was an error.');
-                    }
-                });
-
-
-
-            // // var marksheetData = [];
-            // var marksheetRows = document.querySelectorAll('.marksheets-class');
+            var studentDataUrl = "{{ api_url }}student-data/"
 
             var marksheetData = {
                 "student_enrollment_no": document.querySelector('#enrollment_no').value,
@@ -449,16 +444,96 @@
 
             const marksheetFormData = new FormData();
 
-            for (const key in marksheetData) {
-                marksheetFormData.append(key, marksheetData[key]);
+            var marksheetIds = [];
+
+            async function fetchMarkSheet() {
+                try {
+                    const response = await fetch(markSheetUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${token}`
+                        },
+                        body: marksheetFormData,
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+
+                    const data = await response.json();
+                    marksheetIds.push(...data['id_list']);
+                } catch (error) {
+                    console.error('There was a problem with the fetch operation:', error);
+                }
             }
 
-            fetch(markSheetUrl, {
+            // Strudent Personal Info
+
+            var studentInfo = {
+                "center_id": "{{ center_id }}",
+                "enrollment_no": document.querySelector('#enrollment_no').value,
+                "profile_pic": document.querySelector('#profile_pic').files[0],
+                "full_name": document.querySelector('#full_name').value,
+                "password": document.querySelector('#date_of_birth').value,
+                "father_name": document.querySelector('#father_name').value,
+                "mother_name": document.querySelector('#mother_name').value,
+                "gender": document.querySelector('#gender').value,
+                "date_of_birth": document.querySelector('#date_of_birth').value,
+                "category": document.querySelector('#category').value,
+                "email": document.querySelector('#email').value,
+                "mobile_number": document.querySelector('#mobile_number').value,
+                "address": document.querySelector('#address').value,
+                'list_of_integers': marksheetIds,
+            };
+
+            fetchMarkSheet().then(() => {
+
+                var studentFormData = new FormData();
+
+                for (var key in studentInfo) {
+                    studentFormData.append(key, studentInfo[key]);
+                }
+
+                fetch(studentUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: studentFormData,
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Response from server:', data);
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with the fetch operation:', error);
+                    });
+            });
+
+
+
+            const studentData = {
+                'student_enrollment_no': document.querySelector('#enrollment_no').value,
+                'student_provision': document.querySelector('#provision').files[0],
+                'student_degree': document.querySelector('#degree').files[0],
+                'student_admit_card': document.querySelector('#admit_card').files[0],
+                'student_affidevit': document.querySelector('#affidavit').files[0],
+                'student_migrations': document.querySelector('#migration').files[0],
+            }
+
+
+            const studentDataForm = new FormData();
+
+            for (const key in studentData) {
+                studentDataForm.append(key, studentData[key]);
+            }
+
+            fetch(studentDataUrl, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`
                 },
-                body: marksheetFormData,
+                body: studentDataForm,
             })
                 .then(response => {
                     if (!response.ok) {
@@ -473,50 +548,10 @@
                     console.error('There was a problem with the fetch operation:', error);
                 });
 
-      const studentData =   {    'student_enrollment_no':document.querySelector('#enrollment_no').value,
-             'student_provision':document.querySelector('#provision').files[0],
-             'student_degree':document.querySelector('#degree').files[0],
-             'student_admit_card':document.querySelector('#admit_card').files[0],
-             'student_affidevit':document.querySelector('#affidevit').files[0],
-             'student_migrations':document.querySelector('#migration').files[0],}
-
-
-            const studentDataForm = new FormData();
-
-             for (const key in marksheetData) {
-                studentDataForm.append(key, marksheetData[key]);
-            }
-
-            // formDetails.append('student_enrollment_no', student_enrollment_no);
-            // formDetails.append('student_provision', student_provision);
-            // formDetails.append('student_admit_card', student_admit_card);
-            // formDetails.append('student_affidevit', student_affidevit);
-            // formDetails.append('student_migrations', student_migrations);
-
-            // fetch(studentDataUrl, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Authorization': `Bearer ${token}`
-            //     },
-            //     body: formDetails,
-            // })
-            //     .then(response => {
-            //         if (!response.ok) {
-            //             throw new Error('Network response was not ok');
-            //         }
-            //         return response.json();
-            //     })
-            //     .then(data => {
-            //         console.log('Response from server:', data);
-            //     })
-            //     .catch(error => {
-            //         console.error('There was a problem with the fetch operation:', error);
-            //     });
-
 
             // addStudentPayload = {
             //     "username": document.querySelector('#enrollment_no').value,
-            //     "password": document.querySelector('#password').value,
+            //     "password": document.querySelector('#date_of_birth').value,
             // }
 
 
@@ -541,17 +576,9 @@
             //         console.error('There was a problem with the fetch operation:', error);
             //     });
 
-
-
+            var addStudent = document.getElementById("add-student");
+            addStudent.setAttribute("data-dismiss", "modal");
         }
-
-
-        // function removeMarkSheet(button) {
-        //     var marksheetDiv = button.parentElement.parentElement;
-        //     marksheetCounter--;
-        //     marksheetDiv.remove();
-        // }
-
 
         function filterTable(columnIndex, filterValue) {
             var table = document.querySelector('.table');
@@ -570,7 +597,6 @@
         var currentPage = 0;
         var rowsPerPage = 10;
 
-        // Function to show rows for the current page
         function showRows() {
             var table = document.querySelector('.table');
             var tr = table.getElementsByTagName('tr');
@@ -585,7 +611,6 @@
             }
         }
 
-        // Function to go to the previous page
         function prevPage() {
             if (currentPage > 0) {
                 currentPage--;
@@ -594,7 +619,6 @@
             }
         }
 
-        // Function to go to the next page
         function nextPage() {
             var table = document.querySelector('.table');
             var tr = table.getElementsByTagName('tr');
@@ -606,7 +630,6 @@
             }
         }
 
-        // Function to update the displayed page numbers
         function updatePageNumbers() {
             var table = document.querySelector('.table');
             var tr = table.getElementsByTagName('tr');
@@ -646,7 +669,6 @@
             }
         }
 
-        // Function to create a page number button
         function createPageNumberButton(page) {
             var button = document.createElement("button");
             button.className = "m-1 btn btn-secondary";
@@ -669,8 +691,6 @@
             return ellipsis;
         }
 
-
-        // Initial call to show rows for the first page and update page numbers
         showRows();
         updatePageNumbers();
     </script>

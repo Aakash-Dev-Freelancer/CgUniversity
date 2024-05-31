@@ -9,4 +9,3 @@ admin.site.register(MarkSheets)
 admin.site.register(AdminLogin)
 admin.site.register(StudentLogin)
 admin.site.register(Center)
-
