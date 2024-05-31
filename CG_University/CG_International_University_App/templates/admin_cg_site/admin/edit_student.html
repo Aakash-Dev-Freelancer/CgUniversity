@@ -43,6 +43,7 @@
 <body>
 
     {% include 'main_cg_site/global/nav_bar.html' %}
+
     <div class="container">
         <h1>Edit Student {{data.enrollment_no}}</h1>
         <div id="edit_card_{{ student.enrollment_no }}" style="display: block;">
@@ -206,8 +207,13 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
+                                    {% if student_data.student_migrations %}
                                     <img src="{{ student_data.student_migrations }}" class="w-20% rounded p-1"
-                                        style="width: 25%; " alt="">
+                                        style="width: 38%;" alt="No">
+                                    {% else %}
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                                        class="w-20% rounded p-1" style="width: 50%;" alt="No">
+                                    {% endif %}
                                     <label for="migration">Migration Upload</label>
                                     <input type="file" value="{{ student_data.student_migrations }}"
                                         class="form-control-file" id="migration" name="migration">
@@ -215,8 +221,14 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
+                                    {% if student_data.student_provision %}
                                     <img src="{{ student_data.student_provision }}" class="w-20% rounded p-1"
-                                        style="width: 25%; " alt="">
+                                        style="width: 38%;" alt="No">
+                                    {% else %}
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                                        class="w-20% rounded p-1" style="width: 50%;" alt="No">
+                                    {% endif %}
+
                                     <label for="provision">Provision Upload</label>
                                     <input type="file" value="{{ student_data.student_provision }}"
                                         class="form-control-file" id="provision" name="provision">
@@ -225,8 +237,14 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
+                                    {% if student_data.student_affidevit %}
                                     <img src="{{ student_data.student_affidevit }}" class="w-20% rounded p-1"
-                                        style="width: 25%; " alt="">
+                                        style="width: 38%;" alt="No">
+                                    {% else %}
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                                        class="w-20% rounded p-1" style="width: 50%;" alt="No">
+                                    {% endif %}
+
                                     <label for="affidevit">Affidevit Upload</label>
                                     <input type="file" value="{{ student_data.student_affidevit }}"
                                         class="form-control-file" id="affidevit" name="affidevit">
@@ -237,8 +255,13 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
+                                    {% if student_data.student_admit_card %}
                                     <img src="{{ student_data.student_admit_card }}" class="w-20% rounded p-1"
-                                        style="width: 25%; " alt="">
+                                        style="width: 38%; " alt="No">
+                                    {% else %}
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                                        class="w-20% rounded p-1" style="width: 50%;" alt="No">
+                                    {% endif %}
                                     <label for="admin_card">Admit Card Upload</label>
                                     <input type="file" value="{{ student_data.student_admit_card }}"
                                         class="form-control-file" id="admin_card" name="admin_card">
@@ -246,8 +269,15 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
+                                    {% if student_data.student_degree %}
+
                                     <img src="{{ student_data.student_degree }}" class="w-20% rounded p-1"
-                                        style="width: 25%; " alt="">
+                                        style="width: 38%;" alt=" No">
+
+                                    {% else %}
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                                        class="w-20% rounded p-1" style="width: 50%;" alt="No">
+                                    {% endif %}
                                     <label for="degree">Degree Upload</label>
                                     <input type="file" value="{{ student_data.student_degree }}"
                                         class="form-control-file" id="degree" name="degree">
@@ -284,6 +314,9 @@
         </div>
     </div>
 
+    {% include 'main_cg_site/global/footer.html' %}
+
+
 
 
     <script>
@@ -292,6 +325,7 @@
             event.preventDefault();
 
         })
+
         function cancelUpdate(enrollmentNo) {
             window.history.back();
         }
@@ -460,12 +494,17 @@
                     console.error('Error:', error);
                 });
         }
+
     </script>
 
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </body>
 
 </html>
