@@ -213,6 +213,8 @@ def center(request):
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
         csrf_token = request.POST.get('csrfmiddlewaretoken')
+        
+        print("Api URL :: ", API_URL)
 
         print("Username :: ", username)
         print("Password :: ", password)
