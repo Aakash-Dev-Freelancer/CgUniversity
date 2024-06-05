@@ -63,20 +63,18 @@
 </head>
 
 <body>
-
-
-
     <div class="p-5">
         <div style="display: flex;
                 flex-direction: row;
                 justify-content: space-between;">
-            <h1>{{ center_name }},</h1>
+            <h1>{{ center_name }}</h1>
             <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#editModal">
                 Add Student
             </button>
         </div>
 
         {% if is_logged_in %}
+        <!-- <h6>Student {{students}}</h6> -->
 
         <table class="table table-bordered table-striped ">
             <thead class="thead-dark">
@@ -85,32 +83,32 @@
                         Enrollment No.
                         <select style="font-size: small;" class="form-control" onchange="filterTable(0, this.value)">
                             <option value="">Filter</option>
-                            {% for data in admin_info.students|dictsort:"enrollment_no" %}
-                            <option>{{ data.enrollment_no }}</option>
+                            {% for data in students|dictsort:"enrollment_no" %}
+                            <option>{{ data }}</option>
                             {% endfor %}
                         </select>
                     </th>
                     <th>Name
                         <select style="font-size: small;" class=" form-control" onchange="filterTable(1, this.value)">
                             <option value="">No filter</option>
-                            {% for data in admin_info.students %}
-                            <option>{{ data.full_name }}</option>
+                            {% for data in students %}
+                            <option>{{ data.student_personal_info.full_name }}</option>
                             {% endfor %}
                         </select>
                     </th>
                     <th>Father Name
                         <select style="font-size: small;" class="form-control" onchange="filterTable(2, this.value)">
                             <option value="">Filter</option>
-                            {% for data in admin_info.students %}
-                            <option>{{ data.father_name }}</option>
+                            {% for data in students %}
+                            <option>{{ data.student_personal_info.father_name }}</option>
                             {% endfor %}
                         </select>
                     </th>
                     <th>Mother Name
                         <select style="font-size: small;" class="form-control" onchange="filterTable(3, this.value)">
                             <option value="">Filter</option>
-                            {% for data in admin_info.students %}
-                            <option>{{ data.mother_name }}</option>
+                            {% for data in students %}
+                            <option>{{ data.student_personal_info.mother_name }}</option>
                             {% endfor %}
                         </select>
                     </th>
@@ -124,44 +122,44 @@
                     <th>DOB
                         <select style="font-size: small;" class="form-control" onchange="filterTable(5, this.value)">
                             <option value="">Filter</option>
-                            {% for data in admin_info.students %}
-                            <option>{{ data.date_of_birth }}</option>
+                            {% for data in students %}
+                            <option>{{ data.student_personal_info.date_of_birth }}</option>
                             {% endfor %}
                         </select>
                     </th>
                     <th>Category
                         <select style="font-size: small;" class="form-control" onchange="filterTable(6, this.value)">
                             <option value="">Filter</option>
-                            {% for data in admin_info.students %}
-                            <option>{{ data.category }}</option>
+                            {% for data in students %}
+                            <option>{{ data.student_personal_info.category }}</option>
                             {% endfor %}
                         </select>
                     </th>
                     <th>Email
                         <select style="font-size: small;" class="form-control" onchange="filterTable(7, this.value)">
                             <option value="">Filter</option>
-                            {% for data in admin_info.students %}
-                            <option>{{ data.email }}</option>
+                            {% for data in students %}
+                            <option>{{ data.student_personal_info.email }}</option>
                             {% endfor %}
                         </select>
                     </th>
                     <th>Mobile No.
                         <select style="font-size: small;" class="form-control" onchange="filterTable(8, this.value)">
                             <option value="">Filter</option>
-                            {% for data in admin_info.students %}
-                            <option>{{ data.mobile_number }}</option>
+                            {% for data in students %}
+                            <option>{{ data.student_personal_info.mobile_number }}</option>
                             {% endfor %}
                         </select>
                     </th>
                     <th>Address
                         <select style="font-size: small;" class="form-control" onchange="filterTable(9, this.value)">
                             <option value="">Filter</option>
-                            {% for data in admin_info.students %}
-                            <option>{{ data.address }}</option>
+                            {% for data in students %}
+                            <option>{{ data.student_personal_info.address }}</option>
                             {% endfor %}
                         </select>
                     </th>
-                    <th>View/Edit</th>
+                    <th>View</th>
                 </tr>
             </thead>
             <tbody>
@@ -179,7 +177,7 @@
                     <td>{{ data.student_personal_info.address }}</td>
                     <td>
                         <a class="btn btn-primary"
-                            href="{% url 'edit-student'  %}?id={{ data.student_personal_info.enrollment_no }}&token={{ token }}&cId={{ center_id }}">Edit</a>
+                            href="{% url 'view-student'  %}?id={{ data.student_personal_info.enrollment_no }}&token={{ token }}&cId={{ center_id }}">View</a>
                     </td>
                 </tr>
 
@@ -215,12 +213,12 @@
                     </button>
                 </div>
                 <div class="modal-body" style="padding: 20px 40px;">
-
                     <!-- CSRF token -->
                     {% csrf_token %}
                     <input type="hidden" name="enrollment_no" value="{{ student.enrollment_no }}">
+
                     <!-- Personal Details -->
-                    <h4>Personal Details</h4>
+                    <h4>Student Personal Details </h4>
                     <hr class="my-4">
                     <div class="row">
                         <div class="form-group">
@@ -289,205 +287,69 @@
 
                         </div>
                     </div>
-                    <!-- <div class="row">
-                        <hr class="my-4">
-                        <h4>Login Credentials</h4>
-                        <hr class="my-4">
-                        <div class="form-group w-200">
-                            <label for="enrollment_no" class="required-field-name">Enrollment No.</label>
-                            <input type="text" class="form-control required-field" id="enrollment_no"
-                                name="enrollment_no" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="required-field-name">Password</label>
-                            <input type="text" class="form-control required-field" id="password" name="password"
-                                required>
-                        </div>
-                    </div> -->
-                    <hr class="my-4">
 
-                    <!-- |----------------------- Marksheets -------------------------| -->
-                    <h3>Marksheets</h3>
-                    <div id="marksheetList" class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="session" class="required-field-name">Session</label>
-                                <input type="text" class="form-control required-field" id="session" name="session"
-                                    placeholder="Enter Session" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="semester" class="required-field-name">Semester</label>
-                                <input type="text" class="form-control required-field" id="semester" name="semester"
-                                    placeholder="Enter Semester" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="sgpa" class="required-field-name">SGPA</label>
-                                <input type="text" class="form-control required-field" id="sgpa" name="sgpa"
-                                    placeholder="Enter SGPA" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="status" class="required-field-name">Status</label>
-                                <input type="text" class="form-control required-field" id="status" name="status"
-                                    placeholder="Enter Status" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="result" class="required-field-name">Result</label>
-                                <input type="text" class="form-control required-field" id="result" name="result"
-                                    placeholder="Enter Result" required>
-                            </div>
-                            <div class="form-group d-block">
-                                <label for="file" class="required-field-name">Marksheet Upload</label>
-                                <input type="file" class="form-control-file required-field" id="file" name="marksheet"
-                                    required>
-                            </div>
-                        </div>
+                    <div class="modal-footer">
+                        <button id="add-student" type="button" class="btn btn-primary"
+                            onclick="extractAndDisplayData()">Add Student</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     </div>
-                    <!-- <button type="button" class="btn btn-success add">Add New Div</button> -->
-
-                    <hr class="my-4">
-                    <!-- |----------------------- Documents -------------------------| -->
-                    <h4>Documents</h4>
-                    <hr class="my-4">
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="migration">Migration Upload</label>
-                                <input type="file" class="form-control-file" id="migration" name="migration" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="provision">Provision Upload</label>
-                                <input type="file" class="form-control-file" id="provision" name="provision" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="affidavit">Affidavit Upload</label>
-                                <input type="file" class="form-control-file" id="affidavit" name="affidavit" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="admit_card">Admit Card Upload</label>
-                                <input type="file" class="form-control-file" id="admit_card" name="admit_card" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="degree">Degree Upload</label>
-                                <input type="file" class="form-control-file" id="degree" name="degree" required>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button id="add-student" type="button" class="btn btn-primary" onclick="extractAndDisplayData()">Add
-                        Student</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
+        <script>
 
-        function cancelUpdate(enrollmentNo) {
-            $('.modal-backdrop').remove();
-        }
-
-        function extractAndDisplayData() {
-            var requiredFields = document.querySelectorAll(".required-field");
-            var reversedFields = Array.from(requiredFields).reverse();
-
-
-            var isEmpty = false;
-            var capitalized = "";
-
-            reversedFields.forEach(function (field) {
-                if (field.value.trim() == "") {
-                    isEmpty = true;
-                    let emptyField = field.name;
-                    capitalized = emptyField.replace(/_/g, '  ').replace(/\b\w/g, char => char.toUpperCase()).replace(/\s+/g, ' ');
-                } else {
-                }
-            });
-
-            if (isEmpty) {
-                alert("Required Field is empty: " + capitalized);
-                return;
+            function cancelUpdate(enrollmentNo) {
+                $('.modal-backdrop').remove();
             }
 
-            var studentUrl = "{{ api_url }}students/"
-            var token = localStorage.getItem('token');
-            var markSheetUrl = "{{ api_url }}marksheets/"
-            var studentDataUrl = "{{ api_url }}student-data/"
+            function extractAndDisplayData() {
+                var requiredFields = document.querySelectorAll(".required-field");
+                var reversedFields = Array.from(requiredFields).reverse();
 
-            var marksheetData = {
-                "student_enrollment_no": document.querySelector('#enrollment_no').value,
-                "session": document.querySelector('#session').value,
-                "semester": document.querySelector('#semester').value,
-                "sgpa": document.querySelector('#sgpa').value,
-                "status": document.querySelector('#status').value,
-                "result": document.querySelector('#result').value,
-                "file": document.querySelector('#file').files[0],
-            };
 
-            const marksheetFormData = new FormData();
+                var isEmpty = false;
+                var capitalized = "";
 
-            var marksheetIds = [];
-
-            async function fetchMarkSheet() {
-                try {
-                    const response = await fetch(markSheetUrl, {
-                        method: 'POST',
-                        headers: {
-                            'Authorization': `Bearer ${token}`
-                        },
-                        body: marksheetFormData,
-                    });
-
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
+                reversedFields.forEach(function (field) {
+                    if (field.value.trim() == "") {
+                        isEmpty = true;
+                        let emptyField = field.name;
+                        capitalized = emptyField.replace(/_/g, '  ').replace(/\b\w/g, char => char.toUpperCase()).replace(/\s+/g, ' ');
+                    } else {
                     }
+                });
 
-                    const data = await response.json();
-                    marksheetIds.push(...data['id_list']);
-                } catch (error) {
-                    console.error('There was a problem with the fetch operation:', error);
+                if (isEmpty) {
+                    alert("Required Field is empty: " + capitalized);
+                    return;
                 }
-            }
 
-            // Strudent Personal Info
+                var studentUrl = "{{ api_url }}students/"
+                var token = localStorage.getItem('token');
 
-            var studentInfo = {
-                "center_id": "{{ center_id }}",
-                "enrollment_no": document.querySelector('#enrollment_no').value,
-                "profile_pic": document.querySelector('#profile_pic').files[0],
-                "full_name": document.querySelector('#full_name').value,
-                "password": document.querySelector('#date_of_birth').value,
-                "father_name": document.querySelector('#father_name').value,
-                "mother_name": document.querySelector('#mother_name').value,
-                "gender": document.querySelector('#gender').value,
-                "date_of_birth": document.querySelector('#date_of_birth').value,
-                "category": document.querySelector('#category').value,
-                "email": document.querySelector('#email').value,
-                "mobile_number": document.querySelector('#mobile_number').value,
-                "address": document.querySelector('#address').value,
-                'list_of_integers': marksheetIds,
-            };
+                // Strudent Personal Info
 
-            fetchMarkSheet().then(() => {
+                var studentInfo = {
+                    "center_id": "{{ center_id }}",
+                    "enrollment_no": document.querySelector('#enrollment_no').value,
+                    "profile_pic": document.querySelector('#profile_pic').files[0],
+                    "full_name": document.querySelector('#full_name').value,
+                    "password": document.querySelector('#date_of_birth').value,
+                    "father_name": document.querySelector('#father_name').value,
+                    "mother_name": document.querySelector('#mother_name').value,
+                    "gender": document.querySelector('#gender').value,
+                    "date_of_birth": document.querySelector('#date_of_birth').value,
+                    "category": document.querySelector('#category').value,
+                    "email": document.querySelector('#email').value,
+                    "mobile_number": document.querySelector('#mobile_number').value,
+                    "address": document.querySelector('#address').value,
+                    'list_of_integers': [],
+                };
+
 
                 var studentFormData = new FormData();
 
@@ -509,199 +371,133 @@
                     .catch(error => {
                         console.error('There was a problem with the fetch operation:', error);
                     });
-            });
 
 
-
-            const studentData = {
-                'student_enrollment_no': document.querySelector('#enrollment_no').value,
-                'student_provision': document.querySelector('#provision').files[0],
-                'student_degree': document.querySelector('#degree').files[0],
-                'student_admit_card': document.querySelector('#admit_card').files[0],
-                'student_affidevit': document.querySelector('#affidavit').files[0],
-                'student_migrations': document.querySelector('#migration').files[0],
+                var addStudent = document.getElementById("add-student");
+                addStudent.setAttribute("data-dismiss", "modal");
             }
 
-
-            const studentDataForm = new FormData();
-
-            for (const key in studentData) {
-                studentDataForm.append(key, studentData[key]);
-            }
-
-            fetch(studentDataUrl, {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                },
-                body: studentDataForm,
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Response from server:', data);
-                })
-                .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                });
-
-
-            // addStudentPayload = {
-            //     "username": document.querySelector('#enrollment_no').value,
-            //     "password": document.querySelector('#date_of_birth').value,
-            // }
-
-
-            // fetch(addStudent, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //         'Authorization': `Bearer ${token}`
-            //     },
-            //     body: JSON.stringify(addStudentPayload),
-            // })
-            //     .then(response => {
-            //         if (!response.ok) {
-            //             throw new Error('Network response was not ok');
-            //         }
-            //         return response.json();
-            //     })
-            //     .then(data => {
-            //         console.log('Response from server:', data);
-            //     })
-            //     .catch(error => {
-            //         console.error('There was a problem with the fetch operation:', error);
-            //     });
-
-            var addStudent = document.getElementById("add-student");
-            addStudent.setAttribute("data-dismiss", "modal");
-        }
-
-        function filterTable(columnIndex, filterValue) {
-            var table = document.querySelector('.table');
-            var rows = table.getElementsByTagName('tr');
-            for (var i = 1; i < rows.length; i++) {
-                var cells = rows[i].getElementsByTagName('td');
-                var cell = cells[columnIndex];
-                if (cell.textContent.trim() === filterValue || filterValue === "") {
-                    rows[i].style.display = "";
-                } else {
-                    rows[i].style.display = "none";
-                }
-            }
-        }
-
-        var currentPage = 0;
-        var rowsPerPage = 10;
-
-        function showRows() {
-            var table = document.querySelector('.table');
-            var tr = table.getElementsByTagName('tr');
-            var startIndex = currentPage * rowsPerPage + 1;
-            var endIndex = (currentPage + 1) * rowsPerPage + 1;
-            for (var i = 1; i < tr.length; i++) {
-                if (i >= startIndex && i < endIndex) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-
-        function prevPage() {
-            if (currentPage > 0) {
-                currentPage--;
-                showRows();
-                updatePageNumbers();
-            }
-        }
-
-        function nextPage() {
-            var table = document.querySelector('.table');
-            var tr = table.getElementsByTagName('tr');
-            var totalPages = Math.ceil((tr.length - 1) / rowsPerPage);
-            if (currentPage < totalPages - 1) {
-                currentPage++;
-                showRows();
-                updatePageNumbers();
-            }
-        }
-
-        function updatePageNumbers() {
-            var table = document.querySelector('.table');
-            var tr = table.getElementsByTagName('tr');
-            var totalPages = Math.ceil((tr.length - 1) / rowsPerPage);
-            var pageNumbers = document.getElementById("page-numbers");
-            pageNumbers.innerHTML = "";
-
-            var startPage = 0;
-            var endPage = totalPages - 1;
-            if (totalPages > 5) {
-                startPage = Math.max(currentPage - 2, 0);
-                endPage = Math.min(currentPage + 2, totalPages - 1);
-                if (endPage - startPage < 4) {
-                    if (startPage === 0) {
-                        endPage = Math.min(startPage + 4, totalPages - 1);
+            function filterTable(columnIndex, filterValue) {
+                var table = document.querySelector('.table');
+                var rows = table.getElementsByTagName('tr');
+                for (var i = 1; i < rows.length; i++) {
+                    var cells = rows[i].getElementsByTagName('td');
+                    var cell = cells[columnIndex];
+                    if (typeof filterValue !== 'undefined' && filterValue.trim() === cell.textContent.trim() || filterValue === "") {
+                        rows[i].style.display = "";
                     } else {
-                        startPage = Math.max(endPage - 4, 0);
+                        rows[i].style.display = "none";
                     }
                 }
-                if (startPage > 0) {
-                    pageNumbers.appendChild(createPageNumberButton(0));
-                    if (startPage > 1) {
+            }
+
+            var currentPage = 0;
+            var rowsPerPage = 10;
+
+            function showRows() {
+                var table = document.querySelector('.table');
+                var tr = table.getElementsByTagName('tr');
+                var startIndex = currentPage * rowsPerPage + 1;
+                var endIndex = (currentPage + 1) * rowsPerPage + 1;
+                for (var i = 1; i < tr.length; i++) {
+                    if (i >= startIndex && i < endIndex) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+
+            function prevPage() {
+                if (currentPage > 0) {
+                    currentPage--;
+                    showRows();
+                    updatePageNumbers();
+                }
+            }
+
+            function nextPage() {
+                var table = document.querySelector('.table');
+                var tr = table.getElementsByTagName('tr');
+                var totalPages = Math.ceil((tr.length - 1) / rowsPerPage);
+                if (currentPage < totalPages - 1) {
+                    currentPage++;
+                    showRows();
+                    updatePageNumbers();
+                }
+            }
+
+            function updatePageNumbers() {
+                var table = document.querySelector('.table');
+                var tr = table.getElementsByTagName('tr');
+                var totalPages = Math.ceil((tr.length - 1) / rowsPerPage);
+                var pageNumbers = document.getElementById("page-numbers");
+                pageNumbers.innerHTML = "";
+
+                var startPage = 0;
+                var endPage = totalPages - 1;
+                if (totalPages > 5) {
+                    startPage = Math.max(currentPage - 2, 0);
+                    endPage = Math.min(currentPage + 2, totalPages - 1);
+                    if (endPage - startPage < 4) {
+                        if (startPage === 0) {
+                            endPage = Math.min(startPage + 4, totalPages - 1);
+                        } else {
+                            startPage = Math.max(endPage - 4, 0);
+                        }
+                    }
+                    if (startPage > 0) {
+                        pageNumbers.appendChild(createPageNumberButton(0));
+                        if (startPage > 1) {
+                            pageNumbers.appendChild(createEllipsis());
+                        }
+                    }
+                }
+
+                for (var i = startPage; i <= endPage; i++) {
+                    pageNumbers.appendChild(createPageNumberButton(i));
+                }
+
+                if (endPage < totalPages - 1) {
+                    if (endPage < totalPages - 2) {
                         pageNumbers.appendChild(createEllipsis());
                     }
+                    pageNumbers.appendChild(createPageNumberButton(totalPages - 1));
                 }
             }
 
-            for (var i = startPage; i <= endPage; i++) {
-                pageNumbers.appendChild(createPageNumberButton(i));
-            }
-
-            if (endPage < totalPages - 1) {
-                if (endPage < totalPages - 2) {
-                    pageNumbers.appendChild(createEllipsis());
+            function createPageNumberButton(page) {
+                var button = document.createElement("button");
+                button.className = "m-1 btn btn-secondary";
+                button.textContent = page + 1;
+                if (page === currentPage) {
+                    button.classList.add("active");
                 }
-                pageNumbers.appendChild(createPageNumberButton(totalPages - 1));
+                button.onclick = function () {
+                    currentPage = page;
+                    showRows();
+                    updatePageNumbers();
+                };
+                return button;
             }
-        }
 
-        function createPageNumberButton(page) {
-            var button = document.createElement("button");
-            button.className = "m-1 btn btn-secondary";
-            button.textContent = page + 1;
-            if (page === currentPage) {
-                button.classList.add("active");
+            // Function to create an ellipsis element
+            function createEllipsis() {
+                var ellipsis = document.createElement("span");
+                ellipsis.textContent = "...";
+                return ellipsis;
             }
-            button.onclick = function () {
-                currentPage = page;
-                showRows();
-                updatePageNumbers();
-            };
-            return button;
-        }
 
-        // Function to create an ellipsis element
-        function createEllipsis() {
-            var ellipsis = document.createElement("span");
-            ellipsis.textContent = "...";
-            return ellipsis;
-        }
+            showRows();
+            updatePageNumbers();
+        </script>
 
-        showRows();
-        updatePageNumbers();
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-`
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+        `
 </body>
 
 </html>

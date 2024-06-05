@@ -1,263 +1,59 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2024 - 18:15:16
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
 Watching for file changes with StatReloader
-[02/Jun/2024 13:51:00] "GET / HTTP/1.1" 200 14468
-[02/Jun/2024 13:51:01] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.1" 304 0
-[02/Jun/2024 13:51:01] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.1" 304 0
-[02/Jun/2024 13:51:01] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.1" 304 0
-[02/Jun/2024 13:51:01] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.1" 304 0
-[02/Jun/2024 13:51:14] "GET / HTTP/1.1" 200 14468
-[02/Jun/2024 13:51:58] "GET /board_members/ HTTP/1.1" 200 9306
-[02/Jun/2024 13:51:59] "GET /CG_University/media/main_css/board_members.css HTTP/1.1" 200 990
-[02/Jun/2024 13:52:05] "GET / HTTP/1.1" 200 14468
-[02/Jun/2024 20:57:21] code 400, message Bad request version ('À\x13À')
-[02/Jun/2024 20:57:21] You're accessing the development server over HTTPS, but it only supports HTTP.
-[02/Jun/2024 20:57:32] "GET / HTTP/1.1" 200 14468
-[02/Jun/2024 20:57:32,185] - Broken pipe from ('101.32.103.44', 58998)
-[02/Jun/2024 20:58:10] "GET / HTTP/1.1" 200 14468
-[02/Jun/2024 20:58:10] "GET / HTTP/1.1" 200 14468
-[02/Jun/2024 20:58:43] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
-[02/Jun/2024 22:05:06] "GET / HTTP/1.1" 200 14468
-[03/Jun/2024 00:49:04] "GET / HTTP/1.1" 200 14468
-[03/Jun/2024 00:49:04,596] - Broken pipe from ('65.49.1.90', 58147)
-Not Found: /favicon.ico
-[03/Jun/2024 00:49:20] "GET /favicon.ico HTTP/1.1" 404 5381
-Not Found: /http:/api.ipify.org/
-[03/Jun/2024 00:49:23] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
-Not Found: /www.shadowserver.org:443
-[03/Jun/2024 00:49:25] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
-Not Found: /favicon.ico
-[03/Jun/2024 02:07:17] "GET /favicon.ico HTTP/1.1" 404 5381
-[03/Jun/2024 06:32:46] code 400, message Bad request version ('À\x14À')
-[03/Jun/2024 06:32:46] You're accessing the development server over HTTPS, but it only supports HTTP.
-[03/Jun/2024 07:15:47] "GET / HTTP/1.1" 200 14468
-[03/Jun/2024 07:15:47] code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03F¦\x01ñ\x91\x86#\x8f,nû("8¬\x01·\x83\x04')
-[03/Jun/2024 07:15:47] You're accessing the development server over HTTPS, but it only supports HTTP.
-[03/Jun/2024 07:15:47] code 400, message Bad request version ('ÛP\x9cØ\x06¨\x99')
-[03/Jun/2024 07:15:47] You're accessing the development server over HTTPS, but it only supports HTTP.
-[03/Jun/2024 08:01:01] "GET / HTTP/1.1" 200 14468
-[03/Jun/2024 08:13:09] "GET / HTTP/1.1" 200 14468
-[03/Jun/2024 08:18:27] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:18:27] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
-[03/Jun/2024 08:18:28] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 08:18:28] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
-[03/Jun/2024 08:18:28] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
-[03/Jun/2024 08:18:29] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
-[03/Jun/2024 08:18:30] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
-[03/Jun/2024 08:18:30] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
-[03/Jun/2024 08:18:39] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:18:40] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:18:42] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:18:42] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:04] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:04] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
-[03/Jun/2024 08:19:04] "GET /CG_University/media/main_css/style.css HTTP/1.0" 304 0
-[03/Jun/2024 08:19:04] "GET /CG_University/media/images/logo.png HTTP/1.0" 304 0
-[03/Jun/2024 08:19:05] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
-[03/Jun/2024 08:19:05] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
-[03/Jun/2024 08:19:05] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 304 0
-[03/Jun/2024 08:19:05] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
-[03/Jun/2024 08:19:25] "GET / HTTP/1.0" 200 14468
-Not Found: /livereload.js
-Not Found: /.git/config
-[03/Jun/2024 08:19:26] "GET /livereload.js HTTP/1.0" 404 5396
-[03/Jun/2024 08:19:26] "GET /.git/config HTTP/1.0" 404 5390
-Not Found: /livereload.js
-Not Found: /ajax/libs/jquery/3.7.1/jquery.min.js
-[03/Jun/2024 08:19:26] "GET /livereload.js HTTP/1.0" 404 5396
-[03/Jun/2024 08:19:26] "GET /ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5465
-Not Found: /livereload.js
-Not Found: /npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
-[03/Jun/2024 08:19:26] "GET /npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5510
-[03/Jun/2024 08:19:26] "GET /livereload.js HTTP/1.0" 404 5396
-[03/Jun/2024 08:19:28] "GET / HTTP/1.0" 200 14468
-Not Found: /npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
-[03/Jun/2024 08:19:29] "GET /npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5514
-Not Found: /livereload.js
-Not Found: /livereload.js
-[03/Jun/2024 08:19:29] "GET /livereload.js HTTP/1.0" 404 5400
-[03/Jun/2024 08:19:29] "GET /livereload.js HTTP/1.0" 404 5400
-Not Found: /.git/config
-[03/Jun/2024 08:19:29] "GET /.git/config HTTP/1.0" 404 5394
-Not Found: /ajax/libs/jquery/3.7.1/jquery.min.js
-[03/Jun/2024 08:19:29] "GET /ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5469
-Not Found: /livereload.js
-[03/Jun/2024 08:19:29] "GET /livereload.js HTTP/1.0" 404 5400
-[03/Jun/2024 08:19:37] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:38] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 08:19:43] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:45] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:46] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:46] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
-[03/Jun/2024 08:19:48] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:48] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:48] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 08:19:48] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
-[03/Jun/2024 08:19:49] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
-[03/Jun/2024 08:19:50] "GET /director_message/ HTTP/1.0" 200 8313
-[03/Jun/2024 08:19:50] "GET /vision_and_mission/ HTTP/1.0" 200 9239
-[03/Jun/2024 08:19:50] "GET /board_members/ HTTP/1.0" 200 9306
-[03/Jun/2024 08:19:50] "GET /rti/ HTTP/1.0" 200 7619
-[03/Jun/2024 08:19:50] "GET /terms_and_conditions/ HTTP/1.0" 200 8539
-[03/Jun/2024 08:19:50] "GET /login/ HTTP/1.0" 200 4760
-[03/Jun/2024 08:19:50] "GET /courses/ HTTP/1.0" 200 22637
-[03/Jun/2024 08:19:50] "GET /approval/ HTTP/1.0" 200 10741
-[03/Jun/2024 08:19:50] "GET /about/ HTTP/1.0" 200 8150
-[03/Jun/2024 08:19:52] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:52] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:53] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
-Not Found: /.git/config
-[03/Jun/2024 08:19:53] "GET /.git/config HTTP/1.0" 404 5390
-[03/Jun/2024 08:19:53] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
-[03/Jun/2024 08:19:53] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
-[03/Jun/2024 08:19:54] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:54] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:19:56] "GET /courses/ HTTP/1.0" 200 22637
-[03/Jun/2024 08:19:56] "GET /vision_and_mission/ HTTP/1.0" 200 9239
-[03/Jun/2024 08:19:56] "GET /director_message/ HTTP/1.0" 200 8313
-[03/Jun/2024 08:19:56] "GET /board_members/ HTTP/1.0" 200 9306
-[03/Jun/2024 08:19:56] "GET /terms_and_conditions/ HTTP/1.0" 200 8539
-[03/Jun/2024 08:19:56] "GET /rti/ HTTP/1.0" 200 7619
-[03/Jun/2024 08:19:56] "GET /about/ HTTP/1.0" 200 8150
-[03/Jun/2024 08:19:56] "GET /approval/ HTTP/1.0" 200 10741
-[03/Jun/2024 08:19:56] "GET /login/ HTTP/1.0" 200 4760
-[03/Jun/2024 08:20:20] "GET /board_members/ HTTP/1.0" 200 9306
-[03/Jun/2024 08:20:20] "GET /CG_University/media/main_css/board_members.css HTTP/1.0" 200 990
-[03/Jun/2024 08:20:27] "GET /approval/ HTTP/1.0" 200 10741
-[03/Jun/2024 08:20:28] "GET /CG_University/media/main_css/approval.css HTTP/1.0" 200 1382
-[03/Jun/2024 08:20:28] "GET /CG_University/media/images/approval/aicte.png HTTP/1.0" 200 167402
-[03/Jun/2024 08:20:28] "GET /CG_University/media/images/approval/ugc_logo.png HTTP/1.0" 200 96377
-[03/Jun/2024 08:20:28] "GET /CG_University/media/images/approval/pci.png HTTP/1.0" 200 110367
-[03/Jun/2024 08:20:28] "GET /CG_University/media/images/approval/mci.png HTTP/1.0" 200 62695
-[03/Jun/2024 08:20:29] "GET /CG_University/media/images/approval/icar1.png HTTP/1.0" 200 45416
-[03/Jun/2024 08:20:29] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
-[03/Jun/2024 08:20:30] "GET /CG_University/media/images/approval/bci.png HTTP/1.0" 200 116163
-[03/Jun/2024 08:20:32] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:20:33] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
-[03/Jun/2024 08:20:54] code 400, message Bad request version ('À\x14À')
-[03/Jun/2024 08:20:54] You're accessing the development server over HTTPS, but it only supports HTTP.
-[03/Jun/2024 08:21:07] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:22:05] "GET / HTTP/1.0" 200 14468
-Not Found: /.git/config
-[03/Jun/2024 08:22:06] "GET /.git/config HTTP/1.0" 404 5390
-Not Found: /livereload.js
-[03/Jun/2024 08:22:06] "GET /livereload.js HTTP/1.0" 404 5396
-Not Found: /npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
-[03/Jun/2024 08:22:06] "GET /npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5510
-Not Found: /livereload.js
-[03/Jun/2024 08:22:06] "GET /livereload.js HTTP/1.0" 404 5396
-Not Found: /ajax/libs/jquery/3.7.1/jquery.min.js
-Not Found: /livereload.js
-[03/Jun/2024 08:22:06] "GET /ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5465
-[03/Jun/2024 08:22:06] "GET /livereload.js HTTP/1.0" 404 5396
-[03/Jun/2024 08:22:06] "GET / HTTP/1.0" 200 14468
-Not Found: /livereload.js
-[03/Jun/2024 08:22:07] "GET /livereload.js HTTP/1.0" 404 5400
-Not Found: /ajax/libs/jquery/3.7.1/jquery.min.js
-[03/Jun/2024 08:22:07] "GET /ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5469
-Not Found: /livereload.js
-[03/Jun/2024 08:22:07] "GET /livereload.js HTTP/1.0" 404 5400
-Not Found: /livereload.js
-[03/Jun/2024 08:22:07] "GET /livereload.js HTTP/1.0" 404 5400
-Not Found: /.git/config
-[03/Jun/2024 08:22:07] "GET /.git/config HTTP/1.0" 404 5394
-Not Found: /npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
-[03/Jun/2024 08:22:07] "GET /npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5514
-[03/Jun/2024 08:22:32] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:22:57] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:22:58] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
-[03/Jun/2024 08:22:58] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 08:22:59] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
-[03/Jun/2024 08:22:59] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
-[03/Jun/2024 08:22:59] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
-[03/Jun/2024 08:22:59] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
-[03/Jun/2024 08:22:59] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
-[03/Jun/2024 08:25:36] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:29:33] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:29:34] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 08:54:54] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:55:21] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 08:55:26] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 09:03:19] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:03:21] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 09:07:43] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:09:25] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:09:56] "GET /approval/ HTTP/1.0" 200 10741
-[03/Jun/2024 09:13:13] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:13:14] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 09:17:56] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:20:53] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:21:00] "GET / HTTP/1.0" 200 14468
-Not Found: /.git/config
-[03/Jun/2024 09:28:56] "GET /.git/config HTTP/1.0" 404 5390
-Not Found: /.git/config
-[03/Jun/2024 09:28:56] "GET /.git/config HTTP/1.0" 404 5394
-[03/Jun/2024 09:38:00] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:38:12] "GET /approval/ HTTP/1.0" 200 10741
-[03/Jun/2024 09:38:17] "GET /board_members/ HTTP/1.0" 200 9306
-[03/Jun/2024 09:41:47] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:41:58] "GET /approval/ HTTP/1.0" 200 10741
-[03/Jun/2024 09:42:11] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:43:18] "GET /board_members/ HTTP/1.0" 200 9306
-[03/Jun/2024 09:43:23] "GET /approval/ HTTP/1.0" 200 10741
-[03/Jun/2024 09:43:30] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:56:49] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:56:50] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:56:54] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 09:56:54] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
-[03/Jun/2024 09:56:54] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 09:56:54] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
-[03/Jun/2024 09:56:54] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
-[03/Jun/2024 09:56:54] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
-[03/Jun/2024 09:56:54] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
-[03/Jun/2024 09:56:54] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
-[03/Jun/2024 10:50:04] code 400, message Bad request syntax ('\x01\x01æ')
-[03/Jun/2024 10:50:04] "æ" 400 -
-[03/Jun/2024 10:52:54] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 10:53:03] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 10:53:03] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 10:56:29] "GET / HTTP/1.0" 200 14468
-Not Found: /robots.txt
-[03/Jun/2024 11:20:21] "GET /robots.txt HTTP/1.0" 404 5391
-[03/Jun/2024 11:20:24] "GET / HTTP/1.0" 200 14468
-Not Found: /ab2g
-[03/Jun/2024 13:06:07] "GET /ab2g HTTP/1.0" 404 5355
-Not Found: /ab2h
-[03/Jun/2024 13:06:07] "GET /ab2h HTTP/1.0" 404 5355
-Not Found: /alive.php
-[03/Jun/2024 13:06:07] "GET /alive.php HTTP/1.0" 404 5370
-[03/Jun/2024 13:06:07] "GET / HTTP/1.0" 200 14468
-Not Found: /t4
-[03/Jun/2024 13:06:07] "GET /t4 HTTP/1.0" 404 5349
-[03/Jun/2024 13:06:07] "GET / HTTP/1.0" 200 14468
-Not Found: /teorema505
-[03/Jun/2024 13:06:08] "GET /teorema505?t=1 HTTP/1.0" 404 5377
-[03/Jun/2024 13:29:17] "GET / HTTP/1.0" 200 14468
-Not Found: /global-protect/login.esp
-[03/Jun/2024 14:12:07] "GET /global-protect/login.esp HTTP/1.0" 404 5415
-Not Found: /owa/auth/logon.aspx
-[03/Jun/2024 14:26:23] "GET /owa/auth/logon.aspx HTTP/1.0" 404 5400
-[03/Jun/2024 14:27:32] "GET / HTTP/1.0" 200 14468
-Not Found: /aaa9
-[03/Jun/2024 14:27:32] "GET /aaa9 HTTP/1.0" 404 5359
-Not Found: /aab9
-[03/Jun/2024 14:27:33] "GET /aab9 HTTP/1.0" 404 5359
-Not Found: /aaa9
-[03/Jun/2024 14:27:52] "GET /aaa9 HTTP/1.0" 404 5359
-Not Found: /aab9
-[03/Jun/2024 14:27:53] "GET /aab9 HTTP/1.0" 404 5359
-[03/Jun/2024 14:48:58] "HEAD / HTTP/1.0" 200 0
-[03/Jun/2024 15:34:56] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 15:35:49] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 15:35:55] "GET /login/ HTTP/1.0" 200 4760
-[03/Jun/2024 15:35:55] "GET /CG_University/media/main_css/login.css HTTP/1.0" 304 0
-[03/Jun/2024 15:55:03] "GET / HTTP/1.0" 200 14468
-[03/Jun/2024 15:55:04] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
-[03/Jun/2024 15:55:04] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
-[03/Jun/2024 15:55:04] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
-[03/Jun/2024 15:55:04] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
-[03/Jun/2024 15:55:04] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
-[03/Jun/2024 15:55:04] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
-[03/Jun/2024 15:55:04] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
-[03/Jun/2024 15:55:07] "GET /login/ HTTP/1.0" 200 4760
-[03/Jun/2024 15:55:08] "GET /CG_University/media/main_css/login.css HTTP/1.0" 200 2123
-[03/Jun/2024 15:55:15] "GET /cg_api/token/ HTTP/1.1" 200 483
-[03/Jun/2024 15:55:15] "POST /center/ HTTP/1.0" 200 39675
+/home/ubuntu/CG-website-aakash/CG_University/manage.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2024 - 18:15:32
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2024 - 18:15:42
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/manage.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2024 - 18:16:00
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2024 - 18:16:03
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Watching for file changes with StatReloader
+[05/Jun/2024 18:18:48] "GET / HTTP/1.0" 200 14468
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2024 - 18:18:43
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+

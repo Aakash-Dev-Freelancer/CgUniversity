@@ -1,0 +1,158 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        table {
+            font-size: smaller;
+        }
+
+        .required-field-name::after {
+            content: " *";
+            color: red;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    {% include 'main_cg_site/global/nav_bar.html' %}
+
+    <div class="container">
+        <div id="edit_card_{{ student.enrollment_no }}" style="display: block;">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    Personal Details
+                </div>
+                <div class="card-body">
+                    {% csrf_token %}
+                    <input type="hidden" name="enrollment_no" value="{{ student.enrollment_no }}">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                <div class="avatar mx-auto d-flex justify-content-center">
+                                    <img src="{{ student.profile_pic }}" alt="Profile Picture"
+                                        onerror="this.onerror=null;this.src='https://t3.ftcdn.net/jpg/01/87/10/40/360_F_187104027_8i2JbFDBB5jB7R65Ce464yRs4gfNbR3Z.jpg';">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="divider w-100%"></div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="required-field-name" for="enrollment_no">Enrollment No.</label>
+                                <input type="text" class="form-control required-field"
+                                    value="{{ student.enrollment_no }}" readonly id="enrollment_no"
+                                    name="enrollment_no">
+                            </div>
+                            <div class="form-group">
+                                <label class="required-field-name" for="full_name">Full Name</label>
+                                <input type="text" class="form-control required-field" id="full_name" name="full_name"
+                                    value="{{ student.full_name }}" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="required-field-name" for="father_name">Father's Name</label>
+                                <input type="text" class="form-control required-field" id="father_name"
+                                    name="father_name" readonly value="{{ student.father_name }}">
+                            </div>
+                            <div class="form-group">
+                                <label class="required-field-name" for="mother_name">Mother's Name</label>
+                                <input type="text" class="form-control required-field" id="mother_name"
+                                    name="mother_name" readonly value="{{ student.mother_name }}">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="required-field-name" for="date_of_birth">Date of Birth</label>
+                                <input type="date" class="form-control required-field" id="date_of_birth"
+                                    name="date_of_birth" readonly value="{{ student.date_of_birth }}">
+                            </div>
+                            <div class="form-group">
+                                <label class="required-field-name" for="gender">Gender</label>
+                                <input type="text" class="form-control required-field" id="gender" name="gender"
+                                    value="{{ student.gender }}" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="required-field-name" for="category">Category</label>
+                                <input type="text" class="form-control required-field" id="category" name="category"
+                                    value="{{ student.category }}" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label class="required-field-name" for="email">Email</label>
+                                    <input type="email" class="form-control required-field" id="email" name="email"
+                                        value="{{ student.email }}" readonly>
+                                </div>
+                                <label class="required-field-name" for="mobile_number">Mobile Number</label>
+                                <input type="tel" class="form-control required-field" id="mobile_number"
+                                    name="mobile_number" value="{{ student.mobile_number }}" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="required-field-name" for="address">Address</label>
+                                <textarea class="form-control required-field" id="address" name="address" rows="3"
+                                    readonly>{{ student.address }}</textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Preview Image</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="{{ student_data.student_provision.url }}" class="img-fluid" alt="Preview Image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'main_cg_site/global/footer.html' %}
+
+</body>
+
+</html>

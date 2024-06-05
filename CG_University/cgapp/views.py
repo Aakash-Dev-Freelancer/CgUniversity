@@ -12,8 +12,6 @@ from django.http import Http404
 from django.shortcuts import get_object_or_404
 from django.core.exceptions import ObjectDoesNotExist
 
-
-
 from django.conf import settings
 
 from .serializers import StudentSerializer, StudentLoginSerializer, StudentDataSerializer, AdminLoginSerializer
@@ -43,6 +41,9 @@ def get_tokens_for_user(request):
                 print(f"Found center: {user}")
             except ObjectDoesNotExist:
                 return Response({'error': 'Center user not found'}, status=status.HTTP_404_NOT_FOUND)
+        elif user_type == 'admin':
+            print(f"Username: {username}")
+            user = AdminLogin.objects.get(username=username)
         else:
             return Response({'error': 'Invalid user type'}, status=status.HTTP_400_BAD_REQUEST)
         
@@ -224,11 +225,6 @@ class StudentDataListCreateAPIView(generics.ListCreateAPIView):
             serializer.save()
             return Response({"message": "Student data created successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-    
-    
-    
-    
 
 class StudentDataRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = StudentData.objects.all()
@@ -271,11 +267,6 @@ class StudentDataRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIV
         except Exception as e:
             return Response({"message": f"An error occurred: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
-        
-        
-        
-        
-    
 class MarkSheetListCreateView(generics.ListCreateAPIView):
     queryset = MarkSheets.objects.all()
     serializer_class = MarkSheetSerializer

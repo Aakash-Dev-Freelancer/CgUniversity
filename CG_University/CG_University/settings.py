@@ -40,7 +40,7 @@ ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in']
 
 CORS_ALLOWED_ORIGINS = [
-    'http://54.242.171.194:8002',
+    'http://35.175.232.217:8001',
     "https://cginternationaluniversity.in",
 ]
 
@@ -65,7 +65,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework_simplejwt',
     'cgapp',
-
 ]
 
 REST_FRAMEWORK = {
@@ -87,7 +86,6 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_REFRESH_LIFETIME_LATE_USER': timedelta(days=1),
     'SLIDING_TOKEN_LIFETIME_LATE_USER': timedelta(days=30),
 }
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

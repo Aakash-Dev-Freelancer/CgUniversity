@@ -410,6 +410,8 @@
                 })
                 .then(data => {
                     console.log('Success:', data);
+                    window.location.reload();
+
                 })
                 .catch(error => {
                     console.error('Error:', error);
@@ -448,6 +450,8 @@
                 })
                 .then(data => {
                     console.log('Success:', data);
+                    window.location.reload();
+
                 })
                 .catch(error => {
                     console.error('Error:', error);
@@ -471,7 +475,6 @@
                 'file': file == undefined ? currentFile : file,
             };
 
-            console.log(currentFile);
 
             const marksheetData = new FormData();
 
@@ -489,6 +492,7 @@
                 .then(response => response.json())
                 .then(data => {
                     console.log('Success:', data);
+                    window.location.reload();
                 })
                 .catch((error) => {
                     console.error('Error:', error);

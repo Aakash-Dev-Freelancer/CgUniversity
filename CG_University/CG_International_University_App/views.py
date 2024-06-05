@@ -31,11 +31,14 @@ def admin(request):
         user_type = request.POST.get('login-type')
         
         api_url = f"{API_URL}login/"
-        token_url = f"{API_URL}api/token/"
+        token_url = f"{API_URL}token/"
 
-        token_payload = {"username": username, "password": password}
-        token_response = requests.post(token_url, data=token_payload).json()
-        access_token = token_response.get('access')
+        token_payload = {"username": username, "password": password, "user_type": user_type}
+        print("Token Payload :: ", token_payload)
+        token_response = requests.get(token_url, data=token_payload)
+        token_json = token_response.json()
+        access_token = token_json.get('access')
+        print("Access Token :: ", access_token)
         csrf_token = request.POST.get('csrfmiddlewaretoken')
 
         payload = {"user_type": user_type, "username": username, "password": password, 'X-CSRFToken': csrf_token}
@@ -123,6 +126,40 @@ def editStudent(request):
         print(f"Error: {e}")
         error_message = "An error occurred. Please try again later."
         return render(request, 'admin_cg_site/admin/edit_student.html', {'error_message': error_message})
+    
+    
+@csrf_protect
+def viewStudent(request):
+    print('---------------- View Student Function View ---------------- ')
+    API_URL = settings.API_URL
+    BASE_URL = settings.BASE_URL
+
+    try:
+        student_id = request.GET.get('id')
+        token = request.GET.get('token')
+
+        student_url = f"{API_URL}students/{student_id}/"
+        marksheet_url = f"{API_URL}marksheets/{student_id}/"
+        student_data_url = f"{API_URL}student-data/{student_id}/"
+
+        headers = {"Authorization": f"Bearer {token}"}
+
+        student_response = requests.get(student_url, headers=headers)
+        print(student_response.json())
+        
+        student_response.raise_for_status()
+
+        return render(request, 'center_cg_site/templates/view_student.html', {
+            'student': student_response.json(),
+            'is_logged_in': True,
+            'base_url': BASE_URL,
+            'api_url': API_URL
+        })
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error: {e}")
+        error_message = "An error occurred. Please try again later."
+        return render(request, 'center_cg_site/tamplates/view_student.html', {'error_message': error_message})
 
 
 def home(request):
@@ -153,13 +190,13 @@ def student(request):
         print("Token URL :: ", token_url)
 
         try:
-            token_response = requests.get(token_url, data={"username": enrollment_no, "password": password, "user_type": user_type})
+            payload = {"user_type": user_type, "username": enrollment_no, "password": password,}
+            token_response = requests.get(token_url, data=payload)
             token_response.raise_for_status()
             token_json = token_response.json()
             access_token = token_json.get('access')
             print("Access Token :: ", access_token)
             
-            payload = {"user_type": user_type, "username": enrollment_no, "password": password,}
             print("Payload :: ", payload)
             headers = {"Authorization": f"Bearer {access_token}", "X-CSRFToken": csrf_token}
 
@@ -224,6 +261,7 @@ def center(request):
         try:
             center = Center.objects.get(username=username)
             print("Center :: ", center)
+            print("Token URL :: ", token_url)
             token_response = requests.get(token_url, data={"username": username, "password": password, "user_type": user_type})
             token_response.raise_for_status()
             token_json = token_response.json()
@@ -235,17 +273,17 @@ def center(request):
                 studentDataList = []
                 students = Student.objects.filter(center_id=center.id)
                 for student in students:
-                    stu_data = StudentData.objects.get(student_enrollment_no=student.enrollment_no)
-                    stu_marksheets = MarkSheets.objects.filter(student_enrollment_no=student.enrollment_no)
+                    # stu_data = StudentData.objects.get(student_enrollment_no=student.enrollment_no)
+                    # stu_marksheets = MarkSheets.objects.filter(student_enrollment_no=student.enrollment_no)
                     
-                    studentMarksheetsSerializer = MarkSheetSerializer(stu_marksheets, many=True)
-                    studentDataSerializer = StudentSerializer(student)
-                    studentSerializer = StudentDataSerializer(stu_data)
-
+                    # studentMarksheetsSerializer = M÷arkSheetSerializer(stu_marksheets, many=True)
+                    studentSerializer = StudentSerializer(student)
+                    # studentSerializer = StudentDataSerializer(stu_data)
+            
                     studentDataList.append({
-                        'student_personal_info': studentDataSerializer.data,
-                        'student_data': studentSerializer.data,
-                        'student_marksheets': studentMarksheetsSerializer.data,
+                        'student_personal_info': studentSerializer.data,
+                        # 'student_data': studentSerializer.data,
+                        # 'student_marksheets': studentMarksheetsSerializer.data,
                     })
                 
                 return render(request, 'center_cg_site/home/center.html', {
