@@ -38,6 +38,11 @@
             position: relative;
         }
 
+        .required-field-name::after {
+            content: " *";
+            color: red;
+        }
+
         .add-button {
             position: absolute;
             top: 10px;
@@ -73,7 +78,8 @@
                 <tr>
                     <th style="width: 200px;">
                         Enrollment No.
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(0, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(0, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students|dictsort:"enrollment_no" %}
                             <option>{{ data.enrollment_no }}</option>
@@ -89,7 +95,8 @@
                         </select>
                     </th>
                     <th>Father Name
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(2, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(2, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.father_name }}</option>
@@ -97,7 +104,8 @@
                         </select>
                     </th>
                     <th>Mother Name
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(3, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(3, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.mother_name }}</option>
@@ -105,14 +113,16 @@
                         </select>
                     </th>
                     <th>Gender
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(4, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(4, this.value)">
                             <option value="">Filter</option>
                             <option>Male</option>
                             <option>Female</option>
                         </select>
                     </th>
                     <th>DOB
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(5, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(5, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.date_of_birth }}</option>
@@ -120,7 +130,8 @@
                         </select>
                     </th>
                     <th>Category
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(6, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(6, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.category }}</option>
@@ -128,7 +139,8 @@
                         </select>
                     </th>
                     <th>Email
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(7, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(7, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.email }}</option>
@@ -136,7 +148,8 @@
                         </select>
                     </th>
                     <th>Mobile No.
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(8, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(8, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.mobile_number }}</option>
@@ -144,7 +157,8 @@
                         </select>
                     </th>
                     <th>Address
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(9, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(9, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.address }}</option>
@@ -214,50 +228,56 @@
                     <hr class="my-4">
                     <div class="row">
                         <div class="form-group">
-                            <label for="profile_pic">Profile Pic Upload</label>
-                            <input type="file" class="form-control-file" id="profile_pic" name="profile_pic">
+                            <label class="required-field-name" for="profile_pic">Profile Pic Upload</label>
+                            <input type="file" class="form-control-file required-field" id="profile_pic"
+                                name="profile_pic">
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="full_name">Full Name</label>
-                                <input type="text" class="form-control" id="full_name" name="full_name">
+                                <label class="required-field-name" for="full_name">Full Name</label>
+                                <input type="text" class="form-control required-field" id="full_name" name="full_name">
                             </div>
                             <div class="form-group">
-                                <label for="father_name">Father's Name</label>
-                                <input type="text" class="form-control" id="father_name" name="father_name">
+                                <label class="required-field-name" for="father_name">Father's Name</label>
+                                <input type="text" class="form-control required-field" id="father_name"
+                                    name="father_name">
                             </div>
                             <div class="form-group">
-                                <label for="mother_name">Mother's Name</label>
-                                <input type="text" class="form-control" id="mother_name" name="mother_name">
+                                <label class="required-field-name" for="mother_name">Mother's Name</label>
+                                <input type="text" class="form-control required-field" id="mother_name"
+                                    name="mother_name">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="date_of_birth">Date of Birth</label>
-                                <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+                                <label class="required-field-name" for="date_of_birth">Date of Birth</label>
+                                <input type="date" class="form-control required-field" id="date_of_birth"
+                                    name="date_of_birth">
                             </div>
                             <div class="form-group">
-                                <label for="category">Category</label>
-                                <input type="text" class="form-control" id="category" name="category">
+                                <label class="required-field-name" for="category">Category</label>
+                                <input type="text" class="form-control required-field" id="category" name="category">
                             </div>
                             <div class="form-group">
-                                <label for="gender">Gender</label>
-                                <input type="text" class="form-control" id="gender" name="gender">
+                                <label class="required-field-name" for="gender">Gender</label>
+                                <input type="text" class="form-control required-field" id="gender" name="gender">
                             </div>
 
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email">
+                                <label class="required-field-name" for="email">Email</label>
+                                <input type="email" class="form-control required-field" id="email" name="email">
                             </div>
                             <div class="form-group">
-                                <label for="mobile_number">Mobile Number</label>
-                                <input type="tel" class="form-control" id="mobile_number" name="mobile_number">
+                                <label class="required-field-name" for="mobile_number">Mobile Number</label>
+                                <input type="tel" class="form-control required-field required-field" id="mobile_number"
+                                    name="mobile_number">
                             </div>
                             <div class="form-group">
-                                <label for="address">Address</label>
-                                <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                                <label class="required-field-name" for="address">Address</label>
+                                <textarea class="form-control required-field" id="address" name="address"
+                                    rows="3"></textarea>
                             </div>
 
                         </div>
@@ -267,12 +287,13 @@
                         <h4>Login Credentials</h4>
                         <hr class="my-4">
                         <div class="form-group">
-                            <label for="enrollment_no">Enrollment No.</label>
-                            <input type="text" class="form-control" id="enrollment_no" name="enrollment_no">
+                            <label class="required-field-name" for="enrollment_no">Enrollment No.</label>
+                            <input type="text" class="form-control required-field" id="enrollment_no"
+                                name="enrollment_no">
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="text" class="form-control" id="password" name="password">
+                            <label class="required-field-name" for="password">Password</label>
+                            <input type="text" class="form-control required-field" id="password" name="password">
                         </div>
                     </div>
                     <hr class="my-4">
@@ -352,32 +373,32 @@
             newMarkSheetDiv.innerHTML = `
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="session">Session</label>
-                    <input type="text" class="form-control" id="session" name="session" placeholder="Enter Session">
+                    <label class="required-field-name" for="session">Session</label>
+                    <input type="text" class="form-control required-field" id="session" name="session" placeholder="Enter Session">
                 </div>
                 <div class="form-group">
-                    <label for="semester">Semester</label>
-                    <input type="text" class="form-control" id="semester" name="semester" placeholder="Enter Semester">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label for="sgpa">SGPA</label>
-                    <input type="text" class="form-control" id="sgpa" name="sgpa" placeholder="Enter SGPA">
-                </div>
-                <div class="form-group">
-                    <label for="status">Status</label>
-                    <input type="text" class="form-control" id="status" name="status" placeholder="Enter Status">
+                    <label class="required-field-name" for="semester">Semester</label>
+                    <input type="text" class="form-control required-field" id="semester" name="semester" placeholder="Enter Semester">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="result">Result</label>
-                    <input type="text" class="form-control" id="result" name="result" placeholder="Enter Result">
+                    <label class="required-field-name" for="sgpa">SGPA</label>
+                    <input type="text" class="form-control required-field" id="sgpa" name="sgpa" placeholder="Enter SGPA">
+                </div>
+                <div class="form-group">
+                    <label class="required-field-name" for="status">Status</label>
+                    <input type="text" class="form-control required-field" id="status" name="status" placeholder="Enter Status">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="required-field-name" for="result">Result</label>
+                    <input type="text" class="form-control required-field" id="result" name="result" placeholder="Enter Result">
                 </div>
                 <div class="form-group d-block">
-                    <label for="file">Marksheet Upload</label>
-                    <input type="file" class="form-control-file" id="file" name="marksheet">
+                    <label class="required-field-name" for="file">Marksheet Upload</label>
+                    <input type="file" class="form-control-file required-field" id="file" name="marksheet">
                 </div>
 
             </div>
@@ -389,13 +410,35 @@
             // </div>
             // Append the new marksheet div to the marksheetList
             marksheetList.appendChild(newMarkSheetDiv);
-
         }
 
-
-
         function extractAndDisplayData() {
+
+            // var requiredFields = document.querySelectorAll(".required-field");
+            // var reversedFields = Array.from(requiredFields).reverse();
+
+            // // Initialize variables to track empty fields and formatted field name
+            // var isEmpty = false;
+            // var capitalized = "";
+
+            // // Loop through each field to check if it's empty
+            // reversedFields.forEach(function (field) {
+            //     if (field.value.trim() === "") {
+            //         isEmpty = true;
+            //         let emptyField = field.name;
+            //         console.log(emptyField);
+            //         capitalized = emptyField.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
+            //    } 
+            // });
+
+            // if (isEmpty) {
+            //     alert("Required Field is empty: " + capitalized);
+
+            //     return;
+            // }
+
             var studentData = {
+                "center_id": 3,
                 "enrollment_no": document.querySelector('#enrollment_no').value,
                 "profile_pic": document.querySelector('#profile_pic').files[0],
                 "full_name": document.querySelector('#full_name').value,
@@ -482,20 +525,20 @@
                     console.error('There was a problem with the fetch operation:', error);
                 });
 
-            const student_enrollment_no = document.querySelector('#enrollment_no').value;
-            const student_provision = document.querySelector('#provision').files[0];
-            const student_admit_card = document.querySelector('#admit_card').files[0];
-            const student_affidevit = document.querySelector('#affidevit').files[0];
-            const student_migrations = document.querySelector('#migration').files[0];
+            var studentDoc = {
+                "student_enrollment_no": document.querySelector('#enrollment_no').value,
+                "student_provision": document.querySelector('#provision').files[0],
+                "student_admit_card": document.querySelector('#admit_card').files[0],
+                "student_affidevit": document.querySelector('#affidevit').files[0],
+                "student_migrations": document.querySelector('#migration').files[0],
+            }
 
 
             const formDetails = new FormData();
 
-            formDetails.append('student_enrollment_no', student_enrollment_no);
-            formDetails.append('student_provision', student_provision);
-            formDetails.append('student_admit_card', student_admit_card);
-            formDetails.append('student_affidevit', student_affidevit);
-            formDetails.append('student_migrations', student_migrations);
+            for (const key in studentDoc) {
+                formDetails.append(key, studentDoc[key]);
+            }
 
             fetch(studentDataUrl, {
                 method: 'POST',
@@ -517,12 +560,10 @@
                     console.error('There was a problem with the fetch operation:', error);
                 });
 
-
             addStudentPayload = {
                 "username": document.querySelector('#enrollment_no').value,
                 "password": document.querySelector('#password').value,
             }
-
 
             fetch(addStudent, {
                 method: 'POST',
@@ -544,18 +585,13 @@
                 .catch(error => {
                     console.error('There was a problem with the fetch operation:', error);
                 });
-
-
-
         }
-
 
         function removeMarkSheet(button) {
             var marksheetDiv = button.parentElement.parentElement;
             marksheetCounter--;
             marksheetDiv.remove();
         }
-
 
         function filterTable(columnIndex, filterValue) {
             var table = document.querySelector('.table');
@@ -672,7 +708,6 @@
             ellipsis.textContent = "...";
             return ellipsis;
         }
-
 
         // Initial call to show rows for the first page and update page numbers
         showRows();

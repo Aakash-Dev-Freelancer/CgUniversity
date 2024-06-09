@@ -207,6 +207,7 @@ def student(request):
             if response.status_code == 200:
                 student_info_dict = response.json()
                 student_info = StudentInformation.from_dict(student_info_dict)
+                print("Student Info :: ", student_info)
                 student_personal_info = student_info.student_info.student_personal_info
                 student_marksheets = student_info.student_info.student_marksheets
                 student_data = student_info.student_info.student_data

@@ -57,3 +57,2364 @@ Django version 5.0.4, using settings 'CG_University.settings'
 Starting development server at http://0.0.0.0:8001/
 Quit the server with CONTROL-C.
 
+Watching for file changes with StatReloader
+[05/Jun/2024 18:20:34] "GET / HTTP/1.0" 200 14468
+[05/Jun/2024 18:20:40] "GET /login/ HTTP/1.0" 200 4760
+Forbidden (CSRF cookie not set.): /
+[05/Jun/2024 18:24:24] "POST / HTTP/1.1" 403 2928
+Forbidden (CSRF cookie not set.): /
+[05/Jun/2024 18:24:35] "POST / HTTP/1.1" 403 2928
+[05/Jun/2024 18:26:22] "GET / HTTP/1.0" 200 14468
+Not Found: /livereload.js
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+Not Found: /cdn.js
+[05/Jun/2024 18:26:38] "GET /livereload.js HTTP/1.0" 404 5577
+[05/Jun/2024 18:26:38] "GET //cdn.js HTTP/1.0" 404 5556
+[05/Jun/2024 18:26:38] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5709
+Not Found: /dist/js/bootstrap.bundle.min.js
+[05/Jun/2024 18:26:38] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5631
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[05/Jun/2024 18:26:55] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5709
+Not Found: /cdn.js
+[05/Jun/2024 18:26:57] "GET //cdn.js HTTP/1.0" 404 5556
+Not Found: /dist/js/bootstrap.bundle.min.js
+[05/Jun/2024 18:26:57] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5631
+Not Found: /livereload.js
+[05/Jun/2024 18:26:59] "GET /livereload.js HTTP/1.0" 404 5577
+Not Found: /cdn.js
+[05/Jun/2024 18:27:08] "GET //cdn.js HTTP/1.0" 404 5556
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+Not Found: /livereload.js
+[05/Jun/2024 18:27:08] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5709
+[05/Jun/2024 18:27:08] "GET /livereload.js HTTP/1.0" 404 5577
+Not Found: /dist/js/bootstrap.bundle.min.js
+[05/Jun/2024 18:27:08] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5631
+Not Found: /livereload.js
+[05/Jun/2024 18:27:24] "GET /livereload.js HTTP/1.0" 404 5577
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+Not Found: /cdn.js
+[05/Jun/2024 18:27:24] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5709
+[05/Jun/2024 18:27:24] "GET //cdn.js HTTP/1.0" 404 5556
+Not Found: /dist/js/bootstrap.bundle.min.js
+[05/Jun/2024 18:27:24] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5631
+[05/Jun/2024 18:27:41] "GET / HTTP/1.1" 200 14468
+[05/Jun/2024 18:27:50] "GET / HTTP/1.0" 200 14468
+[05/Jun/2024 18:27:50] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[05/Jun/2024 18:27:50] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[05/Jun/2024 18:27:50] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[05/Jun/2024 18:27:50] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[05/Jun/2024 18:27:50] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[05/Jun/2024 18:27:50] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[05/Jun/2024 18:27:50] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+Not Found: /ab2g
+[05/Jun/2024 18:33:42] "GET /ab2g HTTP/1.0" 404 5536
+Not Found: /ab2h
+[05/Jun/2024 18:33:42] "GET /ab2h HTTP/1.0" 404 5536
+Not Found: /alive.php
+[05/Jun/2024 18:33:43] "GET /alive.php HTTP/1.0" 404 5551
+[05/Jun/2024 18:33:45] "GET / HTTP/1.0" 200 14468
+Not Found: /t4
+[05/Jun/2024 18:33:46] "GET /t4 HTTP/1.0" 404 5530
+[05/Jun/2024 18:33:47] "GET / HTTP/1.0" 200 14468
+Not Found: /teorema505
+[05/Jun/2024 18:33:47] "GET /teorema505?t=1 HTTP/1.0" 404 5558
+[05/Jun/2024 19:38:44] "GET / HTTP/1.0" 200 14468
+Not Found: /dist/js/bootstrap.bundle.min.js
+[05/Jun/2024 19:38:56] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5617
+Not Found: /cdn.js
+[05/Jun/2024 19:38:56] "GET //cdn.js HTTP/1.0" 404 5542
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[05/Jun/2024 19:38:56] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5695
+Not Found: /livereload.js
+[05/Jun/2024 19:38:56] "GET /livereload.js HTTP/1.0" 404 5563
+Not Found: /cdn.js
+[05/Jun/2024 19:39:34] "GET //cdn.js HTTP/1.0" 404 5542
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[05/Jun/2024 19:39:34] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5695
+Not Found: /dist/js/bootstrap.bundle.min.js
+[05/Jun/2024 19:39:34] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5617
+Not Found: /livereload.js
+[05/Jun/2024 19:39:34] "GET /livereload.js HTTP/1.0" 404 5563
+Not Found: /dist/js/bootstrap.bundle.min.js
+[05/Jun/2024 19:40:08] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5617
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[05/Jun/2024 19:40:08] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5695
+Not Found: /cdn.js
+Not Found: /livereload.js
+[05/Jun/2024 19:40:08] "GET //cdn.js HTTP/1.0" 404 5542
+[05/Jun/2024 19:40:08] "GET /livereload.js HTTP/1.0" 404 5563
+[05/Jun/2024 20:02:49] "GET / HTTP/1.0" 200 14468
+[05/Jun/2024 20:47:49] "GET / HTTP/1.0" 200 14468
+Not Found: /cdn.js
+[05/Jun/2024 20:48:09] "GET //cdn.js HTTP/1.0" 404 5542
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[05/Jun/2024 20:48:09] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5695
+Not Found: /dist/js/bootstrap.bundle.min.js
+[05/Jun/2024 20:48:09] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5617
+Not Found: /livereload.js
+[05/Jun/2024 20:48:10] "GET /livereload.js HTTP/1.0" 404 5563
+Not Found: /version
+[05/Jun/2024 21:25:50] "GET /version HTTP/1.0" 404 5545
+[05/Jun/2024 21:48:03] "GET / HTTP/1.0" 200 14468
+[05/Jun/2024 21:48:16] "GET / HTTP/1.0" 200 14468
+[05/Jun/2024 21:48:22] "GET / HTTP/1.0" 200 14468
+[05/Jun/2024 21:48:22] "GET / HTTP/1.0" 200 14468
+[05/Jun/2024 21:48:23] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[05/Jun/2024 21:48:28] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[05/Jun/2024 21:58:58] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[05/Jun/2024 22:22:15] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[05/Jun/2024 22:22:15] "POST / HTTP/1.0" 403 2928
+[05/Jun/2024 22:25:22,955] - Broken pipe from ('167.94.145.103', 49728)
+[05/Jun/2024 22:25:26] "GET / HTTP/1.1" 200 14468
+[05/Jun/2024 22:25:26,143] - Broken pipe from ('167.94.145.103', 44514)
+[05/Jun/2024 22:25:29] "GET / HTTP/1.1" 200 14468
+[05/Jun/2024 22:25:29] code 505, message Invalid HTTP version (2.0)
+[05/Jun/2024 22:25:29] "PRI * HTTP/2.0" 505 -
+[05/Jun/2024 22:25:29] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+Not Found: /favicon.ico
+[05/Jun/2024 22:25:30] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /api/.git/config
+[05/Jun/2024 22:31:49] "GET /api/.git/config HTTP/1.0" 404 5583
+[05/Jun/2024 22:34:48] code 400, message Bad request version ('À\x13À')
+[05/Jun/2024 22:34:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[05/Jun/2024 22:34:48] code 400, message Bad request version ('À(À$À\x14À')
+[05/Jun/2024 22:34:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[05/Jun/2024 22:37:07] "GET / HTTP/1.0" 200 14468
+[05/Jun/2024 22:37:07] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[05/Jun/2024 22:37:07] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[05/Jun/2024 22:37:07] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[05/Jun/2024 22:37:07] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[05/Jun/2024 22:37:07] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[05/Jun/2024 22:37:07] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[05/Jun/2024 22:37:07] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[05/Jun/2024 23:04:10] code 400, message Bad request version ('À\x13À')
+[05/Jun/2024 23:04:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[05/Jun/2024 23:04:10] code 400, message Bad request version ('À(À$À\x14À')
+[05/Jun/2024 23:04:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[05/Jun/2024 23:41:31] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[05/Jun/2024 23:43:16] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[05/Jun/2024 23:43:16] "POST / HTTP/1.0" 403 2928
+Not Found: /api/.git/config
+[06/Jun/2024 00:00:19] "GET /api/.git/config HTTP/1.0" 404 5587
+Not Found: /robots.txt
+[06/Jun/2024 01:00:08] "GET /robots.txt HTTP/1.0" 404 5572
+[06/Jun/2024 01:00:16] "GET / HTTP/1.0" 200 14468
+Not Found: /index.jsp
+[06/Jun/2024 01:53:04] "GET /index.jsp HTTP/1.0" 404 5551
+Forbidden (CSRF cookie not set.): /
+[06/Jun/2024 02:16:04] "POST / HTTP/1.0" 403 2928
+[06/Jun/2024 02:34:47,422] - Broken pipe from ('206.168.34.42', 56662)
+[06/Jun/2024 02:34:50] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 02:34:50,511] - Broken pipe from ('206.168.34.42', 56682)
+[06/Jun/2024 02:34:53] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 02:34:53] code 505, message Invalid HTTP version (2.0)
+[06/Jun/2024 02:34:53] "PRI * HTTP/2.0" 505 -
+[06/Jun/2024 02:34:53] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+Not Found: /favicon.ico
+[06/Jun/2024 02:34:53] "GET /favicon.ico HTTP/1.1" 404 5562
+[06/Jun/2024 02:50:58] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 02:50:58,576] - Broken pipe from ('64.62.197.239', 31219)
+Not Found: /favicon.ico
+[06/Jun/2024 02:51:15] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /http:/api.ipify.org/
+[06/Jun/2024 02:51:18] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[06/Jun/2024 02:51:20] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+[06/Jun/2024 03:01:33] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 03:18:07] "GET / HTTP/1.0" 200 14468
+Not Found: /webui/
+[06/Jun/2024 03:21:28] "GET /webui/ HTTP/1.0" 404 5542
+[06/Jun/2024 03:26:05] "GET / HTTP/1.0" 200 14468
+Not Found: /geoserver/web/
+[06/Jun/2024 03:29:00] "GET /geoserver/web/ HTTP/1.0" 404 5566
+[06/Jun/2024 03:29:48] "GET / HTTP/1.1" 200 14468
+Not Found: /.git/config
+[06/Jun/2024 03:29:57] "GET /.git/config HTTP/1.0" 404 5557
+[06/Jun/2024 04:35:39] code 400, message Bad request version ('À\x14À')
+[06/Jun/2024 04:35:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Jun/2024 04:35:40] code 400, message Bad request version ('À\x14À')
+[06/Jun/2024 04:35:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Jun/2024 04:35:40] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 04:35:41] code 400, message Bad request version ('À\x14À')
+[06/Jun/2024 04:35:41] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Jun/2024 04:35:42] "GET /login HTTP/1.1" 301 0
+[06/Jun/2024 04:50:02] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[06/Jun/2024 04:58:42] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[06/Jun/2024 04:58:42] "POST / HTTP/1.0" 403 2928
+[06/Jun/2024 05:14:25] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 05:18:28] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 05:18:28] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[06/Jun/2024 05:18:28] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[06/Jun/2024 05:18:28] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[06/Jun/2024 05:18:29] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[06/Jun/2024 05:18:29] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[06/Jun/2024 05:18:30] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[06/Jun/2024 05:18:30] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[06/Jun/2024 05:18:34] "GET /login/ HTTP/1.0" 200 4760
+[06/Jun/2024 05:18:35] "GET /CG_University/media/main_css/login.css HTTP/1.0" 200 2123
+[06/Jun/2024 05:18:42] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 05:40:33] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 06:02:24] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[06/Jun/2024 06:02:24] "    c                           " 400 -
+[06/Jun/2024 07:07:04] code 400, message Bad request version ('À\x14À')
+[06/Jun/2024 07:07:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.env
+[06/Jun/2024 07:29:09] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[06/Jun/2024 07:29:10] "POST / HTTP/1.0" 403 2928
+[06/Jun/2024 07:34:51] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 07:47:08] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 07:47:17] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 07:47:18] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[06/Jun/2024 08:08:31] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 08:08:32] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[06/Jun/2024 08:08:32] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[06/Jun/2024 08:08:32] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[06/Jun/2024 08:08:33] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[06/Jun/2024 08:08:33] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[06/Jun/2024 08:08:34] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[06/Jun/2024 08:10:49] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 09:02:07] code 400, message Bad request version ('À\x13À')
+[06/Jun/2024 09:02:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Jun/2024 09:02:07] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03hÖ'\x84'ø1p}ÿµ\x97Ñ8\x19(%\x01î\x8cX\x13Úµå|/hÅ\\.¤\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+[06/Jun/2024 09:02:07] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.git/config
+[06/Jun/2024 09:36:10] "GET /.git/config HTTP/1.0" 404 5557
+[06/Jun/2024 10:16:47] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 10:16:51] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 10:16:51] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[06/Jun/2024 10:16:51] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[06/Jun/2024 10:16:51] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[06/Jun/2024 10:16:51] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[06/Jun/2024 10:16:51] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[06/Jun/2024 10:16:51] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[06/Jun/2024 10:16:51] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[06/Jun/2024 11:23:12] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 11:23:52] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 11:23:54] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[06/Jun/2024 11:24:35] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 11:24:36] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 11:24:41] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[06/Jun/2024 12:11:44] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x9d\x83gÒý.\x0f2Z~\x13\x1aÞÌ\x96\x8eÙ²l>ù!,3ñØvÏÕ0*\x9f\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[06/Jun/2024 12:11:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /app/.git/config
+[06/Jun/2024 12:14:36] "GET /app/.git/config HTTP/1.0" 404 5597
+Not Found: /.env
+[06/Jun/2024 12:55:51] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[06/Jun/2024 12:55:51] "POST / HTTP/1.0" 403 2928
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5678
+Not Found: /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5666
+Not Found: /vendor/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5654
+Not Found: /vendor/phpunit/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5642
+Not Found: /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.0" 404 5663
+Not Found: /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5699
+Not Found: /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5657
+Not Found: /phpunit/phpunit/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5645
+Not Found: /phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5633
+Not Found: /phpunit/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5621
+Not Found: /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5669
+Not Found: /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5657
+Not Found: /lib/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5645
+Not Found: /lib/phpunit/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5633
+Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5702
+Not Found: /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5687
+Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:36] "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5696
+Not Found: /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5687
+Not Found: /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5696
+Not Found: /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5702
+Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+[06/Jun/2024 13:02:37] "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 302 0
+Not Found: /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5699
+Not Found: /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5729
+Not Found: /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5696
+Not Found: /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5699
+Not Found: /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[06/Jun/2024 13:02:37] "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /index.php
+[06/Jun/2024 13:02:37] "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0" 404 5664
+Not Found: /public/index.php
+[06/Jun/2024 13:02:37] "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0" 404 5685
+Not Found: /index.php
+[06/Jun/2024 13:02:37] "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.0" 404 5681
+Not Found: /index.php
+[06/Jun/2024 13:02:37] "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.0" 404 5595
+[06/Jun/2024 13:06:29] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 13:06:29,591] - Broken pipe from ('65.49.20.108', 63261)
+Not Found: /favicon.ico
+[06/Jun/2024 13:07:07] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /http:/api.ipify.org/
+[06/Jun/2024 13:07:29] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[06/Jun/2024 13:07:52] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+Not Found: /app/.git/config
+[06/Jun/2024 14:01:50] "GET /app/.git/config HTTP/1.0" 404 5583
+[06/Jun/2024 14:26:07] "GET / HTTP/1.0" 200 14468
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[06/Jun/2024 14:26:26] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5695
+Not Found: /dist/js/bootstrap.bundle.min.js
+[06/Jun/2024 14:26:26] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5617
+Not Found: /livereload.js
+[06/Jun/2024 14:26:26] "GET /livereload.js HTTP/1.0" 404 5563
+Not Found: /cdn.js
+[06/Jun/2024 14:26:26] "GET //cdn.js HTTP/1.0" 404 5542
+Not Found: /.env
+[06/Jun/2024 14:52:46] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[06/Jun/2024 14:52:46] "POST / HTTP/1.0" 403 2928
+[06/Jun/2024 14:59:02] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 15:06:42] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 15:06:53] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 15:06:59] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[06/Jun/2024 15:09:22] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 15:09:23] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 304 0
+[06/Jun/2024 15:09:23] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 304 0
+Not Found: /app/.git/config
+[06/Jun/2024 15:20:26] "GET /app/.git/config HTTP/1.0" 404 5587
+[06/Jun/2024 15:40:12,467] - Broken pipe from ('199.45.155.48', 57596)
+[06/Jun/2024 15:40:15] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 15:40:16,375] - Broken pipe from ('199.45.155.48', 57624)
+[06/Jun/2024 15:40:21] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 15:40:22] code 505, message Invalid HTTP version (2.0)
+[06/Jun/2024 15:40:22] "PRI * HTTP/2.0" 505 -
+[06/Jun/2024 15:40:23] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+Not Found: /favicon.ico
+[06/Jun/2024 15:40:26] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /owa/auth/x.js
+[06/Jun/2024 16:52:04] "GET /owa/auth/x.js HTTP/1.0" 404 5563
+Not Found: /.env
+[06/Jun/2024 17:38:08] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[06/Jun/2024 17:38:08] "POST / HTTP/1.0" 403 2928
+[06/Jun/2024 18:00:05] "GET / HTTP/1.0" 200 14468
+Not Found: /wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:06] "GET //wp-includes/wlwmanifest.xml HTTP/1.0" 404 5619
+Not Found: /xmlrpc.php
+[06/Jun/2024 18:00:06] "GET //xmlrpc.php?rsd HTTP/1.0" 404 5572
+[06/Jun/2024 18:00:06] "GET / HTTP/1.0" 200 14468
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:06] "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /web/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:07] "GET //web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:07] "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5649
+Not Found: /website/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:07] "GET //website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5643
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:07] "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5628
+Not Found: /news/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:07] "GET //news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:08] "GET //2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:08] "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:08] "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:08] "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /test/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:09] "GET //test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:09] "GET //wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /site/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:09] "GET //site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:09] "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[06/Jun/2024 18:00:09] "GET //sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+[06/Jun/2024 18:09:18] code 400, message Bad request syntax ('MGLNDD_35.175.232.217_8000')
+[06/Jun/2024 18:09:18] "MGLNDD_35.175.232.217_8000" 400 -
+Not Found: /dns-query
+[06/Jun/2024 18:52:21] "GET /dns-query?dns=b7UBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 5595
+Not Found: /dns-query
+[06/Jun/2024 18:52:21] "POST /dns-query HTTP/1.0" 404 5552
+Not Found: /dns-query
+[06/Jun/2024 18:52:21] "GET /dns-query?name=example.com&type=A HTTP/1.0" 404 5579
+Not Found: /dns-query
+[06/Jun/2024 18:52:21] "GET /dns-query?dns=b_wBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 5595
+Not Found: /dns-query
+[06/Jun/2024 18:52:22] "POST /dns-query HTTP/1.0" 404 5552
+Not Found: /dns-query
+[06/Jun/2024 18:52:22] "GET /dns-query?name=example.com&type=A HTTP/1.0" 404 5579
+Not Found: /query
+[06/Jun/2024 18:52:22] "GET /query?dns=LK0BAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 5583
+Not Found: /query
+[06/Jun/2024 18:52:22] "POST /query HTTP/1.0" 404 5540
+Not Found: /query
+[06/Jun/2024 18:52:23] "GET /query?name=example.com&type=A HTTP/1.0" 404 5567
+Not Found: /query
+[06/Jun/2024 18:52:23] "GET /query?dns=wo4BAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 5583
+Not Found: /query
+[06/Jun/2024 18:52:23] "POST /query HTTP/1.0" 404 5540
+Not Found: /query
+[06/Jun/2024 18:52:23] "GET /query?name=example.com&type=A HTTP/1.0" 404 5567
+Not Found: /resolve
+[06/Jun/2024 18:52:23] "GET /resolve?dns=disBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 5589
+Not Found: /resolve
+[06/Jun/2024 18:52:24] "POST /resolve HTTP/1.0" 404 5546
+Not Found: /resolve
+[06/Jun/2024 18:52:24] "GET /resolve?name=example.com&type=A HTTP/1.0" 404 5573
+Not Found: /resolve
+[06/Jun/2024 18:52:24] "GET /resolve?dns=wosBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 5589
+Not Found: /resolve
+[06/Jun/2024 18:52:24] "POST /resolve HTTP/1.0" 404 5546
+Not Found: /resolve
+[06/Jun/2024 18:52:25] "GET /resolve?name=example.com&type=A HTTP/1.0" 404 5573
+[06/Jun/2024 18:52:25] "GET /?dns=nIMBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 200 14468
+Forbidden (CSRF cookie not set.): /
+[06/Jun/2024 18:52:25] "POST / HTTP/1.0" 403 2928
+[06/Jun/2024 18:52:25] "GET /?name=example.com&type=A HTTP/1.0" 200 14468
+[06/Jun/2024 18:52:25] "GET /?dns=zx0BAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 200 14468
+Forbidden (CSRF cookie not set.): /
+[06/Jun/2024 18:52:26] "POST / HTTP/1.0" 403 2928
+[06/Jun/2024 18:52:26] "GET /?name=example.com&type=A HTTP/1.0" 200 14468
+[06/Jun/2024 19:12:53] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 19:29:21] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 19:29:23] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+[06/Jun/2024 19:38:57] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 19:40:36] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 19:40:36] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[06/Jun/2024 19:40:36] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[06/Jun/2024 19:40:36] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[06/Jun/2024 19:40:36] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[06/Jun/2024 19:40:36] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[06/Jun/2024 19:40:36] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[06/Jun/2024 19:40:36] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+Not Found: /.env
+[06/Jun/2024 20:25:51] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[06/Jun/2024 20:25:51] "POST / HTTP/1.0" 403 2928
+[06/Jun/2024 20:31:16] "GET / HTTP/1.1" 200 14468
+Not Found: /wp-login.php
+[06/Jun/2024 20:36:22] "GET /wp-login.php HTTP/1.0" 404 5574
+[06/Jun/2024 20:41:58] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 21:31:13] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x99g\x92«\x1a=½#ü¨¦ÈG¸GL÷\x13\x96½D÷ep*\x8b+¡ÊK\x19¤\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[06/Jun/2024 21:31:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Jun/2024 21:52:51] code 400, message Bad request version ('À\x13À')
+[06/Jun/2024 21:52:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Jun/2024 21:52:51] code 400, message Bad request syntax ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03ë\x871QF\x89\x17|\x15)ócP\x93;ô\x9d¾¦¡Tö¯\x11H4X6\x12')
+[06/Jun/2024 21:52:51] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Jun/2024 22:24:09] code 400, message Bad request version ('À\x14À')
+[06/Jun/2024 22:24:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Jun/2024 22:24:09] code 400, message Bad request version ('À\x14À')
+[06/Jun/2024 22:24:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Jun/2024 22:24:10] "GET / HTTP/1.1" 200 14468
+[06/Jun/2024 22:24:10] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03â¹\x1bZfø\x06OtéüîëÏõ5wPç\x16É¬\x7fkÐ\x89W(\x9e7&D\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[06/Jun/2024 22:24:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[06/Jun/2024 22:24:10] "GET /login HTTP/1.1" 301 0
+[06/Jun/2024 22:42:47] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 23:00:31] "GET / HTTP/1.0" 200 14468
+[06/Jun/2024 23:00:31] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /.env
+[06/Jun/2024 23:41:08] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[06/Jun/2024 23:41:09] "POST / HTTP/1.0" 403 2928
+[07/Jun/2024 00:13:40] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 00:13:43] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 00:13:53] "GET /about/ HTTP/1.0" 200 8150
+[07/Jun/2024 00:14:00] "GET /about/ HTTP/1.0" 200 8150
+[07/Jun/2024 00:14:03] "GET /vision_and_mission/ HTTP/1.0" 200 9239
+[07/Jun/2024 00:14:15] "GET /vision_and_mission/ HTTP/1.0" 200 9239
+[07/Jun/2024 00:16:59] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 00:16:59] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[07/Jun/2024 00:16:59] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[07/Jun/2024 00:16:59] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[07/Jun/2024 00:16:59] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[07/Jun/2024 00:16:59] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[07/Jun/2024 00:16:59] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[07/Jun/2024 00:16:59] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+Not Found: /ab2g
+[07/Jun/2024 00:18:21] "GET /ab2g HTTP/1.0" 404 5536
+Not Found: /ab2h
+[07/Jun/2024 00:18:21] "GET /ab2h HTTP/1.0" 404 5536
+Not Found: /alive.php
+[07/Jun/2024 00:18:21] "GET /alive.php HTTP/1.0" 404 5551
+[07/Jun/2024 00:18:21] "GET / HTTP/1.0" 200 14468
+Not Found: /t4
+[07/Jun/2024 00:18:21] "GET /t4 HTTP/1.0" 404 5530
+[07/Jun/2024 00:18:21] "GET / HTTP/1.0" 200 14468
+Not Found: /teorema505
+[07/Jun/2024 00:18:21] "GET /teorema505?t=1 HTTP/1.0" 404 5558
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:19:59] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5678
+Not Found: /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:05] "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5666
+Not Found: /vendor/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:06] "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5654
+Not Found: /vendor/phpunit/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:08] "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5642
+Not Found: /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+[07/Jun/2024 00:20:10] "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.0" 404 5663
+Not Found: /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:12] "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5699
+Not Found: /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:16] "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5657
+Not Found: /phpunit/phpunit/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:19] "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5645
+Not Found: /phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:21] "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5633
+Not Found: /phpunit/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:22] "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5621
+Not Found: /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:23] "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5669
+Not Found: /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:25] "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5657
+Not Found: /lib/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:26] "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5645
+Not Found: /lib/phpunit/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:27] "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5633
+Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:28] "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:30] "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5702
+Not Found: /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:31] "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:39] "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5687
+Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:42] "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:46] "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:48] "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5696
+Not Found: /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:50] "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5687
+Not Found: /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:52] "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5696
+Not Found: /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:20:59] "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:04] "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5702
+Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:12] "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:16] "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:19] "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:21] "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+[07/Jun/2024 00:21:24] "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 302 0
+Not Found: /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:24] "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5699
+Not Found: /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:26] "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:29] "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5729
+Not Found: /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:35] "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5696
+Not Found: /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:37] "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5699
+Not Found: /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:46] "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 00:21:49] "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /index.php
+[07/Jun/2024 00:21:52] "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0" 404 5664
+Not Found: /public/index.php
+[07/Jun/2024 00:21:55] "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0" 404 5685
+Not Found: /index.php
+[07/Jun/2024 00:21:57] "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.0" 404 5681
+Not Found: /index.php
+[07/Jun/2024 00:21:59] "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.0" 404 5595
+Not Found: /login.action
+[07/Jun/2024 00:34:38] "GET /login.action HTTP/1.0" 404 5560
+[07/Jun/2024 00:50:15] code 400, message Bad request version ('À\x13À')
+[07/Jun/2024 00:50:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jun/2024 00:50:15] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03_\x11\x06jï=õÝ\x8cÚÙÕbm\x88bèÈ\x8c¯}Ê}K\x08\x81Pa\x15µÚÄ\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+[07/Jun/2024 00:50:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jun/2024 01:19:12] "GET / HTTP/1.0" 200 14468
+Not Found: /webui/
+[07/Jun/2024 01:22:40] "GET /webui/ HTTP/1.0" 404 5542
+[07/Jun/2024 01:27:27] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 01:30:43,695] - Broken pipe from ('167.94.146.54', 51332)
+[07/Jun/2024 01:30:46] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 01:30:46,955] - Broken pipe from ('167.94.146.54', 51448)
+[07/Jun/2024 01:30:50] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 01:30:51] code 505, message Invalid HTTP version (2.0)
+[07/Jun/2024 01:30:51] "PRI * HTTP/2.0" 505 -
+[07/Jun/2024 01:30:51] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+Not Found: /favicon.ico
+[07/Jun/2024 01:30:52] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /geoserver/web/
+[07/Jun/2024 01:31:15] "GET /geoserver/web/ HTTP/1.0" 404 5566
+Not Found: /.git/config
+[07/Jun/2024 01:32:12] "GET /.git/config HTTP/1.0" 404 5557
+Not Found: /phpinfo.php
+[07/Jun/2024 01:40:46] "GET /phpinfo.php HTTP/1.0" 404 5557
+Not Found: /info.php
+[07/Jun/2024 01:40:53] "GET /info.php HTTP/1.0" 404 5548
+Not Found: /phpinfo
+[07/Jun/2024 01:41:01] "GET /phpinfo HTTP/1.0" 404 5545
+Not Found: /php.php
+[07/Jun/2024 01:41:09] "GET /php.php HTTP/1.0" 404 5545
+Not Found: /php_info.php
+[07/Jun/2024 01:41:17] "GET /php_info.php HTTP/1.0" 404 5560
+Not Found: /phptest.php
+[07/Jun/2024 01:41:25] "GET /phptest.php HTTP/1.0" 404 5557
+Not Found: /dashboard/phpinfo.php
+[07/Jun/2024 01:41:33] "GET /dashboard/phpinfo.php HTTP/1.0" 404 5587
+Not Found: /infophp.php
+[07/Jun/2024 01:41:42] "GET /infophp.php HTTP/1.0" 404 5557
+Not Found: /p.php
+[07/Jun/2024 01:41:49] "GET /p.php HTTP/1.0" 404 5539
+Not Found: /_profiler/phpinfo
+[07/Jun/2024 01:41:59] "GET /_profiler/phpinfo HTTP/1.0" 404 5575
+Not Found: /info.php
+[07/Jun/2024 01:42:10] "GET /info.php HTTP/1.0" 404 5548
+Not Found: /pinfo.php
+[07/Jun/2024 01:42:20] "GET /pinfo.php HTTP/1.0" 404 5551
+Not Found: /scripts/phpinfo.php
+[07/Jun/2024 01:42:30] "GET /scripts/phpinfo.php HTTP/1.0" 404 5581
+Not Found: /phpinfo.php
+[07/Jun/2024 01:42:39] "GET /phpinfo.php HTTP/1.0" 404 5557
+[07/Jun/2024 01:42:49] "GET /admin/phpinfo.php HTTP/1.0" 302 0
+Not Found: /phpinfo/phpinfo.php
+[07/Jun/2024 01:42:59] "GET /phpinfo/phpinfo.php HTTP/1.0" 404 5581
+Not Found: /information.php
+[07/Jun/2024 01:43:09] "GET /information.php HTTP/1.0" 404 5569
+Not Found: /information
+[07/Jun/2024 01:43:19] "GET /information HTTP/1.0" 404 5557
+Not Found: /phpinformation
+[07/Jun/2024 01:43:30] "GET /phpinformation HTTP/1.0" 404 5566
+Not Found: /php-info.php
+[07/Jun/2024 01:43:40] "GET /php-info.php HTTP/1.0" 404 5560
+Not Found: /phpversion.php
+[07/Jun/2024 01:43:50] "GET /phpversion.php HTTP/1.0" 404 5566
+Not Found: /webdav/phpinfo.php
+[07/Jun/2024 01:43:58] "GET /webdav/phpinfo.php HTTP/1.0" 404 5578
+Not Found: /webdav/phpinfo
+[07/Jun/2024 01:44:07] "GET /webdav/phpinfo HTTP/1.0" 404 5566
+Not Found: /webdav/info.php
+[07/Jun/2024 01:44:17] "GET /webdav/info.php HTTP/1.0" 404 5569
+Not Found: /testphpinfo.php
+[07/Jun/2024 01:44:33] "GET /testphpinfo.php HTTP/1.0" 404 5569
+Not Found: /testphpinfo
+[07/Jun/2024 01:44:47] "GET /testphpinfo HTTP/1.0" 404 5557
+Not Found: /admin.php
+[07/Jun/2024 01:44:59] "GET /admin.php HTTP/1.0" 404 5551
+Not Found: /_phpinfo.php
+[07/Jun/2024 01:45:09] "GET /_phpinfo.php HTTP/1.0" 404 5560
+Not Found: /PHPConf.php
+[07/Jun/2024 01:45:19] "GET /PHPConf.php HTTP/1.0" 404 5557
+Not Found: /viewinfo.php
+[07/Jun/2024 01:45:30] "GET /viewinfo.php HTTP/1.0" 404 5560
+Not Found: /info/phpinfo.php
+[07/Jun/2024 01:45:40] "GET /info/phpinfo.php HTTP/1.0" 404 5572
+Not Found: /info/info.php
+[07/Jun/2024 01:45:51] "GET /info/info.php HTTP/1.0" 404 5563
+Not Found: /.env
+[07/Jun/2024 01:46:02] "GET /.env HTTP/1.0" 404 5536
+Not Found: /.env.save
+[07/Jun/2024 01:46:13] "GET /.env.save HTTP/1.0" 404 5551
+Not Found: /.env.old
+[07/Jun/2024 01:46:24] "GET /.env.old HTTP/1.0" 404 5548
+Not Found: /.env.prod
+[07/Jun/2024 01:46:35] "GET /.env.prod HTTP/1.0" 404 5551
+Not Found: /.env.production
+[07/Jun/2024 01:46:44] "GET /.env.production HTTP/1.0" 404 5569
+Not Found: /.env.development
+[07/Jun/2024 01:46:55] "GET /.env.development HTTP/1.0" 404 5572
+Not Found: /laravel/.env
+[07/Jun/2024 01:47:04] "GET /laravel/.env HTTP/1.0" 404 5560
+Not Found: /admin-app/.env
+[07/Jun/2024 01:47:14] "GET /admin-app/.env HTTP/1.0" 404 5566
+Not Found: /api/.env
+[07/Jun/2024 01:47:24] "GET /api/.env HTTP/1.0" 404 5548
+Not Found: /app/.env
+[07/Jun/2024 01:47:34] "GET /app/.env HTTP/1.0" 404 5548
+Not Found: /development/.env
+[07/Jun/2024 01:47:49] "GET /development/.env HTTP/1.0" 404 5572
+Not Found: /apps/.env
+[07/Jun/2024 01:48:04] "GET /apps/.env HTTP/1.0" 404 5551
+Not Found: /.aws/credentials
+[07/Jun/2024 01:48:19] "GET /.aws/credentials HTTP/1.0" 404 5572
+Not Found: /private/.env
+[07/Jun/2024 01:48:34] "GET /private/.env HTTP/1.0" 404 5560
+Not Found: /system/.env
+[07/Jun/2024 01:48:50] "GET /system/.env HTTP/1.0" 404 5557
+Not Found: /docker/.env
+[07/Jun/2024 01:49:00] "GET /docker/.env HTTP/1.0" 404 5557
+Not Found: /cms/.env
+[07/Jun/2024 01:49:05] "GET /cms/.env HTTP/1.0" 404 5548
+Not Found: /script/.env
+[07/Jun/2024 01:49:20] "GET /script/.env HTTP/1.0" 404 5557
+Not Found: /live_env
+[07/Jun/2024 01:49:35] "GET /live_env HTTP/1.0" 404 5548
+Not Found: /application/.env
+[07/Jun/2024 01:49:51] "GET /application/.env HTTP/1.0" 404 5572
+Not Found: /.env.project
+[07/Jun/2024 01:50:05] "GET /.env.project HTTP/1.0" 404 5560
+Not Found: /.env.dist
+[07/Jun/2024 01:50:15] "GET /.env.dist HTTP/1.0" 404 5551
+Not Found: /back/.env
+[07/Jun/2024 01:50:26] "GET /back/.env HTTP/1.0" 404 5551
+Not Found: /core/.env
+[07/Jun/2024 01:50:36] "GET /core/.env HTTP/1.0" 404 5551
+Not Found: /docker/.env
+[07/Jun/2024 01:50:47] "GET /docker/.env HTTP/1.0" 404 5557
+Not Found: /fedex/.env
+[07/Jun/2024 01:50:58] "GET /fedex/.env HTTP/1.0" 404 5554
+Not Found: /local/.env
+[07/Jun/2024 01:51:09] "GET /local/.env HTTP/1.0" 404 5554
+Not Found: /rest/.env
+[07/Jun/2024 01:51:19] "GET /rest/.env HTTP/1.0" 404 5551
+Not Found: /shared/.env
+[07/Jun/2024 01:51:30] "GET /shared/.env HTTP/1.0" 404 5557
+Not Found: /sources/.env
+[07/Jun/2024 01:51:40] "GET /sources/.env HTTP/1.0" 404 5560
+Not Found: /enviroments/.env.production
+[07/Jun/2024 01:51:51] "GET /enviroments/.env.production HTTP/1.0" 404 5605
+Not Found: /enviroments/.env
+[07/Jun/2024 01:52:01] "GET /enviroments/.env HTTP/1.0" 404 5572
+[07/Jun/2024 02:05:45] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 02:05:45,692] - Broken pipe from ('216.218.206.126', 18279)
+Not Found: /favicon.ico
+[07/Jun/2024 02:06:27] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /http:/api.ipify.org/
+[07/Jun/2024 02:06:50] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[07/Jun/2024 02:07:12] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+[07/Jun/2024 02:58:03] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 03:07:59] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 03:07:59,463] - Broken pipe from ('64.62.197.113', 62961)
+Not Found: /favicon.ico
+[07/Jun/2024 03:08:12] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /http:/api.ipify.org/
+[07/Jun/2024 03:08:28] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[07/Jun/2024 03:08:39] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+[07/Jun/2024 03:10:53] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 03:10:56] "GET /about/ HTTP/1.0" 200 8150
+[07/Jun/2024 03:10:58] "GET /vision_and_mission/ HTTP/1.0" 200 9239
+[07/Jun/2024 03:58:43] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 05:28:29] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 05:31:09] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[07/Jun/2024 05:46:53] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[07/Jun/2024 05:46:54] "POST / HTTP/1.0" 403 2928
+[07/Jun/2024 06:35:20] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 06:36:28] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 06:36:31,850] - Broken pipe from ('205.210.31.99', 63330)
+[07/Jun/2024 06:51:11] code 400, message Bad request version ('À\x14À')
+[07/Jun/2024 06:51:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jun/2024 07:01:10] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 07:01:10] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+[07/Jun/2024 07:30:49] "GET /login/ HTTP/1.0" 200 4760
+[07/Jun/2024 07:30:49] "GET /CG_University/media/main_css/login.css HTTP/1.0" 200 2123
+[07/Jun/2024 07:30:52] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[07/Jun/2024 08:43:23] "GET / HTTP/1.0" 200 14468
+Not Found: /dist/js/bootstrap.bundle.min.js
+[07/Jun/2024 08:43:37] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 5617
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+Not Found: /cdn.js
+[07/Jun/2024 08:43:37] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 5695
+[07/Jun/2024 08:43:37] "GET //cdn.js HTTP/1.0" 404 5542
+Not Found: /livereload.js
+[07/Jun/2024 08:43:37] "GET /livereload.js HTTP/1.0" 404 5563
+Not Found: /assets/.git/config
+[07/Jun/2024 08:58:54] "GET /assets/.git/config HTTP/1.0" 404 5606
+[07/Jun/2024 09:25:15] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 09:57:08] code 400, message Bad request version ('À\x14À')
+[07/Jun/2024 09:57:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jun/2024 09:57:08] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x9e®K÷\x94cº\x12:w\x1bñqÌv\x96#\x88A\\"¾o\x8e8²\x16«Èïùj\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[07/Jun/2024 09:57:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jun/2024 09:57:08] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 09:57:08] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03â\x88÷ò·lì½¡Zy,j\x1b«EÔ\x14"@#i\x04Czi\x156dRüu\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[07/Jun/2024 09:57:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jun/2024 09:57:08] "GET /login HTTP/1.1" 301 0
+[07/Jun/2024 09:58:34] code 400, message Bad request version ('À\x13À')
+[07/Jun/2024 09:58:34] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jun/2024 09:58:34] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03´Ül!>ÿ*T\x81;ñó¦\x12Ä\x894\x87û`óÛWEÒ\x9b[\x13\x11ÑÖn\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+[07/Jun/2024 09:58:34] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jun/2024 09:59:20] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 09:59:29] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 09:59:29] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /actuator/health
+[07/Jun/2024 10:22:20] "GET /actuator/health HTTP/1.0" 404 5569
+Not Found: /aaa9
+[07/Jun/2024 10:24:02] "GET /aaa9 HTTP/1.0" 404 5536
+Not Found: /aab8
+[07/Jun/2024 10:24:11] "GET /aab8 HTTP/1.0" 404 5536
+[07/Jun/2024 10:24:16] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 10:25:40] code 400, message Bad request version ('À\x14À')
+[07/Jun/2024 10:25:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /index.asp
+[07/Jun/2024 11:11:45] "GET /index.asp HTTP/1.0" 404 5555
+[07/Jun/2024 11:35:19] "GET / HTTP/1.0" 200 14468
+Not Found: /Autodiscover/Autodiscover.xml
+[07/Jun/2024 11:43:06] "POST /Autodiscover/Autodiscover.xml HTTP/1.0" 404 5616
+[07/Jun/2024 11:47:15] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 11:52:17] "GET / HTTP/1.0" 200 14468
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 11:57:35] "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5679
+Not Found: /robots.txt
+[07/Jun/2024 12:07:57] "GET /robots.txt HTTP/1.0" 404 5568
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[07/Jun/2024 12:08:00] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5678
+[07/Jun/2024 12:16:41] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 12:17:13] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[07/Jun/2024 12:44:22] "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 200 14468
+[07/Jun/2024 13:06:49] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[07/Jun/2024 13:13:42] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[07/Jun/2024 13:13:43] "POST / HTTP/1.0" 403 2928
+[07/Jun/2024 14:56:49] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 14:56:49] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 14:56:49] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[07/Jun/2024 15:09:31] "GET /.env HTTP/1.0" 404 5550
+Not Found: /wp-content/
+[07/Jun/2024 15:09:33] "GET /wp-content/ HTTP/1.0" 404 5571
+[07/Jun/2024 15:10:29] "GET / HTTP/1.0" 200 14468
+Not Found: /wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:30] "GET //wp-includes/wlwmanifest.xml HTTP/1.0" 404 5619
+Not Found: /xmlrpc.php
+[07/Jun/2024 15:10:31] "GET //xmlrpc.php?rsd HTTP/1.0" 404 5572
+[07/Jun/2024 15:10:31] "GET / HTTP/1.0" 200 14468
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:32] "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /web/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:32] "GET //web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:33] "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5649
+Not Found: /website/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:33] "GET //website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5643
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:34] "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5628
+Not Found: /news/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:34] "GET //news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:35] "GET //2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:36] "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:36] "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:37] "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /test/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:38] "GET //test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:38] "GET //wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /site/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:38] "GET //site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:39] "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[07/Jun/2024 15:10:39] "GET //sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /_ignition/execute-solution
+[07/Jun/2024 15:32:46] "GET /_ignition/execute-solution HTTP/1.0" 404 5606
+[07/Jun/2024 15:38:13] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 15:43:40] "GET / HTTP/1.0" 200 14468
+Not Found: /actuator/gateway/routes
+[07/Jun/2024 16:15:34] "GET /actuator/gateway/routes HTTP/1.0" 404 5597
+Not Found: /.env
+[07/Jun/2024 16:45:53] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[07/Jun/2024 16:45:54] "POST / HTTP/1.0" 403 2928
+Not Found: /geoserver
+[07/Jun/2024 16:53:16] "GET /geoserver HTTP/1.0" 404 5555
+[07/Jun/2024 16:54:36] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 17:09:29] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[07/Jun/2024 17:17:08] "GET /.env HTTP/1.0" 404 5536
+[07/Jun/2024 17:49:49] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 17:49:49] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[07/Jun/2024 17:49:49] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[07/Jun/2024 17:49:50] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[07/Jun/2024 17:49:50] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[07/Jun/2024 17:49:50] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[07/Jun/2024 17:49:50] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[07/Jun/2024 17:51:44] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 18:04:51] "GET / HTTP/1.0" 200 14468
+Not Found: /robots.txt
+[07/Jun/2024 18:13:41] "GET /robots.txt HTTP/1.0" 404 5568
+[07/Jun/2024 18:34:02] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 18:34:02] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[07/Jun/2024 18:46:30] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 19:27:59] "GET / HTTP/1.1" 200 14468
+[07/Jun/2024 20:09:10] code 400, message Bad request version ('À\x14À')
+[07/Jun/2024 20:09:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[07/Jun/2024 20:18:56] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 20:27:41] "GET / HTTP/1.1" 200 14468
+Not Found: /.env
+[07/Jun/2024 20:30:32] "GET /.env HTTP/1.1" 404 5541
+[07/Jun/2024 20:35:34] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[07/Jun/2024 21:08:36] "GET /.env HTTP/1.0" 404 5536
+[07/Jun/2024 21:22:09] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 21:22:27] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[07/Jun/2024 21:22:30] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[07/Jun/2024 21:22:30] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[07/Jun/2024 21:22:31] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[07/Jun/2024 21:22:31] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[07/Jun/2024 21:22:31] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[07/Jun/2024 21:22:31] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[07/Jun/2024 21:36:44] "GET / HTTP/1.0" 200 14468
+[07/Jun/2024 21:36:44] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[07/Jun/2024 21:36:44] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[07/Jun/2024 21:36:44] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[07/Jun/2024 21:36:45] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[07/Jun/2024 21:36:45] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[07/Jun/2024 21:36:45] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[07/Jun/2024 21:36:45] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 00:04:57] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 00:04:57,790] - Broken pipe from ('43.153.97.102', 31474)
+Not Found: /.git/config
+[08/Jun/2024 00:15:27] "GET /.git/config HTTP/1.0" 404 5571
+[08/Jun/2024 00:37:13] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 00:39:09] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 00:43:50] "GET / HTTP/1.0" 200 14468
+Not Found: /.env
+[08/Jun/2024 00:48:39] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[08/Jun/2024 00:48:41] "POST / HTTP/1.0" 403 2928
+[08/Jun/2024 00:51:13] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 01:20:10] code 400, message Bad request version ('À\x13À')
+[08/Jun/2024 01:20:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 01:20:10] code 400, message Bad request version ('À(À$À\x14À')
+[08/Jun/2024 01:20:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 01:35:38,278] - Broken pipe from ('162.142.125.195', 43452)
+[08/Jun/2024 01:35:41] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 01:35:41,479] - Broken pipe from ('162.142.125.195', 43468)
+[08/Jun/2024 01:35:44] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 01:35:44] code 505, message Invalid HTTP version (2.0)
+[08/Jun/2024 01:35:44] "PRI * HTTP/2.0" 505 -
+[08/Jun/2024 01:35:44] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+Not Found: /favicon.ico
+[08/Jun/2024 01:35:45] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /.env
+[08/Jun/2024 02:06:12] "GET /.env HTTP/1.0" 404 5536
+[08/Jun/2024 02:09:46] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 02:09:46] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 02:09:46] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 02:09:46] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[08/Jun/2024 02:09:46] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[08/Jun/2024 02:09:46] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 02:09:46] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[08/Jun/2024 02:09:46] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[08/Jun/2024 03:22:39] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 04:46:18] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 04:46:18] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 04:46:22] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 04:46:24] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 04:46:34] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+[08/Jun/2024 04:56:04] code 400, message Bad request version ('À\x14À')
+[08/Jun/2024 04:56:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 04:56:04] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03aák"1')
+[08/Jun/2024 04:56:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 04:56:04] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 04:56:05] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00{\x01\x00\x00w\x03\x03}5·£\x95\\Ê^(S'\x05\x0f/\x94\x9bü\x04¼_\x94.ï\x88Æçþq\x97ø®ø\x00\x00\x1aÀ/À+À\x11À\x07À\x13À")
+[08/Jun/2024 04:56:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 04:56:05] "GET /login HTTP/1.1" 301 0
+Not Found: /owa/auth/x.js
+[08/Jun/2024 05:11:10] "GET /owa/auth/x.js HTTP/1.0" 404 5563
+[08/Jun/2024 05:14:24] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 05:14:24] "GET /CG_University/media/main_css/style.css HTTP/1.0" 304 0
+[08/Jun/2024 05:14:24] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 05:15:00] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 05:15:03] "GET /about/ HTTP/1.0" 200 8150
+[08/Jun/2024 05:15:04] "GET /board_members/ HTTP/1.0" 200 9306
+[08/Jun/2024 05:15:05] "GET /CG_University/media/main_css/board_members.css HTTP/1.0" 200 990
+[08/Jun/2024 05:15:07] "GET /courses/ HTTP/1.0" 200 22637
+[08/Jun/2024 05:15:07] "GET /CG_University/media/main_css/courses.css HTTP/1.0" 200 525
+[08/Jun/2024 05:15:12] "GET /vision_and_mission/ HTTP/1.0" 200 9239
+[08/Jun/2024 05:15:13] "GET /CG_University/media/main_css/vision_and_mission.css HTTP/1.0" 200 749
+[08/Jun/2024 05:16:29] "GET /approval/ HTTP/1.0" 200 10741
+[08/Jun/2024 05:16:29] "GET /CG_University/media/main_css/approval.css HTTP/1.0" 200 1382
+[08/Jun/2024 05:16:29] "GET /CG_University/media/images/approval/aicte.png HTTP/1.0" 200 167402
+[08/Jun/2024 05:16:29] "GET /CG_University/media/images/approval/ugc_logo.png HTTP/1.0" 200 96377
+[08/Jun/2024 05:16:30] "GET /CG_University/media/images/approval/pci.png HTTP/1.0" 200 110367
+[08/Jun/2024 05:16:30] "GET /CG_University/media/images/approval/icar1.png HTTP/1.0" 200 45416
+[08/Jun/2024 05:16:30] "GET /CG_University/media/images/approval/bci.png HTTP/1.0" 200 116163
+[08/Jun/2024 05:16:30] "GET /CG_University/media/images/approval/mci.png HTTP/1.0" 200 62695
+[08/Jun/2024 05:16:45] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 05:17:16] "GET /login/ HTTP/1.0" 200 4760
+[08/Jun/2024 05:17:17] "GET /CG_University/media/main_css/login.css HTTP/1.0" 304 0
+Not Found: /.env
+[08/Jun/2024 05:26:27] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[08/Jun/2024 05:26:27] "POST / HTTP/1.0" 403 2928
+[08/Jun/2024 05:44:38] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 05:44:38,922] - Broken pipe from ('64.62.156.55', 39401)
+Not Found: /favicon.ico
+[08/Jun/2024 05:44:59] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /http:/api.ipify.org/
+[08/Jun/2024 05:45:03] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[08/Jun/2024 05:45:06] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+[08/Jun/2024 06:07:10] code 400, message Bad request syntax ('MGLNDD_35.175.232.217_8000')
+[08/Jun/2024 06:07:10] "MGLNDD_35.175.232.217_8000" 400 -
+[08/Jun/2024 06:15:07] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 06:23:05] code 400, message Bad request version ('À\x14À')
+[08/Jun/2024 06:23:05] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 06:32:49] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ùK\x82s\x8dRõÇ\x00SþýÖ1Ké\x84×')
+[08/Jun/2024 06:32:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 06:41:14] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 06:41:41] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 06:53:21,527] - Broken pipe from ('164.52.25.201', 44489)
+[08/Jun/2024 06:53:21] code 400, message Bad request version ("?u\x82N\x11©O\x139æ\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+[08/Jun/2024 06:53:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 06:53:25,036] - Broken pipe from ('164.52.25.201', 52607)
+[08/Jun/2024 06:53:25] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03`Ï\x16\x7fn"gº%\x99³\x00Ë¹\x80nÃÅ¿\x8eø8§K+g\x81ÂFî\x9bb')
+[08/Jun/2024 06:53:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 06:53:25] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 06:53:28] "GET / HTTP/1.1" 200 14468
+Not Found: /favicon.ico
+[08/Jun/2024 06:53:29] "GET /favicon.ico HTTP/1.1" 404 5562
+[08/Jun/2024 06:53:32] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+[08/Jun/2024 06:53:36,384] - Broken pipe from ('164.52.25.201', 49847)
+[08/Jun/2024 07:43:31] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 07:43:31,187] - Broken pipe from ('35.187.125.4', 34942)
+[08/Jun/2024 08:28:23] code 400, message Bad request version ('À\x13À')
+[08/Jun/2024 08:28:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 08:28:23] code 400, message Bad request version ('À(À$À\x14À')
+[08/Jun/2024 08:28:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.env
+[08/Jun/2024 08:49:36] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[08/Jun/2024 08:49:36] "POST / HTTP/1.0" 403 2928
+Not Found: /.env
+[08/Jun/2024 09:03:30] "GET /.env HTTP/1.0" 404 5536
+Not Found: /.env
+[08/Jun/2024 09:03:30] "GET /.env HTTP/1.0" 404 5536
+[08/Jun/2024 09:11:46] "GET / HTTP/1.0" 200 14468
+Not Found: /webui/
+[08/Jun/2024 09:15:30] "GET /webui/ HTTP/1.0" 404 5542
+[08/Jun/2024 09:20:30] "GET / HTTP/1.0" 200 14468
+Not Found: /geoserver/web/
+[08/Jun/2024 09:23:40] "GET /geoserver/web/ HTTP/1.0" 404 5566
+Not Found: /.git/config
+[08/Jun/2024 09:25:25] "GET /.git/config HTTP/1.0" 404 5557
+[08/Jun/2024 10:07:48] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 10:07:48,099] - Broken pipe from ('65.49.20.69', 63152)
+Not Found: /favicon.ico
+[08/Jun/2024 10:08:00] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /http:/api.ipify.org/
+[08/Jun/2024 10:08:04] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[08/Jun/2024 10:08:06] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+[08/Jun/2024 10:46:14] code 400, message Bad request version ('À\x14À')
+[08/Jun/2024 10:46:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 11:04:39,450] - Broken pipe from ('45.33.109.18', 48765)
+[08/Jun/2024 11:04:39] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 11:04:39,750] - Broken pipe from ('45.33.109.18', 48766)
+[08/Jun/2024 11:05:00] "GET / HTTP/1.1" 200 14468
+Not Found: /.env
+[08/Jun/2024 11:10:34] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[08/Jun/2024 11:10:35] "POST / HTTP/1.0" 403 2928
+[08/Jun/2024 12:04:16] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 12:04:26] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 12:04:26] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 12:13:25] "GET / HTTP/1.0" 200 14468
+Not Found: /ab2g
+[08/Jun/2024 12:39:09] "GET /ab2g HTTP/1.0" 404 5536
+Not Found: /ab2h
+[08/Jun/2024 12:39:10] "GET /ab2h HTTP/1.0" 404 5536
+Not Found: /alive.php
+[08/Jun/2024 12:39:10] "GET /alive.php HTTP/1.0" 404 5551
+[08/Jun/2024 12:39:13] "GET / HTTP/1.0" 200 14468
+Not Found: /t4
+[08/Jun/2024 12:39:13] "GET /t4 HTTP/1.0" 404 5530
+[08/Jun/2024 12:39:14] "GET / HTTP/1.0" 200 14468
+Not Found: /teorema505
+[08/Jun/2024 12:39:15] "GET /teorema505?t=1 HTTP/1.0" 404 5558
+Not Found: /robots.txt
+[08/Jun/2024 12:46:09] "GET /robots.txt HTTP/1.0" 404 5568
+Not Found: /sitemap.xml
+[08/Jun/2024 12:46:11] "GET /sitemap.xml HTTP/1.0" 404 5571
+[08/Jun/2024 12:46:11] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 12:49:16] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 12:49:20] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 12:49:21] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 12:49:22] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 12:49:22] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[08/Jun/2024 12:49:26] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[08/Jun/2024 12:49:26] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[08/Jun/2024 12:49:29] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[08/Jun/2024 12:49:33] "GET /login/ HTTP/1.0" 200 4760
+[08/Jun/2024 12:49:35] "GET /CG_University/media/main_css/login.css HTTP/1.0" 200 2123
+[08/Jun/2024 12:49:42] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 12:49:42] "POST /cg_api/login/ HTTP/1.0" 200 2812
+Internal Server Error: /student/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 210, in student
+    student_personal_info = student_info.student_info.student_personal_info
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'student_personal_info'
+[08/Jun/2024 12:49:42] "POST /student/ HTTP/1.0" 500 87595
+[08/Jun/2024 12:50:27] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 13:59:08] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 14:24:58] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 15:05:26] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 15:05:27] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 15:05:46] "GET /login/ HTTP/1.0" 200 4760
+[08/Jun/2024 15:05:47] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 15:05:51] "GET /admin/ HTTP/1.0" 302 0
+[08/Jun/2024 15:05:52] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4308
+[08/Jun/2024 15:05:52] "GET /CG_University/media/admin/css/base.css HTTP/1.0" 200 21544
+[08/Jun/2024 15:05:52] "GET /CG_University/media/admin/css/dark_mode.css HTTP/1.0" 200 2682
+[08/Jun/2024 15:05:52] "GET /CG_University/media/admin/css/nav_sidebar.css HTTP/1.0" 200 2810
+[08/Jun/2024 15:05:53] "GET /CG_University/media/admin/css/login.css HTTP/1.0" 200 958
+[08/Jun/2024 15:05:53] "GET /CG_University/media/admin/css/responsive.css HTTP/1.0" 200 17905
+[08/Jun/2024 15:05:53] "GET /CG_University/media/admin/js/theme.js HTTP/1.0" 200 1943
+[08/Jun/2024 15:05:53] "GET /CG_University/media/admin/js/nav_sidebar.js HTTP/1.0" 200 3063
+[08/Jun/2024 15:06:02] "POST /admin/login/?next=/admin/ HTTP/1.0" 302 0
+[08/Jun/2024 15:06:03] "GET /admin/ HTTP/1.0" 200 12926
+[08/Jun/2024 15:06:03] "GET /CG_University/media/admin/css/dashboard.css HTTP/1.0" 200 441
+[08/Jun/2024 15:06:03] "GET /CG_University/media/admin/img/icon-deletelink.svg HTTP/1.0" 200 392
+[08/Jun/2024 15:06:03] "GET /CG_University/media/admin/img/icon-addlink.svg HTTP/1.0" 200 331
+[08/Jun/2024 15:06:03] "GET /CG_University/media/admin/img/icon-changelink.svg HTTP/1.0" 200 380
+[08/Jun/2024 15:06:08] "GET /admin/cgapp/student/ HTTP/1.0" 200 11776
+[08/Jun/2024 15:06:08] "GET /CG_University/media/admin/css/changelists.css HTTP/1.0" 200 6811
+[08/Jun/2024 15:06:08] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 15:06:09] "GET /CG_University/media/admin/js/jquery.init.js HTTP/1.0" 200 347
+[08/Jun/2024 15:06:09] "GET /CG_University/media/admin/js/vendor/jquery/jquery.js HTTP/1.0" 200 285314
+[08/Jun/2024 15:06:09] "GET /CG_University/media/admin/js/admin/RelatedObjectLookups.js HTTP/1.0" 200 9042
+[08/Jun/2024 15:06:09] "GET /CG_University/media/admin/js/core.js HTTP/1.0" 200 6208
+[08/Jun/2024 15:06:09] "GET /CG_University/media/admin/js/actions.js HTTP/1.0" 200 8067
+[08/Jun/2024 15:06:09] "GET /CG_University/media/admin/js/urlify.js HTTP/1.0" 200 7887
+[08/Jun/2024 15:06:09] "GET /CG_University/media/admin/js/prepopulate.js HTTP/1.0" 200 1531
+[08/Jun/2024 15:06:09] "GET /CG_University/media/admin/js/vendor/xregexp/xregexp.js HTTP/1.0" 200 325171
+[08/Jun/2024 15:06:10] "GET /CG_University/media/admin/js/filters.js HTTP/1.0" 200 978
+[08/Jun/2024 15:06:10] "GET /CG_University/media/admin/img/tooltag-add.svg HTTP/1.0" 200 331
+Forbidden (CSRF token from POST incorrect.): /student/
+[08/Jun/2024 15:06:24] "POST /student/ HTTP/1.0" 403 2576
+[08/Jun/2024 15:07:24] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 9923
+[08/Jun/2024 15:07:25] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 15:07:27] "GET /admin/cgapp/studentlogin/add/ HTTP/1.0" 200 11361
+[08/Jun/2024 15:07:27] "GET /CG_University/media/admin/css/forms.css HTTP/1.0" 200 9090
+[08/Jun/2024 15:07:27] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 15:07:27] "GET /CG_University/media/admin/js/prepopulate_init.js HTTP/1.0" 200 586
+[08/Jun/2024 15:07:27] "GET /CG_University/media/admin/css/widgets.css HTTP/1.0" 200 11800
+[08/Jun/2024 15:07:27] "GET /CG_University/media/admin/js/change_form.js HTTP/1.0" 200 606
+[08/Jun/2024 15:07:34] "POST /admin/cgapp/studentlogin/add/ HTTP/1.0" 302 0
+[08/Jun/2024 15:07:34] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11463
+[08/Jun/2024 15:07:34] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 15:07:34] "GET /CG_University/media/admin/img/icon-yes.svg HTTP/1.0" 200 436
+Forbidden (CSRF token from POST incorrect.): /student/
+[08/Jun/2024 15:07:38] "POST /student/ HTTP/1.0" 403 2576
+[08/Jun/2024 15:07:40] "GET /login/ HTTP/1.0" 200 4760
+[08/Jun/2024 15:07:40] "GET /CG_University/media/main_css/login.css HTTP/1.0" 200 2123
+[08/Jun/2024 15:07:41] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 15:07:44] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 15:07:48] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 15:07:48] "POST /cg_api/login/ HTTP/1.0" 200 1297
+[08/Jun/2024 15:07:48] "POST /student/ HTTP/1.0" 200 30537
+[08/Jun/2024 15:07:48] "GET /CG_University/media/student_css/student.css HTTP/1.0" 200 1629
+[08/Jun/2024 15:07:48] "GET /media/images/students/profile-pic/13063_1sCVMr6.png HTTP/1.0" 200 497564
+Not Found: /student/None
+[08/Jun/2024 15:07:48] "GET /student/None HTTP/1.0" 404 5574
+[08/Jun/2024 15:07:49] "GET /media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_YWfWUzs.jpg HTTP/1.0" 200 50314
+[08/Jun/2024 15:07:49] "GET /CG_University/media/scripts/student_js/student.js HTTP/1.0" 200 607
+[08/Jun/2024 15:07:50] "GET /media/images/students/admit_card/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_ANtVW4O.jpg HTTP/1.0" 200 50314
+[08/Jun/2024 15:07:50] "GET /media/images/students/migrations/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_LnEeGgy.jpg HTTP/1.0" 200 50314
+[08/Jun/2024 15:07:50] "GET /media/images/students/provision/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_LhS3G9P.jpg HTTP/1.0" 200 50314
+[08/Jun/2024 15:07:50] "GET /media/images/students/affidevit/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_ljc1u5u.jpg HTTP/1.0" 200 50314
+Not Found: /student/None
+[08/Jun/2024 15:07:50] "GET /student/None HTTP/1.0" 404 5574
+[08/Jun/2024 15:08:11] "GET /admin/cgapp/student/ HTTP/1.0" 200 11776
+[08/Jun/2024 15:08:12] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 15:08:23] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 11212
+[08/Jun/2024 15:08:23] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 15:08:25] "GET /admin/cgapp/adminlogin/1/change/ HTTP/1.0" 200 13606
+[08/Jun/2024 15:08:25] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 15:08:31] "GET /logout/ HTTP/1.0" 302 0
+[08/Jun/2024 15:08:32] "GET /login/ HTTP/1.0" 200 4760
+[08/Jun/2024 15:08:40] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 15:08:40] "POST /cg_api/login/ HTTP/1.0" 200 2812
+Internal Server Error: /student/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 210, in student
+    student_personal_info = student_info.student_info.student_personal_info
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'student_personal_info'
+[08/Jun/2024 15:08:40] "POST /student/ HTTP/1.0" 500 87731
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2024 - 18:20:15
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Student Function View ---------------- 
+Enrollment No ::  Nannu
+Password ::  040820
+User Type ::  admin
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzkzNzM4MSwiaWF0IjoxNzE3ODUwOTgxLCJqdGkiOiI3MmFlYjBjYTRjMWQ0YzQ5YjVlM2E4NWEyNzE4MGMyNiIsInVzZXJfaWQiOjF9.Z9_9HbGxGjYtwATSZjwnb2VK-Er5-zzX-qPf6P3upjk
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODU4MTgxLCJpYXQiOjE3MTc4NTA5ODEsImp0aSI6ImZmNjE3MTVjNjA5YzQxYzFhNjIwNmM0MmIwMzgwNDNhIiwidXNlcl9pZCI6MX0.4lWIs83c1pVl76py8Igcas9JRpMjZB7mCp7u-uyZMhA
+Payload ::  {'user_type': 'admin', 'username': 'Nannu', 'password': '040820'}
+Response ::  <Response [200]>
+Status Code ::  200
+---------------- Student Function View ---------------- 
+Enrollment No ::  CG01
+Password ::  1234
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NTY2OCwiaWF0IjoxNzE3ODU5MjY4LCJqdGkiOiI2ZWQ0Zjc4ZjI3Mzg0NjFhOWQwMWU2ODhjMGJjM2Y0YiIsInVzZXJfaWQiOjF9.oP1UOSkuh5i5LJXcuNc4L4VDYQ7B1rMk2VAOrRVuOQg
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODY2NDY4LCJpYXQiOjE3MTc4NTkyNjgsImp0aSI6ImVjZDg0OGNjNjY4MTQ2YjdhNmVjMGQ1Y2U4NTI5M2JhIiwidXNlcl9pZCI6MX0.YVePfp2qMS9iDukboERu04261wZxTIR8qi4odyvQw6U
+Payload ::  {'user_type': 'student', 'username': 'CG01', 'password': '1234'}
+{'student_enrollment_no': 'CG01', 'student_provision': '/media/images/students/provision/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_LhS3G9P.jpg', 'student_admit_card': '/media/images/students/admit_card/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_ANtVW4O.jpg', 'student_affidevit': '/media/images/students/affidevit/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_ljc1u5u.jpg', 'student_migrations': '/media/images/students/migrations/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_LnEeGgy.jpg', 'student_degree': None}
+{'enrollment_no': 'CG01', 'password': '2024-05-27', 'profile_pic': '/media/images/students/profile-pic/13063_1sCVMr6.png', 'full_name': 'Aakash Panwar', 'father_name': 'Dummy', 'mother_name': 'Dummy', 'gender': 'Male', 'date_of_birth': '2024-05-27', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '07000649593', 'address': '46, Mohan Nagar', 'list_of_integers': [], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': 'CG01', 'session': 'Dec-2019', 'semester': '1', 'sgpa': '8.92', 'status': 'Ragular', 'result': 'Fail', 'file': '/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_YWfWUzs.jpg'}]
+Response ::  <Response [200]>
+Status Code ::  200
+---------------- Student Function View ---------------- 
+Enrollment No ::  Nannu
+Password ::  040820
+User Type ::  admin
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NTcyMCwiaWF0IjoxNzE3ODU5MzIwLCJqdGkiOiI2N2NkZDg0MTYyZWI0M2IxYjY2ZjNiYmIzODJiMThmNyIsInVzZXJfaWQiOjF9.oQgdQApSYcTqE6So5ZUlxWYiWo4aIHRGLbDHRdEwoHY
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODY2NTIwLCJpYXQiOjE3MTc4NTkzMjAsImp0aSI6ImEwZjdmYTRhYjhhYzQ5YzliZTg3ZjRkZTAxMTMyNzlhIiwidXNlcl9pZCI6MX0.H8TevIfVLVtm5RqyOPwMC7e-PjX3dyAknmKvdX8EwCY
+Payload ::  {'user_type': 'admin', 'username': 'Nannu', 'password': '040820'}
+Response ::  <Response [200]>
+Status Code ::  200
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2024 - 18:18:10
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Not Found: /.env
+[08/Jun/2024 15:12:50] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[08/Jun/2024 15:12:50] "POST / HTTP/1.0" 403 2928
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 08, 2024 - 15:09:31
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 08, 2024 - 15:15:07
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[08/Jun/2024 15:15:35] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 15:15:35] "POST /cg_api/login/ HTTP/1.0" 200 2812
+[08/Jun/2024 15:15:35] "POST /admin_cg/ HTTP/1.0" 200 41761
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 08, 2024 - 15:15:30
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NjEzNSwiaWF0IjoxNzE3ODU5NzM1LCJqdGkiOiJkNWQzYTI5ZmY2MmQ0MGI4ODc1OWJhMzhmZDg5OWJmNSIsInVzZXJfaWQiOjF9.p0YyCwLuw4SMMifrf3VQE-EWjxV_hBNUqd_ea4wwEIs
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODY2OTM1LCJpYXQiOjE3MTc4NTk3MzUsImp0aSI6IjAzOTRlMTc0MjgyNTQzYmE5MjBiNWRiMjkwOGM4MDFlIiwidXNlcl9pZCI6MX0.qEC1fH3Kurbgxsc4mkcb-mn9HAysygGpDkZz5nGmHQo
+Watching for file changes with StatReloader
+[08/Jun/2024 15:17:19] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 15:17:19] "POST /cg_api/login/ HTTP/1.0" 200 2812
+[08/Jun/2024 15:17:19] "POST /admin_cg/ HTTP/1.0" 200 41761
+[08/Jun/2024 15:17:19] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 15:17:20] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 15:17:20] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 15:17:21] "POST /logout/ HTTP/1.0" 302 0
+[08/Jun/2024 15:17:22] "GET /login/ HTTP/1.0" 200 4760
+[08/Jun/2024 15:17:34] "GET /login/ HTTP/1.0" 200 4760
+[08/Jun/2024 15:17:43] "GET /cg_api/token/ HTTP/1.0" 200 483
+Unauthorized: /cg_api/login/
+[08/Jun/2024 15:17:43] "POST /cg_api/login/ HTTP/1.0" 401 44
+[08/Jun/2024 15:17:43] "POST /student/ HTTP/1.0" 200 4797
+[08/Jun/2024 15:17:56] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 15:17:56] "POST /cg_api/login/ HTTP/1.0" 200 2812
+Internal Server Error: /student/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 211, in student
+    student_personal_info = student_info.student_info.student_personal_info
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'student_personal_info'
+[08/Jun/2024 15:17:56] "POST /student/ HTTP/1.0" 500 87723
+[08/Jun/2024 15:18:27] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 15:18:44] "GET /cg_api/token/ HTTP/1.0" 200 483
+Unauthorized: /cg_api/login/
+[08/Jun/2024 15:18:44] "POST /cg_api/login/ HTTP/1.0" 401 44
+[08/Jun/2024 15:19:01] "GET /cg_api/token/ HTTP/1.0" 200 483
+Unauthorized: /cg_api/login/
+[08/Jun/2024 15:19:01] "POST /cg_api/login/ HTTP/1.0" 401 44
+[08/Jun/2024 15:19:11] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 15:19:11] "POST /cg_api/login/ HTTP/1.0" 200 2812
+[08/Jun/2024 15:20:41] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 15:20:41] "POST /cg_api/login/ HTTP/1.0" 200 2812
+[08/Jun/2024 15:26:27] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 15:26:27] "POST /cg_api/login/ HTTP/1.0" 200 2812
+[08/Jun/2024 15:26:40] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 15:26:42] "GET /login/ HTTP/1.0" 200 4767
+[08/Jun/2024 15:26:47] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 15:26:47] "POST /cg_api/login/ HTTP/1.0" 200 2812
+[08/Jun/2024 15:26:47] "POST /admin_cg/ HTTP/1.0" 200 41761
+[08/Jun/2024 16:05:55] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 16:51:36] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:02:12] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 17:02:13] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+Not Found: /robots.txt
+[08/Jun/2024 17:02:14] "GET /robots.txt HTTP/1.1" 404 5559
+Not Found: /.well-known/security.txt
+[08/Jun/2024 17:02:14] "GET /.well-known/security.txt HTTP/1.1" 404 5601
+Not Found: /remote/login
+[08/Jun/2024 17:03:49] "GET /remote/login HTTP/1.0" 404 5560
+Not Found: /.env
+[08/Jun/2024 17:06:55] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[08/Jun/2024 17:06:56] "POST / HTTP/1.0" 403 2928
+[08/Jun/2024 17:07:30] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 17:09:04] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[08/Jun/2024 17:09:04] "POST /cg_api/student-data/ HTTP/1.0" 201 47
+[08/Jun/2024 17:09:05] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+Bad Request: /cg_api/students/
+[08/Jun/2024 17:09:06] "POST /cg_api/students/ HTTP/1.0" 400 41
+[08/Jun/2024 17:10:13] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:10:13] "POST /cg_api/login/ HTTP/1.0" 200 3208
+[08/Jun/2024 17:10:13] "POST /admin_cg/ HTTP/1.0" 200 41761
+[08/Jun/2024 17:10:13] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:10:13] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:10:15] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:11:49] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:11:49] "POST /cg_api/login/ HTTP/1.0" 200 3208
+[08/Jun/2024 17:11:49] "POST /admin_cg/ HTTP/1.0" 200 41799
+[08/Jun/2024 17:11:49] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:11:49] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:11:50] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:12:32] "POST /cg_api/student-data/ HTTP/1.0" 201 47
+[08/Jun/2024 17:12:32] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[08/Jun/2024 17:12:33] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+Bad Request: /cg_api/students/
+[08/Jun/2024 17:12:34] "POST /cg_api/students/ HTTP/1.0" 400 66
+[08/Jun/2024 17:13:01] "GET /admin/cgapp/center/ HTTP/1.0" 302 0
+[08/Jun/2024 17:13:01] "GET /admin/login/?next=/admin/cgapp/center/ HTTP/1.0" 200 4334
+[08/Jun/2024 17:13:11] "POST /admin/login/?next=/admin/cgapp/center/ HTTP/1.0" 302 0
+[08/Jun/2024 17:13:11] "GET /admin/cgapp/center/ HTTP/1.0" 200 11440
+[08/Jun/2024 17:13:12] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 17:13:15] "GET /admin/cgapp/center/ HTTP/1.0" 200 11440
+[08/Jun/2024 17:13:15] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 17:13:16] "GET /admin/cgapp/center/add/ HTTP/1.0" 200 12605
+[08/Jun/2024 17:13:17] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 17:13:45] "POST /admin/cgapp/center/add/ HTTP/1.0" 302 0
+[08/Jun/2024 17:13:45] "GET /admin/cgapp/center/ HTTP/1.0" 200 11930
+[08/Jun/2024 17:13:45] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+Internal Server Error: /cg_api/students/
+[08/Jun/2024 17:14:02] "POST /cg_api/students/ HTTP/1.0" 500 65
+Bad Request: /cg_api/student-data/
+[08/Jun/2024 17:14:02] "POST /cg_api/student-data/ HTTP/1.0" 400 90
+[08/Jun/2024 17:14:02] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[08/Jun/2024 17:14:03] "POST /cg_api/marksheets/ HTTP/1.0" 201 76
+Forbidden (CSRF token from POST incorrect.): /admin_cg/
+[08/Jun/2024 17:14:05] "POST /admin_cg/ HTTP/1.0" 403 2576
+Forbidden (CSRF token from POST incorrect.): /admin_cg/
+[08/Jun/2024 17:14:07] "POST /admin_cg/ HTTP/1.0" 403 2576
+[08/Jun/2024 17:14:12] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 17:14:12] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 17:14:15] "GET /login/ HTTP/1.0" 200 4767
+[08/Jun/2024 17:14:15] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 17:14:19] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 17:14:24] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:14:24] "POST /cg_api/login/ HTTP/1.0" 200 3843
+[08/Jun/2024 17:14:24] "POST /admin_cg/ HTTP/1.0" 200 41799
+[08/Jun/2024 17:15:00] "POST /cg_api/student-data/ HTTP/1.0" 201 47
+[08/Jun/2024 17:15:00] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[08/Jun/2024 17:15:01] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+Bad Request: /cg_api/students/
+[08/Jun/2024 17:15:02] "POST /cg_api/students/ HTTP/1.0" 400 66
+[08/Jun/2024 17:15:19] "GET /admin/cgapp/center/3/change/ HTTP/1.0" 200 12912
+[08/Jun/2024 17:15:19] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+Not Found: /app/.git/config
+[08/Jun/2024 17:15:35] "GET /app/.git/config HTTP/1.0" 404 5583
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 08, 2024 - 15:17:12
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NjIzOSwiaWF0IjoxNzE3ODU5ODM5LCJqdGkiOiIyMmFlNzY2ZTMzOTQ0N2I4OWY4MjAwNDI3MDQxNGJhOCIsInVzZXJfaWQiOjF9.bNimiZ8kbKC8bapBimcHXOQLxsgvhKJeSs43tlaHaH0
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODY3MDM5LCJpYXQiOjE3MTc4NTk4MzksImp0aSI6IjA0ZTk0MWFlYzdkMjQ0NTA4Mjc5MWYxMTZjZmFjMjljIiwidXNlcl9pZCI6MX0.lC013hk7JfsATYMaZ5EhwdTplTIJDzFO54o1lOiXDSM
+---------------- Student Function View ---------------- 
+Enrollment No ::  Nannu
+Password ::  1234
+User Type ::  admin
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NjI2MywiaWF0IjoxNzE3ODU5ODYzLCJqdGkiOiI0YjBmMTYyYzI1YTc0ODc2YjNlNDE3ODQyMzlkZDZhMSIsInVzZXJfaWQiOjF9.bYzV4Nfp3GVr-Aaj2p7BEuGk6Pq23zKLxVRPqjRRO10
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODY3MDYzLCJpYXQiOjE3MTc4NTk4NjMsImp0aSI6ImQ3Y2JjMTA3NTliMzRhZTg4Zjg5NjE5Nzg1MGY5MDUxIiwidXNlcl9pZCI6MX0.vqJ1ygs0jL2XhIQfDNdVZ5wnq0LcRD4_y4ffmtMCPwU
+Payload ::  {'user_type': 'admin', 'username': 'Nannu', 'password': '1234'}
+Response ::  <Response [401]>
+Status Code ::  401
+Error Message ::  Incorrect Password. Please try again.
+---------------- Student Function View ---------------- 
+Enrollment No ::  Nannu
+Password ::  040820
+User Type ::  admin
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NjI3NiwiaWF0IjoxNzE3ODU5ODc2LCJqdGkiOiI0OTVmNzEwMzQwM2Y0NzBjOGE0NDQ2ODhiMDBlYmVlNCIsInVzZXJfaWQiOjF9.bd6Em4gZsS_SnFZ4ia9dtQcZkC75S4TqGwheKmlVXAI
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODY3MDc2LCJpYXQiOjE3MTc4NTk4NzYsImp0aSI6ImVjNmIyYmM0YmRiMzRmY2JiNzlkYmM2Y2FhZTZjYzdjIiwidXNlcl9pZCI6MX0.K2ckQ86fUploxlSBLfiaHQPmvSAAjHMGTcssTJEiDrM
+Payload ::  {'user_type': 'admin', 'username': 'Nannu', 'password': '040820'}
+Response ::  <Response [200]>
+Status Code ::  200
+Student Info ::  StudentInformation(success='Logged in successfully', student_info=None)
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NjMyNCwiaWF0IjoxNzE3ODU5OTI0LCJqdGkiOiJjYWNjMTJjMDA1YzY0MmQ5YTFmZTMwZTgzNWYxZjFmNiIsInVzZXJfaWQiOjF9.pxZBRZ2gmgDNg6T_KZ2xuHbwnZcB-V708uahd91DYMw
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NjM0MSwiaWF0IjoxNzE3ODU5OTQxLCJqdGkiOiJkNWYwODBjNzRjODU0NGUwYWY2ZWE3NjljM2VjOWYwZiIsInVzZXJfaWQiOjF9.NeHVeMr53mUAwShTmW6SbaEjY4fVcfPRrCjTZG6fZy8
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NjM1MSwiaWF0IjoxNzE3ODU5OTUxLCJqdGkiOiI0Zjk3ZDIzYjRiNzM0YjcyYTI3NGM2NjdiNzZhYzVhZSIsInVzZXJfaWQiOjF9.Z0FMHeTrAFEubsF-dEUWYJqJhvG_v0pmG7iVaR8tcik
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NjQ0MSwiaWF0IjoxNzE3ODYwMDQxLCJqdGkiOiI5YmFlYjMwYTRlOTg0ZTQwOThkM2M0MDE1ZGVmMzYwNCIsInVzZXJfaWQiOjF9.eezl21RJQ5Ohpwl9OD3CCK5M6HO74rp3UZZodFYogpE
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0Njc4NywiaWF0IjoxNzE3ODYwMzg3LCJqdGkiOiI3NzgyNWJmZWJmZjA0ZDE2YThkZTRhYTRhYWZlYWM1MCIsInVzZXJfaWQiOjF9.Lq4MDNHmrq2uQHJzNEUoc_iR4A2d-4Du_ZqxVRmlq5A
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk0NjgwNywiaWF0IjoxNzE3ODYwNDA3LCJqdGkiOiI2NjcxMjc3NTNlMDI0YzUzOTZmOGE4ZTJiYmE4MTQzYiIsInVzZXJfaWQiOjF9.QcGP5dExSIOdHru4sk96bA6byBhDrxIGjqd2xPiCVA4
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODY3NjA3LCJpYXQiOjE3MTc4NjA0MDcsImp0aSI6ImJjYTAwOTJlNmJkMjRmOGE4ZjkwOWE5NzYxNDMyOTcyIiwidXNlcl9pZCI6MX0.bAuiGMzjVzxIhk1a2YxWi-m_iobP8Bt2c2JO9JCajDk
+<QueryDict: {'student_enrollment_no': ['CG08'], 'session': ['Dec-2019'], 'semester': ['3'], 'sgpa': ['9.0'], 'status': ['Enrolled'], 'result': ['Fail'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1MzAxMywiaWF0IjoxNzE3ODY2NjEzLCJqdGkiOiIzMDE3NDg2ZDliYTI0MDVlOGFlMDg3NjNhZDdmYzk3ZSIsInVzZXJfaWQiOjF9.TwUcL3aMGk8ppAo0BEE6AWNsuq65SaXT_JWiOQamPhc
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODczODEzLCJpYXQiOjE3MTc4NjY2MTMsImp0aSI6IjdmOGQwYTAxZDQ2ZDQ0OTRhNmQ0NWM4ZDJiNDI0MDE1IiwidXNlcl9pZCI6MX0._2cppwKmjPZf8qdV7x6rk6_juiHH11DBaYWZ_yOYUEc
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1MzEwOSwiaWF0IjoxNzE3ODY2NzA5LCJqdGkiOiJlNjNkMWVlN2NiYjA0YjFiYjI5ZDFlZjc4NDllZDYzNiIsInVzZXJfaWQiOjF9.4-BOVruf-CgjI8usJVB37NlB7kuXfDzvWU8wIo3EAOw
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODczOTA5LCJpYXQiOjE3MTc4NjY3MDksImp0aSI6IjQ3ZDczODI0MmRhNTQ2OTBhZTg2ODQzOWY3YWE5MGQ5IiwidXNlcl9pZCI6MX0.MuzFei1BsQ0Fhgc_VZS9oKCXG5W35q6MoB2t0Lb-fj0
+<QueryDict: {'student_enrollment_no': ['CG10'], 'session': ['Dec-2022'], 'semester': ['2 '], 'sgpa': ['9.0'], 'status': ['Enrolled'], 'result': ['Pass '], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+This QueryDict instance is immutable
+<QueryDict: {'student_enrollment_no': ['CG10'], 'session': ['Dec-2022'], 'semester': ['2 '], 'sgpa': ['9.0'], 'status': ['Enrolled'], 'result': ['Pass '], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1MzI2NCwiaWF0IjoxNzE3ODY2ODY0LCJqdGkiOiI1N2I5MzIxYTQxNTc0NDdmOGNjMTA2YWNiMDcwM2I4ZiIsInVzZXJfaWQiOjF9.z-2hj5fkc2lIiDvytaJevkFzN7CkqnSUurD2HItMaww
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0MDY0LCJpYXQiOjE3MTc4NjY4NjQsImp0aSI6ImZiZGZkOWMxYWQzYTQ4YWJiMWVhNDQzMDczYmRkNTBjIiwidXNlcl9pZCI6MX0.GSijg9cXrXf-4mfJ87-0Z4UdR7xC3dETgl1BM8Jro_0
+<QueryDict: {'student_enrollment_no': ['CG21'], 'session': ['Dec-2022'], 'semester': ['2 '], 'sgpa': ['8.92'], 'status': ['Enrolled'], 'result': ['Fail'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+[08/Jun/2024 17:15:37] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:15:37] "POST /cg_api/login/ HTTP/1.0" 200 4240
+[08/Jun/2024 17:15:37] "POST /admin_cg/ HTTP/1.0" 200 41793
+[08/Jun/2024 17:15:37] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:15:37] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:16:24] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:16:24] "POST /cg_api/login/ HTTP/1.0" 200 4240
+[08/Jun/2024 17:16:24] "POST /admin_cg/ HTTP/1.0" 200 41793
+[08/Jun/2024 17:16:24] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:17:04] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[08/Jun/2024 17:17:04] "POST /cg_api/student-data/ HTTP/1.0" 201 47
+[08/Jun/2024 17:17:04] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+[08/Jun/2024 17:17:05] "POST /cg_api/students/ HTTP/1.0" 201 57
+[08/Jun/2024 17:17:10] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:17:10] "POST /cg_api/login/ HTTP/1.0" 200 5010
+[08/Jun/2024 17:17:10] "POST /admin_cg/ HTTP/1.0" 200 43435
+[08/Jun/2024 17:17:10] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:17:10] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:17:11] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:17:14] "GET /cg_api/students/CG22/ HTTP/1.0" 200 407
+[08/Jun/2024 17:17:14] "GET /cg_api/marksheets/CG22/ HTTP/1.0" 200 241
+[08/Jun/2024 17:17:15] "GET /cg_api/student-data/CG22/ HTTP/1.0" 200 156
+[08/Jun/2024 17:17:15] "GET /edit_student/?id=CG22&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0MjMwLCJpYXQiOjE3MTc4NjcwMzAsImp0aSI6IjUyNTJjM2QwMTc2ZDQ2YzY4MWI1ZDY5NDYxNjJhZDY3IiwidXNlcl9pZCI6MX0.pmr-5R9OwHOWM8nZrWnig2-4HdYycwgOTSNyj9hEnh8 HTTP/1.0" 200 30172
+[08/Jun/2024 17:17:15] "GET /media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_ulVOUOO.jpg HTTP/1.0" 200 50314
+[08/Jun/2024 17:17:15] "GET /media/images/students/profile-pic/13063_rXnjzu9.png HTTP/1.0" 200 497564
+Internal Server Error: /cg_api/marksheets/8/
+[08/Jun/2024 17:17:52] "PATCH /cg_api/marksheets/8/ HTTP/1.0" 500 65
+Internal Server Error: /cg_api/students/CG22/
+[08/Jun/2024 17:17:52] "PUT /cg_api/students/CG22/ HTTP/1.0" 500 65
+[08/Jun/2024 17:17:53] "GET /cg_api/students/CG22/ HTTP/1.0" 200 407
+[08/Jun/2024 17:17:53] "GET /cg_api/marksheets/CG22/ HTTP/1.0" 200 241
+[08/Jun/2024 17:17:53] "GET /cg_api/student-data/CG22/ HTTP/1.0" 200 156
+[08/Jun/2024 17:17:53] "GET /edit_student/?id=CG22&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0MjMwLCJpYXQiOjE3MTc4NjcwMzAsImp0aSI6IjUyNTJjM2QwMTc2ZDQ2YzY4MWI1ZDY5NDYxNjJhZDY3IiwidXNlcl9pZCI6MX0.pmr-5R9OwHOWM8nZrWnig2-4HdYycwgOTSNyj9hEnh8 HTTP/1.0" 200 30172
+[08/Jun/2024 17:17:53] "PATCH /cg_api/student-data/CG22/ HTTP/1.0" 200 293
+[08/Jun/2024 17:17:53] "GET /media/images/students/profile-pic/13063_rXnjzu9.png HTTP/1.0" 304 0
+[08/Jun/2024 17:17:53] "GET /media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_ulVOUOO.jpg HTTP/1.0" 304 0
+[08/Jun/2024 17:17:56] "GET /cg_api/students/CG22/ HTTP/1.0" 200 407
+[08/Jun/2024 17:17:56] "GET /cg_api/marksheets/CG22/ HTTP/1.0" 200 241
+[08/Jun/2024 17:17:56] "GET /cg_api/student-data/CG22/ HTTP/1.0" 200 293
+[08/Jun/2024 17:17:56] "GET /edit_student/?id=CG22&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0MjMwLCJpYXQiOjE3MTc4NjcwMzAsImp0aSI6IjUyNTJjM2QwMTc2ZDQ2YzY4MWI1ZDY5NDYxNjJhZDY3IiwidXNlcl9pZCI6MX0.pmr-5R9OwHOWM8nZrWnig2-4HdYycwgOTSNyj9hEnh8 HTTP/1.0" 200 30372
+[08/Jun/2024 17:17:56] "GET /media/images/students/profile-pic/13063_rXnjzu9.png HTTP/1.0" 200 497564
+[08/Jun/2024 17:17:57] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:17:57] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:17:57] "GET /media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_ulVOUOO.jpg HTTP/1.0" 200 50314
+[08/Jun/2024 17:17:57] "GET /media/images/students/provision/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_p5kRLoU.jpg HTTP/1.0" 200 50314
+[08/Jun/2024 17:17:58] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Internal Server Error: /cg_api/students/CG22/
+[08/Jun/2024 17:18:04] "PUT /cg_api/students/CG22/ HTTP/1.0" 500 65
+Internal Server Error: /cg_api/marksheets/8/
+[08/Jun/2024 17:18:04] "PATCH /cg_api/marksheets/8/ HTTP/1.0" 500 65
+[08/Jun/2024 17:18:04] "GET /cg_api/students/CG22/ HTTP/1.0" 200 407
+[08/Jun/2024 17:18:04] "GET /cg_api/marksheets/CG22/ HTTP/1.0" 200 241
+[08/Jun/2024 17:18:04] "GET /cg_api/student-data/CG22/ HTTP/1.0" 200 293
+[08/Jun/2024 17:18:04] "GET /edit_student/?id=CG22&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0MjMwLCJpYXQiOjE3MTc4NjcwMzAsImp0aSI6IjUyNTJjM2QwMTc2ZDQ2YzY4MWI1ZDY5NDYxNjJhZDY3IiwidXNlcl9pZCI6MX0.pmr-5R9OwHOWM8nZrWnig2-4HdYycwgOTSNyj9hEnh8 HTTP/1.0" 200 30372
+[08/Jun/2024 17:18:04] "PATCH /cg_api/student-data/CG22/ HTTP/1.0" 200 430
+[08/Jun/2024 17:18:04] "GET /media/images/students/profile-pic/13063_rXnjzu9.png HTTP/1.0" 304 0
+[08/Jun/2024 17:18:04] "GET /media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_ulVOUOO.jpg HTTP/1.0" 304 0
+[08/Jun/2024 17:18:05] "GET /media/images/students/provision/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_p5kRLoU.jpg HTTP/1.0" 304 0
+[08/Jun/2024 17:18:08] "GET /cg_api/students/CG22/ HTTP/1.0" 200 407
+[08/Jun/2024 17:18:08] "GET /cg_api/marksheets/CG22/ HTTP/1.0" 200 241
+[08/Jun/2024 17:18:08] "GET /cg_api/student-data/CG22/ HTTP/1.0" 200 430
+[08/Jun/2024 17:18:08] "GET /edit_student/?id=CG22&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0MjMwLCJpYXQiOjE3MTc4NjcwMzAsImp0aSI6IjUyNTJjM2QwMTc2ZDQ2YzY4MWI1ZDY5NDYxNjJhZDY3IiwidXNlcl9pZCI6MX0.pmr-5R9OwHOWM8nZrWnig2-4HdYycwgOTSNyj9hEnh8 HTTP/1.0" 200 30572
+[08/Jun/2024 17:18:09] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:18:09] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:18:09] "GET /media/images/students/profile-pic/13063_rXnjzu9.png HTTP/1.0" 200 497564
+[08/Jun/2024 17:18:09] "GET /media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_ulVOUOO.jpg HTTP/1.0" 200 50314
+[08/Jun/2024 17:18:09] "GET /media/images/students/provision/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_p5kRLoU.jpg HTTP/1.0" 200 50314
+[08/Jun/2024 17:18:10] "GET /media/images/students/affidevit/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_nWrGB8V.jpg HTTP/1.0" 200 50314
+[08/Jun/2024 17:18:10] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:18:29] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 12737
+[08/Jun/2024 17:18:29] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[08/Jun/2024 17:20:37] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:20:37] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:20:37] "POST /admin_cg/ HTTP/1.0" 200 43486
+[08/Jun/2024 17:20:38] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:20:38] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:20:41] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:21:26] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:21:26] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:21:26] "POST /admin_cg/ HTTP/1.0" 200 43606
+[08/Jun/2024 17:21:26] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:21:26] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:21:30] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:21:36] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:21:36] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:21:36] "POST /admin_cg/ HTTP/1.0" 200 43626
+[08/Jun/2024 17:21:37] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:21:37] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:21:40] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:22:02] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:22:02] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:22:02] "POST /admin_cg/ HTTP/1.0" 200 43634
+[08/Jun/2024 17:22:02] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:22:02] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:22:20] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:22:55] "GET /cg_api/token/ HTTP/1.0" 200 483
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1MzMzNywiaWF0IjoxNzE3ODY2OTM3LCJqdGkiOiJlOTljNTU1ODdlNmQ0NjA1YjM2ZjQ0OGIzZTBmYjM2ZSIsInVzZXJfaWQiOjF9.vy0tExW7zNrqG1rOsnzGAWFzJ35DdKCrNK1pEJK3ieI
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0MTM3LCJpYXQiOjE3MTc4NjY5MzcsImp0aSI6Ijc3NjA4ODgwNTFhMzRjNTNhNTBlMGZjOGI3ODcwZGI2IiwidXNlcl9pZCI6MX0.SoHlV2PMcDlGbkS7tK1g33uXioe8ne1iWqEGwWuD8YY
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1MzM4NCwiaWF0IjoxNzE3ODY2OTg0LCJqdGkiOiJiNDZlYzkzMjdkMDM0NmU3OWQyMDU1NGZjNDU2ODc0ZSIsInVzZXJfaWQiOjF9.JFlMWFzWBDNjYJ7-DVV5ihNEOq7PnvosD7K-Bx_5kG4
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0MTg0LCJpYXQiOjE3MTc4NjY5ODQsImp0aSI6IjkwMWYxMTcyMDU2ZDQwY2E5OTY5MGY0NmM1ODA5Y2NjIiwidXNlcl9pZCI6MX0._Laf9qNWF9YGdzhN5B-rS-QcmfOuDnbbUzmT1LqsuR4
+<QueryDict: {'student_enrollment_no': ['CG22'], 'session': ['Dec-2022'], 'semester': ['2 '], 'sgpa': ['8.92'], 'status': ['Enrolled'], 'result': ['Fail'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1MzQzMCwiaWF0IjoxNzE3ODY3MDMwLCJqdGkiOiI3ODM0NGNmYjI1Y2Y0ODE0YjY4NjM2ODEzYTFlNjY4MCIsInVzZXJfaWQiOjF9.vVzkN4BevqtmV7cKP6LpQLNu5Os1aUW1Mh7vrcLDb-o
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0MjMwLCJpYXQiOjE3MTc4NjcwMzAsImp0aSI6IjUyNTJjM2QwMTc2ZDQ2YzY4MWI1ZDY5NDYxNjJhZDY3IiwidXNlcl9pZCI6MX0.pmr-5R9OwHOWM8nZrWnig2-4HdYycwgOTSNyj9hEnh8
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'CG22', 'password': '1234', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/13063_rXnjzu9.png', 'full_name': 'Aakash Panwar', 'father_name': 'Dummy', 'mother_name': 'Dummy 1', 'gender': 'Male', 'date_of_birth': '2024-06-04', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '07000649593', 'address': '46, Mohan Nagar', 'list_of_integers': [8], 'center_id': 3}
+{'file': [ErrorDetail(string='The submitted data was not a file. Check the encoding type on the form.', code='invalid')]}
+{'center_id': [ErrorDetail(string='Incorrect type. Expected pk value, received str.', code='incorrect_type')]}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'CG22', 'password': '1234', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/13063_rXnjzu9.png', 'full_name': 'Aakash Panwar', 'father_name': 'Dummy', 'mother_name': 'Dummy 1', 'gender': 'Male', 'date_of_birth': '2024-06-04', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '07000649593', 'address': '46, Mohan Nagar', 'list_of_integers': [8], 'center_id': 3}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'CG22', 'password': '1234', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/13063_rXnjzu9.png', 'full_name': 'Aakash Panwar', 'father_name': 'Dummy', 'mother_name': 'Dummy 1', 'gender': 'Male', 'date_of_birth': '2024-06-04', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '07000649593', 'address': '46, Mohan Nagar', 'list_of_integers': [8], 'center_id': 3}
+{'center_id': [ErrorDetail(string='Incorrect type. Expected pk value, received str.', code='incorrect_type')]}
+{'file': [ErrorDetail(string='The submitted data was not a file. Check the encoding type on the form.', code='invalid')]}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'CG22', 'password': '1234', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/13063_rXnjzu9.png', 'full_name': 'Aakash Panwar', 'father_name': 'Dummy', 'mother_name': 'Dummy 1', 'gender': 'Male', 'date_of_birth': '2024-06-04', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '07000649593', 'address': '46, Mohan Nagar', 'list_of_integers': [8], 'center_id': 3}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'CG22', 'password': '1234', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/13063_rXnjzu9.png', 'full_name': 'Aakash Panwar', 'father_name': 'Dummy', 'mother_name': 'Dummy 1', 'gender': 'Male', 'date_of_birth': '2024-06-04', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '07000649593', 'address': '46, Mohan Nagar', 'list_of_integers': [8], 'center_id': 3}
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1MzYzNywiaWF0IjoxNzE3ODY3MjM3LCJqdGkiOiIxNTgyZjBkMTY5MmE0ZjQxOGUzYTczYTI2ODUxZWE4NyIsInVzZXJfaWQiOjF9.ubljqKjcyrTbzQp8D-2D-60luL0fBMFOF85QJlH5TZ8
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0NDM3LCJpYXQiOjE3MTc4NjcyMzcsImp0aSI6IjlkY2FiZGY1NjBlNjQzOTdhZTQyNTBlZTc2MDU1YWExIiwidXNlcl9pZCI6MX0.fJZCWWyj-5G-wd49bCt4oqr5m-r28hNBw6jodUFSB8g
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1MzY4NiwiaWF0IjoxNzE3ODY3Mjg2LCJqdGkiOiJhNjJkMTBhNTNjOGE0YjVkYThlN2RkZTY5ZGE4MGZkZCIsInVzZXJfaWQiOjF9.Wwt4Y9j7jKQAi70mat_YQqY6v7OL8ImW-XhAX6qciUQ
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0NDg2LCJpYXQiOjE3MTc4NjcyODYsImp0aSI6IjczYzM1ZTQzNTU0MzRmNDc5NmZiN2M4YTA3YjhkMTA3IiwidXNlcl9pZCI6MX0.6VlSfACgm2FAr8b2yTO-Ce5znF-oE8t7oRVcSlLZ_LQ
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1MzY5NiwiaWF0IjoxNzE3ODY3Mjk2LCJqdGkiOiI1ZjkxZjNjNzBmYWI0OTJiYTJkNTZiYjNlNTE0NzJmMyIsInVzZXJfaWQiOjF9.k_W8UUXv5GXDlU-5dXTM-qyz_UxIcIhWiZgiHEYDANY
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0NDk2LCJpYXQiOjE3MTc4NjcyOTYsImp0aSI6ImMwYzFhNDk4ZDQxMjRkNzlhZDIzODI1ODQzMTAwZTdhIiwidXNlcl9pZCI6MX0.7LPHo5GIuGAqQJgvraujHU9-BH6IajviGfgag5uVtFk
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1MzcyMiwiaWF0IjoxNzE3ODY3MzIyLCJqdGkiOiIyMjcyZmUwZGM1YjE0ZTI5OGQ1NGI3ZGJkNWQyZjc1MyIsInVzZXJfaWQiOjF9.Rj2rYF-B_iIHGDfeLSHoUbqKCUJ0e3quIBGa6dLsU5M
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0NTIyLCJpYXQiOjE3MTc4NjczMjIsImp0aSI6ImU0ZmM3YTlkYjRiZjQ3NTFhNjFhNzQ5MGUxMWQ3ZTc4IiwidXNlcl9pZCI6MX0.iNRaiFYBkGCYGkELMscDa2dBhGV4yLNhzia7XOcwC7s
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1Mzc3NSwiaWF0IjoxNzE3ODY3Mzc1LCJqdGkiOiI4ZjlmMWIxNjg4Y2Q0Nzg3ODhjZTEyMjBmZGE4NzY3YSIsInVzZXJfaWQiOjF9.hnUcNdlVzzql2cBplnqlKaH0S_ycfTngZlkfS-F4Zts
+Access Token ::  [08/Jun/2024 17:22:55] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:22:55] "POST /admin_cg/ HTTP/1.0" 200 44222
+[08/Jun/2024 17:22:56] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:22:56] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:22:57] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:23:19] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:23:19] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:23:19] "POST /admin_cg/ HTTP/1.0" 200 44114
+[08/Jun/2024 17:23:20] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:23:20] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:23:20] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:20] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5678
+Not Found: /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:20] "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5666
+Not Found: /vendor/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:20] "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5654
+Not Found: /vendor/phpunit/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:21] "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5642
+Not Found: /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+[08/Jun/2024 17:24:21] "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.0" 404 5663
+Not Found: /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:21] "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5699
+Not Found: /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:22] "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5657
+Not Found: /phpunit/phpunit/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:22] "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5645
+Not Found: /phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:22] "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5633
+Not Found: /phpunit/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:23] "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5621
+Not Found: /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:23] "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5669
+Not Found: /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:23] "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5657
+Not Found: /lib/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:24] "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5645
+Not Found: /lib/phpunit/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:24] "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 5633
+Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:24] "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:25] "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5702
+Not Found: /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:25] "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:25] "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5687
+Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:26] "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:26] "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:27] "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5696
+Not Found: /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:27] "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5687
+Not Found: /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:27] "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5696
+Not Found: /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:28] "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:28] "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5702
+Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:29] "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:29] "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:29] "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:30] "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+[08/Jun/2024 17:24:30] "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 302 0
+Not Found: /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:31] "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5699
+Not Found: /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:31] "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:31] "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5729
+Not Found: /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:32] "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5696
+Not Found: /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:32] "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5699
+Not Found: /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:33] "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5693
+Not Found: /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[08/Jun/2024 17:24:33] "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 5690
+Not Found: /index.php
+[08/Jun/2024 17:24:33] "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0" 404 5664
+Not Found: /public/index.php
+[08/Jun/2024 17:24:34] "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0" 404 5685
+Not Found: /index.php
+[08/Jun/2024 17:24:34] "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.0" 404 5681
+Not Found: /index.php
+[08/Jun/2024 17:24:35] "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.0" 404 5595
+[08/Jun/2024 17:26:13] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:26:13] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:26:13] "POST /admin_cg/ HTTP/1.0" 200 45657
+[08/Jun/2024 17:26:13] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:26:13] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:26:16] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:26:56] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:26:56] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:26:56] "POST /admin_cg/ HTTP/1.0" 200 45637
+[08/Jun/2024 17:26:56] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:26:56] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:26:57] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:27:12] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:27:12] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:27:12] "POST /admin_cg/ HTTP/1.0" 200 45684
+[08/Jun/2024 17:27:12] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:27:12] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:27:13] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:27:53] code 400, message Bad request version ('À\x14À')
+[08/Jun/2024 17:27:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 17:27:53] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:27:53] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:27:53] "POST /admin_cg/ HTTP/1.0" 200 45725
+[08/Jun/2024 17:27:53] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:27:53] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:27:54] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:28:31] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:28:31] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:28:31] "POST /admin_cg/ HTTP/1.0" 200 45728
+[08/Jun/2024 17:28:31] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:28:31] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:28:32] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:28:42] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:28:43] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:28:43] "POST /admin_cg/ HTTP/1.0" 200 45731
+[08/Jun/2024 17:28:43] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:28:43] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:28:44] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:28:48] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:28:48] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:28:48] "POST /admin_cg/ HTTP/1.0" 200 45731
+[08/Jun/2024 17:28:48] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:28:48] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:28:50] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:29:06] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:29:06] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:29:06] "POST /admin_cg/ HTTP/1.0" 200 45731
+[08/Jun/2024 17:29:07] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:29:07] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:29:08] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:29:27] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:29:27] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:29:27] "POST /admin_cg/ HTTP/1.0" 200 45725
+[08/Jun/2024 17:29:28] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:29:28] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:29:30] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:31:35] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:31:35] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:31:35] "POST /admin_cg/ HTTP/1.0" 200 46430
+[08/Jun/2024 17:31:35] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:31:35] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:31:36] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:33:46] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:33:46] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:33:46] "POST /admin_cg/ HTTP/1.0" 200 46539
+[08/Jun/2024 17:33:47] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:33:47] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:33:51] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0NTc1LCJpYXQiOjE3MTc4NjczNzUsImp0aSI6IjhkOTFiZTQ1ODA2ZDQ1MzRhM2Y3NzNmNmVmZDFmNWRlIiwidXNlcl9pZCI6MX0.ajvhMh8JfUrM8hhr2_QOZj6VYkVQgIIyKFi2cndmhj4
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1Mzc5OSwiaWF0IjoxNzE3ODY3Mzk5LCJqdGkiOiIzMjNhOGM0NGNiMjE0ZWRmODQyMGQ3ZmZkNGZjY2JiZSIsInVzZXJfaWQiOjF9.j93qSDP9NyF-yHLtb6g8XpdcXuL3ZpVEpbl-cn443WY
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0NTk5LCJpYXQiOjE3MTc4NjczOTksImp0aSI6IjI3NDhkZTQ4ODg4ODRlMTk4ZGJkZTYwZTY4NTFkNzNlIiwidXNlcl9pZCI6MX0.peR1s5hriDg4GyAHt-9bxGbD2XMYHXbzSPnCKWIHa0E
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1Mzk3MywiaWF0IjoxNzE3ODY3NTczLCJqdGkiOiJiN2E3YjE2MThhODk0Yjc4YWU3ZTllY2JmMTA3N2NkMiIsInVzZXJfaWQiOjF9.GkBexiYP8swMpTN_DV4QxvMbUtyKSgJF8Y1iTDFmsEM
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0NzczLCJpYXQiOjE3MTc4Njc1NzMsImp0aSI6ImJhZTdiYTZhNmZmZTRkZWJhY2QzMjI2MmQ1NzNhODI1IiwidXNlcl9pZCI6MX0.Aoo6IajaX-lZDDI5n2TeRZacoy9EQYaqdC1KCug9XjU
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDAxNiwiaWF0IjoxNzE3ODY3NjE2LCJqdGkiOiIzY2JlNmVjZTc3OWM0MGZiOGNjNjdmNjlhMGIxNWE5ZCIsInVzZXJfaWQiOjF9.y-TNjALVleErZppSU-Q5dKki8HAzq7Z6X6tw4ChWED4
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0ODE2LCJpYXQiOjE3MTc4Njc2MTYsImp0aSI6ImQxYjYxODllZjg5NTRiNTRiY2E4M2M4M2ZhNGE0OWFjIiwidXNlcl9pZCI6MX0.1quW-C1chFOblq-r0OHPvqKjAWW6IsLyQcNyaG2iVDI
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDAzMiwiaWF0IjoxNzE3ODY3NjMyLCJqdGkiOiJhNWJlZGVmZGQwNzA0NmQ3OGFiMmM0MDNlZjNmYjY1NiIsInVzZXJfaWQiOjF9.XuUz7a2IQhmStnwIWeMOytfIu5sEoHdwd6J6FdSSeFo
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0ODMyLCJpYXQiOjE3MTc4Njc2MzIsImp0aSI6Ijc2ZTdmZDI3MzY1ODQwYWE4ODQwNjE2MTRiMGJmZWUxIiwidXNlcl9pZCI6MX0.ujvI9QVpEl3HMBuHrksURbKr7-DpwHU_nnJq6OpwPL4
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDA3MywiaWF0IjoxNzE3ODY3NjczLCJqdGkiOiIyODU0OWUxN2FjNzE0YjBhOWUwN2FkMDBlYzM2MzQxNyIsInVzZXJfaWQiOjF9.xKE9qik5-U7lv9BAXGlCtOqqWeFDQ37exsYjqezAhME
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0ODczLCJpYXQiOjE3MTc4Njc2NzMsImp0aSI6IjM4NzY3NTBmNmQzZDQ2N2VhOGVkY2E3YThlNjE5NjE3IiwidXNlcl9pZCI6MX0.q3VcthiKNdI1QSoR1uLcP35tubdKwAWLeBy9mYXA-2o
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDExMSwiaWF0IjoxNzE3ODY3NzExLCJqdGkiOiI2NGU2MGYwYmVhOTk0MTBhYTU4MDE3YmZjOWExMzFhMyIsInVzZXJfaWQiOjF9.-o7wDmDyaW85G8RjL_-nM7fokiExYGvsa3VjFdQjjbc
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0OTExLCJpYXQiOjE3MTc4Njc3MTEsImp0aSI6IjA4ZjRjY2RmYjA1ZjQzYjNhNjI2M2U2YjdiZWI1YjY3IiwidXNlcl9pZCI6MX0.EMy8YY4Y6S8lIggtqRTfjbEgscu9lEX9gJEEpkB-CUY
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDEyMiwiaWF0IjoxNzE3ODY3NzIyLCJqdGkiOiJmZjlkNDI3NDk0Nzg0MzUyOTYxMDcyNDAxZDRhN2JkMSIsInVzZXJfaWQiOjF9.OWOGyqHTVYOnWWGxtCYBSBsbz_JWEJ9qPi3DfcHmPyA
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0OTIyLCJpYXQiOjE3MTc4Njc3MjIsImp0aSI6ImI2ZTI0NWNlZmQxMDRjZGQ4Yjc4YTAyZGNlNmMxMzZhIiwidXNlcl9pZCI6MX0.YTDAQ8voX7Bkj8y9nMmHzf8E87bqCrURdXBMs0V_moM
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDEyOCwiaWF0IjoxNzE3ODY3NzI4LCJqdGkiOiJiNWI1YzYzODc5NDM0Mjk2ODY3YzdjYmM2NzJhMTUxNyIsInVzZXJfaWQiOjF9.5nF3bLsZSh-XpyJQb6HgTCzuo6VzGQElxDD3ejdsdcc
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0OTI4LCJpYXQiOjE3MTc4Njc3MjgsImp0aSI6ImVlMjU4ZDU2MzI5MDRiYWFhYzFlYmZhNjExZjQ3ZjI1IiwidXNlcl9pZCI6MX0.O4NoX1mExeSwvsx4cbVQonvOLkuFlRJNaDWkyB4kb0s
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDE0NiwiaWF0IjoxNzE3ODY3NzQ2LCJqdGkiOiIwZmM5NDkzYTFmY2Y0MmVkODgwMjMxNDFlOGE4NTQyYSIsInVzZXJfaWQiOjF9.GJdEeDSRi9OlXFPWctJcC7vhepXvUXxL1yix8zOWuUE
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0OTQ2LCJpYXQiOjE3MTc4Njc3NDYsImp0aSI6ImQ4MmYwYTA3ODYzZTRhMDk4ZDgzNTgyOTg4ZmMwNzBkIiwidXNlcl9pZCI6MX0.2hIZHeQ-aXM755nh266cRwohBkKb2QXOOOf69UECKKA
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDE2NywiaWF0IjoxNzE3ODY3NzY3LCJqdGkiOiI1OGJmMzYxYzE4ODg0NDM3ODk1NDJmYWIzZDAyMzMzMiIsInVzZXJfaWQiOjF9.6P4Vys1OzwiXo7_ktnrxoMkVmVFc31_YaGowG4lmAlk
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc0OTY3LCJpYXQiOjE3MTc4Njc3NjcsImp0aSI6IjEwNzA3MTc0ZmFiNTRhNjQ5MDdjOGM1YzlhMGQyMzlhIiwidXNlcl9pZCI6MX0.4_arF0_agYybZ6vR71gJdy4oI5Hs7z7jeF3O9PsE6Qc
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDI5NSwiaWF0IjoxNzE3ODY3ODk1LCJqdGkiOiI1YWVkMTkyMTFkOTQ0ZThhYjY5MmQzZDYzZjc2NzA1YyIsInVzZXJfaWQiOjF9.IbnjeYzvZsrl5Z9NCqYTPRhlJPU3DZWa-QBAlEmgXUk
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc1MDk1LCJpYXQiOjE3MTc4Njc4OTUsImp0aSI6ImRmYTc0YzY3ZDhkYzQ0YzBhNWY5ZTIzZmRhNmU4ZjBkIiwidXNlcl9pZCI6MX0.TmU2AYvufMt4Hxno7CMRkzak50-4R3Y_rooC9OBZckE
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDQyNiwiaWF0IjoxNzE3ODY4MDI2LCJqdGkiOiIxNGJkNDhmYjA0ZGU0Mjc4OGU4ZDVlZWZmYzJlYmE0NiIsInVzZXJfaWQiOjF9.GZDIxNVYdarLLWsnj6Xp8yZP68SpLvze6M6A522FFaY
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc1MjI2LCJpYXQiOjE3MTc4NjgwMjYsImp0aSI6ImE4OTRhMGNhMTdmNTRjYmViZTQzZmMzNmQ0OTI4OTc5IiwidXNlcl9pZCI6MX0.S25D_Sd7FYWUyiuRTDnsBYIOcgN5Ro169Sp6dUmNtZ0
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+[08/Jun/2024 17:34:21] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:34:21] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:34:21] "POST /admin_cg/ HTTP/1.0" 200 46537
+[08/Jun/2024 17:34:22] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:34:22] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:34:23] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:34:49] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:34:49] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:34:49] "POST /admin_cg/ HTTP/1.0" 200 46549
+[08/Jun/2024 17:34:49] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:34:49] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:34:51] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:37:06] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:37:06] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:37:06] "POST /admin_cg/ HTTP/1.0" 200 46011
+[08/Jun/2024 17:37:07] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:37:07] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:37:12] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:37:56] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:37:56] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:37:56] "POST /admin_cg/ HTTP/1.0" 200 45952
+[08/Jun/2024 17:37:56] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:37:56] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:37:59] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:38:27] "GET /cg_api/token/ HTTP/1.0" 200 483
+[08/Jun/2024 17:38:27] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[08/Jun/2024 17:38:27] "POST /admin_cg/ HTTP/1.0" 200 45952
+[08/Jun/2024 17:38:28] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 17:38:28] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 17:38:31] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 18:08:52] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 18:19:43] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 18:32:17] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x07/?Øh\x98\x8d\x7fÌèãéù¹0pZÓZ¬b³\x17¼±êv¥M\x957²\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[08/Jun/2024 18:32:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 18:32:17] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00{\x01\x00\x00w\x03\x03â4&\x81\x99\x14å\x7f^\x18íÃ\x942S\x9b[\x90ï\x82¾JÂÃ\x06'`oèøóc\x00\x00\x1aÀ/À+À\x11À\x07À\x13À")
+[08/Jun/2024 18:32:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 18:32:17] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 18:32:17] code 400, message Bad request version ('À\x14À')
+[08/Jun/2024 18:32:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 18:32:17] "GET /login HTTP/1.1" 301 0
+Not Found: /app/.git/config
+[08/Jun/2024 18:34:19] "GET /app/.git/config HTTP/1.0" 404 5587
+[08/Jun/2024 20:26:51] "GET / HTTP/1.0" 200 14468
+Not Found: /wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:51] "GET //wp-includes/wlwmanifest.xml HTTP/1.0" 404 5619
+Not Found: /xmlrpc.php
+[08/Jun/2024 20:26:52] "GET //xmlrpc.php?rsd HTTP/1.0" 404 5572
+[08/Jun/2024 20:26:52] "GET / HTTP/1.0" 200 14468
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:52] "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /web/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:52] "GET //web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:53] "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5649
+Not Found: /website/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:53] "GET //website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5643
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:53] "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5628
+Not Found: /news/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:53] "GET //news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:54] "GET //2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:54] "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:54] "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:54] "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /test/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:55] "GET //test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:55] "GET //wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /site/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:55] "GET //site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:55] "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5631
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[08/Jun/2024 20:26:56] "GET //sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 5634
+[08/Jun/2024 21:31:27] "GET / HTTP/1.1" 200 14468
+[08/Jun/2024 21:37:11] code 400, message Bad request version ('À\x13À')
+[08/Jun/2024 21:37:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 21:37:11] code 400, message Bad request version ('À(À$À\x14À')
+[08/Jun/2024 21:37:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[08/Jun/2024 22:48:49] "GET / HTTP/1.0" 200 14468
+[08/Jun/2024 22:48:49] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[08/Jun/2024 22:48:49] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[08/Jun/2024 22:48:50] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[08/Jun/2024 22:48:50] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[08/Jun/2024 22:48:50] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[08/Jun/2024 22:48:50] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[08/Jun/2024 22:48:50] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+Not Found: /.env
+[08/Jun/2024 23:34:20] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[08/Jun/2024 23:34:21] "POST / HTTP/1.0" 403 2928
+Not Found: /wp-content/themes/twentytwentyone/inc/block-css.php
+[09/Jun/2024 00:20:51] "POST /wp-content/themes/twentytwentyone/inc/block-css.php HTTP/1.0" 404 5678
+Not Found: /QKBFJBVZsPKeqFS/HAchGeCttVyEtqZ.php
+[09/Jun/2024 00:20:54] "POST /QKBFJBVZsPKeqFS/HAchGeCttVyEtqZ.php HTTP/1.0" 404 5630
+Not Found: /search/s.php
+[09/Jun/2024 00:20:55] "GET /search/s.php?i=1&id=APOX8NWOV42320 HTTP/1.0" 404 5586
+Forbidden (CSRF cookie not set.): /
+[09/Jun/2024 00:20:56] "POST / HTTP/1.0" 403 2928
+Not Found: /zMLUH93A
+[09/Jun/2024 00:20:57] "GET /zMLUH93A HTTP/1.0" 404 5548
+Not Found: /new/login
+[09/Jun/2024 00:20:59] "GET /new/login HTTP/1.0" 404 5551
+Not Found: /viwwwsogou
+[09/Jun/2024 00:21:00] "GET /viwwwsogou?op=8&query=%E7%A8%8F%E5%BB%BA%09%E9%BE%90%E1%B7%A2 HTTP/1.0" 404 5608
+Not Found: /wh/glass.php
+[09/Jun/2024 00:21:01] "GET /wh/glass.php HTTP/1.0" 404 5560
+[09/Jun/2024 00:21:03] "GET /login HTTP/1.0" 301 0
+Not Found: /nvidia_license_upd.php
+[09/Jun/2024 00:21:06] "POST /nvidia_license_upd.php HTTP/1.0" 404 5591
+Not Found: /api/attach
+[09/Jun/2024 00:21:08] "POST //api/attach HTTP/1.0" 404 5555
+Not Found: /ymybisvimqjoknhmgryit/getocmskdmsm/
+[09/Jun/2024 00:21:09] "POST /ymybisvimqjoknhmgryit/getocmskdmsm/ HTTP/1.0" 404 5630
+Not Found: /c/msdownload/update/software/update/2021/11/6632de33-967441-x86.cab
+[09/Jun/2024 00:21:11] "GET /c/msdownload/update/software/update/2021/11/6632de33-967441-x86.cab HTTP/1.0" 404 5729
+Not Found: /c/msdownload/update/software/update/2021/11/6632de33-967441-x86.cab
+[09/Jun/2024 00:21:12] "GET /c/msdownload/update/software/update/2021/11/6632de33-967441-x86.cab HTTP/1.0" 404 5729
+Not Found: /fw6I
+[09/Jun/2024 00:21:14] "GET /fw6I HTTP/1.0" 404 5536
+Not Found: /fw6I
+[09/Jun/2024 00:21:14] "GET /fw6I HTTP/1.0" 404 5536
+Not Found: /wp-content/themes/twentytwentyone/inc/block-css.php
+[09/Jun/2024 00:21:23] "POST /wp-content/themes/twentytwentyone/inc/block-css.php HTTP/1.0" 404 5678
+Not Found: /QKBFJBVZsPKeqFS/HAchGeCttVyEtqZ.php
+[09/Jun/2024 00:21:24] "POST /QKBFJBVZsPKeqFS/HAchGeCttVyEtqZ.php HTTP/1.0" 404 5630
+Not Found: /search/s.php
+[09/Jun/2024 00:21:27] "GET /search/s.php?i=1&id=APOX8NWOV42320 HTTP/1.0" 404 5586
+Forbidden (CSRF cookie not set.): /
+[09/Jun/2024 00:21:28] "POST / HTTP/1.0" 403 2928
+Not Found: /zMLUH93A
+[09/Jun/2024 00:21:30] "GET /zMLUH93A HTTP/1.0" 404 5548
+Not Found: /new/login
+[09/Jun/2024 00:21:33] "GET /new/login HTTP/1.0" 404 5551
+Not Found: /viwwwsogou
+[09/Jun/2024 00:21:34] "GET /viwwwsogou?op=8&query=%E7%A8%8F%E5%BB%BA%09%E9%BE%90%E1%B7%A2 HTTP/1.0" 404 5608
+Not Found: /wh/glass.php
+[09/Jun/2024 00:21:36] "GET /wh/glass.php HTTP/1.0" 404 5560
+[09/Jun/2024 00:21:36] "GET /login HTTP/1.0" 301 0
+Not Found: /nvidia_license_upd.php
+[09/Jun/2024 00:21:38] "POST /nvidia_license_upd.php HTTP/1.0" 404 5591
+Not Found: /api/attach
+[09/Jun/2024 00:21:41] "POST //api/attach HTTP/1.0" 404 5555
+Not Found: /ymybisvimqjoknhmgryit/getocmskdmsm/
+[09/Jun/2024 00:21:42] "POST /ymybisvimqjoknhmgryit/getocmskdmsm/ HTTP/1.0" 404 5630
+Not Found: /c/msdownload/update/software/update/2021/11/6632de33-967441-x86.cab
+[09/Jun/2024 00:21:43] "GET /c/msdownload/update/software/update/2021/11/6632de33-967441-x86.cab HTTP/1.0" 404 5729
+Not Found: /c/msdownload/update/software/update/2021/11/6632de33-967441-x86.cab
+[09/Jun/2024 00:21:43] "GET /c/msdownload/update/software/update/2021/11/6632de33-967441-x86.cab HTTP/1.0" 404 5729
+Not Found: /fw6I
+[09/Jun/2024 00:21:45] "GET /fw6I HTTP/1.0" 404 5536
+Not Found: /fw6I
+[09/Jun/2024 00:21:46] "GET /fw6I HTTP/1.0" 404 5536
+[09/Jun/2024 00:29:23] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 00:29:24,041] - Broken pipe from ('64.62.156.110', 20927)
+Not Found: /favicon.ico
+[09/Jun/2024 00:29:40] "GET /favicon.ico HTTP/1.1" 404 5562
+Not Found: /http:/api.ipify.org/
+[09/Jun/2024 00:29:44] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1877
+Not Found: /www.shadowserver.org:443
+[09/Jun/2024 00:29:48] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1886
+[09/Jun/2024 02:11:18] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 02:11:26] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 02:11:35] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 02:11:35] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /api/session/properties
+[09/Jun/2024 02:11:36] "GET /api/session/properties HTTP/1.1" 404 5595
+[09/Jun/2024 02:11:55] "GET /admin/ HTTP/1.1" 302 0
+[09/Jun/2024 02:11:55] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 02:16:55] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 02:34:03] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 02:44:47] "GET / HTTP/1.0" 200 14468
+Not Found: /robots.txt
+[09/Jun/2024 02:44:47] "GET /robots.txt HTTP/1.0" 404 5568
+[09/Jun/2024 02:44:47] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 03:18:29] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 03:18:29] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[09/Jun/2024 03:18:29] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[09/Jun/2024 03:18:29] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[09/Jun/2024 03:18:29] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[09/Jun/2024 03:18:29] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[09/Jun/2024 03:18:29] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[09/Jun/2024 03:18:29] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[09/Jun/2024 03:25:28,928] - Broken pipe from ('167.94.138.52', 58270)
+[09/Jun/2024 03:25:30] code 400, message Bad request version ('À\x14À')
+[09/Jun/2024 03:25:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+[09/Jun/2024 04:01:18] code 400, message Bad request version ('À\x14À')
+[09/Jun/2024 04:01:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.git/config
+[09/Jun/2024 04:40:54] "GET /.git/config HTTP/1.0" 404 5571
+Not Found: /.env
+[09/Jun/2024 04:45:07] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[09/Jun/2024 04:45:07] "POST / HTTP/1.0" 403 2928
+[09/Jun/2024 04:48:31] "GET / HTTP/1.0" 200 14468
+Not Found: /webui/
+[09/Jun/2024 04:52:43] "GET /webui/ HTTP/1.0" 404 5542
+[09/Jun/2024 04:58:21] "GET / HTTP/1.0" 200 14468
+Not Found: /geoserver/web/
+[09/Jun/2024 05:01:53] "GET /geoserver/web/ HTTP/1.0" 404 5566
+Not Found: /.git/config
+[09/Jun/2024 05:03:05] "GET /.git/config HTTP/1.0" 404 5557
+[09/Jun/2024 05:29:58] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 05:29:58] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[09/Jun/2024 05:30:00] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[09/Jun/2024 05:30:00] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 200 2080830
+[09/Jun/2024 05:30:00] "GET /CG_University/media/images/home_image/2.jpg HTTP/1.0" 200 55879
+[09/Jun/2024 05:30:05] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 200 245914
+[09/Jun/2024 05:30:06] "GET /CG_University/media/images/home_image/4.jpg HTTP/1.0" 200 139834
+[09/Jun/2024 05:30:06] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 200 349888
+[09/Jun/2024 05:31:45] "GET /login/ HTTP/1.0" 200 4767
+[09/Jun/2024 05:31:47] "GET /CG_University/media/main_css/login.css HTTP/1.0" 200 2123
+[09/Jun/2024 05:31:52] "GET /cg_api/token/ HTTP/1.0" 200 483
+[09/Jun/2024 05:31:52] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[09/Jun/2024 05:31:52] "POST /admin_cg/ HTTP/1.0" 200 45891
+[09/Jun/2024 05:31:59] code 400, message Bad request version ('À\x14À')
+[09/Jun/2024 05:31:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[09/Jun/2024 05:31:59] code 400, message Bad request version ('À\x14À')
+[09/Jun/2024 05:31:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[09/Jun/2024 05:31:59] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 05:32:00] code 400, message Bad request version ('À\x14À')
+[09/Jun/2024 05:32:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[09/Jun/2024 05:32:00] "GET /login HTTP/1.1" 301 0
+[09/Jun/2024 05:32:29] "GET /board_members/ HTTP/1.0" 200 9306
+[09/Jun/2024 05:32:29] "GET /CG_University/media/main_css/board_members.css HTTP/1.0" 200 990
+[09/Jun/2024 05:32:40] "GET /board_members/ HTTP/1.0" 200 9306
+[09/Jun/2024 05:32:43] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 05:33:31] "GET / HTTP/1.0" 200 14468
+Not Found: /uFOR
+[09/Jun/2024 06:07:23] "GET /uFOR HTTP/1.1" 404 5541
+Not Found: /Byp2
+[09/Jun/2024 06:07:23] "GET /Byp2 HTTP/1.1" 404 5541
+Not Found: /aab8
+[09/Jun/2024 06:07:23] "GET /aab8 HTTP/1.1" 404 5541
+Not Found: /jquery-3.3.1.slim.min.js
+[09/Jun/2024 06:07:23] "GET /jquery-3.3.1.slim.min.js HTTP/1.1" 404 5601
+Not Found: /aab9
+[09/Jun/2024 06:07:24] "GET /aab9 HTTP/1.1" 404 5541
+Not Found: /jquery-3.3.2.slim.min.js
+[09/Jun/2024 06:07:24] "GET /jquery-3.3.2.slim.min.js HTTP/1.1" 404 5601
+[09/Jun/2024 06:29:47] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 06:43:19] code 400, message Bad request version ('À\x14À')
+[09/Jun/2024 06:43:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.env
+[09/Jun/2024 07:04:40] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[09/Jun/2024 07:04:41] "POST / HTTP/1.0" 403 2928
+[09/Jun/2024 07:09:16] code 400, message Bad request version ('À\x14À')
+[09/Jun/2024 07:09:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[09/Jun/2024 07:18:56] code 400, message Bad request version ('À\x13À')
+[09/Jun/2024 07:18:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[09/Jun/2024 07:18:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03í\x10"wZ[\x1bØÊåß\x9fzB\x81zø\x9dÕòÀ¦3IøK\'è¯\x82çP\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À\'À#À\x13À')
+[09/Jun/2024 07:18:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[09/Jun/2024 07:35:34,188] - Broken pipe from ('192.155.88.231', 44960)
+[09/Jun/2024 07:35:34] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 07:35:34,245] - Broken pipe from ('192.155.88.231', 44961)
+[09/Jun/2024 07:35:46] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 07:42:16] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 07:42:17] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[09/Jun/2024 07:58:15] "GET / HTTP/1.0" 200 14468
+Not Found: /aaa9
+[09/Jun/2024 08:37:21] "GET /aaa9 HTTP/1.1" 404 5541
+Not Found: /aab8
+[09/Jun/2024 08:37:21] "GET /aab8 HTTP/1.1" 404 5541
+[09/Jun/2024 08:37:21] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 09:17:35] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 09:17:36] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /.env
+[09/Jun/2024 09:39:13] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[09/Jun/2024 09:39:13] "POST / HTTP/1.0" 403 2928
+[09/Jun/2024 09:45:07] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 09:45:07,792] - Broken pipe from ('152.32.134.166', 60842)
+[09/Jun/2024 09:45:08] code 400, message Bad request version ('A0\x94ï[Ô')
+[09/Jun/2024 09:45:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[09/Jun/2024 09:45:08] code 400, message Bad HTTP/0.9 request type ('t3')
+[09/Jun/2024 09:45:08] "t3 12.1.2" 400 -
+[09/Jun/2024 09:45:44] "GET / HTTP/1.1" 200 14468
+[09/Jun/2024 09:45:44] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+[09/Jun/2024 09:45:45] "GET /CG_University/media/images/logo.png HTTP/1.1" 200 46843
+Not Found: /robots.txt
+[09/Jun/2024 09:45:46] "GET /robots.txt HTTP/1.1" 404 5559
+Not Found: /sitemap.xml
+[09/Jun/2024 09:45:46] "GET /sitemap.xml HTTP/1.1" 404 5562
+Not Found: /autodiscover/autodiscover.json
+[09/Jun/2024 11:17:54] "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.0" 404 5630
+Not Found: /version
+[09/Jun/2024 11:34:05] "GET /version HTTP/1.0" 404 5545
+Not Found: /aaa9
+[09/Jun/2024 12:37:47] "GET /aaa9 HTTP/1.1" 404 5541
+Not Found: /aab8
+[09/Jun/2024 12:37:48] "GET /aab8 HTTP/1.1" 404 5541
+[09/Jun/2024 12:37:49] "GET / HTTP/1.1" 200 14468
+Not Found: /.env
+[09/Jun/2024 13:03:58] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[09/Jun/2024 13:03:59] "POST / HTTP/1.0" 403 2928
+[09/Jun/2024 13:08:45] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 13:25:45] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 13:25:46] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Not Found: /.env
+[09/Jun/2024 13:27:35] "GET /.env HTTP/1.0" 404 5536
+Forbidden (CSRF cookie not set.): /
+[09/Jun/2024 13:27:35] "POST / HTTP/1.0" 403 2928
+[09/Jun/2024 13:55:54] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 13:56:03] "GET /login/ HTTP/1.0" 200 4767
+[09/Jun/2024 13:56:06] "GET /cg_api/token/ HTTP/1.0" 200 483
+[09/Jun/2024 13:56:06] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[09/Jun/2024 13:56:06] "POST /admin_cg/ HTTP/1.0" 200 45891
+[09/Jun/2024 14:01:04,610] - Broken pipe from ('138.197.223.164', 39244)
+[09/Jun/2024 14:04:02] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 14:04:46] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 14:07:10] "GET / HTTP/1.1" 200 14468
+Not Found: /ab2g
+[09/Jun/2024 14:15:35] "GET /ab2g HTTP/1.0" 404 5536
+Not Found: /ab2h
+[09/Jun/2024 14:15:36] "GET /ab2h HTTP/1.0" 404 5536
+Not Found: /alive.php
+[09/Jun/2024 14:15:37] "GET /alive.php HTTP/1.0" 404 5551
+[09/Jun/2024 14:15:42] "GET / HTTP/1.0" 200 14468
+Not Found: /t4
+[09/Jun/2024 14:15:44] "GET /t4 HTTP/1.0" 404 5530
+[09/Jun/2024 14:15:46] "GET / HTTP/1.0" 200 14468
+Not Found: /teorema505
+[09/Jun/2024 14:15:47] "GET /teorema505?t=1 HTTP/1.0" 404 5558
+[09/Jun/2024 14:20:59] "GET /cg_api/students/CG22/ HTTP/1.0" 200 407
+[09/Jun/2024 14:20:59] "GET /cg_api/marksheets/CG22/ HTTP/1.0" 200 241
+[09/Jun/2024 14:20:59] "GET /cg_api/student-data/CG22/ HTTP/1.0" 200 430
+[09/Jun/2024 14:20:59] "GET /edit_student/?id=CG22&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3OTQ4NTY2LCJpYXQiOjE3MTc5NDEzNjYsImp0aSI6ImUzOTdlZGMxOTQwYTRhMzNiYjc0Y2Y4ZmQ3OWNkNmEyIiwidXNlcl9pZCI6MX0.0MfZ5IGrfVM72rMRECrpWjr7ousszDtZjZ313Dtze68 HTTP/1.0" 200 29614
+[09/Jun/2024 14:21:00] "GET /media/images/students/profile-pic/13063_rXnjzu9.png HTTP/1.0" 200 497564
+[09/Jun/2024 14:21:01] "GET /media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_ulVOUOO.jpg HTTP/1.0" 200 50314
+[09/Jun/2024 14:21:01] "GET /media/images/students/provision/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_p5kRLoU.jpg HTTP/1.0" 200 50314
+[09/Jun/2024 14:21:02] "GET /media/images/students/affidevit/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_nWrGB8V.jpg HTTP/1.0" 200 50314
+[09/Jun/2024 14:23:34] "GET /cg_api/students/CG22/ HTTP/1.0" 200 407
+[09/Jun/2024 14:23:34] "GET /cg_api/marksheets/CG22/ HTTP/1.0" 200 241
+[09/Jun/2024 14:23:34] "GET /cg_api/student-data/CG22/ HTTP/1.0" 200 430
+[09/Jun/2024 14:23:34] "GET /edit_student/?id=CG22&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3OTQ4NTY2LCJpYXQiOjE3MTc5NDEzNjYsImp0aSI6ImUzOTdlZGMxOTQwYTRhMzNiYjc0Y2Y4ZmQ3OWNkNmEyIiwidXNlcl9pZCI6MX0.0MfZ5IGrfVM72rMRECrpWjr7ousszDtZjZ313Dtze68 HTTP/1.0" 200 29614
+[09/Jun/2024 14:24:28] "GET /admin/ HTTP/1.0" 302 0
+[09/Jun/2024 14:24:29] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4308
+[09/Jun/2024 14:24:29] "GET /CG_University/media/admin/css/dark_mode.css HTTP/1.0" 200 2682
+[09/Jun/2024 14:24:29] "GET /CG_University/media/admin/css/base.css HTTP/1.0" 200 21544
+[09/Jun/2024 14:24:29] "GET /CG_University/media/admin/css/nav_sidebar.css HTTP/1.0" 200 2810
+[09/Jun/2024 14:24:30] "GET /CG_University/media/admin/css/login.css HTTP/1.0" 200 958
+[09/Jun/2024 14:24:30] "GET /CG_University/media/admin/css/responsive.css HTTP/1.0" 200 17905
+[09/Jun/2024 14:24:30] "GET /CG_University/media/admin/js/theme.js HTTP/1.0" 200 1943
+[09/Jun/2024 14:24:30] "GET /CG_University/media/admin/js/nav_sidebar.js HTTP/1.0" 200 3063
+[09/Jun/2024 14:24:34] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 4469
+[09/Jun/2024 14:29:39] "GET /login/ HTTP/1.0" 200 4767
+[09/Jun/2024 14:29:46] "GET /cg_api/token/ HTTP/1.0" 200 483
+[09/Jun/2024 14:29:46] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[09/Jun/2024 14:29:46] "POST /admin_cg/ HTTP/1.0" 200 45604
+[09/Jun/2024 14:32:21] "GET /cg_api/token/ HTTP/1.0" 200 483
+[09/Jun/2024 14:32:21] "POST /cg_api/login/ HTTP/1.0" 200 5214
+[09/Jun/2024 14:32:21] "POST /admin_cg/ HTTP/1.0" 200 45658
+[09/Jun/2024 14:32:22] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[09/Jun/2024 14:32:22] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[09/Jun/2024 14:32:22] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[09/Jun/2024 14:32:51] "GET / HTTP/1.0" 200 14468
+[09/Jun/2024 14:32:52] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[09/Jun/2024 14:33:03] "POST /cg_api/student-data/ HTTP/1.0" 201 47
+[09/Jun/2024 14:33:03] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[09/Jun/2024 14:33:03] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+[09/Jun/2024 14:33:04] "GET /cg_api/token/ HTTP/1.0" 200 483
+[09/Jun/2024 14:33:04] "POST /cg_api/login/ HTTP/1.0" 200 5609
+[09/Jun/2024 14:33:04] "POST /admin_cg/ HTTP/1.0" 200 45658
+[09/Jun/2024 14:33:05] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[09/Jun/2024 14:33:05] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[09/Jun/2024 14:33:09] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[09/Jun/2024 14:33:50] "POST /cg_api/student-data/ HTTP/1.0" 201 47
+[09/Jun/2024 14:33:50] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[09/Jun/2024 14:33:52] "POST /cg_api/students/ HTTP/1.0" 201 57
+[09/Jun/2024 14:33:53] "POST /cg_api/marksheets/ HTTP/1.0" 201 75
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDQ2MSwiaWF0IjoxNzE3ODY4MDYxLCJqdGkiOiIyYjYyMzUwOWNlYWY0MGViODk0MmVkYWQ3MGQ2MDhmMyIsInVzZXJfaWQiOjF9.cN1filYaROWLFPT5hMc3zDzjPXTC0aX3Ig_hNuzZbtM
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc1MjYxLCJpYXQiOjE3MTc4NjgwNjEsImp0aSI6IjFhN2JlN2UyOGRhZTQ2ZjhhNjU4ZWNlZmNkMzIwYWEwIiwidXNlcl9pZCI6MX0.aAf4eb3tMhQ-9n38zNrXZXPrJbeWA2gN2v3PmghSOUU
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDQ4OSwiaWF0IjoxNzE3ODY4MDg5LCJqdGkiOiJkMDc1Y2VjM2QyNTU0ZGM1YjMyOGI1NGNhM2ViMzk0NyIsInVzZXJfaWQiOjF9.Wttt7ynmXa7Kbiz3AFW_Woe4Kax3NKaRnyfA3ofi4n0
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc1Mjg5LCJpYXQiOjE3MTc4NjgwODksImp0aSI6ImRhMzIyODNlYzU3NDQ0YmZhNGE4ZjQ3NDhhZjk4NmNjIiwidXNlcl9pZCI6MX0.521MNAJhaa6yIJ9Gfmd-aPNyccHilBRFcDQLqo_aptQ
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDYyNiwiaWF0IjoxNzE3ODY4MjI2LCJqdGkiOiI0M2VkOWNiZWZjOTA0N2FkYmRjNjhkYmU0ODdlOTcwMiIsInVzZXJfaWQiOjF9.Wpus_Icbz6ttlQBMOnQ02JZ5AVK8xN_FpZCs18RkPMI
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc1NDI2LCJpYXQiOjE3MTc4NjgyMjYsImp0aSI6Ijc2YjFlMjdkMjA3YTQ0ZTM4NWY5NTY0YzlmZWUzMDgwIiwidXNlcl9pZCI6MX0.kQiwbSdS0gZXMPgDC8WBot62_bgE1rV9ZCwaagJ-zUQ
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDY3NiwiaWF0IjoxNzE3ODY4Mjc2LCJqdGkiOiI0YTgwOTAwZGMzYTM0ZmNhYTUxOWU4NmU2MDFhOGNlYyIsInVzZXJfaWQiOjF9.pglrcBE01w8BtgSQnZkST-6EZ8Hxwo_mzk9EjFrGyz4
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc1NDc2LCJpYXQiOjE3MTc4NjgyNzYsImp0aSI6IjU3NGUzODFiOWQ3ZTQxZmE4NjM1NTdhN2ZhMTAxNWEzIiwidXNlcl9pZCI6MX0.3T76YyOsYCeleIRWnR--ucyTBbFjDOIU96bJZK6Zo7E
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk1NDcwNywiaWF0IjoxNzE3ODY4MzA3LCJqdGkiOiI1MDY3YmQ1Njg3MmM0ZmQzYTEwN2NjOGY3NWQyODExMiIsInVzZXJfaWQiOjF9.o4G-6G3mT8fosQdfH7yul3vQaUTgR86BuI8rKEr4Bcc
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3ODc1NTA3LCJpYXQiOjE3MTc4NjgzMDcsImp0aSI6IjdmOGNmODIzYTUyZDQ4OGRhOGUzMmM0ZDcwNzdiZGQ4IiwidXNlcl9pZCI6MX0.9ujvcjhdO751UuK6ScaQDqxvItnKN2B1zcfAIb6238g
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNzk5NzUxMiwiaWF0IjoxNzE3OTExMTEyLCJqdGkiOiIyZjFiMzJhOTcyMmU0YzZhYmRkOTVjNGRlZmUzNDY0YSIsInVzZXJfaWQiOjF9.s1Ts2iTSRGGVOHdwHtlNe-ExDb5PvJGNrp3xQu7axzc
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3OTE4MzEyLCJpYXQiOjE3MTc5MTExMTIsImp0aSI6ImZiNWUyN2JhN2JiNzRlNWQ5MDE1YTUyOGI1OWJlY2EzIiwidXNlcl9pZCI6MX0.wjKbRKmWLFg7JIp0GxsGI4JMGvjOUdleE13-o1SBOVE
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxODAyNzc2NiwiaWF0IjoxNzE3OTQxMzY2LCJqdGkiOiIxMGVhZGMwYWRiN2I0OWZhYjJiMzRmMDc5YjkwZTdjMSIsInVzZXJfaWQiOjF9.xtH-EBvY_-L7BfbdfZloP-TQIu5aioHThPVc3BFus_A
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3OTQ4NTY2LCJpYXQiOjE3MTc5NDEzNjYsImp0aSI6ImUzOTdlZGMxOTQwYTRhMzNiYjc0Y2Y4ZmQ3OWNkNmEyIiwidXNlcl9pZCI6MX0.0MfZ5IGrfVM72rMRECrpWjr7ousszDtZjZ313Dtze68
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'CG22', 'password': '1234', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/13063_rXnjzu9.png', 'full_name': 'Aakash Panwar', 'father_name': 'Dummy', 'mother_name': 'Dummy 1', 'gender': 'Male', 'date_of_birth': '2024-06-04', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '07000649593', 'address': '46, Mohan Nagar', 'list_of_integers': [8], 'center_id': 3}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': 'CG22', 'password': '1234', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/13063_rXnjzu9.png', 'full_name': 'Aakash Panwar', 'father_name': 'Dummy', 'mother_name': 'Dummy 1', 'gender': 'Male', 'date_of_birth': '2024-06-04', 'category': 'SC', 'email': 'panwara925@gmail.com', 'mobile_number': '07000649593', 'address': '46, Mohan Nagar', 'list_of_integers': [8], 'center_id': 3}
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxODAyOTc4NiwiaWF0IjoxNzE3OTQzMzg2LCJqdGkiOiI1Y2EzZWEyZDJiZDE0ZDA0ODY4ZDYwOTVhZTA2MTM1NiIsInVzZXJfaWQiOjF9.qB8K2zxpXsW-SlXxegmtsDarazZ9bzkaT10AYLmbI2Q
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3OTUwNTg2LCJpYXQiOjE3MTc5NDMzODYsImp0aSI6ImQyZjU1ZTdmMTViMTQ0N2ZiMmFhMWM1MDBiYTIxOGYxIiwidXNlcl9pZCI6MX0._7JCtvfiN5q4PDUumn3gAZvSPpFIDupi1SE3EMu19bc
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxODAyOTk0MSwiaWF0IjoxNzE3OTQzNTQxLCJqdGkiOiJjZGI5YTE4YTQ5NGU0MWQwYWI3NjFlMWQxZWU3ODFlZiIsInVzZXJfaWQiOjF9.b0rlPjRHN4zUTBtsOx74KrTNEDGGjDc-TlTVGofxxF0
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3OTUwNzQxLCJpYXQiOjE3MTc5NDM1NDEsImp0aSI6IjRhNDkyMGViZDY4NTQ5MTJiODk4ZjUwYzg0MjlkODE2IiwidXNlcl9pZCI6MX0.W20ZdMQoScdY48cTSad8-NwSr5xPPZIaOEKPJv-hZjI
+<QueryDict: {'student_enrollment_no': ['CG25'], 'session': ['Dec-2019'], 'semester': ['2 '], 'sgpa': ['8.7'], 'status': ['Ragular'], 'result': ['Pass '], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+Refresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxODAyOTk4NCwiaWF0IjoxNzE3OTQzNTg0LCJqdGkiOiI3YjZkZjJiNzg2ZDU0OGNhOWE3OGM0ZTBmNWY4ODMyNSIsInVzZXJfaWQiOjF9.VyzQM8neVmU18zHQF9_b66bb3cUmCbrhSfbJRvYpkTw
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3OTUwNzg0LCJpYXQiOjE3MTc5NDM1ODQsImp0aSI6ImIzNGIyMTIzOWYwMjQzMTNiNmNjOTk1MTMwNGMyZWE4IiwidXNlcl9pZCI6MX0.4v5I0UMvLqhcP-oIuUtxBOG085xqYmID1ZrE9RjTGvQ
+<QueryDict: {'student_enrollment_no': ['CG102'], 'session': ['Dec-2022'], 'semester': ['12'], 'sgpa': ['9.0'], 'status': ['Ragular'], 'result': ['Pass '], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+Token Payload ::  {'username': 'Nannu', 'password': '040820', 'user_type': 'admin'}
+Username: Nannu
+[09/Jun/2024 14:33:57] "GET /cg_api/token/ HTTP/1.0" 200 483
+[09/Jun/2024 14:33:57] "POST /cg_api/login/ HTTP/1.0" 200 6388
+[09/Jun/2024 14:33:57] "POST /admin_cg/ HTTP/1.0" 200 47313
+[09/Jun/2024 14:33:57] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+[09/Jun/2024 14:33:57] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
+[09/Jun/2024 14:33:58] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
