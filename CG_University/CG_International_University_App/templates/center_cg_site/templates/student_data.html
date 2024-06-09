@@ -284,13 +284,15 @@
                                 <textarea class="form-control required-field" id="address" name="address" rows="3"
                                     required></textarea>
                             </div>
-
                         </div>
                     </div>
 
+
+
                     <div class="modal-footer">
+                        <h6 id="error-message"></h6>
                         <button id="add-student" type="button" class="btn btn-primary"
-                            onclick="extractAndDisplayData()">Add Student</button>
+                            onclick="extractAndDisplayData(event)">Add Student</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     </div>
                 </div>
@@ -306,34 +308,24 @@
                 $('.modal-backdrop').remove();
             }
 
-            function extractAndDisplayData() {
-                var requiredFields = document.querySelectorAll(".required-field");
-                var reversedFields = Array.from(requiredFields).reverse();
+            async function extractAndDisplayData(event) {
+                event.preventDefault();
+                const requiredFields = Array.from(document.querySelectorAll(".required-field")).reverse();
 
-
-                var isEmpty = false;
-                var capitalized = "";
-
-                reversedFields.forEach(function (field) {
-                    if (field.value.trim() == "") {
-                        isEmpty = true;
-                        let emptyField = field.name;
-                        capitalized = emptyField.replace(/_/g, '  ').replace(/\b\w/g, char => char.toUpperCase()).replace(/\s+/g, ' ');
-                    } else {
-                    }
-                });
-
-                if (isEmpty) {
+                // Check for empty fields and format their names
+                const emptyField = requiredFields.find(field => field.value.trim() === "");
+                if (emptyField) {
+                    const capitalized = emptyField.name.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase()).replace(/\s+/g, ' ');
                     alert("Required Field is empty: " + capitalized);
                     return;
                 }
 
-                var studentUrl = "{{ api_url }}students/"
-                var token = localStorage.getItem('token');
+                const studentUrl = "{{ api_url }}students/";
+                const refreshToken = "{{ api_url }}"
+                const token = localStorage.getItem('token');
 
-                // Strudent Personal Info
-
-                var studentInfo = {
+                // Collect student personal info
+                const studentInfo = {
                     "center_id": "{{ center_id }}",
                     "enrollment_no": document.querySelector('#enrollment_no').value,
                     "profile_pic": document.querySelector('#profile_pic').files[0],
@@ -347,34 +339,41 @@
                     "email": document.querySelector('#email').value,
                     "mobile_number": document.querySelector('#mobile_number').value,
                     "address": document.querySelector('#address').value,
-                    'list_of_integers': [],
+                    "list_of_integers": [],
                 };
 
+                // Construct FormData object
+                const studentFormData = new FormData();
+                Object.entries(studentInfo).forEach(([key, value]) => studentFormData.append(key, value));
 
-                var studentFormData = new FormData();
-
-                for (var key in studentInfo) {
-                    studentFormData.append(key, studentInfo[key]);
-                }
-
-                fetch(studentUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${token}`
-                    },
-                    body: studentFormData,
-                })
-                    .then(response => response.json())
-                    .then(data => {
-                        console.log('Response from server:', data);
-                    })
-                    .catch(error => {
-                        console.error('There was a problem with the fetch operation:', error);
+                try {
+                    const response = await fetch(studentUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${token}`
+                        },
+                        body: studentFormData,
                     });
 
+                    if (!response.ok) {
+                        // Handle non-200 responses
+                        const error_message = await response.text(); // Extract error message from response
+                        document.getElementById("error-message").innerText = token;
+                        throw new Error('Network response was not ok');
+                    }
 
-                var addStudent = document.getElementById("add-student");
-                addStudent.setAttribute("data-dismiss", "modal");
+                    const data = await response.json();
+                    console.log('Response from server:', data);
+
+                    // Dismiss the modal after successful submission
+                    const addStudent = document.getElementById("add-student");
+                    addStudent.setAttribute("data-dismiss", "modal");
+
+                } catch (error) {
+                    // Handle fetch errors
+                    document.getElementById("error-message").innerText = token;
+                    console.error('There was a problem with the fetch operation:', error);
+                }
             }
 
             function filterTable(columnIndex, filterValue) {

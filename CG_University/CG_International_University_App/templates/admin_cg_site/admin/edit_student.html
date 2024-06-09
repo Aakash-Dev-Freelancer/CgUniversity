@@ -44,6 +44,7 @@
 
     {% include 'main_cg_site/global/nav_bar.html' %}
 
+
     <div class="container">
         <h1>Edit Student {{data.enrollment_no}}</h1>
         <div id="edit_card_{{ student.enrollment_no }}" style="display: block;">
@@ -71,6 +72,8 @@
                             </div>
                         </div>
                         <h2>Personal Details</h2>
+                        <h6>Student {{student.center_id}}</h6>
+
                         <hr class="my-4">
                         <div class="divider w-100%"></div>
                         <div class="row">
@@ -270,7 +273,7 @@
                             </div>
                         </div>
                         <hr class="my-4">
-                        <button class="btn btn-primary" onclick="sendFormDataToAPI()">Update</button>
+                        <button class="btn btn-primary" onclick="sendFormDataToAPI(event)">Update</button>
                         <button type="button" class="btn btn-secondary"
                             onclick="cancelUpdate('{{ student.enrollment_no }}')">Cancel</button>
                     </form>
@@ -301,58 +304,48 @@
 
     {% include 'main_cg_site/global/footer.html' %}
 
-
-
-
     <script>
 
         document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
-
-        })
+            // sendFormDataToAPI();
+        });
 
         function cancelUpdate(enrollmentNo) {
             window.history.back();
         }
 
-        function sendFormDataToAPI() {
+        async function sendFormDataToAPI(event) {
+            console.log("Sending form data to API...");
             event.preventDefault();
 
-            var requiredFields = document.querySelectorAll(".required-field");
-            var reversedFields = Array.from(requiredFields).reverse();
+            // Select required fields and reverse them
+            // const requiredFields = Array.from(document.querySelectorAll(".required-field")).reverse();
 
-            var isEmpty = false;
-            var capitalized = "";
+            // // Check for empty fields and format their names
+            // let emptyField = requiredFields.find(field => field.value.trim() === "");
+            // if (emptyField) {
+            //     let capitalized = emptyField.name.replace(/_/g, '').replace(/\b\w/g, char => char.toUpperCase()).replace(/\s+/g, ' ');
+            //     alert("Required Field is empty: " + capitalized);
+            //     return;
+            // }
 
-            reversedFields.forEach(function (field) {
-                if (field.value.trim() == "") {
-                    isEmpty = true;
-                    let emptyField = field.name;
-                    capitalized = emptyField.replace(/_/g, '').replace(/\b\w/g, char => char.toUpperCase()).replace(/\s+/g, ' ');
-                } else {
-                }
-            });
-
-            if (isEmpty) {
-                alert("Required Field is empty: " + capitalized);
-                return;
-            }
-
-            var apiUrl = "{{ api_url }}";
-            marksheetId = "{{ student.list_of_integers }}"
-            var marksheets = JSON.parse(marksheetId);
-
-
+            // API URLs and tokens
+            const apiUrl = "{{ api_url }}";
+            const marksheets = JSON.parse("{{ student.list_of_integers }}");
             const enrollment_no = document.querySelector('input[name="enrollment_no"]').value;
-            const studentInfo = `${apiUrl}students/${enrollment_no}/`;
-            const studentData = `${apiUrl}student-data/${enrollment_no}/`;
-            const studentMarksheet = `${apiUrl}marksheets/${marksheets}/`;
-            var token = localStorage.getItem('token');
-            var cId = localStorage.getItem('cId');
 
+            const studentInfoUrl = `${apiUrl}students/${enrollment_no}/`;
+            const studentDataUrl = `${apiUrl}student-data/${enrollment_no}/`;
+            const studentMarksheetUrl = `${apiUrl}marksheets/${marksheet[0]}/`;
+
+            const token = localStorage.getItem('token');
+            const cId = localStorage.getItem('cId');
+
+            // Collect data
             const personalDetails = {
-                'center_id': cId,
-                'username': document.querySelector('input[name="enrollment_no"]').value,
+                'center_id': `{{ student.center_id }}`,
+                'username': enrollment_no,
                 'enrollment_no': enrollment_no,
                 'password': document.querySelector('input[name="date_of_birth"]').value,
                 'full_name': document.querySelector('input[name="full_name"]').value,
@@ -366,43 +359,29 @@
                 'address': document.querySelector('textarea[name="address"]').value
             };
 
-            const profilePicFile = document.querySelector('input[name="profile_pic"]').files[0];
+            console.log(personalDetails);
 
+            const profilePicFile = document.querySelector('input[name="profile_pic"]').files[0];
             if (profilePicFile) {
                 personalDetails.profile_pic = profilePicFile;
-            } else {
-                delete personalDetails.profile_pic;
             }
 
-            const studentFormData = new FormData();
+            currentFile = "{{ marksheet_data.0.file }}";
 
-            for (const key in personalDetails) {
-                studentFormData.append(key, personalDetails[key]);
-            }
 
-            fetch(studentInfo, {
-                method: 'PUT',
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                },
-                body: studentFormData,
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Success:', data);
-                    window.location.reload();
+            const marksheet = {
+                'student_enrollment_no': enrollment_no,
+                'session': document.querySelector('input[name="session"]').value,
+                'semester': document.querySelector('input[name="semester"]').value,
+                'sgpa': document.querySelector('input[name="sgpa"]').value,
+                'status': document.querySelector('input[name="status"]').value,
+                'result': document.querySelector('input[name="result"]').value,
+                'file': document.querySelector('input[name="marksheet"]').files[0] || currentFile,
+            };
 
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
+            console.log(marksheet);
 
-            var documentUploads = {
+            const documentUploads = {
                 'student_enrollment_no': enrollment_no,
                 'student_migrations': document.querySelector('input[name="migration"]').files[0] || null,
                 'student_provision': document.querySelector('input[name="provision"]').files[0] || null,
@@ -411,79 +390,48 @@
                 'student_admit_card': document.querySelector('input[name="admin_card"]').files[0] || null
             };
 
-            const studentDataFormData = new FormData();
+            console.log(documentUploads);
 
-
-            for (const key in documentUploads) {
-                if (documentUploads[key] != null) {
-                    studentDataFormData.append(key, documentUploads[key]);
-                }
-            }
-
-            fetch(studentData, {
-                method: 'PATCH',
-                headers: {
+            const fetchWithAuth = async (url, method, body, isJson = false) => {
+                const headers = {
                     'Authorization': `Bearer ${token}`,
-                },
-                body: studentDataFormData,
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Success:', data);
-                    window.location.reload();
+                    ...(isJson && { 'Content-Type': 'application/json' })
+                };
 
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-
-            file = document.querySelector('input[name="marksheet"]').files[0];
-
-            currentFile = "{{ marksheet_data.0.file }}";
-
-            console.log(currentFile);
-
-            var r = new FileReader();
-
-            var marksheet = {
-                'student_enrollment_no': enrollment_no,
-                'session': document.querySelector('input[name="session"]').value,
-                'semester': document.querySelector('input[name="semester"]').value,
-                'sgpa': document.querySelector('input[name="sgpa"]').value,
-                'status': document.querySelector('input[name="status"]').value,
-                'result': document.querySelector('input[name="result"]').value,
-                'file': file == undefined ? currentFile : file,
+                const response = await fetch(url, { method, headers, body });
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
             };
 
+            try {
+                // Update student info
+                const studentFormData = new FormData();
+                Object.entries(personalDetails).forEach(([key, value]) => studentFormData.append(key, value));
+                await fetchWithAuth(studentInfoUrl, 'PUT', studentFormData);
+                console.log('Student info updated successfully');
 
-            const marksheetData = new FormData();
-
-            for (const key in marksheet) {
-                marksheetData.append(key, marksheet[key]);
-            }
-
-            fetch(studentMarksheet, {
-                method: 'PATCH',
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                },
-                body: marksheetData,
-            })
-                .then(response => response.json())
-                .then(data => {
-                    console.log('Success:', data);
-                    window.location.reload();
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
+                // Update student documents
+                const studentDataFormData = new FormData();
+                Object.entries(documentUploads).forEach(([key, value]) => {
+                    if (value) studentDataFormData.append(key, value);
                 });
-        }
+                await fetchWithAuth(studentDataUrl, 'PATCH', studentDataFormData);
+                console.log('Student documents updated successfully');
 
+                // Update student marksheet
+                const marksheetData = new FormData();
+                Object.entries(marksheet).forEach(([key, value]) => marksheetData.append(key, value));
+                await fetchWithAuth(studentMarksheetUrl, 'PATCH', marksheetData);
+                console.log('Student marksheet updated successfully');
+
+                // Reload page after successful updates
+                // window.location.reload();
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
     </script>
 
     <!-- Bootstrap JS -->

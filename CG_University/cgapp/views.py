@@ -19,6 +19,17 @@ from .models import AdminLogin, Center
 
 from rest_framework.exceptions import NotFound
 
+from django.contrib.auth.hashers import make_password
+
+def validate_password(self, value: str) -> str:
+    """
+    Hash value passed by user.
+
+    :param value: password of a user
+    :return: a hashed version of the password
+    """
+    return make_password(value)
+
 
 def custom_exception_handler(exc, context):
     print(exc)
@@ -48,7 +59,7 @@ def get_tokens_for_user(request):
             return Response({'error': 'Invalid user type'}, status=status.HTTP_400_BAD_REQUEST)
         
         if user is None:
-            return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+            return Response({'error': 'User not found get_tokens_for_user'}, status=status.HTTP_404_NOT_FOUND)
 
         refresh = RefreshToken.for_user(user)
         print(f"Refresh token: {refresh}")
@@ -63,6 +74,7 @@ def get_tokens_for_user(request):
 class AddStudent(generics.ListCreateAPIView):
     queryset = StudentLogin.objects.all()
     serializer_class = StudentLoginSerializer
+    permission_classes = [IsAuthenticated]
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
@@ -71,20 +83,27 @@ class AddStudent(generics.ListCreateAPIView):
             return Response({"message": "Student Login created successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 class StudentListCreate(generics.ListCreateAPIView):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
-    
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
-        marksheets = MarkSheets.objects.filter(student_enrollment_no=request.data['enrollment_no'], )
-        marksheet_id = []
-        for marksheet in marksheets: 
-            marksheet_id.append(marksheet.id)
-        request.data['list_of_integers'] = marksheet_id
+        
+        # Handling missing enrollment_no in request data
+        enrollment_no = request.data.get('enrollment_no', None)
+        if enrollment_no is None:
+            return Response({"error": "enrollment_no is required"}, status=status.HTTP_400_BAD_REQUEST)
+        
+        # Fetching marksheet IDs based on enrollment_no
+        marksheets = MarkSheets.objects.filter(student_enrollment_no=enrollment_no)
+        marksheet_ids = [marksheet.id for marksheet in marksheets]
+        
+        # Adding marksheet IDs to request data
+        request.data['list_of_integers'] = marksheet_ids
         
         if serializer.is_valid():
             serializer.save()
