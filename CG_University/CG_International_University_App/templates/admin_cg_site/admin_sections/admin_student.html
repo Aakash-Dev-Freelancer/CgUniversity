@@ -191,7 +191,7 @@
             </tbody>
         </table>
 
-        <div class=" text-center">
+        <div class="text-center">
             <button class="btn btn-custom" onclick="prevPage()">Previous</button>
             <span id="page-numbers"></span>
             <button class="btn btn-custom" onclick="nextPage()">Next</button>
@@ -351,6 +351,18 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             addMarkSheet();
+            var data = JSON.parse("{{ admin_info.students }}");
+            var btns = document.getElementsByClassName("text-center");
+
+            if (data.length > 10) {
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.display = "block";
+                }
+            } else {
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.display = "none";
+                }
+            }
         });
         function cancelUpdate(enrollmentNo) {
             $('.modal-backdrop').remove();
@@ -451,7 +463,7 @@
 
             try {
 
-                 const studentData = {
+                const studentData = {
                     "center_id": 2,
                     "enrollment_no": document.querySelector('#enrollment_no').value,
                     "profile_pic": document.querySelector('#profile_pic').files[0],
@@ -482,8 +494,8 @@
                 Object.entries(marksheetData).forEach(([key, value]) => marksheetFormData.append(key, value));
 
                 const marksheetResponse = await fetchWithAuth(
-                    markSheetUrl, 
-                    'POST', 
+                    markSheetUrl,
+                    'POST',
                     marksheetFormData
                 );
                 console.log('Mark sheet added:', marksheetResponse);
