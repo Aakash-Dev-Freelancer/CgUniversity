@@ -33,22 +33,18 @@ def admin(request):
         api_url = f"{API_URL}login/"
         token_url = f"{API_URL}token/"
 
-        token_payload = {"username": username, "password": password, "user_type": user_type}
-        print("Token Payload :: ", token_payload)
-        token_response = requests.get(token_url, data=token_payload)
-        token_json = token_response.json()
-        access_token = token_json.get('access')
-        print("Access Token :: ", access_token)
-        csrf_token = request.POST.get('csrfmiddlewaretoken')
-
-        payload = {"user_type": user_type, "username": username, "password": password, 'X-CSRFToken': csrf_token}
         
-        headers = {"Authorization": f"Bearer {access_token}"}
-
-        response = requests.post(api_url, headers=headers, data=payload)
         
         
         try:
+            payload = {"username": username, "password": password, "user_type": user_type}
+
+            token_response = requests.get(token_url, data=payload)
+            token_json = token_response.json()
+            access_token = token_json.get('access')
+            headers = {"Authorization": f"Bearer {access_token}"}
+
+            response = requests.post(api_url, headers=headers, data=payload)
             if response.status_code == 200:
                 admin_dict = response.json()
                 admin_info = AdminInfo.from_dict(admin_dict)
@@ -60,16 +56,16 @@ def admin(request):
                     'api_url': API_URL,
                 })
 
-            elif response.status_code == 401:
+            elif response.status_code == 401 or token_response.status_code == 401:
                 error_message = "Incorrect Password. Please try again."
 
-            elif response.status_code == 400:
+            elif response.status_code == 400 or token_response.status_code == 400:
                 error_message = "User not Found. Please try again."
 
-            elif response.status_code == 404:
+            elif response.status_code == 404 or token_response.status_code == 404:
                 error_message = "You're not Registered. Please contact the admin."
 
-            elif response.status_code == 500:
+            elif response.status_code == 500 or token_response.status_code == 500:
                 error_message = "Server Error. Please try again later."
 
             else:
@@ -195,14 +191,10 @@ def student(request):
             token_response.raise_for_status()
             token_json = token_response.json()
             access_token = token_json.get('access')
-            print("Access Token :: ", access_token)
-            
-            print("Payload :: ", payload)
+
             headers = {"Authorization": f"Bearer {access_token}", "X-CSRFToken": csrf_token}
 
             response = requests.post(api_url, headers=headers, data=payload)
-            print("Response :: ", response)
-            print("Status Code :: ", response.status_code)
 
             if response.status_code == 200:
                 student_info_dict = response.json()
@@ -258,39 +250,29 @@ def center(request):
         print("Password :: ", password)
         print("User Type :: ", user_type)
         token_url = f"{API_URL}token/"
+        api_url = f"{API_URL}login/"
         
         try:
-            center = Center.objects.get(username=username)
-            print("Center :: ", center)
-            print("Token URL :: ", token_url)
-            token_response = requests.get(token_url, data={"username": username, "password": password, "user_type": user_type})
+            payload = {"username": username, "password": password, "user_type": user_type}
+            token_response = requests.get(token_url, data=payload)
             token_response.raise_for_status()
             token_json = token_response.json()
             access_token = token_json.get('access')
             print("Access Token :: ", access_token)
-            
-            if username == center.username and password == center.password and access_token is not None:
-                print("Login Successful")
-                studentDataList = []
-                students = Student.objects.filter(center_id=center.id)
-                for student in students:
-                    # stu_data = StudentData.objects.get(student_enrollment_no=student.enrollment_no)
-                    # stu_marksheets = MarkSheets.objects.filter(student_enrollment_no=student.enrollment_no)
-                    
-                    # studentMarksheetsSerializer = M÷arkSheetSerializer(stu_marksheets, many=True)
-                    studentSerializer = StudentSerializer(student)
-                    # studentSerializer = StudentDataSerializer(stu_data)
-            
-                    studentDataList.append({
-                        'student_personal_info': studentSerializer.data,
-                        # 'student_data': studentSerializer.data,
-                        # 'student_marksheets': studentMarksheetsSerializer.data,
-                    })
+
+            headers = {"Authorization": f"Bearer {access_token}", "X-CSRFToken": csrf_token}
+
+            response = requests.post(api_url, headers=headers, data=payload)
+            if response.status_code == 200:
+                json = response.json()
+                studentDataList = json.get('students')
+                center_name = json.get('center_name')
+                center_id = json.get('center_id')
                 
                 return render(request, 'center_cg_site/home/center.html', {
                     'is_logged_in': True,
-                    'center_name': center.center_name,
-                    'center_id': center.id,
+                    'center_name': center_name,
+                    'center_id': center_id,
                     'students': studentDataList,
                     'api_url': API_URL,
                     'token': access_token,

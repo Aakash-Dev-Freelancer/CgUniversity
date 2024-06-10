@@ -33,15 +33,16 @@
         <h2>Admin Login</h2>
         <form id="loginForm" method="post" action="{% url 'admin' %}">
           {% csrf_token %}
-          <input type="hidden" id="login-type" name="login-type" value="">
+          <input type="hidden" id="login-type" name="login-type" value="admin">
           <div class="input-field">
             <input type="text" id="username" name="username" placeholder="Admin Username" />
           </div>
           <div class="input-field">
             <input type="password" id="password" name="password" placeholder="Password" required />
           </div>
-
-          <div id="error-message" class="">Note : </div>
+          <div style="height: 10px;"></div>
+          <div id="error-message" class="btn-danger" style="color: red;">Note : </div>
+          <div style="height: 10px;"></div>
 
           <button type="button" onclick="submitForm()">Login</button>
           <div class="back-to-home">
@@ -57,6 +58,7 @@
 
     var errorMessage = "{{ error_message }}";
     document.getElementById("error-message").innerText = errorMessage;
+
 
     document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
       radio.addEventListener('click', function () {
@@ -107,6 +109,7 @@
             placeholder = "Center Username";
             document.getElementById("login-type").value = 'center';
           }
+
           usernameInput.placeholder = placeholder;
           loginFormId.style.display = "block";
         } else {
@@ -128,8 +131,14 @@
 
       var form = document.getElementById("loginForm");
       form.submit();
-      usernameInput.value = "";
-      passwordInput.value = "";
+
+      // Clear the form fields
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
+
+      // Reset the radio buttons
+      document.getElementById("admin-tab").checked = true;
+      document.querySelector('label[for="admin-tab"]').click();
     }
   </script>
 

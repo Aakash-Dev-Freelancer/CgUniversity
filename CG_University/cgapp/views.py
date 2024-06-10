@@ -47,13 +47,8 @@ def get_tokens_for_user(request):
         if user_type == 'student':
             user = StudentLogin.objects.first()
         elif user_type == 'center':
-            try:
-                user = Center.objects.get(username=username)
-                print(f"Found center: {user}")
-            except ObjectDoesNotExist:
-                return Response({'error': 'Center user not found'}, status=status.HTTP_404_NOT_FOUND)
+            user = Center.objects.get(username=username)
         elif user_type == 'admin':
-            print(f"Username: {username}")
             user = AdminLogin.objects.get(username=username)
         else:
             return Response({'error': 'Invalid user type'}, status=status.HTTP_400_BAD_REQUEST)
@@ -61,14 +56,15 @@ def get_tokens_for_user(request):
         if user is None:
             return Response({'error': 'User not found get_tokens_for_user'}, status=status.HTTP_404_NOT_FOUND)
 
+
+        print(user)    
         refresh = RefreshToken.for_user(user)
-        print(f"Refresh token: {refresh}")
+        
         return Response({ 
            'refresh': str(refresh),
            'access': str(refresh.access_token),
         })
     except Exception as e:
-        print(f"Exception occurred: {e}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
     
 class AddStudent(generics.ListCreateAPIView):
@@ -173,6 +169,7 @@ class StudentLoginAPIView(generics.ListCreateAPIView):
                     print(studentMarksheetsSerializer.data)
                     
                     return Response({
+                        'status_code': status.HTTP_200_OK,
                         'success': 'Logged in successfully',
                         "student_info": {
                             "student_data": studentSerializer.data,
@@ -180,8 +177,7 @@ class StudentLoginAPIView(generics.ListCreateAPIView):
                             "student_marksheets": studentMarksheetsSerializer.data
                         }
                     }, status=status.HTTP_200_OK)
-                else:
-                    return Response({'success': False, 'message': 'Incorrect Password'}, status=status.HTTP_401_UNAUTHORIZED)
+                
             
             elif user_type == "admin":
                 admin = AdminLogin.objects.get(username=username)
@@ -202,14 +198,37 @@ class StudentLoginAPIView(generics.ListCreateAPIView):
                         'students_data': studentDataSerializer.data,
                         'students_marksheets': studentMarksheetsSerializer.data,
                     }, status=status.HTTP_200_OK)
+                    
+            elif user_type == "center":
+                center = Center.objects.get(username=username)
+                
+                if password == center.password:
+                    studentDataList = []
+                    students = Student.objects.filter(center_id=center.id).order_by("enrollment_no")
+                    for student in students:
+                        studentSerializer = StudentSerializer(student)
+                
+                        studentDataList.append({
+                            'student_personal_info': studentSerializer.data,
+                        })
+                    
+                    return Response({
+                        'success': 'Logged in successfully',
+                        'students': studentDataList,
+                        'center_name': center.center_name,
+                        'center_id': center.id
+                    }, status=status.HTTP_200_OK)
                 else:
                     return Response({'success': False, 'message': 'Not Authorized'}, status=status.HTTP_401_UNAUTHORIZED)
                 
         except Student.DoesNotExist:
-            return Response({'success': False, 'message':  'Student not registered'}, status=status.HTTP_404_NOT_FOUND)
+            return Response({'status_code': status.HTTP_404_NOT_FOUND,  'success': False, 'message':  'Student not registered'}, status=status.HTTP_404_NOT_FOUND)
         
         except AdminLogin.DoesNotExist:
-            return Response({'success': False, 'message':  'Admin not registered'}, status=status.HTTP_404_NOT_FOUND)
+            return Response({'status_code': status.HTTP_404_NOT_FOUND, 'success': False, 'message':  'Admin not registered'}, status=status.HTTP_404_NOT_FOUND)
+        
+        except Center.DoesNotExist: 
+            return Response({'status_code': status.HTTP_404_NOT_FOUND, 'success': False, 'message':  'Center not registered'}, status=status.HTTP_404_NOT_FOUND)
         
         except Exception as e:
             print("Server Error:", e)

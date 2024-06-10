@@ -290,8 +290,7 @@
 
 
                     <div class="modal-footer">
-                        <h6 id="error-message"></h6>
-                        <button id="add-student" type="button" class="btn btn-primary"
+                        <button id="add-student" type="button" class="btn btn-primary" data-dismiss="modal"
                             onclick="extractAndDisplayData(event)">Add Student</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     </div>
@@ -309,7 +308,7 @@
             }
 
             async function extractAndDisplayData(event) {
-                event.preventDefault();
+                // event.preventDefault();
                 const requiredFields = Array.from(document.querySelectorAll(".required-field")).reverse();
 
                 // Check for empty fields and format their names
@@ -356,22 +355,10 @@
                     });
 
                     if (!response.ok) {
-                        // Handle non-200 responses
-                        const error_message = await response.text(); // Extract error message from response
-                        document.getElementById("error-message").innerText = token;
                         throw new Error('Network response was not ok');
                     }
 
-                    const data = await response.json();
-                    console.log('Response from server:', data);
-
-                    // Dismiss the modal after successful submission
-                    const addStudent = document.getElementById("add-student");
-                    addStudent.setAttribute("data-dismiss", "modal");
-
                 } catch (error) {
-                    // Handle fetch errors
-                    document.getElementById("error-message").innerText = token;
                     console.error('There was a problem with the fetch operation:', error);
                 }
             }
