@@ -6,7 +6,7 @@
 
 <head>
     <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
-    <meta name="google-site-verification" content="BZYgvR6iGgyZqqh0DwVTDS2eM6Ups0p79PBXW8PIgvo" />
+    {% include 'global/meta_tags.html' %}
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +17,15 @@
 
 <body>
     {% include 'main_cg_site/global/nav_bar.html' %}
+    
     <div class="contact-header-container">
         <div class="overlayer">
 
             <div class="container">
                 <h1>Contact Information</h1>
                 <div class="contact-info">
-                    <p>Email: <a href="mailto:cgINTuniversity@gmail.com" class="email">cgINTuniversity@gmail.com</a></p>
+                    <p>Email: <a href="mailto:cginternationaluniversity@gmail.com"
+                            class="email">cginternationaluniversity@gmail.com</a></p>
 
                     <p>Address: CG INTERNATIONAL UNIVERSITY, Raipur, India</p>
                 </div>
