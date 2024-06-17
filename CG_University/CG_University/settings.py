@@ -21,16 +21,15 @@ load_dotenv()
 BASE_URL = os.getenv('BASE_URL')
 API_URL = os.getenv('API_URL')
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'django-insecure-)k_$7n&&_3tbf9mdt64!mnk#xewq$4#xc3^k7&9*@)#vrww9f2'
 
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 LIVERELOAD_PORT = 9000
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
+DEBUG = False
+# DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = ["*"]
 
@@ -41,13 +40,9 @@ CORS_ALLOWED_ORIGINS = [
     "https://cginternationaluniversity.in",
 ]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 # Application definition
 
 CORS_ALLOW_ALL_ORIGINS = True
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -57,11 +52,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'CG_International_University_App',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+    'cgapp',
+    
+    # Packages --
     'livereload',
     'rest_framework',
     'corsheaders',
     'rest_framework_simplejwt',
-    'cgapp',
 ]
 
 
@@ -162,10 +161,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [BASE_DIR / "static"]
 
-STATIC_URL = os.getenv('STATIC_URL')
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

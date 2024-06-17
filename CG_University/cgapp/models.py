@@ -40,11 +40,9 @@ class MarkSheets(models.Model):
     result = models.CharField(max_length=100)
     file = models.FileField(upload_to='images/students/marksheet/', null=True)
 
-
 class StudentLogin(models.Model):
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
-
 
 class AdminLogin(models.Model):
     full_name = models.CharField(max_length=100)

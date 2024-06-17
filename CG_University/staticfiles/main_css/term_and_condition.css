@@ -1,0 +1,43 @@
+.terms-condition h1,
+h2 {
+  text-align: center;
+}
+
+.terms-condition p {
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: rgb(255, 150, 13);
+}
+
+.terms-condition {
+  width: 80%;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.336);
+}
+
+.overlayer {
+  height: 70vh;
+  max-width: 100%;
+  backdrop-filter: blur(15px) !important;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.terms-condition-header-container {
+  backdrop-filter: blur(20px) !important;
+  background-size: cover;
+  background-image: url("../images/login/login_background_image.jpg");
+  background-position: bottom;
+  height: 70vh !important;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}

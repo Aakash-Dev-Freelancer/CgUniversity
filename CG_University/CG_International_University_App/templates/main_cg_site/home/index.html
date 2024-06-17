@@ -6,9 +6,38 @@
 
 <head>
   <link rel="icon" class=" rounded-circle" href="{% static 'images/logo.png' %}" type="image/png">
+  <meta name="google-site-verification" content="BZYgvR6iGgyZqqh0DwVTDS2eM6Ups0p79PBXW8PIgvo" />
 
   <meta charset="UTF-8" />
   <title>CG International University, Raipur</title>
+  <style>
+    .FAQ-Questions {
+      display: flex;
+      justify-content: center;
+      width: 80vw;
+      border: 1px solid #96c2ff;
+      border-radius: 8px;
+      padding: 6pt;
+      text-align: center;
+      background: #6da1ff21;
+    }
+
+    .FAQ-Container {
+      margin: 20px;
+    }
+
+    .FAQ-Questions:hover {
+      background-color: #e2e2e2;
+    }
+
+    .FAQ-Answer {
+      display: none;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-top: none;
+      background-color: #fff;
+    }
+  </style>
 </head>
 
 <body>
@@ -83,84 +112,20 @@
     <div class="FAQ-Question">
       <h2 class="FAQ-Heading">Questions You Might Ask Related to Our</h2>
       <h2 class="FAQ-Heading">CG International University</h2>
-      <div class="row">
-        <div class="col">
-          <div class="faq-item">
-            <div class="faq-question">
-              <h2>What is Lorem Ipsum?</h2>
-              <span class="plus-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Inda
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">
-              <h2>What is Lorem Ipsum?</h2>
-              <span class="plus-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">
-              <h2>Where does it come from?</h2>
-              <span class="plus-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text.
-              </p>
-            </div>
-          </div>
+
+      <div class="FAQ-Container">
+        <div class="FAQ-Questions" onclick="toggleAnswer(this)">
+          <span>1. What is CG International University?</span>
         </div>
-        <div class="col">
-          <div class="faq-item">
-            <div class="faq-question">
-              <h2>Why do we use it?</h2>
-              <span class="plus-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">
-              <h2>Why do we use it?</h2>
-              <span class="plus-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">
-              <h2>Why do we use it?</h2>
-              <span class="plus-icon">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-            </div>
-          </div>
+        <div class="FAQ-Answer">
+          <p>CG International University is a global institution providing world-class education to students around the
+            globe.
+          </p>
         </div>
       </div>
+
+      <script src="script.js"></script>
+
     </div>
   </div>
 

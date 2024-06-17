@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+}
+
+.main-branch {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.main-branch h1 {
+  font-size: 64px;
+}
+
+.main-branch .title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-branch .description {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(255, 150, 13) !important;
+}
+
+.courses ul {
+  margin-top: 20px;
+}
+.courses ul li {
+  margin: 10px 50px;
+  color: rgb(121, 121, 121) !important;
+}

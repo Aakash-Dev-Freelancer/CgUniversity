@@ -1,0 +1,58 @@
+.board-member-container {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  /* margin: 0 10px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.board-member-text {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 56px;
+  text-align: center;
+  color: rgb(255, 150, 13);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.board-member-card {
+  max-width: 20%;
+  border: 1px solid #dddddd;
+  width: calc(33.33%);
+  margin: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.board-member-card:hover {
+  transform: translateY(-5px);
+}
+
+.board-member-card h2 {
+  margin-top: 0;
+  color: #333333;
+}
+.board-member-profile {
+  font-weight: bold;
+  color: #007bff;
+}
+.profession {
+  color: #666666;
+}

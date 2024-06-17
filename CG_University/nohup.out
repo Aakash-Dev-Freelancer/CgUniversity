@@ -2418,3 +2418,802 @@ Username: Nannu
 [09/Jun/2024 14:33:57] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
 [09/Jun/2024 14:33:57] "GET /CG_University/media/main_css/style.css HTTP/1.0" 200 1555
 [09/Jun/2024 14:33:58] "GET /CG_University/media/images/logo.png HTTP/1.0" 200 46843
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Error: That port is already in use.
+Watching for file changes with StatReloader
+[16/Jun/2024 14:38:54] "GET / HTTP/1.0" 200 12663
+Not Found: /script.js
+[16/Jun/2024 14:38:55] "GET /script.js HTTP/1.0" 404 5693
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 14:38:50
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 14:42:09
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 14:42:24
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 42, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 61, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py", line 24, in <module>
+    path('', include('CG_International_University_App.urls')),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py", line 32
+    urlpatterns += 
+                   ^
+SyntaxError: invalid syntax
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 42, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 61, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py", line 24, in <module>
+    path('', include('CG_International_University_App.urls')),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py", line 32
+    urlpatterns += 
+                   ^
+SyntaxError: invalid syntax
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[16/Jun/2024 14:43:06] "GET / HTTP/1.0" 200 12663
+Not Found: /script.js
+[16/Jun/2024 14:43:06] "GET /script.js HTTP/1.0" 404 5693
+Not Found: /CG_University/media/main_css/rti.css
+[16/Jun/2024 15:24:57] "GET /CG_University/media/main_css/rti.css HTTP/1.0" 404 5774
+Not Found: /CG_University/media/main_css/rti.css
+[16/Jun/2024 15:24:58] "GET /CG_University/media/main_css/rti.css HTTP/1.0" 404 5774
+[16/Jun/2024 16:06:51] "GET /about HTTP/1.0" 301 0
+[16/Jun/2024 16:06:51] "GET /about/ HTTP/1.0" 200 8111
+Not Found: /.env
+[16/Jun/2024 17:00:10] "GET /.env HTTP/1.0" 404 5664
+Forbidden (CSRF cookie not set.): /
+[16/Jun/2024 17:00:11] "POST / HTTP/1.0" 403 2928
+[16/Jun/2024 17:54:29] "GET / HTTP/1.0" 200 12663
+Not Found: /script.js
+[16/Jun/2024 17:54:29] "GET /script.js HTTP/1.0" 404 5693
+[16/Jun/2024 17:54:36] "GET / HTTP/1.0" 200 12663
+Not Found: /script.js
+[16/Jun/2024 17:54:37] "GET /script.js HTTP/1.0" 404 5693
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 14:43:02
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Traceback (most recent call last):
+  File "/home/ubuntu/CG-website-aakash/CG_University/manage.py", line 22, in <module>
+    main()
+  File "/home/ubuntu/CG-website-aakash/CG_University/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py", line 31
+    DEBUG = 
+            ^
+SyntaxError: invalid syntax
+[16/Jun/2024 17:57:23] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 17:57:23] "GET /script.js HTTP/1.0" 404 179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 17:57:18
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Error: That port is already in use.
+[16/Jun/2024 17:57:42] "GET / HTTP/1.0" 200 12663
+Not Found: /script.js
+[16/Jun/2024 17:57:42] "GET /script.js HTTP/1.0" 404 5693
+[16/Jun/2024 17:57:48] "GET / HTTP/1.0" 200 12663
+Not Found: /script.js
+[16/Jun/2024 17:57:49] "GET /script.js HTTP/1.0" 404 5693
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 17:57:34
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 17:58:03
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 17:58:12
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 17:58:49
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[16/Jun/2024 17:59:45] "GET / HTTP/1.0" 200 12663
+Not Found: /script.js
+[16/Jun/2024 17:59:46] "GET /script.js HTTP/1.0" 404 5693
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 17:58:53
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 519, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py", line 24, in <module>
+    path('', include('CG_International_University_App.urls')),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py", line 29, in <module>
+    ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/urls/static.py", line 22, in static
+    raise ImproperlyConfigured("Empty static prefix not permitted")
+django.core.exceptions.ImproperlyConfigured: Empty static prefix not permitted
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[16/Jun/2024 18:03:47] "GET / HTTP/1.0" 200 12663
+Not Found: /script.js
+[16/Jun/2024 18:03:48] "GET /script.js HTTP/1.0" 404 5693
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:03:16
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:04:04
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:04:33
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:04:37
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+[16/Jun/2024 18:05:20] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:05:20] "GET /script.js HTTP/1.0" 404 179
+Error: That port is already in use.
+[16/Jun/2024 18:05:24] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:05:25] "GET /script.js HTTP/1.0" 404 179
+Error: That port is already in use.
+[16/Jun/2024 18:05:47] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:05:48] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:05:50] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:05:51] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:06:04] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:06:04] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:06:16] "GET /about/ HTTP/1.0" 200 7934
+[16/Jun/2024 18:06:18] "GET /courses/ HTTP/1.0" 200 22395
+[16/Jun/2024 18:06:20] "GET /board_members/ HTTP/1.0" 200 9064
+Error: That port is already in use.
+Error: That port is already in use.
+[16/Jun/2024 18:11:37] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:11:38] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:11:48] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:11:49] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:11:51] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:11:51] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:17:11] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:17:12] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:19:36] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:19:37] "GET /script.js HTTP/1.0" 404 179
+Error: That port is already in use.
+[16/Jun/2024 18:23:35] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:23:35] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:23:40] "GET /board_members/ HTTP/1.0" 200 9064
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:05:16
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:32:39
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:32:55
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:32:57
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:33:04
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Traceback (most recent call last):
+  File "/home/ubuntu/CG-website-aakash/CG_University/manage.py", line 22, in <module>
+    main()
+  File "/home/ubuntu/CG-website-aakash/CG_University/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py", line 55
+    django.contrib.sitemaps
+    ^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[16/Jun/2024 18:47:22] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:47:22] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:47:35] "GET /sitemap.xml HTTP/1.0" 500 145
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:47:16
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:49:26
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Error: That port is already in use.
+[16/Jun/2024 18:49:55] "GET /sitemap.xml HTTP/1.0" 500 145
+[16/Jun/2024 18:50:01] "GET /sitemap.xml/ HTTP/1.0" 404 179
+[16/Jun/2024 18:50:05] "GET /sitemap.xml HTTP/1.0" 500 145
+[16/Jun/2024 18:52:39] "GET /googlef9ccd82ebe2453f9.html HTTP/1.0" 404 179
+[16/Jun/2024 18:52:39] "GET /google22c841d6818d669c.html HTTP/1.0" 404 179
+[16/Jun/2024 18:52:39] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:52:39] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:52:39] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:52:39] "GET /?cachebuster=4141019442 HTTP/1.0" 200 12486
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:49:33
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 519, in check
+    for pattern in self.url_patterns:
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py", line 22
+    from django.views.generic import TemplateViewfrom django.views.generic import TemplateView
+                                                      ^^^^^^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:55:51
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Error: That port is already in use.
+Error: That port is already in use.
+Error: That port is already in use.
+[16/Jun/2024 18:56:32] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:56:33] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:56:49] "GET /google123456789abcdef.html HTTP/1.0" 500 145
+[16/Jun/2024 18:56:55] "GET /google22c841d6818d669c.html HTTP/1.0" 404 179
+[16/Jun/2024 18:56:55] "GET /googlef9ccd82ebe2453f9.html HTTP/1.0" 404 179
+Error: That port is already in use.
+Error: That port is already in use.
+[16/Jun/2024 18:58:03] "GET /google22c841d6818d669c.html HTTP/1.0" 404 179
+[16/Jun/2024 18:58:03] "GET /googlef9ccd82ebe2453f9.html HTTP/1.0" 404 179
+Error: That port is already in use.
+Error: That port is already in use.
+[16/Jun/2024 18:59:19] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:59:19] "GET /script.js HTTP/1.0" 404 179
+[16/Jun/2024 18:59:24] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 18:59:24] "GET /?cachebuster=3438257526 HTTP/1.0" 200 12486
+Error: That port is already in use.
+Error: That port is already in use.
+[16/Jun/2024 19:00:39] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 19:00:40] "GET /?cachebuster=3493483287 HTTP/1.0" 200 12486
+[16/Jun/2024 19:24:21] "GET /.DS_Store HTTP/1.0" 404 179
+[16/Jun/2024 19:34:31] "GET /.env HTTP/1.0" 404 179
+[16/Jun/2024 19:34:32] "POST / HTTP/1.0" 403 1381
+[16/Jun/2024 19:55:04] "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.0" 404 179
+[16/Jun/2024 21:19:21] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 21:19:26] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 22:05:08] "GET / HTTP/1.0" 200 12486
+[16/Jun/2024 23:33:48] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 01:21:25] "GET /approval/ HTTP/1.0" 200 10480
+[17/Jun/2024 01:31:17] "POST /dns-query HTTP/1.0" 404 179
+[17/Jun/2024 01:32:17] "GET /.env HTTP/1.0" 404 179
+[17/Jun/2024 01:32:18] "POST / HTTP/1.0" 403 1381
+[17/Jun/2024 01:33:14] "GET / HTTP/1.1" 200 12486
+[17/Jun/2024 01:38:24] "GET /dns-query?dns=T9EBAAABAAAAAAAABmdvb2dsZQNjb20AAAEAAQ HTTP/1.0" 404 179
+[17/Jun/2024 01:52:24] "GET /courses/ HTTP/1.0" 200 22395
+[17/Jun/2024 02:51:25] "GET /robots.txt HTTP/1.0" 500 145
+[17/Jun/2024 03:29:52] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 03:32:46] "GET / HTTP/1.1" 200 12486
+[17/Jun/2024 03:35:28] "GET /webui/ HTTP/1.0" 404 179
+[17/Jun/2024 03:40:35] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 03:44:30] "GET /geoserver/web/ HTTP/1.0" 404 179
+[17/Jun/2024 03:45:58] "GET /.git/config HTTP/1.0" 404 179
+[17/Jun/2024 03:56:08] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 03:56:10] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 03:56:18] "GET /hf HTTP/1.0" 404 179
+[17/Jun/2024 03:56:31] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 03:56:32] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 04:00:45] "GET /google65efbea82316ff6d.html HTTP/1.0" 404 179
+[17/Jun/2024 04:00:45] "GET /google0df9f9048ac29035.html HTTP/1.0" 404 179
+[17/Jun/2024 04:01:17] "GET /google0df9f9048ac29035.html HTTP/1.0" 404 179
+[17/Jun/2024 04:01:17] "GET /google65efbea82316ff6d.html HTTP/1.0" 404 179
+[17/Jun/2024 04:02:20] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 04:02:23] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 04:02:29] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 04:02:30] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 04:04:59] "GET /robots.txt HTTP/1.0" 500 145
+[17/Jun/2024 04:10:22] "GET / HTTP/1.1" 200 12486
+[17/Jun/2024 04:10:39] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 16, 2024 - 18:56:03
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 17, 2024 - 04:11:16
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 17, 2024 - 04:11:48
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+[17/Jun/2024 04:11:55] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 04:11:55] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 04:27:26] "GET /CG_University/media/images/logo.png HTTP/1.0" 404 179
+[17/Jun/2024 04:27:26] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 05:19:38] "GET /.env HTTP/1.0" 404 179
+[17/Jun/2024 05:19:38] "POST / HTTP/1.0" 403 1381
+[17/Jun/2024 05:27:57] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 05:47:25] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 05:47:26] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 05:53:37] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 05:53:37] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 05:59:45] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 05:59:46] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 06:00:08] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 06:23:06] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 06:23:06] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 07:10:52] "GET /ab2g HTTP/1.0" 404 179
+[17/Jun/2024 07:10:52] "GET /ab2h HTTP/1.0" 404 179
+[17/Jun/2024 07:10:53] "GET /alive.php HTTP/1.0" 404 179
+[17/Jun/2024 07:10:55] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 07:10:56] "GET /t4 HTTP/1.0" 404 179
+[17/Jun/2024 07:10:57] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 07:10:58] "GET /teorema505?t=1 HTTP/1.0" 404 179
+[17/Jun/2024 07:14:56] code 400, message Bad request version ('À\x14À')
+[17/Jun/2024 07:14:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[17/Jun/2024 07:28:03] "GET /.env HTTP/1.0" 404 179
+[17/Jun/2024 07:28:03] "POST / HTTP/1.0" 403 1381
+[17/Jun/2024 07:35:25] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 07:35:27] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 07:42:52] "GET /terms_and_conditions/ HTTP/1.0" 200 8297
+[17/Jun/2024 07:43:01] "GET /terms_and_conditions/ HTTP/1.0" 200 8297
+[17/Jun/2024 07:43:08] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 07:43:09] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 07:43:15] "GET /board_members/ HTTP/1.0" 200 9064
+[17/Jun/2024 07:59:37] code 400, message Bad request syntax ('\x01\x01æ')
+[17/Jun/2024 07:59:37] "æ" 400 -
+[17/Jun/2024 08:01:24] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 08:14:00] "POST /dns-query HTTP/1.0" 404 179
+[17/Jun/2024 08:14:01] "GET /dns-query?dns=MbcBAAABAAAAAAAABmdvb2dsZQNjb20AAAEAAQ HTTP/1.0" 404 179
+[17/Jun/2024 08:20:00] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 08:22:11] "GET /.env HTTP/1.0" 404 179
+[17/Jun/2024 08:22:12] "POST / HTTP/1.0" 403 1381
+[17/Jun/2024 08:36:11] "OPTIONS / HTTP/1.0" 200 12486
+[17/Jun/2024 08:50:38] "POST /dns-query HTTP/1.0" 404 179
+[17/Jun/2024 08:50:44] "GET /dns-query?dns=wrQBAAABAAAAAAAABmdvb2dsZQNjb20AAAEAAQ HTTP/1.0" 404 179
+[17/Jun/2024 09:18:02] "GET /version HTTP/1.0" 404 179
+[17/Jun/2024 09:37:59] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 09:39:05] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 10:18:21] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 10:24:16] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 10:24:16] "GET //wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //xmlrpc.php?rsd HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 10:24:16] "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:24:16] "GET //sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[17/Jun/2024 10:38:20] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 11:01:23] "GET /?dns=AAABAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB HTTP/1.0" 200 12486
+[17/Jun/2024 11:40:19] "GET /robots.txt HTTP/1.0" 500 145
+[17/Jun/2024 11:47:11] "GET / HTTP/1.0" 200 12486
+[17/Jun/2024 11:47:12] "GET /script.js HTTP/1.0" 404 179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 17, 2024 - 04:11:52
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+[17/Jun/2024 11:51:03] "GET / HTTP/1.0" 200 12583
+[17/Jun/2024 11:51:04] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 11:52:07] "GET / HTTP/1.0" 200 12583
+[17/Jun/2024 11:52:07] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 11:52:17] "GET / HTTP/1.0" 200 12583
+[17/Jun/2024 11:52:25] "GET /.env HTTP/1.0" 404 179
+[17/Jun/2024 11:52:26] "POST / HTTP/1.0" 403 1381
+[17/Jun/2024 12:00:02] "GET / HTTP/1.0" 200 12583
+[17/Jun/2024 12:00:02] "GET /script.js HTTP/1.0" 404 179

@@ -1,12 +1,11 @@
 from django.urls import path
 from . import views
-
+from django.views.generic import TemplateView
 from django.conf import settings
 from django.conf.urls.static import static
 
-
-
 urlpatterns = [
+    path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
     path('', views.home, name='home'),
     path('admin_cg/', views.admin, name='admin'),
     path('login/', views.login, name='login'),
@@ -26,7 +25,5 @@ urlpatterns = [
     path('edit_student/', views.editStudent, name='edit-student'),
     path('view_student/', views.viewStudent, name='view-student'),
     path('logout/', views.logout_view, name='logout'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
