@@ -3227,3 +3227,65 @@ Quit the server with CONTROL-C.
 [17/Jun/2024 12:20:47] "GET / HTTP/1.0" 200 12769
 [17/Jun/2024 12:20:48] "GET / HTTP/1.0" 200 12769
 [17/Jun/2024 12:20:48] "GET /script.js HTTP/1.0" 404 179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 17, 2024 - 11:50:58
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+[17/Jun/2024 12:26:30] "GET / HTTP/1.0" 200 12769
+[17/Jun/2024 12:26:30] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 12:30:08] "GET / HTTP/1.0" 200 12777
+[17/Jun/2024 12:30:08] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 12:30:24] "GET / HTTP/1.0" 200 12784
+[17/Jun/2024 12:30:24] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 12:30:55] "GET / HTTP/1.0" 200 12881
+[17/Jun/2024 12:30:55] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 12:31:24] "GET / HTTP/1.0" 200 12807
+[17/Jun/2024 12:31:24] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 12:32:06] "GET / HTTP/1.0" 200 12790
+[17/Jun/2024 12:32:07] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 12:34:25] "GET /login/ HTTP/1.0" 200 5319
+[17/Jun/2024 12:34:39] "GET /about/ HTTP/1.0" 200 8216
+[17/Jun/2024 12:34:55] "GET /about/ HTTP/1.0" 200 8216
+[17/Jun/2024 12:35:20] "GET /about/ HTTP/1.0" 200 8230
+[17/Jun/2024 12:35:31] "GET /about/ HTTP/1.0" 200 8231
+[17/Jun/2024 12:35:43] "GET /about/ HTTP/1.0" 200 8230
+[17/Jun/2024 12:35:53] "GET /about/ HTTP/1.0" 200 8230
+[17/Jun/2024 12:36:08] "GET /about/ HTTP/1.0" 200 8254
+[17/Jun/2024 12:36:32] "GET /about/ HTTP/1.0" 200 8301
+[17/Jun/2024 12:37:00] "GET /about/ HTTP/1.0" 200 8325
+[17/Jun/2024 12:37:16] "GET /about/ HTTP/1.0" 200 8301
+[17/Jun/2024 12:37:30] "GET /about/ HTTP/1.0" 200 8229
+[17/Jun/2024 12:37:49] "GET / HTTP/1.0" 200 12790
+[17/Jun/2024 12:37:49] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 12:37:52] "GET /about/ HTTP/1.0" 200 8248
+[17/Jun/2024 12:38:30] "GET /about/ HTTP/1.0" 200 8336
+[17/Jun/2024 12:38:47] "GET /about/ HTTP/1.0" 200 8337
+[17/Jun/2024 12:38:56] "GET /about/ HTTP/1.0" 200 8336
+[17/Jun/2024 12:39:38] "GET /about/ HTTP/1.0" 200 8274
+[17/Jun/2024 12:39:49] "GET /about/ HTTP/1.0" 200 8307
+[17/Jun/2024 12:40:02] "GET /about/ HTTP/1.0" 200 8334
+[17/Jun/2024 12:40:13] "GET /about/ HTTP/1.0" 200 8358
+[17/Jun/2024 12:40:43] "GET /director_message/ HTTP/1.0" 200 8351
+[17/Jun/2024 12:41:02] "GET /vision_and_mission/ HTTP/1.0" 200 9277
+[17/Jun/2024 12:41:20] "GET /vision_and_mission/ HTTP/1.0" 200 9433
+[17/Jun/2024 12:41:26] "GET /director_message/ HTTP/1.0" 200 8507
+[17/Jun/2024 12:41:29] "GET /courses/ HTTP/1.0" 200 22678
+[17/Jun/2024 12:41:37] "GET /courses/ HTTP/1.0" 200 22678
+[17/Jun/2024 12:41:39] "GET /vision_and_mission/ HTTP/1.0" 200 9433
+[17/Jun/2024 12:41:42] "GET /board_members/ HTTP/1.0" 200 9344
+[17/Jun/2024 12:41:50] "GET /terms_and_conditions/ HTTP/1.0" 200 8577
+[17/Jun/2024 12:42:11] "GET /terms_and_conditions/ HTTP/1.0" 200 8733
+[17/Jun/2024 12:42:19] "GET /rti/ HTTP/1.0" 200 7658
+[17/Jun/2024 12:42:37] "GET /rti/ HTTP/1.0" 200 7814
+[17/Jun/2024 12:43:00] "GET /approval/ HTTP/1.0" 200 10760
+[17/Jun/2024 12:43:21] "GET /approval/ HTTP/1.0" 200 10912
+[17/Jun/2024 12:43:34] "GET /approval/ HTTP/1.0" 200 10912
+[17/Jun/2024 12:43:46] "GET /login/ HTTP/1.0" 200 5319
+[17/Jun/2024 12:43:54] "GET / HTTP/1.0" 200 12790
+[17/Jun/2024 12:43:54] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 12:44:41] "GET /director_message/ HTTP/1.0" 200 8507
+[17/Jun/2024 12:45:25] "GET /director_message/ HTTP/1.0" 200 8522
