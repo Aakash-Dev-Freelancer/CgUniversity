@@ -33,9 +33,6 @@ def admin(request):
         api_url = f"{API_URL}login/"
         token_url = f"{API_URL}token/"
 
-        
-        
-        
         try:
             payload = {"username": username, "password": password, "user_type": user_type}
 

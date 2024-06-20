@@ -5409,3 +5409,1482 @@ Quit the server with CONTROL-C.
 [20/Jun/2024 06:13:08] "GET /cg_api/token/ HTTP/1.0" 200 483
 [20/Jun/2024 06:13:08] "POST /cg_api/login/ HTTP/1.0" 200 2766
 [20/Jun/2024 06:13:08] "POST /admin_cg/ HTTP/1.0" 200 44493
+[20/Jun/2024 06:14:15] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 06:14:15] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 06:14:19] "GET /admin/ HTTP/1.0" 200 13516
+[20/Jun/2024 06:14:34] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12928
+[20/Jun/2024 06:14:34] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:14:45] "GET /admin/cgapp/marksheets/1/change/ HTTP/1.0" 200 15354
+[20/Jun/2024 06:14:45] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:14:47] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12928
+[20/Jun/2024 06:14:48] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11819
+[20/Jun/2024 06:14:48] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:14:50] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11782
+[20/Jun/2024 06:14:50] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:14:51] "GET /admin/cgapp/student/ HTTP/1.0" 200 11752
+[20/Jun/2024 06:14:51] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:14:53] "GET /admin/cgapp/student/CG03248/change/ HTTP/1.0" 200 21228
+[20/Jun/2024 06:14:53] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:14:56] "GET /admin/cgapp/student/CG03248/delete/ HTTP/1.0" 200 10136
+[20/Jun/2024 06:14:57] "POST /admin/cgapp/student/CG03248/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:14:57] "GET /admin/cgapp/student/ HTTP/1.0" 200 11616
+[20/Jun/2024 06:14:57] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:14:58] "GET /admin/cgapp/student/ HTTP/1.0" 200 11442
+[20/Jun/2024 06:14:59] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:01] "GET /admin/cgapp/student/CG023432/change/ HTTP/1.0" 200 21247
+[20/Jun/2024 06:15:01] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:03] "GET /admin/cgapp/student/CG023432/delete/ HTTP/1.0" 200 10141
+[20/Jun/2024 06:15:05] "POST /admin/cgapp/student/CG023432/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:05] "GET /admin/cgapp/student/ HTTP/1.0" 200 10303
+[20/Jun/2024 06:15:05] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:06] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11782
+[20/Jun/2024 06:15:06] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:07] "GET /admin/cgapp/studentlogin/1/change/ HTTP/1.0" 200 11875
+[20/Jun/2024 06:15:08] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:09] "GET /admin/cgapp/studentlogin/1/delete/ HTTP/1.0" 200 10165
+[20/Jun/2024 06:15:11] "POST /admin/cgapp/studentlogin/1/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:11] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11660
+[20/Jun/2024 06:15:11] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:12] "GET /admin/cgapp/studentlogin/2/change/ HTTP/1.0" 200 11877
+[20/Jun/2024 06:15:12] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:13] "GET /admin/cgapp/studentlogin/2/delete/ HTTP/1.0" 200 10165
+[20/Jun/2024 06:15:15] "POST /admin/cgapp/studentlogin/2/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:15] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 10347
+[20/Jun/2024 06:15:16] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:19] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11819
+[20/Jun/2024 06:15:19] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:20] "GET /admin/cgapp/studentdata/CG023432/change/ HTTP/1.0" 200 14449
+[20/Jun/2024 06:15:20] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:21] "GET /admin/cgapp/studentdata/CG023432/delete/ HTTP/1.0" 200 10189
+[20/Jun/2024 06:15:22] "POST /admin/cgapp/studentdata/CG023432/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:23] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11677
+[20/Jun/2024 06:15:23] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:24] "GET /admin/cgapp/studentdata/CG03248/change/ HTTP/1.0" 200 14443
+[20/Jun/2024 06:15:24] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:25] "GET /admin/cgapp/studentdata/CG03248/delete/ HTTP/1.0" 200 10184
+[20/Jun/2024 06:15:26] "POST /admin/cgapp/studentdata/CG03248/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:27] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10344
+[20/Jun/2024 06:15:27] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:28] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12928
+[20/Jun/2024 06:15:28] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:30] "GET /admin/cgapp/marksheets/1/change/ HTTP/1.0" 200 15354
+[20/Jun/2024 06:15:30] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:31] "GET /admin/cgapp/marksheets/1/delete/ HTTP/1.0" 200 10143
+[20/Jun/2024 06:15:32] "POST /admin/cgapp/marksheets/1/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:32] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12809
+[20/Jun/2024 06:15:32] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:34] "GET /admin/cgapp/marksheets/2/change/ HTTP/1.0" 200 15350
+[20/Jun/2024 06:15:34] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:35] "GET /admin/cgapp/marksheets/2/delete/ HTTP/1.0" 200 10143
+[20/Jun/2024 06:15:36] "POST /admin/cgapp/marksheets/2/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:36] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12515
+[20/Jun/2024 06:15:37] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:37] "GET /admin/cgapp/marksheets/3/change/ HTTP/1.0" 200 15353
+[20/Jun/2024 06:15:38] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:39] "GET /admin/cgapp/marksheets/3/delete/ HTTP/1.0" 200 10143
+[20/Jun/2024 06:15:40] "POST /admin/cgapp/marksheets/3/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:40] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 12221
+[20/Jun/2024 06:15:40] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:41] "GET /admin/cgapp/marksheets/4/change/ HTTP/1.0" 200 15353
+[20/Jun/2024 06:15:42] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:43] "GET /admin/cgapp/marksheets/4/delete/ HTTP/1.0" 200 10143
+[20/Jun/2024 06:15:45] "POST /admin/cgapp/marksheets/4/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:45] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11927
+[20/Jun/2024 06:15:45] "POST /admin/cgapp/marksheets/4/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:46] "GET /admin/ HTTP/1.0" 200 13416
+[20/Jun/2024 06:15:49] "GET /admin/ HTTP/1.0" 200 13120
+[20/Jun/2024 06:15:51] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11752
+[20/Jun/2024 06:15:51] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:52] "GET /admin/cgapp/marksheets/5/change/ HTTP/1.0" 200 15351
+[20/Jun/2024 06:15:52] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:54] "GET /admin/cgapp/marksheets/5/delete/ HTTP/1.0" 200 10143
+[20/Jun/2024 06:15:55] "POST /admin/cgapp/marksheets/5/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:55] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11632
+[20/Jun/2024 06:15:55] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:56] "GET /admin/cgapp/marksheets/6/change/ HTTP/1.0" 200 15353
+[20/Jun/2024 06:15:56] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:15:57] "GET /admin/cgapp/marksheets/6/delete/ HTTP/1.0" 200 10143
+[20/Jun/2024 06:15:58] "POST /admin/cgapp/marksheets/6/delete/ HTTP/1.0" 302 0
+[20/Jun/2024 06:15:59] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 10329
+[20/Jun/2024 06:15:59] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:16:00] "GET /admin/cgapp/center/ HTTP/1.0" 200 11402
+[20/Jun/2024 06:16:00] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:16:01] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 11457
+[20/Jun/2024 06:16:02] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:16:04] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 10168
+[20/Jun/2024 06:16:04] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:16:05] "GET /admin/cgapp/student/ HTTP/1.0" 200 10128
+[20/Jun/2024 06:16:05] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:16:06] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10161
+[20/Jun/2024 06:16:06] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:16:07] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 10154
+[20/Jun/2024 06:16:07] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:16:09] "GET /admin/sites/site/ HTTP/1.0" 200 12132
+[20/Jun/2024 06:16:09] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:22:24] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 06:22:25] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 06:22:26] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 06:22:28] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:22:28] "POST /cg_api/login/ HTTP/1.0" 200 240
+[20/Jun/2024 06:22:28] "POST /admin_cg/ HTTP/1.0" 200 40376
+[20/Jun/2024 06:24:33] "GET /admin/sites/site/ HTTP/1.0" 200 12132
+[20/Jun/2024 06:24:33] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:24:34] "GET /admin/sites/site/ HTTP/1.0" 200 12132
+[20/Jun/2024 06:24:34] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:24:37] "GET /admin/cgapp/student/ HTTP/1.0" 200 10128
+[20/Jun/2024 06:24:37] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:24:38] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 10168
+[20/Jun/2024 06:24:39] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:24:40] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10161
+[20/Jun/2024 06:24:41] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:24:42] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 10154
+[20/Jun/2024 06:24:42] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:25:20] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+[20/Jun/2024 06:25:23] "POST /cg_api/students/ HTTP/1.0" 201 57
+[20/Jun/2024 06:25:24] "POST /cg_api/student-data/ HTTP/1.0" 201 47
+[20/Jun/2024 06:25:24] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[20/Jun/2024 06:25:25] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:25:25] "POST /cg_api/login/ HTTP/1.0" 200 1008
+[20/Jun/2024 06:25:25] "POST /admin_cg/ HTTP/1.0" 500 145
+[20/Jun/2024 06:25:52] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:25:52] "POST /cg_api/login/ HTTP/1.0" 200 1008
+[20/Jun/2024 06:25:52] "POST /admin_cg/ HTTP/1.0" 500 145
+[20/Jun/2024 06:25:57] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:25:57] "POST /cg_api/login/ HTTP/1.0" 200 1008
+[20/Jun/2024 06:25:57] "POST /admin_cg/ HTTP/1.0" 500 145
+[20/Jun/2024 06:26:02] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 06:26:03] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 06:26:03] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11457
+[20/Jun/2024 06:26:03] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:26:05] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 06:26:05] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 06:26:06] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 06:26:07] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 06:26:12] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:26:12] "POST /cg_api/login/ HTTP/1.0" 200 1008
+[20/Jun/2024 06:26:12] "POST /admin_cg/ HTTP/1.0" 500 145
+[20/Jun/2024 06:26:21] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:26:21] "POST /cg_api/login/ HTTP/1.0" 200 1008
+[20/Jun/2024 06:26:21] "POST /admin_cg/ HTTP/1.0" 500 145
+[20/Jun/2024 06:26:35] "GET /admin_cg/ HTTP/1.0" 200 6124
+[20/Jun/2024 06:26:41] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 06:26:42] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 06:26:45] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 06:26:52] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:26:53] "POST /cg_api/login/ HTTP/1.0" 200 1008
+[20/Jun/2024 06:26:53] "POST /admin_cg/ HTTP/1.0" 500 145
+[20/Jun/2024 06:26:59] "GET /admin/ HTTP/1.0" 200 13121
+[20/Jun/2024 06:27:01] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 11457
+[20/Jun/2024 06:27:01] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:27:04] "GET /admin/cgapp/adminlogin/1/change/ HTTP/1.0" 200 13838
+[20/Jun/2024 06:27:04] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:27:07] "GET /admin/cgapp/center/ HTTP/1.0" 200 11402
+[20/Jun/2024 06:27:07] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:28:14] "GET /admin/cgapp/center/ HTTP/1.0" 200 10121
+[20/Jun/2024 06:28:14] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:28:16] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 10154
+[20/Jun/2024 06:28:16] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:28:17] "GET /admin/cgapp/adminlogin/add/ HTTP/1.0" 200 13492
+[20/Jun/2024 06:28:18] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:28:37] "POST /admin/cgapp/adminlogin/add/ HTTP/1.0" 302 0
+[20/Jun/2024 06:28:38] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 11678
+[20/Jun/2024 06:28:38] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:28:39] "GET /admin/cgapp/center/ HTTP/1.0" 200 10121
+[20/Jun/2024 06:28:39] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:28:40] "GET /admin/cgapp/center/add/ HTTP/1.0" 200 12837
+[20/Jun/2024 06:28:41] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:28:55] "POST /admin/cgapp/center/add/ HTTP/1.0" 302 0
+[20/Jun/2024 06:28:55] "GET /admin/cgapp/center/ HTTP/1.0" 200 11610
+[20/Jun/2024 06:28:55] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:28:59] "GET /admin_cg/ HTTP/1.0" 200 6124
+[20/Jun/2024 06:29:04] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:29:04] "POST /cg_api/login/ HTTP/1.0" 200 240
+[20/Jun/2024 06:29:05] "POST /admin_cg/ HTTP/1.0" 200 40376
+[20/Jun/2024 06:29:36] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:29:36] "POST /cg_api/login/ HTTP/1.0" 200 240
+[20/Jun/2024 06:29:36] "POST /admin_cg/ HTTP/1.0" 200 40376
+[20/Jun/2024 06:31:21] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+[20/Jun/2024 06:31:21] "POST /cg_api/students/ HTTP/1.0" 201 57
+[20/Jun/2024 06:31:22] "POST /cg_api/student-data/ HTTP/1.0" 201 47
+[20/Jun/2024 06:31:22] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[20/Jun/2024 06:31:22] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:31:22] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 06:31:22] "POST /admin_cg/ HTTP/1.0" 500 145
+[20/Jun/2024 06:35:43] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 06:35:43] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 06:35:45] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 06:35:49] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:35:49] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 06:35:49] "POST /admin_cg/ HTTP/1.0" 500 145
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 05:03:46
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG0u567'], 'session': ['Dec-2022'], 'semester': ['2 '], 'sgpa': ['8.92'], 'status': ['Ragular'], 'result': ['Reslut'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG0234'], 'session': ['Aug-2020'], 'semester': ['3'], 'sgpa': ['10.0'], 'status': ['Enroll'], 'result': ['Pass '], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': [''], 'session': [''], 'semester': [''], 'sgpa': [''], 'status': [''], 'result': [''], 'file': ['undefined']}>
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG02343'], 'session': ['Dec-2022'], 'semester': ['2 '], 'sgpa': ['8.92'], 'status': ['Enrolled'], 'result': ['Pass '], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+<QueryDict: {'student_enrollment_no': ['CG02343'], 'session': ['Dec-2022'], 'semester': ['2 '], 'sgpa': ['8.92'], 'status': ['Enrolled'], 'result': ['Pass '], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG03248'], 'session': ['Dec-2019'], 'semester': ['2 '], 'sgpa': ['9.0'], 'status': ['Ragular'], 'result': ['Pass'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': [''], 'session': [''], 'semester': [''], 'sgpa': [''], 'status': [''], 'result': [''], 'file': ['undefined']}>
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG023432'], 'session': ['Dec-2019'], 'semester': ['2 '], 'sgpa': ['8.92'], 'status': ['Ragular'], 'result': ['Pass'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['2014BCOM4304'], 'session': ['2017'], 'semester': ['3rd year'], 'sgpa': ['7.5'], 'status': ['ragular'], 'result': ['pass'], 'file': [<InMemoryUploadedFile: download.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['2014BCOM4305'], 'session': ['2017'], 'semester': ['3rd year'], 'sgpa': ['7.5'], 'status': ['ragular'], 'result': ['pass'], 'file': [<InMemoryUploadedFile: download.jpg (image/jpeg)>]}>
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+[20/Jun/2024 06:36:03] "GET /admin/cgapp/center/ HTTP/1.0" 200 11402
+[20/Jun/2024 06:36:03] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:06] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11457
+[20/Jun/2024 06:36:06] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:07] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11513
+[20/Jun/2024 06:36:07] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:09] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11481
+[20/Jun/2024 06:36:10] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:11] "GET /admin/cgapp/student/ HTTP/1.0" 200 11458
+[20/Jun/2024 06:36:11] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:13] "GET /admin/cgapp/student/2014BCOM4305/change/ HTTP/1.0" 200 21347
+[20/Jun/2024 06:36:14] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:31] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 11457
+[20/Jun/2024 06:36:31] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:33] "GET /admin/cgapp/center/ HTTP/1.0" 200 11402
+[20/Jun/2024 06:36:33] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:36] "GET /admin/cgapp/center/1/change/ HTTP/1.0" 200 13161
+[20/Jun/2024 06:36:36] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:40] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11513
+[20/Jun/2024 06:36:40] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:42] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 11481
+[20/Jun/2024 06:36:42] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:50] "GET /admin/cgapp/student/ HTTP/1.0" 200 11458
+[20/Jun/2024 06:36:50] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:52] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 11513
+[20/Jun/2024 06:36:53] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:54] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11457
+[20/Jun/2024 06:36:54] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:36:55] "GET /admin/cgapp/marksheets/1/change/ HTTP/1.0" 200 15257
+[20/Jun/2024 06:36:55] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:37:12] "GET /admin_cg/ HTTP/1.0" 200 6124
+[20/Jun/2024 06:37:17] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:37:17] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 06:37:17] "POST /admin_cg/ HTTP/1.0" 500 145
+[20/Jun/2024 06:37:35] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:37:35] "POST /cg_api/login/ HTTP/1.0" 200 562
+[20/Jun/2024 06:37:35] "POST /center/ HTTP/1.0" 200 36680
+[20/Jun/2024 06:37:42] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 06:37:42] "GET /view_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODY5MDU1LCJpYXQiOjE3MTg4NjU0NTUsImp0aSI6IjcxY2E0ZDM4ZDllZTQwNzNiMzAyNjk4ZDJhYzYwMjEwIiwidXNlcl9pZCI6MX0.Ni4b0kf6DbkD2nEgEI5Gp4RdRvDWMRgoAc2iRi1iQi0&cId=1 HTTP/1.0" 200 14298
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:36:00
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Center Function View ---------------- 
+Api URL ::  https://cginternationaluniversity.in/cg_api/
+Username ::  Satyam
+Password ::  040820
+User Type ::  center
+Center object (1)
+Access Token ::  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODY5MDU1LCJpYXQiOjE3MTg4NjU0NTUsImp0aSI6IjcxY2E0ZDM4ZDllZTQwNzNiMzAyNjk4ZDJhYzYwMjEwIiwidXNlcl9pZCI6MX0.Ni4b0kf6DbkD2nEgEI5Gp4RdRvDWMRgoAc2iRi1iQi0
+---------------- View Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:38:30
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:39:01
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:41:44
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:41:51
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 42, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 61, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py", line 24, in <module>
+    path('cg_api/', include('cgapp.urls')),
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/urls.py", line 3, in <module>
+    from . import views
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 193
+    try
+       ^
+SyntaxError: expected ':'
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 42, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 61, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py", line 24, in <module>
+    path('cg_api/', include('cgapp.urls')),
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/urls.py", line 3, in <module>
+    from . import views
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 193
+    try 
+        ^
+SyntaxError: expected ':'
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 42, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 61, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py", line 24, in <module>
+    path('cg_api/', include('cgapp.urls')),
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/urls.py", line 3, in <module>
+    from . import views
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 193
+    try 
+        ^
+SyntaxError: expected ':'
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 42, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 61, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py", line 24, in <module>
+    path('cg_api/', include('cgapp.urls')),
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/urls.py", line 3, in <module>
+    from . import views
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 193
+    try {
+        ^
+SyntaxError: expected ':'
+Performing system checks...
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:42:12
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:42:14
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:42:22
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:42:27
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:42:30
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:42:33
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:42:36
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:42:42
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+[20/Jun/2024 06:43:09] "GET / HTTP/1.1" 200 13657
+[20/Jun/2024 06:43:10] "GET /script.js HTTP/1.1" 404 179
+[20/Jun/2024 06:43:11] "GET /login/ HTTP/1.1" 200 6090
+[20/Jun/2024 06:43:11] "GET /static/main_css/login.css HTTP/1.1" 404 179
+[20/Jun/2024 06:43:35] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:43:35] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 06:43:35] "POST /admin_cg/ HTTP/1.1" 500 145
+[20/Jun/2024 06:43:36] "GET /favicon.ico HTTP/1.1" 404 179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:42:45
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QuerySet [<Student: Student object (2014BCOM4305)>]>
+<QuerySet [<StudentData: StudentData object (2014BCOM4305)>]>
+<QuerySet [<MarkSheets: MarkSheets object (1)>]>
+[20/Jun/2024 06:43:51] "GET /login/ HTTP/1.1" 200 6090
+[20/Jun/2024 06:43:51] "GET /static/main_css/login.css HTTP/1.1" 404 179
+[20/Jun/2024 06:43:57] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 06:43:57] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 06:43:58] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 06:44:05] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:44:05] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 06:44:05] "POST /admin_cg/ HTTP/1.0" 500 145
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:43:43
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QuerySet [<Student: Student object (2014BCOM4305)>]>
+<QuerySet [<StudentData: StudentData object (2014BCOM4305)>]>
+<QuerySet [<MarkSheets: MarkSheets object (1)>]>
+Watching for file changes with StatReloader
+[20/Jun/2024 06:44:21] "GET /login/ HTTP/1.1" 200 6149
+[20/Jun/2024 06:44:22] "GET /static/main_css/login.css HTTP/1.1" 200 2123
+[20/Jun/2024 06:44:28] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:44:28] "POST /cg_api/login/ HTTP/1.0" 200 1024
+Internal Server Error: /admin_cg/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/views.py", line 47, in admin
+    admin_info = AdminInfo.from_dict(admin_dict)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 221, in from_dict
+    students_marksheets = from_list(StudentsMarksheet.from_dict, obj.get("students_marksheets")) if "students_marksheets" in obj else None
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 47, in from_list
+    return [f(y) for y in x]
+            ^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py", line 185, in from_dict
+    semester = int(from_str(obj.get("semester")))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '3rd year'
+[20/Jun/2024 06:44:28] "POST /admin_cg/ HTTP/1.1" 500 99796
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:44:18
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QuerySet [<Student: Student object (2014BCOM4305)>]>
+<QuerySet [<StudentData: StudentData object (2014BCOM4305)>]>
+<QuerySet [<MarkSheets: MarkSheets object (1)>]>
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_International_University_App/models/admin_info.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:45:32
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[20/Jun/2024 06:45:55] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:45:55] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 06:45:55] "POST /admin_cg/ HTTP/1.1" 200 42635
+[20/Jun/2024 06:46:04] "GET /admin_cg/ HTTP/1.0" 200 6183
+[20/Jun/2024 06:46:09] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:46:09] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 06:46:09] "POST /admin_cg/ HTTP/1.0" 200 42635
+[20/Jun/2024 06:47:04] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 06:47:04] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 06:47:08] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 06:47:12] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:47:12] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 06:47:12] "POST /admin_cg/ HTTP/1.0" 200 42635
+[20/Jun/2024 06:47:33] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 06:47:33] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 06:47:37] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 06:47:50] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:47:50] "POST /cg_api/login/ HTTP/1.0" 200 920
+[20/Jun/2024 06:47:50] "POST /student/ HTTP/1.0" 200 30842
+Not Found: /student/None
+[20/Jun/2024 06:47:52] "GET /student/None HTTP/1.0" 404 6142
+Not Found: /student/None
+[20/Jun/2024 06:47:53] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 06:52:17] "GET / HTTP/1.0" 200 13834
+Not Found: /CG_International_University_App/static/main_css/style.css
+[20/Jun/2024 06:52:18] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 404 6277
+Not Found: /script.js
+[20/Jun/2024 06:52:20] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 06:53:17] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 06:54:26] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 06:54:27] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 06:54:51] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:54:51] "POST /cg_api/login/ HTTP/1.0" 200 920
+[20/Jun/2024 06:54:51] "POST /student/ HTTP/1.0" 200 30842
+Not Found: /student/None
+[20/Jun/2024 06:54:52] "GET /student/None HTTP/1.0" 404 6142
+Not Found: /student/None
+[20/Jun/2024 06:54:53] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 06:54:55] "GET / HTTP/1.0" 200 13834
+Not Found: /cdn.js
+[20/Jun/2024 06:55:14] "GET //cdn.js HTTP/1.0" 404 6110
+Not Found: /dist/js/bootstrap.bundle.min.js
+[20/Jun/2024 06:55:14] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 6185
+Not Found: /livereload.js
+[20/Jun/2024 06:55:14] "GET /livereload.js HTTP/1.0" 404 6131
+Not Found: /cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+[20/Jun/2024 06:55:14] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 6263
+[20/Jun/2024 06:55:54] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 06:55:54] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 06:55:54] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 06:55:54] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODY5NjMyLCJpYXQiOjE3MTg4NjYwMzIsImp0aSI6ImM3ZDI0MzczNmJmMzRjZGE5NjYzNjg5Y2M3MDc5NjViIiwidXNlcl9pZCI6MX0.AVzF4BFB9L-U1AhvAxpJSbhOTPcLpA8iVZjHyKm7Q3o&cId= HTTP/1.0" 200 29441
+[20/Jun/2024 06:56:40] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 06:56:41] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 06:56:44] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 06:56:46] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 06:56:57] "GET /logout/ HTTP/1.0" 302 0
+[20/Jun/2024 06:56:58] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 06:57:13] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 06:57:14] "GET /approval/ HTTP/1.0" 200 11816
+[20/Jun/2024 06:57:40] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 06:58:00] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 06:58:00] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 06:58:00] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 06:58:00] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODY5NjMyLCJpYXQiOjE3MTg4NjYwMzIsImp0aSI6ImM3ZDI0MzczNmJmMzRjZGE5NjYzNjg5Y2M3MDc5NjViIiwidXNlcl9pZCI6MX0.AVzF4BFB9L-U1AhvAxpJSbhOTPcLpA8iVZjHyKm7Q3o&cId= HTTP/1.0" 200 29441
+[20/Jun/2024 06:58:05] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 06:58:52] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:58:52] "POST /cg_api/login/ HTTP/1.0" 200 920
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 06:45:47
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QuerySet [<Student: Student object (2014BCOM4305)>]>
+<QuerySet [<StudentData: StudentData object (2014BCOM4305)>]>
+<QuerySet [<MarkSheets: MarkSheets object (1)>]>
+---------------- Admin Function View ---------------- 
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QuerySet [<Student: Student object (2014BCOM4305)>]>
+<QuerySet [<StudentData: StudentData object (2014BCOM4305)>]>
+<QuerySet [<MarkSheets: MarkSheets object (1)>]>
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QuerySet [<Student: Student object (2014BCOM4305)>]>
+<QuerySet [<StudentData: StudentData object (2014BCOM4305)>]>
+<QuerySet [<MarkSheets: MarkSheets object (1)>]>
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+{'student_enrollment_no': '2014BCOM4305', 'student_provision': None, 'student_admit_card': None, 'student_affidevit': None, 'student_migrations': None, 'student_degree': None}
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': '/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': '2014BCOM4305', 'session': '2017', 'semester': '3rd year', 'sgpa': '7.5', 'status': 'ragular', 'result': 'pass', 'file': '/media/images/students/marksheet/download_7Dxz3f2.jpg'}]
+Student Info ::  StudentInformation(success='Logged in successfully', student_info=StudentInfo(student_data=StudentData(student_enrollment_no='2014BCOM4305', student_provision=None, student_admit_card=None, student_affidevit=None, student_migrations=None, student_degree=None), student_personal_info=StudentPersonalInfo(enrollment_no='2014BCOM4305', password='1993', full_name='MOHAMMAD SHAHJAHAN', father_name='MOHAMMAD JAHANGIR', mother_name='SABRA', gender='male', date_of_birth=datetime.datetime(1993, 5, 2, 0, 0), category='gan', email='123@gmail.com', mobile_number='1234567890', address='MADHYA PRADESH', profile_pic='/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg'), student_marksheets=[StudentMarksheet(id=1, student_enrollment_no='2014BCOM4305', session='2017', semester='3rd year', sgpa='7.5', status='ragular', result='pass', file='/media/images/students/marksheet/download_7Dxz3f2.jpg')]))
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+{'student_enrollment_no': '2014BCOM4305', 'student_provision': None, 'student_admit_card': None, 'student_affidevit': None, 'student_migrations': None, 'student_degree': None}
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': '/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': '2014BCOM4305', 'session': '2017', 'semester': '3rd year', 'sgpa': '7.5', 'status': 'ragular', 'result': 'pass', 'file': '/media/images/students/marksheet/download_7Dxz3f2.jpg'}]
+Student Info ::  StudentInformation(success='Logged in successfully', student_info=StudentInfo(student_data=StudentData(student_enrollment_no='2014BCOM4305', student_provision=None, student_admit_card=None, student_affidevit=None, student_migrations=None, student_degree=None), student_personal_info=StudentPersonalInfo(enrollment_no='2014BCOM4305', password='1993', full_name='MOHAMMAD SHAHJAHAN', father_name='MOHAMMAD JAHANGIR', mother_name='SABRA', gender='male', date_of_birth=datetime.datetime(1993, 5, 2, 0, 0), category='gan', email='123@gmail.com', mobile_number='1234567890', address='MADHYA PRADESH', profile_pic='/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg'), student_marksheets=[StudentMarksheet(id=1, student_enrollment_no='2014BCOM4305', session='2017', semester='3rd year', sgpa='7.5', status='ragular', result='pass', file='/media/images/students/marksheet/download_7Dxz3f2.jpg')]))
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+{'student_enrollment_no': '2014BCOM4305', 'student_provision': None, 'student_admit_card': None, 'student_affidevit': None, 'student_migrations': None, 'student_degree': None}
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': '/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': '2014BCOM4305', 'session': '2017', 'semester': '3rd year', 'sgpa': '7.5', 'status': 'ragular', 'result': 'pass', 'file': '/media/images/students/marksheet/download_7Dxz3f2.jpg'}]
+Student Info ::  [20/Jun/2024 06:58:52] "POST /student/ HTTP/1.0" 200 30842
+Not Found: /student/None
+[20/Jun/2024 06:58:53] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 06:59:28] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:59:28] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 06:59:28] "POST /admin_cg/ HTTP/1.0" 200 42635
+[20/Jun/2024 07:00:00] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 07:00:00] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 07:00:00] "POST /admin_cg/ HTTP/1.0" 200 42635
+[20/Jun/2024 07:00:04] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:00:04] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:00:04] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:00:04] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNDAwLCJpYXQiOjE3MTg4NjY4MDAsImp0aSI6ImM3ZTU4YTNiYTQxYjRjM2ZiNjMzMmJkZWVjYmJiZGY5IiwidXNlcl9pZCI6MX0.MB11o65i61SsiEmcDBf4mZ_0BQOG8nR4Scituu2093c&cId= HTTP/1.0" 200 29441
+[20/Jun/2024 07:02:17] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 07:02:18] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 07:02:20] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 07:02:24] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 07:02:24] "POST /cg_api/login/ HTTP/1.0" 200 1024
+[20/Jun/2024 07:02:24] "POST /admin_cg/ HTTP/1.0" 200 42635
+[20/Jun/2024 07:02:26] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:02:26] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:02:26] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:02:26] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29441
+[20/Jun/2024 07:02:55] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:02:55] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:02:55] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:02:55] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29441
+[20/Jun/2024 07:05:20] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:05:20] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:05:20] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:05:20] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29440
+[20/Jun/2024 07:05:22] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:05:23] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:05:23] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:05:23] "POST /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29440
+[20/Jun/2024 07:05:33] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:05:33] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:05:33] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:05:33] "POST /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29440
+[20/Jun/2024 07:06:39] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:06:39] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:06:39] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:06:39] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29489
+[20/Jun/2024 07:07:03] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:07:03] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:07:03] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:07:03] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29489
+[20/Jun/2024 07:07:15] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:07:15] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:07:15] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:07:15] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29489
+[20/Jun/2024 07:08:16] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:08:16] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:08:16] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:08:16] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29483
+[20/Jun/2024 07:08:35] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:08:35] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:08:35] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:08:35] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29489
+[20/Jun/2024 07:09:12] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 458
+[20/Jun/2024 07:09:12] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:09:12] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+StudentInformation(success='Logged in successfully', student_info=StudentInfo(student_data=StudentData(student_enrollment_no='2014BCOM4305', student_provision=None, student_admit_card=None, student_affidevit=None, student_migrations=None, student_degree=None), student_personal_info=StudentPersonalInfo(enrollment_no='2014BCOM4305', password='1993', full_name='MOHAMMAD SHAHJAHAN', father_name='MOHAMMAD JAHANGIR', mother_name='SABRA', gender='male', date_of_birth=datetime.datetime(1993, 5, 2, 0, 0), category='gan', email='123@gmail.com', mobile_number='1234567890', address='MADHYA PRADESH', profile_pic='/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg'), student_marksheets=[StudentMarksheet(id=1, student_enrollment_no='2014BCOM4305', session='2017', semester='3rd year', sgpa='7.5', status='ragular', result='pass', file='/media/images/students/marksheet/download_7Dxz3f2.jpg')]))
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QuerySet [<Student: Student object (2014BCOM4305)>]>
+<QuerySet [<StudentData: StudentData object (2014BCOM4305)>]>
+<QuerySet [<MarkSheets: MarkSheets object (1)>]>
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QuerySet [<Student: Student object (2014BCOM4305)>]>
+<QuerySet [<StudentData: StudentData object (2014BCOM4305)>]>
+<QuerySet [<MarkSheets: MarkSheets object (1)>]>
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QuerySet [<Student: Student object (2014BCOM4305)>]>
+<QuerySet [<StudentData: StudentData object (2014BCOM4305)>]>
+<QuerySet [<MarkSheets: MarkSheets object (1)>]>
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+[20/Jun/2024 07:09:12] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29489
+[20/Jun/2024 07:09:15] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:09:15] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+Bad Request: /cg_api/marksheets/1/
+[20/Jun/2024 07:09:15] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 400 84
+[20/Jun/2024 07:10:32] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:10:32] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:10:32] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:10:32] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29474
+[20/Jun/2024 07:10:35] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:10:35] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+Bad Request: /cg_api/marksheets/1/
+[20/Jun/2024 07:10:36] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 400 84
+[20/Jun/2024 07:10:46] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:10:46] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:10:47] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:10:54] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:10:54] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 250
+[20/Jun/2024 07:10:54] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:10:54] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29627
+[20/Jun/2024 07:11:02] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:11:02] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+Bad Request: /cg_api/marksheets/1/
+[20/Jun/2024 07:11:02] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 400 84
+[20/Jun/2024 07:11:05] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:11:05] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 250
+[20/Jun/2024 07:11:05] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:11:05] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29627
+[20/Jun/2024 07:12:12] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:12:12] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+Bad Request: /cg_api/marksheets/1/
+[20/Jun/2024 07:12:13] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 400 84
+[20/Jun/2024 07:15:45] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:15:45] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 250
+[20/Jun/2024 07:15:45] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:15:45] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29745
+[20/Jun/2024 07:15:51] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:15:51] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:15:52] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:15:53] "GET /cg_api/marksheets/1/ HTTP/1.0" 200 17446
+[20/Jun/2024 07:16:06] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:16:06] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:16:08] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:16:14] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:16:14] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:16:14] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:16:14] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29586
+[20/Jun/2024 07:16:19] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:16:19] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+Bad Request: /cg_api/marksheets/1/
+[20/Jun/2024 07:16:20] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 400 84
+[20/Jun/2024 07:16:40] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:16:40] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 199
+[20/Jun/2024 07:16:40] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:16:40] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29589
+[20/Jun/2024 07:16:48] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:16:49] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:16:49] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:16:54] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 07:16:55] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 07:16:59] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:16:59] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 201
+[20/Jun/2024 07:16:59] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:16:59] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29591
+[20/Jun/2024 07:17:17] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 07:17:26] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:17:26] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:17:27] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:17:32] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:17:32] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 196
+[20/Jun/2024 07:17:32] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:17:32] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29574
+[20/Jun/2024 07:17:39] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:17:39] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:17:39] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:17:41] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:17:41] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 202
+[20/Jun/2024 07:17:41] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:17:41] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29580
+[20/Jun/2024 07:17:51] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:17:51] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:17:52] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:18:27] "GET /cg_api/token/ HTTP/1.0" 200 483
+Internal Server Error: /cg_api/login/
+[20/Jun/2024 07:18:27] "POST /cg_api/login/ HTTP/1.0" 500 24
+[20/Jun/2024 07:18:27] "POST /student/ HTTP/1.0" 200 6186
+[20/Jun/2024 07:18:47] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 07:18:47] "POST /cg_api/login/ HTTP/1.0" 200 923
+[20/Jun/2024 07:18:47] "POST /student/ HTTP/1.0" 200 30839
+Not Found: /student/None
+[20/Jun/2024 07:18:47] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 07:19:01] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:19:01] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:19:02] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:19:05] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:19:05] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 196
+[20/Jun/2024 07:19:05] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+{'enrollment_no': '2014BCOM4305', 'password': '1993', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014bcom4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+Server Error: StudentLogin matching query does not exist.
+Error Message ::  Server Error. Please try again later.
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+{'student_enrollment_no': '2014BCOM4305', 'student_provision': None, 'student_admit_card': None, 'student_affidevit': None, 'student_migrations': None, 'student_degree': None}
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': '/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': '2014BCOM4305', 'session': '2017', 'semester': '3rd year', 'sgpa': '7.5', 'status': 'ragular', 'result': 'pass', 'file': '/media/images/students/marksheet/13063_ksf6xKg.png'}]
+Student Info ::  StudentInformation(success='Logged in successfully', student_info=StudentInfo(student_data=StudentData(student_enrollment_no='2014BCOM4305', student_provision=None, student_admit_card=None, student_affidevit=None, student_migrations=None, student_degree=None), student_personal_info=StudentPersonalInfo(enrollment_no='2014BCOM4305', password='1993-05-02', full_name='MOHAMMAD SHAHJAHAN', father_name='MOHAMMAD JAHANGIR', mother_name='SABRA', gender='male', date_of_birth=datetime.datetime(1993, 5, 2, 0, 0), category='gan', email='123@gmail.com', mobile_number='1234567890', address='MADHYA PRADESH', profile_pic='/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg'), student_marksheets=[StudentMarksheet(id=1, student_enrollment_no='2014BCOM4305', session='2017', semester='3rd year', sgpa='7.5', status='ragular', result='pass', file='/media/images/students/marksheet/13063_ksf6xKg.png')]))
+---------------- Edit Student Function View ---------------- 
+[20/Jun/2024 07:19:05] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29559
+[20/Jun/2024 07:19:09] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:19:09] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:19:09] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:19:10] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:19:10] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 196
+[20/Jun/2024 07:19:10] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:19:10] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNTQ0LCJpYXQiOjE3MTg4NjY5NDQsImp0aSI6IjM1ZjI5ZjIxMjQ1MDRlMWFiMTQ3YzViYmRlYzIzMDM4IiwidXNlcl9pZCI6MX0.x46_F-pnCaBfjltup6u1wz273ZRSIAnuMHcg5MVnkRI&cId= HTTP/1.0" 200 29559
+[20/Jun/2024 07:20:19] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:20:19] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 196
+[20/Jun/2024 07:20:19] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:20:19] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcwNDAwLCJpYXQiOjE3MTg4NjY4MDAsImp0aSI6ImM3ZTU4YTNiYTQxYjRjM2ZiNjMzMmJkZWVjYmJiZGY5IiwidXNlcl9pZCI6MX0.MB11o65i61SsiEmcDBf4mZ_0BQOG8nR4Scituu2093c&cId= HTTP/1.0" 200 29559
+[20/Jun/2024 07:20:38] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 07:20:38] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 07:20:42] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 07:20:44] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 07:20:44] "POST /cg_api/login/ HTTP/1.0" 200 1027
+[20/Jun/2024 07:20:44] "POST /admin_cg/ HTTP/1.0" 200 42641
+[20/Jun/2024 07:20:49] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 464
+[20/Jun/2024 07:20:49] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 196
+[20/Jun/2024 07:20:49] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:20:49] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcxNjQ0LCJpYXQiOjE3MTg4NjgwNDQsImp0aSI6IjlkODg5OWIxOGNjOTQ4Yjc4ZDA2ODE4YjY1MTEzOTA4IiwidXNlcl9pZCI6MX0.c4FnIs2Yh5KBbd3-ivhwcdQKfeQI-ohLVY1qHJalHYs&cId= HTTP/1.0" 200 29559
+[20/Jun/2024 07:22:14] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 477
+[20/Jun/2024 07:22:14] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:22:14] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:22:15] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 477
+[20/Jun/2024 07:22:15] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 200
+[20/Jun/2024 07:22:15] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:22:15] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcxNjQ0LCJpYXQiOjE3MTg4NjgwNDQsImp0aSI6IjlkODg5OWIxOGNjOTQ4Yjc4ZDA2ODE4YjY1MTEzOTA4IiwidXNlcl9pZCI6MX0.c4FnIs2Yh5KBbd3-ivhwcdQKfeQI-ohLVY1qHJalHYs&cId= HTTP/1.0" 200 29582
+[20/Jun/2024 07:22:29] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 07:22:30] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 07:22:33] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 07:22:53] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 07:22:53] "POST /cg_api/login/ HTTP/1.0" 200 940
+[20/Jun/2024 07:22:53] "POST /student/ HTTP/1.0" 200 30856
+Not Found: /student/None
+[20/Jun/2024 07:22:54] "GET /student/None HTTP/1.0" 404 6142
+Not Found: /student/None
+[20/Jun/2024 07:22:55] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 07:23:44] "PUT /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 477
+[20/Jun/2024 07:23:45] "PATCH /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:23:45] "PATCH /cg_api/marksheets/1/ HTTP/1.0" 200 45
+[20/Jun/2024 07:23:45] "GET /cg_api/students/2014BCOM4305/ HTTP/1.0" 200 477
+[20/Jun/2024 07:23:45] "GET /cg_api/marksheets/2014BCOM4305/ HTTP/1.0" 200 200
+[20/Jun/2024 07:23:45] "GET /cg_api/student-data/2014BCOM4305/ HTTP/1.0" 200 164
+[20/Jun/2024 07:23:45] "GET /edit_student/?id=2014BCOM4305&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE4ODcxNjQ0LCJpYXQiOjE3MTg4NjgwNDQsImp0aSI6IjlkODg5OWIxOGNjOTQ4Yjc4ZDA2ODE4YjY1MTEzOTA4IiwidXNlcl9pZCI6MX0.c4FnIs2Yh5KBbd3-ivhwcdQKfeQI-ohLVY1qHJalHYs&cId= HTTP/1.0" 200 29582
+[20/Jun/2024 07:23:58] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 07:23:59] "POST /cg_api/login/ HTTP/1.0" 200 940
+[20/Jun/2024 07:23:59] "POST /student/ HTTP/1.0" 200 30857
+Not Found: /student/None
+[20/Jun/2024 07:23:59] "GET /student/None HTTP/1.0" 404 6142
+Not Found: /student/None
+[20/Jun/2024 07:24:00] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 07:24:55] "GET / HTTP/1.0" 200 13834
+Not Found: /CG_International_University_App/static/main_css/style.css
+[20/Jun/2024 07:24:55] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 404 6277
+Not Found: /script.js
+[20/Jun/2024 07:24:56] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 07:35:57] "GET / HTTP/1.0" 200 13834
+[20/Jun/2024 08:15:30] "GET / HTTP/1.0" 200 13834
+Forbidden (CSRF cookie not set.): /
+[20/Jun/2024 08:15:34] "POST / HTTP/1.0" 403 2928
+Forbidden (CSRF cookie not set.): /
+[20/Jun/2024 08:15:37] "POST / HTTP/1.0" 403 2928
+Not Found: /WuEL
+[20/Jun/2024 08:15:41] "GET /WuEL HTTP/1.0" 404 6104
+Not Found: /a
+[20/Jun/2024 08:15:47] "GET /a HTTP/1.0" 404 6095
+Not Found: /download/file.ext
+[20/Jun/2024 08:15:50] "GET /download/file.ext HTTP/1.0" 404 6143
+Not Found: /SiteLoader
+[20/Jun/2024 08:15:53] "GET /SiteLoader HTTP/1.0" 404 6122
+Not Found: /mPlayer
+[20/Jun/2024 08:15:56] "GET /mPlayer HTTP/1.0" 404 6113
+[20/Jun/2024 08:45:55] "GET / HTTP/1.1" 200 13834
+[20/Jun/2024 08:45:55] "GET /static/images/logo.png HTTP/1.1" 200 46843
+[20/Jun/2024 08:49:20] "GET / HTTP/1.1" 200 13834
+[20/Jun/2024 09:36:53] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 09:36:53] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 09:58:03] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 09:58:03] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 09:58:19] "GET /approval/ HTTP/1.0" 200 11816
+[20/Jun/2024 09:59:27] "GET /board_members/ HTTP/1.0" 200 10307
+[20/Jun/2024 10:00:01] "GET /courses/ HTTP/1.0" 200 23641
+[20/Jun/2024 10:00:33] "GET /director_message/ HTTP/1.0" 200 9470
+[20/Jun/2024 10:00:53] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 10:00:53] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 10:01:16] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 10:01:17] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 10:01:31] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 10:01:32] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 10:01:35] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 10:01:57] "GET /cg_api/token/ HTTP/1.0" 200 483
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QuerySet [<Student: Student object (2014BCOM4305)>]>
+<QuerySet [<StudentData: StudentData object (2014BCOM4305)>]>
+<QuerySet [<MarkSheets: MarkSheets object (1)>]>
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_QkYoSR8.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'male', 'date_of_birth': '1993-05-02', 'category': 'gan', 'email': '123@gmail.com', 'mobile_number': '1234567890', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_066r9Oc.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'M', 'date_of_birth': '1993-05-02', 'category': 'General', 'email': 'mdshahjahan2709@gmail.com', 'mobile_number': '8076199042', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+{'student_enrollment_no': '2014BCOM4305', 'student_provision': None, 'student_admit_card': None, 'student_affidevit': None, 'student_migrations': None, 'student_degree': None}
+{'enrollment_no': '2014BCOM4305', 'password': '1993-05-02', 'profile_pic': '/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_066r9Oc.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'M', 'date_of_birth': '1993-05-02', 'category': 'General', 'email': 'mdshahjahan2709@gmail.com', 'mobile_number': '8076199042', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': '2014BCOM4305', 'session': '2017', 'semester': '3rd year', 'sgpa': '7.5', 'status': 'Distance', 'result': 'pass', 'file': '/media/images/students/marksheet/download_5pppXHB.jpg'}]
+Student Info ::  StudentInformation(success='Logged in successfully', student_info=StudentInfo(student_data=StudentData(student_enrollment_no='2014BCOM4305', student_provision=None, student_admit_card=None, student_affidevit=None, student_migrations=None, student_degree=None), student_personal_info=StudentPersonalInfo(enrollment_no='2014BCOM4305', password='1993-05-02', full_name='MOHAMMAD SHAHJAHAN', father_name='MOHAMMAD JAHANGIR', mother_name='SABRA', gender='M', date_of_birth=datetime.datetime(1993, 5, 2, 0, 0), category='General', email='mdshahjahan2709@gmail.com', mobile_number='8076199042', address='MADHYA PRADESH', profile_pic='/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_066r9Oc.jpeg'), student_marksheets=[StudentMarksheet(id=1, student_enrollment_no='2014BCOM4305', session='2017', semester='3rd year', sgpa='7.5', status='Distance', result='pass', file='/media/images/students/marksheet/download_5pppXHB.jpg')]))
+---------------- Edit Student Function View ---------------- 
+{'enrollment_no': '2014BCOM4305', 'password': '1993-02-05', 'profile_pic': 'http://cginternationaluniversity.in/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'M', 'date_of_birth': '1993-02-05', 'category': 'General', 'email': 'mdshahjahan2709@gmail.com', 'mobile_number': '8076199042', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+{'student_enrollment_no': '2014BCOM4305', 'student_provision': None, 'student_admit_card': None, 'student_affidevit': None, 'student_migrations': None, 'student_degree': None}
+{'enrollment_no': '2014BCOM4305', 'password': '1993-02-05', 'profile_pic': '/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'M', 'date_of_birth': '1993-02-05', 'category': 'General', 'email': 'mdshahjahan2709@gmail.com', 'mobile_number': '8076199042', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': '2014BCOM4305', 'session': '2017', 'semester': '3rd year', 'sgpa': '7.5', 'status': 'Distance', 'result': 'pass', 'file': '/media/images/students/marksheet/download_v4JY6ny.jpg'}]
+Student Info ::  StudentInformation(success='Logged in successfully', student_info=StudentInfo(student_data=StudentData(student_enrollment_no='2014BCOM4305', student_provision=None, student_admit_card=None, student_affidevit=None, student_migrations=None, student_degree=None), student_personal_info=StudentPersonalInfo(enrollment_no='2014BCOM4305', password='1993-02-05', full_name='MOHAMMAD SHAHJAHAN', father_name='MOHAMMAD JAHANGIR', mother_name='SABRA', gender='M', date_of_birth=datetime.datetime(1993, 2, 5, 0, 0), category='General', email='mdshahjahan2709@gmail.com', mobile_number='8076199042', address='MADHYA PRADESH', profile_pic='/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg'), student_marksheets=[StudentMarksheet(id=1, student_enrollment_no='2014BCOM4305', session='2017', semester='3rd year', sgpa='7.5', status='Distance', result='pass', file='/media/images/students/marksheet/download_v4JY6ny.jpg')]))
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+[20/Jun/2024 10:01:57] "POST /cg_api/login/ HTTP/1.0" 200 940
+[20/Jun/2024 10:01:57] "POST /student/ HTTP/1.0" 200 30857
+Not Found: /student/None
+[20/Jun/2024 10:01:57] "GET /student/None HTTP/1.0" 404 6142
+Not Found: /student/None
+[20/Jun/2024 10:01:59] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 10:05:49] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 10:05:50] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 10:06:01] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 10:06:08] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 10:06:08] "POST /cg_api/login/ HTTP/1.0" 200 940
+[20/Jun/2024 10:06:08] "POST /student/ HTTP/1.0" 200 30857
+Not Found: /student/None
+[20/Jun/2024 10:06:09] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 10:07:40] "GET /approval/ HTTP/1.0" 200 11816
+[20/Jun/2024 10:09:07] "GET / HTTP/1.0" 200 13834
+[20/Jun/2024 10:11:31] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 10:11:32] "GET /script.js HTTP/1.0" 404 6133
+Internal Server Error: /robots.txt
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: robots.txt
+[20/Jun/2024 10:13:56] "GET /robots.txt HTTP/1.0" 500 79234
+[20/Jun/2024 10:13:58] "GET /about/ HTTP/1.0" 200 9334
+[20/Jun/2024 10:23:31] "GET / HTTP/1.0" 200 13834
+[20/Jun/2024 10:24:13] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 10:24:16] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 10:24:35] "GET /courses/ HTTP/1.0" 200 23641
+[20/Jun/2024 10:25:21] "GET /vision_and_mission/ HTTP/1.0" 200 10396
+[20/Jun/2024 10:25:49] "GET /board_members/ HTTP/1.0" 200 10307
+[20/Jun/2024 10:26:35] "GET /terms_and_conditions/ HTTP/1.0" 200 9696
+[20/Jun/2024 10:26:51] "GET /approval/ HTTP/1.0" 200 11816
+[20/Jun/2024 10:31:35] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 10:31:58] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 10:31:58] "POST /cg_api/login/ HTTP/1.0" 200 940
+[20/Jun/2024 10:31:58] "POST /student/ HTTP/1.0" 200 30857
+Not Found: /student/None
+[20/Jun/2024 10:31:59] "GET /student/None HTTP/1.0" 404 6142
+Not Found: /student/None
+[20/Jun/2024 10:32:01] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 10:33:07] "GET /logout/ HTTP/1.0" 302 0
+[20/Jun/2024 10:33:07] "GET /login/ HTTP/1.0" 200 6149
+Not Found: /.env
+[20/Jun/2024 10:33:47] "GET /.env HTTP/1.0" 404 6104
+Forbidden (CSRF cookie not set.): /
+[20/Jun/2024 10:33:48] "POST / HTTP/1.0" 403 2928
+[20/Jun/2024 11:17:13] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 11:17:14] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 11:17:18] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 11:17:23] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 11:17:23] "POST /cg_api/login/ HTTP/1.0" 200 940
+[20/Jun/2024 11:17:23] "POST /student/ HTTP/1.0" 200 30857
+Not Found: /student/None
+[20/Jun/2024 11:17:23] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 11:18:11] "GET /approval/ HTTP/1.0" 200 11816
+[20/Jun/2024 11:18:17] "GET /courses/ HTTP/1.0" 200 23641
+[20/Jun/2024 11:30:04] "GET / HTTP/1.0" 200 13834
+{'student_enrollment_no': '2014BCOM4305', 'student_provision': None, 'student_admit_card': None, 'student_affidevit': None, 'student_migrations': None, 'student_degree': None}
+{'enrollment_no': '2014BCOM4305', 'password': '1993-02-05', 'profile_pic': '/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'M', 'date_of_birth': '1993-02-05', 'category': 'General', 'email': 'mdshahjahan2709@gmail.com', 'mobile_number': '8076199042', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': '2014BCOM4305', 'session': '2017', 'semester': '3rd year', 'sgpa': '7.5', 'status': 'Distance', 'result': 'pass', 'file': '/media/images/students/marksheet/download_v4JY6ny.jpg'}]
+Student Info ::  StudentInformation(success='Logged in successfully', student_info=StudentInfo(student_data=StudentData(student_enrollment_no='2014BCOM4305', student_provision=None, student_admit_card=None, student_affidevit=None, student_migrations=None, student_degree=None), student_personal_info=StudentPersonalInfo(enrollment_no='2014BCOM4305', password='1993-02-05', full_name='MOHAMMAD SHAHJAHAN', father_name='MOHAMMAD JAHANGIR', mother_name='SABRA', gender='M', date_of_birth=datetime.datetime(1993, 2, 5, 0, 0), category='General', email='mdshahjahan2709@gmail.com', mobile_number='8076199042', address='MADHYA PRADESH', profile_pic='/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg'), student_marksheets=[StudentMarksheet(id=1, student_enrollment_no='2014BCOM4305', session='2017', semester='3rd year', sgpa='7.5', status='Distance', result='pass', file='/media/images/students/marksheet/download_v4JY6ny.jpg')]))
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+{'student_enrollment_no': '2014BCOM4305', 'student_provision': None, 'student_admit_card': None, 'student_affidevit': None, 'student_migrations': None, 'student_degree': None}
+{'enrollment_no': '2014BCOM4305', 'password': '1993-02-05', 'profile_pic': '/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'M', 'date_of_birth': '1993-02-05', 'category': 'General', 'email': 'mdshahjahan2709@gmail.com', 'mobile_number': '8076199042', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': '2014BCOM4305', 'session': '2017', 'semester': '3rd year', 'sgpa': '7.5', 'status': 'Distance', 'result': 'pass', 'file': '/media/images/students/marksheet/download_v4JY6ny.jpg'}]
+Student Info ::  StudentInformation(success='Logged in successfully', student_info=StudentInfo(student_data=StudentData(student_enrollment_no='2014BCOM4305', student_provision=None, student_admit_card=None, student_affidevit=None, student_migrations=None, student_degree=None), student_personal_info=StudentPersonalInfo(enrollment_no='2014BCOM4305', password='1993-02-05', full_name='MOHAMMAD SHAHJAHAN', father_name='MOHAMMAD JAHANGIR', mother_name='SABRA', gender='M', date_of_birth=datetime.datetime(1993, 2, 5, 0, 0), category='General', email='mdshahjahan2709@gmail.com', mobile_number='8076199042', address='MADHYA PRADESH', profile_pic='/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg'), student_marksheets=[StudentMarksheet(id=1, student_enrollment_no='2014BCOM4305', session='2017', semester='3rd year', sgpa='7.5', status='Distance', result='pass', file='/media/images/students/marksheet/download_v4JY6ny.jpg')]))
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+{'student_enrollment_no': '2014BCOM4305', 'student_provision': None, 'student_admit_card': None, 'student_affidevit': None, 'student_migrations': None, 'student_degree': None}
+{'enrollment_no': '2014BCOM4305', 'password': '1993-02-05', 'profile_pic': '/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'M', 'date_of_birth': '1993-02-05', 'category': 'General', 'email': 'mdshahjahan2709@gmail.com', 'mobile_number': '8076199042', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': '2014BCOM4305', 'session': '2017', 'semester': '3rd year', 'sgpa': '7.5', 'status': 'Distance', 'result': 'pass', 'file': '/media/images/students/marksheet/download_v4JY6ny.jpg'}]
+Student Info ::  StudentInformation(success='Logged in successfully', student_info=StudentInfo(student_data=StudentData(student_enrollment_no='2014BCOM4305', student_provision=None, student_admit_card=None, student_affidevit=None, student_migrations=None, student_degree=None), student_personal_info=StudentPersonalInfo(enrollment_no='2014BCOM4305', password='1993-02-05', full_name='MOHAMMAD SHAHJAHAN', father_name='MOHAMMAD JAHANGIR', mother_name='SABRA', gender='M', date_of_birth=datetime.datetime(1993, 2, 5, 0, 0), category='General', email='mdshahjahan2709@gmail.com', mobile_number='8076199042', address='MADHYA PRADESH', profile_pic='/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg'), student_marksheets=[StudentMarksheet(id=1, student_enrollment_no='2014BCOM4305', session='2017', semester='3rd year', sgpa='7.5', status='Distance', result='pass', file='/media/images/students/marksheet/download_v4JY6ny.jpg')]))
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4305
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+StudentLogin object (1)
+{'student_enrollment_no': '2014BCOM4305', 'student_provision': None, 'student_admit_card': None, 'student_affidevit': None, 'student_migrations': None, 'student_degree': None}
+{'enrollment_no': '2014BCOM4305', 'password': '1993-02-05', 'profile_pic': '/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg', 'full_name': 'MOHAMMAD SHAHJAHAN', 'father_name': 'MOHAMMAD JAHANGIR', 'mother_name': 'SABRA', 'gender': 'M', 'date_of_birth': '1993-02-05', 'category': 'General', 'email': 'mdshahjahan2709@gmail.com', 'mobile_number': '8076199042', 'address': 'MADHYA PRADESH', 'list_of_integers': [1], 'center_id': 1}
+[{'id': 1, 'student_enrollment_no': '2014BCOM4305', 'session': '2017', 'semester': '3rd year', 'sgpa': '7.5', 'status': 'Distance', 'result': 'pass', 'file': '/media/images/students/marksheet/download_v4JY6ny.jpg'}]
+Student Info ::  StudentInformation(success='Logged in successfully', student_info=StudentInfo(student_data=StudentData(student_enrollment_no='2014BCOM4305', student_provision=None, student_admit_card=None, student_affidevit=None, student_migrations=None, student_degree=None), student_personal_info=StudentPersonalInfo(enrollment_no='2014BCOM4305', password='1993-02-05', full_name='MOHAMMAD SHAHJAHAN', father_name='MOHAMMAD JAHANGIR', mother_name='SABRA', gender='M', date_of_birth=datetime.datetime(1993, 2, 5, 0, 0), category='General', email='mdshahjahan2709@gmail.com', mobile_number='8076199042', address='MADHYA PRADESH', profile_pic='/media/images/students/profile-pic/WhatsApp_Image_2024-06-19_at_11.08.23_AM_yCfNVWJ.jpeg'), student_marksheets=[StudentMarksheet(id=1, student_enrollment_no='2014BCOM4305', session='2017', semester='3rd year', sgpa='7.5', status='Distance', result='pass', file='/media/images/students/marksheet/download_v4JY6ny.jpg')]))
+[20/Jun/2024 11:35:18] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 11:35:18] "POST /cg_api/login/ HTTP/1.0" 200 940
+[20/Jun/2024 11:35:18] "POST /student/ HTTP/1.0" 200 30857
+Not Found: /student/None
+[20/Jun/2024 11:35:18] "GET /student/None HTTP/1.0" 404 6142
+[20/Jun/2024 11:36:07] "GET /courses/ HTTP/1.0" 200 23641
+Not Found: /.env
+[20/Jun/2024 12:44:57] "GET /.env HTTP/1.0" 404 6104
+Forbidden (CSRF cookie not set.): /
+[20/Jun/2024 12:44:58] "POST / HTTP/1.0" 403 2928
+[20/Jun/2024 13:03:17] "GET / HTTP/1.1" 200 13834
+[20/Jun/2024 13:12:28] "GET / HTTP/1.0" 200 13834
+[20/Jun/2024 14:02:54] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 14:02:55] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 14:03:25] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 14:03:25] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 14:03:30] "GET /courses/ HTTP/1.0" 200 23641
+[20/Jun/2024 14:04:12] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 14:04:12] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 14:04:37] "GET / HTTP/1.0" 200 13834
+Not Found: /CG_International_University_App/static/main_css/style.css
+[20/Jun/2024 14:04:37] "GET /CG_International_University_App/static/main_css/style.css HTTP/1.0" 404 6277
+Not Found: /script.js
+[20/Jun/2024 14:04:38] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 14:04:53] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 14:04:53] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 14:09:27] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 14:09:28] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 14:09:40] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 14:09:40] "GET /script.js HTTP/1.0" 404 6133
+Not Found: /_profiler/phpinfo
+[20/Jun/2024 15:04:38] "GET /_profiler/phpinfo HTTP/1.0" 404 6143
+[20/Jun/2024 15:13:26] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 15:13:26] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 15:13:29] "GET /login/ HTTP/1.0" 200 6149
+[20/Jun/2024 15:13:34] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 15:13:34] "POST /cg_api/login/ HTTP/1.0" 200 940
+[20/Jun/2024 15:13:34] "POST /student/ HTTP/1.0" 200 30857
+Not Found: /student/None
+[20/Jun/2024 15:13:35] "GET /student/None HTTP/1.0" 404 6142
+Not Found: /.git/config
+[20/Jun/2024 15:17:48] "GET /.git/config HTTP/1.0" 404 6153
+Not Found: /.env
+[20/Jun/2024 15:31:20] "GET /.env HTTP/1.0" 404 6104
+[20/Jun/2024 15:31:33] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 15:31:34] "GET /script.js HTTP/1.0" 404 6133

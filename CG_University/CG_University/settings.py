@@ -28,9 +28,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 LIVERELOAD_PORT = 9000
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 SITE_ID = 1 
 # DEBUG = os.getenv('DEBUG')
+
 
 ALLOWED_HOSTS = ["*"]
 

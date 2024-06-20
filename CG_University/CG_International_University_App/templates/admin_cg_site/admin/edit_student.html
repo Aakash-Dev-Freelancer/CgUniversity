@@ -336,9 +336,11 @@
             const marksheets = JSON.parse("{{ student.list_of_integers }}");
             const enrollment_no = document.querySelector('input[name="enrollment_no"]').value;
 
+            console.log(marksheets.at(0));
+
             const studentInfoUrl = `${apiUrl}students/${enrollment_no}/`;
             const studentDataUrl = `${apiUrl}student-data/${enrollment_no}/`;
-            const studentMarksheetUrl = `${apiUrl}marksheets/${marksheet[0]}/`;
+            const studentMarksheetUrl = `${apiUrl}marksheets/${marksheets.at(0)}/`;
 
             const token = localStorage.getItem('token');
             const cId = localStorage.getItem('cId');
@@ -368,7 +370,7 @@
             }
 
             currentFile = "{{ marksheet_data.0.file }}";
-
+            newFile = document.querySelector('input[name="marksheet"]').files[0];
 
             const marksheet = {
                 'student_enrollment_no': enrollment_no,
@@ -377,8 +379,11 @@
                 'sgpa': document.querySelector('input[name="sgpa"]').value,
                 'status': document.querySelector('input[name="status"]').value,
                 'result': document.querySelector('input[name="result"]').value,
-                'file': document.querySelector('input[name="marksheet"]').files[0] || currentFile,
             };
+
+            if (newFile != undefined) {
+                marksheet['file'] = newFile;
+            }
 
             console.log(marksheet);
 
@@ -428,7 +433,7 @@
                 console.log('Student marksheet updated successfully');
 
                 // Reload page after successful updates
-                // window.location.reload();
+                window.location.reload();
             } catch (error) {
                 console.error('Error:', error);
             }

@@ -191,8 +191,13 @@ class StudentLoginAPIView(generics.ListCreateAPIView):
                 
                 if password == admin.password:
                     students =  Student.objects.order_by("enrollment_no")
+                    print(students)
                     studentsData = StudentData.objects.all()
+                    print(studentsData)
+                    
                     studentsMarksheets = MarkSheets.objects.all()
+                    print(studentsMarksheets)
+                    
                     studentMarksheetsSerializer = MarkSheetSerializer(studentsMarksheets, many=True)
                     studentSerializer = StudentSerializer(students, many=True)
                     studentDataSerializer = StudentDataSerializer(studentsData , many=True)
@@ -214,7 +219,6 @@ class StudentLoginAPIView(generics.ListCreateAPIView):
                     students = Student.objects.filter(center_id=center.id).order_by("enrollment_no")
                     for student in students:
                         studentSerializer = StudentSerializer(student)
-                
                         studentDataList.append({
                             'student_personal_info': studentSerializer.data,
                         })
