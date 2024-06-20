@@ -445,8 +445,10 @@
             const studentDataUrl = "{{ api_url }}student-data/";
             const addStudentUrl = "{{ api_url }}add-student/";
             const token = localStorage.getItem('token');
+            var dataInserted = false;
 
             const fetchWithAuth = (url, method, body, isJson = false) => {
+                console.log("fetching with auth ", url);
                 return fetch(url, {
                     method: method,
                     headers: {
@@ -458,7 +460,12 @@
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Network response was not ok');
+                        } else {
+                            if (url == addStudentUrl) {
+                                dataInserted = true;
+                            }
                         }
+
                         return response.json();
                     });
             };
@@ -466,7 +473,7 @@
             try {
 
                 const studentData = {
-                    "center_id": 2,
+                    "center_id": 1,
                     "enrollment_no": document.querySelector('#enrollment_no').value,
                     "profile_pic": document.querySelector('#profile_pic').files[0],
                     "full_name": document.querySelector('#full_name').value,
@@ -498,7 +505,7 @@
                 const marksheetResponse = await fetchWithAuth(
                     markSheetUrl,
                     'POST',
-                    marksheetFormData
+                    marksheetFormData,
                 );
                 console.log('Mark sheet added:', marksheetResponse);
 
@@ -511,7 +518,7 @@
                 const studentFormData = new FormData();
                 Object.entries(studentData).forEach(([key, value]) => studentFormData.append(key, value));
 
-                const studentResponse = await fetchWithAuth(studentUrl, 'POST', studentFormData);
+                const studentResponse = await fetchWithAuth(studentUrl, 'POST', studentFormData,);
                 console.log('Student added:', studentResponse);
 
                 // Add student data
@@ -537,6 +544,10 @@
 
                 const addStudentResponse = await fetchWithAuth(addStudentUrl, 'POST', JSON.stringify(addStudentPayload), true,);
                 console.log('Student credentials added:', addStudentResponse);
+
+                if (dataInserted) {
+                    window.location.reload();
+                }
 
             } catch (error) {
                 console.error('There was a problem with the fetch operation:', error);

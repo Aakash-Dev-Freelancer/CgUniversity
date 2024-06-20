@@ -19,7 +19,6 @@ from cgapp.views import (MarkSheetListCreateView,
                          get_tokens_for_user,
                          )
 
-
 urlpatterns = [
     path('students/', StudentListCreate.as_view(), name='student-list-create'),
     path('students/<str:pk>/', StudentRetrieveUpdateDestroy.as_view(), name='student-detail'),

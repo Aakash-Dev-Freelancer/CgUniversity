@@ -3289,3 +3289,2123 @@ Quit the server with CONTROL-C.
 [17/Jun/2024 12:43:54] "GET /script.js HTTP/1.0" 404 179
 [17/Jun/2024 12:44:41] "GET /director_message/ HTTP/1.0" 200 8507
 [17/Jun/2024 12:45:25] "GET /director_message/ HTTP/1.0" 200 8522
+[17/Jun/2024 12:52:32] "GET /robots.txt HTTP/1.0" 500 145
+[17/Jun/2024 12:56:11] "GET /robots.txt HTTP/1.0" 500 145
+[17/Jun/2024 12:59:56] "GET /.vscode/sftp.json HTTP/1.0" 404 179
+[17/Jun/2024 13:23:29] "GET /robots.txt HTTP/1.0" 500 145
+[17/Jun/2024 13:42:13] "GET / HTTP/1.0" 200 12805
+[17/Jun/2024 14:01:05] "GET /robots.txt HTTP/1.0" 500 145
+[17/Jun/2024 15:11:31] "GET / HTTP/1.0" 200 12805
+[17/Jun/2024 15:11:32] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 15:11:33] "GET / HTTP/1.0" 200 12805
+[17/Jun/2024 15:11:33] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 15:12:03] "GET / HTTP/1.0" 200 12805
+[17/Jun/2024 15:12:03] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 15:44:35] "GET /.git/config HTTP/1.0" 404 179
+[17/Jun/2024 15:53:15] "GET /.env HTTP/1.0" 404 179
+[17/Jun/2024 15:53:16] "POST / HTTP/1.0" 403 1381
+[17/Jun/2024 16:10:44] "GET / HTTP/1.0" 200 12805
+[17/Jun/2024 16:13:05] "GET /google65efbea82316ff6d.html HTTP/1.0" 404 179
+[17/Jun/2024 16:13:05] "GET /google0df9f9048ac29035.html HTTP/1.0" 404 179
+[17/Jun/2024 16:19:00] "GET / HTTP/1.0" 200 12807
+[17/Jun/2024 16:19:02] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:19:13] "GET / HTTP/1.0" 200 12807
+[17/Jun/2024 16:19:14] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:19:19] "GET / HTTP/1.0" 200 12807
+[17/Jun/2024 16:19:20] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:19:58] "GET / HTTP/1.0" 200 12807
+[17/Jun/2024 16:19:58] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:20:05] "GET / HTTP/1.0" 200 12807
+[17/Jun/2024 16:20:05] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:20:31] "GET / HTTP/1.0" 200 12807
+[17/Jun/2024 16:20:31] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:20:51] "GET / HTTP/1.0" 200 12807
+[17/Jun/2024 16:20:51] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:20:59] "GET / HTTP/1.0" 200 12806
+[17/Jun/2024 16:20:59] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:21:08] "GET / HTTP/1.0" 200 12808
+[17/Jun/2024 16:21:08] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:22:41] "GET / HTTP/1.0" 200 12823
+[17/Jun/2024 16:22:41] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:25:16] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 16:25:16] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:25:29] "GET /board_members/ HTTP/1.0" 200 10130
+[17/Jun/2024 16:25:35] "GET /terms_and_conditions/ HTTP/1.0" 200 9519
+[17/Jun/2024 16:26:14] "GET /terms_and_conditions/ HTTP/1.0" 200 9519
+[17/Jun/2024 16:26:15] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 16:26:16] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:26:21] "GET /rti/ HTTP/1.0" 200 8600
+[17/Jun/2024 16:26:22] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 16:26:23] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:30:43] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 16:31:03] "GET //cdn.js HTTP/1.0" 404 179
+[17/Jun/2024 16:31:03] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[17/Jun/2024 16:31:03] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[17/Jun/2024 16:31:11] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 16:31:11] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:31:37] "GET //cdn.js HTTP/1.0" 404 179
+[17/Jun/2024 16:31:37] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[17/Jun/2024 16:31:37] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[17/Jun/2024 16:31:40] "GET /login/ HTTP/1.0" 200 6090
+[17/Jun/2024 16:31:51] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/Jun/2024 16:31:51] "POST /cg_api/login/ HTTP/1.0" 200 446
+[17/Jun/2024 16:31:51] "POST /admin_cg/ HTTP/1.0" 500 145
+[17/Jun/2024 16:31:54] "GET /admin_cg/ HTTP/1.0" 200 6124
+[17/Jun/2024 16:32:13] "GET //cdn.js HTTP/1.0" 404 179
+[17/Jun/2024 16:32:13] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[17/Jun/2024 16:32:13] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[17/Jun/2024 16:32:50] "GET / HTTP/1.1" 200 13594
+[17/Jun/2024 16:32:50] "GET /static/main_css/style.css HTTP/1.1" 404 179
+[17/Jun/2024 16:32:50] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 404 179
+[17/Jun/2024 16:32:50] "GET /static/images/logo.png HTTP/1.1" 404 179
+[17/Jun/2024 16:32:51] "GET /static/images/home_image/2.jpg HTTP/1.1" 404 179
+[17/Jun/2024 16:32:51] "GET /static/images/home_image/3.jpg HTTP/1.1" 404 179
+[17/Jun/2024 16:32:51] "GET /script.js HTTP/1.1" 404 179
+[17/Jun/2024 16:32:51] "GET /static/images/home_image/4.jpg HTTP/1.1" 404 179
+[17/Jun/2024 16:32:51] "GET /static/images/home_image/5.jpeg HTTP/1.1" 404 179
+[17/Jun/2024 16:32:52] "GET /static/images/logo.png HTTP/1.1" 404 179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 17, 2024 - 12:24:41
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+[17/Jun/2024 16:33:50] "GET /admin_cg/ HTTP/1.0" 200 6124
+[17/Jun/2024 16:33:52] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 16:33:53] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:33:55] "GET /login/ HTTP/1.0" 200 6090
+[17/Jun/2024 16:34:00] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 16:34:04] "GET /admin HTTP/1.0" 301 0
+[17/Jun/2024 16:34:04] "GET /admin/ HTTP/1.0" 200 13451
+[17/Jun/2024 16:34:10] "GET /admin/ HTTP/1.0" 302 0
+[17/Jun/2024 16:34:11] "GET /admin/ HTTP/1.0" 200 13451
+[17/Jun/2024 16:34:12] "GET /admin/login/?next=/admin/ HTTP/1.0" 500 145
+[17/Jun/2024 16:34:16] "GET /admin/cgapp/center/ HTTP/1.0" 200 10121
+[17/Jun/2024 16:34:16] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/Jun/2024 16:34:21] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 11457
+[17/Jun/2024 16:34:21] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/Jun/2024 16:34:23] "GET /admin/cgapp/adminlogin/1/change/ HTTP/1.0" 200 13838
+[17/Jun/2024 16:34:24] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[17/Jun/2024 16:34:36] "GET /cg_api/token/ HTTP/1.0" 200 483
+[17/Jun/2024 16:34:36] "POST /cg_api/login/ HTTP/1.0" 200 446
+[17/Jun/2024 16:34:36] "POST /admin_cg/ HTTP/1.0" 500 145
+[17/Jun/2024 16:34:54] "GET /cg_api/token/ HTTP/1.0" 400 49
+[17/Jun/2024 16:34:54] "POST /center/ HTTP/1.0" 200 6129
+[17/Jun/2024 16:35:37] "GET /admin/cgapp/adminlogin/1/change/ HTTP/1.0" 302 0
+[17/Jun/2024 16:35:37] "GET /admin/ HTTP/1.0" 200 13625
+[17/Jun/2024 16:35:44] "POST /admin/logout/ HTTP/1.0" 500 145
+[17/Jun/2024 16:35:51] "GET /admin/ HTTP/1.0" 302 0
+[17/Jun/2024 16:35:51] "GET /admin/login/?next=/admin/ HTTP/1.0" 500 145
+[17/Jun/2024 16:35:58] "GET /admin_cg/ HTTP/1.0" 200 6124
+[17/Jun/2024 16:36:02] "GET /admin/ HTTP/1.0" 302 0
+[17/Jun/2024 16:36:02] "GET /admin/login/?next=/admin/ HTTP/1.0" 500 145
+[17/Jun/2024 16:36:22] "GET / HTTP/1.1" 200 13594
+[17/Jun/2024 16:36:22] "GET /static/main_css/style.css HTTP/1.1" 404 179
+[17/Jun/2024 16:36:22] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 404 179
+[17/Jun/2024 16:36:22] "GET /static/images/logo.png HTTP/1.1" 404 179
+[17/Jun/2024 16:36:22] "GET /static/images/home_image/2.jpg HTTP/1.1" 404 179
+[17/Jun/2024 16:36:22] "GET /static/images/home_image/3.jpg HTTP/1.1" 404 179
+[17/Jun/2024 16:36:23] "GET /static/images/home_image/4.jpg HTTP/1.1" 404 179
+[17/Jun/2024 16:36:23] "GET /script.js HTTP/1.1" 404 179
+[17/Jun/2024 16:36:23] "GET /static/images/home_image/5.jpeg HTTP/1.1" 404 179
+[17/Jun/2024 16:36:52] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 16:37:27] "GET /center/ HTTP/1.0" 500 145
+[17/Jun/2024 16:37:29] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 16:37:29] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:37:32] "GET /login/ HTTP/1.0" 200 6090
+[17/Jun/2024 16:37:38] "GET /cg_api/token/ HTTP/1.0" 400 53
+[17/Jun/2024 16:37:38] "POST /cg_api/login/ HTTP/1.0" 500 65
+[17/Jun/2024 16:37:38] "POST /admin_cg/ HTTP/1.0" 200 6123
+[17/Jun/2024 16:37:51] "GET // HTTP/1.0" 200 13594
+[17/Jun/2024 16:37:52] "GET //script.js HTTP/1.0" 404 179
+[17/Jun/2024 16:37:54] "GET /admin/ HTTP/1.0" 302 0
+[17/Jun/2024 16:37:54] "GET /admin/login/?next=/admin/ HTTP/1.0" 500 145
+[17/Jun/2024 16:37:55] "GET /admin/ HTTP/1.0" 302 0
+[17/Jun/2024 16:37:55] "GET /admin/login/?next=/admin/ HTTP/1.0" 500 145
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 17, 2024 - 16:33:43
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Center Function View ---------------- 
+Api URL ::  https://cginternationaluniversity.in/cg_api/
+Username ::  Center
+Password ::  040820
+User Type ::  center
+Error: 400 Client Error: Bad Request for url: https://cginternationaluniversity.in/cg_api/token/
+---------------- Admin Function View ---------------- 
+---------------- Center Function View ---------------- 
+---------------- Admin Function View ---------------- 
+{'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+[17/Jun/2024 16:38:56] "GET /sitemap.xml/ HTTP/1.0" 404 179
+[17/Jun/2024 16:39:08] "GET /admin/ HTTP/1.0" 302 0
+[17/Jun/2024 16:39:09] "GET /admin/login/?next=/admin/ HTTP/1.0" 500 145
+[17/Jun/2024 20:03:06] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 20:29:58] "GET /.env HTTP/1.0" 404 179
+[17/Jun/2024 20:29:59] "POST / HTTP/1.0" 403 1381
+[17/Jun/2024 21:00:08] code 400, message Bad request version ('À\x13À')
+[17/Jun/2024 21:00:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[17/Jun/2024 21:00:08] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03\x1aüUtq&ö:\x03Â\x80\x9416Æü·\x1a\x8f&\x10çV#\x84Ö*U\x82\x9b=\x9f\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+[17/Jun/2024 21:00:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[17/Jun/2024 22:39:20] "GET /robots.txt HTTP/1.0" 500 145
+[17/Jun/2024 22:39:27] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 22:43:36] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ìÎ©\x02ÿöÊsQ\x8a¤vg×WH«\x9f\x01í¶\x14ð*')
+[17/Jun/2024 22:43:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[17/Jun/2024 22:44:30] "GET /.env HTTP/1.0" 404 179
+[17/Jun/2024 22:44:30] "POST / HTTP/1.0" 403 1381
+[17/Jun/2024 22:52:08] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 22:54:51] "GET / HTTP/1.1" 200 13594
+[17/Jun/2024 23:34:43] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 23:34:44] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 23:34:46] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.0" 404 179
+[17/Jun/2024 23:34:46] "GET /apple-touch-icon-120x120.png HTTP/1.0" 404 179
+[17/Jun/2024 23:34:46] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 179
+[17/Jun/2024 23:34:46] "GET /apple-touch-icon.png HTTP/1.0" 404 179
+[17/Jun/2024 23:44:27] "GET /login/ HTTP/1.0" 200 6090
+[17/Jun/2024 23:44:38] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 23:44:38] "GET /script.js HTTP/1.0" 404 179
+[17/Jun/2024 23:47:39] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 23:52:36] "POST /clients/MyCRL HTTP/1.0" 404 179
+[17/Jun/2024 23:53:19] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 23:53:19] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 23:54:16] "GET / HTTP/1.0" 200 13594
+[17/Jun/2024 23:54:16] "GET / HTTP/1.0" 200 13594
+[18/Jun/2024 01:03:06] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 01:03:06] "POST / HTTP/1.0" 403 1381
+[18/Jun/2024 02:19:50] "GET /admin/ HTTP/1.0" 302 0
+[18/Jun/2024 02:19:51] "GET /admin/login/?next=/admin/ HTTP/1.0" 500 145
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 17, 2024 - 16:38:15
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:20:36
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:24:04
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Jun/2024 02:24:40] "GET / HTTP/1.1" 200 13594
+[18/Jun/2024 02:24:40] "GET /static/main_css/style.css HTTP/1.1" 404 179
+[18/Jun/2024 02:24:40] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:24:40] "GET /static/images/logo.png HTTP/1.1" 404 179
+[18/Jun/2024 02:24:40] "GET /static/images/home_image/2.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:24:41] "GET /static/images/home_image/3.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:24:41] "GET /static/images/home_image/4.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:24:41] "GET /script.js HTTP/1.1" 404 179
+[18/Jun/2024 02:24:41] "GET /static/images/home_image/5.jpeg HTTP/1.1" 404 179
+[18/Jun/2024 02:24:58] "GET / HTTP/1.1" 200 13594
+[18/Jun/2024 02:24:58] "GET /static/main_css/style.css HTTP/1.1" 404 179
+[18/Jun/2024 02:24:58] "GET /static/images/logo.png HTTP/1.1" 404 179
+[18/Jun/2024 02:24:58] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:24:58] "GET /static/images/home_image/2.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:24:58] "GET /static/images/home_image/3.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:24:58] "GET /static/images/home_image/4.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:24:58] "GET /script.js HTTP/1.1" 404 179
+[18/Jun/2024 02:24:59] "GET /static/images/home_image/5.jpeg HTTP/1.1" 404 179
+[18/Jun/2024 02:25:20] "GET / HTTP/1.1" 200 13594
+[18/Jun/2024 02:25:20] "GET /static/images/logo.png HTTP/1.1" 404 179
+[18/Jun/2024 02:25:20] "GET /static/main_css/style.css HTTP/1.1" 404 179
+[18/Jun/2024 02:25:20] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:25:20] "GET /static/images/home_image/2.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:25:20] "GET /static/images/home_image/3.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:25:20] "GET /static/images/home_image/4.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:25:20] "GET /script.js HTTP/1.1" 404 179
+[18/Jun/2024 02:25:20] "GET /static/images/home_image/5.jpeg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:07] "GET / HTTP/1.1" 200 13649
+[18/Jun/2024 02:26:07] "GET /static/main_css/style.css HTTP/1.1" 404 179
+[18/Jun/2024 02:26:07] "GET /static/images/logo.png HTTP/1.1" 404 179
+[18/Jun/2024 02:26:07] "GET /static/images/home_image/3.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:07] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:07] "GET /static/images/home_image/2.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:07] "GET /static/images/home_image/4.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:08] "GET /script.js HTTP/1.1" 404 179
+[18/Jun/2024 02:26:08] "GET /static/images/home_image/5.jpeg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:22] "GET / HTTP/1.1" 200 13648
+[18/Jun/2024 02:26:22] "GET /static/main_css/style.css HTTP/1.1" 404 179
+[18/Jun/2024 02:26:22] "GET /static/images/logo.png HTTP/1.1" 404 179
+[18/Jun/2024 02:26:22] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:23] "GET /static/images/home_image/4.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:23] "GET /static/images/home_image/2.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:23] "GET /static/images/home_image/3.jpg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:23] "GET /static/images/home_image/5.jpeg HTTP/1.1" 404 179
+[18/Jun/2024 02:26:23] "GET /script.js HTTP/1.1" 404 179
+[18/Jun/2024 02:26:42] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 02:26:46] "GET / HTTP/1.0" 200 13657
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:24:17
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[18/Jun/2024 02:27:56] "GET / HTTP/1.1" 200 13834
+[18/Jun/2024 02:27:56] "GET /static/main_css/style.css HTTP/1.1" 200 1555
+[18/Jun/2024 02:27:57] "GET /static/images/logo.png HTTP/1.1" 200 46843
+[18/Jun/2024 02:27:57] "GET /static/images/home_image/2.jpg HTTP/1.1" 200 55879
+Not Found: /script.js
+[18/Jun/2024 02:27:57] "GET /script.js HTTP/1.1" 404 6124
+[18/Jun/2024 02:27:57] "GET /static/images/home_image/4.jpg HTTP/1.1" 200 139834
+[18/Jun/2024 02:27:57] "GET /static/images/home_image/5.jpeg HTTP/1.1" 200 349888
+[18/Jun/2024 02:27:58] "GET /static/images/home_image/3.jpg HTTP/1.1" 200 245914
+[18/Jun/2024 02:27:59] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 200 2080830
+[18/Jun/2024 02:29:17] "GET / HTTP/1.0" 200 13834
+[18/Jun/2024 02:29:19] "GET /admin/ HTTP/1.0" 302 0
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 440, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/auth/views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/auth/views.py", line 112, in get_context_data
+    current_site = get_current_site(self.request)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+[18/Jun/2024 02:29:20] "GET /admin/login/?next=/admin/ HTTP/1.0" 500 177932
+[18/Jun/2024 02:29:42] "GET /admin HTTP/1.1" 301 0
+[18/Jun/2024 02:29:42] "GET /admin/ HTTP/1.1" 302 0
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 440, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/auth/views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/auth/views.py", line 112, in get_context_data
+    current_site = get_current_site(self.request)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+[18/Jun/2024 02:29:43] "GET /admin/ HTTP/1.1" 302 0
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 440, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/auth/views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/auth/views.py", line 112, in get_context_data
+    current_site = get_current_site(self.request)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+[18/Jun/2024 02:29:44] "GET /admin/login/?next=/admin/ HTTP/1.1" 500 176335
+Not Found: /favicon.ico
+[18/Jun/2024 02:29:45] "GET /favicon.ico HTTP/1.1" 404 6130
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:27:55
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 440, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/auth/views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/auth/views.py", line 112, in get_context_data
+    current_site = get_current_site(self.request)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/contrib/sites/models.py", line 45, in _get_site_by_request
+    SITE_CACHE[domain] = self.get(domain__iexact=domain)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.sites.models.Site.DoesNotExist: Site matching query does not exist.
+[18/Jun/2024 02:30:04] "GET /admin/login/?next=/admin/ HTTP/1.1" 500 176472
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:30:03
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:30:10
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:32:15
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:32:36
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:32:39
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[18/Jun/2024 02:36:34] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[18/Jun/2024 02:36:35] "GET /script.js HTTP/1.0" 404 6133
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:36:31
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+[18/Jun/2024 02:36:47] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 02:36:48] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 02:36:53] "GET /admin/ HTTP/1.0" 302 0
+[18/Jun/2024 02:36:54] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4158
+Error: That port is already in use.
+[18/Jun/2024 02:38:00] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 4158
+[18/Jun/2024 02:38:30] "POST /admin/login/?next=/admin/ HTTP/1.0" 302 0
+[18/Jun/2024 02:38:30] "GET /admin/ HTTP/1.0" 200 13451
+[18/Jun/2024 02:38:35] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 10154
+[18/Jun/2024 02:38:35] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/Jun/2024 02:38:38] "GET /admin/cgapp/adminlogin/add/ HTTP/1.0" 200 13492
+[18/Jun/2024 02:38:38] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/Jun/2024 02:39:00] "POST /admin/cgapp/adminlogin/add/ HTTP/1.0" 302 0
+[18/Jun/2024 02:39:01] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 11678
+[18/Jun/2024 02:39:01] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/Jun/2024 02:39:02] "GET /admin/cgapp/adminlogin/1/change/ HTTP/1.0" 200 13831
+[18/Jun/2024 02:39:03] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/Jun/2024 02:39:14] "POST /admin/cgapp/adminlogin/1/change/ HTTP/1.0" 302 0
+[18/Jun/2024 02:39:15] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 11680
+[18/Jun/2024 02:39:15] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/Jun/2024 02:39:23] "GET // HTTP/1.0" 200 13657
+[18/Jun/2024 02:39:23] "GET //script.js HTTP/1.0" 404 179
+[18/Jun/2024 02:39:25] "GET /login/ HTTP/1.0" 200 6090
+[18/Jun/2024 02:39:32] "GET /cg_api/token/ HTTP/1.0" 200 483
+[18/Jun/2024 02:39:32] "POST /cg_api/login/ HTTP/1.0" 200 240
+[18/Jun/2024 02:39:32] "POST /admin_cg/ HTTP/1.0" 200 40005
+[18/Jun/2024 02:40:32] "GET /admin/cgapp/center/ HTTP/1.0" 200 10121
+[18/Jun/2024 02:40:33] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:36:46
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+[18/Jun/2024 02:44:00] "GET /admin/cgapp/center/ HTTP/1.0" 200 10121
+[18/Jun/2024 02:44:01] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/Jun/2024 02:44:11] "GET /admin/cgapp/center/ HTTP/1.0" 200 10121
+[18/Jun/2024 02:44:11] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[18/Jun/2024 03:05:17] "GET /CG_University/media/images/login/login_background_image.jpg HTTP/1.0" 404 179
+[18/Jun/2024 03:53:05] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 03:53:05] "POST / HTTP/1.0" 403 1381
+[18/Jun/2024 04:05:30] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 04:05:31] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 04:05:42] "GET /login/ HTTP/1.0" 200 6090
+[18/Jun/2024 04:05:48] "GET /cg_api/token/ HTTP/1.0" 200 483
+[18/Jun/2024 04:05:48] "POST /cg_api/login/ HTTP/1.0" 200 240
+[18/Jun/2024 04:05:48] "POST /admin_cg/ HTTP/1.0" 200 40005
+[18/Jun/2024 04:21:08] "GET /manager/html HTTP/1.0" 404 179
+[18/Jun/2024 04:22:12] "GET /CG_University/media/images/home_image/3.jpg HTTP/1.0" 404 179
+[18/Jun/2024 05:40:23] "GET / HTTP/1.1" 200 13657
+[18/Jun/2024 05:40:24] "GET /static/images/logo.png HTTP/1.1" 404 179
+[18/Jun/2024 05:43:51] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 05:48:04] "GET /manager/html HTTP/1.0" 404 179
+[18/Jun/2024 06:06:50] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 06:16:33] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 06:16:37] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 06:21:11] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 06:21:11] "POST / HTTP/1.0" 403 1381
+[18/Jun/2024 06:40:46] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 06:40:47] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 06:41:11] "GET /courses/ HTTP/1.0" 200 23464
+[18/Jun/2024 06:41:27] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 06:41:27] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 06:41:42] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 06:41:42] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 06:41:49] "GET /login/ HTTP/1.0" 200 6090
+[18/Jun/2024 06:54:39] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 06:54:41] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 06:59:40] code 400, message Bad request version ('À\x14À')
+[18/Jun/2024 06:59:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Jun/2024 07:11:12] "POST /php-cgi/php-cgi.exe?%ADd+cgi.force_redirect%3D0+%ADd+disable_functions%3D""+%ADd+allow_url_include%3D1+%ADd+auto_prepend_file%3Dphp://input HTTP/1.1" 404 179
+[18/Jun/2024 07:23:59] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 08:32:04] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 08:32:05] "POST / HTTP/1.0" 403 1381
+[18/Jun/2024 09:02:16] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 09:06:11] "GET /webui/ HTTP/1.0" 404 179
+[18/Jun/2024 09:11:04] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 09:15:46] "GET /.git/config HTTP/1.0" 404 179
+[18/Jun/2024 09:34:03] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 09:34:03] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 09:34:09] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 09:34:09] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 09:55:21] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 10:14:48] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 10:14:49] "POST / HTTP/1.0" 403 1381
+[18/Jun/2024 10:23:00] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 10:56:46] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 11:40:58] "GET /terms_and_conditions/ HTTP/1.0" 200 9519
+[18/Jun/2024 11:55:12] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 11:55:16] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 12:27:16] "GET //wp-includes/ID3/license.txt HTTP/1.0" 404 179
+[18/Jun/2024 12:27:16] "GET //feed/ HTTP/1.0" 404 179
+[18/Jun/2024 12:27:16] "GET //xmlrpc.php?rsd HTTP/1.0" 404 179
+[18/Jun/2024 12:27:16] "GET //blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:17] "GET //web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:17] "GET //wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:17] "GET //wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:17] "GET //2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:17] "GET //2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:17] "GET //2021/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:17] "GET //shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:17] "GET //wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:18] "GET //test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:18] "GET //site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:27:18] "GET //cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 179
+[18/Jun/2024 12:48:35] "GET / HTTP/1.1" 200 13657
+[18/Jun/2024 12:48:35,334] - Broken pipe from ('64.62.197.109', 65311)
+[18/Jun/2024 12:48:46] "GET /favicon.ico HTTP/1.1" 404 179
+[18/Jun/2024 12:48:50] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 179
+[18/Jun/2024 12:48:52] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 179
+[18/Jun/2024 12:52:08] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 12:52:09] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 12:52:33] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 12:56:02] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 13:16:12] code 400, message Bad request syntax ('\x01I20100')
+[18/Jun/2024 13:16:12] "I20100" 400 -
+[18/Jun/2024 14:20:25] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 14:20:28] "POST / HTTP/1.0" 403 1381
+[18/Jun/2024 14:20:31] "POST / HTTP/1.0" 403 1381
+[18/Jun/2024 14:20:34] "GET /WuEL HTTP/1.0" 404 179
+[18/Jun/2024 14:20:41] "GET /a HTTP/1.0" 404 179
+[18/Jun/2024 14:20:45] "GET /download/file.ext HTTP/1.0" 404 179
+[18/Jun/2024 14:20:48] "GET /SiteLoader HTTP/1.0" 404 179
+[18/Jun/2024 14:20:52] "GET /mPlayer HTTP/1.0" 404 179
+[18/Jun/2024 15:07:58] "GET /ab2g HTTP/1.0" 404 179
+[18/Jun/2024 15:07:58] "GET /ab2h HTTP/1.0" 404 179
+[18/Jun/2024 15:07:58] "GET /alive.php HTTP/1.0" 404 179
+[18/Jun/2024 15:07:59] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 15:07:59] "GET /t4 HTTP/1.0" 404 179
+[18/Jun/2024 15:07:59] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 15:08:00] "GET /teorema505?t=1 HTTP/1.0" 404 179
+[18/Jun/2024 15:34:50] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 15:36:45] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 15:36:46] "POST / HTTP/1.0" 403 1381
+[18/Jun/2024 15:44:09] "GET /robots.txt HTTP/1.0" 500 145
+[18/Jun/2024 15:44:09] "GET /CG_University/media/main_css/rti.css HTTP/1.0" 404 179
+[18/Jun/2024 16:23:54] "GET /robots.txt HTTP/1.0" 500 145
+[18/Jun/2024 16:23:55] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 16:50:59] "GET /robots.txt HTTP/1.0" 500 145
+[18/Jun/2024 16:50:59] "GET /about HTTP/1.0" 301 0
+[18/Jun/2024 16:50:59] "GET /about/ HTTP/1.0" 200 9157
+[18/Jun/2024 17:07:38] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 17:31:08] "GET /robots.txt HTTP/1.0" 500 145
+[18/Jun/2024 17:31:13] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 17:32:11] "GET /robots.txt HTTP/1.0" 500 145
+[18/Jun/2024 17:32:20] "GET /script.js HTTP/1.0" 404 179
+[18/Jun/2024 19:20:54] "GET /CG_University/media/images/logo.png HTTP/1.0" 404 179
+[18/Jun/2024 20:16:29] "GET /CG_University/media/images/home_image/5.jpeg HTTP/1.0" 404 179
+[18/Jun/2024 20:35:17] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 20:35:20] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 21:02:16] "GET /api/projects?page=1&pageSize=20 HTTP/1.0" 404 179
+[18/Jun/2024 21:07:04] "POST / HTTP/1.0" 403 1381
+[18/Jun/2024 21:17:33] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 21:18:16] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[18/Jun/2024 21:18:17] "GET //cdn.js HTTP/1.0" 404 179
+[18/Jun/2024 21:18:17] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[18/Jun/2024 21:31:47] "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 200 13657
+[18/Jun/2024 21:46:06] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 22:06:46] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 22:06:46] "POST / HTTP/1.0" 403 1381
+[18/Jun/2024 22:18:04] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 23:01:47] "GET /actuator/gateway/routes HTTP/1.0" 404 179
+[18/Jun/2024 23:14:00] "GET /.git/config HTTP/1.0" 404 179
+[18/Jun/2024 23:15:52] "GET /robots.txt HTTP/1.0" 500 145
+[18/Jun/2024 23:18:54] "GET / HTTP/1.0" 200 13657
+[18/Jun/2024 23:58:18] "GET /.env HTTP/1.0" 404 179
+[18/Jun/2024 23:58:19] "POST / HTTP/1.0" 403 1381
+[19/Jun/2024 00:08:01] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 01:10:05] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 01:10:10] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 01:10:34] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 01:24:23] "GET /actuator/health HTTP/1.0" 404 179
+[19/Jun/2024 02:47:13] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:13] "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:13] "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:13] "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:14] "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:16] "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:16] "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:17] "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:17] "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:17] "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:17] "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:18] "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:18] "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:18] "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:18] "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:20] "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:21] "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:21] "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:21] "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:22] "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:22] "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:22] "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:22] "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:23] "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:23] "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:23] "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:23] "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:24] "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:25] "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:26] "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 302 0
+[19/Jun/2024 02:47:26] "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:26] "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:26] "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:27] "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:27] "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:27] "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:27] "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:27] "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0" 404 179
+[19/Jun/2024 02:47:28] "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0" 404 179
+[19/Jun/2024 02:47:28] "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.0" 404 179
+[19/Jun/2024 02:47:28] "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.0" 404 179
+[19/Jun/2024 03:25:54] "GET /ab2g HTTP/1.0" 404 179
+[19/Jun/2024 03:25:55] "GET /ab2h HTTP/1.0" 404 179
+[19/Jun/2024 03:25:55] "GET /alive.php HTTP/1.0" 404 179
+[19/Jun/2024 03:25:57] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 03:25:58] "GET /t4 HTTP/1.0" 404 179
+[19/Jun/2024 03:25:59] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 03:25:59] "GET /teorema505?t=1 HTTP/1.0" 404 179
+[19/Jun/2024 03:30:04] "GET /login HTTP/1.0" 301 0
+[19/Jun/2024 04:48:02] "GET /.env HTTP/1.0" 404 179
+[19/Jun/2024 04:48:03] "POST / HTTP/1.0" 403 1381
+[19/Jun/2024 04:48:33] code 400, message Bad request version ('À\x14À')
+[19/Jun/2024 04:48:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[19/Jun/2024 05:21:56] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 05:58:07] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 05:58:28] "GET //cdn.js HTTP/1.0" 404 179
+[19/Jun/2024 05:58:28] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[19/Jun/2024 05:58:28] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[19/Jun/2024 05:58:39] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[19/Jun/2024 05:58:39] "GET //cdn.js HTTP/1.0" 404 179
+[19/Jun/2024 05:58:39] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[19/Jun/2024 05:58:49] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[19/Jun/2024 05:58:49] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[19/Jun/2024 05:58:49] "GET //cdn.js HTTP/1.0" 404 179
+[19/Jun/2024 05:59:00] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[19/Jun/2024 05:59:00] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[19/Jun/2024 05:59:00] "GET //cdn.js HTTP/1.0" 404 179
+[19/Jun/2024 06:18:56] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 07:03:48] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:49] "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:49] "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:50] "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:50] "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:51] "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:51] "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:51] "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:52] "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:52] "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:53] "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:53] "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:54] "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:54] "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:55] "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:55] "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:55] "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:56] "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:56] "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:57] "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:57] "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:58] "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:58] "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:59] "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:03:59] "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:00] "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:00] "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:01] "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:01] "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:02] "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 302 0
+[19/Jun/2024 07:04:02] "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:03] "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:03] "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:04] "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:04] "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:05] "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:05] "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:06] "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0" 404 179
+[19/Jun/2024 07:04:06] "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0" 404 179
+[19/Jun/2024 07:04:07] "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.0" 404 179
+[19/Jun/2024 07:04:07] "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.0" 404 179
+[19/Jun/2024 07:12:56] "GET / HTTP/1.1" 200 13657
+[19/Jun/2024 07:12:56,129] - Broken pipe from ('35.205.205.158', 45430)
+[19/Jun/2024 07:15:25] "GET /.env HTTP/1.0" 404 179
+[19/Jun/2024 07:15:26] "POST / HTTP/1.0" 403 1381
+[19/Jun/2024 07:16:43] "GET / HTTP/1.1" 200 13657
+[19/Jun/2024 07:24:54] code 400, message Bad request version ('\x92sðI#>Ë¥a£')
+[19/Jun/2024 07:24:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[19/Jun/2024 08:19:48] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 08:49:33] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 08:49:33] "GET /script.js HTTP/1.0" 404 179
+[19/Jun/2024 08:51:11] "GET /.env HTTP/1.0" 404 179
+[19/Jun/2024 08:51:11] "POST / HTTP/1.0" 403 1381
+[19/Jun/2024 09:36:49] "GET /dns-query?dns=KPgBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 179
+[19/Jun/2024 09:36:50] "POST /dns-query HTTP/1.0" 404 179
+[19/Jun/2024 09:36:50] "GET /dns-query?name=example.com&type=A HTTP/1.0" 404 179
+[19/Jun/2024 09:36:50] "GET /dns-query?dns=MFsBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 179
+[19/Jun/2024 09:36:50] "POST /dns-query HTTP/1.0" 404 179
+[19/Jun/2024 09:36:50] "GET /dns-query?name=example.com&type=A HTTP/1.0" 404 179
+[19/Jun/2024 09:36:51] "GET /query?dns=-RIBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 179
+[19/Jun/2024 09:36:51] "POST /query HTTP/1.0" 404 179
+[19/Jun/2024 09:36:51] "GET /query?name=example.com&type=A HTTP/1.0" 404 179
+[19/Jun/2024 09:36:51] "GET /query?dns=pwwBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 179
+[19/Jun/2024 09:36:51] "POST /query HTTP/1.0" 404 179
+[19/Jun/2024 09:36:52] "GET /query?name=example.com&type=A HTTP/1.0" 404 179
+[19/Jun/2024 09:36:52] "GET /resolve?dns=3kcBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 179
+[19/Jun/2024 09:36:52] "POST /resolve HTTP/1.0" 404 179
+[19/Jun/2024 09:36:52] "GET /resolve?name=example.com&type=A HTTP/1.0" 404 179
+[19/Jun/2024 09:36:52] "GET /resolve?dns=1lkBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 404 179
+[19/Jun/2024 09:36:53] "POST /resolve HTTP/1.0" 404 179
+[19/Jun/2024 09:36:53] "GET /resolve?name=example.com&type=A HTTP/1.0" 404 179
+[19/Jun/2024 09:36:53] "GET /?dns=tlsBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 200 13657
+[19/Jun/2024 09:36:53] "POST / HTTP/1.0" 403 1381
+[19/Jun/2024 09:36:53] "GET /?name=example.com&type=A HTTP/1.0" 200 13657
+[19/Jun/2024 09:36:55] "GET /?dns=7WUBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE HTTP/1.0" 200 13657
+[19/Jun/2024 09:36:55] "POST / HTTP/1.0" 403 1381
+[19/Jun/2024 09:36:55] "GET /?name=example.com&type=A HTTP/1.0" 200 13657
+[19/Jun/2024 10:20:23] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 10:20:25] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 10:20:29] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 10:20:29] "GET /script.js HTTP/1.0" 404 179
+[19/Jun/2024 10:31:00] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 11:24:48] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 11:29:50] "POST / HTTP/1.0" 403 1381
+[19/Jun/2024 12:30:36] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 12:35:23] code 400, message Bad request version ('À\x14À')
+[19/Jun/2024 12:35:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+[19/Jun/2024 14:48:59] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 15:18:35] "GET /.env HTTP/1.0" 404 179
+[19/Jun/2024 15:18:35] "POST / HTTP/1.0" 403 1381
+[19/Jun/2024 15:45:34] "GET /.git/config HTTP/1.0" 404 179
+[19/Jun/2024 15:59:10] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 16:01:29] "GET /actuator/health HTTP/1.0" 404 179
+[19/Jun/2024 16:14:55] "GET /robots.txt HTTP/1.0" 500 145
+[19/Jun/2024 16:14:55] "GET /director_message HTTP/1.0" 301 0
+[19/Jun/2024 16:14:56] "GET /director_message/ HTTP/1.0" 200 9293
+[19/Jun/2024 16:17:13] "GET /.env HTTP/1.0" 404 179
+[19/Jun/2024 16:17:14] "POST / HTTP/1.0" 403 1381
+[19/Jun/2024 16:25:16] "GET / HTTP/1.1" 200 13657
+[19/Jun/2024 16:25:17] "GET /static/main_css/style.css HTTP/1.1" 404 179
+[19/Jun/2024 16:25:17] "GET /static/images/logo.png HTTP/1.1" 404 179
+[19/Jun/2024 16:25:17] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 404 179
+[19/Jun/2024 16:25:18] "GET /script.js HTTP/1.1" 404 179
+[19/Jun/2024 16:25:18] "GET /static/images/home_image/3.jpg HTTP/1.1" 404 179
+[19/Jun/2024 16:25:18] "GET /static/images/home_image/2.jpg HTTP/1.1" 404 179
+[19/Jun/2024 16:25:19] "GET /static/images/home_image/4.jpg HTTP/1.1" 404 179
+[19/Jun/2024 16:25:19] "GET /static/images/home_image/5.jpeg HTTP/1.1" 404 179
+[19/Jun/2024 16:42:12] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 18:11:08] "GET /robots.txt HTTP/1.0" 500 145
+[19/Jun/2024 18:11:08] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 18:42:14] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 19:19:11] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 19:28:40] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 19:28:51] "GET /wp-content/plugins/elementor/readme.txt HTTP/1.0" 404 179
+[19/Jun/2024 19:30:24] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 19:30:51] "GET /robots.txt HTTP/1.0" 500 145
+[19/Jun/2024 19:30:51] "GET /about HTTP/1.0" 301 0
+[19/Jun/2024 19:30:52] "GET /about/ HTTP/1.0" 200 9157
+[19/Jun/2024 19:57:19] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 20:08:39] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 20:08:59] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[19/Jun/2024 20:08:59] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[19/Jun/2024 20:09:00] "GET //cdn.js HTTP/1.0" 404 179
+[19/Jun/2024 21:04:19] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 21:04:23] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 21:47:43] code 400, message Bad request syntax ('\x01\x01æ')
+[19/Jun/2024 21:47:43] "æ" 400 -
+[19/Jun/2024 21:48:03] "GET /.env HTTP/1.0" 404 179
+[19/Jun/2024 21:48:04] "POST / HTTP/1.0" 403 1381
+[19/Jun/2024 23:17:35] "GET /robots.txt HTTP/1.0" 500 145
+[19/Jun/2024 23:25:50] "GET /robots.txt HTTP/1.0" 500 145
+[19/Jun/2024 23:25:50] "GET / HTTP/1.0" 200 13657
+[19/Jun/2024 23:25:53] "GET /script.js HTTP/1.0" 404 179
+[19/Jun/2024 23:25:53] "GET /script.js HTTP/1.0" 404 179
+[19/Jun/2024 23:32:28] code 400, message Bad request version ('À\x13À')
+[19/Jun/2024 23:32:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[19/Jun/2024 23:32:28] code 400, message Bad request version ('À(À$À\x14À')
+[19/Jun/2024 23:32:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[20/Jun/2024 01:36:03] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03æ')
+[20/Jun/2024 01:36:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[20/Jun/2024 02:08:43] "GET / HTTP/1.1" 200 13657
+[20/Jun/2024 02:09:07] "GET / HTTP/1.1" 200 13657
+[20/Jun/2024 02:09:09] "GET /static/images/logo.png HTTP/1.1" 404 179
+[20/Jun/2024 02:09:09] "GET /favicon.ico HTTP/1.1" 404 179
+[20/Jun/2024 02:09:10] "GET /script.js HTTP/1.1" 404 179
+[20/Jun/2024 02:39:56] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 03:19:36] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 03:19:48] "GET //cdn.js HTTP/1.0" 404 179
+[20/Jun/2024 03:19:48] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[20/Jun/2024 03:19:48] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[20/Jun/2024 03:29:19] "GET /owa/auth/x.js HTTP/1.0" 404 179
+[20/Jun/2024 03:46:50] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 03:47:02] "GET //cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js HTTP/1.0" 404 179
+[20/Jun/2024 03:47:02] "GET //cdn.js HTTP/1.0" 404 179
+[20/Jun/2024 03:47:02] "GET /dist/js/bootstrap.bundle.min.js HTTP/1.0" 404 179
+[20/Jun/2024 03:58:08] "GET /.env HTTP/1.0" 404 179
+[20/Jun/2024 03:58:09] "POST / HTTP/1.0" 403 1381
+[20/Jun/2024 04:06:28] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 04:06:30] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 04:06:41] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 04:06:47] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 04:06:47] "POST /cg_api/login/ HTTP/1.0" 200 240
+[20/Jun/2024 04:06:47] "POST /admin_cg/ HTTP/1.0" 200 40005
+[20/Jun/2024 04:07:14] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 04:07:14] "POST /cg_api/login/ HTTP/1.0" 200 240
+[20/Jun/2024 04:07:14] "POST /admin_cg/ HTTP/1.0" 200 40005
+[20/Jun/2024 04:07:25] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 04:07:26] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 04:07:26] "GET /robots.txt HTTP/1.0" 500 145
+[20/Jun/2024 04:07:26] "GET /CG_University/media/main_css/rti.css HTTP/1.0" 404 179
+[20/Jun/2024 04:07:27] "GET /CG_University/media/main_css/style.css HTTP/1.0" 404 179
+[20/Jun/2024 04:07:28] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 04:07:32] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 04:07:32] "POST /cg_api/login/ HTTP/1.0" 200 240
+[20/Jun/2024 04:07:32] "POST /admin_cg/ HTTP/1.0" 200 40005
+[20/Jun/2024 04:11:55] "POST /cg_api/marksheets/ HTTP/1.0" 500 65
+[20/Jun/2024 04:12:38] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 04:12:38] "POST /cg_api/login/ HTTP/1.0" 200 240
+[20/Jun/2024 04:12:38] "POST /admin_cg/ HTTP/1.0" 200 40005
+[20/Jun/2024 04:12:46] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 04:12:47] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 04:14:54] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 04:14:54] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 04:14:57] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 04:15:03] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 04:15:03] "POST /cg_api/login/ HTTP/1.0" 200 240
+[20/Jun/2024 04:15:03] "POST /admin_cg/ HTTP/1.0" 200 40005
+[20/Jun/2024 04:15:21] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 04:15:26] "GET /admin/ HTTP/1.0" 200 13516
+[20/Jun/2024 04:15:30] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10161
+[20/Jun/2024 04:15:31] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 04:15:34] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 10154
+[20/Jun/2024 04:15:34] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 04:15:37] "GET /admin/cgapp/center/ HTTP/1.0" 200 10121
+[20/Jun/2024 04:15:37] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 04:15:38] "GET /admin/cgapp/adminlogin/ HTTP/1.0" 200 11457
+[20/Jun/2024 04:15:38] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 04:15:41] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10161
+[20/Jun/2024 04:15:41] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 04:15:42] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 10168
+[20/Jun/2024 04:15:43] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 04:15:45] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 302 0
+[20/Jun/2024 04:15:45] "GET /admin/login/?next=/admin/cgapp/studentlogin/ HTTP/1.0" 200 4196
+[20/Jun/2024 04:16:37] "POST /cg_api/marksheets/ HTTP/1.0" 500 65
+[20/Jun/2024 04:20:20] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 04:20:20] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 04:20:34] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 04:20:53] "POST /cg_api/marksheets/ HTTP/1.0" 500 65
+[20/Jun/2024 04:20:59] "GET /cg_api/token/ HTTP/1.0" 404 46
+[20/Jun/2024 04:20:59] "POST /student/ HTTP/1.0" 200 6132
+[20/Jun/2024 04:21:15] "GET /cg_api/token/ HTTP/1.0" 404 46
+[20/Jun/2024 04:21:15] "POST /student/ HTTP/1.0" 200 6132
+[20/Jun/2024 04:37:20] "GET / HTTP/1.1" 200 13657
+[20/Jun/2024 04:37:21] "GET /static/main_css/style.css HTTP/1.1" 404 179
+[20/Jun/2024 04:37:21] "GET /static/images/logo.png HTTP/1.1" 404 179
+[20/Jun/2024 04:37:21] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 404 179
+[20/Jun/2024 04:37:21] "GET /static/images/home_image/2.jpg HTTP/1.1" 404 179
+[20/Jun/2024 04:37:21] "GET /script.js HTTP/1.1" 404 179
+[20/Jun/2024 04:37:21] "GET /static/images/home_image/3.jpg HTTP/1.1" 404 179
+[20/Jun/2024 04:37:22] "GET /static/images/home_image/4.jpg HTTP/1.1" 404 179
+[20/Jun/2024 04:37:22] "GET /static/images/home_image/5.jpeg HTTP/1.1" 404 179
+[20/Jun/2024 04:37:22] "GET /static/images/logo.png HTTP/1.1" 404 179
+[20/Jun/2024 04:37:27] "GET /admin_cg/ HTTP/1.0" 200 6124
+[20/Jun/2024 04:37:38] "GET / HTTP/1.1" 200 13657
+[20/Jun/2024 04:37:39] "GET /static/images/logo.png HTTP/1.1" 404 179
+[20/Jun/2024 04:37:39] "GET /static/main_css/style.css HTTP/1.1" 404 179
+[20/Jun/2024 04:37:39] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 404 179
+[20/Jun/2024 04:37:39] "GET /static/images/home_image/2.jpg HTTP/1.1" 404 179
+[20/Jun/2024 04:37:39] "GET /static/images/home_image/3.jpg HTTP/1.1" 404 179
+[20/Jun/2024 04:37:39] "GET /static/images/home_image/4.jpg HTTP/1.1" 404 179
+[20/Jun/2024 04:37:39] "GET /script.js HTTP/1.1" 404 179
+[20/Jun/2024 04:37:39] "GET /static/images/home_image/5.jpeg HTTP/1.1" 404 179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 18, 2024 - 02:43:56
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['2014BCOM4322'], 'session': ['2017'], 'semester': ['3rd year'], 'sgpa': ['7.5'], 'status': ['ragular'], 'result': ['pass'], 'file': [<InMemoryUploadedFile: download.jpg (image/jpeg)>]}>
+[Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/download.jpg'
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+---------------- Admin Function View ---------------- 
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG0008'], 'session': ['Dec-2019'], 'semester': ['3'], 'sgpa': ['10.0'], 'status': ['Enroll Pending'], 'result': ['Fail'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+[Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_eWGCPv2.jpg'
+{'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4315
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+Error: 404 Client Error: Not Found for url: https://cginternationaluniversity.in/cg_api/token/
+---------------- Student Function View ---------------- 
+Enrollment No ::  2014BCOM4315
+Password ::  1993
+User Type ::  student
+API URl ::  https://cginternationaluniversity.in/cg_api/login/
+Token URL ::  https://cginternationaluniversity.in/cg_api/token/
+Error: 404 Client Error: Not Found for url: https://cginternationaluniversity.in/cg_api/token/
+---------------- Admin Function View ---------------- 
+Watching for file changes with StatReloader
+[20/Jun/2024 04:38:43] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 04:38:43] "POST /cg_api/login/ HTTP/1.0" 200 240
+[20/Jun/2024 04:39:31] "OPTIONS /cg_api/marksheets/ HTTP/1.0" 200 0
+Internal Server Error: /cg_api/marksheets/
+[20/Jun/2024 04:39:32] "POST /cg_api/marksheets/ HTTP/1.0" 500 65
+[20/Jun/2024 04:39:43] "GET /cg_api/marksheets/ HTTP/1.0" 200 14771
+Internal Server Error: /cg_api/marksheets/
+[20/Jun/2024 04:40:08] "POST /cg_api/marksheets/ HTTP/1.0" 500 65
+[20/Jun/2024 04:40:18] "GET / HTTP/1.1" 200 13834
+[20/Jun/2024 04:40:18] "GET /static/main_css/style.css HTTP/1.1" 200 1555
+[20/Jun/2024 04:40:18] "GET /static/images/logo.png HTTP/1.1" 200 46843
+[20/Jun/2024 04:40:18] "GET /static/images/home_image/2.jpg HTTP/1.1" 200 55879
+Not Found: /script.js
+[20/Jun/2024 04:40:18] "GET /script.js HTTP/1.1" 404 6124
+[20/Jun/2024 04:40:19] "GET /static/images/home_image/3.jpg HTTP/1.1" 200 245914
+[20/Jun/2024 04:40:20] "GET /static/images/home_image/4.jpg HTTP/1.1" 200 139834
+[20/Jun/2024 04:40:20] "GET /static/images/home_image/5.jpeg HTTP/1.1" 200 349888
+[20/Jun/2024 04:40:21] "GET /static/images/login/login_background_image.jpg HTTP/1.1" 200 2080830
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:38:11
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG003'], 'session': ['Dec-2022'], 'semester': ['1'], 'sgpa': ['9.0'], 'status': ['Enrolled'], 'result': ['Pass'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+[Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_gHn61OQ.jpg'
+<QueryDict: {'student_enrollment_no': ['CG005'], 'session': ['Dec-2022'], 'semester': ['1'], 'sgpa': ['9.0'], 'status': ['Enrolled'], 'result': ['Pass'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+[Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_Cn7gGYU.jpg'
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:41:57
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[20/Jun/2024 04:42:23] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 04:42:23] "POST /cg_api/login/ HTTP/1.0" 200 240
+Internal Server Error: /cg_api/marksheets/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 324, in post
+    serializer.save()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1747, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/files/storage/base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_wIEcpxC.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 39, in custom_exception_handler
+    elif isinstance(exc, PermissionDenied):
+                         ^^^^^^^^^^^^^^^^
+NameError: name 'PermissionDenied' is not defined. Did you mean: 'PermissionError'?
+[20/Jun/2024 04:43:05] "POST /cg_api/marksheets/ HTTP/1.0" 500 183856
+[20/Jun/2024 04:46:30] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 04:46:30] "POST /cg_api/login/ HTTP/1.0" 200 240
+Internal Server Error: /cg_api/marksheets/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 324, in post
+    serializer.save()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1747, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/files/storage/base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_9tBZPcq.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 39, in custom_exception_handler
+    elif isinstance(exc, PermissionDenied):
+                         ^^^^^^^^^^^^^^^^
+NameError: name 'PermissionDenied' is not defined. Did you mean: 'PermissionError'?
+[20/Jun/2024 04:47:07] "POST /cg_api/marksheets/ HTTP/1.0" 500 183896
+[20/Jun/2024 04:49:15] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 04:49:15] "POST /cg_api/login/ HTTP/1.0" 200 240
+Internal Server Error: /cg_api/marksheets/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 324, in post
+    serializer.save()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1747, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/files/storage/base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_NWjvOjC.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 466, in handle_exception
+    response = exception_handler(exc, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 39, in custom_exception_handler
+    elif isinstance(exc, PermissionDenied):
+                         ^^^^^^^^^^^^^^^^
+NameError: name 'PermissionDenied' is not defined. Did you mean: 'PermissionError'?
+[20/Jun/2024 04:50:02] "POST /cg_api/marksheets/ HTTP/1.0" 500 183872
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:42:02
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG0001'], 'session': ['Dec-2022'], 'semester': ['2 '], 'sgpa': ['9.0'], 'status': ['Ragular'], 'result': ['Pass'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+[Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_wIEcpxC.jpg'
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG00328467'], 'session': ['Dec-2010'], 'semester': ['2 '], 'sgpa': ['9.0'], 'status': ['Enrolled'], 'result': ['Pass'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+[Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_9tBZPcq.jpg'
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG000987'], 'session': ['Dec-2022'], 'semester': ['2 '], 'sgpa': ['9.0'], 'status': ['Ragular'], 'result': ['Pass'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+[Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_NWjvOjC.jpg'
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:50:40
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:50:42
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:50:44
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:50:53
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/base.py", line 486, in check
+    all_issues = checks.run_checks(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 42, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/checks/urls.py", line 61, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/urls.py", line 24, in <module>
+    path('cg_api/', include('cgapp.urls')),
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/urls.py", line 3, in <module>
+    from . import views
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 13
+    from django.core.exceptions import ObjectDoesNotExist,
+                                                          ^
+SyntaxError: trailing comma not allowed without surrounding parentheses
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:51:03
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:51:09
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:51:12
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:51:15
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[20/Jun/2024 04:51:23] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 04:51:24] "POST /cg_api/login/ HTTP/1.0" 200 240
+Internal Server Error: /cg_api/marksheets/
+[20/Jun/2024 04:52:04] "POST /cg_api/marksheets/ HTTP/1.0" 500 65
+[20/Jun/2024 04:52:38] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 04:52:38] "GET /script.js HTTP/1.0" 404 6133
+[20/Jun/2024 04:52:40] "GET /admin/ HTTP/1.0" 200 13575
+Internal Server Error: /cg_api/students/
+[20/Jun/2024 04:52:46] "GET /cg_api/students/ HTTP/1.0" 500 10053
+[20/Jun/2024 04:52:51] "GET /cg_api/marksheets HTTP/1.0" 301 0
+[20/Jun/2024 04:52:51] "GET /cg_api/marksheets/ HTTP/1.0" 200 14771
+Internal Server Error: /cg_api/marksheets/
+[20/Jun/2024 04:53:07] "POST /cg_api/marksheets/ HTTP/1.0" 500 14881
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:51:18
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+AdminLogin object (1)
+<QueryDict: {'student_enrollment_no': ['CG092362'], 'session': ['Dec-2022'], 'semester': ['1'], 'sgpa': ['8.92'], 'status': ['Enroll'], 'result': ['Pass'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+[Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_g24DuIW.jpg'
+Authentication credentials were not provided.
+<QueryDict: {'csrfmiddlewaretoken': ['xIQhIzY6vPAfXQqUodAo2XxMUB2YmVNY4xbHeHvAnWV3mMpg8UIzbf1Inww9Nv1n'], 'student_enrollment_no': ['CG01'], 'session': ['Dec-2019'], 'semester': ['2 '], 'sgpa': ['8.92'], 'status': ['Ragular'], 'result': ['Reslut'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+[Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_tlf0Yvl.jpg'
+Watching for file changes with StatReloader
+/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:53:42
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Internal Server Error: /cg_api/marksheets/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 324, in post
+    serializer.save()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1747, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/files/storage/base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_KuAmy1s.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'cgapp.views' has no attribute 'custom_exception_handler'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/settings.py", line 179, in import_from_string
+    return import_string(val)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/utils/module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "cgapp.views" does not define a "custom_exception_handler" attribute/class
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 463, in handle_exception
+    exception_handler = self.get_exception_handler()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 298, in get_exception_handler
+    return self.settings.EXCEPTION_HANDLER
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/settings.py", line 227, in __getattr__
+    val = perform_import(val, attr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/settings.py", line 168, in perform_import
+    return import_from_string(val, setting_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/settings.py", line 182, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'cgapp.views.custom_exception_handler' for API setting 'EXCEPTION_HANDLER'. ImportError: Module "cgapp.views" does not define a "custom_exception_handler" attribute/class.
+[20/Jun/2024 04:54:12] "POST /cg_api/marksheets/ HTTP/1.0" 500 215306
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:53:48
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+<QueryDict: {'csrfmiddlewaretoken': ['OftXm9y5iwlA1XjJJ2fxVm1H2N1w6DXdl4OnSh5zaDGoqTi5tJnI4EvDvIvHxdbC'], 'student_enrollment_no': ['CG01'], 'session': ['Dec-2019'], 'semester': ['2 '], 'sgpa': ['8.92'], 'status': ['Enrolled'], 'result': ['Pass '], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+Watching for file changes with StatReloader
+[20/Jun/2024 04:55:02] "GET /cg_api/marksheets/ HTTP/1.0" 200 14771
+Internal Server Error: /cg_api/marksheets/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/CG-website-aakash/CG_University/cgapp/views.py", line 324, in post
+    serializer.save()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1747, in as_sql
+    self.prepare_value(field, self.pre_save_val(field, obj))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/fields/files.py", line 317, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/files/storage/base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/files/storage/filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail_QDmJx3B.jpg'
+[20/Jun/2024 04:55:18] "POST /cg_api/marksheets/ HTTP/1.0" 500 185621
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 04:54:56
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+<QueryDict: {'csrfmiddlewaretoken': ['IVcI7YSy0iuI7u9YNJxUaR2SnwFBQ01EfKx8D6p2SpPwwq8kxqF5j9wOQr9MhAf3'], 'student_enrollment_no': ['CG02'], 'session': ['Dec-2019'], 'semester': ['2 '], 'sgpa': ['8.92'], 'status': ['Ragular'], 'result': ['Pass'], 'file': [<InMemoryUploadedFile: cc62fc19-fa4c-44ab-9840-f41e25fd4e2a-161028042252-thumbnail.jpg (image/jpeg)>]}>
+Traceback (most recent call last):
+  File "/home/ubuntu/CG-website-aakash/CG_University/manage.py", line 22, in <module>
+    main()
+  File "/home/ubuntu/CG-website-aakash/CG_University/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py", line 76
+    ),ls -ld /home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/
+                                                                                        ^
+SyntaxError: ':' expected after dictionary key
+Traceback (most recent call last):
+  File "/home/ubuntu/CG-website-aakash/CG_University/manage.py", line 22, in <module>
+    main()
+  File "/home/ubuntu/CG-website-aakash/CG_University/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/core/management/__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py", line 76
+    ),ls -ld /home/ubuntu/CG-website-aakash/CG_University/media/images/students/marksheet/
+                                                                                        ^
+SyntaxError: ':' expected after dictionary key
+Watching for file changes with StatReloader
+[20/Jun/2024 05:03:06] "GET / HTTP/1.0" 200 13834
+Not Found: /script.js
+[20/Jun/2024 05:03:07] "GET /script.js HTTP/1.0" 404 6133
+/home/ubuntu/CG-website-aakash/CG_University/CG_University/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 05:03:02
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 05:03:18
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 05:03:23
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+[20/Jun/2024 05:03:35] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 05:03:35] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 05:03:37] "GET /login/ HTTP/1.0" 200 6090
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 20, 2024 - 05:03:28
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+[20/Jun/2024 05:03:52] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 05:03:53] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 05:16:38] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 05:20:39] "GET /webui/ HTTP/1.0" 404 179
+[20/Jun/2024 05:25:20] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 05:30:07] "GET /geoserver/web/ HTTP/1.0" 404 179
+[20/Jun/2024 05:31:58] "GET /.git/config HTTP/1.0" 404 179
+[20/Jun/2024 05:57:05] "GET /.env HTTP/1.0" 404 179
+[20/Jun/2024 05:58:15] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 05:58:15] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 05:58:47] "GET /login/ HTTP/1.0" 200 6090
+[20/Jun/2024 05:58:52] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 05:58:52] "POST /cg_api/login/ HTTP/1.0" 200 240
+[20/Jun/2024 05:58:52] "POST /admin_cg/ HTTP/1.0" 200 40129
+[20/Jun/2024 05:59:29] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+[20/Jun/2024 05:59:30] "GET /admin_cg/ HTTP/1.0" 200 6124
+[20/Jun/2024 05:59:36] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 05:59:36] "POST /cg_api/login/ HTTP/1.0" 200 483
+[20/Jun/2024 05:59:36] "POST /admin_cg/ HTTP/1.0" 200 40129
+[20/Jun/2024 06:00:12] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+[20/Jun/2024 06:00:30] "GET /admin_cg/ HTTP/1.0" 200 6124
+[20/Jun/2024 06:00:35] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:00:35] "POST /cg_api/login/ HTTP/1.0" 200 723
+[20/Jun/2024 06:00:35] "POST /admin_cg/ HTTP/1.0" 200 40129
+[20/Jun/2024 06:00:41] "GET / HTTP/1.0" 200 13657
+[20/Jun/2024 06:00:42] "GET /script.js HTTP/1.0" 404 179
+[20/Jun/2024 06:00:42] "GET /admin/ HTTP/1.0" 200 13516
+[20/Jun/2024 06:00:46] "GET /admin/cgapp/studentdata/ HTTP/1.0" 200 10161
+[20/Jun/2024 06:00:46] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:00:48] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11752
+[20/Jun/2024 06:00:48] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:00:49] "GET /admin/cgapp/studentlogin/ HTTP/1.0" 200 10168
+[20/Jun/2024 06:00:49] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:00:51] "GET /admin/cgapp/marksheets/ HTTP/1.0" 200 11752
+[20/Jun/2024 06:00:51] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:00:52] "GET /admin/cgapp/center/ HTTP/1.0" 200 10121
+[20/Jun/2024 06:00:53] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:00:54] "GET /admin/cgapp/student/ HTTP/1.0" 200 10128
+[20/Jun/2024 06:00:54] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:00:56] "GET /admin/cgapp/student/ HTTP/1.0" 302 0
+[20/Jun/2024 06:00:57] "GET /admin/login/?next=/admin/cgapp/student/ HTTP/1.0" 200 4186
+[20/Jun/2024 06:01:35] "POST /cg_api/marksheets/ HTTP/1.0" 400 352
+[20/Jun/2024 06:01:50] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:01:50] "POST /cg_api/login/ HTTP/1.0" 200 723
+[20/Jun/2024 06:01:50] "POST /admin_cg/ HTTP/1.0" 200 40108
+[20/Jun/2024 06:01:52] "GET /admin_cg/ HTTP/1.0" 200 6124
+[20/Jun/2024 06:01:58] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:01:58] "POST /cg_api/login/ HTTP/1.0" 200 723
+[20/Jun/2024 06:01:58] "POST /admin_cg/ HTTP/1.0" 200 40108
+[20/Jun/2024 06:02:01] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:02:01] "POST /cg_api/login/ HTTP/1.0" 200 723
+[20/Jun/2024 06:02:01] "POST /admin_cg/ HTTP/1.0" 200 40108
+[20/Jun/2024 06:04:59] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:04:59] "POST /cg_api/login/ HTTP/1.0" 200 723
+[20/Jun/2024 06:04:59] "POST /admin_cg/ HTTP/1.0" 200 40064
+[20/Jun/2024 06:05:33] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+[20/Jun/2024 06:05:34] "POST /cg_api/students/ HTTP/1.0" 400 59
+[20/Jun/2024 06:07:21] "GET /admin/cgapp/center/ HTTP/1.0" 200 10121
+[20/Jun/2024 06:07:21] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:07:22] "GET /admin/cgapp/center/add/ HTTP/1.0" 200 12837
+[20/Jun/2024 06:07:22] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:07:49] "POST /admin/cgapp/center/add/ HTTP/1.0" 302 0
+[20/Jun/2024 06:07:50] "GET /admin/cgapp/center/ HTTP/1.0" 200 11610
+[20/Jun/2024 06:07:50] "GET /admin/jsi18n/ HTTP/1.0" 200 3342
+[20/Jun/2024 06:07:56] "POST /cg_api/marksheets/ HTTP/1.0" 201 76
+[20/Jun/2024 06:07:57] "POST /cg_api/students/ HTTP/1.0" 400 59
+[20/Jun/2024 06:08:01] "GET /admin_cg/ HTTP/1.0" 200 6124
+[20/Jun/2024 06:08:06] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:08:06] "POST /cg_api/login/ HTTP/1.0" 200 1209
+[20/Jun/2024 06:08:06] "POST /admin_cg/ HTTP/1.0" 200 40064
+[20/Jun/2024 06:08:38] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+[20/Jun/2024 06:08:39] "POST /cg_api/students/ HTTP/1.0" 201 57
+[20/Jun/2024 06:08:39] "POST /cg_api/student-data/ HTTP/1.0" 201 47
+[20/Jun/2024 06:08:40] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[20/Jun/2024 06:08:44] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:08:44] "POST /cg_api/login/ HTTP/1.0" 200 1982
+[20/Jun/2024 06:08:44] "POST /admin_cg/ HTTP/1.0" 200 42125
+[20/Jun/2024 06:10:19] "GET / HTTP/1.1" 200 13657
+[20/Jun/2024 06:10:19,336] - Broken pipe from ('64.62.197.235', 4951)
+[20/Jun/2024 06:10:34] "GET /favicon.ico HTTP/1.1" 404 179
+[20/Jun/2024 06:10:45] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 179
+[20/Jun/2024 06:10:47] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 179
+[20/Jun/2024 06:11:31] "POST /cg_api/marksheets/ HTTP/1.0" 400 352
+[20/Jun/2024 06:12:28] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:12:28] "POST /cg_api/login/ HTTP/1.0" 200 1982
+[20/Jun/2024 06:12:28] "POST /admin_cg/ HTTP/1.0" 200 42437
+[20/Jun/2024 06:13:06] "POST /cg_api/marksheets/ HTTP/1.0" 201 74
+[20/Jun/2024 06:13:07] "POST /cg_api/students/ HTTP/1.0" 201 57
+[20/Jun/2024 06:13:07] "POST /cg_api/student-data/ HTTP/1.0" 201 47
+[20/Jun/2024 06:13:07] "POST /cg_api/add-student/ HTTP/1.0" 201 48
+[20/Jun/2024 06:13:08] "GET /cg_api/token/ HTTP/1.0" 200 483
+[20/Jun/2024 06:13:08] "POST /cg_api/login/ HTTP/1.0" 200 2766
+[20/Jun/2024 06:13:08] "POST /admin_cg/ HTTP/1.0" 200 44493

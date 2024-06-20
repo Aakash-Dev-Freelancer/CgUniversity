@@ -29,6 +29,7 @@ LIVERELOAD_PORT = 9000
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+SITE_ID = 1 
 # DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = ["*"]
@@ -72,8 +73,8 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
-    ),
-    'EXCEPTION_HANDLER': 'cgapp.views.custom_exception_handler',
+    )
+    # 'EXCEPTION_HANDLER': 'cgapp.views.custom_exception_handler',
 }
 
 SIMPLE_JWT = {

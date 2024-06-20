@@ -10,7 +10,7 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.parsers import MultiPartParser, FormParser
 from django.http import Http404
 from django.shortcuts import get_object_or_404
-from django.core.exceptions import ObjectDoesNotExist
+from django.core.exceptions import ObjectDoesNotExist, PermissionDenied
 
 from django.conf import settings
 
@@ -30,12 +30,19 @@ def validate_password(self, value: str) -> str:
     """
     return make_password(value)
 
-
-def custom_exception_handler(exc, context):
-    print(exc)
-    if isinstance(exc, Http404):
-        return Response({"error": "Page not found"}, status=status.HTTP_404_NOT_FOUND)
-    return Response({"error": "An unexpected error occurred. Please try again later."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+# def custom_exception_handler(exc, context):
+#     print(exc)
+    
+#     if isinstance(exc, Http404):
+#         return Response({"error": "Page not found"}, status=status.HTTP_404_NOT_FOUND)
+    
+#     elif isinstance(exc, PermissionDenied):
+#         return Response({"error": "Permission denied"}, status=status.HTTP_403_FORBIDDEN)
+    
+#     elif isinstance(exc, ValidationError):
+#         return Response({"error": "Validation error", "details": exc.detail}, status=status.HTTP_400_BAD_REQUEST)
+    
+#     return Response({"error": "An unexpected error occurred. Please try again later."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['GET'])
 @permission_classes([AllowAny])
