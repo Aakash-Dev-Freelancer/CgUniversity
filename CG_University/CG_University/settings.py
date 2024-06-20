@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 LIVERELOAD_PORT = 9000
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 SITE_ID = 1 
-# DEBUG = os.getenv('DEBUG')
+DEBUG = False
 
 
 ALLOWED_HOSTS = ["*"]
@@ -38,7 +38,6 @@ ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in']
 
 CORS_ALLOWED_ORIGINS = [
-    'http://35.175.232.217:8001',
     "https://cginternationaluniversity.in",
 ]
 
@@ -53,9 +52,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'CG_International_University_App',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    
+    # My Apps --
+    'CG_International_University_App',
+    
+    # My APIs --
     'cgapp',
     
     # Packages --
@@ -75,7 +78,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     )
-    # 'EXCEPTION_HANDLER': 'cgapp.views.custom_exception_handler',
+    # 'EXCEPTION_HANDLER': 'CG_International_University_App.views.custom_page_not_found_view',
 }
 
 SIMPLE_JWT = {
@@ -103,7 +106,7 @@ ROOT_URLCONF = 'CG_University.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

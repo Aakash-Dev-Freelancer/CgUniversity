@@ -4,11 +4,15 @@ from django.views.generic import TemplateView
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.conf.urls import handler404
+
 urlpatterns = [
     path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
-    path('', views.home, name='home'),
+    
     path('admin_cg/', views.admin, name='admin'),
     path('login/', views.login, name='login'),
+    
+    path('', views.home, name='home'),
     path('about/', views.about, name='about'),
     path('director_message/', views.directorMessage, name='director_message'),
     path('vision_and_mission/', views.visionAndMission,
@@ -27,3 +31,4 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+handler404 = 'CG_International_University_App.views.custom_404'

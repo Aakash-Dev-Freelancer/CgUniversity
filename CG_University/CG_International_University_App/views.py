@@ -18,7 +18,12 @@ import requests
 import logging
 
 from django.http import JsonResponse
+
 # New Changes
+
+def custom_404(request, exception):
+    print('---------------- Custom Page Not Found View ---------------- ')
+    return render(request, '404.html', status=404)
 
 @csrf_protect
 def admin(request):
