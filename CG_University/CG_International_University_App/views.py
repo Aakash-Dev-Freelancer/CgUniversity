@@ -35,11 +35,14 @@ def admin(request):
         password = request.POST.get('password')
         user_type = request.POST.get('login-type')
         
+        
+        
         api_url = f"{API_URL}login/"
         token_url = f"{API_URL}token/"
 
         try:
             payload = {"username": username, "password": password, "user_type": user_type}
+            print("Payload :: ", payload)
 
             token_response = requests.get(token_url, data=payload)
             token_json = token_response.json()

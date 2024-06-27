@@ -12134,3 +12134,17 @@ Traceback (most recent call last):
     >>>>>>> 1d1bd26ebd477318b9d91e736e1a0eea8a2d97d3
             ^
 SyntaxError: invalid decimal literal
+[27/Jun/2024 19:14:22] "GET / HTTP/1.0" 200 18458
+[27/Jun/2024 19:14:24] "GET /login/ HTTP/1.0" 200 6189
+[27/Jun/2024 19:14:36] "GET /cg_api/token/ HTTP/1.0" 404 1501
+[27/Jun/2024 19:14:36] "POST /admin_cg/ HTTP/1.0" 200 6231
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 27, 2024 - 19:14:19
+Django version 5.0.4, using settings 'CG_University.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CONTROL-C.
+
+---------------- Admin Function View ---------------- 
+Error: Expecting value: line 4 column 1 (char 4)

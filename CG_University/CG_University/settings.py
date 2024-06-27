@@ -79,11 +79,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     )
-<<<<<<< HEAD
-    # 'EXCEPTION_HANDLER': 'cgapp.views.custom_exception_handler',
-    # 'EXCEPTION_HANDLER': 'rest_framework.views.',
-=======
->>>>>>> 1d1bd26ebd477318b9d91e736e1a0eea8a2d97d3
 }
 
 SIMPLE_JWT = {
