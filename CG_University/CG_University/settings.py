@@ -35,11 +35,11 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in']
+CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in','http://35.175.232.217:8000/']
 
 CORS_ALLOWED_ORIGINS = [
-    'http://35.175.232.217:8001',
     "https://cginternationaluniversity.in",
+    "http://35.175.232.217",
 ]
 
 # Application definition
@@ -53,13 +53,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'CG_International_University_App',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    
+    # My Apps --
+    'CG_International_University_App',
+    
+    # My APIs --
     'cgapp',
     
     # Packages --
-    'livereload',
+    # 'livereload',
     'rest_framework',
     'corsheaders',
     'rest_framework_simplejwt',
@@ -75,8 +79,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     )
+<<<<<<< HEAD
     # 'EXCEPTION_HANDLER': 'cgapp.views.custom_exception_handler',
     # 'EXCEPTION_HANDLER': 'rest_framework.views.',
+=======
+>>>>>>> 1d1bd26ebd477318b9d91e736e1a0eea8a2d97d3
 }
 
 SIMPLE_JWT = {
@@ -104,7 +111,7 @@ ROOT_URLCONF = 'CG_University.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

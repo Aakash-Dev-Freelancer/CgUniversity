@@ -1,5 +1,4 @@
 {% load static %}
-{% load livereload_tags %}
 <!-- admin.html -->
 
 <!DOCTYPE html>
@@ -8,13 +7,99 @@
 <head>
     <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
     {% include 'global/meta_tags.html' %}
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'main_css/style.css' %}">
     <style>
+        #loader {
+            position: absolute;
+            display: none;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 80px;
+            height: 80px;
+            margin: -76px 0 0 -76px;
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            display: none;
+        }
+
+        #myDiv {
+            display: none;
+            text-align: center;
+        }
+
         .btn-custom {
             background-color: rgb(255, 150, 13);
             border-color: rgb(255, 150, 13);
@@ -26,12 +111,10 @@
             border-color: rgba(255, 150, 13, 0.5);
         }
 
-        /* Add pointer cursor to table rows */
         tbody tr:hover {
             cursor: pointer;
         }
 
-        /* Highlight selected row */
         .selected {
             background-color: rgba(255, 150, 13, 0.1);
         }
@@ -53,6 +136,10 @@
             /* Adjust as needed */
         }
 
+        .swal2-cancel btn btn-danger {
+            margin: 10px;
+        }
+
         table,
         select,
         th {
@@ -67,7 +154,7 @@
         <div style="display: flex;
                 flex-direction: row;
                 justify-content: space-between;">
-            <h1>Welcome, {{ admin_info.full_name }} ,</h1>
+            <h1>Welcome {{ admin_info.admin_info.full_name }},</h1>
             <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#editModal">
                 Add Student
             </button>
@@ -167,10 +254,15 @@
                             {% endfor %}
                         </select>
                     </th>
-                    <th>View/Edit</th>
+                    <th>Edit/Delete</th>
                 </tr>
             </thead>
             <tbody>
+                {% if admin_info.students|length == 0 %}
+                <tr style="height: 200px; text-align: center; vertical-align: middle">
+                    <td colspan="10" style="font-size: large;">No Student Data</td>
+                </tr>
+                {% endif %}
                 {% for data in admin_info.students %}
                 <tr>
                     <td>{{ data.enrollment_no }}</td>
@@ -183,15 +275,20 @@
                     <td>{{ data.email }}</td>
                     <td>{{ data.mobile_number }}</td>
                     <td>{{ data.address }}</td>
+
                     <td>
                         <a class="btn btn-primary"
                             href="{% url 'edit-student'  %}?id={{ data.enrollment_no }}&token={{ token }}&cId={{ center_id }}">Edit</a>
+
+                        <button class="btn btn-danger" onclick="destroy('{{ data.enrollment_no }}')">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
                     </td>
                 </tr>
-
                 {% endfor %}
             </tbody>
         </table>
+
 
         <div class="text-center">
             <button class="btn btn-custom" onclick="prevPage()">Previous</button>
@@ -207,12 +304,16 @@
     </div>
 
 
-    <!-- Pop Up -->
+    <!-- Loader -->
+    <div id="loader-overlay" class="overlay">
+        <div id="loader" class="loader-custom"></div>
+    </div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
-        aria-hidden="true">
-        <div class=" modal-dialog modal-dialog-centered modal-full" style="min-width: 90%;" role="document">
+        aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-full" style="min-width: 90%;" role="document">
             <div class="modal-content" style="border-radius: 22px;">
                 <div class="modal-header bg-primary text-white" style="border-radius: 20px 20px 0px 0px; ">
                     <h5 class="modal-title" id="editModalLabel">Add Student</h5>
@@ -335,8 +436,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="extractAndDisplayData()"
-                        data-dismiss="modal">Update</button>
+                    <button type="button" class="btn btn-primary form-submit-buttons"
+                        onclick="extractAndDisplayData(event)" data-dismiss="modal">Add</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
@@ -345,15 +446,85 @@
 
     {%include 'main_cg_site/global/footer.html' %}
 
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const csrfToken = document.querySelector('input[name="csrfmiddlewaretoken"]').value;
+            const token = localStorage.getItem('token');
+            const baseUrl = "{{ base_url }}";
+            // const marksheets = 
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: "btn btn-success",
+                    cancelButton: "btn btn-danger"
+                },
+                buttonsStyling: false
+            });
+
+            window.destroy = function destroy(eNo) {
+
+                swalWithBootstrapButtons.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes, delete it!",
+                    cancelButtonText: "No, cancel!",
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        fetch(`${baseUrl}delete_student/`, {
+                            method: "POST",
+                            headers: {
+                                'X-CSRFToken': csrfToken,
+                                "Content-type": "application/json; charset=UTF-8"
+                            },
+                            body: JSON.stringify({
+                                "enrollment_no": eNo,
+                                "token": token,
+                            })
+                        }).then(response => {
+                            if (response.ok) {
+                                swalWithBootstrapButtons.fire({
+                                    title: "Deleted!",
+                                    text: "Student has been deleted.",
+                                    icon: "success"
+                                }).then(response => {
+                                    location.reload();
+                                });
+                            } else {
+                                swalWithBootstrapButtons.fire({
+                                    title: "Error!",
+                                    text: "There was an issue deleting student.",
+                                    icon: "error"
+                                });
+                            }
+                        }).catch(error => {
+                            console.error("Error:", error);
+                            swalWithBootstrapButtons.fire({
+                                title: "Error!",
+                                text: "There was an issue deleting student.",
+                                icon: "error"
+                            });
+                        });
+                    } else if (result.dismiss === Swal.DismissReason.cancel) {
+                        swalWithBootstrapButtons.fire({
+                            title: "Cancelled",
+                            text: "Your imaginary file is safe :)",
+                            icon: "error"
+                        });
+                    }
+                });
+            };
+        });
+
+
         document.addEventListener("DOMContentLoaded", function () {
             addMarkSheet();
-            var data = JSON.parse("{{ admin_info.students }}");
+            var data = "{{ admin_info.students }}";
             var btns = document.getElementsByClassName("text-center");
 
             if (data.length > 10) {
@@ -418,26 +589,15 @@
             </div>
             
         `;
-            // <div class="row" style="width: 100%; justify-content: center;">
-            //     <button class="btn btn-danger" onclick="removeMarkSheet(this)" style="width: 45%; max-width: 150px; margin-right: 2%; margin-bottom: 1%;">Remove</button>
-            //     <button class="btn btn-primary" onclick="addMarkSheet(this)" style="width: 45%; max-width: 150px; margin-bottom: 1%;">Add Marksheet</button>
-            // </div>
-            // Append the new marksheet div to the marksheetList
             marksheetList.appendChild(newMarkSheetDiv);
         }
 
-        async function extractAndDisplayData() {
-            // Select required fields and reverse them
-            // const requiredFields = Array.from(document.querySelectorAll(".required-field")).reverse();
+        async function extractAndDisplayData(event) {
 
-            // // Check for empty fields and format their names
-            // let emptyField = requiredFields.find(field => field.value.trim() === "");
-            // if (emptyField) {
-            //     let capitalized = emptyField.name.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
-            //     alert("Required Field is empty: " + capitalized);
-            //     return;
-            // }
-
+            var isLoading = document.getElementById("loader");
+            var overlay = document.getElementById("loader-overlay");
+            isLoading.style.display = "block";
+            overlay.style.display = "block";
 
 
             const studentUrl = "{{ api_url }}students/";
@@ -447,8 +607,8 @@
             const token = localStorage.getItem('token');
             var dataInserted = false;
 
+
             const fetchWithAuth = (url, method, body, isJson = false) => {
-                console.log("fetching with auth ", url);
                 return fetch(url, {
                     method: method,
                     headers: {
@@ -546,15 +706,29 @@
                 console.log('Student credentials added:', addStudentResponse);
 
                 if (dataInserted) {
-                    window.location.reload();
+                    isLoading.style.display = 'none';
+                    overlay.style.display = 'none';
+                    Swal.fire({
+                        title: "Student Enrolled",
+                        text: "Student Added Successfully",
+                        icon: "success"
+                    }).then(response => {
+                        location.reload();
+                    });
+                    $('#editModal').modal('hide');
                 }
-
             } catch (error) {
+                console.log(error);
+                overlay.style.display = 'none';
+                isLoading.style.display = 'none';
+                Swal.fire({
+                    title: "Oops...",
+                    text: "Student Not Added",
+                    icon: "error"
+                });
                 console.error('There was a problem with the fetch operation:', error);
             }
-
         }
-
 
 
         function removeMarkSheet(button) {

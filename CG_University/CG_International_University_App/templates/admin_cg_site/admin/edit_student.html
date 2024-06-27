@@ -12,6 +12,86 @@
     <title>Edit Student</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        #loader {
+            position: absolute;
+            display: none;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 80px;
+            height: 80px;
+            margin: -76px 0 0 -76px;
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            display: none;
+        }
+
         .container {
             margin-top: 60px;
             margin-bottom: 60px;
@@ -46,8 +126,12 @@
     {% include 'main_cg_site/global/nav_bar.html' %}
 
 
+    <div id="loader-overlay" class="overlay">
+        <div id="loader" class="loader-custom"></div>
+    </div>
+
+
     <div class="container">
-        <h1>Edit Student {{data.enrollment_no}}</h1>
         <div id="edit_card_{{ student.enrollment_no }}" style="display: block;">
             <div class="card">
                 <div class="card-header bg-primary text-white">
@@ -283,6 +367,7 @@
         </div>
     </div>
 
+
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -319,6 +404,10 @@
         async function sendFormDataToAPI(event) {
             console.log("Sending form data to API...");
             event.preventDefault();
+            var isLoading = document.getElementById("loader");
+            var overlay = document.getElementById("loader-overlay");
+            isLoading.style.display = "block";
+            overlay.style.display = "block";
 
             // Select required fields and reverse them
             // const requiredFields = Array.from(document.querySelectorAll(".required-field")).reverse();
@@ -385,8 +474,6 @@
                 marksheet['file'] = newFile;
             }
 
-            console.log(marksheet);
-
             const documentUploads = {
                 'student_enrollment_no': enrollment_no,
                 'student_migrations': document.querySelector('input[name="migration"]').files[0] || null,
@@ -395,8 +482,6 @@
                 'student_degree': document.querySelector('input[name="degree"]').files[0] || null,
                 'student_admit_card': document.querySelector('input[name="admin_card"]').files[0] || null
             };
-
-            console.log(documentUploads);
 
             const fetchWithAuth = async (url, method, body, isJson = false) => {
                 const headers = {
@@ -407,6 +492,19 @@
                 const response = await fetch(url, { method, headers, body });
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
+                } else {
+                    if (url == studentMarksheetUrl) {
+                        overlay.style.display = 'none';
+                        isLoading.style.display = 'none';
+                        Swal.fire({
+                            title: "Student Updated",
+                            text: "Student Update Successfully",
+                            icon: "success"
+                        }).then(response => {
+                            window.location.reload();
+
+                        });
+                    }
                 }
                 return response.json();
             };
@@ -432,8 +530,7 @@
                 await fetchWithAuth(studentMarksheetUrl, 'PATCH', marksheetData);
                 console.log('Student marksheet updated successfully');
 
-                // Reload page after successful updates
-                window.location.reload();
+                // window.location.reload();
             } catch (error) {
                 console.error('Error:', error);
             }

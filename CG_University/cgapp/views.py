@@ -14,13 +14,15 @@ from django.core.exceptions import ObjectDoesNotExist, PermissionDenied
 
 from django.conf import settings
 
-from .serializers import StudentSerializer, StudentLoginSerializer, StudentDataSerializer, AdminLoginSerializer
-from .models import AdminLogin, Center
+from .serializers import StudentSerializer, StudentLoginSerializer, StudentDataSerializer, AdminLoginSerializer, ContactFormSerializer
+from .models import AdminLogin, Center, StudentLogin, ContactForm
 
 from rest_framework.exceptions import NotFound
 
 from django.contrib.auth.hashers import make_password
 
+
+# Validate Function
 def validate_password(self, value: str) -> str:
     """
     Hash value passed by user.
@@ -29,20 +31,6 @@ def validate_password(self, value: str) -> str:
     :return: a hashed version of the password
     """
     return make_password(value)
-
-# def custom_exception_handler(exc, context):
-#     print(exc)
-    
-#     if isinstance(exc, Http404):
-#         return Response({"error": "Page not found"}, status=status.HTTP_404_NOT_FOUND)
-    
-#     elif isinstance(exc, PermissionDenied):
-#         return Response({"error": "Permission denied"}, status=status.HTTP_403_FORBIDDEN)
-    
-#     elif isinstance(exc, ValidationError):
-#         return Response({"error": "Validation error", "details": exc.detail}, status=status.HTTP_400_BAD_REQUEST)
-    
-#     return Response({"error": "An unexpected error occurred. Please try again later."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['GET'])
 @permission_classes([AllowAny])
@@ -245,6 +233,13 @@ class StudentLoginAPIView(generics.ListCreateAPIView):
             print("Server Error:", e)
             return Response({'error': 'Server Error'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
+    def destroy(self, request, *args, **kwargs):
+        try:
+            instance = self.get_object()
+            self.perform_destroy(instance)
+            return Response({"message": "Student data deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
+        except Exception as e:
+            return Response({"message": f"An error occurred: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
         
         
@@ -274,6 +269,7 @@ class StudentDataListCreateAPIView(generics.ListCreateAPIView):
             serializer.save()
             return Response({"message": "Student data created successfully"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 class StudentDataRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = StudentData.objects.all()
@@ -371,7 +367,7 @@ class MarkSheetRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
 
 class MarkSheetByEnrollmentView(generics.ListCreateAPIView):
     serializer_class = MarkSheetSerializer
-    permission_classes = [IsAuthenticated]  # Optional: Ensure that only authenticated users can access this view
+    permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
         enrollment_no = self.kwargs.get('enrollment_no')
@@ -423,3 +419,23 @@ class AdminLoginUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
         if AdminLogin.objects.exclude(pk=self.kwargs['pk']).filter(username=username).exists():
             raise ValidationError("Username already exists. Please choose a different one.")
         serializer.save()
+
+
+
+class ContactFormListCreateView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = ContactForm.objects.all()
+    serializer_class = ContactFormSerializer
+    
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        print(serializer.is_valid())
+        
+        if serializer.is_valid():
+            serializer.save()
+            return Response({
+                'success': True, 
+                'message': "Contact form submitted successfully", 
+            }, status=status.HTTP_201_CREATED)
+        return Response({'success': False, 'message': serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
+    
+    

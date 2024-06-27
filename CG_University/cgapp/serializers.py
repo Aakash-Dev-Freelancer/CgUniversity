@@ -1,6 +1,6 @@
 # in myapp/serializers.py
 from rest_framework import serializers
-from .models import Student, StudentData, StudentLogin, MarkSheets, AdminLogin
+from .models import Student, StudentData, StudentLogin, MarkSheets, AdminLogin, ContactForm
 
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
@@ -29,3 +29,7 @@ class AdminLoginSerializer(serializers.ModelSerializer):
         model = AdminLogin
         fields = '__all__'
 
+class ContactFormSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ContactForm
+        fields = '__all__'

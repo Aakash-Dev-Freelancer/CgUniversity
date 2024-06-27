@@ -49,4 +49,16 @@ class AdminLogin(models.Model):
     contact_no = models.CharField(max_length=100)
     email = models.EmailField()
     username = models.CharField(max_length=100)
-    password = models.CharField(max_length=100) 
+    password = models.CharField(max_length=100)   
+    
+class ContactForm(models.Model):
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    email = models.EmailField()
+    subject = models.CharField(max_length=100)
+    contact_no = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
+    country = models.CharField(max_length=100)
+    message = models.TextField()
+    institute_name = models.CharField(max_length=100)
+    

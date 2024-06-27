@@ -1,56 +1,100 @@
-{% load static %} {% load livereload_tags %}
-
 <!DOCTYPE html>
 <html lang="en">
-{% livereload_script %}
+{% load static %}
+
 
 <head>
-  <link rel="icon" class=" rounded-circle" href="{% static 'images/logo.png' %}" type="image/png">
-
+  <link rel="icon" class="rounded-circle" href="{% static 'images/logo.png' %}" type="image/png">
   {% include 'global/meta_tags.html' %}
-
   <meta charset="UTF-8" />
   <title>CG International University | Raipur | CG University</title>
   <style>
     .FAQ-Questions {
       display: flex;
       justify-content: center;
-      width: 80vw;
+      align-items: center;
+      width: 50vw;
       border: 1px solid #96c2ff;
       border-radius: 8px;
-      padding: 6pt;
-      text-align: center;
+      padding: 10px;
+      text-align: left;
       background: #6da1ff21;
-    }
-
-    .FAQ-Container {
-      margin: 20px;
+      cursor: pointer;
+      margin: 10px 0;
+      transition: background-color 0.3s ease;
     }
 
     .FAQ-Questions:hover {
-      background-color: #e2e2e2;
+      background-color: #ffc02078;
+    }
+
+    .FAQ-Question {
+      margin: 0px;
+      /* padding: 20px !important; */
     }
 
     .FAQ-Answer {
       display: none;
       padding: 15px;
-      border: 1px solid #ccc;
-      border-top: none;
+      border: 1px solid lightblue;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 12px;
       background-color: #fff;
+      width: 50vw;
+      margin-top: 10px;
+    }
+
+    .FAQ-Container {
+      padding: 30px;
+      border-radius: 20px;
+      display: flex;
+      background-color: rgb(226, 226, 226);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .FAQ-Question h2 {
+      text-align: center;
+    }
+
+    .form-container {
+      padding: 40px !important;
+      margin: 0px 0 50px 0px;
+      justify-content: center;
+      border-radius: 20px !important;
+      border: 1px solid #96c2ff;
+      align-items: center;
+    }
+
+    .form-container form {
+      display: flex;
+      margin: 20px;
+      flex-direction: column;
+
+    }
+
+    .form-container input,
+    .form-container textarea {
+      margin-bottom: 15px;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
   </style>
 </head>
 
 <body>
   {% include 'main_cg_site/global/nav_bar.html' %}
-
-  <!-- <div class="overlay" style="height: 20vh;"></div> -->
-
-  <div class="background-image">
+  <!-- Main Section -->
+  <div class="background-image" style="color: white;">
     <div class="blurOverlay">
       <div class="Main-Heading">
-
-
         <h1><strong>CG International University </strong>| Raipur</h1>
         <h2>(Online Distance And Open University)</h2>
         <div class="info-column">
@@ -63,118 +107,197 @@
       </div>
     </div>
   </div>
-
   <!-- Gallery Section -->
   <section class="gallery">
     <div class="container">
       <h1><strong>Gallery</strong></h1>
       <div id="carouselExampleIndicators" style="max-height: 500px; overflow: hidden" class="carousel slide"
         data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="max-height: 70vh; min-width: 70vh; overflow: hidden; flex-shrink: 0;">
           <div class="carousel-item active">
             <div class="embed-responsive embed-responsive-16by5">
-              <img src="{% static 'images/login/login_background_image.jpg'%}" class="d-block w-100" alt="..." />
+              <img src="{% static 'images/login/login_background_image.jpg'%}" class="d-block w-100"
+                alt="Gallery Image 1" />
             </div>
           </div>
           <div class="carousel-item">
             <div class="embed-responsive embed-responsive-16by5">
-              <img src="{% static 'images/home_image/2.jpg'%}" class="d-block w-100" alt="..." />
+              <img src="{% static 'images/home_image/2.jpg'%}" class="d-block w-100" alt="Gallery Image 2" />
             </div>
           </div>
           <div class="carousel-item">
             <div class="embed-responsive embed-responsive-16by5">
-              <img src="{% static 'images/home_image/3.jpg'%}" class="d-block w-100" alt="..." />
+              <img src="{% static 'images/home_image/3.jpg'%}" class="d-block w-100" alt="Gallery Image 3" />
             </div>
           </div>
           <div class="carousel-item">
             <div class="embed-responsive embed-responsive-16by5">
-              <img src="{% static 'images/home_image/4.jpg'%}" class="d-block w-100" alt="..." />
+              <img src="{% static 'images/home_image/4.jpg'%}" class="d-block w-100" alt="Gallery Image 4" />
             </div>
           </div>
           <div class="carousel-item">
             <div class="embed-responsive embed-responsive-16by5">
-              <img src="{% static 'images/home_image/5.jpeg'%}" class="d-block w-100" alt="..." />
+              <img src="{% static 'images/home_image/5.jpeg'%}" class="d-block w-100" alt="Gallery Image 5" />
             </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
+          data-bs-slide="prev" aria-label="Previous slide">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
+          data-bs-slide="next" aria-label="Next slide">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </div>
   </section>
-
   <!-- FAQ Section -->
   <div class="container">
     <div class="FAQ-Question">
-      <h2 class="FAQ-Heading"><strong>CG International University</strong></h2>
-
       <div class="FAQ-Container">
+        <h2><strong>Frequently Asked Questions</strong></h2>
         <div class="FAQ-Questions" onclick="toggleAnswer(this)">
           <span>1. What is <strong>CG International University</strong>?</span>
         </div>
         <div class="FAQ-Answer">
           <p><strong>CG International University</strong> is a global institution providing world-class education to
-            students around the
-            globe.
-          </p>
+            students around the globe.</p>
+        </div>
+        <div class="FAQ-Questions" onclick="toggleAnswer(this)">
+          <span>2. How can I apply for admission?</span>
+        </div>
+        <div class="FAQ-Answer">
+          <p>You can apply for admission through our online portal on the official website.</p>
+        </div>
+        <div class="FAQ-Questions" onclick="toggleAnswer(this)">
+          <span>3. What courses are offered?</span>
+        </div>
+        <div class="FAQ-Answer">
+          <p>We offer a variety of undergraduate and postgraduate courses across multiple disciplines.</p>
+        </div>
+        <div class="FAQ-Questions" onclick="toggleAnswer(this)">
+          <span>4. Is there a scholarship program available?</span>
+        </div>
+        <div class="FAQ-Answer">
+          <p>Yes, we offer various scholarship programs based on merit and need.</p>
         </div>
       </div>
-
-      <script src="script.js"></script>
-
     </div>
   </div>
-
   <!-- Form Section -->
-  <div class="container">
-    <div class="form-field-container">
-      <div class="form-main-container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-container">
-              <h2>Contact Us</h2>
-              <form action="#" method="post">
-                {% csrf_token %}
-                <input type="text" id="firstName" name="firstName" class="form-control mb-3" placeholder="First Name"
-                  required />
-                <input type="text" id="lastName" name="lastName" class="form-control mb-3" placeholder="Last Name"
-                  required />
-                <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Email" required />
-                <input type="tel" id="contactNo" name="contactNo" class="form-control mb-3" placeholder="Contact No"
-                  required />
-                <input type="text" id="city" name="city" class="form-control mb-3" placeholder="City" required />
-                <input type="text" id="country" name="country" class="form-control mb-3" placeholder="Country"
-                  required />
-                <textarea id="message" name="message" class="form-control mb-3" rows="4" placeholder="Message"
-                  required></textarea>
-                <input type="text" id="institute" name="institute" class="form-control mb-3"
-                  placeholder="Institute Name" required />
-                <input type="submit" class="btn btn-primary" value="Submit" />
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="image-container">
-              <img
-                src="https://www.shutterstock.com/image-vector/computer-display-vector-design-program-600nw-1963110571.jpg"
-                class="img-fluid" alt="" />
-            </div>
+  <div class="container mt-5">
+    <div class="form-container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <h2>Contact Us</h2>
+          <form action="#" method="post" id="contactForm">
+            {% csrf_token %}
+            <input type="text" id="firstName" name="firstName" class="form-control mb-3" placeholder="First Name"
+              required />
+            <input type="text" id="lastName" name="lastName" class="form-control mb-3" placeholder="Last Name"
+              required />
+            <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Email" required />
+            <input type="subject" id="subject" name="subject" class="form-control mb-3" placeholder="Subject"
+              required />
+            <input type="tel" id="contactNo" name="contactNo" class="form-control mb-3" placeholder="Contact No"
+              required />
+            <input type="text" id="city" name="city" class="form-control mb-3" placeholder="City" required />
+            <input type="text" id="country" name="country" class="form-control mb-3" placeholder="Country" required />
+            <textarea id="message" name="message" class="form-control mb-3" rows="4" placeholder="Message"
+              required></textarea>
+            <input type="text" id="institute" name="institute" class="form-control mb-3" placeholder="Institute Name"
+              required />
+            <input type="submit" class="btn btn-primary" value="Submit Contact Form" />
+          </form>
+        </div>
+        <div class="col-lg-6 col-md-12" style="
+    display: flex;
+    justify-content: center;
+    align-items: center;">
+          <div class=" image-container text-center">
+            <img
+              src="https://www.shutterstock.com/image-vector/computer-display-vector-design-program-600nw-1963110571.jpg"
+              class="img-fluid" alt="Contact Image" />
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- Footer Section -->
   {% include 'main_cg_site/global/footer.html' %}
+  <script>
+
+    document.getElementById('contactForm').addEventListener('submit', async function (event) {
+      event.preventDefault();
+
+      var apiUrl = "{{ api_url }}";
+      var token = localStorage.getItem('token');
+
+      const contact_data = {
+        "first_name": document.getElementById('firstName').value,
+        "last_name": document.getElementById('lastName').value,
+        "email": document.getElementById('email').value,
+        "contact_no": document.getElementById('contactNo').value,
+        "subject": document.getElementById('subject').value,
+        "city": document.getElementById('city').value,
+        "country": document.getElementById('country').value,
+        "message": document.getElementById('message').value,
+        "institute_name": document.getElementById('institute').value
+      };
+
+      console.log(contact_data);
+
+      try {
+        const response = await fetch(`${apiUrl}contact-form/`, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(contact_data)
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        alert('Form submitted successfully!');
+        window.location.reload();
+        console.log('Success:', data);
+      } catch (error) {
+        alert(`Error submitting form: ${error.message}`);
+        console.error('Error:', error);
+      }
+    });
+
+    function toggleAnswer(element) {
+      var answers = document.querySelectorAll('.FAQ-Answer');
+      answers.forEach(function (answer) {
+        if (answer !== element.nextElementSibling) {
+          answer.style.display = "none";
+        }
+      });
+      var answer = element.nextElementSibling;
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "flex";
+      }
+    }
+
+    function submitForm() {
+      document.getElementById("form").submit();
+    }
+  </script>
 </body>
 
 </html>
