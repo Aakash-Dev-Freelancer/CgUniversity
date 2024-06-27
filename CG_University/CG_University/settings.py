@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 LIVERELOAD_PORT = 9000
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 SITE_ID = 1 
-# DEBUG = os.getenv('DEBUG')
+DEBUG = False
 
 
 ALLOWED_HOSTS = ["*"]
@@ -76,6 +76,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     )
     # 'EXCEPTION_HANDLER': 'cgapp.views.custom_exception_handler',
+    # 'EXCEPTION_HANDLER': 'rest_framework.views.',
 }
 
 SIMPLE_JWT = {
@@ -163,7 +164,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-# STATIC_URL = '/static/'
+
+
+# STATIC_URL = os.g
 # STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # MEDIA_URL = '/media/'
