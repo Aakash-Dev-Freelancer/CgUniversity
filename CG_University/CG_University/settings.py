@@ -30,15 +30,16 @@ LIVERELOAD_PORT = 9000
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 SITE_ID = 1 
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in']
+CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in','http://35.175.232.217:8000/']
 
 CORS_ALLOWED_ORIGINS = [
     "https://cginternationaluniversity.in",
+    "http://35.175.232.217",
 ]
 
 # Application definition
@@ -62,7 +63,7 @@ INSTALLED_APPS = [
     'cgapp',
     
     # Packages --
-    'livereload',
+    # 'livereload',
     'rest_framework',
     'corsheaders',
     'rest_framework_simplejwt',
@@ -78,7 +79,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     )
-    # 'EXCEPTION_HANDLER': 'CG_International_University_App.views.custom_page_not_found_view',
 }
 
 SIMPLE_JWT = {

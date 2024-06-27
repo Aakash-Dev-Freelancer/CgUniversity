@@ -21,7 +21,7 @@ urlpatterns = [
 
     path('', include('CG_International_University_App.urls')),
 
-    path('cg_api/', include('cgapp.urls')),
+    path('api/', include('cgapp.urls')),
 ] 
 
 # Serve static and media files during development

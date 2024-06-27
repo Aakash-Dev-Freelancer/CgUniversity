@@ -84,7 +84,43 @@ def admin(request):
         error_message = "Invalid request. Please try again."
         return render(request, 'main_cg_site/auth/login.html',{'error_message': error_message})
 
-    
+@csrf_protect
+def delete_student(request):
+    print('---------------- Delete Student Function View ---------------- ')
+    API_URL = settings.API_URL
+    BASE_URL = settings.BASE_URL
+
+    if(request.method == 'POST'):
+        try:     
+            data = json.loads(request.body)
+            print(data)
+            enrollment_no = data["enrollment_no"]
+            token = data['token']
+            if not enrollment_no:
+                raise ValueError("Enrollment number not provided")
+            print(f"Enrollment number: {enrollment_no}")
+
+            student_url = f"{API_URL}students/{enrollment_no}/"
+            # marksheet_url = f"{API_URL}marksheets/{enrollment_no}/"
+            student_data_url = f"{API_URL}student-data/{enrollment_no}/"
+            
+            headers = {"Authorization": f"Bearer {token}"}
+            student_response = requests.delete(student_url, headers=headers)
+            # marksheet_response = requests.delete(marksheet_url, headers=headers)
+            student_data_response = requests.delete(student_data_url, headers=headers)
+            
+            student_response.raise_for_status()
+            # marksheet_response.raise_for_status()
+            student_data_response.raise_for_status()
+
+            return JsonResponse({"message": "Student deleted successfully", "success": True}, status=200)
+
+        except requests.exceptions.RequestException as e:
+            print(f"Error: {e}")
+            error_message = f"Error: {e}"
+            return JsonResponse({"message": error_message, "success": False}, status=500)
+        
+    return JsonResponse({"message": error_message, "success": False}, status=500)
 
 @csrf_protect
 def editStudent(request):
@@ -162,7 +198,8 @@ def viewStudent(request):
 
 def home(request):
     BASE_URL = settings.BASE_URL
-    return render(request, 'main_cg_site/home/index.html', {'base_url': BASE_URL})
+    API_URL = settings.API_URL
+    return render(request, 'main_cg_site/home/index.html', {'base_url': BASE_URL, 'api_url': API_URL})
 
 
 

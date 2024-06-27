@@ -1,8 +1,6 @@
 {% load static %}
-{% load livereload_tags %}
 
 <!DOCTYPE html>
-{% livereload_script %}
 <html lang="en">
 
 <head>
@@ -41,7 +39,6 @@
                     <form class="content" action="{% url 'logout' %}" method="post">
                         {% csrf_token %}
                         <button class="nav-link" type="submit" id="logout-button" type="button">Logout</button>
-                        <!-- <button type="submit" class="btn btn-primary">Logout</button> -->
                     </form>
                 </li>
             </div>
@@ -68,6 +65,7 @@
             crossorigin="anonymous"></script>
     </section>
     <script>
+
         localStorage.setItem('token', '{{ token }}');
     </script>
 

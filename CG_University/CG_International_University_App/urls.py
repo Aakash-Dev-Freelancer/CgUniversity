@@ -26,7 +26,11 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('student/', views.student, name='student'),
     path('center/', views.center, name='center'),
+    
     path('edit_student/', views.editStudent, name='edit-student'),
+    path('delete_student/', views.delete_student, name='delete-student'),
+    
+    
     path('view_student/', views.viewStudent, name='view-student'),
     path('logout/', views.logout_view, name='logout'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

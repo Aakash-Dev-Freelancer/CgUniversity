@@ -9,7 +9,8 @@ from cgapp.views import (StudentDataListCreateAPIView,
                          StudentListCreate,
                          StudentLoginAPIView, 
                          StudentDataRetrieveUpdateDestroyAPIView,
-                         AddStudent)
+                         AddStudent,
+                         ContactFormListCreateView)
 
 from cgapp.views import (MarkSheetListCreateView, 
                          MarkSheetRetrieveUpdateDestroyView, 
@@ -33,8 +34,10 @@ urlpatterns = [
 
     path('admin/login/', AdminLoginListCreateView.as_view(), name='admin-login-list'),
     path('admin/login/<int:pk>/', AdminLoginUpdateDeleteView.as_view(), name='admin-login-detail'),
-    
+
     path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
-    path('token/', get_tokens_for_user, name="token")
+    path('token/', get_tokens_for_user, name="token"),
+    
+    path('contact-form/', ContactFormListCreateView.as_view(), name="contact-form-list-create"),
 ]
