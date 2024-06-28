@@ -40,7 +40,7 @@ def get_tokens_for_user(request):
         username =  request.data.get('username')
         user = None
         if user_type == 'student':
-            user = StudentLogin.objects.first()
+            user = StudentLogin.objects.get(username=username)
         elif user_type == 'center':
             user = Center.objects.get(username=username)
         elif user_type == 'admin':
@@ -50,9 +50,8 @@ def get_tokens_for_user(request):
         
         if user is None:
             return Response({'error': 'User not found get_tokens_for_user'}, status=status.HTTP_404_NOT_FOUND)
-
-
-        print(user)    
+        print(StudentLoginSerializer(user).data)    
+        
         refresh = RefreshToken.for_user(user)
         
         return Response({ 
@@ -139,9 +138,10 @@ class StudentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
 class StudentLoginAPIView(generics.ListCreateAPIView):
     serializer_class = StudentLoginSerializer
     admin_serializer_class = AdminLoginSerializer
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
 
     def create(self, request, *args, **kwargs):
-        
         username = request.data.get('username')
         password = request.data.get('password')
         user_type = request.data.get('user_type')

@@ -18,7 +18,7 @@ class Student(models.Model):
     gender = models.CharField(max_length=10)
     date_of_birth = models.DateField()
     category = models.CharField(max_length=20)
-    email = models.EmailField()
+    email = models.CharField(max_length=40)
     mobile_number = models.CharField(max_length=15)
     address = models.CharField(max_length=255)
     list_of_integers = models.JSONField(default=list) 

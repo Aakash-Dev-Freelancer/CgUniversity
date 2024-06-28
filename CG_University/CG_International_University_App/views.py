@@ -233,11 +233,12 @@ def student(request):
             token_response.raise_for_status()
             token_json = token_response.json()
             access_token = token_json.get('access')
+            print("Access Token :: ", access_token)
 
             headers = {"Authorization": f"Bearer {access_token}", "X-CSRFToken": csrf_token}
 
             response = requests.post(api_url, headers=headers, data=payload)
-
+            print("Response :: ", response.json())
             if response.status_code == 200:
                 student_info_dict = response.json()
                 student_info = StudentInformation.from_dict(student_info_dict)

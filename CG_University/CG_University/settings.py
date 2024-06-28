@@ -35,11 +35,10 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in','http://35.175.232.217:8000/']
+CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in','http://35.175.232.217:8000']
 
 CORS_ALLOWED_ORIGINS = [
     "https://cginternationaluniversity.in",
-    "http://35.175.232.217",
 ]
 
 # Application definition
