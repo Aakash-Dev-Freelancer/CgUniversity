@@ -1,0 +1,129 @@
+<!-- Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true"
+    data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-full" style="min-width: 90%;" role="document">
+        <div class="modal-content" style="border-radius: 22px;">
+            <div class="modal-header bg-primary text-white" style="border-radius: 20px 20px 0px 0px; ">
+                <h5 class="modal-title" id="editModalLabel">Add Student</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="padding: 20px 40px;">
+
+                <!-- CSRF token -->
+                {% csrf_token %}
+                <input type="hidden" name="enrollment_no" value="{{ student.enrollment_no }}">
+                <!-- Personal Details -->
+                <h4>Personal Details</h4>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="required-field-name" for="profile_pic">Profile Pic Upload</label>
+                        <input type="file" class="form-control-file required-field" id="profile_pic" name="profile_pic">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="required-field-name" for="full_name">Full Name</label>
+                            <input type="text" class="form-control required-field" id="full_name" name="full_name">
+                        </div>
+                        <div class="form-group">
+                            <label class="required-field-name" for="father_name">Father's Name</label>
+                            <input type="text" class="form-control required-field" id="father_name" name="father_name">
+                        </div>
+                        <div class="form-group">
+                            <label class="required-field-name" for="mother_name">Mother's Name</label>
+                            <input type="text" class="form-control required-field" id="mother_name" name="mother_name">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="required-field-name" for="date_of_birth">Date of Birth</label>
+                            <input type="date" class="form-control required-field" id="date_of_birth"
+                                name="date_of_birth">
+                        </div>
+                        <div class="form-group">
+                            <label class="required-field-name" for="category">Category</label>
+                            <input type="text" class="form-control required-field" id="category" name="category">
+                        </div>
+                        <div class="form-group">
+                            <label class="required-field-name" for="gender">Gender</label>
+                            <input type="text" class="form-control required-field" id="gender" name="gender">
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="required-field-name" for="email">Email</label>
+                            <input type="email" class="form-control required-field" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label class="required-field-name" for="mobile_number">Mobile Number</label>
+                            <input type="tel" class="form-control required-field required-field" id="mobile_number"
+                                name="mobile_number">
+                        </div>
+                        <div class="form-group">
+                            <label class="required-field-name" for="address">Address</label>
+                            <textarea class="form-control required-field" id="address" name="address"
+                                rows="3"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <hr class="my-4">
+                    <h4>Login Credentials</h4>
+                    <hr class="my-4">
+                    <div class="form-group">
+                        <label class="required-field-name" for="enrollment_no">Enrollment No.</label>
+                        <input type="text" class="form-control required-field" id="enrollment_no" name="enrollment_no">
+                    </div>
+                    <div class="form-group">
+                        <label class="required-field-name" for="password">Password</label>
+                        <input type="text" class="form-control required-field" id="password" name="password">
+                    </div>
+                </div>
+                <hr class="my-4">
+                <h3>Marksheets</h3>
+                <div id="marksheetList"> </div>
+                <hr class="my-4">
+                <h4>Documents</h4>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="migration">Migration Upload</label>
+                            <input type="file" class="form-control-file" id="migration" name="migration">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="provision">Provision Upload</label>
+                            <input type="file" class="form-control-file" id="provision" name="provision">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="affidevit">Affidevit Upload</label>
+                            <input type="file" class="form-control-file" id="affidevit" name="affidevit">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="admit_card">Admit Card Upload</label>
+                            <input type="file" class="form-control-file" id="admit_card" name="admit_card">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary form-submit-buttons" onclick="extractAndDisplayData(event)"
+                    data-dismiss="modal">Add</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
