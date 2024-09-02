@@ -229,15 +229,17 @@ def student(request):
 
         try:
             payload = {"user_type": user_type, "username": enrollment_no, "password": password,}
-            token_response = requests.get(token_url, data=payload)
+            token_response = requests.get(token_url, data={"user_type": "admin", "username": 'Nannu', "password": '040820',})
             token_response.raise_for_status()
             token_json = token_response.json()
             access_token = token_json.get('access')
             print("Access Token :: ", access_token)
 
             headers = {"Authorization": f"Bearer {access_token}", "X-CSRFToken": csrf_token}
+            # print("Headers :: ", headers)
 
             response = requests.post(api_url, headers=headers, data=payload)
+            response.raise_for_status()
             print("Response :: ", response.json())
             if response.status_code == 200:
                 student_info_dict = response.json()

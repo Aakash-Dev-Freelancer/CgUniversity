@@ -39,10 +39,16 @@ class MarkSheets(models.Model):
     status = models.CharField(max_length=100)
     result = models.CharField(max_length=100)
     file = models.FileField(upload_to='images/students/marksheet/', null=True)
+    
+    def __str__(self):
+        return "Enr. No: " + self.student_enrollment_no 
 
 class StudentLogin(models.Model):
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return  self.username + " " + self.password
 
 class AdminLogin(models.Model):
     full_name = models.CharField(max_length=100)

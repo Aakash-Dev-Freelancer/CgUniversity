@@ -138,14 +138,14 @@ class StudentRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
 class StudentLoginAPIView(generics.ListCreateAPIView):
     serializer_class = StudentLoginSerializer
     admin_serializer_class = AdminLoginSerializer
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated]
 
     def create(self, request, *args, **kwargs):
         username = request.data.get('username')
         password = request.data.get('password')
         user_type = request.data.get('user_type')
         
+        print(username)
+        print(user_type)
         try:
             if user_type == "student":
                 student_login = StudentLogin.objects.get(username=username)
