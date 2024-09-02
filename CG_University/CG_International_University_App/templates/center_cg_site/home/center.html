@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="icon" class=" rounded-circle" href="{% static 'images/logo.png' %}" type="image/png">
+
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="CG International University" />
+    <meta name="keywords" content="CG International University" />
+    {% include 'global/meta_tags.html' %}
+    <title>CG International University, Raipur</title>
+</head>
+
+<body>
+    {% include 'main_cg_site/global/nav_bar.html' %}
+
+    <section class="pt-5 bg-light border">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link " id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
+                    type="button" role="tab" aria-controls="messages" aria-selected="false">Students</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button"
+                    role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+            </li>
+            <div class="ml-auto">
+                <li class="nav-item" role="presentation">
+                    <form class="content" action="{% url 'logout' %}" method="post">
+                        {% csrf_token %}
+                        <button class="nav-link" type="submit" id="logout-button" type="button">Logout</button>
+                        <!-- <button type="submit" class="btn btn-primary">Logout</button> -->
+                    </form>
+                </li>
+            </div>
+        </ul>
+
+    </section>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            {% include 'center_cg_site/templates/center_home.html' %}
+        </div>
+        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            {% include 'center_cg_site/templates/center_home.html' %}
+        </div>
+        <!--  Changed With Student Data -->
+        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+            {% include 'center_cg_site/templates/student_data.html' %}
+        </div>
+        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <!-- {% include 'admin_cg_site/admin_sections/admin_settings.html' %} -->
+            <!-- <h3>HI</h3> -->
+        </div>
+    </div>
+
+    {% include 'main_cg_site/global/footer.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script>
+        localStorage.setItem('token', '{{ token }}');
+        localStorage.setItem('cId', '{{ center_id }}');
+    </script>
+    <!-- Footer Section -->
+</body>
+
+</html>

@@ -21,39 +21,29 @@ load_dotenv()
 BASE_URL = os.getenv('BASE_URL')
 API_URL = os.getenv('API_URL')
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'django-insecure-)k_$7n&&_3tbf9mdt64!mnk#xewq$4#xc3^k7&9*@)#vrww9f2'
 
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 LIVERELOAD_PORT = 9000
 
-
-
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+SITE_ID = 1 
+DEBUG = False
+
 
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in']
-
-
-
+CSRF_TRUSTED_ORIGINS = ['https://cginternationaluniversity.in','http://35.175.232.217:8000']
 
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:8001",
     "https://cginternationaluniversity.in",
 ]
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Application definition
 
 CORS_ALLOW_ALL_ORIGINS = True
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -62,14 +52,22 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+    
+    # My Apps --
     'CG_International_University_App',
-    'livereload',
+    
+    # My APIs --
+    'cgapp',
+    
+    # Packages --
+    # 'livereload',
     'rest_framework',
     'corsheaders',
     'rest_framework_simplejwt',
-    'cgapp',
-
 ]
+
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
@@ -77,20 +75,18 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    )
 }
 
-# AUTH_USER_MODEL = "cgapp.StudentLogin"
-
-
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(hours=2),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
     'SLIDING_TOKEN_LIFETIME': timedelta(days=30),
     'SLIDING_TOKEN_REFRESH_LIFETIME_LATE_USER': timedelta(days=1),
     'SLIDING_TOKEN_LIFETIME_LATE_USER': timedelta(days=30),
 }
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -109,7 +105,7 @@ ROOT_URLCONF = 'CG_University.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -169,10 +165,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATIC_URL = os.getenv('STATIC_URL')
 
+# STATIC_URL = os.g
+# STATICFILES_DIRS = [BASE_DIR / "static"]
+
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

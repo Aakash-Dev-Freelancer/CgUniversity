@@ -1,0 +1,56 @@
+<style>
+    .fixed-size-image {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+    .image-background {
+        background-color: white;
+        border: 1px solid cornflowerblue;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<div class="container mt-4" style="height: fit-content;">
+    <div class="row align-items-start">
+        <div class="col-md-4 mb-3 mb-md-0 image-background">
+            <img class="rounded img-fluid fixed-size-image" src="{{ student_data.student_degree }}" alt="Degree Image">
+        </div>
+        <!-- <h5>{{ student_data.degree }}</h5> -->
+        <div class="col-md-8 d-flex flex-column justify-content-start text-start">
+            <h5>CHHATTISGARH INTERNATIONAL UNIVERSITY</h5>
+            <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#degreeModal"
+                style="width: 100px; height: 50px;">
+                See
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="degreeModal" tabindex="-1" role="dialog" aria-labelledby="degreeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="degreeModalLabel">Degree</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="{{ student_data.student_degree }}" class="rounded mx-auto d-block w-100" style="width: 100%" alt="Degree Image">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

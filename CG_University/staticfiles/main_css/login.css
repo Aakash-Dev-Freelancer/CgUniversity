@@ -1,0 +1,114 @@
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   backdrop-filter: blur(10px);
+   background-image: url("../images/login/login_background_image.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .blur-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   backdrop-filter: blur(10px);
+   /* Adjust blur strength as needed */
+ }
+
+ .login-card {
+   background-color: rgba(255, 255, 255, 0.336);
+   /* Adjust opacity as needed */
+   width: 400px;
+   border: 1px solid #ccc;
+   border-radius: 16px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   padding: 35px;
+   position: relative;
+   z-index: 1;
+ }
+
+ /* Tab styles */
+ input[type="radio"] {
+   display: none;
+   background-color: wheat;
+ }
+
+ label {
+   display: inline-block;
+   padding: 10px 20px;
+   cursor: pointer;
+   border-radius: 5px;
+   background-color: #f1f1f157;
+ }
+
+ input[type="radio"]:checked+label {
+   background-color: #b1b1b1;
+   border: 1px solid gray;
+ }
+
+ /* Login content styles */
+ .login-content {
+   margin-top: 20px;
+ }
+
+ .login-tab-content {
+   display: none;
+ }
+
+ input[type="radio"]:checked~.login-content #admin-login,
+ input[type="radio"]:checked~.login-content #student-login {
+   display: block;
+ }
+
+ /* Form styles */
+ input[type="text"],
+ input[type="password"] {
+   width: calc(100% - 0.9%);
+   padding: 10px;
+   margin: 10px 0;
+   background-color: #ffffff5e;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+ }
+
+ button[type="button"] {
+   width: 40%;
+   padding: 10px;
+   margin-top: 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #ffa012;
+   color: white;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+
+ #admin-login form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ button[type="submit"]:hover {
+   background-color: #ffa218;
+ }
+
+ .input-field {
+   width: calc(100% - 5%);
+ }
+
+ .back-to-home {
+   margin-top: 30px;
+ }
+
+ .back-to-home a {
+   text-decoration: none;
+ }

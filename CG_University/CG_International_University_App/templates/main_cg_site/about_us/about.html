@@ -1,24 +1,31 @@
 {% load static %}
-{% load livereload_tags %}
+
 
 <!DOCTYPE html>
 <html lang="en">
 
-{% livereload_script %}
+
 
 <head>
     <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+    {% include 'global/meta_tags.html' %}
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+
 </head>
 
 <body>
     {% include 'main_cg_site/global/nav_bar.html' %}
     <!-- Add Data Here -->
     <div class="background-image">
-        <div class="blurOverlay" style="padding: 80px; ">
+        <div class="blurOverlay" style="padding: 10vh;
+            height: 70vh;
+            text-align: center;
+            align-items: center;
+            display: flex; 
+            flex-direction: column;">
 
             <h1>CG INTERNATIONAL UNIVERSITY</h1>
             <p><span class="highlight">CG INTERNATIONAL UNIVERSITY</span> offers globally-accepted standards of

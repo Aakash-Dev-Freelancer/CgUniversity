@@ -1,12 +1,11 @@
 {% load static %}
-{% load livereload_tags %}
 
 <!DOCTYPE html>
-{% livereload_script %}
 <html lang="en">
 
 <head>
     <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+    {% include 'global/meta_tags.html' %}
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,14 +39,10 @@
                     <form class="content" action="{% url 'logout' %}" method="post">
                         {% csrf_token %}
                         <button class="nav-link" type="submit" id="logout-button" type="button">Logout</button>
-                        <!-- <button type="submit" class="btn btn-primary">Logout</button> -->
                     </form>
                 </li>
             </div>
         </ul>
-
-
-
 
         <div class="tab-content">
             <div class="tab-pane " id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -67,6 +62,7 @@
             crossorigin="anonymous"></script>
     </section>
     <script>
+
         localStorage.setItem('token', '{{ token }}');
     </script>
 

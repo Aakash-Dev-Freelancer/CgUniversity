@@ -1,9 +1,10 @@
-{% load static %} {% load livereload_tags %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+  {% include 'global/meta_tags.html' %}
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +26,12 @@
 <body>
   {% include 'main_cg_site/global/nav_bar.html' %}
   <div class="background-image">
-    <div class="blurOverlay" style="padding: 80px 0px">
+    <div class="blurOverlay" style="padding: 10vh;
+            height: 80vh;
+            text-align: center;
+            align-items: center;
+            display: flex; 
+            flex-direction: column;">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" style="width: 100%">
         <a href="https://www.aicte-india.org" target="_blank"
           class="card justify-content-center d-flex align-items-center" style="margin: 12px">

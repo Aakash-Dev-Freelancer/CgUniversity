@@ -1,5 +1,4 @@
 {% load static %}
-{% load livereload_tags %}
 <!-- admin.html -->
 
 <!DOCTYPE html>
@@ -7,12 +6,100 @@
 
 <head>
     <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
-
+    {% include 'global/meta_tags.html' %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'main_css/style.css' %}">
     <style>
+        #loader {
+            position: absolute;
+            display: none;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 80px;
+            height: 80px;
+            margin: -76px 0 0 -76px;
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            display: none;
+        }
+
+        #myDiv {
+            display: none;
+            text-align: center;
+        }
+
         .btn-custom {
             background-color: rgb(255, 150, 13);
             border-color: rgb(255, 150, 13);
@@ -24,12 +111,10 @@
             border-color: rgba(255, 150, 13, 0.5);
         }
 
-        /* Add pointer cursor to table rows */
         tbody tr:hover {
             cursor: pointer;
         }
 
-        /* Highlight selected row */
         .selected {
             background-color: rgba(255, 150, 13, 0.1);
         }
@@ -38,12 +123,21 @@
             position: relative;
         }
 
+        .required-field-name::after {
+            content: " *";
+            color: red;
+        }
+
         .add-button {
             position: absolute;
             top: 10px;
             /* Adjust as needed */
             right: 10px;
             /* Adjust as needed */
+        }
+
+        .swal2-cancel btn btn-danger {
+            margin: 10px;
         }
 
         table,
@@ -60,7 +154,7 @@
         <div style="display: flex;
                 flex-direction: row;
                 justify-content: space-between;">
-            <h1>Welcome, {{ admin_info.full_name }}</h1>
+            <h1>Welcome {{ admin_info.admin_info.full_name }},</h1>
             <button type="button" class="btn btn-primary m-1" data-toggle="modal" data-target="#editModal">
                 Add Student
             </button>
@@ -73,7 +167,8 @@
                 <tr>
                     <th style="width: 200px;">
                         Enrollment No.
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(0, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(0, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students|dictsort:"enrollment_no" %}
                             <option>{{ data.enrollment_no }}</option>
@@ -89,7 +184,8 @@
                         </select>
                     </th>
                     <th>Father Name
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(2, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(2, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.father_name }}</option>
@@ -97,7 +193,8 @@
                         </select>
                     </th>
                     <th>Mother Name
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(3, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(3, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.mother_name }}</option>
@@ -105,14 +202,16 @@
                         </select>
                     </th>
                     <th>Gender
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(4, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(4, this.value)">
                             <option value="">Filter</option>
                             <option>Male</option>
                             <option>Female</option>
                         </select>
                     </th>
                     <th>DOB
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(5, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(5, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.date_of_birth }}</option>
@@ -120,7 +219,8 @@
                         </select>
                     </th>
                     <th>Category
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(6, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(6, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.category }}</option>
@@ -128,7 +228,8 @@
                         </select>
                     </th>
                     <th>Email
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(7, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(7, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.email }}</option>
@@ -136,7 +237,8 @@
                         </select>
                     </th>
                     <th>Mobile No.
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(8, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(8, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.mobile_number }}</option>
@@ -144,17 +246,23 @@
                         </select>
                     </th>
                     <th>Address
-                        <select style="font-size: small;" class="form-control" onchange="filterTable(9, this.value)">
+                        <select style="font-size: small;" class="form-control required-field"
+                            onchange="filterTable(9, this.value)">
                             <option value="">Filter</option>
                             {% for data in admin_info.students %}
                             <option>{{ data.address }}</option>
                             {% endfor %}
                         </select>
                     </th>
-                    <th>View/Edit</th>
+                    <th>Edit/Delete</th>
                 </tr>
             </thead>
             <tbody>
+                {% if admin_info.students|length == 0 %}
+                <tr style="height: 200px; text-align: center; vertical-align: middle">
+                    <td colspan="10" style="font-size: large;">No Student Data</td>
+                </tr>
+                {% endif %}
                 {% for data in admin_info.students %}
                 <tr>
                     <td>{{ data.enrollment_no }}</td>
@@ -167,17 +275,22 @@
                     <td>{{ data.email }}</td>
                     <td>{{ data.mobile_number }}</td>
                     <td>{{ data.address }}</td>
+
                     <td>
                         <a class="btn btn-primary"
-                            href="{% url 'edit-student'  %}?id={{ data.enrollment_no }}&token={{ token }}">Edit</a>
+                            href="{% url 'edit-student'  %}?id={{ data.enrollment_no }}&token={{ token }}&cId={{ center_id }}">Edit</a>
+
+                        <button class="btn btn-danger" onclick="destroy('{{ data.enrollment_no }}')">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
                     </td>
                 </tr>
-
                 {% endfor %}
             </tbody>
         </table>
 
-        <div class=" text-center">
+
+        <div class="text-center">
             <button class="btn btn-custom" onclick="prevPage()">Previous</button>
             <span id="page-numbers"></span>
             <button class="btn btn-custom" onclick="nextPage()">Next</button>
@@ -191,12 +304,16 @@
     </div>
 
 
-    <!-- Pop Up -->
+    <!-- Loader -->
+    <div id="loader-overlay" class="overlay">
+        <div id="loader" class="loader-custom"></div>
+    </div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
-        aria-hidden="true">
-        <div class=" modal-dialog modal-dialog-centered modal-full" style="min-width: 90%;" role="document">
+        aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-full" style="min-width: 90%;" role="document">
             <div class="modal-content" style="border-radius: 22px;">
                 <div class="modal-header bg-primary text-white" style="border-radius: 20px 20px 0px 0px; ">
                     <h5 class="modal-title" id="editModalLabel">Add Student</h5>
@@ -214,50 +331,56 @@
                     <hr class="my-4">
                     <div class="row">
                         <div class="form-group">
-                            <label for="profile_pic">Profile Pic Upload</label>
-                            <input type="file" class="form-control-file" id="profile_pic" name="profile_pic">
+                            <label class="required-field-name" for="profile_pic">Profile Pic Upload</label>
+                            <input type="file" class="form-control-file required-field" id="profile_pic"
+                                name="profile_pic">
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="full_name">Full Name</label>
-                                <input type="text" class="form-control" id="full_name" name="full_name">
+                                <label class="required-field-name" for="full_name">Full Name</label>
+                                <input type="text" class="form-control required-field" id="full_name" name="full_name">
                             </div>
                             <div class="form-group">
-                                <label for="father_name">Father's Name</label>
-                                <input type="text" class="form-control" id="father_name" name="father_name">
+                                <label class="required-field-name" for="father_name">Father's Name</label>
+                                <input type="text" class="form-control required-field" id="father_name"
+                                    name="father_name">
                             </div>
                             <div class="form-group">
-                                <label for="mother_name">Mother's Name</label>
-                                <input type="text" class="form-control" id="mother_name" name="mother_name">
+                                <label class="required-field-name" for="mother_name">Mother's Name</label>
+                                <input type="text" class="form-control required-field" id="mother_name"
+                                    name="mother_name">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="date_of_birth">Date of Birth</label>
-                                <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+                                <label class="required-field-name" for="date_of_birth">Date of Birth</label>
+                                <input type="date" class="form-control required-field" id="date_of_birth"
+                                    name="date_of_birth">
                             </div>
                             <div class="form-group">
-                                <label for="category">Category</label>
-                                <input type="text" class="form-control" id="category" name="category">
+                                <label class="required-field-name" for="category">Category</label>
+                                <input type="text" class="form-control required-field" id="category" name="category">
                             </div>
                             <div class="form-group">
-                                <label for="gender">Gender</label>
-                                <input type="text" class="form-control" id="gender" name="gender">
+                                <label class="required-field-name" for="gender">Gender</label>
+                                <input type="text" class="form-control required-field" id="gender" name="gender">
                             </div>
 
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email">
+                                <label class="required-field-name" for="email">Email</label>
+                                <input type="email" class="form-control required-field" id="email" name="email">
                             </div>
                             <div class="form-group">
-                                <label for="mobile_number">Mobile Number</label>
-                                <input type="tel" class="form-control" id="mobile_number" name="mobile_number">
+                                <label class="required-field-name" for="mobile_number">Mobile Number</label>
+                                <input type="tel" class="form-control required-field required-field" id="mobile_number"
+                                    name="mobile_number">
                             </div>
                             <div class="form-group">
-                                <label for="address">Address</label>
-                                <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                                <label class="required-field-name" for="address">Address</label>
+                                <textarea class="form-control required-field" id="address" name="address"
+                                    rows="3"></textarea>
                             </div>
 
                         </div>
@@ -267,12 +390,13 @@
                         <h4>Login Credentials</h4>
                         <hr class="my-4">
                         <div class="form-group">
-                            <label for="enrollment_no">Enrollment No.</label>
-                            <input type="text" class="form-control" id="enrollment_no" name="enrollment_no">
+                            <label class="required-field-name" for="enrollment_no">Enrollment No.</label>
+                            <input type="text" class="form-control required-field" id="enrollment_no"
+                                name="enrollment_no">
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="text" class="form-control" id="password" name="password">
+                            <label class="required-field-name" for="password">Password</label>
+                            <input type="text" class="form-control required-field" id="password" name="password">
                         </div>
                     </div>
                     <hr class="my-4">
@@ -312,8 +436,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="extractAndDisplayData()"
-                        data-dismiss="modal">Update</button>
+                    <button type="button" class="btn btn-primary form-submit-buttons"
+                        onclick="extractAndDisplayData(event)" data-dismiss="modal">Add</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
@@ -322,14 +446,96 @@
 
     {%include 'main_cg_site/global/footer.html' %}
 
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const csrfToken = document.querySelector('input[name="csrfmiddlewaretoken"]').value;
+            const token = localStorage.getItem('token');
+            const baseUrl = "{{ base_url }}";
+            // const marksheets = 
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: "btn btn-success",
+                    cancelButton: "btn btn-danger"
+                },
+                buttonsStyling: false
+            });
+
+            window.destroy = function destroy(eNo) {
+
+                swalWithBootstrapButtons.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes, delete it!",
+                    cancelButtonText: "No, cancel!",
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        fetch(`${baseUrl}delete_student/`, {
+                            method: "POST",
+                            headers: {
+                                'X-CSRFToken': csrfToken,
+                                "Content-type": "application/json; charset=UTF-8"
+                            },
+                            body: JSON.stringify({
+                                "enrollment_no": eNo,
+                                "token": token,
+                            })
+                        }).then(response => {
+                            if (response.ok) {
+                                swalWithBootstrapButtons.fire({
+                                    title: "Deleted!",
+                                    text: "Student has been deleted.",
+                                    icon: "success"
+                                }).then(response => {
+                                    location.reload();
+                                });
+                            } else {
+                                swalWithBootstrapButtons.fire({
+                                    title: "Error!",
+                                    text: "There was an issue deleting student.",
+                                    icon: "error"
+                                });
+                            }
+                        }).catch(error => {
+                            console.error("Error:", error);
+                            swalWithBootstrapButtons.fire({
+                                title: "Error!",
+                                text: "There was an issue deleting student.",
+                                icon: "error"
+                            });
+                        });
+                    } else if (result.dismiss === Swal.DismissReason.cancel) {
+                        swalWithBootstrapButtons.fire({
+                            title: "Cancelled",
+                            text: "Your imaginary file is safe :)",
+                            icon: "error"
+                        });
+                    }
+                });
+            };
+        });
+
+
         document.addEventListener("DOMContentLoaded", function () {
             addMarkSheet();
+            var data = "{{ admin_info.students }}";
+            var btns = document.getElementsByClassName("text-center");
+
+            if (data.length > 10) {
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.display = "block";
+                }
+            } else {
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.display = "none";
+                }
+            }
         });
         function cancelUpdate(enrollmentNo) {
             $('.modal-backdrop').remove();
@@ -352,169 +558,176 @@
             newMarkSheetDiv.innerHTML = `
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="session">Session</label>
-                    <input type="text" class="form-control" id="session" name="session" placeholder="Enter Session">
+                    <label class="required-field-name" for="session">Session</label>
+                    <input type="text" class="form-control required-field" id="session" name="session" placeholder="Enter Session">
                 </div>
                 <div class="form-group">
-                    <label for="semester">Semester</label>
-                    <input type="text" class="form-control" id="semester" name="semester" placeholder="Enter Semester">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label for="sgpa">SGPA</label>
-                    <input type="text" class="form-control" id="sgpa" name="sgpa" placeholder="Enter SGPA">
-                </div>
-                <div class="form-group">
-                    <label for="status">Status</label>
-                    <input type="text" class="form-control" id="status" name="status" placeholder="Enter Status">
+                    <label class="required-field-name" for="semester">Semester</label>
+                    <input type="text" class="form-control required-field" id="semester" name="semester" placeholder="Enter Semester">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="result">Result</label>
-                    <input type="text" class="form-control" id="result" name="result" placeholder="Enter Result">
+                    <label class="required-field-name" for="sgpa">SGPA</label>
+                    <input type="text" class="form-control required-field" id="sgpa" name="sgpa" placeholder="Enter SGPA">
+                </div>
+                <div class="form-group">
+                    <label class="required-field-name" for="status">Status</label>
+                    <input type="text" class="form-control required-field" id="status" name="status" placeholder="Enter Status">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="required-field-name" for="result">Result</label>
+                    <input type="text" class="form-control required-field" id="result" name="result" placeholder="Enter Result">
                 </div>
                 <div class="form-group d-block">
-                    <label for="file">Marksheet Upload</label>
-                    <input type="file" class="form-control-file" id="file" name="marksheet">
+                    <label class="required-field-name" for="file">Marksheet Upload</label>
+                    <input type="file" class="form-control-file required-field" id="file" name="marksheet">
                 </div>
 
             </div>
             
         `;
-            // <div class="row" style="width: 100%; justify-content: center;">
-            //     <button class="btn btn-danger" onclick="removeMarkSheet(this)" style="width: 45%; max-width: 150px; margin-right: 2%; margin-bottom: 1%;">Remove</button>
-            //     <button class="btn btn-primary" onclick="addMarkSheet(this)" style="width: 45%; max-width: 150px; margin-bottom: 1%;">Add Marksheet</button>
-            // </div>
-            // Append the new marksheet div to the marksheetList
             marksheetList.appendChild(newMarkSheetDiv);
-
         }
 
+        async function extractAndDisplayData(event) {
+
+            var isLoading = document.getElementById("loader");
+            var overlay = document.getElementById("loader-overlay");
+            isLoading.style.display = "block";
+            overlay.style.display = "block";
 
 
-        function extractAndDisplayData() {
-            var studentData = {
-                "enrollment_no": document.querySelector('#enrollment_no').value,
-                "profile_pic": document.querySelector('#profile_pic').files[0],
-                "full_name": document.querySelector('#full_name').value,
-                "password": document.querySelector('#password').value,
-                "father_name": document.querySelector('#father_name').value,
-                "mother_name": document.querySelector('#mother_name').value,
-                "gender": document.querySelector('#gender').value,
-                "date_of_birth": document.querySelector('#date_of_birth').value,
-                "category": document.querySelector('#category').value,
-                "email": document.querySelector('#email').value,
-                "mobile_number": document.querySelector('#mobile_number').value,
-                "address": document.querySelector('#address').value
+            const studentUrl = "{{ api_url }}students/";
+            const markSheetUrl = "{{ api_url }}marksheets/";
+            const studentDataUrl = "{{ api_url }}student-data/";
+            const addStudentUrl = "{{ api_url }}add-student/";
+            const token = localStorage.getItem('token');
+            var dataInserted = false;
+
+
+            const fetchWithAuth = (url, method, body, isJson = false) => {
+                return fetch(url, {
+                    method: method,
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        ...(isJson && { 'Content-Type': 'application/json' })
+                    },
+                    body: body
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        } else {
+                            if (url == addStudentUrl) {
+                                dataInserted = true;
+                            }
+                        }
+
+                        return response.json();
+                    });
             };
 
-            var studentFormData = new FormData();
+            try {
 
-            for (var key in studentData) {
-                studentFormData.append(key, studentData[key]);
+                const studentData = {
+                    "center_id": 1,
+                    "enrollment_no": document.querySelector('#enrollment_no').value,
+                    "profile_pic": document.querySelector('#profile_pic').files[0],
+                    "full_name": document.querySelector('#full_name').value,
+                    "password": document.querySelector('#password').value,
+                    "father_name": document.querySelector('#father_name').value,
+                    "mother_name": document.querySelector('#mother_name').value,
+                    "gender": document.querySelector('#gender').value,
+                    "date_of_birth": document.querySelector('#date_of_birth').value,
+                    "category": document.querySelector('#category').value,
+                    "email": document.querySelector('#email').value,
+                    "mobile_number": document.querySelector('#mobile_number').value,
+                    "address": document.querySelector('#address').value,
+                };
+
+                // Add mark sheet
+                const marksheetData = {
+                    "student_enrollment_no": studentData.enrollment_no,
+                    "session": document.querySelector('#session').value,
+                    "semester": document.querySelector('#semester').value,
+                    "sgpa": document.querySelector('#sgpa').value,
+                    "status": document.querySelector('#status').value,
+                    "result": document.querySelector('#result').value,
+                    "file": document.querySelector('#file').files[0],
+                };
+
+                const marksheetFormData = new FormData();
+                Object.entries(marksheetData).forEach(([key, value]) => marksheetFormData.append(key, value));
+
+                const marksheetResponse = await fetchWithAuth(
+                    markSheetUrl,
+                    'POST',
+                    marksheetFormData,
+                );
+                console.log('Mark sheet added:', marksheetResponse);
+
+                // Extract id_list from marksheetResponse
+                const idList = marksheetResponse.id_list;
+
+                // Add student
+                studentData.list_of_interests = idList;
+
+                const studentFormData = new FormData();
+                Object.entries(studentData).forEach(([key, value]) => studentFormData.append(key, value));
+
+                const studentResponse = await fetchWithAuth(studentUrl, 'POST', studentFormData,);
+                console.log('Student added:', studentResponse);
+
+                // Add student data
+                const studentDoc = {
+                    "student_enrollment_no": studentData.enrollment_no,
+                    "student_provision": document.querySelector('#provision').files[0],
+                    "student_admit_card": document.querySelector('#admit_card').files[0],
+                    "student_affidevit": document.querySelector('#affidevit').files[0],
+                    "student_migrations": document.querySelector('#migration').files[0],
+                };
+
+                const formDetails = new FormData();
+                Object.entries(studentDoc).forEach(([key, value]) => formDetails.append(key, value));
+
+                const studentDataResponse = await fetchWithAuth(studentDataUrl, 'POST', formDetails);
+                console.log('Student data added:', studentDataResponse);
+
+                // Add student credentials
+                const addStudentPayload = {
+                    "username": studentData.enrollment_no,
+                    "password": studentData.password
+                };
+
+                const addStudentResponse = await fetchWithAuth(addStudentUrl, 'POST', JSON.stringify(addStudentPayload), true,);
+                console.log('Student credentials added:', addStudentResponse);
+
+                if (dataInserted) {
+                    isLoading.style.display = 'none';
+                    overlay.style.display = 'none';
+                    Swal.fire({
+                        title: "Student Enrolled",
+                        text: "Student Added Successfully",
+                        icon: "success"
+                    }).then(response => {
+                        location.reload();
+                    });
+                    $('#editModal').modal('hide');
+                }
+            } catch (error) {
+                console.log(error);
+                overlay.style.display = 'none';
+                isLoading.style.display = 'none';
+                Swal.fire({
+                    title: "Oops...",
+                    text: "Student Not Added",
+                    icon: "error"
+                });
+                console.error('There was a problem with the fetch operation:', error);
             }
-
-            var studentUrl = "{{ api_url }}students/"
-            var markSheetUrl = "{{ api_url }}marksheets/"
-            var studentDataUrl = "{{ api_url }}student-data/"
-            var token = localStorage.getItem('token');
-
-
-            fetch(studentUrl, {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                },
-                body: studentFormData,
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Response from server:', data);
-                })
-                .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                });
-
-            // var marksheetData = [];
-            var marksheetRows = document.querySelectorAll('.marksheets-class');
-
-            var marksheetData = {
-                "student_enrollment_no": document.querySelector('#enrollment_no').value,
-                "session": document.querySelector('#session').value,
-                "semester": document.querySelector('#semester').value,
-                "sgpa": document.querySelector('#sgpa').value,
-                "status": document.querySelector('#status').value,
-                "result": document.querySelector('#result').value,
-                "file": document.querySelector('#file').files[0],
-            };
-
-            const marksheetFormData = new FormData();
-
-            for (const key in marksheetData) {
-                marksheetFormData.append(key, marksheetData[key]);
-            }
-
-            fetch(markSheetUrl, {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                },
-                body: marksheetFormData,
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Response from server:', data);
-                })
-                .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                });
-
-            const student_enrollment_no = document.querySelector('#enrollment_no').value;
-            const student_provision = document.querySelector('#provision').files[0];
-            const student_admit_card = document.querySelector('#admit_card').files[0];
-            const student_affidevit = document.querySelector('#affidevit').files[0];
-            const student_migrations = document.querySelector('#migration').files[0];
-
-
-            const formDetails = new FormData();
-
-            formDetails.append('student_enrollment_no', student_enrollment_no);
-            formDetails.append('student_provision', student_provision);
-            formDetails.append('student_admit_card', student_admit_card);
-            formDetails.append('student_affidevit', student_affidevit);
-            formDetails.append('student_migrations', student_migrations);
-
-            fetch(studentDataUrl, {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                },
-                body: formDetails,
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Response from server:', data);
-                })
-                .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                });
         }
 
 
@@ -523,7 +736,6 @@
             marksheetCounter--;
             marksheetDiv.remove();
         }
-
 
         function filterTable(columnIndex, filterValue) {
             var table = document.querySelector('.table');
@@ -640,7 +852,6 @@
             ellipsis.textContent = "...";
             return ellipsis;
         }
-
 
         // Initial call to show rows for the first page and update page numbers
         showRows();

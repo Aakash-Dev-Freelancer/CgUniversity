@@ -129,36 +129,40 @@ class Student:
         result["address"] = from_str(self.address)
         return result
 
-
 @dataclass
 class StudentsDatum:
     student_enrollment_no: str
-    student_provision: str
+    student_provision: Optional[str] = None
     student_admit_card: Optional[str] = None
     student_affidevit: Optional[str] = None
     student_photo: Optional[str] = None
     student_migrations: Optional[str] = None
+    student_degree: Optional[str] = None
 
     @staticmethod
     def from_dict(obj: Any) -> 'StudentsDatum':
         assert isinstance(obj, dict)
         student_enrollment_no = from_str(obj.get("student_enrollment_no"))
-        student_provision = from_str(obj.get("student_provision"))
+        student_provision = from_union([from_none, from_str], obj.get("student_provision"))
         student_admit_card = from_union([from_none, from_str], obj.get("student_admit_card"))
         student_affidevit = from_union([from_none, from_str], obj.get("student_affidevit"))
         student_photo = from_union([from_none, from_str], obj.get("student_photo"))
         student_migrations = from_union([from_none, from_str], obj.get("student_migrations"))
-        return StudentsDatum(student_enrollment_no, student_provision, student_admit_card, student_affidevit, student_photo, student_migrations)
+        student_degree = from_union([from_none, from_str], obj.get("student_degree"))
+        return StudentsDatum(student_enrollment_no, student_provision, student_admit_card, student_affidevit, student_photo, student_migrations,student_degree)
 
     def to_dict(self) -> dict:
         result: dict = {}
         result["student_enrollment_no"] = from_str(self.student_enrollment_no)
-        result["student_provision"] = from_str(self.student_provision)
+        result["student_provision"] = from_union([from_none, from_str], self.student_provision)
         result["student_admit_card"] = from_union([from_none, from_str], self.student_admit_card)
         result["student_affidevit"] = from_union([from_none, from_str], self.student_affidevit)
         result["student_photo"] = from_union([from_none, from_str], self.student_photo)
         result["student_migrations"] = from_union([from_none, from_str], self.student_migrations)
+        result["student_degree"] = from_union([from_none, from_str], self.student_degree)
         return result
+
+
 
 
 @dataclass
@@ -178,7 +182,7 @@ class StudentsMarksheet:
         id = from_int(obj.get("id"))
         student_enrollment_no = from_str(obj.get("student_enrollment_no"))
         session = from_str(obj.get("session"))
-        semester = int(from_str(obj.get("semester")))
+        semester = from_str(obj.get("semester"))
         sgpa = from_str(obj.get("sgpa"))
         status = from_str(obj.get("status"))
         result = from_str(obj.get("result"))
@@ -190,7 +194,7 @@ class StudentsMarksheet:
         result["id"] = from_int(self.id)
         result["student_enrollment_no"] = from_str(self.student_enrollment_no)
         result["session"] = from_str(self.session)
-        result["semester"] = from_str(str(self.semester))
+        result["semester"] = from_str(self.semester)
         result["sgpa"] = from_str(self.sgpa)
         result["status"] = from_str(self.status)
         result["result"] = from_str(self.result)

@@ -5,12 +5,93 @@
 
 <head>
     <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+    {% include 'global/meta_tags.html' %}
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Student</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        #loader {
+            position: absolute;
+            display: none;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 80px;
+            height: 80px;
+            margin: -76px 0 0 -76px;
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            display: none;
+        }
+
         .container {
             margin-top: 60px;
             margin-bottom: 60px;
@@ -18,6 +99,11 @@
 
         table {
             font-size: smaller;
+        }
+
+        .required-field-name::after {
+            content: " *";
+            color: red;
         }
 
         .avatar {
@@ -40,15 +126,19 @@
     {% include 'main_cg_site/global/nav_bar.html' %}
 
 
+    <div id="loader-overlay" class="overlay">
+        <div id="loader" class="loader-custom"></div>
+    </div>
+
+
     <div class="container">
-        <h1>Edit Student {{data.enrollment_no}}</h1>
         <div id="edit_card_{{ student.enrollment_no }}" style="display: block;">
             <div class="card">
                 <div class="card-header bg-primary text-white">
                     Update Student Details
                 </div>
                 <div class="card-body">
-                    <form method="post">
+                    <form method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                         <input type="hidden" name="enrollment_no" value="{{ student.enrollment_no }}">
                         <div class="container mt-5">
@@ -58,165 +148,217 @@
                                         <img src="{{ student.profile_pic }}" alt="Profile Picture"
                                             onerror="this.onerror=null;this.src='https://t3.ftcdn.net/jpg/01/87/10/40/360_F_187104027_8i2JbFDBB5jB7R65Ce464yRs4gfNbR3Z.jpg';">
                                     </div>
+                                    <div style="height: 20px;"></div>
+                                    <div class="form-group">
+                                        <input type="file" class="form-control-file" id="profile_pic" name="profile_pic"
+                                            value="{{ student.profile_pic }}">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <h2>Personal Details</h2>
-                        <hr class="my-4">
+                        <h6>Student {{student.center_id}}</h6>
 
+                        <hr class="my-4">
                         <div class="divider w-100%"></div>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="full_name">Full Name</label>
-                                    <input type="text" class="form-control" id="full_name" name="full_name"
-                                        value="{{ student.full_name }}">
+                                    <label class="required-field-name" for="enrollment_no">Enrollment No.</label>
+                                    <input type="text" class="form-control required-field"
+                                        value="{{ student.enrollment_no }}" id="enrollment_no" name="enrollment_no">
                                 </div>
                                 <div class="form-group">
-                                    <label for="father_name">Father's Name</label>
-                                    <input type="text" class="form-control" id="father_name" name="father_name"
-                                        value="{{ student.father_name }}">
+                                    <label class="required-field-name" for="full_name">Full Name</label>
+                                    <input type="text" class="form-control required-field" id="full_name"
+                                        name="full_name" value="{{ student.full_name }}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="mother_name">Mother's Name</label>
-                                    <input type="text" class="form-control" id="mother_name" name="mother_name"
-                                        value="{{ student.mother_name }}">
+                                    <label class="required-field-name" for="father_name">Father's Name</label>
+                                    <input type="text" class="form-control required-field" id="father_name"
+                                        name="father_name" value="{{ student.father_name }}">
+                                </div>
+                                <div class="form-group">
+                                    <label class="required-field-name" for="mother_name">Mother's Name</label>
+                                    <input type="text" class="form-control required-field" id="mother_name"
+                                        name="mother_name" value="{{ student.mother_name }}">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="date_of_birth">Date of Birth</label>
-                                    <input type="date" class="form-control" id="date_of_birth" name="date_of_birth"
-                                        value="{{ student.date_of_birth }}">
+                                    <label class="required-field-name" for="date_of_birth">Date of Birth</label>
+                                    <input type="date" class="form-control required-field" id="date_of_birth"
+                                        name="date_of_birth" value="{{ student.date_of_birth }}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="category">Category</label>
-                                    <input type="text" class="form-control" id="category" name="category"
+                                    <label class="required-field-name" for="gender">Gender</label>
+                                    <input type="text" class="form-control required-field" id="gender" name="gender"
+                                        value="{{ student.gender }}">
+                                </div>
+                                <div class="form-group">
+                                    <label class="required-field-name" for="category">Category</label>
+                                    <input type="text" class="form-control required-field" id="category" name="category"
                                         value="{{ student.category }}">
                                 </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email"
-                                        value="{{ student.email }}">
-                                </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="mobile_number">Mobile Number</label>
-                                    <input type="tel" class="form-control" id="mobile_number" name="mobile_number"
-                                        value="{{ student.mobile_number }}">
+                                    <div class="form-group">
+                                        <label class="required-field-name" for="email">Email</label>
+                                        <input type="email" class="form-control required-field" id="email" name="email"
+                                            value="{{ student.email }}">
+                                    </div>
+                                    <label class="required-field-name" for="mobile_number">Mobile Number</label>
+                                    <input type="tel" class="form-control required-field" id="mobile_number"
+                                        name="mobile_number" value="{{ student.mobile_number }}">
                                 </div>
+
                                 <div class="form-group">
-                                    <label for="address">Address</label>
-                                    <textarea class="form-control" id="address" name="address"
+                                    <label class="required-field-name" for="address">Address</label>
+                                    <textarea class="form-control required-field" id="address" name="address"
                                         rows="3">{{ student.address }}</textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for="gender">Gender</label>
-                                    <input type="text" class="form-control" id="gender" name="gender"
-                                        value="{{ student.gender }}">
                                 </div>
                             </div>
                         </div>
-                        <hr class="my-4">
-                        <h2>Documents</h2>
 
                         <hr class="my-4">
                         <h3>Marksheets</h3>
+                        <hr class="my-4">
+
                         {% if marksheet_data %}
                         {% for data in marksheet_data %}
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <div class="form-group">
-                                        <label for="session">Session</label>
-                                        <input type="text" class="form-control" id="session" name="session"
-                                            value="{{ data.session }}">
+                                        <label class="required-field-name" for="session">Session</label>
+                                        <input type="text" class="form-control required-field" id="session"
+                                            name="session" value="{{ data.session }}">
                                     </div>
                                     <div class="form-group">
-                                        <label for="semester">Semester</label>
-                                        <input type="text" class="form-control" id="semester" name="semester"
-                                            value="{{ data.semester }}">
+                                        <label class="required-field-name" for="semester">Semester</label>
+                                        <input type="text" class="form-control required-field" id="semester"
+                                            name="semester" value="{{ data.semester }}">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <div class="form-group">
-                                        <label for="sgpa">SGPA</label>
-                                        <input type="text" class="form-control" id="sgpa" name="sgpa"
+                                        <label class="required-field-name" for="sgpa">SGPA</label>
+                                        <input type="text" class="form-control required-field" id="sgpa" name="sgpa"
                                             value="{{ data.sgpa }}">
                                     </div>
                                     <div class="form-group">
-                                        <label for="status">Status</label>
-                                        <input type="text" class="form-control" id="status" name="status"
+                                        <label class="required-field-name" for="status">Status</label>
+                                        <input type="text" class="form-control required-field" id="status" name="status"
                                             value="{{ data.status }}">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
-
                                 <div class="form-group">
-                                    <label for="result">Result</label>
-                                    <input type="text" class="form-control" id="result" name="result"
+                                    <label class="required-field-name" for="result">Result</label>
+                                    <input type="text" class="form-control required-field" id="result" name="result"
                                         value="{{ data.result }}">
                                 </div>
                                 <div class="form-group d-block">
                                     <img src="{{ data.file }}" class="w-20% rounded p-1" style="width: 25%;"
                                         alt="No Image">
-                                    <label for="marksheet">Marksheet Upload</label>
-                                    <input type="file" value="{{ data.marksheet.url }}" class="form-control-file"
-                                        id="marksheet" name="marksheet">
+                                    <label class="required-field-name" for="marksheet">Marksheet Upload</label>
+                                    <input type="file" value="{{ data.file }}" class="form-control-file" id="marksheet"
+                                        name="marksheet">
                                 </div>
                             </div>
-
+                            {% endfor %}
+                            {% endif %}
                         </div>
                         <hr class="my-4">
-                        {% endfor %}
-                        {% endif %}
+                        <h2>Documents</h2>
+                        <hr class="my-4">
+
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
+                                    {% if student_data.student_migrations %}
                                     <img src="{{ student_data.student_migrations }}" class="w-20% rounded p-1"
-                                        style="width: 25%; " alt="">
+                                        style="width: 38%;" alt="No">
+                                    {% else %}
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                                        class="w-20% rounded p-1" style="width: 50%;" alt="No">
+                                    {% endif %}
                                     <label for="migration">Migration Upload</label>
-                                    <input type="file" class="form-control-file" id="migration" name="migration">
+                                    <input type="file" value="{{ student_data.student_migrations }}"
+                                        class="form-control-file" id="migration" name="migration">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
+                                    {% if student_data.student_provision %}
                                     <img src="{{ student_data.student_provision }}" class="w-20% rounded p-1"
-                                        style="width: 25%; " alt="">
+                                        style="width: 38%;" alt="No">
+                                    {% else %}
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                                        class="w-20% rounded p-1" style="width: 50%;" alt="No">
+                                    {% endif %}
+
                                     <label for="provision">Provision Upload</label>
-                                    <input type="file" class="form-control-file" id="provision" name="provision">
+                                    <input type="file" value="{{ student_data.student_provision }}"
+                                        class="form-control-file" id="provision" name="provision">
                                 </div>
 
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
+                                    {% if student_data.student_affidevit %}
                                     <img src="{{ student_data.student_affidevit }}" class="w-20% rounded p-1"
-                                        style="width: 25%; " alt="">
+                                        style="width: 38%;" alt="No">
+                                    {% else %}
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                                        class="w-20% rounded p-1" style="width: 50%;" alt="No">
+                                    {% endif %}
+
                                     <label for="affidevit">Affidevit Upload</label>
-                                    <input type="file" class="form-control-file" id="affidevit" name="affidevit">
+                                    <input type="file" value="{{ student_data.student_affidevit }}"
+                                        class="form-control-file" id="affidevit" name="affidevit">
                                 </div>
                             </div>
                         </div>
                         <hr class="my-4">
-
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-
+                                    {% if student_data.student_admit_card %}
                                     <img src="{{ student_data.student_admit_card }}" class="w-20% rounded p-1"
-                                        style="width: 25%; " alt="">
+                                        style="width: 38%; " alt="No">
+                                    {% else %}
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                                        class="w-20% rounded p-1" style="width: 50%;" alt="No">
+                                    {% endif %}
                                     <label for="admin_card">Admit Card Upload</label>
-                                    <input type="file" class="form-control-file" id="admin_card" name="admin_card">
+                                    <input type="file" value="{{ student_data.student_admit_card }}"
+                                        class="form-control-file" id="admin_card" name="admin_card">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    {% if student_data.student_degree %}
+
+                                    <img src="{{ student_data.student_degree }}" class="w-20% rounded p-1"
+                                        style="width: 38%;" alt=" No">
+
+                                    {% else %}
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                                        class="w-20% rounded p-1" style="width: 50%;" alt="No">
+                                    {% endif %}
+                                    <label for="degree">Degree Upload</label>
+                                    <input type="file" value="{{ student_data.student_degree }}"
+                                        class="form-control-file" id="degree" name="degree">
                                 </div>
                             </div>
                         </div>
                         <hr class="my-4">
-
-                        <button class="btn btn-primary" onclick="sendFormDataToAPI()">Update</button>
+                        <button class="btn btn-primary" onclick="sendFormDataToAPI(event)">Update</button>
                         <button type="button" class="btn btn-secondary"
                             onclick="cancelUpdate('{{ student.enrollment_no }}')">Cancel</button>
                     </form>
@@ -224,6 +366,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -245,139 +388,163 @@
         </div>
     </div>
 
-
+    {% include 'main_cg_site/global/footer.html' %}
 
     <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            event.preventDefault();
+            // sendFormDataToAPI();
+        });
+
         function cancelUpdate(enrollmentNo) {
             window.history.back();
         }
 
-        function submitFunction() {
+        async function sendFormDataToAPI(event) {
+            console.log("Sending form data to API...");
             event.preventDefault();
-            var personalDetails = {
-                enrollment_no: document.querySelector('input[name="enrollment_no"]').value,
-                password: document.querySelector('input[name="date_of_birth"]').value,
-                full_name: document.querySelector('input[name="full_name"]').value,
-                father_name: document.querySelector('input[name="father_name"]').value,
-                mother_name: document.querySelector('input[name="mother_name"]').value,
-                gender: document.querySelector('input[name="gender"]').value,
-                dob: document.querySelector('input[name="dob"]').value,
-                email: document.querySelector('input[name="email"]').value,
-                category: document.querySelector('input[name="category"]').value,
-                address: document.querySelector('input[name="address"]').value,
+            var isLoading = document.getElementById("loader");
+            var overlay = document.getElementById("loader-overlay");
+            isLoading.style.display = "block";
+            overlay.style.display = "block";
+
+            // Select required fields and reverse them
+            // const requiredFields = Array.from(document.querySelectorAll(".required-field")).reverse();
+
+            // // Check for empty fields and format their names
+            // let emptyField = requiredFields.find(field => field.value.trim() === "");
+            // if (emptyField) {
+            //     let capitalized = emptyField.name.replace(/_/g, '').replace(/\b\w/g, char => char.toUpperCase()).replace(/\s+/g, ' ');
+            //     alert("Required Field is empty: " + capitalized);
+            //     return;
+            // }
+
+            // API URLs and tokens
+            const apiUrl = "{{ api_url }}";
+            const marksheets = JSON.parse("{{ student.list_of_integers }}");
+            const enrollment_no = document.querySelector('input[name="enrollment_no"]').value;
+
+            console.log(marksheets.at(0));
+
+            const studentInfoUrl = `${apiUrl}students/${enrollment_no}/`;
+            const studentDataUrl = `${apiUrl}student-data/${enrollment_no}/`;
+            const studentMarksheetUrl = `${apiUrl}marksheets/${marksheets.at(0)}/`;
+
+            const token = localStorage.getItem('token');
+            const cId = localStorage.getItem('cId');
+
+            // Collect data
+            const personalDetails = {
+                'center_id': `{{ student.center_id }}`,
+                'username': enrollment_no,
+                'enrollment_no': enrollment_no,
+                'password': document.querySelector('input[name="date_of_birth"]').value,
+                'full_name': document.querySelector('input[name="full_name"]').value,
+                'father_name': document.querySelector('input[name="father_name"]').value,
+                'mother_name': document.querySelector('input[name="mother_name"]').value,
+                'gender': document.querySelector('input[name="gender"]').value,
+                'date_of_birth': document.querySelector('input[name="date_of_birth"]').value,
+                'category': document.querySelector('input[name="category"]').value,
+                'email': document.querySelector('input[name="email"]').value,
+                'mobile_number': document.querySelector('input[name="mobile_number"]').value,
+                'address': document.querySelector('textarea[name="address"]').value
             };
+
             console.log(personalDetails);
-        }
 
-        function getCookie(name) {
-            let cookieValue = null;
+            const profilePicFile = document.querySelector('input[name="profile_pic"]').files[0];
+            if (profilePicFile) {
+                personalDetails.profile_pic = profilePicFile;
+            }
 
-            if (document.cookie && document.cookie !== '') {
-                const cookies = document.cookie.split(';');
-                for (let i = 0; i < cookies.length; i++) {
-                    const cookie = cookies[i].trim();
-                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                        break;
+            currentFile = "{{ marksheet_data.0.file }}";
+            newFile = document.querySelector('input[name="marksheet"]').files[0];
+
+            const marksheet = {
+                'student_enrollment_no': enrollment_no,
+                'session': document.querySelector('input[name="session"]').value,
+                'semester': document.querySelector('input[name="semester"]').value,
+                'sgpa': document.querySelector('input[name="sgpa"]').value,
+                'status': document.querySelector('input[name="status"]').value,
+                'result': document.querySelector('input[name="result"]').value,
+            };
+
+            if (newFile != undefined) {
+                marksheet['file'] = newFile;
+            }
+
+            const documentUploads = {
+                'student_enrollment_no': enrollment_no,
+                'student_migrations': document.querySelector('input[name="migration"]').files[0] || null,
+                'student_provision': document.querySelector('input[name="provision"]').files[0] || null,
+                'student_affidevit': document.querySelector('input[name="affidevit"]').files[0] || null,
+                'student_degree': document.querySelector('input[name="degree"]').files[0] || null,
+                'student_admit_card': document.querySelector('input[name="admin_card"]').files[0] || null
+            };
+
+            const fetchWithAuth = async (url, method, body, isJson = false) => {
+                const headers = {
+                    'Authorization': `Bearer ${token}`,
+                    ...(isJson && { 'Content-Type': 'application/json' })
+                };
+
+                const response = await fetch(url, { method, headers, body });
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                } else {
+                    if (url == studentMarksheetUrl) {
+                        overlay.style.display = 'none';
+                        isLoading.style.display = 'none';
+                        Swal.fire({
+                            title: "Student Updated",
+                            text: "Student Update Successfully",
+                            icon: "success"
+                        }).then(response => {
+                            window.location.reload();
+
+                        });
                     }
                 }
-            }
-            return cookieValue;
-        }
-
-        function sendFormDataToAPI() {
-            event.preventDefault();
-            var apiUrl = "{{ api_url }}";
-
-            console.log(apiUrl);
-
-            const enrollment_no = document.querySelector('input[name="enrollment_no"]').value;
-            let password = document.querySelector('input[name="date_of_birth"]').value;
-            let cleanPassword = date.replace(/-/g, "");
-            const url = `${apiUrl}students/${enrollment_no}/`;
-            var token = localStorage.getItem('token');
-
-            const personalDetails = {
-                username: document.querySelector('input[name="enrollment_no"]').value,
-                password: cleanPassword,
-                enrollment_no: enrollment_no,
-                full_name: document.querySelector('input[name="full_name"]').value,
-                father_name: document.querySelector('input[name="father_name"]').value,
-                mother_name: document.querySelector('input[name="mother_name"]').value,
-                gender: document.querySelector('input[name="gender"]').value,
-                date_of_birth: document.querySelector('input[name="date_of_birth"]').value,
-                category: document.querySelector('input[name="category"]').value,
-                email: document.querySelector('input[name="email"]').value,
-                mobile_number: document.querySelector('input[name="mobile_number"]').value,
-                address: document.querySelector('textarea[name="address"]').value
+                return response.json();
             };
 
-            fetch(url, {
-                method: 'PUT',
-                credentials: 'include',
-                mode: 'same-origin',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json',
-                    'Authorization': `Bearer ${token}`
+            try {
+                // Update student info
+                const studentFormData = new FormData();
+                Object.entries(personalDetails).forEach(([key, value]) => studentFormData.append(key, value));
+                await fetchWithAuth(studentInfoUrl, 'PUT', studentFormData);
+                console.log('Student info updated successfully');
 
-                },
-                body: JSON.stringify(personalDetails),
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Success:', data);
-                })
-                .catch(error => {
-                    console.error('Error:', error);
+                // Update student documents
+                const studentDataFormData = new FormData();
+                Object.entries(documentUploads).forEach(([key, value]) => {
+                    if (value) studentDataFormData.append(key, value);
                 });
+                await fetchWithAuth(studentDataUrl, 'PATCH', studentDataFormData);
+                console.log('Student documents updated successfully');
+
+                // Update student marksheet
+                const marksheetData = new FormData();
+                Object.entries(marksheet).forEach(([key, value]) => marksheetData.append(key, value));
+                await fetchWithAuth(studentMarksheetUrl, 'PATCH', marksheetData);
+                console.log('Student marksheet updated successfully');
+
+                // window.location.reload();
+            } catch (error) {
+                console.error('Error:', error);
+            }
         }
-
-
-        function createPayload() {
-            event.preventDefault();
-
-            var marksheet_data = [];
-            var document_uploads = {
-                migration: document.querySelector('input[name="migration"]').value,
-                provision: document.querySelector('input[name="provision"]').value,
-                affidevit: document.querySelector('input[name="affidevit"]').value,
-                admin_card: document.querySelector('input[name="admin_card"]').value
-            };
-            console.log(payload);
-
-            // var marksheetRows = document.querySelectorAll('.row');
-            // marksheetRows.forEach(row => {
-            //     var marksheet = {
-            //         session: row.querySelector('input[name="session"]').value,
-            //         semester: row.querySelector('input[name="semester"]').value,
-            //         sgpa: row.querySelector('input[name="sgpa"]').value,
-            //         status: row.querySelector('input[name="status"]').value,
-            //         result: row.querySelector('input[name="result"]').value,
-            //         file: row.querySelector('input[name="marksheet"]').value
-            //     };
-            //     payload.marksheet_data.push(marksheet);
-            // });
-
-            return payload;
-        }
-
-        // Example usage:
-        var payload = createPayload();
-        console.log(JSON.stringify(payload, null, 2));
-
-
     </script>
 
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </body>
 
 </html>

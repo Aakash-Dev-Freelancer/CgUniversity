@@ -1,0 +1,53 @@
+.overlayer {
+  height: 70vh;
+  max-width: 100%;
+  backdrop-filter: blur(15px) !important;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header-container {
+  backdrop-filter: blur(20px) !important;
+  background-size: cover;
+  background-image: url("../images/login/login_background_image.jpg");
+  background-position: bottom;
+  height: 70vh !important;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  max-width: 20%;
+  border: 1px solid #dddddd;
+  width: calc(33.33%);
+  margin: 15px;
+  background-color: #ffffff50;
+
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+h1 {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-info p {
+  color: #000000;
+  margin-bottom: 10px;
+}
+.contact-info .email {
+  color: #007bff;
+  text-decoration: none;
+}
+.contact-info .email:hover {
+  text-decoration: underline;
+}

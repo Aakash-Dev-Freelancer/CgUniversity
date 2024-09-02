@@ -1,0 +1,58 @@
+.rti h1,
+h2 {
+  text-align: center;
+}
+
+.rti p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.highlight {
+  font-weight: bold;
+  color: rgb(255, 150, 13);
+}
+
+.rti {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.336);
+}
+
+.overlayer {
+  height: 70vh;
+  max-width: 100%;
+  backdrop-filter: blur(15px) !important;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.rti-header-container {
+  backdrop-filter: blur(20px) !important;
+  background-size: cover;
+  background-image: url("../images/login/login_background_image.jpg");
+  background-position: bottom;
+  height: 70vh !important;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.rti-link {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 36px;
+  background-color: white;
+  border-radius: 20px;
+}
