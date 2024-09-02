@@ -21,6 +21,7 @@ class Student(models.Model):
     email = models.CharField(max_length=40)
     mobile_number = models.CharField(max_length=15)
     address = models.CharField(max_length=255)
+    is_due = models.BooleanField(default=False)
     list_of_integers = models.JSONField(default=list) 
 
 class StudentData(models.Model):
